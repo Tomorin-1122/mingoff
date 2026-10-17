@@ -786,6 +786,21 @@ main {
   border-bottom-style: solid;
 }
 
+.ext-btn {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--dian);
+  background: transparent;
+  border: 1px solid var(--xian);
+  padding: 2px 7px;
+  cursor: pointer;
+}
+
+.ext-btn:hover {
+  color: var(--mo);
+  border-color: var(--mo);
+}
+
 .offices {
   margin-top: 10px;
   font-size: 12.5px;

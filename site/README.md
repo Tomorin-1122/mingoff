@@ -51,9 +51,10 @@ pnpm build        # 产物在 out/，静态文件可直接部署
 
 - **CBDB**：直接链到人物页 `https://cbdb.fas.harvard.edu/cbdbapi/person.php?id=<id>`；
   显示 CBDB 正名（如 楊士奇→楊寓、張孚敬→張璁）。
-- **中研院「明代職官資料庫」**：链到检索入口
-  `https://dh.rchss.sinica.edu.tw/MingChaoffTitle/`；该站检索是 POST，
-  无法把检索词编码进 URL，抽屉里明确标注「中研院检索词：某某」由用户站内输入。
+- **中研院「明代職官資料庫」**：站内检索是 POST，不能把检索词编码进普通 URL；
+  抽屉提供「中研院一鍵檢索（明實錄）」按钮，用隐藏表单 `POST output.php`
+  （`input[]=人名` + `check[]=3`）新窗口打开结果；另保留检索入口
+  `https://dh.rchss.sinica.edu.tw/MingChaoffTitle/` 作为兜底。
 - **人物小传**块显示生卒/籍贯/字号/入仕/历任；未对齐 CBDB 的人物显示
   「CBDB 未对齐」并仍给中研院入口，不硬挂 id。
 

@@ -1,11 +1,12 @@
 {
  "meta": {
   "source": "CBDB cbdb_20261010.sqlite3（BIOG_MAIN/BIOG_ADDR_DATA/ALTNAME_DATA/ENTRY_DATA/POSTED_TO_OFFICE_DATA）",
-  "generated_at": "2026-10-17T08:51:40+00:00",
+  "generated_at": "2026-10-17T08:57:27+00:00",
   "persons": 167,
   "office_limit": 30,
   "cbdb_person_url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id={id}",
-  "sinica_url": "https://dh.rchss.sinica.edu.tw/MingChaoffTitle/"
+  "sinica_url": "https://dh.rchss.sinica.edu.tw/MingChaoffTitle/",
+  "sinica_output_url": "https://dh.rchss.sinica.edu.tw/MingChaoffTitle/output.php"
  },
  "persons": {
   "丁紹軾": {

@@ -151,6 +151,7 @@ def main():
             "office_limit": OFFICE_LIMIT,
             "cbdb_person_url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id={id}",
             "sinica_url": "https://dh.rchss.sinica.edu.tw/MingChaoffTitle/",
+            "sinica_output_url": "https://dh.rchss.sinica.edu.tw/MingChaoffTitle/output.php",
         },
         "persons": persons,
     }

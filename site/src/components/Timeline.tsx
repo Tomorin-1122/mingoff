@@ -288,6 +288,27 @@ function ProfileBlock({ person }: { person: string }) {
     ? PROFILE_META.cbdb_person_url.replace("{id}", String(p.cbdb_id))
     : null;
   const altText = p.alt_names.map((a) => `${a.type}：${a.name}`).join("；");
+
+  /** 中研院检索是 POST：用隐藏表单新窗口提交，等于“一键检索” */
+  const openSinicaSearch = () => {
+    const form = document.createElement("form");
+    form.method = "POST";
+    form.action = PROFILE_META.sinica_output_url;
+    form.target = "_blank";
+    form.style.display = "none";
+    const i1 = document.createElement("input");
+    i1.type = "hidden";
+    i1.name = "input[]";
+    i1.value = person;
+    const i2 = document.createElement("input");
+    i2.type = "hidden";
+    i2.name = "check[]";
+    i2.value = "3";
+    form.append(i1, i2);
+    document.body.appendChild(form);
+    form.submit();
+    form.remove();
+  };
   return (
     <section className="person-card">
       <h3>
@@ -351,6 +372,9 @@ function ProfileBlock({ person }: { person: string }) {
         >
           中研院「明代職官資料庫」 ↗
         </a>
+        <button type="button" className="ext-btn" onClick={openSinicaSearch}>
+          中研院一鍵檢索（明實錄）↗
+        </button>
       </div>
       <p className="hint">
         中研院檢索詞：<b>{person}</b>（站內輸入後檢索；命中含《明實錄》原文）

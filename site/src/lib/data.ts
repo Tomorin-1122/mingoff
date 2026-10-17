@@ -101,7 +101,11 @@ export interface PersonProfile {
 }
 
 const profileDoc = profiles as unknown as {
-  meta: { cbdb_person_url: string; sinica_url: string };
+  meta: {
+    cbdb_person_url: string;
+    sinica_url: string;
+    sinica_output_url: string;
+  };
   persons: Record<string, PersonProfile>;
 };
 
