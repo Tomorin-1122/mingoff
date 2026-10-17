@@ -471,6 +471,35 @@ main {
   position: relative;
 }
 
+/* 洪武—建文三年（1368–1401）内阁未设：留空区加浅斜线底纹 + 一行说明 */
+.void-span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    135deg,
+    transparent 0 7px,
+    rgba(27, 26, 23, 0.03) 7px 8px
+  );
+}
+
+.void-note {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding-left: 8px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--hui);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
 /* ---- 皇帝行（朱色 = 朱明皇室；红条 + 年周岁小字一体） ---- */
 
 .row.reign {
@@ -877,7 +906,8 @@ main {
 footer {
   position: sticky;
   left: 0;
-  max-width: min(1500px, 100vw);
+  /* 留出 sticky containing block 的余量，避免滚到画布最右时页脚被裁边 */
+  max-width: min(1500px, calc(100vw - 220px));
   margin: 0;
   padding: 0 var(--gut) 60px;
   color: var(--hui);
@@ -915,6 +945,8 @@ footer .k {
     padding-top: var(--fixed-h, 190px);
   }
   footer {
+    position: static;
+    max-width: 100%;
     padding: 0 12px 44px;
   }
   .era .regnal {

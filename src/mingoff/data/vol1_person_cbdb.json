@@ -1,0 +1,1850 @@
+{
+ "丁紹軾": {
+  "cbdb_id": 344091,
+  "cbdb_name": "丁紹軾",
+  "method": "old",
+  "span": [
+   1625,
+   1626
+  ],
+  "birth": null,
+  "death": null
+ },
+ "丘濬": {
+  "cbdb_id": 33202,
+  "cbdb_name": "丘濬",
+  "method": "old",
+  "span": [
+   1491,
+   1495
+  ],
+  "birth": 1420,
+  "death": 1495
+ },
+ "丘瑜": {
+  "cbdb_id": 127121,
+  "cbdb_name": "丘瑜",
+  "method": "old",
+  "span": [
+   1644,
+   1644
+  ],
+  "birth": null,
+  "death": null
+ },
+ "于慎行": {
+  "cbdb_id": 123963,
+  "cbdb_name": "于慎行",
+  "method": "old",
+  "span": [
+   1607,
+   1607
+  ],
+  "birth": 1545,
+  "death": 1607
+ },
+ "何吾騶": {
+  "cbdb_id": 349124,
+  "cbdb_name": "何吾騶",
+  "method": "old",
+  "span": [
+   1633,
+   1635
+  ],
+  "birth": null,
+  "death": null
+ },
+ "何如寵": {
+  "cbdb_id": 128400,
+  "cbdb_name": "何如寵",
+  "method": "old",
+  "span": [
+   1629,
+   1631
+  ],
+  "birth": 1568,
+  "death": 1640
+ },
+ "何宗彥": {
+  "cbdb_id": 128409,
+  "cbdb_name": "何宗彥",
+  "method": "old",
+  "span": [
+   1620,
+   1624
+  ],
+  "birth": null,
+  "death": 1624
+ },
+ "余有丁": {
+  "cbdb_id": 128351,
+  "cbdb_name": "余有丁",
+  "method": "old",
+  "span": [
+   1582,
+   1584
+  ],
+  "birth": 1527,
+  "death": 1584
+ },
+ "來宗道": {
+  "cbdb_id": 128667,
+  "cbdb_name": "來宗道",
+  "method": "old",
+  "span": [
+   1627,
+   1628
+  ],
+  "birth": null,
+  "death": null
+ },
+ "俞綱": {
+  "cbdb_id": 66802,
+  "cbdb_name": "俞綱",
+  "method": "old",
+  "span": [
+   1450,
+   1450
+  ],
+  "birth": null,
+  "death": 1478
+ },
+ "傅冠": {
+  "cbdb_id": 62168,
+  "cbdb_name": "傅冠",
+  "method": "old",
+  "span": [
+   1637,
+   1638
+  ],
+  "birth": null,
+  "death": null
+ },
+ "劉一燝": {
+  "cbdb_id": 132643,
+  "cbdb_name": "劉一燝",
+  "method": "old",
+  "span": [
+   1620,
+   1622
+  ],
+  "birth": 1567,
+  "death": 1635
+ },
+ "劉健": {
+  "cbdb_id": 67830,
+  "cbdb_name": "劉健",
+  "method": "old",
+  "span": [
+   1487,
+   1506
+  ],
+  "birth": 1433,
+  "death": 1526
+ },
+ "劉吉": {
+  "cbdb_id": 201284,
+  "cbdb_name": "劉吉",
+  "method": "old",
+  "span": [
+   1475,
+   1492
+  ],
+  "birth": 1466,
+  "death": null
+ },
+ "劉宇亮": {
+  "cbdb_id": 60382,
+  "cbdb_name": "劉宇亮",
+  "method": "old",
+  "span": [
+   1637,
+   1639
+  ],
+  "birth": null,
+  "death": null
+ },
+ "劉定之": {
+  "cbdb_id": 67612,
+  "cbdb_name": "劉定之",
+  "method": "old",
+  "span": [
+   1466,
+   1469
+  ],
+  "birth": 1409,
+  "death": 1469
+ },
+ "劉忠": {
+  "cbdb_id": 67872,
+  "cbdb_name": "劉忠",
+  "method": "old",
+  "span": [
+   1510,
+   1511
+  ],
+  "birth": 1452,
+  "death": 1523
+ },
+ "劉珝": {
+  "cbdb_id": 67521,
+  "cbdb_name": "劉珝",
+  "method": "old",
+  "span": [
+   1476,
+   1481
+  ],
+  "birth": 1426,
+  "death": 1490
+ },
+ "劉翊": {
+  "cbdb_id": 274377,
+  "cbdb_name": "劉翊",
+  "method": "old",
+  "span": [
+   1482,
+   1485
+  ],
+  "birth": null,
+  "death": null
+ },
+ "劉翔": {
+  "cbdb_id": 300407,
+  "cbdb_name": "劉翔",
+  "method": "old",
+  "span": [
+   1475,
+   1475
+  ],
+  "birth": null,
+  "death": null
+ },
+ "劉鴻訓": {
+  "cbdb_id": 132945,
+  "cbdb_name": "劉鴻訓",
+  "method": "old",
+  "span": [
+   1627,
+   1628
+  ],
+  "birth": 1561,
+  "death": 1631
+ },
+ "史可法": {
+  "cbdb_id": 34792,
+  "cbdb_name": "史可法",
+  "method": "old",
+  "span": [
+   1644,
+   1645
+  ],
+  "birth": 1602,
+  "death": 1645
+ },
+ "史繼偕": {
+  "cbdb_id": 366750,
+  "cbdb_name": "史繼偕",
+  "method": "old",
+  "span": [
+   1620,
+   1623
+  ],
+  "birth": null,
+  "death": null
+ },
+ "吳宗達": {
+  "cbdb_id": 128182,
+  "cbdb_name": "吳宗達",
+  "method": "old",
+  "span": [
+   1630,
+   1635
+  ],
+  "birth": 1572,
+  "death": 1636
+ },
+ "吳甡": {
+  "cbdb_id": 59452,
+  "cbdb_name": "吳甡",
+  "method": "fix: 舊映射即此人，OCR 人名已正",
+  "span": [
+   1642,
+   1643
+  ],
+  "birth": 1589,
+  "death": 1670
+ },
+ "吳道南": {
+  "cbdb_id": 123972,
+  "cbdb_name": "吳道南",
+  "method": "old",
+  "span": [
+   1613,
+   1617
+  ],
+  "birth": null,
+  "death": 1623
+ },
+ "呂原": {
+  "cbdb_id": 67602,
+  "cbdb_name": "呂原",
+  "method": "old",
+  "span": [
+   1457,
+   1462
+  ],
+  "birth": 1418,
+  "death": 1462
+ },
+ "呂調陽": {
+  "cbdb_id": 128329,
+  "cbdb_name": "呂調陽",
+  "method": "old",
+  "span": [
+   1572,
+   1579
+  ],
+  "birth": 1516,
+  "death": 1580
+ },
+ "周如磐": {
+  "cbdb_id": 373226,
+  "cbdb_name": "周如磐",
+  "method": "old",
+  "span": [
+   1625,
+   1625
+  ],
+  "birth": null,
+  "death": null
+ },
+ "周延儒": {
+  "cbdb_id": 125416,
+  "cbdb_name": "周延儒",
+  "method": "old",
+  "span": [
+   1629,
+   1643
+  ],
+  "birth": 1593,
+  "death": 1644
+ },
+ "周道登": {
+  "cbdb_id": 373091,
+  "cbdb_name": "周道登",
+  "method": "old",
+  "span": [
+   1627,
+   1629
+  ],
+  "birth": null,
+  "death": null
+ },
+ "商輅": {
+  "cbdb_id": 226627,
+  "cbdb_name": "商輅",
+  "method": "old",
+  "span": [
+   1449,
+   1477
+  ],
+  "birth": null,
+  "death": null
+ },
+ "嚴嵩": {
+  "cbdb_id": 125411,
+  "cbdb_name": "嚴嵩",
+  "method": "old",
+  "span": [
+   1542,
+   1562
+  ],
+  "birth": 1480,
+  "death": 1565
+ },
+ "嚴訥": {
+  "cbdb_id": 68211,
+  "cbdb_name": "嚴訥",
+  "method": "old",
+  "span": [
+   1565,
+   1565
+  ],
+  "birth": 1511,
+  "death": 1584
+ },
+ "夏言": {
+  "cbdb_id": 68194,
+  "cbdb_name": "夏言",
+  "method": "old",
+  "span": [
+   1536,
+   1548
+  ],
+  "birth": 1482,
+  "death": 1548
+ },
+ "姚明恭": {
+  "cbdb_id": 129322,
+  "cbdb_name": "姚明恭",
+  "method": "old",
+  "span": [
+   1639,
+   1640
+  ],
+  "birth": null,
+  "death": null
+ },
+ "姜曰廣": {
+  "cbdb_id": 65908,
+  "cbdb_name": "姜曰廣",
+  "method": "old",
+  "span": [
+   1644,
+   1644
+  ],
+  "birth": null,
+  "death": 1649
+ },
+ "孔貞運": {
+  "cbdb_id": 124306,
+  "cbdb_name": "孔貞運",
+  "method": "old",
+  "span": [
+   1636,
+   1638
+  ],
+  "birth": 1576,
+  "death": 1644
+ },
+ "孫如游": {
+  "cbdb_id": 129718,
+  "cbdb_name": "孫如游",
+  "method": "old",
+  "span": [
+   1620,
+   1621
+  ],
+  "birth": null,
+  "death": null
+ },
+ "孫承宗": {
+  "cbdb_id": 63882,
+  "cbdb_name": "孫承宗",
+  "method": "old",
+  "span": [
+   1622,
+   1631
+  ],
+  "birth": 1563,
+  "death": 1638
+ },
+ "尹直": {
+  "cbdb_id": 67539,
+  "cbdb_name": "尹直",
+  "method": "old",
+  "span": [
+   1486,
+   1487
+  ],
+  "birth": 1427,
+  "death": 1511
+ },
+ "岳正": {
+  "cbdb_id": 34513,
+  "cbdb_name": "岳正",
+  "method": "fix: 生1418卒1472，10 條任職記錄",
+  "span": [
+   1457,
+   1457
+  ],
+  "birth": 1418,
+  "death": 1472
+ },
+ "張位": {
+  "cbdb_id": 124309,
+  "cbdb_name": "張位",
+  "method": "old",
+  "span": [
+   1591,
+   1598
+  ],
+  "birth": null,
+  "death": null
+ },
+ "張四知": {
+  "cbdb_id": 204132,
+  "cbdb_name": "張四知",
+  "method": "old",
+  "span": [
+   1639,
+   1642
+  ],
+  "birth": 1521,
+  "death": null
+ },
+ "張四維": {
+  "cbdb_id": 124070,
+  "cbdb_name": "張四維",
+  "method": "old",
+  "span": [
+   1575,
+   1583
+  ],
+  "birth": null,
+  "death": 1585
+ },
+ "張孚敬": {
+  "cbdb_id": 68266,
+  "cbdb_name": "張璁",
+  "method": "fix: CBDB 以本名張璁收录；生1475卒1539，大學士1527–1535",
+  "span": [
+   1527,
+   1535
+  ],
+  "birth": 1475,
+  "death": 1539
+ },
+ "張居正": {
+  "cbdb_id": 69011,
+  "cbdb_name": "張居正",
+  "method": "old",
+  "span": [
+   1567,
+   1582
+  ],
+  "birth": 1525,
+  "death": 1582
+ },
+ "張治": {
+  "cbdb_id": 130402,
+  "cbdb_name": "張治",
+  "method": "old",
+  "span": [
+   1549,
+   1550
+  ],
+  "birth": 1488,
+  "death": 1550
+ },
+ "張瑛": {
+  "cbdb_id": 67859,
+  "cbdb_name": "張瑛",
+  "method": "fix: 生1375卒1436，華蓋殿大學士1426–1436",
+  "span": [
+   1426,
+   1436
+  ],
+  "birth": 1375,
+  "death": 1436
+ },
+ "張瑞圖": {
+  "cbdb_id": 130559,
+  "cbdb_name": "張瑞圖",
+  "method": "old",
+  "span": [
+   1626,
+   1628
+  ],
+  "birth": 1576,
+  "death": 1641
+ },
+ "張璧": {
+  "cbdb_id": 215995,
+  "cbdb_name": "張璧",
+  "method": "old",
+  "span": [
+   1544,
+   1545
+  ],
+  "birth": null,
+  "death": null
+ },
+ "張益": {
+  "cbdb_id": 313740,
+  "cbdb_name": "張益",
+  "method": "old",
+  "span": [
+   1449,
+   1449
+  ],
+  "birth": null,
+  "death": null
+ },
+ "張至發": {
+  "cbdb_id": 59599,
+  "cbdb_name": "張至發",
+  "method": "old",
+  "span": [
+   1635,
+   1641
+  ],
+  "birth": null,
+  "death": 1642
+ },
+ "彭時": {
+  "cbdb_id": 33919,
+  "cbdb_name": "彭時",
+  "method": "old",
+  "span": [
+   1449,
+   1475
+  ],
+  "birth": 1416,
+  "death": 1475
+ },
+ "彭華": {
+  "cbdb_id": 280434,
+  "cbdb_name": "彭華",
+  "method": "old",
+  "span": [
+   1485,
+   1487
+  ],
+  "birth": null,
+  "death": null
+ },
+ "徐光啟": {
+  "cbdb_id": 30598,
+  "cbdb_name": "徐光啟",
+  "method": "old",
+  "span": [
+   1632,
+   1633
+  ],
+  "birth": 1562,
+  "death": 1633
+ },
+ "徐有貞": {
+  "cbdb_id": 252200,
+  "cbdb_name": "徐有貞",
+  "method": "old",
+  "span": [
+   1457,
+   1457
+  ],
+  "birth": null,
+  "death": null
+ },
+ "徐溥": {
+  "cbdb_id": 264995,
+  "cbdb_name": "徐溥",
+  "method": "old",
+  "span": [
+   1487,
+   1498
+  ],
+  "birth": null,
+  "death": null
+ },
+ "徐階": {
+  "cbdb_id": 68547,
+  "cbdb_name": "徐階",
+  "method": "old",
+  "span": [
+   1552,
+   1568
+  ],
+  "birth": 1503,
+  "death": 1583
+ },
+ "成基命": {
+  "cbdb_id": 128097,
+  "cbdb_name": "成基命",
+  "method": "old",
+  "span": [
+   1629,
+   1630
+  ],
+  "birth": 1559,
+  "death": 1635
+ },
+ "文震孟": {
+  "cbdb_id": 34682,
+  "cbdb_name": "文震孟",
+  "method": "old",
+  "span": [
+   1635,
+   1635
+  ],
+  "birth": 1574,
+  "death": 1636
+ },
+ "方岳貢": {
+  "cbdb_id": 126402,
+  "cbdb_name": "方岳貢",
+  "method": "old",
+  "span": [
+   1643,
+   1644
+  ],
+  "birth": null,
+  "death": null
+ },
+ "方從哲": {
+  "cbdb_id": 124056,
+  "cbdb_name": "方從哲",
+  "method": "old",
+  "span": [
+   1613,
+   1620
+  ],
+  "birth": null,
+  "death": 1628
+ },
+ "方拱乾": {
+  "cbdb_id": 72564,
+  "cbdb_name": "方拱乾",
+  "method": "old",
+  "span": [
+   1645,
+   1645
+  ],
+  "birth": 1596,
+  "death": 1667
+ },
+ "方獻夫": {
+  "cbdb_id": 68286,
+  "cbdb_name": "方獻夫",
+  "method": "old",
+  "span": [
+   1532,
+   1534
+  ],
+  "birth": 1485,
+  "death": 1544
+ },
+ "方逢年": {
+  "cbdb_id": 339044,
+  "cbdb_name": "方逢年",
+  "method": "fix: 2 條任職記錄（舊掛38925 方椿年，誤）",
+  "span": [
+   1638,
+   1638
+  ],
+  "birth": null,
+  "death": null
+ },
+ "施鳳來": {
+  "cbdb_id": 128996,
+  "cbdb_name": "施鳳來",
+  "method": "old",
+  "span": [
+   1626,
+   1628
+  ],
+  "birth": 1563,
+  "death": 1642
+ },
+ "曹元": {
+  "cbdb_id": 130259,
+  "cbdb_name": "曹元",
+  "method": "old",
+  "span": [
+   1510,
+   1510
+  ],
+  "birth": 1449,
+  "death": 1521
+ },
+ "曹鼐": {
+  "cbdb_id": 67222,
+  "cbdb_name": "曹鼐",
+  "method": "fix: 生1402卒1449，文淵閣大學士（舊掛199155，誤）",
+  "span": [
+   1441,
+   1449
+  ],
+  "birth": 1402,
+  "death": 1449
+ },
+ "朱國祚": {
+  "cbdb_id": 30142,
+  "cbdb_name": "朱國祚",
+  "method": "old",
+  "span": [
+   1620,
+   1623
+  ],
+  "birth": 0,
+  "death": 1624
+ },
+ "朱國禎": {
+  "cbdb_id": 222080,
+  "cbdb_name": "朱國禎",
+  "method": "old",
+  "span": [
+   1623,
+   1624
+  ],
+  "birth": null,
+  "death": null
+ },
+ "朱延禧": {
+  "cbdb_id": 616776,
+  "cbdb_name": "朱延禧",
+  "method": "old",
+  "span": [
+   1623,
+   1625
+  ],
+  "birth": null,
+  "death": null
+ },
+ "朱賡": {
+  "cbdb_id": 124310,
+  "cbdb_name": "朱賡",
+  "method": "fix: 生1535卒1608，東閣大學士1601",
+  "span": [
+   1601,
+   1608
+  ],
+  "birth": 1535,
+  "death": 1608
+ },
+ "李國楷": {
+  "cbdb_id": 507420,
+  "cbdb_name": "李國楷",
+  "method": "old",
+  "span": [
+   1626,
+   1627
+  ],
+  "birth": null,
+  "death": null
+ },
+ "李國𣚴": {
+  "cbdb_id": 517572,
+  "cbdb_name": "李國𣚴",
+  "method": "fix: CBDB 正名（舊名李國檜為 OCR 異寫）",
+  "span": [
+   1628,
+   1628
+  ],
+  "birth": null,
+  "death": null
+ },
+ "李廷機": {
+  "cbdb_id": 123964,
+  "cbdb_name": "李廷機",
+  "method": "old",
+  "span": [
+   1607,
+   1612
+  ],
+  "birth": 1542,
+  "death": 1616
+ },
+ "李建泰": {
+  "cbdb_id": 77687,
+  "cbdb_name": "李建泰",
+  "method": "old",
+  "span": [
+   1643,
+   1644
+  ],
+  "birth": null,
+  "death": 1650
+ },
+ "李春芳": {
+  "cbdb_id": 218696,
+  "cbdb_name": "李春芳",
+  "method": "old",
+  "span": [
+   1565,
+   1571
+  ],
+  "birth": null,
+  "death": null
+ },
+ "李時": {
+  "cbdb_id": 68140,
+  "cbdb_name": "李時",
+  "method": "fix: 生1471卒1538，44 條任職記錄",
+  "span": [
+   1531,
+   1538
+  ],
+  "birth": 1471,
+  "death": 1538
+ },
+ "李本": {
+  "cbdb_id": 223131,
+  "cbdb_name": "呂本",
+  "method": "fix: 原書李本＝CBDB 呂本（武英殿大學士）；同名兩候選，取有大學士銜者",
+  "span": [
+   1549,
+   1561
+  ],
+  "birth": null,
+  "death": null
+ },
+ "李東陽": {
+  "cbdb_id": 28691,
+  "cbdb_name": "李東陽",
+  "method": "old",
+  "span": [
+   1495,
+   1512
+  ],
+  "birth": 1447,
+  "death": 1516
+ },
+ "李標": {
+  "cbdb_id": 358545,
+  "cbdb_name": "李標",
+  "method": "old",
+  "span": [
+   1627,
+   1630
+  ],
+  "birth": null,
+  "death": null
+ },
+ "李賢": {
+  "cbdb_id": 29603,
+  "cbdb_name": "李賢",
+  "method": "fix: 生1408卒1466，華蓋殿大學士1464–1466",
+  "span": [
+   1457,
+   1466
+  ],
+  "birth": 1408,
+  "death": 1466
+ },
+ "林鈺": {
+  "cbdb_id": 128623,
+  "cbdb_name": "林釬",
+  "method": "fix: OCR 鈺/釬；CBDB 林釬（崇禎內閣，謚文穆），有國子司業/詹事府記錄",
+  "span": [
+   1636,
+   1636
+  ],
+  "birth": null,
+  "death": null
+ },
+ "桂萼": {
+  "cbdb_id": 68285,
+  "cbdb_name": "桂萼",
+  "method": "old",
+  "span": [
+   1529,
+   1531
+  ],
+  "birth": null,
+  "death": 1531
+ },
+ "梁儲": {
+  "cbdb_id": 304790,
+  "cbdb_name": "梁儲",
+  "method": "old",
+  "span": [
+   1510,
+   1521
+  ],
+  "birth": null,
+  "death": null
+ },
+ "楊一清": {
+  "cbdb_id": 68260,
+  "cbdb_name": "楊一清",
+  "method": "old",
+  "span": [
+   1514,
+   1529
+  ],
+  "birth": 1454,
+  "death": 1530
+ },
+ "楊嗣昌": {
+  "cbdb_id": 64264,
+  "cbdb_name": "楊嗣昌",
+  "method": "old",
+  "span": [
+   1638,
+   1641
+  ],
+  "birth": 1588,
+  "death": 1641
+ },
+ "楊士奇": {
+  "cbdb_id": 66729,
+  "cbdb_name": "楊寓",
+  "method": "fix: CBDB 以原名楊寓收录；生1364卒1444，華蓋殿大學士1424–1444",
+  "span": [
+   1402,
+   1444
+  ],
+  "birth": 1364,
+  "death": 1444
+ },
+ "楊廷和": {
+  "cbdb_id": 68092,
+  "cbdb_name": "楊廷和",
+  "method": "old",
+  "span": [
+   1507,
+   1524
+  ],
+  "birth": 1459,
+  "death": 1529
+ },
+ "楊景辰": {
+  "cbdb_id": 365175,
+  "cbdb_name": "楊景辰",
+  "method": "old",
+  "span": [
+   1627,
+   1628
+  ],
+  "birth": null,
+  "death": null
+ },
+ "楊榮": {
+  "cbdb_id": 28347,
+  "cbdb_name": "楊榮",
+  "method": "fix: 文淵閣1420–1424、謹身殿1424–1440",
+  "span": [
+   1402,
+   1440
+  ],
+  "birth": 1370,
+  "death": 1440
+ },
+ "楊溥": {
+  "cbdb_id": 66746,
+  "cbdb_name": "楊溥",
+  "method": "fix: 舊掛199050無任職記錄；66746 有武英殿大學士1438–1446",
+  "span": [
+   1425,
+   1446
+  ],
+  "birth": 1371,
+  "death": 1446
+ },
+ "殷士儋": {
+  "cbdb_id": 68217,
+  "cbdb_name": "殷士儋",
+  "method": "old",
+  "span": [
+   1570,
+   1572
+  ],
+  "birth": 1522,
+  "death": 1582
+ },
+ "毛紀": {
+  "cbdb_id": 68079,
+  "cbdb_name": "毛紀",
+  "method": "old",
+  "span": [
+   1517,
+   1524
+  ],
+  "birth": 1463,
+  "death": 1545
+ },
+ "江淵": {
+  "cbdb_id": 207934,
+  "cbdb_name": "江淵",
+  "method": "old",
+  "span": [
+   1450,
+   1455
+  ],
+  "birth": 1411,
+  "death": null
+ },
+ "沈㴶": {
+  "cbdb_id": 127615,
+  "cbdb_name": "沈㴶",
+  "method": "fix: 舊別名表已核",
+  "span": [
+   1620,
+   1622
+  ],
+  "birth": null,
+  "death": null
+ },
+ "沈一貫": {
+  "cbdb_id": 124055,
+  "cbdb_name": "沈一貫",
+  "method": "old",
+  "span": [
+   1594,
+   1606
+  ],
+  "birth": null,
+  "death": 1615
+ },
+ "沈鯉": {
+  "cbdb_id": 34728,
+  "cbdb_name": "沈鯉",
+  "method": "old",
+  "span": [
+   1601,
+   1606
+  ],
+  "birth": 1531,
+  "death": 1615
+ },
+ "溫體仁": {
+  "cbdb_id": 125458,
+  "cbdb_name": "溫體仁",
+  "method": "old",
+  "span": [
+   1630,
+   1637
+  ],
+  "birth": null,
+  "death": 1638
+ },
+ "潘晟": {
+  "cbdb_id": 132325,
+  "cbdb_name": "潘晟",
+  "method": "old",
+  "span": [
+   1582,
+   1582
+  ],
+  "birth": null,
+  "death": null
+ },
+ "焦芳": {
+  "cbdb_id": 131574,
+  "cbdb_name": "焦芳",
+  "method": "old",
+  "span": [
+   1506,
+   1510
+  ],
+  "birth": null,
+  "death": null
+ },
+ "王家屏": {
+  "cbdb_id": 123935,
+  "cbdb_name": "王家屏",
+  "method": "old",
+  "span": [
+   1584,
+   1592
+  ],
+  "birth": 1536,
+  "death": 1603
+ },
+ "王應熊": {
+  "cbdb_id": 341557,
+  "cbdb_name": "王應熊",
+  "method": "old",
+  "span": [
+   1633,
+   1645
+  ],
+  "birth": null,
+  "death": null
+ },
+ "王文": {
+  "cbdb_id": 67338,
+  "cbdb_name": "王文",
+  "method": "fix: 生1393卒1457，東閣/謹身殿大學士",
+  "span": [
+   1452,
+   1457
+  ],
+  "birth": 1393,
+  "death": 1457
+ },
+ "王錫爵": {
+  "cbdb_id": 123984,
+  "cbdb_name": "王錫爵",
+  "method": "old",
+  "span": [
+   1584,
+   1607
+  ],
+  "birth": 1534,
+  "death": 1610
+ },
+ "王鏊": {
+  "cbdb_id": 302718,
+  "cbdb_name": "王鏊",
+  "method": "old",
+  "span": [
+   1506,
+   1509
+  ],
+  "birth": null,
+  "death": null
+ },
+ "王鐸": {
+  "cbdb_id": 71166,
+  "cbdb_name": "王鐸",
+  "method": "old",
+  "span": [
+   1644,
+   1645
+  ],
+  "birth": 1592,
+  "death": 1652
+ },
+ "申時行": {
+  "cbdb_id": 123973,
+  "cbdb_name": "申時行",
+  "method": "old",
+  "span": [
+   1578,
+   1591
+  ],
+  "birth": 1535,
+  "death": 1614
+ },
+ "石珤": {
+  "cbdb_id": 68055,
+  "cbdb_name": "石珤",
+  "method": "fix: 生1465卒1528，文淵閣/武英殿大學士",
+  "span": [
+   1524,
+   1527
+  ],
+  "birth": 1465,
+  "death": 1528
+ },
+ "程國祥": {
+  "cbdb_id": 62965,
+  "cbdb_name": "程國祥",
+  "method": "old",
+  "span": [
+   1638,
+   1639
+  ],
+  "birth": null,
+  "death": null
+ },
+ "翟鑾": {
+  "cbdb_id": 68136,
+  "cbdb_name": "翟鑾",
+  "method": "old",
+  "span": [
+   1527,
+   1544
+  ],
+  "birth": 1477,
+  "death": 1546
+ },
+ "胡儼": {
+  "cbdb_id": 34479,
+  "cbdb_name": "胡儼",
+  "method": "fix: 生1360卒1443，33 條任職記錄",
+  "span": [
+   1402,
+   1404
+  ],
+  "birth": 1360,
+  "death": 1443
+ },
+ "胡廣": {
+  "cbdb_id": 263425,
+  "cbdb_name": "胡廣",
+  "method": "old",
+  "span": [
+   1402,
+   1418
+  ],
+  "birth": null,
+  "death": null
+ },
+ "苗衷": {
+  "cbdb_id": 129187,
+  "cbdb_name": "苗衷",
+  "method": "old",
+  "span": [
+   1445,
+   1450
+  ],
+  "birth": 1381,
+  "death": 1460
+ },
+ "范復粹": {
+  "cbdb_id": 59655,
+  "cbdb_name": "范復粹",
+  "method": "old",
+  "span": [
+   1640,
+   1641
+  ],
+  "birth": null,
+  "death": null
+ },
+ "范景文": {
+  "cbdb_id": 34752,
+  "cbdb_name": "范景文",
+  "method": "old",
+  "span": [
+   1644,
+   1644
+  ],
+  "birth": 1587,
+  "death": 1644
+ },
+ "萬安": {
+  "cbdb_id": 67482,
+  "cbdb_name": "萬安",
+  "method": "old",
+  "span": [
+   1469,
+   1487
+  ],
+  "birth": 1419,
+  "death": 1489
+ },
+ "葉向高": {
+  "cbdb_id": 131951,
+  "cbdb_name": "葉向高",
+  "method": "old",
+  "span": [
+   1607,
+   1624
+  ],
+  "birth": 1559,
+  "death": 1627
+ },
+ "蔡國用": {
+  "cbdb_id": 363385,
+  "cbdb_name": "蔡國用",
+  "method": "old",
+  "span": [
+   1638,
+   1640
+  ],
+  "birth": null,
+  "death": null
+ },
+ "蔣冕": {
+  "cbdb_id": 68073,
+  "cbdb_name": "蔣冕",
+  "method": "fix: 舊映射核對",
+  "span": [
+   1516,
+   1524
+  ],
+  "birth": 1463,
+  "death": 1533
+ },
+ "蔣晁": {
+  "cbdb_id": 448647,
+  "cbdb_name": "蔣晁",
+  "method": "old",
+  "span": [
+   1521,
+   1523
+  ],
+  "birth": null,
+  "death": null
+ },
+ "蕭鎡": {
+  "cbdb_id": 67336,
+  "cbdb_name": "蕭鎡",
+  "method": "fix: 卒1464，21 條任職記錄",
+  "span": [
+   1451,
+   1457
+  ],
+  "birth": null,
+  "death": 1464
+ },
+ "薛國觀": {
+  "cbdb_id": 362351,
+  "cbdb_name": "薛國觀",
+  "method": "old",
+  "span": [
+   1637,
+   1640
+  ],
+  "birth": null,
+  "death": null
+ },
+ "薛瑄": {
+  "cbdb_id": 30622,
+  "cbdb_name": "薛瑄",
+  "method": "old",
+  "span": [
+   1457,
+   1457
+  ],
+  "birth": 1389,
+  "death": 1464
+ },
+ "袁宗皋": {
+  "cbdb_id": 129643,
+  "cbdb_name": "袁宗臯",
+  "method": "fix: CBDB 正名異寫（皋/臯）",
+  "span": [
+   1521,
+   1521
+  ],
+  "birth": 1453,
+  "death": 1521
+ },
+ "袁煒": {
+  "cbdb_id": 129658,
+  "cbdb_name": "袁煒",
+  "method": "old",
+  "span": [
+   1561,
+   1565
+  ],
+  "birth": 1508,
+  "death": 1565
+ },
+ "解縉": {
+  "cbdb_id": 34469,
+  "cbdb_name": "解縉",
+  "method": "old",
+  "span": [
+   1402,
+   1407
+  ],
+  "birth": 1368,
+  "death": 1415
+ },
+ "許國": {
+  "cbdb_id": 124245,
+  "cbdb_name": "許國",
+  "method": "old",
+  "span": [
+   1584,
+   1591
+  ],
+  "birth": null,
+  "death": 1596
+ },
+ "許彬": {
+  "cbdb_id": 67475,
+  "cbdb_name": "許彬",
+  "method": "old",
+  "span": [
+   1457,
+   1457
+  ],
+  "birth": 1393,
+  "death": 1467
+ },
+ "許讚": {
+  "cbdb_id": 67932,
+  "cbdb_name": "許讚",
+  "method": "old",
+  "span": [
+   1544,
+   1545
+  ],
+  "birth": 1473,
+  "death": 1548
+ },
+ "謝遷": {
+  "cbdb_id": 34576,
+  "cbdb_name": "謝遷",
+  "method": "old",
+  "span": [
+   1495,
+   1505
+  ],
+  "birth": 1449,
+  "death": 1531
+ },
+ "謝陞": {
+  "cbdb_id": 65935,
+  "cbdb_name": "謝陞",
+  "method": "old",
+  "span": [
+   1640,
+   1642
+  ],
+  "birth": null,
+  "death": 1645
+ },
+ "費宏": {
+  "cbdb_id": 68133,
+  "cbdb_name": "費宏",
+  "method": "old",
+  "span": [
+   1511,
+   1535
+  ],
+  "birth": 1468,
+  "death": 1535
+ },
+ "賀逢聖": {
+  "cbdb_id": 131487,
+  "cbdb_name": "賀逢聖",
+  "method": "old",
+  "span": [
+   1636,
+   1642
+  ],
+  "birth": 1587,
+  "death": 1643
+ },
+ "賈詠": {
+  "cbdb_id": 131702,
+  "cbdb_name": "賈詠",
+  "method": "old",
+  "span": [
+   1524,
+   1527
+  ],
+  "birth": 1464,
+  "death": 1547
+ },
+ "趙志皋": {
+  "cbdb_id": 132155,
+  "cbdb_name": "趙志皋",
+  "method": "old",
+  "span": [
+   1591,
+   1601
+  ],
+  "birth": 1524,
+  "death": 1601
+ },
+ "趙貞吉": {
+  "cbdb_id": 68216,
+  "cbdb_name": "趙貞吉",
+  "method": "old",
+  "span": [
+   1569,
+   1570
+  ],
+  "birth": 1514,
+  "death": 1576
+ },
+ "郭樸": {
+  "cbdb_id": 69006,
+  "cbdb_name": "郭樸",
+  "method": "old",
+  "span": [
+   1566,
+   1567
+  ],
+  "birth": 1511,
+  "death": 1593
+ },
+ "鄭以偉": {
+  "cbdb_id": 132357,
+  "cbdb_name": "鄭以偉",
+  "method": "old",
+  "span": [
+   1632,
+   1633
+  ],
+  "birth": null,
+  "death": null
+ },
+ "金幼孜": {
+  "cbdb_id": 34486,
+  "cbdb_name": "金善",
+  "method": "fix: CBDB 以本名金善收录；生1368卒1431，文淵閣/武英殿大學士1420–1431",
+  "span": [
+   1402,
+   1431
+  ],
+  "birth": 1368,
+  "death": 1431
+ },
+ "錢士升": {
+  "cbdb_id": 86453,
+  "cbdb_name": "錢士升",
+  "method": "old",
+  "span": [
+   1634,
+   1636
+  ],
+  "birth": 1575,
+  "death": 1652
+ },
+ "錢溥": {
+  "cbdb_id": 260821,
+  "cbdb_name": "錢溥",
+  "method": "old",
+  "span": [
+   1633,
+   1635
+  ],
+  "birth": null,
+  "death": null
+ },
+ "錢象坤": {
+  "cbdb_id": 133125,
+  "cbdb_name": "錢象坤",
+  "method": "old",
+  "span": [
+   1629,
+   1631
+  ],
+  "birth": 1569,
+  "death": 1640
+ },
+ "錢龍錫": {
+  "cbdb_id": 133138,
+  "cbdb_name": "錢龍錫",
+  "method": "old",
+  "span": [
+   1627,
+   1629
+  ],
+  "birth": 1579,
+  "death": 1645
+ },
+ "陳于陛": {
+  "cbdb_id": 123939,
+  "cbdb_name": "陳于陛",
+  "method": "old",
+  "span": [
+   1594,
+   1596
+  ],
+  "birth": 1545,
+  "death": 1596
+ },
+ "陳以勤": {
+  "cbdb_id": 68215,
+  "cbdb_name": "陳以勤",
+  "method": "old",
+  "span": [
+   1567,
+   1570
+  ],
+  "birth": 1511,
+  "death": 1586
+ },
+ "陳循": {
+  "cbdb_id": 67330,
+  "cbdb_name": "陳循",
+  "method": "old",
+  "span": [
+   1444,
+   1457
+  ],
+  "birth": null,
+  "death": 1462
+ },
+ "陳文": {
+  "cbdb_id": 292427,
+  "cbdb_name": "陳文",
+  "method": "old",
+  "span": [
+   1463,
+   1468
+  ],
+  "birth": null,
+  "death": null
+ },
+ "陳演": {
+  "cbdb_id": 130962,
+  "cbdb_name": "陳演",
+  "method": "old",
+  "span": [
+   1640,
+   1644
+  ],
+  "birth": null,
+  "death": null
+ },
+ "靳貴": {
+  "cbdb_id": 131904,
+  "cbdb_name": "靳貴",
+  "method": "old",
+  "span": [
+   1514,
+   1517
+  ],
+  "birth": 1464,
+  "death": 1520
+ },
+ "韓爌": {
+  "cbdb_id": 133276,
+  "cbdb_name": "韓爌",
+  "method": "old",
+  "span": [
+   1620,
+   1630
+  ],
+  "birth": null,
+  "death": null
+ },
+ "顧秉謙": {
+  "cbdb_id": 133643,
+  "cbdb_name": "顧秉謙",
+  "method": "old",
+  "span": [
+   1623,
+   1626
+  ],
+  "birth": null,
+  "death": null
+ },
+ "顧鼎臣": {
+  "cbdb_id": 68210,
+  "cbdb_name": "顧鼎臣",
+  "method": "old",
+  "span": [
+   1538,
+   1540
+  ],
+  "birth": 1473,
+  "death": 1540
+ },
+ "馬士英": {
+  "cbdb_id": 61736,
+  "cbdb_name": "馬士英",
+  "method": "old",
+  "span": [
+   1644,
+   1645
+  ],
+  "birth": null,
+  "death": null
+ },
+ "馬愉": {
+  "cbdb_id": 33867,
+  "cbdb_name": "馬愉",
+  "method": "old",
+  "span": [
+   1440,
+   1447
+  ],
+  "birth": 1395,
+  "death": 1447
+ },
+ "馬自強": {
+  "cbdb_id": 204233,
+  "cbdb_name": "馬自強",
+  "method": "old",
+  "span": [
+   1578,
+   1578
+  ],
+  "birth": 1513,
+  "death": null
+ },
+ "馮銓": {
+  "cbdb_id": 57565,
+  "cbdb_name": "馮銓",
+  "method": "old",
+  "span": [
+   1625,
+   1626
+  ],
+  "birth": 1595,
+  "death": 1672
+ },
+ "高儀": {
+  "cbdb_id": 68218,
+  "cbdb_name": "高儀",
+  "method": "old",
+  "span": [
+   1572,
+   1572
+  ],
+  "birth": 1517,
+  "death": 1572
+ },
+ "高弘圖": {
+  "cbdb_id": 129363,
+  "cbdb_name": "高弘圖",
+  "method": "old",
+  "span": [
+   1644,
+   1644
+  ],
+  "birth": null,
+  "death": null
+ },
+ "高拱": {
+  "cbdb_id": 30847,
+  "cbdb_name": "高拱",
+  "method": "old",
+  "span": [
+   1566,
+   1572
+  ],
+  "birth": 1510,
+  "death": 1578
+ },
+ "高穀": {
+  "cbdb_id": 387098,
+  "cbdb_name": "高穀",
+  "method": "old",
+  "span": [
+   1445,
+   1457
+  ],
+  "birth": null,
+  "death": null
+ },
+ "魏廣微": {
+  "cbdb_id": 133489,
+  "cbdb_name": "魏廣微",
+  "method": "old",
+  "span": [
+   1623,
+   1625
+  ],
+  "birth": null,
+  "death": null
+ },
+ "魏照乘": {
+  "cbdb_id": 351446,
+  "cbdb_name": "魏照乘",
+  "method": "old",
+  "span": [
+   1639,
+   1642
+  ],
+  "birth": null,
+  "death": null
+ },
+ "魏藻德": {
+  "cbdb_id": 133495,
+  "cbdb_name": "魏藻德",
+  "method": "old",
+  "span": [
+   1643,
+   1644
+  ],
+  "birth": 1605,
+  "death": 1644
+ },
+ "黃士俊": {
+  "cbdb_id": 64943,
+  "cbdb_name": "黃士俊",
+  "method": "old",
+  "span": [
+   1636,
+   1638
+  ],
+  "birth": null,
+  "death": null
+ },
+ "黃景昉": {
+  "cbdb_id": 131430,
+  "cbdb_name": "黃景昉",
+  "method": "old",
+  "span": [
+   1642,
+   1643
+  ],
+  "birth": 1596,
+  "death": 1662
+ },
+ "黃淮": {
+  "cbdb_id": 34482,
+  "cbdb_name": "黃淮",
+  "method": "old",
+  "span": [
+   1402,
+   1427
+  ],
+  "birth": 1366,
+  "death": 1449
+ }
+}

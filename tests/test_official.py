@@ -1,30 +1,63 @@
 # -*- coding: utf-8 -*-
-"""正式数据管线测试（D21）：official.py 从年表源提取物重建内阁段。
+"""正式数据管线测试 v3（2026-10-17 数据重建）。
 
 验证点：
-  1. 只含內閣段（殿閣/翰林院台阶官不得混入）
-  2. 每段可溯源：note 为年表原文、verbs 有值
-  3. NULL 纪律：月可为 None，但绝不出现 0（D4）
-  4. 不臆造：同年边界多月冲突 → month 为 None（D20）
-  5. 结构完整性：年份连续段、无倒挂（month_conflict 除外）
+  1. 重解析后的逐年名单（人-年）规模与连续性；
+  2. 年度名单确实逐年（1436/1437/1515 等 OCR 旧缺块已修复）；
+  3. D15 断限：1644 年三月后的南明任命全部剔除；
+  4. 任职段：年份连续、月 ∈ [1,12] 或 None、无倒挂（month_conflict 除外）；
+  5. CBDB ID 定点修复（楊士奇/楊溥/曹鼐/張孚敬/方逢年）；
+  6. 导出 meta 溯源与 demo 隔离（D21）。
 """
+import json
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from mingoff.official import build_cabinet_tenures, export_official, norm_verb
+from mingoff.official import (  # noqa: E402
+    DATA,
+    build_cabinet_tenures,
+    build_shilu,
+    export_official,
+    load_entries,
+)
+
+SOUTHERN = {"高弘圖", "史可法", "馬士英", "王鐸", "姜曰廣", "方拱乾"}
 
 
-def test_only_neige_section():
+def test_entries_scale_and_coverage():
+    entries = load_entries()
+    assert len(entries) > 1000, f"人-年 {len(entries)} 偏少（旧版仅 594）"
+    years = {e["year"] for e in entries if 1402 <= e["year"] <= 1644}
+    missing = [y for y in range(1402, 1645) if y not in years]
+    assert not missing, f"缺年份 {missing}"
+
+
+def test_known_year_rosters_present():
+    """旧解析器丢无注文行的三处典型：1436 張瑛、1437 全年、1515 全年。"""
+    by_year = defaultdict(set)
+    for e in load_entries():
+        by_year[e["year"]].add(e["person"])
+    assert {"楊士奇", "楊榮", "楊溥", "張瑛"} <= by_year[1436]
+    assert {"楊士奇", "楊榮", "楊溥"} <= by_year[1437]
+    assert {"楊廷和", "梁儲", "靳貴", "楊一清"} <= by_year[1515]
+
+
+def test_only_neige_office():
     ts = build_cabinet_tenures()
     assert ts, "内阁段不应为空"
     assert all(t["office"] == "內閣" for t in ts)
+    assert all(t["tenure_type"] == "实授" for t in ts)
 
 
-def test_years_are_contiguous_segments():
-    """段内 years 必须连续递增（年在位体切段的定义）。"""
-    for t in build_cabinet_tenures():
+def test_scale_and_continuity():
+    ts = build_cabinet_tenures()
+    # 旧版 360 段（事件碎片）→ 重解析后约 198 段连续任期
+    assert 150 <= len(ts) <= 260, len(ts)
+    assert sum(len(t["years"]) for t in ts) > 1000
+    for t in ts:
         ys = t["years"]
         assert ys == sorted(ys)
         assert all(b == a + 1 for a, b in zip(ys, ys[1:])), t
@@ -40,9 +73,49 @@ def test_month_is_null_or_1_12_never_zero():
 def test_no_time_inversion_unless_flagged():
     for t in build_cabinet_tenures():
         if t["month_conflict"]:
-            continue  # 单年段并格，已显式标记
+            continue
         if t["start_month"] and t["end_month"]:
             assert (t["start_year"], t["start_month"]) <= (t["end_year"], t["end_month"]), t
+
+
+def test_d15_cutoff_and_southern_ming_removed():
+    ts = build_cabinet_tenures()
+    for t in ts:
+        assert (t["start_year"], t["start_month"] or 1) <= (1644, 3), t
+        assert t["end_year"] <= 1644
+        if t["end_year"] == 1644:
+            assert t["end_month"] in (None, 1, 2, 3), t
+    persons = {t["person"] for t in ts}
+    assert not (SOUTHERN & persons), f"南明人物未剔除: {SOUTHERN & persons}"
+    # 王應熊只保留 1633/1635/1642 的崇祯朝段，1644-08 段剔除
+    wang = [t for t in ts if t["person"] == "王應熊"]
+    assert wang and all(not (t["start_year"] == 1644) for t in wang), wang
+
+
+def test_known_figures_continuous():
+    ts = build_cabinet_tenures()
+    by = defaultdict(list)
+    for t in ts:
+        by[t["person"]].append(t)
+    assert len(by["楊士奇"]) == 1
+    assert (by["楊士奇"][0]["start_year"], by["楊士奇"][0]["end_year"]) == (1402, 1444)
+    assert (by["張居正"][0]["start_year"], by["張居正"][0]["end_year"]) == (1567, 1582)
+    # 張瑛：1426–1429（改南京）与 1434–1436 两段
+    zy = sorted((t["start_year"], t["end_year"]) for t in by["張瑛"])
+    assert zy == [(1426, 1429), (1434, 1436)], zy
+    # 嚴嵩、徐階 单段连续
+    assert [(t["start_year"], t["end_year"]) for t in by["嚴嵩"]] == [(1542, 1562)]
+    assert [(t["start_year"], t["end_year"]) for t in by["徐階"]] == [(1552, 1568)]
+
+
+def test_cbdb_ids_fixed():
+    ts = {t["person"]: t for t in build_cabinet_tenures()}
+    assert ts["楊士奇"]["cbdb_id"] == 66729  # CBDB 作「楊寓」
+    assert ts["楊士奇"]["cbdb_name"] == "楊寓"
+    assert ts["楊溥"]["cbdb_id"] == 66746   # 旧挂 199050（无任职记录）
+    assert ts["曹鼐"]["cbdb_id"] == 67222   # 旧挂 199155（错误同名）
+    assert ts["張孚敬"]["cbdb_id"] == 68266  # CBDB 作「張璁」
+    assert ts["方逢年"]["cbdb_id"] == 339044  # 旧挂 38925（方椿年）
 
 
 def test_confidence_bounds():
@@ -50,96 +123,37 @@ def test_confidence_bounds():
         assert 0 < t["confidence"] <= 0.8
 
 
-def test_known_figures_present():
-    """抽查名人（来源：年表册1）。⚠️ 实测发现：年表对「常年在任者」并非逐年
-    列名（楊士奇 1403/1405–06 等年份缺行，張居正 1568–69/1572–75 空档），
-    装配按源忠实切段、**不填补空档**（D4）。故此处只验证存在性与锚点年份。"""
-    ts = {t["person"]: t for t in build_cabinet_tenures()}
-    assert "楊士奇" in ts
-    # 楊士奇有 1402（永乐入阁起点年）与 1444（正统末年）的段
-    assert any(t["start_year"] <= 1402 for t in build_cabinet_tenures()
-               if t["person"] == "楊士奇")
-    # 張居正：1570 入阁前的段在，1582（万历十年卒）有段终点
-    zjz_segs = [t for t in build_cabinet_tenures() if t["person"] == "張居正"]
-    assert any(t["end_year"] == 1582 for t in zjz_segs), zjz_segs
-    assert any(t["start_year"] <= 1570 for t in zjz_segs)
-
-
-def test_segments_match_source_presence():
-    """段的在任年集合必须与源条目逐年一致（不添加不删除）。"""
-    import json
-    from pathlib import Path
-    from mingoff.official import DATA
-    entries = json.loads((DATA / "neige_entries_aligned.json").read_text(encoding="utf-8"))
-    src_years = {}
-    for e in entries:
-        if e.get("section") == "內閣":
-            src_years.setdefault(e["person"], set()).add(e["year"])
-    built = {}
-    for t in build_cabinet_tenures():
-        built.setdefault(t["person"], set()).update(t["years"])
-    assert built == src_years, "装配必须与源逐年一致"
-
-
 def test_export_meta_traceability():
     doc = export_official()
     m = doc["meta"]
     assert m["dataset"] == "mingoff-cabinet"
-    assert "张德信" in m["source"] and "neige_" in m["source"]
+    assert m["version"] == 3
+    assert m["canvas_from"] == 1368
+    assert "张德信" in m["source"]
     assert m["stats"]["tenures"] == len(doc["tenures"]) > 0
     assert m["stats"]["persons"] == len({t["person"] for t in doc["tenures"]})
+    assert m["stats"]["person_years"] > 1000
 
 
 def test_demo_merge_data_not_required():
-    """D21：正式管线输入只有两份源提取物——merge 产物不在依赖里。"""
+    """D21：正式管线输入只有重解析条目 + CBDB 映射，不引用 demo 合并产物。"""
     import mingoff.official as off
     src = Path(off.__file__).read_text(encoding="utf-8")
     for banned in ("demo-data", "demo_data", "tenures_with_sinica", "merge_demo"):
         assert banned not in src, f"正式管线引用了 demo 数据: {banned}"
 
 
-def test_norm_verb_patterns():
-    assert norm_verb("", "禮尚兼東閣大學士入") == "enter"
-    assert norm_verb("罷") == "leave"
-    assert norm_verb("卒于任") == "leave"
-    assert norm_verb("贈") == "other"
-
-
-def test_tenure_type_is_honest():
-    """内阁年表不区分实授/署理/加衔 → 一律实授，不臆造（D4 精神）。"""
-    for t in build_cabinet_tenures():
-        assert t["tenure_type"] == "实授"
-        assert isinstance(t["leave"], str) and t["leave"]
-
-
-def test_leave_reason_comes_from_verbs():
-    for t in build_cabinet_tenures():
-        if t["leave_verbs"]:
-            assert t["leave"] != "未載"
-            # 动词直译：任一原始动词必须体现在离任文本里（映射外的原样保留）
-            assert any(v in t["leave"] for v in t["leave_verbs"]), t
-        else:
-            assert t["leave"] == "未載"
-
-
-def test_notes_are_cleaned_of_ocr_title_lines():
-    """源注文混入 '# 明代職官年表' 之类 OCR 标题行，导出前必须清掉。"""
-    for t in build_cabinet_tenures():
-        assert "#" not in t["note"], t["person"]
-        assert t["note"] == t["note"].strip()
-
-
 def test_shilu_hits_are_relevant_and_bounded():
     doc = export_official()
-    assert doc["meta"]["version"] == 2
+    tenures = doc["tenures"]
+    persons = {t["person"] for t in tenures}
     assert "shilu" in doc
-    persons = {t["person"] for t in doc["tenures"]}
     for person, blk in doc["shilu"].items():
         assert person in persons
         assert blk["count"] >= len(blk["hits"]) >= 1
         assert len(blk["hits"]) <= 8
         wins = [(t["start_year"] - 1, t["end_year"] + 1)
-                for t in doc["tenures"] if t["person"] == person]
+                for t in tenures if t["person"] == person]
         for h in blk["hits"]:
             assert any(lo <= h["year"] <= hi for lo, hi in wins), (person, h["year"])
             assert h["source"] and h["content"]

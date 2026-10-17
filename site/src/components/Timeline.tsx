@@ -2,12 +2,13 @@
 
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
+  CANVAS_FROM,
   CANVAS_SLOTS,
   CN_MONTHS,
   CUT_M,
   CUT_Y,
+  DATA_FROM,
   ERA_JUMPS,
-  MIN_YEAR,
   META,
   M_PER_YEAR,
   REIGNS,
@@ -68,7 +69,7 @@ function barLabels(text: string, widthPx: number, step: number, offset: number) 
 
 const Axis = memo(function Axis({ slotW }: { slotW: number }) {
   const years = useMemo(
-    () => Array.from({ length: CUT_Y - MIN_YEAR + 1 }, (_, i) => MIN_YEAR + i),
+    () => Array.from({ length: CUT_Y - CANVAS_FROM + 1 }, (_, i) => CANVAS_FROM + i),
     []
   );
   return (
@@ -108,7 +109,7 @@ const ReignRow = memo(function ReignRow({ slotW }: { slotW: number }) {
     const e = Math.min(CANVAS_SLOTS - 1, slotOf(r.endY, r.endM, true));
     if (e < 0 || s > CANVAS_SLOTS - 1) return null;
     const years: number[] = [];
-    for (let y = Math.max(r.startY, MIN_YEAR); y <= Math.min(r.endY, CUT_Y); y++) {
+    for (let y = Math.max(r.startY, CANVAS_FROM); y <= Math.min(r.endY, CUT_Y); y++) {
       years.push(y);
     }
     return { r, s, e, years };
@@ -158,7 +159,7 @@ const ReignRow = memo(function ReignRow({ slotW }: { slotW: number }) {
 
 const ColumnLines = memo(function ColumnLines({ slotW, labelW }: Dims) {
   const years = useMemo(
-    () => Array.from({ length: CUT_Y - MIN_YEAR + 1 }, (_, i) => MIN_YEAR + i),
+    () => Array.from({ length: CUT_Y - CANVAS_FROM + 1 }, (_, i) => CANVAS_FROM + i),
     []
   );
   return (
@@ -207,9 +208,19 @@ const CabinetRow = memo(function CabinetRow({
         <span className="dept">內閣 · {persons} 人 / {TENURES.length} 任</span>
       </div>
       <div className="track" style={{ height: trackH }}>
+        {/* 洪武—建文三年（1368–1401）内阁未设：画布留空并明确标注 */}
+        <span
+          className="void-span"
+          style={{ left: 0, width: slotOf(DATA_FROM, 1) * slotW }}
+          aria-hidden
+        />
+        <span className="void-note" style={{ left: 10, top: TRACK_PAD }}>
+          洪武元年—建文三年（1368–1401）內閣未設 · 留空
+        </span>
         {lanes.map((lane, li) =>
           lane.map((t, ti) => {
             const { s, e } = span(t);
+            if (e < 0 || s > CANVAS_SLOTS - 1 || e < s) return null;
             const idle = slot < s || slot > e;
             const cls = [
               "bar",
@@ -291,6 +302,7 @@ function Drawer({
             <div className="drawer-office">
               內閣 · 內閣大臣
               {t.cbdb_id != null && ` · CBDB #${t.cbdb_id}`}
+              {t.cbdb_name && t.cbdb_name !== t.person && `（${t.cbdb_name}）`}
             </div>
           </div>
           <button className="close" ref={closeRef} aria-label="关闭" onClick={onClose}>
@@ -336,14 +348,6 @@ function Drawer({
           <dl className="field">
             <dt>在任年</dt>
             <dd className="mono">{t.years.join("、")}</dd>
-          </dl>
-
-          <dl className="field">
-            <dt>任免</dt>
-            <dd>
-              入：{t.enter_verbs.join("、") || "—"}　离：
-              {t.leave_verbs.join("、") || "—"}
-            </dd>
           </dl>
 
           <dl className="field">
@@ -550,7 +554,7 @@ export default function Timeline() {
     [goToSlot, slotW]
   );
 
-  const cursorYear = MIN_YEAR + Math.floor(slot / M_PER_YEAR);
+  const cursorYear = CANVAS_FROM + Math.floor(slot / M_PER_YEAR);
   const cursorMonth = (slot % M_PER_YEAR) + 1;
 
   const activeEra = useMemo(() => {
@@ -570,7 +574,7 @@ export default function Timeline() {
           <span className="sub">MingOff</span>
           <span className="spacer" />
           <span className="scope">
-            內閣 {MIN_YEAR}–{CUT_Y}.{CUT_M} · {META.stats.tenures} 任職 ·{" "}
+            內閣 {DATA_FROM}–{CUT_Y}.{CUT_M} · {META.stats.tenures} 任職 ·{" "}
             {META.stats.persons} 人
           </span>
         </div>
@@ -692,12 +696,14 @@ export default function Timeline() {
       <footer>
         <div className="rule" />
         <p>
-          <span className="k">数据范围</span>　明代内阁大臣
-          （1402–1644.3，内阁始设于建文四年），{META.stats.tenures} 任职段、
-          {META.stats.persons} 人。<b>缺载处留空，不作填补。</b>
+          <span className="k">数据范围</span>　画布自洪武元年（1368）至崇祯十七年三月
+          （1644.3）；内阁大臣 {DATA_FROM}–1644.3（内阁始设于建文四年），
+          {META.stats.tenures} 任职段、{META.stats.persons} 人。
+          <b>洪武—建文三年无内阁记录，画布留空；缺载处亦留空，不作填补。</b>
         </p>
         <p>
-          <span className="k">断限</span>　止于崇祯十七年三月（1644.3），不含南明。
+          <span className="k">断限</span>　止于崇祯十七年三月（1644.3）；已剔除三月之后
+          的南明任命（高弘圖、王應熊、史可法、馬士英等），不做南明。
         </p>
         <p>
           <span className="k">时间轴</span>　每月一格、各格等宽（无限画布，随内容横向
@@ -705,8 +711,9 @@ export default function Timeline() {
           （Shift 逐年）。
         </p>
         <p>
-          <span className="k">皇帝行</span>　每位皇帝一段；年内小字为
-          <b>当年二月周岁</b>（生年据通行史料；生日未到者取"年差减一"，保守不虚报）。
+          <span className="k">皇帝行</span>　每位皇帝一段（英宗两度临御分正統/天順）；
+          年内小字为<b>当年二月周岁</b>（生年据通行史料；生日未到者取"年差减一"，
+          保守不虚报）。
         </p>
         <p>
           <span className="k">月份依据</span>　年表注文所记任免月份；详情抽屉另列
@@ -715,11 +722,13 @@ export default function Timeline() {
         </p>
         <p>
           <span className="k">史料依据</span>　张德信《明代职官年表》册1·內閣大臣年表
-          （MinerU OCR 提取）；人物对齐 CBDB（{META.stats.cbdb_aligned} 段）。
+          （MinerU OCR 表格重解析；缺块以原书 PDF 页补录）；人物对齐 CBDB
+          （{META.stats.cbdb_aligned} 段）。
         </p>
         <p>
-          <span className="k">数据说明</span>　年表为「年在位」体：某年列名即该年在任；
-          年份空档按源保留，不填补。
+          <span className="k">数据说明</span>　年表为「年在位」体：某年列名即该年在任。
+          本轮重建保留了旧解析漏掉的“无注文人名行”，故全朝任职连续；
+          《明史》宰辅年表与 CBDB 用作校勘断言，不替代原书。
         </p>
         <p style={{ marginTop: 12 }}>
           开源非商业项目 · 代码 Apache-2.0 · 本项目整理数据 CC BY-NC-SA 4.0

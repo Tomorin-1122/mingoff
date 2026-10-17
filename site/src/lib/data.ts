@@ -1,16 +1,17 @@
 import cabinet from "@/data/cabinet.json";
 
 /* ============================================================
- * 正式数据（D23 v2）：来自 `python -m mingoff.official`
- *   - tenures：张德信《明代职官年表》册1「內閣」任职段
+ * 正式数据（D23 v3）：来自 `python -m mingoff.official`
+ *   - tenures：张德信《明代职官年表》册1「內閣」逐年名单重建的任职段
  *   - shilu  ：中研院《明實錄》检索命中（与本人任期相关者，每人最多 8 条）
- * 前端只做「画」与「查」，不做任何推断。
+ * 画布从洪武元年（1368）开始，内阁 1402 年始设，之前留空。
  * ============================================================ */
 
-/** 任职段（与 official.py 导出 schema 一一对应，D23 v2） */
+/** 任职段（与 official.py 导出 schema 一一对应，D23 v3） */
 export interface Tenure {
   person: string;
   cbdb_id: number | null;
+  cbdb_name: string | null;
   office: string;
   tenure_type: string;
   start_year: number;
@@ -18,9 +19,8 @@ export interface Tenure {
   end_year: number;
   end_month: number | null;
   month_conflict: boolean;
+  end_clamped: boolean;
   confidence: number;
-  enter_verbs: string[];
-  leave_verbs: string[];
   leave: string;
   note: string;
   years: number[];
@@ -45,6 +45,7 @@ export interface ShiluBlock {
 export interface CabinetMeta {
   dataset: string;
   version: number;
+  canvas_from: number;
   source: string;
   pipeline: string;
   generated_at: string;
@@ -58,6 +59,7 @@ export interface CabinetMeta {
     with_leave: number;
     shilu_persons: number;
     shilu_hits: number;
+    person_years: number;
   };
 }
 
@@ -74,11 +76,13 @@ export const SHILU = doc.shilu;
 /** 断限：崇祯十七年三月（D15/D17）。画布与数据都止于此 */
 export const CUT_Y = 1644;
 export const CUT_M = 3;
-/** 画布起点：内阁始设于建文四年（1402） */
-export const MIN_YEAR = META.stats.years_covered[0];
+/** 画布起点：洪武元年（1368） */
+export const CANVAS_FROM = 1368;
+/** 内阁数据起点：建文四年（1402，内阁始设） */
+export const DATA_FROM = META.stats.years_covered[0];
 export const M_PER_YEAR = 12;
-/** 画布总月格：1402.1 → 1644.3 */
-export const CANVAS_SLOTS = (CUT_Y - MIN_YEAR) * M_PER_YEAR + CUT_M;
+/** 画布总月格：1368.1 → 1644.3 */
+export const CANVAS_SLOTS = (CUT_Y - CANVAS_FROM) * M_PER_YEAR + CUT_M;
 
 /* ================= 干支 / 年号 ================= */
 
@@ -124,7 +128,7 @@ export function eraLabel(year: number): string {
 }
 
 /** 皇帝世系行：一个皇帝一段（英宗两度临御 = 正統/天順两段）。
- *  画布自 1402（建文四年，内阁始设）起，建文段只保留 1402 年。
+ *  画布自 1368（洪武元年）起；内阁 1402 始设，洪武—建文三年为空。
  *  birth：生年/生月（公历月份），用于年在位行的周岁标注。 */
 export interface Reign {
   temple: string;
@@ -139,7 +143,8 @@ export interface Reign {
 }
 
 export const REIGNS: Reign[] = [
-  { temple: "惠帝", era: "建文", startY: 1402, startM: 1, endY: 1402, endM: 12, birthY: 1377, birthM: 12, barLabel: "建文" },
+  { temple: "太祖", era: "洪武", startY: 1368, startM: 1, endY: 1398, endM: 12, birthY: 1328, birthM: 10, barLabel: "洪武" },
+  { temple: "惠帝", era: "建文", startY: 1399, startM: 1, endY: 1402, endM: 12, birthY: 1377, birthM: 12, barLabel: "建文" },
   { temple: "成祖", era: "永樂", startY: 1403, startM: 1, endY: 1424, endM: 12, birthY: 1360, birthM: 5, barLabel: "永樂" },
   { temple: "仁宗", era: "洪熙", startY: 1425, startM: 1, endY: 1425, endM: 12, birthY: 1378, birthM: 8, barLabel: "洪熙" },
   { temple: "宣宗", era: "宣德", startY: 1426, startM: 1, endY: 1435, endM: 12, birthY: 1399, birthM: 3, barLabel: "宣德" },
@@ -162,7 +167,7 @@ export function ageAt(year: number, month: number, r: Reign): number {
   return year - r.birthY - (month < r.birthM ? 1 : 0);
 }
 
-/** 年号跳转点（全朝导航）：画布自 1402 起，建文从 1402 起算 */
+/** 年号跳转点（全朝导航）：画布 1368 起，洪武/建文朝无内阁记录 */
 export interface EraJump {
   name: string;
   year: number;
@@ -170,7 +175,8 @@ export interface EraJump {
 }
 
 export const ERA_JUMPS: EraJump[] = [
-  { name: "建文", year: 1402, month: 1 },
+  { name: "洪武", year: 1368, month: 1 },
+  { name: "建文", year: 1399, month: 1 },
   { name: "永樂", year: 1403, month: 1 },
   { name: "洪熙", year: 1425, month: 1 },
   { name: "宣德", year: 1426, month: 1 },
@@ -205,7 +211,7 @@ export function slotOf(
         ? M_PER_YEAR - 1
         : 0
       : Math.max(0, Math.min(M_PER_YEAR - 1, month - 1));
-  return (year - MIN_YEAR) * M_PER_YEAR + m;
+  return (year - CANVAS_FROM) * M_PER_YEAR + m;
 }
 
 export interface Span {
