@@ -1,18 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
 
-/* 设计令牌：沿用 demo 定调（界面设计方向.md Pass 1）
-   墨/宣/靛/朱取自明代官方文书与朱墨套印；朱色只表"不确定" */
-:root {
-  --ink: #1b1a17;
-  --paper: #fbfaf7;
-  --indigo: #1f3a5f;
-  --vermilion: #a8322d;
-  --grey: #6b6960;
-  --line: #e3e0d8;
-  --slot-w: 14px; /* 月格宽：276 年 × 12 格需横滚，先窄后调 */
-  --label-w: 220px;
-}
-
+/* 基础 reset（主体样式在 timeline.css，移植自 demo 模板） */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,32 +10,14 @@ html {
   color-scheme: light;
 }
 
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-h1,
-h2,
-.era {
-  font-family: "Noto Serif SC", "SimSun", serif;
-}
-
-.mono {
-  font-family: "IBM Plex Mono", Consolas, monospace;
-}
-
-.vermilion {
-  color: var(--vermilion);
-}
-
 a {
-  color: var(--indigo);
+  color: var(--dian);
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
 }

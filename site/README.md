@@ -25,11 +25,22 @@ pnpm build        # 产物在 out/，静态文件可直接部署
 ```
 site/
 ├─ src/app/            页面（page.tsx 时间轴 + timeline.css）
-├─ src/components/Timeline.tsx   月格等宽时间轴（D16/D19 几何，React 移植版）
-├─ src/lib/data.ts     数据类型 + 干支/年号 + 在任查询（D8 宁可多列）
+├─ src/components/Timeline.tsx   月格等宽时间轴（web/demo.template.html 的 React 移植版）
+├─ src/lib/data.ts     数据类型 + 干支/年号/世系 + 在任查询 + 泳道分配
 ├─ src/data/cabinet.json         正式数据（official.py 导出的副本）
 └─ next.config.ts      output: "export"（D22 静态导出）
 ```
+
+## 与 demo 的关系
+
+界面**逐项移植自 `web/demo.template.html`**（2026-10-16 老板验收的模板）：
+fixed 页头 + masthead/era/stepper、月精度滑块（step=1）、图例、朱色皇帝
+世系行（16 帝全朝）、泳道分配（assignLanes 区间图着色）、年轴干支逐年
+标注、月刻度、当前月高亮淡化、同人联动（墨色 peer）、断限线 1644.3、
+详情抽屉（任期/精度/任免/置信度条/出处/年表原文/caveat）。
+
+差异（由数据范围决定）：demo 是崇祯朝 9 职位，正式版当前是**全朝内阁
+一职**（阶段②扩职位后行结构不变）；皇帝行按世系分 16 段而非单行。
 
 ## 设计令牌
 
