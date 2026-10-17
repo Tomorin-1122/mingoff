@@ -7,6 +7,10 @@ data/
 *.sqlite-wal
 *.db
 
+# 例外（D21/D23）：正式管线的版本化导出物是数据资产，必须入库
+!src/mingoff/data/official_cabinet.json
+!site/src/data/cabinet.json
+
 # CBDB 快照等外部数据导入物（体量大、有独立许可，不入库）
 imports/
 *.csv
