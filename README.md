@@ -164,7 +164,10 @@ mingoff/
 │  ├─ export_demo.py      导出内嵌 JSON 并产出单文件 demo
 │  └─ cli.py              命令行入口
 ├─ web/demo.template.html demo 模板（数据构建时注入）
-├─ web/demo.html          产出的单文件 demo（双击即开）
+├─ web/demo.html          产出的单文件 demo（双击即开，仅评审用，D21）
+├─ src/mingoff/official.py ★ 正式数据管线：年表→内阁任职段（D21）
+├─ docs/正式数据管线报告.md  正式版产出规模与源质量发现
+├─ site/                  ★ 正式网站（Next.js 静态导出，D22；见 site/README.md）
 └─ data/mingoff.sqlite    运行时数据库（不入库）
 ```
 

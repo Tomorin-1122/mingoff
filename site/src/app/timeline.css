@@ -1,0 +1,264 @@
+/* ── 时间轴布局（D19：页头 fixed 钉视口，画布统一像素坐标系） ── */
+
+.tl-root {
+  min-height: 100vh;
+}
+
+.tl-head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  padding: 10px 20px 8px;
+}
+
+.tl-title h1 {
+  font-size: 20px;
+  display: inline;
+}
+
+.tl-title .era {
+  color: var(--indigo);
+  font-size: 17px;
+  margin-left: 6px;
+}
+
+.tl-sub {
+  color: var(--grey);
+  font-size: 12px;
+  margin-left: 12px;
+  display: inline;
+}
+
+.tl-cursor {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.tl-cursor input[type="range"] {
+  flex: 1;
+  accent-color: var(--indigo);
+}
+
+.tl-cursor .era {
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.tl-office {
+  font-size: 12px;
+  color: var(--grey);
+  max-width: 46em;
+}
+
+.tl-office b {
+  color: var(--ink);
+}
+
+/* ── 画布 ── */
+
+.tl-scroll {
+  overflow-x: auto;
+  padding-top: 92px;
+}
+
+.tl-canvas {
+  position: relative;
+  min-width: 100%;
+}
+
+/* 年轴 */
+.tl-yearaxis {
+  position: relative;
+  height: 34px;
+  border-bottom: 1px solid var(--line);
+}
+
+.tl-yearlabel {
+  position: absolute;
+  top: 4px;
+  font-size: 11px;
+  color: var(--grey);
+  white-space: nowrap;
+}
+
+.tl-yearlabel b {
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.tl-yearlabel i {
+  font-style: normal;
+  margin-left: 3px;
+  font-family: "Noto Serif SC", serif;
+}
+
+.tl-vline {
+  position: absolute;
+  top: 34px;
+  bottom: 0;
+  width: 1px;
+  background: var(--line);
+  z-index: 1;
+}
+
+/* 行 */
+.tl-rows {
+  position: relative;
+}
+
+.tl-row {
+  position: absolute;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  border-bottom: 1px dotted var(--line);
+}
+
+.tl-name {
+  position: sticky;
+  left: 0;
+  display: inline-block;
+  width: var(--label-w);
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: 13px;
+  background: var(--paper);
+  z-index: 5;
+}
+
+.tl-name i {
+  font-style: normal;
+  color: var(--vermilion);
+  margin-left: 4px;
+}
+
+.tl-name-hot {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+/* 任职条：形态区分月份精度（D16 用形态不用颜色；颜色留给"不确定"） */
+.tl-bar {
+  position: absolute;
+  top: 7px;
+  height: 14px;
+  border-radius: 4px;
+  background: var(--indigo);
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.tl-bar-fuzzy {
+  /* 起月未载：两端渐隐——月位置是"不早于"而非精确 */
+  background: linear-gradient(
+    to right,
+    rgba(31, 58, 95, 0.25),
+    var(--indigo) 18%
+  );
+}
+
+.tl-bar-conflict {
+  box-shadow: 0 0 0 1.5px var(--vermilion);
+}
+
+.tl-bar-hot {
+  background: var(--ink);
+  opacity: 1;
+}
+
+.tl-bar-sel {
+  outline: 2px solid var(--ink);
+  outline-offset: 1px;
+}
+
+/* 年份游标（签名元素） */
+.tl-cursorline {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--vermilion);
+  opacity: 0.55;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* ── 详情抽屉 ── */
+
+.tl-drawer {
+  position: fixed;
+  right: 0;
+  top: 92px;
+  bottom: 0;
+  width: min(400px, 90vw);
+  background: #fff;
+  border-left: 1px solid var(--line);
+  box-shadow: -6px 0 24px rgba(27, 26, 23, 0.08);
+  padding: 20px 22px;
+  overflow-y: auto;
+  z-index: 20;
+}
+
+.tl-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  border: 0;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--grey);
+}
+
+.tl-drawer h2 {
+  font-size: 22px;
+  margin-bottom: 2px;
+}
+
+.tl-tenure-range {
+  color: var(--indigo);
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.tl-note {
+  font-family: "Noto Serif SC", serif;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.tl-meta {
+  font-size: 13px;
+}
+
+.tl-meta dt {
+  color: var(--grey);
+  display: inline;
+}
+
+.tl-meta dt::after {
+  content: "：";
+}
+
+.tl-meta dd {
+  display: inline;
+  margin: 0 14px 4px 0;
+}
+
+.tl-discipline {
+  margin-top: 14px;
+  font-size: 11px;
+  color: var(--grey);
+  border-top: 1px dotted var(--line);
+  padding-top: 8px;
+}
