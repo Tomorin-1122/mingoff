@@ -20,6 +20,7 @@ build_tenures.py 共享装配**思路**（年在位体 → 连续年合并段 �
 from __future__ import annotations
 
 import json
+import re
 import sys
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -29,14 +30,15 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 DATA = Path(__file__).resolve().parent / "data"
 
+#: 实录命中截断：抽屉里最多展示 8 条（与 demo 模板一致），其余显示"另有 N 条"
+SHILU_SHOW = 8
+
 # ── 事件动词分类（与 build_tenures.py 同一实测结论，独立维护） ──────────
 ENTER = {"入", "入朝", "入直", "任", "起", "起復", "召", "復官", "還朝", "視事", "至京"}
 LEAVE = {"罷", "卒", "致仕", "削籍", "革職", "下獄", "論死", "正法", "自盡",
          "被執", "戍", "謫", "丁憂", "丁父憂", "丁母憂", "憂去", "乞歸", "乞休",
          "養病", "杜門", "卒于", "調別任", "免", "回籍", "致仕歸"}
 # 入职定式：年表注文的授官多不带动词（'禮尚兼東閣大學士入'），须联合判定
-import re
-
 ENTER_PAT = re.compile(
     r"(大學士入|入閣|入直|入朝|兼東閣大學士|兼文淵閣大學士|兼武英殿大學士|"
     r"兼文華殿大學士|兼建極殿大學士|兼中極殿大學士|兼謹身殿大學士|兼華蓋殿大學士|"
@@ -59,6 +61,37 @@ def norm_verb(verb: str, chunk: str = "") -> str:
 def canon_section(sec: str) -> str | None:
     """正式版只取『內閣』；殿閣/翰林院是台阶官，阶段②另做（D21 范围纪律）。"""
     return "內閣" if sec == "內閣" else None
+
+
+#: 年表注文里的版式噪声行（OCR 页眉/标题：「# 明代職官年表」之类）
+_NOTE_JUNK = re.compile(r"^\s*#+\s*.*$", re.M)
+
+
+def clean_note(s: str) -> str:
+    """清理年表注文：去掉 OCR 混入的标题行（以 # 开头）与多余空白。
+
+    实测 32 条注文带 '#' 标题行，个别整条只有 '# 明代職官年表'（劉吉）。
+    不清掉会在详情抽屉里露出源文件噪声；但**不改动正文**（保留原文供核对）。
+    """
+    if not s:
+        return ""
+    s = _NOTE_JUNK.sub("", s)
+    s = "\n".join(line.strip() for line in s.splitlines() if line.strip())
+    return s.strip()
+
+
+#: 离任事件动词 → 人读文本。年表注文只记动作，这里直译不推断（D4 精神）
+LEAVE_LABEL = {
+    "卒": "卒于任", "致仕": "致仕", "罷": "罷免", "下獄": "下獄",
+    "削籍": "削籍", "被執": "被執", "戍": "謫戍", "養病": "養病",
+    "乞休": "乞休", "丁憂": "丁憂", "丁父憂": "丁父憂", "丁母憂": "丁母憂",
+}
+
+#: 内阁任职性质：年表册1 对内阁只记任免动作、不区分实授/署理/加衔，
+#: 因此正式版**一律记实授**，不臆造署理或加衔（旧版 demo 的 9 职位含署理，
+#: 是《明史》年表口径；内阁无此问题）。
+CABINET_TENURE_TYPE = "实授"
+
 
 
 def load_sources() -> tuple[list[dict], dict[tuple[str, int], list[dict]]]:
@@ -94,7 +127,7 @@ def build_cabinet_tenures() -> list[dict]:
         # CBDB id：任一条目对上即取（对齐时按人唯一）
         if e["person"] not in cbdb_of or e["cbdb_id"]:
             cbdb_of[e["person"]] = e["cbdb_id"]
-        note_of[(e["person"], e["year"])] = e["note"]
+        note_of[(e["person"], e["year"])] = clean_note(e["note"])
 
     tenures: list[dict] = []
     for person in sorted(presence):
@@ -137,6 +170,7 @@ def build_cabinet_tenures() -> list[dict]:
                 "person": person,
                 "cbdb_id": cbdb_of.get(person),
                 "office": "內閣",
+                "tenure_type": CABINET_TENURE_TYPE,
                 "start_year": s_y,
                 "start_month": start_month,
                 "end_year": e_y,
@@ -145,21 +179,77 @@ def build_cabinet_tenures() -> list[dict]:
                 "confidence": conf,
                 "enter_verbs": sorted({v["verb"] for v in s_enter if v["verb"]}),
                 "leave_verbs": sorted({v["verb"] for v in e_leave if v["verb"]}),
+                # 离任原因：年表注文事件动词直译；无事件 → "未載"（不推断）
+                "leave": "、".join(
+                    LEAVE_LABEL.get(v, v) for v in
+                    sorted({v["verb"] for v in e_leave if v["verb"]})
+                ) or "未載",
                 "note": note_of.get((person, s_y), ""),
                 "years": seg,
             })
     return tenures
 
 
+def build_shilu(tenures: list[dict]) -> dict:
+    """把中研院《明實錄》命中筛成「与本人内阁任期相关」的展示数据（v2 新增）。
+
+    输入 `src/mingoff/data/sinica_all.json` 是**源提取物**（每人的实录检索命中，
+    非 demo 合并产物，D21 纪律不破）。筛选规则保守：
+
+      * 只取命中公元年落在该人内阁任职区间 **外扩一年**内者（入阁前后各留余量）；
+      * 按 (source, content) 去重，按年月排序；
+      * 每人最多 8 条正文（抽屉展示用），另记 count —— 抽屉显示「另有 N 条」。
+
+    这样抽屉里贴的是**任期内**的实录原文，而不是本人一生里最早那几条
+    （demo 版直接切片前 8 条，常贴出与任期无关的少年记录）。
+    """
+    path = DATA / "sinica_all.json"
+    if not path.exists():
+        return {}
+    raw = json.loads(path.read_text(encoding="utf-8"))
+
+    windows: dict[str, list[tuple[int, int]]] = defaultdict(list)
+    for t in tenures:
+        windows[t["person"]].append((t["start_year"] - 1, t["end_year"] + 1))
+
+    out: dict[str, dict] = {}
+    for person, wins in windows.items():
+        hits = raw.get(person, [])
+        sel, seen = [], set()
+        for h in hits:
+            y = h.get("year")
+            if y is None or not any(lo <= y <= hi for lo, hi in wins):
+                continue
+            key = (h.get("source"), h.get("content"))
+            if key in seen:
+                continue
+            seen.add(key)
+            sel.append({
+                "year": y,
+                "era": h.get("era"),
+                "era_year": h.get("era_year"),
+                "month": h.get("month"),
+                "leap": bool(h.get("leap")),
+                "source": h.get("source", ""),
+                "content": h.get("content", ""),
+            })
+        sel.sort(key=lambda x: (x["year"], x["month"] or 0))
+        if sel:
+            out[person] = {"count": len(sel), "hits": sel[:SHILU_SHOW]}
+    return out
+
+
 def export_official(out_path: Path | None = None) -> dict:
     """产出正式版 cabinet.json（含溯源 meta）。返回导出对象（供测试）。"""
     tenures = build_cabinet_tenures()
+    shilu = build_shilu(tenures)
     doc = {
         "meta": {
             "dataset": "mingoff-cabinet",
-            "version": 1,
+            "version": 2,
             "source": "张德信《明代职官年表》册1·內閣大臣年表（MinerU OCR 提取，"
-                      "条目与事件见 src/mingoff/data/neige_*.json）",
+                      "条目与事件见 src/mingoff/data/neige_*.json）；"
+                      "实录命中据中研院「明代职官资料库」检索（src/mingoff/data/sinica_all.json）",
             "pipeline": "mingoff.official",
             "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "stats": {
@@ -170,9 +260,13 @@ def export_official(out_path: Path | None = None) -> dict:
                 "with_start_month": sum(1 for t in tenures if t["start_month"]),
                 "with_end_month": sum(1 for t in tenures if t["end_month"]),
                 "cbdb_aligned": sum(1 for t in tenures if t["cbdb_id"]),
+                "with_leave": sum(1 for t in tenures if t["leave"] != "未載"),
+                "shilu_persons": len(shilu),
+                "shilu_hits": sum(v["count"] for v in shilu.values()),
             },
         },
         "tenures": tenures,
+        "shilu": shilu,
     }
     if out_path is None:
         out_path = DATA / "official_cabinet.json"
@@ -187,5 +281,7 @@ if __name__ == "__main__":
           f"{s['years_covered'][0]}–{s['years_covered'][1]}）")
     print(f"有起月 {s['with_start_month']}，有迄月 {s['with_end_month']}，"
           f"CBDB 对齐 {s['cbdb_aligned']}")
+    print(f"离任原因 {s['with_leave']}；实录相关命中 {s['shilu_hits']} 条 / "
+          f"{s['shilu_persons']} 人")
     from collections import Counter
     print("confidence:", dict(Counter(t["confidence"] for t in doc["tenures"])))

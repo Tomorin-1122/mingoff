@@ -1,28 +1,47 @@
-/* 移植自 web/demo.template.html（老板验收过的模板），类名对应 React 组件。
-   几何规则（D16/D19）原样保留：月格等宽、统一像素坐标系、fixed 页头。 */
+/* ============================================================
+ * 正式站时间轴样式
+ * 逐项移植自 web/demo.template.html（老板验收版），适配：
+ *  ① 皇帝行 = 16 帝单行分段（含年周岁小字）
+ *  ② 页头内增加「年号跳转」条（全朝 242 年导航）
+ *  ③ 滑块并入页头（demo 里滑块被页头遮住的 bug 顺手修掉）
+ * 设计令牌与几何规则一律沿用 demo：墨 / 宣 / 靛 / 朱；月格等宽像素坐标。
+ * ============================================================ */
 
 :root {
-  --mo: #1b1a17;        /* 墨 */
-  --xuan: #fbfaf7;      /* 宣纸白 */
+  --mo: #1b1a17; /* 墨 */
+  --xuan: #fbfaf7; /* 宣纸白 */
   --xuan-2: #f2f0ea;
-  --dian: #1f3a5f;      /* 靛：主强调 */
+  --dian: #1f3a5f; /* 靛：主强调 */
   --dian-soft: #43617f;
-  --zhu: #a8322d;       /* 朱：皇帝行底色 + 缺载/存疑 */
+  --zhu: #a8322d; /* 朱：皇帝行 + 缺载/存疑 */
   --zhu-soft: #c4635e;
   --hui: #6b6960;
   --xian: #d9d5cb;
 
   --serif: "Source Han Serif SC", "Noto Serif SC", "Songti SC", "SimSun", serif;
-  --sans: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --sans: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei",
+    sans-serif;
   --mono: "JetBrains Mono", "IBM Plex Mono", "Cascadia Mono", Consolas, monospace;
 
   --gut: clamp(14px, 2.6vw, 36px);
-  --label-w: 132px;
-  --slot-w: 26px;
+  --label-w: 132px; /* 左侧职官名列宽 */
+  --slot-w: 26px; /* 一个月格宽 */
+  --fixed-h: 164px; /* 页头占位（JS 实测写入） */
 }
 
-/* 无限画布关键：body 宽随内容撑开（demo 坑 1）；禁 100vw/clip（坑 2） */
-.site-body {
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+/* 无限画布的根条件：body 宽度随内容撑开（demo 坑 1）。
+   ⚠️ 禁止给任何元素 width:100vw 或 overflow-x:clip（demo 坑 2：滚轮失效）。 */
+body {
+  margin: 0;
+  padding: 0;
   width: max-content;
   min-width: 100%;
   background: var(--xuan);
@@ -32,10 +51,21 @@
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   background-image: repeating-linear-gradient(
-    0deg, transparent 0 2px, rgba(27, 26, 23, 0.014) 2px 3px);
+    0deg,
+    transparent 0 2px,
+    rgba(27, 26, 23, 0.014) 2px 3px
+  );
 }
 
-/* ============ 页头（fixed，demo 坑 3 的结论） ============ */
+a {
+  color: var(--dian);
+}
+
+button {
+  font-family: inherit;
+}
+
+/* ============ 页头（fixed 钉视口，横向纵向都不动） ============ */
 
 .site-header {
   position: fixed;
@@ -45,7 +75,7 @@
   z-index: 20;
   background: var(--xuan);
   border-bottom: 1px solid var(--xian);
-  padding: calc(var(--gut) * 0.55) var(--gut) 10px;
+  padding: calc(var(--gut) * 0.55) var(--gut) 6px;
 }
 
 .masthead {
@@ -74,7 +104,9 @@
   font-family: var(--mono);
 }
 
-.masthead .spacer { flex: 1; }
+.masthead .spacer {
+  flex: 1;
+}
 
 .masthead .scope {
   font-family: var(--mono);
@@ -107,6 +139,7 @@
 }
 
 .era .gz {
+  font-family: var(--serif);
   font-size: clamp(14px, 1.6vw, 19px);
   color: var(--dian);
   letter-spacing: 0.18em;
@@ -119,7 +152,11 @@
   color: var(--hui);
 }
 
-.stepper { display: flex; gap: 6px; margin-left: auto; }
+.stepper {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
 
 .stepper button {
   font-family: var(--mono);
@@ -132,18 +169,65 @@
   transition: border-color 0.12s, color 0.12s;
 }
 
-.stepper button:hover { border-color: var(--dian); color: var(--dian); }
-.stepper button:focus-visible { outline: 2px solid var(--dian); outline-offset: 2px; }
-.stepper button[disabled] { opacity: 0.35; cursor: not-allowed; }
+.stepper button:hover {
+  border-color: var(--dian);
+  color: var(--dian);
+}
 
-/* 月份滑块：fixed 钉视口 */
+.stepper button:focus-visible {
+  outline: 2px solid var(--dian);
+  outline-offset: 2px;
+}
+
+.stepper button[disabled] {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* ---- 年号跳转条（全朝导航；demo 无，因 demo 只有崇祯一朝） ---- */
+
+.era-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2px 0 0;
+}
+
+.era-chips button {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--hui);
+  padding: 1px 6px;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
+}
+
+.era-chips button:hover {
+  border-color: var(--xian);
+  color: var(--mo);
+}
+
+.era-chips button.on {
+  background: var(--dian);
+  border-color: var(--dian);
+  color: var(--xuan);
+}
+
+.era-chips button:focus-visible {
+  outline: 2px solid var(--dian);
+  outline-offset: 1px;
+}
+
+/* 月份滑块（并入页头，fixed 时不会被页头遮住） */
 .slider-strip {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 19;
-  padding: 4px var(--gut) 8px;
-  background: var(--xuan);
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 4px 0 2px;
 }
 
 input[type="range"] {
@@ -152,12 +236,20 @@ input[type="range"] {
   appearance: none;
   background: transparent;
   margin: 0;
-  height: 24px;
+  height: 20px;
   cursor: ew-resize;
 }
 
-input[type="range"]:focus-visible { outline: 2px solid var(--dian); outline-offset: 4px; }
-input[type="range"]::-webkit-slider-runnable-track { height: 2px; background: var(--xian); }
+input[type="range"]:focus-visible {
+  outline: 2px solid var(--dian);
+  outline-offset: 2px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 2px;
+  background: var(--xian);
+}
+
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 15px;
@@ -167,7 +259,12 @@ input[type="range"]::-webkit-slider-thumb {
   border: 2px solid var(--xuan);
   box-shadow: 0 0 0 1px var(--dian);
 }
-input[type="range"]::-moz-range-track { height: 2px; background: var(--xian); }
+
+input[type="range"]::-moz-range-track {
+  height: 2px;
+  background: var(--xian);
+}
+
 input[type="range"]::-moz-range-thumb {
   width: 13px;
   height: 13px;
@@ -177,22 +274,28 @@ input[type="range"]::-moz-range-thumb {
   box-shadow: 0 0 0 1px var(--dian);
 }
 
-/* ============ 画布 ============ */
+/* ============ 图表区 ============ */
 
 main {
   position: relative;
   padding: 0 var(--gut) 44px;
-  padding-top: var(--fixed-h, 150px);
+  padding-top: var(--fixed-h, 164px);
 }
 
 .legend {
+  position: sticky;
+  left: var(--gut);
+  z-index: 8;
+  width: max-content;
+  max-width: calc(100vw - var(--gut));
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   align-items: center;
-  padding: 6px 0;
+  padding: 6px 12px 6px 0;
   font-size: 12.5px;
   color: var(--hui);
+  background: var(--xuan);
 }
 
 .legend .item {
@@ -202,22 +305,50 @@ main {
   white-space: nowrap;
 }
 
-.swatch { width: 26px; height: 13px; border: 1px solid var(--dian); flex: none; }
-.swatch.s-shishou { background: var(--dian); }
-.swatch.s-fuzzy { background: linear-gradient(to right, var(--xuan), var(--dian) 45%); }
-.swatch.s-uncertain { border-color: var(--zhu); }
-.legend .cursor-demo { width: 2px; height: 15px; background: var(--mo); flex: none; }
+.swatch {
+  width: 26px;
+  height: 13px;
+  border: 1px solid var(--dian);
+  flex: none;
+}
 
-.board-wrap { position: relative; }
-.board { position: relative; min-width: 100%; }
+.swatch.s-shishou {
+  background: var(--dian);
+}
 
-/* 顶部刻度尺 */
+/* 起月未载：左端开口（月位置是「不早于」而非精确） */
+.swatch.s-fuzzy {
+  background: var(--dian);
+  border-left: 3px dashed var(--xuan);
+}
+
+.swatch.s-conflict {
+  border-color: var(--zhu);
+}
+
+.legend .cursor-demo {
+  width: 2px;
+  height: 15px;
+  background: var(--mo);
+  flex: none;
+}
+
+.board-wrap {
+  position: relative;
+}
+
+.board {
+  position: relative;
+  min-width: 100%;
+}
+
+/* 顶部刻度尺：年份 + 每月短线；纵向滚动时吸在页头之下 */
 .axis {
   display: grid;
   grid-template-columns: var(--label-w) 1fr;
   border-bottom: 1px solid var(--mo);
   position: sticky;
-  top: 0;
+  top: var(--fixed-h, 164px);
   z-index: 6;
   background: var(--xuan);
 }
@@ -233,7 +364,10 @@ main {
   z-index: 7;
 }
 
-.axis-track { position: relative; height: 44px; }
+.axis-track {
+  position: relative;
+  height: 44px;
+}
 
 .axis .yr {
   position: absolute;
@@ -246,6 +380,7 @@ main {
   text-align: center;
   line-height: 1.2;
   font-weight: 600;
+  pointer-events: none;
 }
 
 .axis .yr .gz {
@@ -274,13 +409,13 @@ main {
   pointer-events: none;
 }
 
-/* 贯穿列线 */
+/* 贯穿全图的年 / 月列线 */
 .col-lines {
   position: absolute;
   top: 0;
   bottom: 0;
+  z-index: 2; /* 压在职官条之下（条 z3），但在淡化条之上（z1） */
   pointer-events: none;
-  z-index: 2; /* 压在吸左标签之下（demo 坑 5） */
 }
 
 .year-col {
@@ -299,7 +434,8 @@ main {
   pointer-events: none;
 }
 
-/* 行 */
+/* ---- 行 ---- */
+
 .row {
   display: grid;
   grid-template-columns: var(--label-w) 1fr;
@@ -331,12 +467,25 @@ main {
   letter-spacing: 0.05em;
 }
 
-.track { position: relative; }
+.track {
+  position: relative;
+}
 
-/* 皇帝行：朱 = 朱明皇室 */
-.row.reign { background: rgba(168, 50, 45, 0.06); border-bottom: 1px solid var(--mo); }
-.row.reign .row-label { background: #f6eceb; }
-.row.reign .row-label .name { font-weight: 600; color: var(--zhu); }
+/* ---- 皇帝行（朱色 = 朱明皇室；红条 + 年周岁小字一体） ---- */
+
+.row.reign {
+  background: rgba(168, 50, 45, 0.06);
+  border-bottom: 1px solid var(--mo);
+}
+
+.row.reign .row-label {
+  background: #f6eceb;
+}
+
+.row.reign .row-label .name {
+  font-weight: 600;
+  color: var(--zhu);
+}
 
 .reign-bar {
   position: absolute;
@@ -344,16 +493,33 @@ main {
   height: 18px;
   background: var(--zhu);
   color: var(--xuan);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  box-shadow: 0 0 0 1px rgba(168, 50, 45, 0.55);
+  border-right: 1px solid rgba(251, 250, 247, 0.7); /* 相邻皇帝段的分界 */
+  overflow: hidden;
+}
+
+.reign-bar .bar-label {
   font-family: var(--serif);
   font-size: 10.5px;
   letter-spacing: 0.3em;
-  box-shadow: 0 0 0 1px rgba(168, 50, 45, 0.55);
 }
 
-/* 断限线：1644.3 */
+.reign-age {
+  position: absolute;
+  top: 24px;
+  height: 13px;
+  display: flex;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--zhu);
+  pointer-events: none;
+  letter-spacing: 0.02em;
+}
+
+/* ---- 断限线 ---- */
+
 .cutoff {
   position: absolute;
   top: 0;
@@ -376,19 +542,39 @@ main {
   pointer-events: none;
 }
 
-/* 任期条 */
+/* ---- 任期条 ---- */
+
 .bar {
   position: absolute;
-  display: flex;
-  align-items: center;
+  display: block;
   font-size: 12px;
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
   border: 1px solid var(--dian);
-  padding: 0 6px;
   color: var(--mo);
+  background: var(--xuan);
+  z-index: 3;
   transition: transform 0.1s, box-shadow 0.1s, opacity 0.15s;
+}
+
+/* 条内文字：短条居中；长条按固定间距重复，滚到哪都能看到人名 */
+.bar-label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.bar-label.center {
+  left: 0;
+  right: 0;
+  justify-content: center;
+  padding: 0 4px;
+  overflow: hidden;
 }
 
 .bar:hover {
@@ -398,23 +584,40 @@ main {
   border-color: var(--mo);
 }
 
-.bar:focus-visible { outline: 2px solid var(--mo); outline-offset: 2px; }
+.bar:focus-visible {
+  outline: 2px solid var(--mo);
+  outline-offset: 2px;
+}
 
-.bar.t-shishou { background: var(--dian); color: var(--xuan); }
+.bar.t-shishou {
+  background: var(--dian);
+  color: var(--xuan);
+}
 
-/* 起月未载：左端渐隐（月位置是"不早于"而非精确） */
+/* 起月未载：左端开口（月位置是「不早于」而非精确；不用渐隐——
+   渐隐会让条上的浅色文字在左半段看不见，实测） */
 .bar.fuzzy {
-  background: linear-gradient(to right, rgba(31, 58, 95, 0.2), var(--dian) 30%);
+  border-left: 3px dashed rgba(251, 250, 247, 0.9);
 }
 
 /* 同年入离并格：朱描边（不确定语义） */
-.bar.conflict { box-shadow: 0 0 0 1.5px var(--zhu); }
+.bar.conflict {
+  box-shadow: 0 0 0 1.5px var(--zhu);
+}
 
-/* 当前月不在任：淡化 */
-.bar.is-idle { opacity: 0.3; filter: saturate(0.45); }
-.bar.is-idle:hover { opacity: 0.72; filter: none; }
+/* 当前月不在任：淡化（demo 为 0.3；正式站数据空档较多，略提高到 0.35 兼顾可读） */
+.bar.is-idle {
+  opacity: 0.35;
+  filter: saturate(0.45);
+  z-index: 1;
+}
 
-/* 同人联动：hover 同款墨色 */
+.bar.is-idle:hover {
+  opacity: 0.72;
+  filter: none;
+}
+
+/* 同人联动：悬浮某条 → 此人所有任职条变墨色（跨行）；其余不动 */
 .bar.peer {
   transform: translateY(-1px);
   background: var(--mo);
@@ -423,10 +626,10 @@ main {
   z-index: 4 !important;
 }
 
-/* 游标：按月精确落位 */
+/* ---- 游标 ---- */
+
 .cursor {
   position: absolute;
-  left: 0;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -462,7 +665,10 @@ main {
   flex-direction: column;
 }
 
-.drawer.open { transform: none; box-shadow: -14px 0 34px rgba(27, 26, 23, 0.13); }
+.drawer.open {
+  transform: none;
+  box-shadow: -14px 0 34px rgba(27, 26, 23, 0.13);
+}
 
 .drawer-head {
   padding: 16px 20px 12px;
@@ -497,9 +703,15 @@ main {
   padding: 3px 9px;
 }
 
-.drawer-head .close:hover { border-color: var(--mo); color: var(--mo); }
+.drawer-head .close:hover {
+  border-color: var(--mo);
+  color: var(--mo);
+}
 
-.drawer-body { padding: 16px 20px 40px; overflow-y: auto; }
+.drawer-body {
+  padding: 16px 20px 40px;
+  overflow-y: auto;
+}
 
 .field {
   display: grid;
@@ -519,16 +731,130 @@ main {
   padding-top: 3px;
 }
 
-.field dd { margin: 0; }
+.field dd {
+  margin: 0;
+}
 
-.serif { font-family: var(--serif); }
-.mono { font-family: var(--mono); }
+.hint {
+  font-size: 12px;
+  color: var(--hui);
+}
 
-.conf { display: flex; align-items: center; gap: 9px; }
-.conf-bar { flex: 1; height: 5px; background: var(--xuan-2); position: relative; }
-.conf-bar i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--dian); }
-.conf-bar i.low { background: var(--zhu); }
-.conf-num { font-family: var(--mono); font-size: 12px; color: var(--hui); }
+.small {
+  font-size: 12px;
+  color: var(--hui);
+  line-height: 1.6;
+}
+
+.serif {
+  font-family: var(--serif);
+}
+
+.mono {
+  font-family: var(--mono);
+}
+
+.pre {
+  white-space: pre-wrap;
+  line-height: 1.75;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 11.5px;
+  font-family: var(--mono);
+  padding: 1px 7px;
+  border: 1px solid currentColor;
+}
+
+.tag.t-shishou {
+  color: var(--dian);
+  background: rgba(31, 58, 95, 0.08);
+}
+
+.conf {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.conf-bar {
+  flex: 1;
+  height: 5px;
+  background: var(--xuan-2);
+  position: relative;
+}
+
+.conf-bar i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--dian);
+}
+
+.conf-bar i.low {
+  background: var(--zhu);
+}
+
+.conf-num {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--hui);
+}
+
+/* 明实录命中块 */
+.shilu-block {
+  margin-top: 16px;
+  border-left: 3px solid var(--dian);
+  background: rgba(31, 58, 95, 0.04);
+  padding: 11px 13px;
+}
+
+.shilu-block h3 {
+  margin: 0 0 6px;
+  font-family: var(--serif);
+  font-size: 13px;
+  color: var(--dian);
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.shilu-item {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.shilu-item:last-child {
+  margin-bottom: 0;
+}
+
+.shilu-item .src {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--hui);
+  display: block;
+  margin-bottom: 2px;
+  letter-spacing: 0.03em;
+}
+
+.shilu-item .txt {
+  font-family: var(--serif);
+}
+
+.shilu-item.more {
+  font-size: 11.5px;
+  color: var(--hui);
+}
+
+.shilu-empty {
+  margin-top: 16px;
+  font-size: 12.5px;
+  color: var(--hui);
+  padding: 9px 12px;
+  border-left: 3px solid var(--xian);
+}
 
 .caveat {
   margin-top: 18px;
@@ -538,27 +864,41 @@ main {
   font-size: 12.5px;
 }
 
-.caveat b { color: var(--zhu); }
+.caveat b {
+  color: var(--zhu);
+}
 
-.vermilion { color: var(--zhu); }
+.vermilion {
+  color: var(--zhu);
+}
 
 /* ============ 页脚 ============ */
 
 footer {
-  max-width: 1500px;
-  margin: 0 auto;
+  position: sticky;
+  left: 0;
+  max-width: min(1500px, 100vw);
+  margin: 0;
   padding: 0 var(--gut) 60px;
   color: var(--hui);
   font-size: 12.5px;
   line-height: 1.8;
-  /* footer 在 max-width 容器内，但 body 已被画布撑开——居中于视口 */
-  width: 100vw;
-  max-width: 100%;
 }
 
-footer .rule { height: 1px; background: var(--xian); margin-bottom: 14px; }
-footer p { margin: 0 0 6px; }
-footer .k { font-family: var(--mono); color: var(--mo); }
+footer .rule {
+  height: 1px;
+  background: var(--xian);
+  margin-bottom: 14px;
+}
+
+footer p {
+  margin: 0 0 6px;
+}
+
+footer .k {
+  font-family: var(--mono);
+  color: var(--mo);
+}
 
 /* ============ 响应式 ============ */
 
@@ -567,16 +907,42 @@ footer .k { font-family: var(--mono); color: var(--mo); }
     --label-w: 96px;
     --slot-w: 20px;
   }
-  header { padding: 10px 12px 6px; }
-  main { padding: 0 12px 32px; }
-  footer { padding: 0 12px 44px; }
-  .era .regnal { font-size: 24px; }
-  .era .gz { font-size: 14px; }
-  .row-label .name { font-size: 12.5px; }
-  .legend { gap: 12px; font-size: 11.5px; }
-  .bar { font-size: 10.5px; padding: 0 3px; }
+  .site-header {
+    padding: 10px 12px 6px;
+  }
+  main {
+    padding: 0 12px 32px;
+    padding-top: var(--fixed-h, 190px);
+  }
+  footer {
+    padding: 0 12px 44px;
+  }
+  .era .regnal {
+    font-size: 24px;
+  }
+  .era .gz {
+    font-size: 14px;
+  }
+  .row-label .name {
+    font-size: 12.5px;
+  }
+  .legend {
+    gap: 12px;
+    font-size: 11.5px;
+  }
+  .bar {
+    font-size: 10.5px;
+    padding: 0 3px;
+  }
+  .era-chips button {
+    font-size: 10.5px;
+    padding: 1px 4px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; animation: none !important; }
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
 }

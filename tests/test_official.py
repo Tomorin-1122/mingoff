@@ -103,3 +103,44 @@ def test_norm_verb_patterns():
     assert norm_verb("罷") == "leave"
     assert norm_verb("卒于任") == "leave"
     assert norm_verb("贈") == "other"
+
+
+def test_tenure_type_is_honest():
+    """内阁年表不区分实授/署理/加衔 → 一律实授，不臆造（D4 精神）。"""
+    for t in build_cabinet_tenures():
+        assert t["tenure_type"] == "实授"
+        assert isinstance(t["leave"], str) and t["leave"]
+
+
+def test_leave_reason_comes_from_verbs():
+    for t in build_cabinet_tenures():
+        if t["leave_verbs"]:
+            assert t["leave"] != "未載"
+            # 动词直译：任一原始动词必须体现在离任文本里（映射外的原样保留）
+            assert any(v in t["leave"] for v in t["leave_verbs"]), t
+        else:
+            assert t["leave"] == "未載"
+
+
+def test_notes_are_cleaned_of_ocr_title_lines():
+    """源注文混入 '# 明代職官年表' 之类 OCR 标题行，导出前必须清掉。"""
+    for t in build_cabinet_tenures():
+        assert "#" not in t["note"], t["person"]
+        assert t["note"] == t["note"].strip()
+
+
+def test_shilu_hits_are_relevant_and_bounded():
+    doc = export_official()
+    assert doc["meta"]["version"] == 2
+    assert "shilu" in doc
+    persons = {t["person"] for t in doc["tenures"]}
+    for person, blk in doc["shilu"].items():
+        assert person in persons
+        assert blk["count"] >= len(blk["hits"]) >= 1
+        assert len(blk["hits"]) <= 8
+        wins = [(t["start_year"] - 1, t["end_year"] + 1)
+                for t in doc["tenures"] if t["person"] == person]
+        for h in blk["hits"]:
+            assert any(lo <= h["year"] <= hi for lo, hi in wins), (person, h["year"])
+            assert h["source"] and h["content"]
+            assert h["month"] is None or 1 <= h["month"] <= 12

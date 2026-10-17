@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "明代职官数据库 · MingOff",
   description:
-    "明代内阁年表——按年月查看在任者，每条记录可溯源史料来源。数据：张德信《明代职官年表》册1。",
+    "明代内阁大臣年表——按年月查看在任者，每条记录可溯源史料来源。数据：张德信《明代职官年表》册1；实录命中据中研院「明代职官资料库」。",
 };
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-Hant">
-      <body className="site-body">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

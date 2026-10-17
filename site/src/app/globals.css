@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
+/* 基础 reset。主体样式（含字体栈、无限画布）在 timeline.css——刻意不用
+   Google Fonts 等外链字体：Demo 验收版用系统字体回退，离线/境内都能正常显示。 */
 
-/* 基础 reset（主体样式在 timeline.css，移植自 demo 模板） */
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 html {
@@ -12,10 +11,6 @@ html {
 
 a {
   color: var(--dian);
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
 }
 
 button {

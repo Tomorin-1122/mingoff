@@ -1,336 +1,732 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
-  type Tenure,
-  type Reign,
-  MIN_YEAR,
-  MAX_YEAR,
-  TENURES,
-  META,
-  inOffice,
-  assignLanes,
-  ganzhi,
-  eraLabel,
+  CANVAS_SLOTS,
   CN_MONTHS,
+  CUT_M,
+  CUT_Y,
+  ERA_JUMPS,
+  MIN_YEAR,
+  META,
+  M_PER_YEAR,
   REIGNS,
+  SHILU,
+  TENURES,
+  ageAt,
+  assignLanes,
+  eraLabel,
+  fmtYM,
+  ganzhi,
+  slotOf,
+  span,
+  type Reign,
+  type Tenure,
 } from "@/lib/data";
 
-/* ===== 画布几何（D19：统一像素坐标系，一格 = 一月）===== */
-const M_PER_YEAR = 12;
-const SLOT_W = 26; // 与 CSS --slot-w 一致
-const LABEL_W = 132; // 与 CSS --label-w 一致
-const BAR = 20;
-const GAP = 4;
-const PAD = 8;
+/* ============================================================
+ * 时间轴（正式站）
+ * 视觉与交互**逐项移植自老板验收的 web/demo.template.html**：
+ *   fixed 页头 + 月格等宽无限画布 + 单行皇帝（含周岁） + 泳道 + 游标
+ *   + 同人联动 + 当前月淡化 + 详情抽屉（含《明實錄》命中）。
+ * 与 demo 的差异只有两处（由全朝 242 年数据决定）：
+ *   ① 皇帝行由单帝改为 16 帝单行分段；
+ *   ② 增加「年号跳转」条 —— 76,000px 的画布必须能一键跳代。
+ * 几何统一用像素坐标（格号 × 月格宽），不混百分比（demo 坑 4）。
+ * ============================================================ */
 
-const CUT_Y = 1644;
-const CUT_M = 3;
-/** 画布：1402.1 → 1644.3 */
-const CANVAS_SLOTS = (CUT_Y - MIN_YEAR) * M_PER_YEAR + CUT_M;
+const BAR_H = 20;
+const BAR_GAP = 4;
+const TRACK_PAD = 8;
+const REIGN_TRACK_H = 38;
+/** 默认档位；实际值从 CSS 变量 --slot-w / --label-w 读取（响应式会改） */
+const DEF_SLOT_W = 26;
+const DEF_LABEL_W = 132;
 
-const slotOf = (year: number, month: number | null, isEnd = false): number => {
-  let m: number;
-  if (month == null) m = isEnd ? M_PER_YEAR - 1 : 0;
-  else m = Math.max(0, Math.min(M_PER_YEAR - 1, month - 1));
-  return (year - MIN_YEAR) * M_PER_YEAR + m;
-};
+/** 人读的出处说明（抽屉展示；完整溯源字段见 cabinet.json 的 meta.source、页脚） */
+const SOURCE_TEXT =
+  "张德信《明代职官年表》册1·內閣大臣年表（MinerU OCR 提取）；" +
+  "《明實錄》命中据中研院「明代职官资料库」检索。";
 
-/** 断限截断（D17）：end 落在 1644 或之后 → 截到 1644.3，并告知调用方（end_clamped 语义） */
-function span(t: Tenure): { s: number; e: number; clamped: boolean } {
-  let eY = t.end_year;
-  let eM = t.end_month;
-  let clamped = false;
-  if (eY > CUT_Y) { eY = CUT_Y; eM = CUT_M; clamped = true; }
-  else if (eY === CUT_Y && (eM == null || eM > CUT_M)) { eM = CUT_M; clamped = t.end_month == null || t.end_month > CUT_M; }
-  const s = Math.max(0, slotOf(t.start_year, t.start_month, false));
-  const e = Math.min(CANVAS_SLOTS - 1, Math.max(slotOf(eY, eM, true), s));
-  return { s, e, clamped };
+interface Dims {
+  slotW: number;
+  labelW: number;
 }
 
-const MONTH_TAG = (m: number) => CN_MONTHS[m - 1] + "月";
+/* ================= 静态图层（memo，避免拖滑块时重排 3000+ 节点）================= */
+
+/** 长条内重复人名/年号：条可能横跨数十年（>10,000px），只标一次必然滚出视口 */
+function barLabels(text: string, widthPx: number, step: number, offset: number) {
+  const n = Math.max(1, Math.floor(widthPx / step));
+  if (n === 1) return <span className="bar-label center">{text}</span>;
+  return Array.from({ length: n }, (_, i) => (
+    <span key={i} className="bar-label" style={{ left: i * step + offset }}>
+      {text}
+    </span>
+  ));
+}
+
+const Axis = memo(function Axis({ slotW }: { slotW: number }) {
+  const years = useMemo(
+    () => Array.from({ length: CUT_Y - MIN_YEAR + 1 }, (_, i) => MIN_YEAR + i),
+    []
+  );
+  return (
+    <div className="axis">
+      <div className="axis-label">職官 / 年月</div>
+      <div className="axis-track">
+        {years.map((y) => {
+          const slotsThisYear = y === CUT_Y ? CUT_M : M_PER_YEAR;
+          const mid = slotOf(y, 1) + slotsThisYear / 2;
+          return (
+            <span key={y}>
+              <span
+                className="yr"
+                style={{ left: mid * slotW }}
+                title={`${eraLabel(y)} ${ganzhi(y)}`}
+              >
+                {y}
+                <span className="gz">{ganzhi(y)}</span>
+              </span>
+              <span className="year-line" style={{ left: slotOf(y, 1) * slotW }} />
+            </span>
+          );
+        })}
+        {Array.from({ length: CANVAS_SLOTS }, (_, s) =>
+          s % M_PER_YEAR === 0 ? null : (
+            <span key={"mt" + s} className="month-tick" style={{ left: s * slotW }} />
+          )
+        )}
+      </div>
+    </div>
+  );
+});
+
+const ReignRow = memo(function ReignRow({ slotW }: { slotW: number }) {
+  const segments = REIGNS.map((r: Reign) => {
+    const s = Math.max(0, slotOf(r.startY, r.startM));
+    const e = Math.min(CANVAS_SLOTS - 1, slotOf(r.endY, r.endM, true));
+    if (e < 0 || s > CANVAS_SLOTS - 1) return null;
+    const years: number[] = [];
+    for (let y = Math.max(r.startY, MIN_YEAR); y <= Math.min(r.endY, CUT_Y); y++) {
+      years.push(y);
+    }
+    return { r, s, e, years };
+  });
+
+  return (
+    <div className="row reign">
+      <div className="row-label">
+        <span className="name">皇帝</span>
+        <span className="dept">在位 · 16 帝</span>
+      </div>
+      <div className="track" style={{ height: REIGN_TRACK_H }}>
+        {segments.map((seg) =>
+          seg ? (
+            <span
+              key={seg.r.temple + seg.r.era}
+              className="reign-bar"
+              style={{ left: seg.s * slotW, width: (seg.e - seg.s + 1) * slotW }}
+              title={`${seg.r.temple}·${seg.r.era}（${seg.r.startY}–${seg.r.endY}）`}
+            >
+              {barLabels(seg.r.barLabel, (seg.e - seg.s + 1) * slotW, 1600, 10)}
+            </span>
+          ) : null
+        )}
+        {segments.map((seg) =>
+          seg
+            ? seg.years.map((y) => {
+                const age = ageAt(y, 2, seg.r);
+                const left = Math.max(seg.s, slotOf(y, 1)) * slotW + 2;
+                return (
+                  <span
+                    key={`${seg.r.temple}${seg.r.era}${y}`}
+                    className="reign-age"
+                    style={{ left, width: M_PER_YEAR * slotW - 4, textAlign: "left" }}
+                    title={`${seg.r.temple}·${seg.r.era}${y}，帝周岁约 ${age}`}
+                  >
+                    {age}岁
+                  </span>
+                );
+              })
+            : null
+        )}
+      </div>
+    </div>
+  );
+});
+
+const ColumnLines = memo(function ColumnLines({ slotW, labelW }: Dims) {
+  const years = useMemo(
+    () => Array.from({ length: CUT_Y - MIN_YEAR + 1 }, (_, i) => MIN_YEAR + i),
+    []
+  );
+  return (
+    <span
+      className="col-lines"
+      style={{ left: labelW, width: CANVAS_SLOTS * slotW }}
+      aria-hidden
+    >
+      {years.map((y) => (
+        <span key={y} className="year-col" style={{ left: slotOf(y, 1) * slotW }} />
+      ))}
+      {Array.from({ length: CANVAS_SLOTS }, (_, s) =>
+        s % M_PER_YEAR === 0 ? null : (
+          <span key={"mc" + s} className="month-col" style={{ left: s * slotW }} />
+        )
+      )}
+    </span>
+  );
+});
+
+/* ================= 职官行（唯一一组：內閣） ================= */
+
+interface CabinetRowProps {
+  slotW: number;
+  slot: number;
+  hoverPerson: string | null;
+  onHover: (person: string | null) => void;
+  onSelect: (t: Tenure) => void;
+}
+
+const CabinetRow = memo(function CabinetRow({
+  slotW,
+  slot,
+  hoverPerson,
+  onHover,
+  onSelect,
+}: CabinetRowProps) {
+  const lanes = useMemo(() => assignLanes(TENURES), []);
+  const trackH = lanes.length * (BAR_H + BAR_GAP) - BAR_GAP + TRACK_PAD * 2;
+  const persons = useMemo(() => new Set(TENURES.map((t) => t.person)).size, []);
+
+  return (
+    <div className="row">
+      <div className="row-label">
+        <span className="name">內閣大臣</span>
+        <span className="dept">內閣 · {persons} 人 / {TENURES.length} 任</span>
+      </div>
+      <div className="track" style={{ height: trackH }}>
+        {lanes.map((lane, li) =>
+          lane.map((t, ti) => {
+            const { s, e } = span(t);
+            const idle = slot < s || slot > e;
+            const cls = [
+              "bar",
+              "t-shishou",
+              t.start_month == null && "fuzzy",
+              t.month_conflict && "conflict",
+              idle && "is-idle",
+              hoverPerson === t.person && "peer",
+            ]
+              .filter(Boolean)
+              .join(" ");
+            return (
+              <span
+                key={`${t.person}-${t.start_year}-${t.start_month}-${li}-${ti}`}
+                className={cls}
+                style={{
+                  left: s * slotW,
+                  width: (e - s + 1) * slotW,
+                  top: TRACK_PAD + li * (BAR_H + BAR_GAP),
+                  height: BAR_H,
+                }}
+                tabIndex={0}
+                role="button"
+                title={`${t.person}｜${t.start_year}${t.start_month ? "." + t.start_month : ""}–${t.end_year}${t.end_month ? "." + t.end_month : ""}｜置信度 ${t.confidence}`}
+                aria-label={`${t.person}，內閣，${t.start_year} 至 ${t.end_year}`}
+                onMouseEnter={() => onHover(t.person)}
+                onMouseLeave={() => onHover(null)}
+                onFocus={() => onHover(t.person)}
+                onBlur={() => onHover(null)}
+                onClick={(ev) => {
+                  ev.stopPropagation();
+                  onSelect(t);
+                }}
+                onKeyDown={(ev) => {
+                  if (ev.key === "Enter" || ev.key === " ") {
+                    ev.preventDefault();
+                    onSelect(t);
+                  }
+                }}
+              >
+                {barLabels(t.person, (e - s + 1) * slotW, 1100, 8)}
+              </span>
+            );
+          })
+        )}
+      </div>
+    </div>
+  );
+});
+
+/* ================= 详情抽屉 ================= */
+
+function Drawer({
+  tenure,
+  onClose,
+}: {
+  tenure: Tenure | null;
+  onClose: () => void;
+}) {
+  const closeRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+    if (tenure) closeRef.current?.focus();
+  }, [tenure]);
+
+  const body = useMemo(() => {
+    if (!tenure) return null;
+    const t = tenure;
+    const { clamped } = span(t);
+    const realMonth = !!t.start_month || (!!t.end_month && !clamped);
+    const confPct = Math.round(t.confidence * 100);
+    const blk = SHILU[t.person];
+
+    return (
+      <>
+        <div className="drawer-head">
+          <div>
+            <h2>{t.person}</h2>
+            <div className="drawer-office">
+              內閣 · 內閣大臣
+              {t.cbdb_id != null && ` · CBDB #${t.cbdb_id}`}
+            </div>
+          </div>
+          <button className="close" ref={closeRef} aria-label="关闭" onClick={onClose}>
+            关闭
+          </button>
+        </div>
+
+        <div className="drawer-body">
+          <dl className="field">
+            <dt>任期</dt>
+            <dd>
+              {fmtYM(t.start_year, t.start_month)} – {fmtYM(t.end_year, t.end_month)}
+            </dd>
+          </dl>
+
+          <dl className="field">
+            <dt>精度</dt>
+            <dd>
+              {realMonth
+                ? "已精确到月（据年表注文）"
+                : clamped
+                  ? <>仅到年；终年按<b>断限</b>截到 1644 年 3 月（非史料所载月份）</>
+                  : "仅到年（史料未载月份）"}
+              {t.month_conflict && (
+                <span className="vermilion">（同年入离并格，月份待校）</span>
+              )}
+            </dd>
+          </dl>
+
+          <dl className="field">
+            <dt>性质</dt>
+            <dd>
+              <span className="tag t-shishou">{t.tenure_type}</span>{" "}
+              <span className="hint">内阁年表不区分署理 / 加衔，不作推断</span>
+            </dd>
+          </dl>
+
+          <dl className="field">
+            <dt>离任</dt>
+            <dd>{t.leave}</dd>
+          </dl>
+
+          <dl className="field">
+            <dt>在任年</dt>
+            <dd className="mono">{t.years.join("、")}</dd>
+          </dl>
+
+          <dl className="field">
+            <dt>任免</dt>
+            <dd>
+              入：{t.enter_verbs.join("、") || "—"}　离：
+              {t.leave_verbs.join("、") || "—"}
+            </dd>
+          </dl>
+
+          <dl className="field">
+            <dt>置信度</dt>
+            <dd>
+              <div className="conf">
+                <div className="conf-bar">
+                  <i
+                    className={t.confidence < 0.6 ? "low" : ""}
+                    style={{ width: `${confPct}%` }}
+                  />
+                </div>
+                <span className="conf-num">{t.confidence.toFixed(1)}</span>
+              </div>
+            </dd>
+          </dl>
+
+          <dl className="field">
+            <dt>出处</dt>
+            <dd className="small">{SOURCE_TEXT}</dd>
+          </dl>
+
+          {t.note && (
+            <dl className="field">
+              <dt>年表原文</dt>
+              <dd className="serif pre">{t.note}</dd>
+            </dl>
+          )}
+
+          {blk ? (
+            <div className="shilu-block">
+              <h3>《明實錄》命中（中研院检索，与任期相关）</h3>
+              {blk.hits.map((h, i) => {
+                const ym = h.month
+                  ? `${h.year}年${CN_MONTHS[h.month - 1]}月${h.leap ? "（閏）" : ""}`
+                  : `${h.year}年`;
+                return (
+                  <div className="shilu-item" key={i}>
+                    <span className="src">
+                      {h.source}　【{ym}】
+                    </span>
+                    <span className="txt">{h.content || "（无内容摘要）"}</span>
+                  </div>
+                );
+              })}
+              {blk.count > blk.hits.length && (
+                <div className="shilu-item more">
+                  …另有 {blk.count - blk.hits.length} 条，略
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="shilu-empty">
+              《明實錄》检索无命中（该人未见于实录，或检索词未命中）。
+            </div>
+          )}
+
+          <div className="caveat">
+            <b>关于本条的确定性</b>
+            <br />
+            {t.confidence < 0.8
+              ? "本条置信度低于 0.8，年表对任期记载可能有歧，引用前请核对原书。"
+              : "任期为年表口径；月份未载处以整年表示，未作推断。"}
+          </div>
+        </div>
+      </>
+    );
+  }, [tenure, onClose]);
+
+  return (
+    <aside
+      className={"drawer" + (tenure ? " open" : "")}
+      aria-hidden={!tenure}
+      role="dialog"
+      aria-label="任职详情"
+    >
+      {body}
+    </aside>
+  );
+}
+
+/* ================= 主组件 ================= */
 
 export default function Timeline() {
-  const [slot, setSlot] = useState((1628 - MIN_YEAR) * 12); // 默认崇祯元年正月
-  const [selected, setSelected] = useState<Tenure | null>(null);
+  const [dims, setDims] = useState<Dims>({ slotW: DEF_SLOT_W, labelW: DEF_LABEL_W });
+  const [fixedH, setFixedH] = useState(0);
+  const [slot, setSlot] = useState(() => slotOf(1628, 1));
   const [hoverPerson, setHoverPerson] = useState<string | null>(null);
-  const [fixedH, setFixedH] = useState(150);
-  const boardWrapRef = useRef<HTMLDivElement>(null);
+  const [selected, setSelected] = useState<Tenure | null>(null);
 
-  const { y: cursorYear, m: cursorMonth } = useMemo(
-    () => ({
-      y: MIN_YEAR + Math.floor(slot / M_PER_YEAR),
-      m: (slot % M_PER_YEAR) + 1,
-    }),
-    [slot]
-  );
+  const headerRef = useRef<HTMLElement | null>(null);
+  const didInitScroll = useRef(false);
+  const { slotW, labelW } = dims;
 
-  const current = useMemo(() => inOffice(cursorYear, cursorMonth), [cursorYear, cursorMonth]);
-
-  /* fixed 页头/滑块占位补偿（demo 同款） */
+  /* --- 读取 CSS 变量（响应式会改 --slot-w / --label-w）与页头高度 --- */
   useEffect(() => {
-    const measure = () => {
-      const hh = document.querySelector(".site-header")?.getBoundingClientRect().height ?? 0;
-      const sh = document.querySelector(".slider-strip")?.getBoundingClientRect().height ?? 0;
-      setFixedH(hh + sh);
+    const read = () => {
+      const cs = getComputedStyle(document.documentElement);
+      const sw = parseFloat(cs.getPropertyValue("--slot-w")) || DEF_SLOT_W;
+      const lw = parseFloat(cs.getPropertyValue("--label-w")) || DEF_LABEL_W;
+      setDims({ slotW: sw, labelW: lw });
     };
-    measure();
-    window.addEventListener("resize", measure);
-    return () => window.removeEventListener("resize", measure);
+    read();
+    window.addEventListener("resize", read);
+    return () => window.removeEventListener("resize", read);
   }, []);
 
-  /* 键盘 ←/→ 逐月步进 */
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+    const measure = () => {
+      const h = el.getBoundingClientRect().height;
+      setFixedH(h);
+      document.documentElement.style.setProperty("--fixed-h", `${h}px`);
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
+  /* --- 初始定位：打开即崇祯元年（demo 同款观感），而非画布最左 1402 --- */
+  useEffect(() => {
+    if (didInitScroll.current || fixedH <= 0) return;
+    didInitScroll.current = true;
+    const target = Math.max(0, labelW + slot * slotW - 240);
+    window.scrollTo({ left: target });
+  }, [fixedH, labelW, slot, slotW]);
+
+  /* --- 视口/响应式尺寸变化后按新几何重新定位游标（否则缩放后游标跑出屏外）--- */
+  const prevDims = useRef<string>("");
+  useEffect(() => {
+    const key = `${labelW}:${slotW}`;
+    if (prevDims.current === key) return;
+    const first = prevDims.current === "";
+    prevDims.current = key;
+    if (first || !didInitScroll.current) return;
+    const target = Math.max(0, labelW + slot * slotW - window.innerWidth * 0.38);
+    window.scrollTo({ left: target });
+  }, [labelW, slotW, slot]);
+
+  /* --- 让游标保持在视口内（拖滑块/键盘逐月时画布跟随） --- */
+  const ensureVisible = useCallback(
+    (s: number) => {
+      const x = labelW + (s + 1) * slotW;
+      const left = window.scrollX;
+      const right = left + window.innerWidth;
+      if (x < left + labelW + 80 || x > right - 220) {
+        const target = Math.max(0, labelW + s * slotW - window.innerWidth * 0.38);
+        window.scrollTo({ left: target });
+      }
+    },
+    [labelW, slotW]
+  );
+
+  const goToSlot = useCallback(
+    (next: number, mode: "ensure" | "center" | "none" = "ensure") => {
+      const s = Math.min(CANVAS_SLOTS - 1, Math.max(0, next));
+      setSlot(s);
+      if (mode === "center") {
+        const target = Math.max(0, labelW + s * slotW - window.innerWidth * 0.38);
+        window.scrollTo({ left: target });
+      } else if (mode === "ensure") {
+        ensureVisible(s);
+      }
+    },
+    [ensureVisible, labelW, slotW]
+  );
+
+  /* --- 键盘：←/→ 逐月，Shift+←/→ 逐年，Esc 关抽屉 --- */
   useEffect(() => {
     const onKey = (ev: KeyboardEvent) => {
-      if ((ev.target as HTMLElement)?.tagName === "INPUT") return;
-      if (ev.key === "Escape") setSelected(null);
-      if (ev.key === "ArrowLeft") setSlot((s) => Math.max(0, s - 1));
-      if (ev.key === "ArrowRight") setSlot((s) => Math.min(CANVAS_SLOTS - 1, s + 1));
+      if (ev.key === "Escape") {
+        setSelected(null);
+        return;
+      }
+      const tag = (ev.target as HTMLElement)?.tagName;
+      if (tag === "INPUT") return;
+      const step = ev.shiftKey ? M_PER_YEAR : 1;
+      if (ev.key === "ArrowLeft") {
+        ev.preventDefault();
+        goToSlot(slot - step);
+      }
+      if (ev.key === "ArrowRight") {
+        ev.preventDefault();
+        goToSlot(slot + step);
+      }
     };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, []);
+  }, [slot, goToSlot]);
 
-  /* 画布点击空白跳月（demo 同款：轨道坐标反推月份格） */
-  const onBoardClick = (ev: React.MouseEvent) => {
-    if ((ev.target as HTMLElement).closest(".bar")) return;
-    const track = (ev.target as HTMLElement).closest(".track");
-    if (!track) return;
-    const r = (track as HTMLElement).getBoundingClientRect();
-    const s = Math.floor((ev.clientX - r.left) / SLOT_W);
-    setSlot(Math.min(CANVAS_SLOTS - 1, Math.max(0, s)));
-  };
+  /* --- 点击画布空白处跳月 --- */
+  const onBoardClick = useCallback(
+    (ev: React.MouseEvent<HTMLDivElement>) => {
+      const el = ev.target as HTMLElement;
+      if (el.closest(".bar")) return;
+      const track = el.closest(".track") as HTMLElement | null;
+      if (!track) return;
+      const rect = track.getBoundingClientRect();
+      const s = Math.floor((ev.clientX - rect.left) / slotW);
+      goToSlot(s);
+    },
+    [goToSlot, slotW]
+  );
 
-  const reignLabel = (r: Reign) => `${r.temple}·${r.dept}`;
+  const cursorYear = MIN_YEAR + Math.floor(slot / M_PER_YEAR);
+  const cursorMonth = (slot % M_PER_YEAR) + 1;
+
+  const activeEra = useMemo(() => {
+    let cur = ERA_JUMPS[0].name;
+    for (const e of ERA_JUMPS) {
+      if (slotOf(e.year, e.month) <= slot) cur = e.name;
+    }
+    return cur;
+  }, [slot]);
 
   return (
-    <div onDoubleClick={() => {}}>
-      {/* ============ 页头（fixed 钉视口） ============ */}
-      <header className="site-header">
+    <>
+      {/* ================= 页头（fixed 钉视口） ================= */}
+      <header className="site-header" ref={headerRef}>
         <div className="masthead">
           <h1>明代职官数据库</h1>
           <span className="sub">MingOff</span>
           <span className="spacer" />
           <span className="scope">
-            內閣 {META.stats.years_covered[0]}–{CUT_Y}.{CUT_M} · {META.stats.tenures} 任职
+            內閣 {MIN_YEAR}–{CUT_Y}.{CUT_M} · {META.stats.tenures} 任職 ·{" "}
+            {META.stats.persons} 人
           </span>
         </div>
+
         <div className="control">
           <div className="era">
             <span className="regnal">{eraLabel(cursorYear)}</span>
             <span className="gz">{ganzhi(cursorYear)}</span>
             <span className="anno">{cursorYear}</span>
-            <span className="anno">{MONTH_TAG(cursorMonth)}</span>
+            <span className="anno">{CN_MONTHS[cursorMonth - 1]}月</span>
           </div>
           <div className="stepper">
-            <button aria-label="上一月" disabled={slot <= 0}
-              onClick={() => setSlot(Math.max(0, slot - 1))}>←</button>
-            <button aria-label="下一月" disabled={slot >= CANVAS_SLOTS - 1}
-              onClick={() => setSlot(Math.min(CANVAS_SLOTS - 1, slot + 1))}>→</button>
+            <button
+              aria-label="上一月"
+              disabled={slot <= 0}
+              onClick={() => goToSlot(slot - 1)}
+            >
+              ←
+            </button>
+            <button
+              aria-label="下一月"
+              disabled={slot >= CANVAS_SLOTS - 1}
+              onClick={() => goToSlot(slot + 1)}
+            >
+              →
+            </button>
           </div>
+        </div>
+
+        {/* 全朝导航：16 个年号一键跳转（242 年画布必需） */}
+        <nav className="era-chips" aria-label="年号跳转">
+          {ERA_JUMPS.map((e) => (
+            <button
+              key={e.name}
+              className={activeEra === e.name ? "on" : ""}
+              onClick={() => goToSlot(slotOf(e.year, e.month), "center")}
+              title={`跳到${e.name}`}
+            >
+              {e.name}
+            </button>
+          ))}
+        </nav>
+
+        <div className="slider-strip">
+          <input
+            type="range"
+            min={0}
+            max={CANVAS_SLOTS - 1}
+            step={1}
+            value={slot}
+            aria-label="年月"
+            onChange={(ev) => goToSlot(Number(ev.target.value))}
+          />
         </div>
       </header>
 
-      <div className="slider-strip">
-        <input type="range" min={0} max={CANVAS_SLOTS - 1} step={1} value={slot}
-          aria-label="年月"
-          onChange={(e) => setSlot(+e.target.value)} />
-      </div>
-
-      {/* ============ 画布 ============ */}
-      <main style={{ paddingTop: fixedH }}>
+      {/* ================= 画布 ================= */}
+      <main style={{ paddingTop: fixedH || undefined }}>
         <div className="legend">
-          <span className="item"><i className="swatch s-shishou" />实授</span>
-          <span className="item"><i className="swatch s-fuzzy" />起月未载</span>
-          <span className="item"><i className="swatch s-uncertain" />同年并格待校</span>
-          <span className="item"><i className="cursor-demo" />当前年月</span>
+          <span className="item">
+            <i className="swatch s-shishou" />
+            实授
+          </span>
+          <span className="item">
+            <i className="swatch s-fuzzy" />
+            起月未载
+          </span>
+          <span className="item">
+            <i className="swatch s-conflict" />
+            同年并格待校
+          </span>
+          <span className="item">
+            <i className="cursor-demo" />
+            当前年月
+          </span>
         </div>
 
-        <div className="board-wrap" ref={boardWrapRef}>
-          <div className="board" style={{ width: LABEL_W + CANVAS_SLOTS * SLOT_W }}
-            onClick={onBoardClick}>
-            {/* 顶部刻度尺 */}
-            <div className="axis">
-              <div className="axis-label">職官 / 年月</div>
-              <div className="axis-track">
-                {Array.from({ length: CUT_Y - MIN_YEAR + 1 }, (_, i) => MIN_YEAR + i).map((yr) => {
-                  const yearSlots = yr === CUT_Y ? CUT_M : M_PER_YEAR;
-                  const mid = slotOf(yr, 1) + yearSlots / 2;
-                  return (
-                    <div key={yr}>
-                      <span className="yr" style={{ left: mid * SLOT_W }}
-                        title={`${eraLabel(yr)} ${ganzhi(yr)}`}>
-                        {yr}
-                        <span className="gz">{ganzhi(yr)}</span>
-                      </span>
-                      <span className="year-line" style={{ left: slotOf(yr, 1) * SLOT_W }} />
-                    </div>
-                  );
-                })}
-                {Array.from({ length: CANVAS_SLOTS }, (_, s) =>
-                  s % M_PER_YEAR === 0 ? null : (
-                    <span key={"mt" + s} className="month-tick" style={{ left: s * SLOT_W }} />
-                  )
-                )}
-              </div>
-            </div>
+        <div className="board-wrap">
+          <div
+            className="board"
+            style={{ width: labelW + CANVAS_SLOTS * slotW }}
+            onClick={onBoardClick}
+          >
+            <Axis slotW={slotW} />
+            <ReignRow slotW={slotW} />
+            <CabinetRow
+              slotW={slotW}
+              slot={slot}
+              hoverPerson={hoverPerson}
+              onHover={setHoverPerson}
+              onSelect={setSelected}
+            />
 
-            {/* 皇帝行们（朱底，按世系分段） */}
-            {REIGNS.map((r, i) => {
-              const s = Math.max(0, slotOf(r.startY, r.startM));
-              const e = Math.min(CANVAS_SLOTS - 1, slotOf(r.endY, r.endM, true));
-              if (e < 0 || s > CANVAS_SLOTS - 1) return null;
-              return (
-                <div className="row reign" key={i}>
-                  <div className="row-label">
-                    <span className="name">{r.temple}</span>
-                    <span className="dept">{r.dept}</span>
-                  </div>
-                  <div className="track" style={{ height: 38 }}>
-                    <span className="reign-bar" style={{
-                      left: s * SLOT_W,
-                      width: (e - s + 1) * SLOT_W,
-                    }}>{r.barLabel}</span>
-                  </div>
-                </div>
-              );
-            })}
+            <ColumnLines slotW={slotW} labelW={labelW} />
 
-            {/* 内阁行：泳道分配 */}
-            {(() => {
-              const lanes = assignLanes(TENURES);
-              return lanes.map((lane, li) => (
-                <div className="row" key={"lane" + li}>
-                  <div className="row-label">
-                    {li === 0 && (
-                      <>
-                        <span className="name">內閣大臣</span>
-                        <span className="dept">內閣 · {lane.length + (lanes.length - 1) * 0}人任</span>
-                      </>
-                    )}
-                  </div>
-                  <div className="track" style={{ height: BAR + PAD * 2 }}>
-                    {lane.map((t, ti) => {
-                      const { s, e, clamped } = span(t);
-                      const active = slot >= s && slot <= e;
-                      const hot = hoverPerson === t.person ||
-                        (selected && selected.person === t.person && selected.office === t.office &&
-                         selected.start_year === t.start_year);
-                      return (
-                        <span key={ti}
-                          className={[
-                            "bar", "t-shishou",
-                            t.start_month == null && "fuzzy",
-                            t.month_conflict && "conflict",
-                            clamped && "clamped",
-                            !active && "is-idle",
-                            hot && "peer",
-                          ].filter(Boolean).join(" ")}
-                          style={{ left: s * SLOT_W, width: (e - s + 1) * SLOT_W, top: PAD, height: BAR }}
-                          tabIndex={0}
-                          role="button"
-                          aria-label={`${t.person}，內閣，${t.start_year}至${t.end_year}`}
-                          onMouseEnter={() => setHoverPerson(t.person)}
-                          onMouseLeave={() => setHoverPerson(null)}
-                          onClick={(ev) => { ev.stopPropagation(); setSelected(t); }}
-                          onKeyDown={(ev) => {
-                            if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); setSelected(t); }
-                          }}
-                        >{t.person}</span>
-                      );
-                    })}
-                  </div>
-                </div>
-              ));
-            })()}
-
-            {/* 贯穿年/月列线（z-index 压在标签之下，demo 坑 5） */}
-            <span className="col-lines" style={{ left: LABEL_W, width: CANVAS_SLOTS * SLOT_W }} aria-hidden>
-              {Array.from({ length: CUT_Y - MIN_YEAR + 1 }, (_, i) => MIN_YEAR + i).map((yr) => (
-                <span key={yr} className="year-col" style={{ left: slotOf(yr, 1) * SLOT_W }} />
-              ))}
-              {Array.from({ length: CANVAS_SLOTS }, (_, s) =>
-                s % M_PER_YEAR === 0 ? null : (
-                  <span key={"mc" + s} className="month-col" style={{ left: s * SLOT_W }} />
-                )
-              )}
-            </span>
-
-            {/* 断限线：1644.3 月末 = 数据区右缘（含标签列的 board 坐标） */}
-            <span className="cutoff" style={{ left: LABEL_W + CANVAS_SLOTS * SLOT_W }} />
-            <span className="cutoff-label" style={{ left: LABEL_W + CANVAS_SLOTS * SLOT_W }}>
+            {/* 断限线：1644 年 3 月末 = 数据区右缘（board 坐标含标签列） */}
+            <span
+              className="cutoff"
+              style={{ left: labelW + CANVAS_SLOTS * slotW }}
+            />
+            <span
+              className="cutoff-label"
+              style={{ left: labelW + CANVAS_SLOTS * slotW }}
+            >
               1644.3
             </span>
-
-            {/* 游标：指在当前月格右缘（"在该月内"） */}
-            <span className="cursor" style={{ left: LABEL_W + (slot + 1) * SLOT_W }} aria-hidden />
           </div>
+
+          {/* 游标：指在当前月格右缘（"在该月内"） */}
+          <span
+            className="cursor"
+            style={{ left: labelW + (slot + 1) * slotW }}
+            aria-hidden
+          />
         </div>
       </main>
 
-      {/* ============ 页脚 ============ */}
+      {/* ================= 页脚 ================= */}
       <footer>
         <div className="rule" />
-        <p><span className="k">数据范围</span>　明代內閣（{META.stats.years_covered[0]}–{CUT_Y}.{CUT_M}），{META.stats.tenures} 任职段、{META.stats.persons} 人。<b>缺载处留空，不作填补。</b></p>
-        <p><span className="k">断限</span>　止于崇祯十七年三月（1644.3）。</p>
-        <p><span className="k">时间轴</span>　每月一格、各格等宽（无限画布，随内容横向滚动）；月份未载者占满整年，详情中注明。</p>
-        <p><span className="k">史料依据</span>　張德信《明代職官年表》冊1·內閣大臣年表；人物对齐 CBDB（{META.stats.cbdb_aligned} 段）。</p>
-        <p><span className="k">数据说明</span>　年表为「年在位」体：某年列名即该年在任；注文记任免动作。年份空档按源保留，不填补。</p>
-        <p style={{ marginTop: 12 }}>开源非商业项目 · 代码 Apache-2.0 · 本项目整理数据 CC BY-NC-SA 4.0</p>
+        <p>
+          <span className="k">数据范围</span>　明代内阁大臣
+          （1402–1644.3，内阁始设于建文四年），{META.stats.tenures} 任职段、
+          {META.stats.persons} 人。<b>缺载处留空，不作填补。</b>
+        </p>
+        <p>
+          <span className="k">断限</span>　止于崇祯十七年三月（1644.3），不含南明。
+        </p>
+        <p>
+          <span className="k">时间轴</span>　每月一格、各格等宽（无限画布，随内容横向
+          滚动）；月份未载者占满整年，详情中注明。年号条可一键跳代，←/→ 逐月
+          （Shift 逐年）。
+        </p>
+        <p>
+          <span className="k">皇帝行</span>　每位皇帝一段；年内小字为
+          <b>当年二月周岁</b>（生年据通行史料；生日未到者取"年差减一"，保守不虚报）。
+        </p>
+        <p>
+          <span className="k">月份依据</span>　年表注文所记任免月份；详情抽屉另列
+          中研院「明代职官资料库」检索《明實錄》命中（取与本人任期相关者，每条
+          附出处）。
+        </p>
+        <p>
+          <span className="k">史料依据</span>　张德信《明代职官年表》册1·內閣大臣年表
+          （MinerU OCR 提取）；人物对齐 CBDB（{META.stats.cbdb_aligned} 段）。
+        </p>
+        <p>
+          <span className="k">数据说明</span>　年表为「年在位」体：某年列名即该年在任；
+          年份空档按源保留，不填补。
+        </p>
+        <p style={{ marginTop: 12 }}>
+          开源非商业项目 · 代码 Apache-2.0 · 本项目整理数据 CC BY-NC-SA 4.0
+        </p>
       </footer>
 
-      {/* ============ 详情抽屉 ============ */}
-      <aside className={"drawer" + (selected ? " open" : "")} aria-hidden={!selected} role="dialog" aria-label="任职详情">
-        {selected && (() => {
-          const { clamped } = span(selected);
-          const confPct = Math.round(selected.confidence * 100);
-          return (
-            <>
-              <div className="drawer-head">
-                <div>
-                  <h2>{selected.person}</h2>
-                  <div className="drawer-office">內閣{selected.cbdb_id != null && ` · CBDB #${selected.cbdb_id}`}</div>
-                </div>
-                <button className="close" aria-label="关闭" onClick={() => setSelected(null)}>关闭</button>
-              </div>
-              <div className="drawer-body">
-                <dl className="field"><dt>任期</dt><dd>
-                  {selected.start_year}年{selected.start_month ? MONTH_TAG(selected.start_month) : ""}
-                  {" – "}
-                  {selected.end_year}年{selected.end_month ? MONTH_TAG(selected.end_month) : ""}
-                </dd></dl>
-                <dl className="field"><dt>精度</dt><dd>
-                  {selected.start_month || (selected.end_month && !clamped)
-                    ? "已精确到月（据年表注文）"
-                    : clamped
-                      ? <>仅到年；终年按<b>断限</b>截到 1644 年 3 月（非史料所载月份）</>
-                      : "仅到年（史料未载月份）"}
-                  {selected.month_conflict && <span className="vermilion">（同年入离并格，月份待校）</span>}
-                </dd></dl>
-                <dl className="field"><dt>在任年</dt><dd className="mono">{selected.years.join("、")}</dd></dl>
-                <dl className="field"><dt>任免</dt><dd>
-                  入：{selected.enter_verbs.join("、") || "—"}　
-                  离：{selected.leave_verbs.join("、") || "—"}
-                </dd></dl>
-                <dl className="field"><dt>置信度</dt><dd><div className="conf">
-                  <div className="conf-bar">
-                    <i className={selected.confidence < 0.6 ? "low" : ""}
-                      style={{ width: `${confPct}%` }} />
-                  </div>
-                  <span className="conf-num">{selected.confidence.toFixed(1)}</span>
-                </div></dd></dl>
-                <dl className="field"><dt>出处</dt><dd>{META.source}</dd></dl>
-                {selected.note && <dl className="field"><dt>年表原文</dt><dd className="serif">{selected.note}</dd></dl>}
-                <div className="caveat"><b>关于本条的确定性</b><br />
-                  {selected.confidence < 0.8
-                    ? "本条置信度低于 0.8，史料对任期记载可能有歧，引用前请核对原书。"
-                    : "任期为年表口径；月份未载处以整年表示，未作推断。"}
-                </div>
-              </div>
-            </>
-          );
-        })()}
-      </aside>
-    </div>
+      <Drawer tenure={selected} onClose={() => setSelected(null)} />
+    </>
   );
 }

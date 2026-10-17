@@ -29,12 +29,18 @@
 |------|------|------|
 | 阶段① MVP | 崇祯朝兵部尚书：清洗→入库→查询→校勘链路 | ✅ 完成 |
 | 阶段①½ demo | 九职位可视化原型（无限画布·月格等宽·实录月份接入） | ✅ 完成（2026-10-16） |
+| **正式站** | `site/` 按 demo 模板逐项重做（全朝内阁 + 年号跳转 + 实录抽屉） | ✅ 2026-10-17（D24） |
 | 阶段② 中高层全量 | 六部七卿+内阁+督抚+科道；167 处同年多月实录校勘 | ⬜ |
 | 阶段③ 全朝中层 | 接入 CBDB 全量 + NLP 半自动抽取 | ⬜ |
 | 阶段④ 地方官 | 府州县官 + 卫所武官（百万级） | ⬜ |
 
 已完成：6 张表 schema、数据存取层、崇祯朝兵部尚书 14 任种子数据、CLI、
-134 个测试、单文件可视化 demo（`web/demo.html`，双击即开）。
+148 个测试、单文件可视化 demo（`web/demo.html`，双击即开）、
+正式站 `site/`（Next.js 静态导出，360 段全朝内阁）。
+
+> ⚠️ **正式站数据源有已知缺陷**：张德信年表 OCR 提取漏记"无注文人名行"，
+> 全朝视图会出现空档/断段；替代源《明史》卷109/110 宰辅年表已实测可行，
+> 换源待拍板。详见 `docs/正式数据管线报告.md` 第六节。
 demo 要点：**月格等宽无限画布**（拖滑块精确到月看"那一年那月在任"）、
 皇帝行朱色 + 周岁年龄带、实录月份回填（起月 33%）+ 抽屉贴《明实录》原文。
 本轮开发经验见 `docs/demo开发经验总结.md`。
@@ -75,7 +81,8 @@ python -m mingoff.cli todo               # 待校勘队列
 python -m mingoff.cli stats              # 库内计数
 python -m mingoff.backfill_months        # 实录月份回填（需先抓 sinica_months.json）
 python -m mingoff.export_demo            # 重建 web/demo.html
-python -m pytest tests                   # 134 个测试
+python -m mingoff.official               # 重建正式站数据（v2：含离任/实录）
+python -m pytest tests                   # 148 个测试
 ```
 
 ---
@@ -165,9 +172,10 @@ mingoff/
 │  └─ cli.py              命令行入口
 ├─ web/demo.template.html demo 模板（数据构建时注入）
 ├─ web/demo.html          产出的单文件 demo（双击即开，仅评审用，D21）
-├─ src/mingoff/official.py ★ 正式数据管线：年表→内阁任职段（D21）
-├─ docs/正式数据管线报告.md  正式版产出规模与源质量发现
-├─ site/                  ★ 正式网站（Next.js 静态导出，D22；见 site/README.md）
+├─ web/demo.template.html ★ demo 模板 —— 正式站的 **UI 唯一真源**（D24）
+├─ src/mingoff/official.py ★ 正式数据管线：年表→内阁任职段（D21；v2 加离任/实录）
+├─ docs/正式数据管线报告.md  正式版产出规模、源质量发现与数据源复核
+├─ site/                  ★ 正式网站（Next.js 静态导出，D22；按 demo 重做 D24；见 site/README.md）
 └─ data/mingoff.sqlite    运行时数据库（不入库）
 ```
 
