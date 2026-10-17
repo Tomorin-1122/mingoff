@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>明代职官数据库 · 崇祯朝按月在任</title>
+<!--
+  本轮改造（2026-10-16 老板要求）：
+  ① 无限画布：整个时间轴按月等宽横向铺开，不压缩进一页；
+     页面随内容自然加宽，横向一直滑到 1644 年 3 月，每个月格都清楚可辨。
+  ② 进度条（滑块）精度到月：input step=1，范围 = 总月格数。
+  ③ 皇帝行：国风朱色（朱=朱明皇室），不再用米色底+墨字。
+  ④ 皇帝行每月格上标年龄（周岁：生年 1611，不搞虚岁）。
+  ⑤ 接入月份数据（中研院明實錄）；有原文内容的条目在抽屉中直接贴出实录原文。
+-->
+<style>
+:root{
+  --mo:#1B1A17;        /* 墨 */
+  --xuan:#FBFAF7;      /* 宣纸白 */
+  --xuan-2:#F2F0EA;
+  --dian:#1F3A5F;      /* 靛：主强调 */
+  --dian-soft:#43617F;
+  --zhu:#A8322D;       /* 朱：皇帝行底色 + 缺载/存疑 */
+  --zhu-soft:#C4635E;
+  --hui:#6B6960;
+  --xian:#D9D5CB;
+
+  --serif:"Source Han Serif SC","Noto Serif SC","Songti SC","SimSun",serif;
+  --sans:"Source Han Sans SC","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  --mono:"JetBrains Mono","IBM Plex Mono","Cascadia Mono",Consolas,monospace;
+
+  --gut:clamp(14px,2.6vw,36px);
+  --label-w:132px;                 /* 左侧职官名列宽（固定，不随视口缩） */
+  --slot-w:26px;                   /* 一个月格的宽度——无限画布的基本单位 */
+  --row-h:20px;
+  --lane-gap:4px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  /* 无限画布的关键：body 宽度随内容撑开。
+     否则 body 只有视口宽，画布只是"溢出"——sticky 的 containing block
+     不随滚动延伸，页头/滑块的 sticky left 永远出不了视口（实测踩过）。
+     ⚠️ 同时**不能**给任何元素设 width:100vw 或 overflow-x:clip：
+     100vw 在有纵向滚动条时比视口宽出滚动条宽度，会撑出横向溢出，
+     加上 clip 后 html 根本不产生横向滚动条 → 页面"卡死"拖不动（实测踩过）。 */
+  width:max-content;
+  min-width:100%;
+  background:var(--xuan);color:var(--mo);
+  font-family:var(--sans);font-size:15px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  background-image:repeating-linear-gradient(0deg,transparent 0 2px,rgba(27,26,23,.014) 2px 3px);
+}
+a{color:var(--dian)}
+button{font-family:inherit}
+
+/* ============ 页头（fixed 钉视口，横向纵向都不动） ============
+   ⚠️ 方案演进（三个坑都实测踩过）：
+   ① 只 sticky top → 横向滚动时页头跟着滑走；
+   ② body 撑开（width:max-content）+ sticky left → sticky 元素宽=画布宽，
+      照样滑走；再给它们 width:100vw 又会撑出横向溢出，
+      配合 overflow clip 直接把滚动"卡死"；
+   ③ 最终方案：页头/滑块/图例 **fixed**，钉死视口四角不动；
+      图表区用 padding-top 补偿 fixed 占位。无限画布的横向滚动
+      只发生在 body 上，与 fixed 元素无关。 */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:20;
+  background:var(--xuan);border-bottom:1px solid var(--xian);
+  padding:calc(var(--gut) * .55) var(--gut) 10px;
+}
+.masthead{
+  display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;
+  max-width:1500px;margin:0 auto;
+  padding-bottom:8px;
+}
+.masthead h1{
+  font-family:var(--serif);font-size:clamp(19px,2.2vw,26px);
+  font-weight:600;letter-spacing:.06em;margin:0;
+}
+.masthead .sub{
+  font-size:11px;color:var(--hui);letter-spacing:.14em;
+  text-transform:uppercase;font-family:var(--mono);
+}
+.masthead .spacer{flex:1}
+.masthead .scope{font-family:var(--mono);font-size:12px;color:var(--hui)}
+
+.control{
+  display:flex;align-items:flex-end;gap:clamp(12px,2vw,28px);
+  max-width:1500px;margin:0 auto;padding:6px 0 2px;flex-wrap:wrap;
+}
+.era{font-family:var(--serif);line-height:1;display:flex;align-items:baseline;gap:11px}
+.era .regnal{font-size:clamp(22px,2.8vw,34px);font-weight:600;letter-spacing:.04em}
+.era .gz{
+  font-family:var(--serif);font-size:clamp(14px,1.6vw,19px);
+  color:var(--dian);letter-spacing:.18em;font-weight:600;
+}
+.era .anno{font-family:var(--mono);font-size:13px;color:var(--hui)}
+
+.stepper{display:flex;gap:6px;margin-left:auto}
+.stepper button{
+  font-family:var(--mono);font-size:13px;
+  background:var(--xuan);color:var(--mo);
+  border:1px solid var(--xian);padding:5px 11px;cursor:pointer;
+  transition:border-color .12s,color .12s;
+}
+.stepper button:hover{border-color:var(--dian);color:var(--dian)}
+.stepper button:focus-visible{outline:2px solid var(--dian);outline-offset:2px}
+.stepper button[disabled]{opacity:.35;cursor:not-allowed}
+
+/* 月份滑块：fixed 钉视口（与 header 同层，横向滚动不动） */
+.slider-strip{
+  position:fixed;left:0;right:0;z-index:19;
+  padding:4px var(--gut) 8px;
+}
+input[type=range]{
+  width:100%;-webkit-appearance:none;appearance:none;background:transparent;
+  margin:0;height:24px;cursor:ew-resize;
+}
+input[type=range]:focus-visible{outline:2px solid var(--dian);outline-offset:4px}
+input[type=range]::-webkit-slider-runnable-track{height:2px;background:var(--xian)}
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;width:15px;height:15px;margin-top:-6.5px;
+  background:var(--dian);border:2px solid var(--xuan);box-shadow:0 0 0 1px var(--dian);
+}
+input[type=range]::-moz-range-track{height:2px;background:var(--xian)}
+input[type=range]::-moz-range-thumb{
+  width:13px;height:13px;border-radius:0;background:var(--dian);
+  border:2px solid var(--xuan);box-shadow:0 0 0 1px var(--dian);
+}
+
+/* ============ 图表区：无限画布 ============ */
+/* 画布宽度 = 标签列 + 总月格 × 月格宽。17 年 × 12 月 × 26px ≈ 5400px，
+   远超视口 → 横向自然滚动，"无限滑下去"。每个月格都保持可读宽度。 */
+.legend{
+  display:flex;gap:20px;flex-wrap:wrap;align-items:center;
+  padding:6px 0;
+  font-size:12.5px;color:var(--hui);
+}
+.legend .item{display:flex;align-items:center;gap:7px;white-space:nowrap}
+.swatch{width:26px;height:13px;border:1px solid var(--dian);flex:none}
+.swatch.s-实授{background:var(--dian)}
+.swatch.s-署理{background:var(--xuan);border-style:dashed}
+.swatch.s-加衔{background:var(--dian-soft)}
+.swatch.s-uncertain{border-color:var(--zhu)}
+.legend .cursor-demo{width:2px;height:15px;background:var(--mo);flex:none}
+
+/* 职官名列吸左：横向滚动时行标签钉在视口左边（所有屏宽，不只手机）。
+   行是 grid（标签列+轨道列），行本身宽 = 画布宽；标签列 sticky left:0
+   在行内吸住。 */
+/* 职官名列吸左：横向滚动时行标签钉在视口左边（所有屏宽，不只手机）。
+   行是 grid（标签列+轨道列），行本身宽 = 画布宽；标签列 sticky left:0
+   在行内吸住。 */
+main{position:relative;padding:0 var(--gut) 44px}
+/* header + 滑块 fixed 占位补偿：JS 在 init 时量实际高度写入 --fixed-h */
+main{padding-top:var(--fixed-h, 150px)}
+.board-wrap{position:relative}
+.board{
+  position:relative;
+  /* JS 会把 width 设为 label + totalSlots * slotW，这里给个兜底 */
+  min-width:100%;
+}
+
+/* 顶部刻度尺：月份格 + 年份标签。整条随画布滚动。 */
+.axis{
+  display:grid;grid-template-columns:var(--label-w) 1fr;
+  border-bottom:1px solid var(--mo);
+  position:sticky;top:0;z-index:6;background:var(--xuan);
+}
+.axis-label{
+  font-family:var(--mono);font-size:11px;color:var(--hui);
+  padding:8px 10px 8px 12px;letter-spacing:.06em;
+  display:flex;align-items:flex-end;
+}
+.axis-track{position:relative;height:44px}
+.axis .yr{
+  position:absolute;top:4px;transform:translateX(-50%);
+  font-family:var(--mono);font-size:11px;color:var(--mo);
+  white-space:nowrap;text-align:center;line-height:1.2;
+  font-weight:600;
+}
+.axis .yr .gz{
+  display:block;font-size:9.5px;color:var(--hui);font-weight:400;letter-spacing:.04em;
+}
+/* 年分界线（粗一点） */
+.axis .year-line{
+  position:absolute;top:36px;height:8px;width:1px;background:var(--hui);
+  pointer-events:none;
+}
+/* 月刻度：每个月格一条 4px 小短线，让"每月都清楚"落到实处 */
+.axis .month-tick{
+  position:absolute;top:38px;height:6px;width:1px;background:var(--xian);
+  pointer-events:none;
+}
+/* 每年的分界线贯穿所有行 */
+.year-col{position:absolute;top:0;bottom:0;border-left:1px solid var(--xian);pointer-events:none}
+/* 每月的分界线贯穿所有行（浅一点） */
+.month-col{position:absolute;top:0;bottom:0;border-left:1px dotted rgba(27,26,23,.055);pointer-events:none}
+
+.row{
+  display:grid;grid-template-columns:var(--label-w) 1fr;
+  border-bottom:1px solid var(--xian);
+}
+.row-label{
+  padding:8px 10px 8px 12px;display:flex;flex-direction:column;gap:1px;
+  justify-content:center;
+  position:sticky;left:0;z-index:5;background:var(--xuan);
+  box-shadow:1px 0 0 var(--xian);
+}
+.axis-label{z-index:7}
+.row-label .name{font-family:var(--serif);font-size:14.5px}
+.row-label .dept{font-family:var(--mono);font-size:10px;color:var(--hui);letter-spacing:.05em}
+.track{position:relative}
+
+/* 皇帝行：国风朱色 —— 朱 = 朱明皇室。
+   行高压缩：红条 + 细年龄带一体，不做两层大块。 */
+.row.reign{background:rgba(168,50,45,.06);border-bottom:1px solid var(--mo)}
+.row.reign .row-label{background:#F6ECEB}
+.row.reign .row-label .name{font-weight:600;color:var(--zhu)}
+.reign-bar{
+  position:absolute;top:4px;height:18px;
+  background:var(--zhu);color:var(--xuan);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-size:10.5px;letter-spacing:.3em;
+  box-shadow:0 0 0 1px rgba(168,50,45,.55);
+}
+/* 年龄格：紧贴红条下方，只写岁数（年份上面轴上有，不重复） */
+.reign-age{
+  position:absolute;top:24px;height:13px;
+  display:flex;align-items:center;
+  font-family:var(--mono);font-size:9px;color:var(--zhu);
+  pointer-events:none;letter-spacing:.02em;
+}
+
+/* 断限线：1644 年 3 月末 */
+.cutoff{
+  position:absolute;top:0;bottom:0;width:0;
+  border-left:1px dashed var(--zhu);z-index:5;pointer-events:none;
+  opacity:.85;
+}
+.cutoff-label{
+  position:absolute;top:2px;transform:translateX(4px);
+  font-family:var(--mono);font-size:10px;color:var(--zhu);
+  white-space:nowrap;pointer-events:none;
+}
+
+/* 任期条 */
+.bar{
+  position:absolute;
+  display:flex;align-items:center;
+  font-size:12px;cursor:pointer;white-space:nowrap;overflow:hidden;
+  border:1px solid var(--dian);
+  padding:0 6px;color:var(--mo);
+  transition:transform .1s,box-shadow .1s,opacity .15s;
+}
+/* 悬浮/同人联动共用一套"墨色高亮"：墨 = 当前关注（与年份游标同色系）。
+   悬浮是单条，联动把同一人跨行的条全部染成同款墨色 —— 一眼看出一人多职。 */
+.bar:hover{transform:translateY(-1px);background:var(--mo);color:var(--xuan);border-color:var(--mo)}
+.bar:focus-visible{outline:2px solid var(--mo);outline-offset:2px}
+.bar.t-实授{background:var(--dian);color:var(--xuan)}
+.bar.t-署理{background:var(--xuan);color:var(--dian);border-style:dashed}
+.bar.t-加衔{background:var(--dian-soft);color:var(--xuan)}
+.bar.t-检校,.bar.t-管{background:var(--xuan);color:var(--dian)}
+.bar.uncertain{border-color:var(--zhu);color:var(--zhu)}
+.bar.t-实授.uncertain{background:var(--zhu);color:var(--xuan)}
+/* 当前月在任 = 实色；不在任 = 淡化 */
+.bar.is-idle{opacity:.3;filter:saturate(.45)}
+.bar.is-idle:hover{opacity:.72;filter:none}
+
+/* 游标：按月精确落位 */
+.cursor{
+  position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--mo);
+  pointer-events:none;z-index:4;
+}
+.cursor::after{
+  content:"";position:absolute;top:0;left:-3px;width:8px;height:8px;background:var(--mo);
+}
+
+/* 同人联动：与 :hover 同款墨色实底 —— 跨行的同人条全部变墨色，
+   不描边、不淡化其余条（闪烁伤眼，实测砍掉）。 */
+.bar.peer{transform:translateY(-1px);background:var(--mo);color:var(--xuan);border-color:var(--mo);z-index:4!important}
+
+/* ============ 详情抽屉 ============ */
+.drawer{
+  position:fixed;top:0;right:0;height:100%;width:min(430px,94vw);
+  background:var(--xuan);border-left:2px solid var(--mo);
+  transform:translateX(101%);transition:transform .22s cubic-bezier(.2,.7,.3,1);
+  z-index:40;display:flex;flex-direction:column;
+}
+.drawer.open{transform:none;box-shadow:-14px 0 34px rgba(27,26,23,.13)}
+.drawer-head{
+  padding:16px 20px 12px;border-bottom:1px solid var(--xian);
+  display:flex;align-items:flex-start;gap:12px;
+}
+.drawer-head h2{font-family:var(--serif);font-size:22px;margin:0;font-weight:600;letter-spacing:.03em}
+.drawer-head .close{
+  margin-left:auto;background:none;border:1px solid var(--xian);
+  font-family:var(--mono);font-size:12px;color:var(--hui);cursor:pointer;padding:3px 9px;
+}
+.drawer-head .close:hover{border-color:var(--mo);color:var(--mo)}
+.drawer-body{padding:16px 20px 40px;overflow-y:auto}
+.field{display:grid;grid-template-columns:74px 1fr;gap:10px;padding:8px 0;
+  border-bottom:1px solid var(--xuan-2);font-size:13.5px;margin:0}
+.field dt{font-family:var(--mono);font-size:11px;color:var(--hui);
+  letter-spacing:.05em;padding-top:3px}
+.field dd{margin:0}
+.tag{
+  display:inline-block;font-size:11.5px;font-family:var(--mono);
+  padding:1px 7px;border:1px solid currentColor;
+}
+.tag.t-实授{color:var(--dian)}
+.tag.t-署理{color:var(--dian);border-style:dashed}
+.tag.t-加衔{color:var(--dian-soft)}
+.conf{display:flex;align-items:center;gap:9px}
+.conf-bar{flex:1;height:5px;background:var(--xuan-2);position:relative}
+.conf-bar i{position:absolute;left:0;top:0;bottom:0;background:var(--dian)}
+.conf-bar i.low{background:var(--zhu)}
+.conf-num{font-family:var(--mono);font-size:12px;color:var(--hui)}
+
+/* 明实录原文块：抽屉里的"贴原文"区 */
+.shilu-block{
+  margin-top:16px;border-left:3px solid var(--dian);
+  background:rgba(31,58,95,.04);padding:11px 13px;
+}
+.shilu-block h3{
+  margin:0 0 6px;font-family:var(--serif);font-size:13px;
+  color:var(--dian);letter-spacing:.08em;font-weight:600;
+}
+.shilu-item{margin:0 0 10px;font-size:13px;line-height:1.75}
+.shilu-item:last-child{margin-bottom:0}
+.shilu-item .src{
+  font-family:var(--mono);font-size:11px;color:var(--hui);
+  display:block;margin-bottom:2px;letter-spacing:.03em;
+}
+.shilu-item .txt{font-family:var(--serif)}
+.shilu-empty{
+  margin-top:16px;font-size:12.5px;color:var(--hui);
+  padding:9px 12px;border-left:3px solid var(--xian);
+}
+
+.caveat{
+  margin-top:18px;padding:11px 13px;border-left:3px solid var(--zhu);
+  background:rgba(168,50,45,.045);font-size:12.5px;
+}
+.caveat b{color:var(--zhu)}
+
+footer{
+  max-width:1500px;margin:0 auto;padding:0 var(--gut) 60px;
+  color:var(--hui);font-size:12.5px;line-height:1.8;
+}
+footer .rule{height:1px;background:var(--xian);margin-bottom:14px}
+footer p{margin:0 0 6px}
+footer .k{font-family:var(--mono);color:var(--mo)}
+
+/* ============ 响应式 ============ */
+@media (max-width:640px){
+  :root{--label-w:96px;--slot-w:20px}
+  header{padding:10px 12px 6px}
+  main{padding:0 12px 32px}
+  footer{padding:0 12px 44px}
+  .era .regnal{font-size:24px}
+  .era .gz{font-size:14px}
+  .row-label{font-size:12px}
+  .row-label .name{font-size:12.5px}
+  .axis-label{z-index:7}
+  .row.reign .row-label{background:#F6ECEB}
+  .legend{gap:12px;font-size:11.5px}
+  .bar{font-size:10.5px;padding:0 3px}
+  .reign-age{font-size:8.5px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="masthead">
+    <h1>明代职官数据库</h1>
+    <span class="sub">MingOff</span>
+    <span class="spacer"></span>
+    <span class="scope" id="scopeText">崇祯朝</span>
+  </div>
+
+  <div class="control">
+    <div class="era">
+      <span class="regnal" id="regnal">崇祯元年</span>
+      <span class="gz" id="gz">戊辰</span>
+      <span class="anno" id="anno">1628</span>
+      <span class="anno" id="monthTag">正月</span>
+    </div>
+    <div class="stepper">
+      <button id="prev" aria-label="上一月">←</button>
+      <button id="next" aria-label="下一月">→</button>
+    </div>
+  </div>
+</header>
+
+<div class="slider-strip">
+  <input type="range" id="cursorSlider" min="0" max="203" value="12" aria-label="年月" step="1">
+</div>
+
+<main>
+  <div class="legend">
+    <span class="item"><i class="swatch s-实授"></i>实授</span>
+    <span class="item"><i class="swatch s-署理"></i>署理</span>
+    <span class="item"><i class="swatch s-加衔"></i>加衔</span>
+    <span class="item"><i class="swatch s-uncertain"></i>起止未载</span>
+    <span class="item"><i class="cursor-demo"></i>当前年月</span>
+  </div>
+
+  <div class="board-wrap">
+    <div class="board" id="board"></div>
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="rule"></div>
+  <p><span class="k">数据范围</span>　崇祯朝（1628–1644.3）中央职官九职：内阁首辅、内阁阁臣、六部尚书、都察院左都御史。<b>缺载处留空，不作填补。</b></p>
+  <p><span class="k">断限</span>　止于崇祯十七年三月（1644.3）。</p>
+  <p><span class="k">时间轴</span>　每月一格、各格等宽（无限画布，随内容横向滚动）；月份未载者占满整年，详情中注明。</p>
+  <p><span class="k">年龄</span>　崇祯帝生于万历三十八年十二月（1611-02-06），行内标注为<b>周岁</b>（当年已过生日则 N，未过则 N-1）。</p>
+  <p><span class="k">月份依据</span>　中研院「明代职官资料库」检索《明實錄》命中记录，月份取自出處列的年号纪年。</p>
+  <p><span class="k">史料依据</span>　《明史》卷110〈宰辅年表二〉、卷112〈七卿年表二〉；兵部尚书另参张德信《明代职官年表》。</p>
+  <p style="margin-top:12px">开源非商业项目 · 代码 Apache-2.0 · 本项目整理数据 CC BY-NC-SA 4.0</p>
+</footer>
+
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-label="任职详情">
+  <div class="drawer-head">
+    <div>
+      <h2 id="dName">—</h2>
+      <div id="dOffice" style="font-family:var(--mono);font-size:12px;color:var(--hui)"></div>
+    </div>
+    <button class="close" id="dClose" aria-label="关闭">关闭</button>
+  </div>
+  <div class="drawer-body" id="dBody"></div>
+</aside>
+
+<script>
+/* ================= 数据（构建时内嵌）================= */
+const DATA = __DEMO_DATA__;
+const YEARS = __YEAR_TABLE__;
+const SHILU = __SHILU_MONTHS__;   /* { person: [{year,era,era_year,month,leap,source,content}] } */
+const YEAR_INFO = Object.fromEntries(YEARS.map(r => [r.year, r]));
+
+const OFFICES = DATA.offices;
+const TENURES = DATA.tenures;
+const Y0 = 1628, Y1 = 1644;
+/* 年份范围以数据为准，但画布固定从崇祯元年铺到断限 */
+const NYEARS = Y1 - Y0 + 1;
+const M_PER_YEAR = 12;
+const TOTAL_SLOTS = NYEARS * M_PER_YEAR;   /* 204 */
+const CUT_Y = 1644, CUT_M = 3;
+/* 总格数截到断限：1628.1 → 1644.3 = 16*12 + 3 = 195 格 */
+const CANVAS_SLOTS = (CUT_Y - Y0) * M_PER_YEAR + CUT_M;
+
+const SLOT_W = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--slot-w")) || 26;
+
+/* ================= 时间轴：按月等宽 ================= */
+function slotOf(year, month, isEnd){
+  const idx = year - Y0;
+  let m;
+  if (month == null) m = isEnd ? M_PER_YEAR - 1 : 0;
+  else m = Math.max(0, Math.min(M_PER_YEAR - 1, month - 1));
+  return idx * M_PER_YEAR + m;
+}
+const pctSlot = s => s / CANVAS_SLOTS * 100;   /* 保留：仅用于调试，渲染一律走像素 */
+
+/* 一段任期在画布上的 (left%, width%)。返回值以 CANVAS_SLOTS 为分母。 */
+function span(t){
+  let sY = t.start == null ? Y0 : t.start;
+  let eY = t.end == null ? CUT_Y : t.end;
+  let eM = t.end_month;
+  let sM = t.start_month;
+
+  /* 断限截断（数据层已 clamp，这里兜底）：end 落在 1644 或之后的，一律截到 1644.3 */
+  if (eY > CUT_Y) { eY = CUT_Y; eM = CUT_M; }
+  else if (eY === CUT_Y && (eM == null || eM > CUT_M)) { eM = CUT_M; }
+
+  /* 起点早于画布的，钳到画布起点（1627 年的记录从崇祯元年正月画起） */
+  if (sY < Y0) { sY = Y0; sM = 1; }
+
+  const s = slotOf(sY, sM, false);
+  const e = slotOf(eY, eM, true);
+  const ss = Math.max(0, s);
+  const ee = Math.min(CANVAS_SLOTS - 1, Math.max(e, ss));
+  return { left: pctSlot(ss), width: (ee - ss + 1) / CANVAS_SLOTS * 100, s: ss, e: ee };
+}
+
+const CN_MONTHS = ["正","二","三","四","五","六","七","八","九","十","十一","十二"];
+const eraLabel = y => (YEAR_INFO[y] ? YEAR_INFO[y].era : String(y));
+const ganzhi   = y => (YEAR_INFO[y] ? YEAR_INFO[y].ganzhi : "");
+
+/* 周岁：生于 1611-02-06（万历三十八年十二月，公历已入 1611 年 2 月）。
+   月份 m（1-12）时：
+     - m >= 2（公历 2 月起已过生日）：age = y - 1611
+     - m == 1（公历 1 月未过生日）：age = y - 1611 - 1
+   明代月份是农历，但生日 1611-02-06 已是公历 —— 农历正月大致对应公历 1 月底至 3 月初，
+   边界月用"当年周岁下限"（未过生日）表达，避免虚报精度。 */
+function ageZhouSui(year, month){
+  const born = 1611;
+  const full = year - born;          /* 若已过 2 月生日 */
+  if (month != null && month < 2) return full - 1;
+  return full;
+}
+
+/* ================= 渲染 ================= */
+function renderBoard(){
+  const board = document.getElementById("board");
+  board.innerHTML = "";
+
+  /* 画布总宽 = 标签列 + 总月格 × 月格宽 */
+  const labelW = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--label-w")) || 132;
+  board.style.width = (labelW + CANVAS_SLOTS * SLOT_W) + "px";
+
+  /* ---- 顶部刻度尺 ---- */
+  const axis = document.createElement("div");
+  axis.className = "axis";
+  const al = document.createElement("div");
+  al.className = "axis-label";
+  al.textContent = "職官 / 年月";
+  axis.appendChild(al);
+
+  const at = document.createElement("div");
+  at.className = "axis-track";
+  for (let y = Y0; y <= CUT_Y; y++){
+    const yLine = document.createElement("div");
+    yLine.className = "year-line";
+    yLine.style.left = (slotOf(y, 1) * SLOT_W) + "px";
+    at.appendChild(yLine);
+
+    /* 年份标签居该年中点；但 1644 只有 3 个月数据，
+        按年中点定位会被顶出数据区——改按该年**实际格数**的中点。 */
+    const yearSlots = (y === CUT_Y) ? CUT_M : M_PER_YEAR;
+    const midSlot = slotOf(y, 1) + yearSlots / 2;
+    const lbl = document.createElement("span");
+    lbl.className = "yr";
+    lbl.style.left = (midSlot * SLOT_W) + "px";
+    /* 干支**每年都标**（老板要求）：一年 312px 足够放下「1641 辛巳」两行 */
+    lbl.innerHTML = `${y}<span class="gz">${ganzhi(y)}</span>`;
+    lbl.title = `${eraLabel(y)}${ganzhi(y)}`;
+    at.appendChild(lbl);
+  }
+  /* 月刻度：CANVAS_SLOTS 格全部画小短线（首格在 0 处不画，画 1..N-1 的分界） */
+  for (let s = 1; s < CANVAS_SLOTS; s++){
+    if (s % M_PER_YEAR === 0) continue;    /* 年界已画 */
+    const mt = document.createElement("div");
+    mt.className = "month-tick";
+    mt.style.left = (s * SLOT_W) + "px";
+    at.appendChild(mt);
+  }
+  axis.appendChild(at);
+  board.appendChild(axis);
+
+  /* ---- 皇帝行（朱底，含每月年龄格）---- */
+  board.appendChild(buildReignRow());
+
+  /* ---- 职官行 ---- */
+  OFFICES.forEach(off => board.appendChild(buildOfficeRow(off)));
+
+  /* ---- 断限竖线：1644 年 3 月的**月末** = 数据区右缘 ----
+     ⚠️ 两个坑都实测踩过：
+     ① cut 挂在 board 上，board 坐标**含标签列**——left 必须是
+        labelW + CANVAS_SLOTS*SLOT_W，漏掉标签列就差 132px（条"越线"的真凶）；
+     ② bar 的百分比基线是 track 宽，与 board 坐标不一致——
+        所以渲染已全部统一为像素（见 buildOfficeRow）。 */
+  const cut = document.createElement("div");
+  cut.className = "cutoff";
+  cut.style.left = (labelW + CANVAS_SLOTS * SLOT_W) + "px";
+  board.appendChild(cut);
+  const cutLbl = document.createElement("div");
+  cutLbl.className = "cutoff-label";
+  cutLbl.style.left = (labelW + CANVAS_SLOTS * SLOT_W) + "px";
+  cutLbl.textContent = "1644.3";
+  board.appendChild(cutLbl);
+
+  /* 贯穿的年/月列线（画在 board 上，覆盖所有行） */
+  const lines = document.createElement("div");
+  lines.style.position = "absolute";
+  lines.style.left = labelW + "px";
+  lines.style.top = "0";
+  lines.style.bottom = "0";
+  lines.style.width = (CANVAS_SLOTS * SLOT_W) + "px";
+  lines.style.pointerEvents = "none";
+  for (let y = Y0; y <= CUT_Y; y++){
+    const c = document.createElement("div");
+    c.className = "year-col";
+    c.style.left = (slotOf(y, 1) * SLOT_W) + "px";
+    lines.appendChild(c);
+  }
+  for (let s = 0; s <= CANVAS_SLOTS; s++){
+    if (s % M_PER_YEAR === 0) continue;
+    const c = document.createElement("div");
+    c.className = "month-col";
+    c.style.left = (s * SLOT_W) + "px";
+    lines.appendChild(c);
+  }
+  /* z-index 压到行标签之下：标签列 sticky 吸左后必须盖住贯穿列线，
+     否则列线从标签文字上划过，标签看起来是"透明"的（实测踩过）。 */
+  lines.style.zIndex = "2";
+  board.appendChild(lines);
+}
+
+/* 皇帝在位行：朱底色条从元年正月到 1644 年 3 月；
+   每年第一个月格里写该年周岁。 */
+function buildReignRow(){
+  const row = document.createElement("div");
+  row.className = "row reign";
+
+  const lab = document.createElement("div");
+  lab.className = "row-label";
+  lab.innerHTML = `<span class="name">${DATA.meta.emperor_temple || ""}${DATA.meta.emperor}</span>`;
+  row.appendChild(lab);
+
+  const track = document.createElement("div");
+  track.className = "track";
+  track.style.height = "38px";   /* 红条 18px + 年龄带 13px + 余白，整体压缩 */
+
+  const bar = document.createElement("div");
+  bar.className = "reign-bar";
+  const s = slotOf(Y0, 1);
+  const e = CANVAS_SLOTS - 1;
+  bar.style.left = (s * SLOT_W) + "px";
+  bar.style.width = (e - s + 1) * SLOT_W + "px";
+  bar.textContent = "崇禎";
+  bar.title = "明思宗朱由檢，崇禎（1628–1644.3）";
+  track.appendChild(bar);
+
+/* 皇帝行的年龄格：每年正月位置，只写岁数 —— 年份轴上有，不重复 */
+  for (let y = Y0; y <= CUT_Y; y++){
+    const age = ageZhouSui(y, 2);   /* 用 2 月：当年生日后 */
+    const cell = document.createElement("div");
+    cell.className = "reign-age";
+    cell.style.left = (slotOf(y, 1) * SLOT_W + 2) + "px";
+    cell.style.width = (M_PER_YEAR * SLOT_W - 4) + "px";
+    cell.style.textAlign = "left";
+    cell.textContent = `${age}岁`;
+    cell.title = `崇祯${y - Y0 + 1}年（${y}），帝周岁约 ${age}`;
+    track.appendChild(cell);
+  }
+
+  row.appendChild(track);
+  return row;
+}
+
+/* 泳道分配：同一职位可能同时多人在任，
+   用区间图着色把它们排进最少条泳道，互不重叠者共用一条。 */
+function assignLanes(list){
+  const sp = t => { const { s, e } = span(t); return [s, e]; };
+  const sorted = [...list].sort((a, b) => {
+    const [as, ae] = sp(a), [bs, be] = sp(b);
+    if (as !== bs) return as - bs;
+    return be - bs - (ae - as);
+  });
+  const lanes = [];
+  for (const t of sorted){
+    const [s] = sp(t);
+    let placed = false;
+    for (const lane of lanes){
+      const last = lane[lane.length - 1];
+      const [, le] = sp(last);
+      if (s > le){ lane.push(t); placed = true; break; }
+    }
+    if (!placed) lanes.push([t]);
+  }
+  return lanes;
+}
+
+function buildOfficeRow(off){
+  const list = TENURES.filter(t => t.office === off.name);
+  const lanes = assignLanes(list);
+  const n = lanes.length;
+  const BAR = 20, GAP = 4, PAD = 8;
+  const trackH = n * (BAR + GAP) - GAP + PAD * 2;
+
+  const row = document.createElement("div");
+  row.className = "row";
+
+  const lab = document.createElement("div");
+  lab.className = "row-label";
+  lab.innerHTML = `<span class="name">${off.name}</span>`
+    + (off.department ? `<span class="dept">${off.department}</span>` : "");
+  row.appendChild(lab);
+
+  const track = document.createElement("div");
+  track.className = "track";
+  track.style.height = trackH + "px";
+  track.dataset.office = off.name;
+
+  lanes.forEach((lane, li) => {
+    lane.forEach(t => {
+      /* ⚠️ 统一用**像素**（×SLOT_W），不用百分比 —— track 的百分比基线
+         是"track 宽"，而断限线/列线/年龄格都在 board 坐标（含标签列）。
+         混用两套单位会让条与断限线错位一个标签列宽（实测踩过：条越线 131px）。 */
+      const { s: ss, e: ee } = span(t);
+      const bar = document.createElement("div");
+      let cls = "bar t-" + t.type;
+      if (t.start == null || t.end == null) cls += " uncertain";
+      bar.className = cls;
+      bar.style.left = (ss * SLOT_W) + "px";
+      bar.style.width = ((ee - ss + 1) * SLOT_W) + "px";
+      bar.style.top = (PAD + li * (BAR + GAP)) + "px";
+      bar.style.height = BAR + "px";
+      bar.tabIndex = 0;
+      bar.textContent = t.person;
+      bar._t = t;
+      bar.setAttribute("role", "button");
+      bar.setAttribute("aria-label",
+        `${t.person}，${off.name}，${t.start ?? "起始未载"}至${t.end ?? "离任未载"}，${t.type}`);
+      const open = () => openDrawer(t);
+      bar.addEventListener("click", open);
+      /* 同人联动：悬浮即点亮此人所有任职条（含跨行），其余淡化 */
+      bar.addEventListener("mouseenter", () => highlightPeers(t.person));
+      bar.addEventListener("mouseleave", clearPeers);
+      bar.addEventListener("focus", () => highlightPeers(t.person));
+      bar.addEventListener("blur", clearPeers);
+      bar.addEventListener("keydown", ev => {
+        if (ev.key === "Enter" || ev.key === " "){ ev.preventDefault(); open(); }
+      });
+      track.appendChild(bar);
+    });
+  });
+
+  row.appendChild(track);
+  return row;
+}
+
+/* ================= 同人悬浮联动 ================= */
+/* 悬浮某人的条：此人**所有**任职条套用 :hover 同款提升（浮起+投影），
+   不描边、不淡化其余条。楊嗣昌例：入阁 + 兵部尚书两条同时浮起。 */
+function highlightPeers(person){
+  document.querySelectorAll(".bar").forEach(b => {
+    const mine = b._t && b._t.person === person;
+    b.classList.toggle("peer", mine);
+    b.style.zIndex = mine ? "4" : "";
+  });
+}
+function clearPeers(){
+  document.querySelectorAll(".bar").forEach(b => {
+    b.classList.remove("peer");
+    b.style.zIndex = "";
+  });
+}
+
+/* ================= 游标与高亮（精确到月）================= */
+function currentSlot(){
+  return +document.getElementById("cursorSlider").value;
+}
+function slotToYM(s){
+  const y = Y0 + Math.floor(s / M_PER_YEAR);
+  const m = (s % M_PER_YEAR) + 1;
+  return { y, m };
+}
+
+function renderCursor(){
+  const s = currentSlot();
+  const cur = document.getElementById("cursor");
+  const board = document.getElementById("board");
+  const row = board.querySelector(".row");
+  if (!row) return;
+  const lab = row.querySelector(".row-label");
+  if (!lab) return;
+  const labW = lab.getBoundingClientRect().width;
+  /* 指在当前月格的右边缘 —— "在该月内" */
+  cur.style.left = (labW + (s + 1) * SLOT_W) + "px";
+}
+
+/* 高亮：当前月在任（条覆盖该月格） */
+function highlight(){
+  const s = currentSlot();
+  document.querySelectorAll(".bar").forEach(b => {
+    const t = b._t;
+    const { s: bs, e: be } = span(t);
+    const active = s >= bs && s <= be;
+    b.classList.toggle("is-idle", !active);
+    b.style.zIndex = active ? "3" : "1";
+  });
+}
+
+function update(){
+  const s = currentSlot();
+  const { y, m } = slotToYM(s);
+  document.getElementById("regnal").textContent = eraLabel(y);
+  document.getElementById("gz").textContent = ganzhi(y);
+  document.getElementById("anno").textContent = y;
+  document.getElementById("monthTag").textContent = CN_MONTHS[m - 1] + "月";
+  document.getElementById("prev").disabled = s <= 0;
+  document.getElementById("next").disabled = s >= CANVAS_SLOTS - 1;
+  renderCursor();
+  highlight();
+}
+
+/* ================= 详情抽屉 ================= */
+let lastFocus = null;
+/* 月份显示：m 可带闰标记（t.start_month_leap / end_month_leap）。
+   画布 12 格等宽，闰月记在同名平月格里；抽屉必须注明「閏」，
+   否则把闰五月冒充普通五月 —— 虚报精度（老板问过闰月，这是答案的 UI 半边）。 */
+function fmtYM(y, m, leap){
+  if (y == null) return "未载";
+  if (!m) return `${y}年`;
+  return `${y}年${leap ? "閏" : ""}${CN_MONTHS[m-1]}月`;
+}
+
+function openDrawer(t){
+  lastFocus = document.activeElement;
+  const d = document.getElementById("drawer");
+  document.getElementById("dName").textContent = t.person;
+  document.getElementById("dOffice").textContent =
+    t.office + (t.department ? " · " + t.department : "");
+
+  const spanTxt = fmtYM(t.start, t.start_month, t.start_month_leap) + " – "
+                + fmtYM(t.end, t.end_month, t.end_month_leap);
+  const conf = t.confidence;
+  const confPct = conf == null ? 0 : Math.round(conf * 100);
+
+  const realMonth = !!t.start_month || (!!t.end_month && !t.end_clamped);
+  const hasLeap = !!t.start_month_leap || !!t.end_month_leap;
+
+  let html = "";
+  html += `<dl class="field"><dt>任期</dt><dd>${spanTxt}</dd></dl>`;
+  html += `<dl class="field"><dt>精度</dt><dd>${
+    realMonth
+      ? "已精确到月（据《明實錄》出處列）"
+        + (hasLeap ? "；<b>含閏月</b>——閏月记于同名平月格，画布 12 格等宽不另设格" : "")
+      : (t.end_clamped
+          ? "仅到年；终年按<b>断限</b>截到 1644 年 3 月（非史料所载月份）"
+          : "仅到年（史料未载月份）")
+  }</dd></dl>`;
+  html += `<dl class="field"><dt>性质</dt><dd><span class="tag t-${t.type}">${t.type}</span>${
+    t.type === "署理" ? " <span style='color:var(--hui);font-size:12px'>暂代</span>" :
+    t.type === "加衔" ? " <span style='color:var(--hui);font-size:12px'>虚衔</span>" : ""
+  }</dd></dl>`;
+  html += `<dl class="field"><dt>离任</dt><dd>${t.leave || "未载"}</dd></dl>`;
+  if (conf != null){
+    html += `<dl class="field"><dt>置信度</dt><dd><div class="conf">
+      <div class="conf-bar"><i class="${conf < 0.6 ? "low" : ""}" style="width:${confPct}%"></i></div>
+      <span class="conf-num">${conf.toFixed(1)}</span></div></dd></dl>`;
+  }
+  html += `<dl class="field"><dt>出处</dt><dd>${t.source || "未填"}</dd></dl>`;
+  if (t.note) html += `<dl class="field"><dt>说明</dt><dd>${t.note}</dd></dl>`;
+  if (t.url) html += `<dl class="field"><dt>原文</dt><dd><a href="${t.url}" target="_blank" rel="noopener">查看在线出处</a></dd></dl>`;
+
+  /* ---- 明实录原文（SHILU 里该人的命中记录） ---- */
+  const hits = SHILU[t.person] || [];
+  if (hits.length){
+    html += `<div class="shilu-block"><h3>《明實錄》命中（中研院检索）</h3>`;
+    hits.slice(0, 8).forEach(h => {
+      const ym = h.month
+        ? `${h.year}年${CN_MONTHS[h.month-1]}月${h.leap ? "（閏）" : ""}`
+        : `${h.year}年`;
+      html += `<div class="shilu-item">
+        <span class="src">${h.source || ""}　【${ym}】</span>
+        <span class="txt">${h.content || "（无内容摘要）"}</span>
+      </div>`;
+    });
+    if (hits.length > 8){
+      html += `<div class="shilu-item" style="font-size:11.5px;color:var(--hui)">…另有 ${hits.length - 8} 条，略</div>`;
+    }
+    html += `</div>`;
+  } else {
+    html += `<div class="shilu-empty">《明實錄》检索无命中（该人未见于实录或检索词未命中）。</div>`;
+  }
+
+  html += `<div class="caveat"><b>关于本条的确定性</b><br>${
+    (conf != null && conf < 0.8)
+      ? "本条置信度低于 0.8，史料对任期记载可能有歧，引用前请核对原书。"
+      : "任期为年表口径；月份未载处以整年表示，未作推断。"
+  }</div>`;
+
+  document.getElementById("dBody").innerHTML = html;
+  d.classList.add("open");
+  d.setAttribute("aria-hidden", "false");
+  document.getElementById("dClose").focus();
+}
+
+function closeDrawer(){
+  const d = document.getElementById("drawer");
+  d.classList.remove("open");
+  d.setAttribute("aria-hidden", "true");
+  if (lastFocus) lastFocus.focus();
+}
+
+/* ================= 初始化 ================= */
+function init(){
+  const slider = document.getElementById("cursorSlider");
+  slider.min = 0;
+  slider.max = CANVAS_SLOTS - 1;
+  slider.value = Math.min(slider.value, CANVAS_SLOTS - 1);
+
+  /* fixed 页头 + 滑块的占位补偿 */
+  const hh = document.querySelector("header").getBoundingClientRect().height;
+  const sh = document.querySelector(".slider-strip").getBoundingClientRect().height;
+  document.documentElement.style.setProperty("--fixed-h", (hh + sh) + "px");
+
+  document.getElementById("scopeText").textContent =
+    DATA.meta.scope + " · " + DATA.meta.count + " 条任职";
+
+  renderBoard();
+
+  slider.addEventListener("input", update);
+  document.getElementById("prev").addEventListener("click", () => {
+    slider.value = Math.max(0, +slider.value - 1); update();
+  });
+  document.getElementById("next").addEventListener("click", () => {
+    slider.value = Math.min(CANVAS_SLOTS - 1, +slider.value + 1); update();
+  });
+  document.getElementById("dClose").addEventListener("click", closeDrawer);
+
+  document.addEventListener("keydown", ev => {
+    if (ev.key === "Escape") closeDrawer();
+    if (ev.target.tagName === "INPUT") return;
+    if (ev.key === "ArrowLeft"){ slider.value = Math.max(0, +slider.value - 1); update(); }
+    if (ev.key === "ArrowRight"){ slider.value = Math.min(CANVAS_SLOTS - 1, +slider.value + 1); update(); }
+  });
+
+  /* 点空白处跳月（色条会拦截点击，按轨道坐标反推月份格） */
+  document.getElementById("board").addEventListener("click", ev => {
+    if (ev.target.closest(".bar")) return;
+    const track = ev.target.closest(".track");
+    if (!track) return;
+    const r = track.getBoundingClientRect();
+    const slot = Math.floor((ev.clientX - r.left) / SLOT_W);
+    slider.value = Math.min(CANVAS_SLOTS - 1, Math.max(0, slot));
+    update();
+  });
+
+  /* 游标随横向滚动重新定位（标签列 sticky 宽度会变） */
+  window.addEventListener("resize", () => {
+    const hh = document.querySelector("header").getBoundingClientRect().height;
+    const sh = document.querySelector(".slider-strip").getBoundingClientRect().height;
+    document.documentElement.style.setProperty("--fixed-h", (hh + sh) + "px");
+    renderCursor();
+  });
+
+  update();
+}
+
+init();
+</script>
+</body>
+</html>
