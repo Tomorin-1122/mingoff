@@ -122,6 +122,15 @@ def build_cabinet_tenures() -> list[dict]:
     tenures: list[dict] = []
     for person, rows in sorted(by_person.items()):
         rows.sort(key=lambda e: e["year"])
+        # 防御性去重：人名归一后偶见同日重复（实测 1402 解縉、1441 曹鼐）
+        dedup: list[dict] = []
+        for e in rows:
+            if dedup and dedup[-1]["year"] == e["year"]:
+                if e["note"] and e["note"] not in dedup[-1]["note"]:
+                    dedup[-1]["note"] = (dedup[-1]["note"] + " " + e["note"]).strip()
+            else:
+                dedup.append(dict(e))
+        rows = dedup
         years = [e["year"] for e in rows]
         note_of = {e["year"]: e["note"] for e in rows}
         segs, cur = [], [years[0]]

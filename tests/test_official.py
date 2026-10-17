@@ -35,6 +35,25 @@ def test_entries_scale_and_coverage():
     assert not missing, f"缺年份 {missing}"
 
 
+def test_entries_unique_person_year():
+    """人名归一后同一人同年只能有一条（实测 1402 解縉、1441 曹鼐曾重复）。"""
+    keys = [(e["year"], e["person"]) for e in load_entries()]
+    assert len(keys) == len(set(keys)), "存在重复的 (year, person)"
+
+
+def test_jiejin_1402_to_1407_continuous():
+    """原书 1403 年有解縉（OCR 丢行，已按原书补）；解縉应为 1402–1407 单段。"""
+    by_year = defaultdict(set)
+    for e in load_entries():
+        by_year[e["year"]].add(e["person"])
+    assert "解縉" in by_year[1403]
+    ts = [t for t in build_cabinet_tenures() if t["person"] == "解縉"]
+    assert len(ts) == 1, ts
+    assert (ts[0]["start_year"], ts[0]["start_month"]) == (1402, 8)
+    assert (ts[0]["end_year"], ts[0]["end_month"]) == (1407, 2)
+    assert ts[0]["years"] == [1402, 1403, 1404, 1405, 1406, 1407]
+
+
 def test_known_year_rosters_present():
     """旧解析器丢无注文行的三处典型：1436 張瑛、1437 全年、1515 全年。"""
     by_year = defaultdict(set)

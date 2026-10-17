@@ -1,4 +1,5 @@
 import cabinet from "@/data/cabinet.json";
+import profiles from "@/data/person_profiles.json";
 
 /* ============================================================
  * 正式数据（D23 v3）：来自 `python -m mingoff.official`
@@ -72,6 +73,46 @@ const doc = cabinet as {
 export const META = doc.meta;
 export const TENURES = doc.tenures;
 export const SHILU = doc.shilu;
+
+/* ================= 人物小传（CBDB） ================= */
+
+export interface AltName {
+  type: string;
+  name: string;
+}
+
+export interface OfficeRecord {
+  office: string;
+  from: number | null;
+  to: number | null;
+}
+
+export interface PersonProfile {
+  cbdb_id: number | null;
+  cbdb_name: string | null;
+  birth: number | null;
+  death: number | null;
+  death_age: number | null;
+  native_place: string | null;
+  alt_names: AltName[];
+  entry: { year: number | null; desc: string }[];
+  offices: OfficeRecord[];
+  office_total: number;
+}
+
+const profileDoc = profiles as unknown as {
+  meta: { cbdb_person_url: string; sinica_url: string };
+  persons: Record<string, PersonProfile>;
+};
+
+export const PROFILES = profileDoc.persons;
+export const PROFILE_META = profileDoc.meta;
+
+/** 年份区间显示：缺一端用 ?，两端皆缺用「未載」 */
+export function fmtYearRange(a: number | null, b: number | null): string {
+  if (!a && !b) return "未載";
+  return `${a ?? "?"}–${b ?? "?"}`;
+}
 
 /** 断限：崇祯十七年三月（D15/D17）。画布与数据都止于此 */
 export const CUT_Y = 1644;

@@ -36,13 +36,16 @@
 | 阶段④ 地方官 | 府州县官 + 卫所武官（百万级） | ⬜ |
 
 已完成：6 张表 schema、数据存取层、崇祯朝兵部尚书 14 任种子数据、CLI、
-**147 个测试**、单文件可视化 demo（`web/demo.html`，双击即开）、
-正式站 `site/`（Next.js 静态导出，**198 段 / 167 人全朝内阁**，画布 1368–1644.3）。
+**153 个测试**、单文件可视化 demo（`web/demo.html`，双击即开）、
+正式站 `site/`（Next.js 静态导出，**195 段 / 167 人全朝内阁**，画布 1368–1644.3）。
 
 > ✅ **数据源问题已处理（D25）**：旧版丢“无注文人名行”导致 360 段事件碎片；
-> 本轮重写表格解析后，人-年 594 → 1,036、段 360 → 198（连续任期），
+> 本轮重写表格解析后，人-年 594 → 1,035、段 360 → 195（连续任期），
 > 起月覆盖 47% → 98%；CBDB 旧错挂 5 处已修（楊士奇/楊溥/曹鼐/張孚敬/方逢年），
 > 1644.3 之后的南明任命已剔除。详见 `docs/正式数据管线报告.md` 第八节。
+> 人物抽屉已接入 **CBDB 小传**（生卒/籍贯/字号/历任）+ CBDB/中研院直达链接；
+> 重复人-年（1402 解縉、1441 曹鼐）已去重，解縉据原书补 1403 后为 1402–1407 单段。
+> 数据接入硬规则见 [数据接入规范](docs/数据接入规范.md)（D26）。
 demo 要点：**月格等宽无限画布**（拖滑块精确到月看"那一年那月在任"）、
 皇帝行朱色 + 周岁年龄带、实录月份回填 + 抽屉贴《明实录》原文。
 本轮开发经验见 `docs/demo开发经验总结.md`。
@@ -84,7 +87,7 @@ python -m mingoff.cli stats              # 库内计数
 python -m mingoff.backfill_months        # 实录月份回填（需先抓 sinica_months.json）
 python -m mingoff.export_demo            # 重建 web/demo.html
 python -m mingoff.official               # 重建正式站数据（v2：含离任/实录）
-python -m pytest tests                   # 147 个测试
+python -m pytest tests                   # 153 个测试
 ```
 
 ---
@@ -156,9 +159,11 @@ python -m guji.cli shidian chapter LS0026 <chapterId>
 ```
 mingoff/
 ├─ README.md              本文件
-├─ docs/DECISIONS.md      设计决策记录（D1–D20）
+├─ docs/DECISIONS.md      设计决策记录（D1–D26）
 ├─ docs/demo开发经验总结.md  本轮 demo 开发的坑与方法
 ├─ docs/数据源月份精度实测.md  CBDB/中研院月份能力实测
+├─ docs/数据接入规范.md    ★ 数据接入硬规则（D26：解析/实体/时间/校验门）
+├─ docs/重建数据操作步骤.md  v3 数据重建的脚本与口径
 ├─ pyproject.toml         包定义（一期零第三方依赖）
 ├─ src/mingoff/
 │  ├─ schema.py           6 张表 + 受控词表
@@ -171,13 +176,15 @@ mingoff/
 │  ├─ backfill_months.py  实录月份回填（同年唯一记录才回填）
 │  ├─ merge_demo_data.py  研究数据 + ground truth 合并
 │  ├─ export_demo.py      导出内嵌 JSON 并产出单文件 demo
+│  ├─ official.py         ★ 正式数据管线：重解析条目→任职段（D21/D25；v3）
+│  ├─ build_person_profiles.py  CBDB→人物小传（生卒/籍贯/历任/外链）
 │  └─ cli.py              命令行入口
-├─ web/demo.template.html demo 模板（数据构建时注入）
-├─ web/demo.html          产出的单文件 demo（双击即开，仅评审用，D21）
 ├─ web/demo.template.html ★ demo 模板 —— 正式站的 **UI 唯一真源**（D24）
-├─ src/mingoff/official.py ★ 正式数据管线：重解析条目→任职段（D21/D25；v3 含 CBDB/南明过滤）
+├─ web/demo.html          产出的单文件 demo（双击即开，仅评审用，D21）
 ├─ src/mingoff/data/vol1_entries.json     年表逐年名单（人-年，重解析，数据资产）
 ├─ src/mingoff/data/vol1_person_cbdb.json 人物→CBDB 映射（v3 修错版）
+├─ src/mingoff/data/person_profiles.json  CBDB 人物小传（抽屉展示）
+├─ src/mingoff/data/official_cabinet.json 正式版导出（tenures + shilu）
 ├─ docs/正式数据管线报告.md  正式版产出规模、源复核与 v3 重建报告
 ├─ site/                  ★ 正式网站（Next.js 静态导出，D22；按 demo 重做 D24；见 site/README.md）
 └─ data/mingoff.sqlite    运行时数据库（不入库）

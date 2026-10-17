@@ -11,6 +11,8 @@ import {
   ERA_JUMPS,
   META,
   M_PER_YEAR,
+  PROFILES,
+  PROFILE_META,
   REIGNS,
   SHILU,
   TENURES,
@@ -18,6 +20,7 @@ import {
   assignLanes,
   eraLabel,
   fmtYM,
+  fmtYearRange,
   ganzhi,
   slotOf,
   span,
@@ -273,6 +276,109 @@ const CabinetRow = memo(function CabinetRow({
 
 /* ================= 详情抽屉 ================= */
 
+/* ================= 人物小传（CBDB） ================= */
+
+function ProfileBlock({ person }: { person: string }) {
+  const p = PROFILES[person];
+  if (!p) return null;
+  const hasBio = !!(
+    p.birth || p.death || p.native_place || p.alt_names.length || p.entry.length
+  );
+  const cbdbUrl = p.cbdb_id
+    ? PROFILE_META.cbdb_person_url.replace("{id}", String(p.cbdb_id))
+    : null;
+  const altText = p.alt_names.map((a) => `${a.type}：${a.name}`).join("；");
+  return (
+    <section className="person-card">
+      <h3>
+        人物小傳 <span className="tag">CBDB</span>
+      </h3>
+      {hasBio ? (
+        <>
+          <dl className="field">
+            <dt>生卒</dt>
+            <dd>
+              {fmtYearRange(p.birth, p.death)}
+              {p.death_age ? <span className="hint">（享年 {p.death_age}）</span> : null}
+            </dd>
+          </dl>
+          {p.native_place && (
+            <dl className="field">
+              <dt>籍貫</dt>
+              <dd>{p.native_place}</dd>
+            </dl>
+          )}
+          {altText && (
+            <dl className="field">
+              <dt>字號</dt>
+              <dd>{altText}</dd>
+            </dl>
+          )}
+          {p.entry.length > 0 && (
+            <dl className="field">
+              <dt>入仕</dt>
+              <dd>
+                {p.entry
+                  .slice(0, 3)
+                  .map((e) => `${e.year ? `${e.year}年` : "—"} ${e.desc}`)
+                  .join("；")}
+              </dd>
+            </dl>
+          )}
+        </>
+      ) : (
+        <p className="small">
+          {p.cbdb_id
+            ? "CBDB 有該人記錄，但生卒/籍貫等欄位為空。"
+            : "CBDB 未對齊（無可靠同名候選），僅提供中研院檢索入口。"}
+        </p>
+      )}
+
+      <div className="ext-links">
+        {cbdbUrl ? (
+          <a href={cbdbUrl} target="_blank" rel="noopener noreferrer">
+            CBDB #{p.cbdb_id}
+            {p.cbdb_name && p.cbdb_name !== person ? `（${p.cbdb_name}）` : ""} ↗
+          </a>
+        ) : (
+          <span className="small">CBDB 未對齊（無可靠同名候選）</span>
+        )}
+        <a
+          href={PROFILE_META.sinica_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={`中研院站內檢索：${person}`}
+        >
+          中研院「明代職官資料庫」 ↗
+        </a>
+      </div>
+      <p className="hint">
+        中研院檢索詞：<b>{person}</b>（站內輸入後檢索；命中含《明實錄》原文）
+      </p>
+
+      {p.office_total > 0 && (
+        <details className="offices">
+          <summary>歷任官職（{p.office_total}）</summary>
+          <ul>
+            {p.offices.map((o, i) => (
+              <li key={i}>
+                <span className="mono">
+                  {o.from ?? "?"}
+                  {o.to != null || o.from != null ? `–${o.to ?? "?"}` : ""}
+                </span>{" "}
+                {o.office}
+              </li>
+            ))}
+          </ul>
+          {p.office_total > p.offices.length && (
+            <p className="hint">…另有 {p.office_total - p.offices.length} 條未列（CBDB 原始記錄）</p>
+          )}
+        </details>
+      )}
+    </section>
+  );
+}
+
 function Drawer({
   tenure,
   onClose,
@@ -349,6 +455,8 @@ function Drawer({
             <dt>在任年</dt>
             <dd className="mono">{t.years.join("、")}</dd>
           </dl>
+
+          <ProfileBlock person={t.person} />
 
           <dl className="field">
             <dt>置信度</dt>

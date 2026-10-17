@@ -30,16 +30,9 @@
  {
   "year": 1402,
   "person": "解縉",
-  "note": "",
-  "src": "text",
-  "raw_person": "解縉"
- },
- {
-  "year": 1402,
-  "person": "解縉",
   "note": "八月,侍讀;十一、戊子、九,遷侍讀學士.",
   "src": "text",
-  "raw_person": "解繉"
+  "raw_person": "解縉/解繉"
  },
  {
   "year": 1402,
@@ -82,6 +75,13 @@
   "note": "",
   "src": "text",
   "raw_person": "胡廣"
+ },
+ {
+  "year": 1403,
+  "person": "解縉",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "解縉"
  },
  {
   "year": 1403,
@@ -1248,16 +1248,9 @@
  {
   "year": 1441,
   "person": "曹鼐",
-  "note": "",
-  "src": "table",
-  "raw_person": "曹霸"
- },
- {
-  "year": 1441,
-  "person": "曹鼐",
   "note": "二、乙亥、二,侍講,入閣。",
   "src": "table",
-  "raw_person": "曹鼐"
+  "raw_person": "曹霸/曹鼐"
  },
  {
   "year": 1441,
@@ -1709,14 +1702,14 @@
  },
  {
   "year": 1453,
-  "person": "江淵",
+  "person": "商輅",
   "note": "正、丁丑、十九,還京;二、癸巳、六,進吏尚兼翰林學士;五、己巳、十三,葬喪;九、乙卯、二,復任。",
   "src": "table",
   "raw_person": "江淵商輅"
  },
  {
   "year": 1453,
-  "person": "商輅",
+  "person": "江淵",
   "note": "正、丁丑、十九,還京;二、癸巳、六,進吏尚兼翰林學士;五、己巳、十三,葬喪;九、乙卯、二,復任。",
   "src": "table",
   "raw_person": "江淵商輅"
@@ -1751,14 +1744,14 @@
  },
  {
   "year": 1454,
-  "person": "江淵",
+  "person": "商輅",
   "note": "六、戊申、廿八,進少保吏尚兼東閣大學士。正、甲戌、廿二,撫安山東;七、丙寅、十七,還。",
   "src": "table",
   "raw_person": "江淵商輅"
  },
  {
   "year": 1454,
-  "person": "商輅",
+  "person": "江淵",
   "note": "六、戊申、廿八,進少保吏尚兼東閣大學士。正、甲戌、廿二,撫安山東;七、丙寅、十七,還。",
   "src": "table",
   "raw_person": "江淵商輅"
