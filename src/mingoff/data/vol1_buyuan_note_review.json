@@ -1,10 +1,20 @@
 {
  "counts": {
   "manual-review": 55,
+  "restored-prefix-inferred": 16,
   "reassigned-inferred": 116,
-  "restored-prefix-inferred": 15
+  "reassigned": 1
  },
  "decisions": [
+  {
+   "year": 1368,
+   "person_id": "湯和",
+   "person": "湯和",
+   "office": "御史臺",
+   "raw_note": "(丁未年十、壬子、九,任。)正、辛巳、十,兼資善大夫。鄧愈(丁未年十、壬子、九,任。)正、辛巳、十,兼資善大夫。",
+   "action": "manual-review",
+   "reason": "contains-other-name-no-row-target"
+  },
   {
    "year": 1369,
    "person_id": "李廷桂",
@@ -22,6 +32,16 @@
    "raw_note": "是年,遷;是年,刑侍遷,尋卒。正、丁巳、廿七,河十一、乙卯、卅,間鹽運使遷,未視改吏尚。間鹽運使遷,未視事,貶惠州經歷。雜理遷;後無考。班用吉是年,陝西參政遷。",
    "action": "manual-review",
    "reason": "contains-other-name-no-row-target"
+  },
+  {
+   "year": 1370,
+   "person_id": "湯和",
+   "person": "湯和",
+   "office": "御史臺",
+   "raw_note": "十一、丙申、十一,封中山侯,解任。鄧愈十一、丙申、十一,封衛國公,解任。十年十一、壬午、八,卒,追封寧和王,謚武順。",
+   "action": "restored-prefix-inferred",
+   "note": "十一、丙申、十一,封中山侯,解任",
+   "reason": "prefix-before-other-name"
   },
   {
    "year": 1370,
@@ -1733,7 +1753,7 @@
    "office": "都察院",
    "raw_note": "二、乙卯、十六,南巡扈從;三、丙戌、十八,加太子太保;四、丙寅、廿九,還京。毛伯溫周期雍二、壬寅、三,總宣大山西三關;是年,刑左侍遷;四、庚申、廿三,召還京;六、丙辰、廿,遷刑尚。五、戊辰、一,加太子賓客;閏七、辛酉、廿六,敕南征;十、壬午、十八,加太子少保。",
    "action": "manual-review",
-   "reason": "contains-other-name-no-row-target"
+   "reason": "segment-still-has-other-name"
   },
   {
    "year": 1541,
@@ -1741,8 +1761,15 @@
    "person": "王廷相",
    "office": "都察院",
    "raw_note": "七月,罷為民。廿三年九、癸卯、七,卒。隆慶元年五、甲子、上,復秩;六、戊申、廿五,謚肅敏;七、庚申、七,贈少保。毛伯溫四、己未、三,進太子太保;八、辛巳、廿八,回掌院事。",
-   "action": "manual-review",
-   "reason": "contains-other-name-no-row-target"
+   "action": "reassigned",
+   "targets": [
+    {
+     "person_id": "毛伯溫",
+     "person": "毛伯溫",
+     "note": "四、己未、三,進太子太保;八、辛巳、廿八,回掌院事"
+    }
+   ],
+   "prefix": "七月,罷為民。廿三年九、癸卯、七,卒。隆慶元年五、甲子、上,復秩;六、戊申、廿五,謚肅敏;七、庚申、七,贈少保"
   },
   {
    "year": 1542,
@@ -2721,7 +2748,7 @@
    "office": "禮部",
    "raw_note": "十一、戊寅、五,禮右侍署。孫慎行十二、癸丑、九,南禮尚改。",
    "action": "manual-review",
-   "reason": "contains-other-name-no-row-target"
+   "reason": "target-has-active-note"
   },
   {
    "year": 1621,

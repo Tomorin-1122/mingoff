@@ -222,6 +222,8 @@ def build_buyuan_tenures() -> list[dict]:
                 "confidence": conf,
                 "leave": leave,
                 "note": s_note.strip(),
+                "start_book_page": rows[0].get("book_page"),
+                "end_book_page": rows[-1].get("book_page"),
                 "years": seg,
                 **({"same_name_risk": True} if same_name_risk else {}),
             })
@@ -331,6 +333,8 @@ def export_buyuan(out_path: Path | None = None) -> dict:
                                   max(t["end_year"] for t in tenures)],
                 "with_start_month": sum(1 for t in tenures if t["start_month"]),
                 "with_end_month": sum(1 for t in tenures if t["end_month"]),
+                "with_start_page": sum(1 for t in tenures if t.get("start_book_page")),
+                "with_end_page": sum(1 for t in tenures if t.get("end_book_page")),
                 "cbdb_aligned": sum(1 for t in tenures if t["cbdb_id"]),
                 "with_leave": sum(1 for t in tenures if t["leave"] != "未載"),
                 "shu_li": sum(1 for t in tenures if t["tenure_type"] == "署理"),
@@ -402,6 +406,7 @@ def refresh_manifest(doc: dict) -> None:
         "notes_manual": repair.get("notes_manual"),
         "note_resolution": repair_full.get("note_resolution_counts", {}),
         "book_patches": repair.get("book_patch"),
+        "book_page_coverage": repair.get("book_page_coverage"),
         "review_items": len(gaps),
     })
     p.write_text(json.dumps(m, ensure_ascii=False, indent=1), encoding="utf-8")

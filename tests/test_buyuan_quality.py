@@ -69,14 +69,16 @@ def test_gap_flags_are_explicit(doc):
 
 
 def test_note_review_d02_is_exhaustive():
-    """D-02：186 条隔离注文必须 100% 有处置记录。"""
+    """D-02：所有隔离注文必须 100% 有处置记录（数量随 D-03 补行变化）。"""
     p = DATA / "vol1_buyuan_note_review.json"
-    if not p.is_file():
+    rp = DATA / "vol1_buyuan_repair.json"
+    if not p.is_file() or not rp.is_file():
         pytest.skip("note review 未生成")
     nr = json.loads(p.read_text(encoding="utf-8"))
-    assert len(nr["decisions"]) == 186
+    expected = len(json.loads(rp.read_text(encoding="utf-8"))["note_quarantine"])
+    assert len(nr["decisions"]) == expected
     counts = nr["counts"]
-    assert sum(counts.values()) == 186
+    assert sum(counts.values()) == expected
     allowed = {"restored-self", "reassigned", "reassigned-inferred",
                "restored-prefix-inferred", "manual-review"}
     assert {d["action"] for d in nr["decisions"]} <= allowed
@@ -91,6 +93,33 @@ def test_d03_1440_book_rows():
     assert {("王驥", "兵部"), ("胡濙", "禮部"), ("吳中", "工部")} <= keys
     assert next(e for e in rows if e["person"] == "魏源")["note"] == ""
     assert next(e for e in rows if e["person"] == "劉中敷")["note"] == ""
+
+
+def test_d03_more_book_rows():
+    """D-03 后续补行：1369 湯和/鄧愈拆分；1539/1541 毛伯溫、1539 翟鑾、1620 孫慎行。"""
+    entries = json.loads((DATA / "vol1_buyuan_entries_v2.json").read_text(encoding="utf-8"))
+
+    def has(year, person, office):
+        return any((e["year"], e["person"], e["office"]) == (year, person, office)
+                   for e in entries)
+
+    assert has(1369, "湯和", "御史臺") and has(1369, "鄧愈", "御史臺")
+    assert not any(e["person"] == "湯和鄧愈" for e in entries)
+    assert has(1539, "翟鑾", "兵部") and has(1539, "毛伯溫", "都察院")
+    assert has(1541, "毛伯溫", "都察院")
+    assert has(1620, "孫慎行", "禮部")
+
+
+def test_d08_page_index_coverage():
+    """D-08：277 年全有页码；条目页码覆盖 ≥90%。"""
+    pages = json.loads((DATA / "vol1_buyuan_pages.json").read_text(encoding="utf-8"))
+    assert len(pages) == 277
+    assert pages["1368"]["pdf_page"] == 417
+    assert pages["1440"]["book_page"] == 475
+    assert pages["1644"]["pdf_page"] == 694
+    entries = json.loads((DATA / "vol1_buyuan_entries_v2.json").read_text(encoding="utf-8"))
+    covered = sum(1 for e in entries if e.get("book_page"))
+    assert covered / len(entries) >= 0.9
 
 
 def test_identity_split_d01(doc):

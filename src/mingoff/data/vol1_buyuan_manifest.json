@@ -50,12 +50,12 @@
  },
  "year_header_jumps": [],
  "stats": {
-  "entries": 3312,
-  "persons_unique": 796,
+  "entries": 3317,
+  "persons_unique": 795,
   "years": 277,
   "missing_years": [],
   "no_office_entries": 0,
-  "review_items": 118,
+  "review_items": 117,
   "name_dict": 914,
   "anchor_stats": {
    "①人名锚": 979,
@@ -66,8 +66,8 @@
   },
   "per_year_min": 6,
   "per_year_max": 25,
-  "quarantined_notes": 186,
-  "book_patches": 19,
+  "quarantined_notes": 188,
+  "book_patches": 23,
   "offices": [
    "兵部",
    "刑部",
@@ -81,16 +81,18 @@
    "總督倉場",
    "都察院"
   ],
-  "display_persons": 790,
+  "display_persons": 789,
   "split_entities": 12,
   "notes_inferred": 116,
-  "notes_prefix": 15,
+  "notes_prefix": 16,
   "notes_manual": 55,
   "note_resolution": {
    "manual-review": 55,
+   "restored-prefix-inferred": 16,
    "reassigned-inferred": 116,
-   "restored-prefix-inferred": 15
-  }
+   "reassigned": 1
+  },
+  "book_page_coverage": 3317
  },
  "evidence": [
   "docs/evidence/book_p402_bujuan1368.png",
@@ -103,13 +105,13 @@
   "docs/evidence/book_p679_bujuan1644.png"
  ],
  "tenure_assembly": {
-  "date": "2026-10-18T08:17:57+00:00",
+  "date": "2026-10-18T13:23:07+00:00",
   "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
   "output": "official_buyuan.json",
   "stats": {
-   "tenures": 1205,
-   "persons": 796,
-   "display_persons": 790,
+   "tenures": 1203,
+   "persons": 795,
+   "display_persons": 789,
    "split_entities": 12,
    "same_name_entities": 6,
    "offices": [
@@ -125,21 +127,23 @@
     "總督倉場",
     "都察院"
    ],
-   "gap_merged_tenures": 107,
-   "gap_years_total": 158,
+   "gap_merged_tenures": 105,
+   "gap_years_total": 155,
    "years_covered": [
     1368,
     1644
    ],
-   "with_start_month": 832,
+   "with_start_month": 830,
    "with_end_month": 553,
-   "cbdb_aligned": 819,
+   "with_start_page": 1203,
+   "with_end_page": 1203,
+   "cbdb_aligned": 818,
    "with_leave": 584,
    "shu_li": 72,
    "same_name_risk": 15,
    "shilu_persons": 130,
    "shilu_hits": 3913,
-   "person_years": 3470
+   "person_years": 3472
   },
   "gates": {
    "G1": "pass",
@@ -299,20 +303,21 @@
   ],
   "repair": {
    "entries_in": 3353,
-   "entries_out": 3312,
-   "persons_entities": 796,
-   "display_persons": 790,
+   "entries_out": 3317,
+   "persons_entities": 795,
+   "display_persons": 789,
    "split_entities": 12,
    "dropped": 18,
-   "quarantined": 186,
+   "quarantined": 188,
    "dup_conflicts": 17,
-   "book_patch": 19,
+   "book_patch": 23,
    "mapping_out": 555,
    "mapping_ids": 513,
-   "notes_restored": 0,
+   "notes_restored": 1,
    "notes_inferred": 116,
-   "notes_prefix": 15,
-   "notes_manual": 55
+   "notes_prefix": 16,
+   "notes_manual": 55,
+   "book_page_coverage": 3317
   }
  }
 }

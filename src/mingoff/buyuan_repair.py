@@ -46,6 +46,7 @@ NAME_ALIAS = {
     "何鱉": "何鰲", "劉訡": "劉訒", "張聰": "張璁", "白鈦": "白鉞",
     "王岩": "王鈍", "王峯": "王鈍", "周潯": "周肅", "麥至德": "麥志德",
     "李遷桂": "李廷桂", "傣斯": "偰斯", "黃克瓚": "黃克纘",
+    "張瓊": "張瓚",
     "夏原吉閤": "夏原吉", "蹇義閤": "蹇義", "耿裕閻": "耿裕",
     "翔南居益": "南居益", "吴山袁煒": "袁煒", "周時中朱斌": "周時中",
     "寇深羅通": "寇深", "張瓊翟鑾": "張瓊",
@@ -69,6 +70,8 @@ S2T = str.maketrans({
 })
 GARBAGE = {"井九年", "井八年閏", "井八年", "欠陽", "屈駕", "扈駕", "右侍", "左侍",
            "尚書", "侍郎", "都御史", "御史", "禦史"}
+# 多格粘连姓名：原书一格两人被 OCR 连写（p403 洪武二年 御史臺「湯和鄧愈」）
+NAME_SPLIT = {"湯和鄧愈": ["湯和", "鄧愈"]}
 SUFFIXES = ("扈駕", "閤", "閏")
 # 名字第 2 字起出现这些「官署/任免」字，几乎都是 OCR 名注错切（如 南兵/都遷戶/參軍/屯戍）；
 # 首字可能是真实姓氏（郎/都/任…），不查；白名单（CBDB 映射名 + 内阁人物名）不受影响。
@@ -140,6 +143,10 @@ BOOK_ADD = {
     (1440, "王驥", "兵部"): ("", "book-p475"),
     (1440, "胡濙", "禮部"): ("", "book-p475"),
     (1440, "吳中", "工部"): ("二、辛卯、十八,提督官軍匠作。", "book-p475"),
+    (1539, "翟鑾", "兵部"): ("", "book-p574"),
+    (1539, "毛伯溫", "都察院"): ("", "book-p574"),
+    (1541, "毛伯溫", "都察院"): ("", "book-p576"),
+    (1620, "孫慎行", "禮部"): ("十二、癸丑、九,南禮尚改。", "book-p655"),
 }
 BOOK_CLEAR_NOTES = {
     (1440, "魏源", "刑部"): "book-p475",
@@ -209,12 +216,16 @@ def repair_entries(entries: list[dict]) -> tuple[list[dict], dict]:
                             "reason": "office-unmapped"})
             continue
         note = e.get("note", "") or ""
-        out.append({
-            "year": e["year"], "office": office,
-            "person": person, "note": note, "raw_person": raw,
-            "raw_office": office_raw, "src": e.get("src", "table"),
-            "flag": e.get("flag"),
-        })
+        persons = NAME_SPLIT.get(person, [person])
+        for p in persons:
+            out.append({
+                "year": e["year"], "office": office,
+                "person": p, "note": note, "raw_person": raw,
+                "raw_office": office_raw, "src": e.get("src", "table"),
+                "flag": e.get("flag"),
+            })
+            if p != person:
+                changed[(raw, p)] += 1
     return out, {"dropped": dropped, "renamed": [
         {"raw": a, "person": b, "count": n} for (a, b), n in changed.most_common()]}
 
@@ -711,6 +722,19 @@ def main() -> None:
     entries.sort(key=lambda e: (e["year"], e["office"], e["person_id"]))
     new_mapping = repair_mapping(mapping, persons, report)
     entity_mapping = build_entity_mapping(entries, new_mapping, report)
+    # D-08：给条目挂原书页码（year → book_page）
+    pages = {}
+    pp = DATA / "vol1_buyuan_pages.json"
+    if pp.is_file():
+        pages = json.loads(pp.read_text(encoding="utf-8"))
+    page_ok = 0
+    for e in entries:
+        p = pages.get(str(e["year"]))
+        if p:
+            e["book_page"] = p["book_page"]
+            page_ok += 1
+    report["pages"] = {"covered": page_ok, "entries": len(entries),
+                       "map_years": len(pages)}
 
     out_entries = DATA / "vol1_buyuan_entries_v2.json"
     out_mapping = DATA / "vol1_buyuan_person_cbdb_v3.json"
@@ -733,6 +757,7 @@ def main() -> None:
         "notes_inferred": report.get("note_resolution_counts", {}).get("reassigned-inferred", 0),
         "notes_prefix": report.get("note_resolution_counts", {}).get("restored-prefix-inferred", 0),
         "notes_manual": report.get("note_resolution_counts", {}).get("manual-review", 0),
+        "book_page_coverage": (report.get("pages", {}) or {}).get("covered"),
     }
     (DATA / "vol1_buyuan_repair.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")

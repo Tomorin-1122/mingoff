@@ -104,7 +104,9 @@ def audit() -> dict:
     med = sorted(per_year.values())[len(per_year) // 2] if per_year else 0
     lows = [(y, c) for y, c in sorted(per_year.items()) if c < med * 0.6]
     r["coverage"] = dict(missing_years=missing, office_gaps=office_gaps,
-                         per_year_median=med, low_years=lows)
+                         per_year_median=med, low_years=lows,
+                         page_covered=sum(1 for e in entries if e.get("book_page")),
+                         page_total=len(entries))
 
     # 3 断段：剩余多段缺口是否都有解释
     by_po = defaultdict(list)
@@ -239,6 +241,9 @@ def audit() -> dict:
         blockers.append(f"重复(年,人,衙)条目 {r['notes']['duplicate_entries']}")
     if r["fragmentation"]["short_unexplained"]:
         blockers.append(f"未解释短缺口 {r['fragmentation']['short_unexplained']}")
+    cov = r["coverage"]
+    if cov["page_total"] and cov["page_covered"] / cov["page_total"] < 0.9:
+        blockers.append(f"页码覆盖不足 {cov['page_covered']}/{cov['page_total']}")
     if r["cbdb"]["date_conflicts"]:
         blockers.append(f"CBDB 生卒/任期冲突 {len(r['cbdb']['date_conflicts'])}")
     if r["cbdb"]["shared_ids"]:
@@ -267,7 +272,8 @@ def main() -> None:
           f"gap 合并 {s['gap_merged']} 段（缺年 {s['gap_years']}）")
     c = r["coverage"]
     print(f"覆盖: 缺年 {len(c['missing_years'])}；各衙缺年 "
-          + "，".join(f"{o}:{len(g)}" for o, g in c["office_gaps"].items()))
+          + "，".join(f"{o}:{len(g)}" for o, g in c["office_gaps"].items())
+          + f"；页码 {c['page_covered']}/{c['page_total']}")
     print(f"断段: 多段组 {r['fragmentation']['multi_groups']}；未解释缺口 "
           f"{r['fragmentation']['unexplained']}（其中短缺口 {r['fragmentation']['short_unexplained']}）")
     print(f"人名: 伪名 {len(r['names']['pseudo'])}；未映射实体 {r['names']['unmapped_persons']}；"
