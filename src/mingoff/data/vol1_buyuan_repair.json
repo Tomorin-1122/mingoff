@@ -545,6 +545,41 @@
    "office": "御史府",
    "source": "book-jiwen2",
    "added": true
+  },
+  {
+   "year": 1440,
+   "person": "王驥",
+   "office": "兵部",
+   "source": "book-p475",
+   "added": true
+  },
+  {
+   "year": 1440,
+   "person": "胡濙",
+   "office": "禮部",
+   "source": "book-p475",
+   "added": true
+  },
+  {
+   "year": 1440,
+   "person": "吳中",
+   "office": "工部",
+   "source": "book-p475",
+   "added": true
+  },
+  {
+   "year": 1440,
+   "person": "魏源",
+   "office": "刑部",
+   "source": "book-p475",
+   "cleared": true
+  },
+  {
+   "year": 1440,
+   "person": "劉中敷",
+   "office": "戶部",
+   "source": "book-p475",
+   "cleared": true
   }
  ],
  "note_quarantine": [
@@ -5184,11 +5219,11 @@
     "id": 67450
    },
    {
-    "person": "李瓚",
+    "person": "李瓊",
     "id": 201490
    },
    {
-    "person": "李瓊",
+    "person": "李瓚",
     "id": 201490
    },
    {
@@ -5196,11 +5231,11 @@
     "id": 67650
    },
    {
-    "person": "李暹",
+    "person": "李鐩",
     "id": 67072
    },
    {
-    "person": "李鐩",
+    "person": "李暹",
     "id": 67072
    },
    {
@@ -5224,6 +5259,10 @@
     "id": 66439
    },
    {
+    "person": "王壱",
+    "id": 67477
+   },
+   {
     "person": "王儁",
     "id": 67477
    },
@@ -5232,15 +5271,11 @@
     "id": 67477
    },
    {
-    "person": "王壱",
-    "id": 67477
-   },
-   {
     "person": "胡濙",
     "id": 67968
    },
    {
-    "person": "趙肛",
+    "person": "趙本",
     "id": 66668
    },
    {
@@ -5248,19 +5283,11 @@
     "id": 66668
    },
    {
-    "person": "趙本",
-    "id": 66668
-   },
-   {
-    "person": "趙紅",
-    "id": 66668
-   },
-   {
     "person": "趙粑",
     "id": 66668
    },
    {
-    "person": "趙仁",
+    "person": "趙肛",
     "id": 66668
    },
    {
@@ -5268,12 +5295,24 @@
     "id": 66668
    },
    {
+    "person": "趙犏",
+    "id": 66668
+   },
+   {
+    "person": "趙仁",
+    "id": 66668
+   },
+   {
+    "person": "趙紅",
+    "id": 66668
+   },
+   {
     "person": "趙勉",
     "id": 66668
    },
    {
-    "person": "趙犏",
-    "id": 66668
+    "person": "李敏",
+    "id": 67840
    },
    {
     "person": "宋冕",
@@ -5282,10 +5321,6 @@
    {
     "person": "顧佐",
     "id": 66995
-   },
-   {
-    "person": "李敏",
-    "id": 67840
    }
   ]
  },
@@ -5295,14 +5330,14 @@
  },
  "counts": {
   "entries_in": 3353,
-  "entries_out": 3309,
+  "entries_out": 3312,
   "persons_entities": 796,
   "display_persons": 790,
   "split_entities": 12,
   "dropped": 18,
   "quarantined": 186,
   "dup_conflicts": 17,
-  "book_patch": 14,
+  "book_patch": 19,
   "mapping_out": 555,
   "mapping_ids": 513,
   "notes_restored": 0,

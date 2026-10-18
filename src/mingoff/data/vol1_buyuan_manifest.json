@@ -50,7 +50,7 @@
  },
  "year_header_jumps": [],
  "stats": {
-  "entries": 3309,
+  "entries": 3312,
   "persons_unique": 796,
   "years": 277,
   "missing_years": [],
@@ -67,7 +67,7 @@
   "per_year_min": 6,
   "per_year_max": 25,
   "quarantined_notes": 186,
-  "book_patches": 14,
+  "book_patches": 19,
   "offices": [
    "兵部",
    "刑部",
@@ -103,7 +103,7 @@
   "docs/evidence/book_p679_bujuan1644.png"
  ],
  "tenure_assembly": {
-  "date": "2026-10-18T07:29:10+00:00",
+  "date": "2026-10-18T08:17:57+00:00",
   "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
   "output": "official_buyuan.json",
   "stats": {
@@ -125,8 +125,8 @@
     "總督倉場",
     "都察院"
    ],
-   "gap_merged_tenures": 109,
-   "gap_years_total": 161,
+   "gap_merged_tenures": 107,
+   "gap_years_total": 158,
    "years_covered": [
     1368,
     1644
@@ -299,14 +299,14 @@
   ],
   "repair": {
    "entries_in": 3353,
-   "entries_out": 3309,
+   "entries_out": 3312,
    "persons_entities": 796,
    "display_persons": 790,
    "split_entities": 12,
    "dropped": 18,
    "quarantined": 186,
    "dup_conflicts": 17,
-   "book_patch": 14,
+   "book_patch": 19,
    "mapping_out": 555,
    "mapping_ids": 513,
    "notes_restored": 0,

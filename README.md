@@ -36,7 +36,7 @@
 | 阶段④ 地方官 | 府州县官 + 卫所武官（百万级） | ⬜ |
 
 已完成：6 张表 schema、数据存取层、崇祯朝兵部尚书 14 任种子数据、CLI、
-**172 个测试**、单文件可视化 demo（`web/demo.html`，双击即开）、
+**173 个测试**、单文件可视化 demo（`web/demo.html`，双击即开）、
 正式站 `site/`（Next.js 静态导出，**192 段 / 167 人全朝内阁**，画布 1368–1644.3）。
 
 > ✅ **数据源问题已处理（D25）**：旧版丢“无注文人名行”导致 360 段事件碎片；
@@ -167,7 +167,7 @@ python -m guji.cli shidian chapter LS0026 <chapterId>
 ```
 mingoff/
 ├─ README.md              本文件
-├─ docs/DECISIONS.md      设计决策记录（D1–D33）
+├─ docs/DECISIONS.md      设计决策记录（D1–D35）
 ├─ docs/demo开发经验总结.md  本轮 demo 开发的坑与方法
 ├─ docs/数据源月份精度实测.md  CBDB/中研院月份能力实测
 ├─ docs/数据接入规范.md    ★ 数据接入硬规则（D26：解析/实体/时间/校验门 G1–G6）
@@ -177,6 +177,7 @@ mingoff/
 ├─ docs/ming-official-atlas调研.md  对标调研：大明职官图（可借鉴的 10 条）
 ├─ docs/部院数据接收报告.md    ★ 部院 v1 质检→v3 修复与站点接入评估（D30–D33）
 ├─ docs/部院数据待办清单.md    ★ 部院 v2 残留待办（身份/注文/缺口/表头/CBDB/页码）
+├─ docs/部院D03原书核对报告.md  ★ D-03 长缺口/缺年原书页核对（1440 补行，余 108）
 ├─ docs/重建数据操作步骤.md  v3 数据重建的脚本与口径
 ├─ pyproject.toml         包定义（一期零第三方依赖）
 ├─ src/mingoff/

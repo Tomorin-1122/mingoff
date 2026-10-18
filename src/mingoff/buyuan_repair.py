@@ -135,6 +135,16 @@ BOOK_PATCH = {
     (1400, "景清", "御史府"): ("三、辛巳、十六,北平參議遷御史大夫。", "book-jiwen2"),
     (1400, "練子寧", "御史府"): ("三、辛巳,十六,改御史中丞。", "book-jiwen2"),
 }
+# D-03 原书核对补行：book p475（正统五年 1440）缺 3 行 + 2 条注文错挂
+BOOK_ADD = {
+    (1440, "王驥", "兵部"): ("", "book-p475"),
+    (1440, "胡濙", "禮部"): ("", "book-p475"),
+    (1440, "吳中", "工部"): ("二、辛卯、十八,提督官軍匠作。", "book-p475"),
+}
+BOOK_CLEAR_NOTES = {
+    (1440, "魏源", "刑部"): "book-p475",
+    (1440, "劉中敷", "戶部"): "book-p475",
+}
 
 # ---------------------------------------------------------------- CBDB 修复
 SHARED_ID_OWNER = {  # 同一 id 只允许这些正名保留；其余置 NULL
@@ -232,6 +242,27 @@ def apply_book_patch(entries: list[dict], report: dict) -> None:
                             "raw_office": office, "src": "book-patch"})
             applied.append({"year": year, "person": person, "office": office,
                             "source": source, "added": True})
+    for (year, person, office), (note, source) in BOOK_ADD.items():
+        rows = by_key.get((year, person, office), [])
+        if rows:
+            rows[0]["note"] = note
+            rows[0]["note_status"] = "book-patched"
+            rows[0]["note_source"] = source
+        else:
+            entries.append({"year": year, "office": office, "person": person,
+                            "note": note, "note_status": "book-patched",
+                            "note_source": source, "raw_person": person,
+                            "raw_office": office, "src": "book-patch"})
+        applied.append({"year": year, "person": person, "office": office,
+                        "source": source, "added": True})
+    for (year, person, office), source in BOOK_CLEAR_NOTES.items():
+        rows = by_key.get((year, person, office), [])
+        if rows:
+            rows[0]["note"] = ""
+            rows[0]["note_status"] = "book-patched-clear"
+            rows[0]["note_source"] = source
+            applied.append({"year": year, "person": person, "office": office,
+                            "source": source, "cleared": True})
     report["book_patch"] = applied
 
 

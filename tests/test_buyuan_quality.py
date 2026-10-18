@@ -82,6 +82,17 @@ def test_note_review_d02_is_exhaustive():
     assert {d["action"] for d in nr["decisions"]} <= allowed
 
 
+def test_d03_1440_book_rows():
+    """D-03 原书 p475：1440 应有 9 人，含王驥/胡濙/吳中；魏源/劉中敷注已清。"""
+    entries = json.loads((DATA / "vol1_buyuan_entries_v2.json").read_text(encoding="utf-8"))
+    rows = [e for e in entries if e["year"] == 1440]
+    assert len(rows) == 9, [(e["person"], e["office"]) for e in rows]
+    keys = {(e["person"], e["office"]) for e in rows}
+    assert {("王驥", "兵部"), ("胡濙", "禮部"), ("吳中", "工部")} <= keys
+    assert next(e for e in rows if e["person"] == "魏源")["note"] == ""
+    assert next(e for e in rows if e["person"] == "劉中敷")["note"] == ""
+
+
 def test_identity_split_d01(doc):
     """D-01：同名多人必须拆成独立 person_id；同一实体跨度不得跨代。"""
     tenures = doc["tenures"]

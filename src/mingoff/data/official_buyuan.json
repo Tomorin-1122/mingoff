@@ -5,7 +5,7 @@
   "canvas_from": 1368,
   "source": "张德信《明代职官年表》册1·部院大臣年表（京師）（MinerU OCR）；v2 修复：人名归一/伪名清理/注文隔离/衙署分期/CBDB 重挂；v3 D-01：同名拆分 person_id（李本/李敏/王佐/顧佐/吳山/胡松），張鳳 1629 改張鳳翔；人名校验：CBDB 20261010 + 中研院明實錄 + 弇山堂别集/國榷（识典古籍）；《明實錄》命中据中研院检索",
   "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
-  "generated_at": "2026-10-18T07:29:09+00:00",
+  "generated_at": "2026-10-18T08:17:57+00:00",
   "stats": {
    "tenures": 1205,
    "persons": 796,
@@ -25,8 +25,8 @@
     "總督倉場",
     "都察院"
    ],
-   "gap_merged_tenures": 109,
-   "gap_years_total": 161,
+   "gap_merged_tenures": 107,
+   "gap_years_total": 158,
    "years_covered": [
     1368,
     1644
@@ -3166,7 +3166,7 @@
    "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
+   "confidence": 0.8,
    "leave": "卒于任",
    "note": "八、庚申、十八,改兵部。八、庚申、十八,禮尚改;八、丙子、四,掌交阯布司工尚,召還;八、甲子、廿三,刑尚改,十、甲子、廿三,改刑尚。八、甲子、廿三,改刑尚。十、壬寅、一,兼詹事。八、壬寅、一,兼詹事。十、甲子、廿三,刑尚改,兼職如故;十一、丙戌、十五,進太子少保。",
    "years": [
@@ -3189,11 +3189,7 @@
     1440,
     1441,
     1442
-   ],
-   "gap_years": [
-    1440
-   ],
-   "merged_segments": 2
+   ]
   },
   {
    "person": "吳中",
@@ -18641,7 +18637,7 @@
    "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.5,
+   "confidence": 0.7,
    "leave": "未載",
    "note": "三、壬寅、廿五,兵右侍遷。",
    "years": [
@@ -18655,10 +18651,6 @@
     1441,
     1442
    ],
-   "gap_years": [
-    1440
-   ],
-   "merged_segments": 2,
    "gap_after": [
     1443,
     1444,
@@ -21076,11 +21068,10 @@
    ],
    "gap_years": [
     1438,
-    1440,
     1442,
     1456
    ],
-   "merged_segments": 5
+   "merged_segments": 4
   },
   {
    "person": "胡禎",
