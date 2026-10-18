@@ -163,7 +163,7 @@ python -m guji.cli shidian chapter LS0026 <chapterId>
 ```
 mingoff/
 ├─ README.md              本文件
-├─ docs/DECISIONS.md      设计决策记录（D1–D29）
+├─ docs/DECISIONS.md      设计决策记录（D1–D30）
 ├─ docs/demo开发经验总结.md  本轮 demo 开发的坑与方法
 ├─ docs/数据源月份精度实测.md  CBDB/中研院月份能力实测
 ├─ docs/数据接入规范.md    ★ 数据接入硬规则（D26：解析/实体/时间/校验门）
@@ -171,6 +171,7 @@ mingoff/
 ├─ docs/发展路线.md        分阶段方向（P0 收尾 → P1 中书省 → P2 殿阁+首辅 → …）
 ├─ docs/明人传记资料索引评估.md  工具书调研：人物校勘/出处层（L4）评估
 ├─ docs/ming-official-atlas调研.md  对标调研：大明职官图（可借鉴的 10 条）
+├─ docs/部院数据接收报告.md    ★ 部院 v1 质检与站点接入评估（D30；暂缓接入）
 ├─ docs/重建数据操作步骤.md  v3 数据重建的脚本与口径
 ├─ pyproject.toml         包定义（一期零第三方依赖）
 ├─ src/mingoff/

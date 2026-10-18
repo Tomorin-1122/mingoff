@@ -1,0 +1,110 @@
+{
+ "source": "张德信《明代职官年表》册1「部院大臣年表(京師)」（扫描 PDF）",
+ "pdf_pages": 1281,
+ "offset": 15,
+ "book_pages": [
+  401,
+  680
+ ],
+ "pdf_range": [
+  416,
+  695
+ ],
+ "slices": [
+  {
+   "file": "vol1_buyuan_a.pdf",
+   "pdf_pages": [
+    416,
+    615
+   ],
+   "count": 200,
+   "chars": 116860
+  },
+  {
+   "file": "vol1_buyuan_b.pdf",
+   "pdf_pages": [
+    616,
+    695
+   ],
+   "count": 80,
+   "chars": 52243
+  }
+ ],
+ "tool": {
+  "name": "MinerU",
+  "params": {
+   "ocr": true,
+   "table": true,
+   "language": "ch"
+  }
+ },
+ "submitted_at": "2026-10-17T18:55:47+08:00",
+ "batch_id": "79f53249-fdb5-4f7f-a405-7000658ffe39",
+ "parser": "src/mingoff/ocr_buyuan.py",
+ "strategy": "docs/部院OCR形态普查.md 第八节（v3：贪心名串分解+rowspan续行+三级锚定）",
+ "gates": {
+  "O2_年份连续": "pass（277/277）",
+  "O3_行重组": "名行/注行节律重组；异常进 review",
+  "O4_名归一": "原文保留 raw_person；变体归一留待 CBDB 对齐阶段",
+  "O5_人工抽检": "锚点抽验见普查报告第七节；evidence 8 页"
+ },
+ "year_header_jumps": [],
+ "stats": {
+  "entries": 3359,
+  "persons_unique": 877,
+  "years": 277,
+  "missing_years": [],
+  "no_office_entries": 8,
+  "review_items": 189,
+  "name_dict": 914,
+  "anchor_stats": {
+   "①人名锚": 979,
+   "②按序补": 41,
+   "office重复": 328,
+   "③兜底": 66,
+   "未定office": 10
+  },
+  "per_year_min": 6,
+  "per_year_max": 25
+ },
+ "evidence": [
+  "docs/evidence/book_p402_bujuan1368.png",
+  "docs/evidence/book_p405_bujuan1371.png",
+  "docs/evidence/book_p422_bujuan1388.png",
+  "docs/evidence/book_p484_bujuan1449.png",
+  "docs/evidence/book_p555_bujuan1520.png",
+  "docs/evidence/book_p625_bujuan1590.png",
+  "docs/evidence/book_p645_bujuan1610.png",
+  "docs/evidence/book_p679_bujuan1644.png"
+ ],
+ "tenure_assembly": {
+  "date": "2026-10-18T05:02:10+00:00",
+  "pipeline": "mingoff.official_buyuan v1",
+  "output": "official_buyuan.json",
+  "stats": {
+   "tenures": 1417,
+   "persons": 841,
+   "person_years": 3319,
+   "with_start_month": 1038,
+   "with_end_month": 508,
+   "cbdb_aligned_tenures": 992,
+   "with_leave": 544,
+   "shu_li": 97,
+   "same_name_risk_tenures": 13,
+   "shilu_hits": 3847,
+   "shilu_persons": 127
+  },
+  "gates": {
+   "G1": "pass(277年零缺年；NULL-office 8条入待校)",
+   "G2": "pass(years连续、同名风险标记13段)",
+   "G3": "pass(月∈1-12∪null；1644截3月end_clamped)",
+   "G4": "pass(pytest 166项全过)",
+   "G5": "pass(锚点：于謙1449.8/胡濙1426.4/李遇知1643.5/張璁署理/寇深1457-1461)"
+  },
+  "known_limits": [
+   "多人同格注归属：1449于謙段起注含鄺埜死難（多人格注边界），leave标签可能误挂",
+   "胡濙禮部 1426-1457 因缺年碎片化为6段（上游OCR缺年，非任职中断）",
+   "office=NULL 8条不入段（張敷華/汪俊/何鰲重/歐陽必進×2/盧紳/高燿/雷禮），待回原书"
+  ]
+ }
+}
