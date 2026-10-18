@@ -1,0 +1,7151 @@
+[
+ {
+  "name": "一清天",
+  "page": 1,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": "深祖",
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 69
+ },
+ {
+  "name": "一獨",
+  "page": 1,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "桂彥",
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 100
+ },
+ {
+  "name": "乙乙邦才",
+  "page": 1,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "奇山",
+  "hao": null,
+  "native": "青州",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 107
+ },
+ {
+  "name": "丁士美",
+  "page": 1,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "邦彥",
+  "hao": "後溪",
+  "native": "淮安清河",
+  "exam_era": "嘉靖",
+  "exam_year": "三十八",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "父喪，以毀卒，謚文恪。會祭少宰丁文恪公文",
+    "book": "載文山館文集32",
+    "vol": 15,
+    "page": ""
+   },
+   {
+    "title": "圖考3/20下父丁□。號雙松祭丁雙松公文",
+    "book": "松石齋集23",
+    "vol": 6,
+    "page": ""
+   }
+  ],
+  "raw_len": 131
+ },
+ {
+  "name": "丁川",
+  "page": 1,
+  "birth": 1431,
+  "death": 1478,
+  "ming": null,
+  "zi": "大容",
+  "hao": "東陵",
+  "native": "浙江新昌",
+  "exam_era": "天順",
+  "exam_year": "八",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "，年四十八。有東陵文集。贈御史丁君大容序",
+    "book": "楊文懿公桂坊稿1",
+    "vol": 30,
+    "page": "下"
+   },
+   {
+    "title": "丁君墓誌銘",
+    "book": "桃溪淨稿文11",
+    "vol": 1,
+    "page": ""
+   }
+  ],
+  "raw_len": 162
+ },
+ {
+  "name": "丁文還",
+  "page": 1,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": "竹坡",
+  "native": "瑞金",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 39
+ },
+ {
+  "name": "丁天毓",
+  "page": 1,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "秀夫",
+  "hao": null,
+  "native": "宜興",
+  "exam_era": "萬曆",
+  "exam_year": "二十九",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 62
+ },
+ {
+  "name": "丁元復",
+  "page": 1,
+  "birth": 1525,
+  "death": 1609,
+  "ming": null,
+  "zi": "見心",
+  "hao": "玉陽",
+  "native": "長洲",
+  "exam_era": "隆慶",
+  "exam_year": "五",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "議，卒年八十五，有片玉齋存稿。丁公墓誌銘",
+    "book": "賜聞堂集25",
+    "vol": 6,
+    "page": ""
+   },
+   {
+    "title": "祭玉陽丁大老師文",
+    "book": "無夢圓遣集8",
+    "vol": 11,
+    "page": ""
+   },
+   {
+    "title": "劉氏墓誌銘",
+    "book": "賜聞堂集32",
+    "vol": 10,
+    "page": "下"
+   }
+  ],
+  "raw_len": 131
+ },
+ {
+  "name": "丁元薦",
+  "page": 1,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "長孺",
+  "hao": "愼所",
+  "native": "長興",
+  "exam_era": "萬曆",
+  "exam_year": "十四",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 177
+ },
+ {
+  "name": "丁永中",
+  "page": 1,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "大興",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 67
+ },
+ {
+  "name": "王好問",
+  "page": 31,
+  "birth": 1517,
+  "death": 1582,
+  "ming": null,
+  "zi": "裕卿",
+  "hao": "西塘",
+  "native": "樂亭",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "。有春煦齋集，詩餘可伯仲有宋。王司徒家傳",
+    "book": "大泌山房集63",
+    "vol": 31,
+    "page": "下"
+   },
+   {
+    "title": "內臺奏議序",
+    "book": "二酉圖文集1",
+    "vol": 4,
+    "page": "下"
+   },
+   {
+    "title": "王公墓誌銘",
+    "book": "許國撰、國朝獻徵錄31",
+    "vol": 95,
+    "page": ""
+   }
+  ],
+  "raw_len": 129
+ },
+ {
+  "name": "王好學",
+  "page": 31,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "道卿",
+  "hao": null,
+  "native": "樂亭",
+  "exam_era": "嘉靖",
+  "exam_year": "十九",
+  "exam_type": "舉人",
+  "shi": null,
+  "cites": [],
+  "raw_len": 156
+ },
+ {
+  "name": "王任重",
+  "page": 31,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "尹卿",
+  "hao": "玉溪",
+  "native": "晉江",
+  "exam_era": "隆慶",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "雲南布政使，以太僕寺卿致士卒。王公墓誌銘",
+    "book": "田亭草17",
+    "vol": 4,
+    "page": ""
+   }
+  ],
+  "raw_len": 65
+ },
+ {
+  "name": "王行",
+  "page": 31,
+  "birth": 1331,
+  "death": 1395,
+  "ming": null,
+  "zi": "止仲",
+  "hao": "淡如居士",
+  "native": "吳縣",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 230
+ },
+ {
+  "name": "王行儉",
+  "page": 31,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "質行",
+  "hao": null,
+  "native": "宜興",
+  "exam_era": "崇禎",
+  "exam_year": "十",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 65
+ },
+ {
+  "name": "王名壽",
+  "page": 31,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "義烏",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 57
+ },
+ {
+  "name": "王孕懋",
+  "page": 31,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "有懷",
+  "hao": null,
+  "native": "霸州",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 82
+ },
+ {
+  "name": "王汶",
+  "page": 31,
+  "birth": 1433,
+  "death": 1489,
+  "ming": null,
+  "zi": "允達",
+  "hao": "齊山",
+  "native": "浙江義烏",
+  "exam_era": "成化",
+  "exam_year": "十四",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "道。有齊山文集。遂中書王舍人汶赴召詩俊序",
+    "book": "楓山章先生文集7",
+    "vol": 12,
+    "page": "下"
+   },
+   {
+    "title": "王君墓志銘",
+    "book": "桃溪淨稿文13",
+    "vol": 7,
+    "page": ""
+   },
+   {
+    "title": "王君墓表",
+    "book": "匏翁家藏集73",
+    "vol": 6,
+    "page": ""
+   }
+  ],
+  "raw_len": 154
+ },
+ {
+  "name": "王沂",
+  "page": 31,
+  "birth": 1308,
+  "death": 1383,
+  "ming": null,
+  "zi": "子與",
+  "hao": "竹亭",
+  "native": "泰和",
+  "exam_era": "成化",
+  "exam_year": "十一",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "王淑人楊氏墓誌銘",
+    "book": "容春堂前集17",
+    "vol": 21,
+    "page": "下"
+   }
+  ],
+  "raw_len": 214
+ },
+ {
+  "name": "王良",
+  "page": 31,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "天性",
+  "hao": null,
+  "native": "祥符",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 61
+ },
+ {
+  "name": "王詢",
+  "page": 61,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": "芳湖",
+  "native": "成都",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "江參政，累官福建巡撫致仕。贈大參王方湖序",
+    "book": "天一閲集18",
+    "vol": 5,
+    "page": ""
+   },
+   {
+    "title": "贈中丞芳湖王公西歸序",
+    "book": "石泉山房文集8",
+    "vol": 20,
+    "page": ""
+   },
+   {
+    "title": "贈晉臺王公平倭序",
+    "book": "宗子相集13",
+    "vol": 48,
+    "page": ""
+   }
+  ],
+  "raw_len": 92
+ },
+ {
+  "name": "王慎中",
+  "page": 61,
+  "birth": 1509,
+  "death": 1559,
+  "ming": null,
+  "zi": "道思",
+  "hao": "南江",
+  "native": "晋江",
+  "exam_era": "嘉靖",
+  "exam_year": "五",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "五十一卒。有違嚴集。贈王道思 封諦昆陵序",
+    "book": "南沙文集1",
+    "vol": 24,
+    "page": "下"
+   },
+   {
+    "title": "贈別王道思序",
+    "book": "息國存稿文3",
+    "vol": 3,
+    "page": ""
+   },
+   {
+    "title": "南江子照言",
+    "book": "歐陽占野文集7",
+    "vol": 12,
+    "page": "下"
+   },
+   {
+    "title": "王先生行狀",
+    "book": "王惟卩撰、國朝獻徵錄92",
+    "vol": 49,
+    "page": ""
+   },
+   {
+    "title": "遵嚴王參政傳",
+    "book": "李卩懿閒居集10",
+    "vol": 68,
+    "page": "下"
+   },
+   {
+    "title": "康王王唐四子補傳",
+    "book": "同上10",
+    "vol": 102,
+    "page": ""
+   },
+   {
+    "title": "遵嚴先生文集後序",
+    "book": "皇甫司勳集38",
+    "vol": 5,
+    "page": "下"
+   },
+   {
+    "title": "王遵娥選集序",
+    "book": "二酉國續集2",
+    "vol": 9,
+    "page": "下"
+   }
+  ],
+  "raw_len": 320
+ },
+ {
+  "name": "王愷",
+  "page": 61,
+  "birth": 1317,
+  "death": 1362,
+  "ming": null,
+  "zi": "用和",
+  "hao": null,
+  "native": "當塗",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 158
+ },
+ {
+  "name": "王愷",
+  "page": 61,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "時學",
+  "hao": null,
+  "native": "湖廣蒲圻",
+  "exam_era": "永樂",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "終廣東參議。有雲谷集。送王僉惠復任廣西序",
+    "book": "縶忠女古廉文集5",
+    "vol": 27,
+    "page": ""
+   }
+  ],
+  "raw_len": 187
+ },
+ {
+  "name": "王道",
+  "page": 61,
+  "birth": 1476,
+  "death": 1529,
+  "ming": null,
+  "zi": "純甫",
+  "hao": "俗侗",
+  "native": "陵川",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "，歷官河南府通判，年五十四卒。王公墓誌銘",
+    "book": "苑洛集4",
+    "vol": 17,
+    "page": "下"
+   }
+  ],
+  "raw_len": 70
+ },
+ {
+  "name": "王道",
+  "page": 61,
+  "birth": 1487,
+  "death": 1547,
+  "ming": null,
+  "zi": "純甫",
+  "hao": "順渠",
+  "native": "武城",
+  "exam_era": "正德",
+  "exam_year": "六",
+  "exam_type": "進士",
+  "shi": "文定",
+  "cites": [
+   {
+    "title": "十一，諡文定。有易詩書大學億。送王純甫序",
+    "book": "穆文簡公宦稿上",
+    "vol": 26,
+    "page": ""
+   },
+   {
+    "title": "送王純甫序",
+    "book": "石龍集11",
+    "vol": 6,
+    "page": ""
+   },
+   {
+    "title": "贈大司成順渠王先生序",
+    "book": "方素存稿3",
+    "vol": 12,
+    "page": ""
+   }
+  ],
+  "raw_len": 215
+ },
+ {
+  "name": "王道行",
+  "page": 61,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "明輔",
+  "hao": "龍池",
+  "native": "陽曲",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "增光錄、桂子園集。送鳳翔王太守擅知蘇府序",
+    "book": "趙浚谷文集9",
+    "vol": 26,
+    "page": ""
+   },
+   {
+    "title": "桂子園集序",
+    "book": "大巫山房集11",
+    "vol": 20,
+    "page": "下"
+   },
+   {
+    "title": "夫，院水亭，北峽關巡檢。贈水亭王公六十序",
+    "book": "弇州山人四部稿60",
+    "vol": 14,
+    "page": "下"
+   },
+   {
+    "title": "王公墓表·",
+    "book": "同上95",
+    "vol": 4,
+    "page": ""
+   },
+   {
+    "title": "王公墓誌銘",
+    "book": "條魏堂集27",
+    "vol": 20,
+    "page": ""
+   },
+   {
+    "title": "王母米太宜人七十序",
+    "book": "弇州山人四部稿63",
+    "vol": 13,
+    "page": ""
+   }
+  ],
+  "raw_len": 227
+ },
+ {
+  "name": "毛忠",
+  "page": 91,
+  "birth": 1394,
+  "death": 1468,
+  "ming": null,
+  "zi": "允誠",
+  "hao": null,
+  "native": "涼州",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": "武勇",
+  "cites": [
+   {
+    "title": "也，西陲人弔哭相望於道。題毛武勇公忠義錄",
+    "book": "方簡爾公文集7",
+    "vol": 6,
+    "page": ""
+   }
+  ],
+  "raw_len": 225
+ },
+ {
+  "name": "毛恩羲",
+  "page": 91,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "繼賢",
+  "hao": "海隅",
+  "native": "陽信",
+  "exam_era": "弘治",
+  "exam_year": "十五",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "，以治辦聞，政仕卒。送中丞海隅毛公致仕序",
+    "book": "涇野先生文集8",
+    "vol": 6,
+    "page": ""
+   }
+  ],
+  "raw_len": 98
+ },
+ {
+  "name": "毛紀",
+  "page": 91,
+  "birth": 1463,
+  "death": 1545,
+  "ming": null,
+  "zi": "維之",
+  "hao": "董峯逸叟",
+  "native": "掖縣",
+  "exam_era": "成化",
+  "exam_year": "二十三",
+  "exam_type": "進士",
+  "shi": "文簡",
+  "cites": [
+   {
+    "title": "、辭榮錄、鼇峯類稿。送侍讀毛君維之歸省序",
+    "book": "東川劉文簡公集3",
+    "vol": 23,
+    "page": "下"
+   },
+   {
+    "title": "送毛檢討歸省序",
+    "book": "王文恪公集10",
+    "vol": 8,
+    "page": ""
+   },
+   {
+    "title": "館閣榮壽詩序",
+    "book": "潛文蕭公集8",
+    "vol": 24,
+    "page": "下"
+   },
+   {
+    "title": "慶武英殿大學士礪菴毛公壽詩序",
+    "book": "湘皋集18",
+    "vol": 20,
+    "page": "下"
+   },
+   {
+    "title": "賀致政少保大學士厲翁毛公華誕詩序",
+    "book": "泉翁大全集22",
+    "vol": 11,
+    "page": ""
+   },
+   {
+    "title": "遺德錄序",
+    "book": "豐文憲公摘稿11",
+    "vol": 24,
+    "page": "下"
+   },
+   {
+    "title": "鼇峯類稿序",
+    "book": "徐文敏公集4",
+    "vol": 36,
+    "page": "下"
+   },
+   {
+    "title": "毛文簡公遣稿序",
+    "book": "鶯休外細24",
+    "vol": 9,
+    "page": "下"
+   },
+   {
+    "title": "字子聰，號養浩，杭州教授。毛公行狀",
+    "book": "豐文憲公摘稿16",
+    "vol": 35,
+    "page": "下"
+   },
+   {
+    "title": "母毛太淑人祭毛禮侍緝之母太淑人文",
+    "book": "黼蒼遺稿10",
+    "vol": 2,
+    "page": ""
+   }
+  ],
+  "raw_len": 430
+ },
+ {
+  "name": "毛寨",
+  "page": 91,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "時亨",
+  "hao": null,
+  "native": "河南蘭陽",
+  "exam_era": "成化",
+  "exam_year": "五",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "授鎮遠，鬢夷悅服，逾年致政歸。頌德餘音序",
+    "book": "東川劉文簡公集14",
+    "vol": 12,
+    "page": "下"
+   },
+   {
+    "title": "繼母王氏壽毛母太宜人序",
+    "book": "東川劉文簡公集13",
+    "vol": 20,
+    "page": "下"
+   }
+  ],
+  "raw_len": 149
+ },
+ {
+  "name": "毛素亨",
+  "page": 91,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "浙江",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 74
+ },
+ {
+  "name": "毛蕃",
+  "page": 91,
+  "birth": 1599,
+  "death": 1659,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 13
+ },
+ {
+  "name": "原名鳳苞",
+  "page": 91,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "子晉",
+  "hao": null,
+  "native": "常熟",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 46
+ },
+ {
+  "name": "吉時",
+  "page": 121,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "惟可",
+  "hao": null,
+  "native": "陝西長安",
+  "exam_era": "弘治",
+  "exam_year": "十五",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 58
+ },
+ {
+  "name": "艾艾良",
+  "page": 121,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "監利",
+  "exam_era": "弘治",
+  "exam_year": "九",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 120
+ },
+ {
+  "name": "艾南英",
+  "page": 121,
+  "birth": 1583,
+  "death": 1646,
+  "ming": null,
+  "zi": "千子",
+  "hao": null,
+  "native": "江西東鄉",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "。有天傭子集、艾千子全稿。艾千子歷試卷序",
+    "book": "已吾集3",
+    "vol": 11,
+    "page": ""
+   }
+  ],
+  "raw_len": 226
+ },
+ {
+  "name": "艾萬年",
+  "page": 121,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 58
+ },
+ {
+  "name": "艾福",
+  "page": 121,
+  "birth": 1420,
+  "death": 1492,
+  "ming": null,
+  "zi": "天錫",
+  "hao": null,
+  "native": "襄陽",
+  "exam_era": "天順",
+  "exam_year": "四",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "祿卿事，乞歸卒，年七十三。贈光祿薄艾君序",
+    "book": "謝文莊公集3",
+    "vol": 15,
+    "page": "下"
+   },
+   {
+    "title": "贈禮部右侍郎艾君致仕序",
+    "book": "有谿漫稿18",
+    "vol": 13,
+    "page": "下"
+   }
+  ],
+  "raw_len": 191
+ },
+ {
+  "name": "艾璞",
+  "page": 121,
+  "birth": 1451,
+  "death": 1513,
+  "ming": null,
+  "zi": "德潤",
+  "hao": "東湖",
+  "native": "南昌",
+  "exam_era": "成化",
+  "exam_year": "十七",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "中撰職方外紀進之，又著西學凡。職方外紀序",
+    "book": "蒼霞餘草5",
+    "vol": 24,
+    "page": ""
+   },
+   {
+    "title": "巡撫四川，以病歸。有熙亭文集。艾氏族譜序",
+    "book": "二酉國續集1",
+    "vol": 36,
+    "page": ""
+   }
+  ],
+  "raw_len": 297
+ },
+ {
+  "name": "光光時亭",
+  "page": 121,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "羽聖",
+  "hao": "吾山",
+  "native": "桐城",
+  "exam_era": "嘉靖",
+  "exam_year": "四十四",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 153
+ },
+ {
+  "name": "朱瞻增",
+  "page": 151,
+  "birth": 1406,
+  "death": 1478,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": "献",
+  "cites": [],
+  "raw_len": 238
+ },
+ {
+  "name": "朱爵",
+  "page": 151,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "直隸開州",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 90
+ },
+ {
+  "name": "朱寵",
+  "page": 151,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "德承",
+  "hao": "曰別山漢",
+  "native": "漢陽",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "字宗慶。朱君僧配合葬墓懿銘",
+    "book": "歐陽南野文集24",
+    "vol": 32,
+    "page": ""
+   }
+  ],
+  "raw_len": 146
+ },
+ {
+  "name": "朱冲浸",
+  "page": 151,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": "恭",
+  "cites": [],
+  "raw_len": 98
+ },
+ {
+  "name": "朱瓊經",
+  "page": 151,
+  "birth": 1403,
+  "death": 1426,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 15
+ },
+ {
+  "name": "樞子",
+  "page": 151,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": "靖",
+  "cites": [],
+  "raw_len": 49
+ },
+ {
+  "name": "朱翰",
+  "page": 151,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "白甫",
+  "hao": "后菴",
+  "native": "直隸泗州",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "至南京右通政卒。賭勳工科右給事中朱翰二道",
+    "book": "條鐵堂集5",
+    "vol": 32,
+    "page": ""
+   }
+  ],
+  "raw_len": 91
+ },
+ {
+  "name": "朱耀",
+  "page": 151,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "固始",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 66
+ },
+ {
+  "name": "朱繼祚",
+  "page": 151,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "莆田",
+  "exam_era": "萬曆",
+  "exam_year": "四十七",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 128
+ },
+ {
+  "name": "朱繼祖",
+  "page": 151,
+  "birth": 1449,
+  "death": 1518,
+  "ming": null,
+  "zi": "孝思",
+  "hao": "慕菴",
+  "native": "高安",
+  "exam_era": "成化",
+  "exam_year": "二十",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "，不以器名，直名之曰朱松驎。朱鶴濮仲謙傳",
+    "book": "初月樓文鈔7",
+    "vol": 24,
+    "page": "下"
+   }
+  ],
+  "raw_len": 169
+ },
+ {
+  "name": "朱譽禧",
+  "page": 151,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": "石巖山人",
+  "native": "自號石巖山",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": "莊順",
+  "cites": [],
+  "raw_len": 120
+ },
+ {
+  "name": "宋延年",
+  "page": 181,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "仁夫",
+  "hao": "一川居士",
+  "native": "益都",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "累官南京禮部司務。有宋祠部集。宋祠部集序",
+    "book": "二西圖續集3",
+    "vol": 15,
+    "page": ""
+   }
+  ],
+  "raw_len": 58
+ },
+ {
+  "name": "宋伯華",
+  "page": 181,
+  "birth": 1539,
+  "death": 1585,
+  "ming": null,
+  "zi": "汝含",
+  "hao": "鑑弦",
+  "native": "益都",
+  "exam_era": "隆慶",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "知府，萬曆十三年卒官，年四十七。宋公行狀",
+    "book": "北海集18",
+    "vol": 16,
+    "page": "下"
+   }
+  ],
+  "raw_len": 136
+ },
+ {
+  "name": "宋邦輔",
+  "page": 181,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "子相",
+  "hao": null,
+  "native": "東流",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 92
+ },
+ {
+  "name": "宋宜",
+  "page": 181,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "獻可",
+  "hao": "仰山",
+  "native": "陝西鄭州",
+  "exam_era": "嘉靖",
+  "exam_year": "五",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "歷御史，擢知真定府。贈宋君獻可陞知真定序",
+    "book": "涇野先生文集10",
+    "vol": 5,
+    "page": ""
+   },
+   {
+    "title": "仰山說",
+    "book": "同上35",
+    "vol": 11,
+    "page": "下"
+   },
+   {
+    "title": "陳顯際，悉心城守，城破並死之。宋九青詩序",
+    "book": "七錄齋文集4",
+    "vol": 1,
+    "page": ""
+   }
+  ],
+  "raw_len": 174
+ },
+ {
+  "name": "宋明",
+  "page": 181,
+  "birth": 1447,
+  "death": 1527,
+  "ming": null,
+  "zi": "惟遠",
+  "hao": "古愚",
+  "native": "濬縣",
+  "exam_era": "成化",
+  "exam_year": "十四",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "山東參政致仕卒，年八十一。宋古愚先生行狀",
+    "book": "端溪先生集6",
+    "vol": 1,
+    "page": ""
+   }
+  ],
+  "raw_len": 129
+ },
+ {
+  "name": "宋忠",
+  "page": 181,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 130
+ },
+ {
+  "name": "宋旻",
+  "page": 181,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "浙江淳安",
+  "exam_era": "景泰",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "成化廿三年致仕。逸右都御史宋公督撫兩廣序",
+    "book": "楊文餘公金坡稿2",
+    "vol": 28,
+    "page": "下"
+   }
+  ],
+  "raw_len": 68
+ },
+ {
+  "name": "宋和",
+  "page": 181,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "臨川",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 100
+ },
+ {
+  "name": "宋思顔",
+  "page": 181,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "不知何許",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 143
+ },
+ {
+  "name": "宋訥",
+  "page": 181,
+  "birth": 1311,
+  "death": 1390,
+  "ming": null,
+  "zi": "仲敏",
+  "hao": "西隱",
+  "native": "滑縣",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 97
+ },
+ {
+  "name": "李堂",
+  "page": 211,
+  "birth": 1462,
+  "death": 1524,
+  "ming": null,
+  "zi": "時升",
+  "hao": "堇山",
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "、四明文献志、堇山文集。壽董山李公六十序",
+    "book": "張文定公紆玉樓集8",
+    "vol": 14,
+    "page": ""
+   },
+   {
+    "title": "董山居士自述",
+    "book": "董山文集16",
+    "vol": 19,
+    "page": ""
+   },
+   {
+    "title": "李公墓誌銘",
+    "book": "張文定公勝梅軒集5",
+    "vol": 12,
+    "page": "下"
+   },
+   {
+    "title": "徵錄51/32雷禮撰傳龔室林氏林氏墓誌銘",
+    "book": "東川劉文簡公集17",
+    "vol": 7,
+    "page": ""
+   }
+  ],
+  "raw_len": 163
+ },
+ {
+  "name": "李國士",
+  "page": 211,
+  "birth": 1534,
+  "death": 1608,
+  "ming": null,
+  "zi": "汝志",
+  "hao": "正屏",
+  "native": "高陽",
+  "exam_era": "萬曆",
+  "exam_year": "五",
+  "exam_type": "進士",
+  "shi": "文敏",
+  "cites": [
+   {
+    "title": "諡文敏。有文敏遣集。簡什李元治三載考績序",
+    "book": "薛文介公文集1",
+    "vol": 18,
+    "page": ""
+   }
+  ],
+  "raw_len": 203
+ },
+ {
+  "name": "李崇光",
+  "page": 211,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "宗顯",
+  "hao": "恭川",
+  "native": "陝西高陵",
+  "exam_era": "正德",
+  "exam_year": "九",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "寇，擢河南參政，累官江西布政使。靖音隊序",
+    "book": "潘笻江集7",
+    "vol": 10,
+    "page": ""
+   },
+   {
+    "title": "尚詞業萃序",
+    "book": "弘藝錄22",
+    "vol": 9,
+    "page": "下"
+   }
+  ],
+  "raw_len": 166
+ },
+ {
+  "name": "李敏",
+  "page": 211,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "河南儀封",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 40
+ },
+ {
+  "name": "李敏",
+  "page": 211,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "新安",
+  "exam_era": "永樂",
+  "exam_year": "十五",
+  "exam_type": "舉人",
+  "shi": "恭靖",
+  "cites": [],
+  "raw_len": 185
+ },
+ {
+  "name": "李敏",
+  "page": 211,
+  "birth": 1418,
+  "death": 1478,
+  "ming": null,
+  "zi": "斯和",
+  "hao": null,
+  "native": "廣昌",
+  "exam_era": "景泰",
+  "exam_year": "七",
+  "exam_type": "舉人",
+  "shi": null,
+  "cites": [
+   {
+    "title": "。成化十四年卒，年六十一。李君斯和墓誌銘",
+    "book": "椒丘文集30",
+    "vol": 24,
+    "page": ""
+   }
+  ],
+  "raw_len": 75
+ },
+ {
+  "name": "李敏",
+  "page": 211,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "純甫",
+  "hao": "默齋",
+  "native": "山西榆次",
+  "exam_era": "嘉靖",
+  "exam_year": "二十六",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 67
+ },
+ {
+  "name": "李紹",
+  "page": 211,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "克述",
+  "hao": null,
+  "native": "安福",
+  "exam_era": "宣德",
+  "exam_year": "八",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "李公淑人曾氏墓誌銘",
+    "book": "彭文思公文集6",
+    "vol": 45,
+    "page": "下"
+   }
+  ],
+  "raw_len": 193
+ },
+ {
+  "name": "李紹賢",
+  "page": 211,
+  "birth": 1481,
+  "death": 1519,
+  "ming": null,
+  "zi": "崇德",
+  "hao": null,
+  "native": "巢縣",
+  "exam_era": "正德",
+  "exam_year": "十二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 84
+ },
+ {
+  "name": "皇明",
+  "page": 211,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 22
+ },
+ {
+  "name": "李紳",
+  "page": 211,
+  "birth": 1444,
+  "death": 1509,
+  "ming": null,
+  "zi": "緡卿",
+  "hao": "抱牘山人",
+  "native": "號抱牘山",
+  "exam_era": "成化",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 59
+ },
+ {
+  "name": "吳仲",
+  "page": 241,
+  "birth": 1482,
+  "death": 1568,
+  "ming": null,
+  "zi": "而夫",
+  "hao": "劍泉",
+  "native": "武進",
+  "exam_era": "正德",
+  "exam_year": "十二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "。累官南京太侯寺少卿，年八十七卒。劍泉記",
+    "book": "棠陵文集3",
+    "vol": 8,
+    "page": "下"
+   },
+   {
+    "title": "吳公墓誌銘",
+    "book": "余學士文集25",
+    "vol": 7,
+    "page": ""
+   }
+  ],
+  "raw_len": 132
+ },
+ {
+  "name": "吳自新",
+  "page": 241,
+  "birth": 1541,
+  "death": 1593,
+  "ming": null,
+  "zi": "伯恒",
+  "hao": "疆蕃",
+  "native": "自號中和山",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": "裴烈",
+  "cites": [],
+  "raw_len": 134
+ },
+ {
+  "name": "聖朝",
+  "page": 241,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": "鳳洲",
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "列傳7/1明史130/1下贈吳輞雀憲副序",
+    "book": "茅鹿門先生集14",
+    "vol": 13,
+    "page": "下"
+   },
+   {
+    "title": "兩浙北遊詩錄冊序",
+    "book": "同上18",
+    "vol": 28,
+    "page": "下"
+   },
+   {
+    "title": "吳公行狀",
+    "book": "余吳上文集29",
+    "vol": 32,
+    "page": ""
+   },
+   {
+    "title": "祭吳伯恒",
+    "book": "焦氏藩國集35",
+    "vol": 6,
+    "page": "下"
+   },
+   {
+    "title": "少司迤吳公詠",
+    "book": "驚休外詞19",
+    "vol": 3,
+    "page": "下"
+   },
+   {
+    "title": "父吳明德，號鳳洲。贈吳封君序",
+    "book": "二酉國撰集6",
+    "vol": 8,
+    "page": ""
+   }
+  ],
+  "raw_len": 171
+ },
+ {
+  "name": "麥李氏",
+  "page": 241,
+  "birth": 1540,
+  "death": 1612,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "金華蘭谿",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "李宜人墓志銘",
+    "book": "大泌山房集99",
+    "vol": 26,
+    "page": ""
+   }
+  ],
+  "raw_len": 184
+ },
+ {
+  "name": "聖朝",
+  "page": 241,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 46
+ },
+ {
+  "name": "吳震",
+  "page": 241,
+  "birth": 1324,
+  "death": 1381,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "鳳陽定遠",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 140
+ },
+ {
+  "name": "吳兑",
+  "page": 241,
+  "birth": 1525,
+  "death": 1596,
+  "ming": null,
+  "zi": "君澤",
+  "hao": "環洲",
+  "native": "浙江山陰",
+  "exam_era": "嘉靖",
+  "exam_year": "卅八",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "卒年七十二。賀少司馬吳瓊洲總督宣大軍門序",
+    "book": "艾熙亭文集3",
+    "vol": 3,
+    "page": "下"
+   },
+   {
+    "title": "賀吳瓊洲總督宣大序",
+    "book": "朱文懿公文集4",
+    "vol": 37,
+    "page": ""
+   },
+   {
+    "title": "環洲吳公行狀",
+    "book": "敬崔集11",
+    "vol": 17,
+    "page": ""
+   },
+   {
+    "title": "榮吳環洲大司馬文",
+    "book": "朱文懿公文集12",
+    "vol": 20,
+    "page": ""
+   },
+   {
+    "title": "吳公傳",
+    "book": "西河合集75",
+    "vol": 1,
+    "page": ""
+   }
+  ],
+  "raw_len": 240
+ },
+ {
+  "name": "吳玘",
+  "page": 241,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "仲王",
+  "hao": null,
+  "native": "松江華亭",
+  "exam_era": "景泰",
+  "exam_year": "五",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "年進士，官監察御史。賀吳御史二親受封贈序",
+    "book": "吕文懿公全集8",
+    "vol": 26,
+    "page": "下"
+   }
+  ],
+  "raw_len": 48
+ },
+ {
+  "name": "吳成",
+  "page": 241,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "蒙古",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 116
+ },
+ {
+  "name": "何廷仁",
+  "page": 271,
+  "birth": 1486,
+  "death": 1551,
+  "ming": null,
+  "zi": "性之",
+  "hao": null,
+  "native": "雩都",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "何善山先生文錄序",
+    "book": "鄒子頗學集4",
+    "vol": 35,
+    "page": "下"
+   }
+  ],
+  "raw_len": 186
+ },
+ {
+  "name": "何廷矩",
+  "page": 271,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "時振",
+  "hao": null,
+  "native": "番禺",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 42
+ },
+ {
+  "name": "何廷魁",
+  "page": 271,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "汝謙",
+  "hao": null,
+  "native": "威遠衙",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": "忠愍",
+  "cites": [
+   {
+    "title": "國史闡闢",
+    "book": "公槐集6",
+    "vol": 39,
+    "page": "下"
+   }
+  ],
+  "raw_len": 156
+ },
+ {
+  "name": "何邦憲",
+  "page": 271,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "宗尹",
+  "hao": null,
+  "native": "雲南太和",
+  "exam_era": "正德",
+  "exam_year": "六",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "，出歷貴州石阡知府。遂同年何宗尹守石阡序",
+    "book": "黼蒼遺稿8",
+    "vol": 20,
+    "page": ""
+   }
+  ],
+  "raw_len": 72
+ },
+ {
+  "name": "何宗彥",
+  "page": 271,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "君美",
+  "hao": null,
+  "native": "隨州",
+  "exam_era": "萬曆",
+  "exam_year": "二十三",
+  "exam_type": "進士",
+  "shi": "文毅",
+  "cites": [],
+  "raw_len": 142
+ },
+ {
+  "name": "何宗聖",
+  "page": 271,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "隨州",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 57
+ },
+ {
+  "name": "何孟春",
+  "page": 271,
+  "birth": 1474,
+  "death": 1536,
+  "ming": null,
+  "zi": "子元",
+  "hao": "燕泉",
+  "native": "郴州",
+  "exam_era": "弘治",
+  "exam_year": "六",
+  "exam_type": "進士",
+  "shi": "文簡",
+  "cites": [
+   {
+    "title": "家語註、餘冬序錄、何燕泉詩等。遂何職方序",
+    "book": "空同子集55",
+    "vol": 9,
+    "page": "下"
+   },
+   {
+    "title": "贈何君遷太僕少解序",
+    "book": "同上54",
+    "vol": 3,
+    "page": ""
+   },
+   {
+    "title": "何公陞南京工部右侍郎序",
+    "book": "同上54",
+    "vol": 14,
+    "page": ""
+   },
+   {
+    "title": "定成一篇贈何司空",
+    "book": "息團存稿文7",
+    "vol": 25,
+    "page": "下"
+   },
+   {
+    "title": "司空何燕泉先生養疾序",
+    "book": "何文定公文集2",
+    "vol": 20,
+    "page": "下"
+   },
+   {
+    "title": "少宰何公燕泉賄篇",
+    "book": "見聚集7",
+    "vol": 22,
+    "page": "下"
+   },
+   {
+    "title": "何公墓志铭",
+    "book": "暴欽順撰、國朝獻徵錄53",
+    "vol": 18,
+    "page": ""
+   },
+   {
+    "title": "西涯樂府何氏解序",
+    "book": "洹詞1",
+    "vol": 29,
+    "page": ""
+   }
+  ],
+  "raw_len": 421
+ },
+ {
+  "name": "祖何俊",
+  "page": 271,
+  "birth": 1427,
+  "death": 1503,
+  "ming": null,
+  "zi": "延彥",
+  "hao": "梅岩",
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "字延彥，雪貴按察僉事。何公墓志铭",
+    "book": "懷麓堂文後稿26",
+    "vol": 5,
+    "page": ""
+   },
+   {
+    "title": "字商臣，號梅岩，刑部郎中。何君墓志铭",
+    "book": "懷麓堂文简28",
+    "vol": 13,
+    "page": "下"
+   },
+   {
+    "title": "何公神道碑",
+    "book": "泉翁大全集65",
+    "vol": 17,
+    "page": "下"
+   },
+   {
+    "title": "47楊一清撰何商臣傳母李氏何母李氏墓志铭",
+    "book": "懷麓堂文後稿28",
+    "vol": 15,
+    "page": ""
+   }
+  ],
+  "raw_len": 146
+ },
+ {
+  "name": "何承光",
+  "page": 271,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "貴州鐵遠",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 36
+ },
+ {
+  "name": "武衢",
+  "page": 301,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "安豐",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "雲南，帝以德宿將，命與諸大帥偕行。武衢傳",
+    "book": "蘇平仲文集3",
+    "vol": 39,
+    "page": "下"
+   }
+  ],
+  "raw_len": 137
+ },
+ {
+  "name": "武福",
+  "page": 301,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "廷亨",
+  "hao": null,
+  "native": "沂水",
+  "exam_era": "成化",
+  "exam_year": "二十",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 62
+ },
+ {
+  "name": "來天球",
+  "page": 301,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "伯韶",
+  "hao": "雨山",
+  "native": "浙江蕭山",
+  "exam_era": "弘治",
+  "exam_year": "三",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "巨冠藍廷瑞等。賀慮長來先生漢南平盜班師序",
+    "book": "浚溪先生文集12",
+    "vol": 7,
+    "page": ""
+   }
+  ],
+  "raw_len": 68
+ },
+ {
+  "name": "來汝賢",
+  "page": 301,
+  "birth": 1501,
+  "death": 1536,
+  "ming": null,
+  "zi": "子禹",
+  "hao": null,
+  "native": "蕭山",
+  "exam_era": "嘉靖",
+  "exam_year": "十一",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "，尋卒，年僅三十六。有菲泉存稿。來君墓誌",
+    "book": "許應元撰、國朝獻徵錄35",
+    "vol": 99,
+    "page": ""
+   }
+  ],
+  "raw_len": 95
+ },
+ {
+  "name": "來宗道",
+  "page": 301,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "子繇",
+  "hao": null,
+  "native": "蕭山",
+  "exam_era": "萬曆",
+  "exam_year": "三十二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 128
+ },
+ {
+  "name": "來知德",
+  "page": 301,
+  "birth": 1525,
+  "death": 1604,
+  "ming": null,
+  "zi": "矣鮮",
+  "hao": "瞿唐",
+  "native": "梁山",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "來矣鮮先生易注序",
+    "book": "續衣生黔章11",
+    "vol": 10,
+    "page": ""
+   }
+  ],
+  "raw_len": 188
+ },
+ {
+  "name": "來斯行",
+  "page": 301,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "道之",
+  "hao": "槎菴",
+  "native": "蕭山",
+  "exam_era": "萬曆",
+  "exam_year": "三十五",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "布政使。有經史典奧、槎菴詩集。槎菴燕語序",
+    "book": "妙遺堂文往集×",
+    "vol": 19,
+    "page": ""
+   }
+  ],
+  "raw_len": 94
+ },
+ {
+  "name": "來復",
+  "page": 301,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "見心",
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 70
+ },
+ {
+  "name": "來復",
+  "page": 301,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "陽伯",
+  "hao": null,
+  "native": "三原",
+  "exam_era": "萬曆",
+  "exam_year": "四十四",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 81
+ },
+ {
+  "name": "來集之",
+  "page": 301,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "元成",
+  "hao": null,
+  "native": "蕭山",
+  "exam_era": "崇禎",
+  "exam_year": "十三",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "易圓親見、偷湖樵書、博學集書。來君墓碑銘",
+    "book": "西河合集87",
+    "vol": 1,
+    "page": ""
+   }
+  ],
+  "raw_len": 75
+ },
+ {
+  "name": "來儼然",
+  "page": 301,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "望之",
+  "hao": "碧潤",
+  "native": "三原",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "至兵部主事。有自愉堂集。榮來望之職方君文",
+    "book": "溫恭毅公文集16",
+    "vol": 11,
+    "page": "下"
+   },
+   {
+    "title": "來職方家傳",
+    "book": "大泌山房集65",
+    "vol": 22,
+    "page": "下"
+   },
+   {
+    "title": "國，號碧潤，官莒州守。來公置配合葬墓誌銘",
+    "book": "溫恭毅公文集10",
+    "vol": 3,
+    "page": ""
+   }
+  ],
+  "raw_len": 120
+ },
+ {
+  "name": "東東思忠",
+  "page": 301,
+  "birth": 1441,
+  "death": 1485,
+  "ming": null,
+  "zi": "進伯",
+  "hao": null,
+  "native": "華州",
+  "exam_era": "成化",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 108
+ },
+ {
+  "name": "昌平人",
+  "page": 331,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "昌平",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": "恭和",
+  "cites": [
+   {
+    "title": "正德四年卒，年六十八，諡恭和。周公墓誌銘",
+    "book": "懷麓堂文後精28",
+    "vol": 19,
+    "page": ""
+   }
+  ],
+  "raw_len": 125
+ },
+ {
+  "name": "周遜",
+  "page": 331,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "昌言",
+  "hao": "五津居士",
+  "native": "成都",
+  "exam_era": "嘉靖",
+  "exam_year": "三十五",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "，旋致仕歸。長於詩，有五津集。周五津集序",
+    "book": "二酉國文集3",
+    "vol": 22,
+    "page": "下"
+   }
+  ],
+  "raw_len": 84
+ },
+ {
+  "name": "周嘉謨",
+  "page": 331,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "明卿",
+  "hao": null,
+  "native": "漢川",
+  "exam_era": "隆慶",
+  "exam_year": "五",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "1/1明史241/1母劉氏周母劉恭人壽序",
+    "book": "大泌山房集38",
+    "vol": 27,
+    "page": ""
+   },
+   {
+    "title": "妻蕭氏蕭淑人壽序",
+    "book": "大泌山房集38",
+    "vol": 16,
+    "page": "下"
+   }
+  ],
+  "raw_len": 190
+ },
+ {
+  "name": "周夢陽",
+  "page": 331,
+  "birth": 1546,
+  "death": null,
+  "ming": null,
+  "zi": "啓明",
+  "hao": "拓溪",
+  "native": "南漳",
+  "exam_era": "萬曆",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "水部備考、常談考誤。适學憲周君傭兵徐州序",
+    "book": "鶯林外編29",
+    "vol": 12,
+    "page": "下"
+   },
+   {
+    "title": "得祿，號拓溪。周公聲蕭王二恭人合葬墓誌銘",
+    "book": "毅城山館文集21",
+    "vol": 21,
+    "page": "下"
+   }
+  ],
+  "raw_len": 124
+ },
+ {
+  "name": "周鳳岐",
+  "page": 331,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "宇和",
+  "hao": null,
+  "native": "永康",
+  "exam_era": "萬曆",
+  "exam_year": "四十七",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 80
+ },
+ {
+  "name": "周鳳翾",
+  "page": 331,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "儀伯",
+  "hao": "巢軒",
+  "native": "浙江山陰",
+  "exam_era": "崇禎",
+  "exam_year": "元",
+  "exam_type": "進士",
+  "shi": "文節",
+  "cites": [
+   {
+    "title": "，題詩壁閏，自經死。諡文節。吳山六忠祠碑",
+    "book": "大淋函書1",
+    "vol": 33,
+    "page": ""
+   },
+   {
+    "title": "周文忠公傳",
+    "book": "西河合集76",
+    "vol": 1,
+    "page": ""
+   }
+  ],
+  "raw_len": 141
+ },
+ {
+  "name": "周鳳鳴",
+  "page": 331,
+  "birth": 1489,
+  "death": 1550,
+  "ming": null,
+  "zi": "於岐",
+  "hao": "山齋",
+  "native": "崑山",
+  "exam_era": "正德",
+  "exam_year": "九",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "鳳來字于舜，卒年三十三。亡友周子舜墓誌銘",
+    "book": "俞仲蔚先生集13",
+    "vol": 1,
+    "page": ""
+   }
+  ],
+  "raw_len": 177
+ },
+ {
+  "name": "周熊",
+  "page": 331,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "應文",
+  "hao": null,
+  "native": "陝西西安",
+  "exam_era": "弘治",
+  "exam_year": "九",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "出巡按雲南，卒于官，年僅四十七。周公墓碑",
+    "book": "凌溪先生文集16",
+    "vol": 1,
+    "page": "下"
+   }
+  ],
+  "raw_len": 58
+ },
+ {
+  "name": "周銓",
+  "page": 331,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "汝衡",
+  "hao": "玉巖",
+  "native": "金陵",
+  "exam_era": "弘治",
+  "exam_year": "十八",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "嘉靖十年卒官，年五十八。有玉巖集。玉巖記",
+    "book": "棠陵文集4",
+    "vol": 2,
+    "page": ""
+   },
+   {
+    "title": "抑齋序",
+    "book": "涇野先生文集7",
+    "vol": 9,
+    "page": "下"
+   },
+   {
+    "title": "培德堂記",
+    "book": "龍津原集4",
+    "vol": 60,
+    "page": "下"
+   }
+  ],
+  "raw_len": 263
+ },
+ {
+  "name": "哈剌苦出",
+  "page": 361,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "西域河西諒州部",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "以不服水土卒。故平章哈剌公配王老老合塘記",
+    "book": "羅文肅公集20",
+    "vol": 27,
+    "page": "下"
+   }
+  ],
+  "raw_len": 85
+ },
+ {
+  "name": "撫子孛羅",
+  "page": 361,
+  "birth": 1428,
+  "death": 1497,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 15
+ },
+ {
+  "name": "去故俗",
+  "page": 361,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "以勞序陛御馬監左監丞。內供奉老王氏墓誌銘",
+    "book": "羅文肅公集20",
+    "vol": 12,
+    "page": ""
+   },
+   {
+    "title": "孛羅墓誌銘",
+    "book": "同上20",
+    "vol": 10,
+    "page": "下"
+   }
+  ],
+  "raw_len": 66
+ },
+ {
+  "name": "范范大澈",
+  "page": 361,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "子宣",
+  "hao": "訥蓋",
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "所，嘉靖四十一年卒，年六十二。范公墓誌銘",
+    "book": "余文敏公集11",
+    "vol": 25,
+    "page": "下"
+   },
+   {
+    "title": "范君墓表",
+    "book": "環溪集23",
+    "vol": 15,
+    "page": "下"
+   }
+  ],
+  "raw_len": 128
+ },
+ {
+  "name": "范文光",
+  "page": 361,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "內江",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 106
+ },
+ {
+  "name": "范允臨",
+  "page": 361,
+  "birth": 1558,
+  "death": 1641,
+  "ming": null,
+  "zi": "長倩",
+  "hao": null,
+  "native": "吳縣",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "山水間，年八十四卒。有輪廖館集。范公墓碑",
+    "book": "龔峯文鈔10",
+    "vol": 6,
+    "page": ""
+   },
+   {
+    "title": "妻徐細君綿紹吟小引",
+    "book": "輪廖館集3",
+    "vol": 5,
+    "page": ""
+   }
+  ],
+  "raw_len": 128
+ },
+ {
+  "name": "范永年",
+  "page": 361,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "延齡",
+  "hao": "仁元",
+  "native": "吳橋",
+  "exam_era": "正德",
+  "exam_year": "九",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "有恩本堂稿、水部草。封中丞范仁元公墓誌銘",
+    "book": "鴻寶應本8",
+    "vol": 39,
+    "page": ""
+   },
+   {
+    "title": "范公豎配馬恭人合葬墓碑",
+    "book": "軾門集1",
+    "vol": 22,
+    "page": ""
+   },
+   {
+    "title": "賀之學宮，以備諸生觀覽。迃范進士知貴溪序",
+    "book": "何文簡公集11",
+    "vol": 1,
+    "page": ""
+   }
+  ],
+  "raw_len": 245
+ },
+ {
+  "name": "范弘",
+  "page": 361,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "交趾",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 114
+ },
+ {
+  "name": "范伋",
+  "page": 361,
+  "birth": 1518,
+  "death": 1599,
+  "ming": null,
+  "zi": "汝希",
+  "hao": "小泉",
+  "native": "長沙",
+  "exam_era": "嘉靖",
+  "exam_year": "四十四",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "參政致仕。卒年八十二。賀范小泉備兵汝南序",
+    "book": "薛荔山房藏稿7",
+    "vol": 4,
+    "page": ""
+   },
+   {
+    "title": "范公墓誌銘",
+    "book": "薛荔山房藏稿8",
+    "vol": 47,
+    "page": "下"
+   }
+  ],
+  "raw_len": 93
+ },
+ {
+  "name": "范志宪",
+  "page": 361,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "虞城",
+  "exam_era": "崇禎",
+  "exam_year": "四",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 130
+ },
+ {
+  "name": "范志泰",
+  "page": 361,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "虞城",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 53
+ },
+ {
+  "name": "范希正",
+  "page": 361,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "以貞",
+  "hao": "恕齋",
+  "native": "吳縣",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 36
+ },
+ {
+  "name": "高勳",
+  "page": 391,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "無功",
+  "hao": null,
+  "native": "紹興",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 46
+ },
+ {
+  "name": "高經",
+  "page": 391,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "清苑",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 70
+ },
+ {
+  "name": "高實",
+  "page": 391,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "河南洛陽",
+  "exam_era": "永樂",
+  "exam_year": "三",
+  "exam_type": "舉人",
+  "shi": null,
+  "cites": [],
+  "raw_len": 44
+ },
+ {
+  "name": "高瑤",
+  "page": 391,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "庭堅",
+  "hao": null,
+  "native": "閩縣",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "遯跡雁蕩山中以卒。有齋菴集。嘉興高氏家傳",
+    "book": "牧齋有學集37",
+    "vol": 8,
+    "page": "下"
+   }
+  ],
+  "raw_len": 305
+ },
+ {
+  "name": "高銓",
+  "page": 391,
+  "birth": 1443,
+  "death": 1511,
+  "ming": null,
+  "zi": "宗選",
+  "hao": "平山",
+  "native": "晚更號遣安老",
+  "exam_era": "成化",
+  "exam_year": "五",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 166
+ },
+ {
+  "name": "高翰",
+  "page": 391,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "廷章",
+  "hao": null,
+  "native": "山西蔚州",
+  "exam_era": "成化",
+  "exam_year": "十四",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 49
+ },
+ {
+  "name": "高維岱",
+  "page": 391,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "昌邑",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 48
+ },
+ {
+  "name": "高毅",
+  "page": 391,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "世用",
+  "hao": null,
+  "native": "揚州興化",
+  "exam_era": "永樂",
+  "exam_year": "十三",
+  "exam_type": "進士",
+  "shi": "文義",
+  "cites": [
+   {
+    "title": "田而已，天順四年卒，諡文義。提高學士詩序",
+    "book": "吕文懿公全集9",
+    "vol": 57,
+    "page": "下"
+   },
+   {
+    "title": "高文義公傳略",
+    "book": "商文毅公集26",
+    "vol": 7,
+    "page": ""
+   },
+   {
+    "title": "字元昭高公墓誌銘",
+    "book": "楊文敏公集21",
+    "vol": 12,
+    "page": "下"
+   }
+  ],
+  "raw_len": 289
+ },
+ {
+  "name": "高賢寧",
+  "page": 391,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "山東濟陽",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 118
+ },
+ {
+  "name": "桑雷",
+  "page": 421,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "子木",
+  "hao": null,
+  "native": "江部",
+  "exam_era": "嘉靖",
+  "exam_year": "十一",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 108
+ },
+ {
+  "name": "桑慎",
+  "page": 421,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "仲修",
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 55
+ },
+ {
+  "name": "桑敬",
+  "page": 421,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "無爲州",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 65
+ },
+ {
+  "name": "桂桂山",
+  "page": 421,
+  "birth": 1419,
+  "death": 1469,
+  "ming": null,
+  "zi": "本寧",
+  "hao": null,
+  "native": "成都",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "。卒於官，年五十一。廣西左參政桂公輥詩序",
+    "book": "彭文恩公文集3",
+    "vol": 41,
+    "page": ""
+   },
+   {
+    "title": "桂公行狀",
+    "book": "巽川祁先生文集14",
+    "vol": 5,
+    "page": "下"
+   }
+  ],
+  "raw_len": 117
+ },
+ {
+  "name": "桂大祥",
+  "page": 421,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "子興",
+  "hao": null,
+  "native": "臨川",
+  "exam_era": "嘉靖",
+  "exam_year": "八",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "議，具疏切諫，出知順德府卒。蔡佳興川太守",
+    "book": "邁遙岡集邁17",
+    "vol": 22,
+    "page": ""
+   },
+   {
+    "title": "工部右侍郎，未任卒，年七十六。桂公去恩碑",
+    "book": "來倉館集11",
+    "vol": 29,
+    "page": ""
+   },
+   {
+    "title": "少司空桂公墓喪",
+    "book": "薛文介公文集4",
+    "vol": 39,
+    "page": ""
+   }
+  ],
+  "raw_len": 201
+ },
+ {
+  "name": "桂宗儒",
+  "page": 421,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "文藪",
+  "hao": null,
+  "native": "慈谿",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "，成組召見，即日拜修撰。設桂修撰還鄉詩序",
+    "book": "楊文敏公集13",
+    "vol": 6,
+    "page": "下"
+   }
+  ],
+  "raw_len": 77
+ },
+ {
+  "name": "桂彦良",
+  "page": 421,
+  "birth": null,
+  "death": null,
+  "ming": "德",
+  "zi": null,
+  "hao": "清節",
+  "native": "慈谿",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": "文裕",
+  "cites": [
+   {
+    "title": "、桂笏、老拙等集，又有中都紀行。双桂軒記",
+    "book": "宋學士文集42",
+    "vol": 335,
+    "page": "下"
+   },
+   {
+    "title": "恭題御製桂彥良職王傳勅",
+    "book": "同上39",
+    "vol": 308,
+    "page": ""
+   },
+   {
+    "title": "清節先生傳",
+    "book": "春草齋文集2",
+    "vol": 3,
+    "page": ""
+   }
+  ],
+  "raw_len": 271
+ },
+ {
+  "name": "桂勇",
+  "page": 421,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "應天衛",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "識大體，典捕務最久，民甚安之。桂氏義僕辟",
+    "book": "費文憲公摘請19",
+    "vol": 3,
+    "page": ""
+   }
+  ],
+  "raw_len": 74
+ },
+ {
+  "name": "桂尊",
+  "page": 421,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "子寶",
+  "hao": "古山",
+  "native": "安仁",
+  "exam_era": "正德",
+  "exam_year": "六",
+  "exam_type": "進士",
+  "shi": "文襄",
+  "cites": [
+   {
+    "title": "酷勅少保吏部尚書兼翰林院學士桂萼",
+    "book": "願文康公文章卷首",
+    "vol": 19,
+    "page": ""
+   }
+  ],
+  "raw_len": 237
+ },
+ {
+  "name": "聖朝",
+  "page": 421,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 18
+ },
+ {
+  "name": "翁世資",
+  "page": 451,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "資甫",
+  "hao": "冰崖",
+  "native": "甯田",
+  "exam_era": "正統",
+  "exam_year": "七",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "，致仕卒。有冰崖集。送戶部尚書翁公致政序",
+    "book": "懷麗堂文稿6",
+    "vol": 12,
+    "page": "下"
+   },
+   {
+    "title": "贈大司徒翁公致仕序",
+    "book": "青谿漫稿18",
+    "vol": 6,
+    "page": ""
+   },
+   {
+    "title": "翁公墓铭",
+    "book": "周洪謨撰、國朝獻徵錄28",
+    "vol": 43,
+    "page": ""
+   }
+  ],
+  "raw_len": 155
+ },
+ {
+  "name": "翁相",
+  "page": 451,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "輔卿",
+  "hao": "冶山",
+  "native": "錢塘",
+  "exam_era": "嘉靖",
+  "exam_year": "十七",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 73
+ },
+ {
+  "name": "翁健之",
+  "page": 451,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "應乾",
+  "hao": null,
+  "native": "浙江餘姚",
+  "exam_era": "成化",
+  "exam_year": "二十三",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "中，擢廣東參政。送大參翁君應乾之任閩東序",
+    "book": "賊文憲公搞稿9",
+    "vol": 32,
+    "page": ""
+   }
+  ],
+  "raw_len": 68
+ },
+ {
+  "name": "翁溥",
+  "page": 451,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "德宏",
+  "hao": "夢山",
+  "native": "浙江諸聲",
+  "exam_era": "嘉靖",
+  "exam_year": "八",
+  "exam_type": "進士",
+  "shi": "榮靖",
+  "cites": [
+   {
+    "title": "靖。有知白堂稿。送翁憲夢山翁侯飭兵海南序",
+    "book": "徐文敏公集4",
+    "vol": 34,
+    "page": ""
+   },
+   {
+    "title": "御史中丞夢山公安徽水利文序",
+    "book": "蘆津原集2",
+    "vol": 48,
+    "page": "下"
+   },
+   {
+    "title": "翁公行狀",
+    "book": "孫應奎撰、國朝獻徵錄48",
+    "vol": 36,
+    "page": ""
+   },
+   {
+    "title": "祭翁尚書文",
+    "book": "明善齋集10",
+    "vol": 1,
+    "page": ""
+   },
+   {
+    "title": "祭翁夢山司寇文",
+    "book": "何翰林集27",
+    "vol": 4,
+    "page": "下"
+   }
+  ],
+  "raw_len": 191
+ },
+ {
+  "name": "翁瑛",
+  "page": 451,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "泰和",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "累陞國子助教，官至翰林檢討。翁先生墓志銘",
+    "book": "王直撰、國朝獻徵錄22",
+    "vol": 18,
+    "page": ""
+   }
+  ],
+  "raw_len": 61
+ },
+ {
+  "name": "翁萬達",
+  "page": 451,
+  "birth": 1498,
+  "death": 1552,
+  "ming": null,
+  "zi": "仁夫",
+  "hao": "東涯潮州",
+  "native": "號東涯潮州揭陽",
+  "exam_era": "嘉靖",
+  "exam_year": "五",
+  "exam_type": "進士",
+  "shi": "襲毅",
+  "cites": [
+   {
+    "title": "，諡襲毅。送大司馬東涯先生翁公總督軍務序",
+    "book": "少華山人文集7",
+    "vol": 17,
+    "page": ""
+   },
+   {
+    "title": "翁公神道碑銘",
+    "book": "鈴山堂集38",
+    "vol": 16,
+    "page": "下"
+   },
+   {
+    "title": "翁公神道碑",
+    "book": "王文蕭公文草6",
+    "vol": 12,
+    "page": ""
+   },
+   {
+    "title": "大司馬翁公傳",
+    "book": "歐陽南野文集27",
+    "vol": 11,
+    "page": ""
+   },
+   {
+    "title": "祭兵部尚書翁東涯文",
+    "book": "群玉樓稿7",
+    "vol": 82,
+    "page": ""
+   },
+   {
+    "title": "祭翁東涯文",
+    "book": "條麓堂集31",
+    "vol": 17,
+    "page": ""
+   },
+   {
+    "title": "尚書翁萬達祭葬識",
+    "book": "歐陽南野文集15",
+    "vol": 6,
+    "page": ""
+   },
+   {
+    "title": "字可果，號梅齋。翁公神道碑",
+    "book": "鈴山堂集38",
+    "vol": 8,
+    "page": "下"
+   },
+   {
+    "title": "翁公墓志銘",
+    "book": "世經堂集16",
+    "vol": 14,
+    "page": ""
+   }
+  ],
+  "raw_len": 393
+ },
+ {
+  "name": "翁聲",
+  "page": 451,
+  "birth": 1477,
+  "death": 1550,
+  "ming": null,
+  "zi": "進吉",
+  "hao": null,
+  "native": "濰州",
+  "exam_era": "弘治",
+  "exam_year": "十一",
+  "exam_type": "舉人",
+  "shi": null,
+  "cites": [
+   {
+    "title": "尋以母老致仕，卒年七十四。白洞翁公墓誌銘",
+    "book": "南沙先生文集6",
+    "vol": 4,
+    "page": ""
+   },
+   {
+    "title": "祭外員翁參議文",
+    "book": "同上7",
+    "vol": 41,
+    "page": "下"
+   },
+   {
+    "title": "三。祿禮部郎中翁公封太宜人許氏合葬墓誌銘",
+    "book": "南沙先生文集6",
+    "vol": 1,
+    "page": ""
+   },
+   {
+    "title": "歐陽氏，嘉靖三十六年卒。祭翁母歐陽宜人文",
+    "book": "南沙先生文集7",
+    "vol": 46,
+    "page": "下"
+   }
+  ],
+  "raw_len": 255
+ },
+ {
+  "name": "章珪",
+  "page": 481,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "孟瑞",
+  "hao": null,
+  "native": "常熟",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 106
+ },
+ {
+  "name": "章格",
+  "page": 481,
+  "birth": 1426,
+  "death": 1505,
+  "ming": null,
+  "zi": "韶鳳",
+  "hao": "戒菴",
+  "native": "常熟",
+  "exam_era": "景泰",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "皆歸心，官終大理卿，卒年八十。章公墓誌銘",
+    "book": "不著撰人、國朝獻徵錄69",
+    "vol": 8,
+    "page": ""
+   }
+  ],
+  "raw_len": 110
+ },
+ {
+  "name": "章時鸞",
+  "page": 481,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "孟泉",
+  "hao": null,
+  "native": "青陽",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "，累擢河南副使。有名賢言行錄。章公墓誌銘",
+    "book": "陳頤正撰、國朝獻徵錄92",
+    "vol": 104,
+    "page": ""
+   }
+  ],
+  "raw_len": 66
+ },
+ {
+  "name": "章适",
+  "page": 481,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "景南",
+  "hao": "道峰",
+  "native": "蘭谿",
+  "exam_era": "嘉靖",
+  "exam_year": "二十六",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "以言事件旨，告歸卒，有道峰集。章君墓誌銘",
+    "book": "徐栻撰、國朝獻徵錄80",
+    "vol": 118,
+    "page": ""
+   },
+   {
+    "title": "，字景明，號兩峰，永昌府同知。章公墓誌銘",
+    "book": "臨學士先生遺稿12",
+    "vol": 21,
+    "page": "下"
+   }
+  ],
+  "raw_len": 127
+ },
+ {
+  "name": "章衰",
+  "page": 481,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "汝明",
+  "hao": "介菴",
+  "native": "臨川",
+  "exam_era": "嘉靖",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "頃言、學庸口義、章介菴集。贈宗師章先生序",
+    "book": "五嶺山人集26",
+    "vol": 18,
+    "page": ""
+   },
+   {
+    "title": "送介菴章先生南歸序",
+    "book": "少華山人文集7",
+    "vol": 7,
+    "page": "下"
+   },
+   {
+    "title": "哀介菴章師辭",
+    "book": "鈞溪文錄8",
+    "vol": 14,
+    "page": "下"
+   },
+   {
+    "title": "祭章介菴云",
+    "book": "石蓮洞羅先生文集24",
+    "vol": 19,
+    "page": ""
+   },
+   {
+    "title": "章公墓誌銘",
+    "book": "陳九川撰、國朝獻徵錄94",
+    "vol": 72,
+    "page": ""
+   }
+  ],
+  "raw_len": 163
+ },
+ {
+  "name": "章榮",
+  "page": 481,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "宗肅",
+  "hao": null,
+  "native": "海虞",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "縣。遷安吉知州，終永州府同知。章永州家傳",
+    "book": "震川先生集26",
+    "vol": 333,
+    "page": ""
+   }
+  ],
+  "raw_len": 61
+ },
+ {
+  "name": "章敞",
+  "page": 481,
+  "birth": 1376,
+  "death": 1437,
+  "ming": null,
+  "zi": "尚文",
+  "hao": "質菴",
+  "native": "會稽",
+  "exam_era": "永樂",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "大典及五經四書大全，有質菴文集。三桂堂記",
+    "book": "楊文敏公集10",
+    "vol": 3,
+    "page": ""
+   },
+   {
+    "title": "章尚文傳",
+    "book": "楊溥撰、皇明名臣琬琰錄22",
+    "vol": 11,
+    "page": "下"
+   },
+   {
+    "title": "祭章侍郎文",
+    "book": "謹忠文古廉文集9",
+    "vol": 36,
+    "page": ""
+   }
+  ],
+  "raw_len": 232
+ },
+ {
+  "name": "章澁",
+  "page": 481,
+  "birth": 1314,
+  "death": 1369,
+  "ming": null,
+  "zi": "三益",
+  "hao": "匡山居士",
+  "native": "浙江龍泉",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 257
+ },
+ {
+  "name": "章瑞",
+  "page": 481,
+  "birth": 1465,
+  "death": 1518,
+  "ming": null,
+  "zi": "廷召",
+  "hao": "瀛山",
+  "native": "績溪",
+  "exam_era": "弘治",
+  "exam_year": "十二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "，官至思恩知府，卒年五十四。章知府墓誌銘",
+    "book": "棠陵文集5",
+    "vol": 8,
+    "page": ""
+   }
+  ],
+  "raw_len": 96
+ },
+ {
+  "name": "曹琳",
+  "page": 511,
+  "birth": 1402,
+  "death": 1449,
+  "ming": null,
+  "zi": "萬鍾",
+  "hao": null,
+  "native": "寧晉",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": "文襄",
+  "cites": [],
+  "raw_len": 217
+ },
+ {
+  "name": "寶德",
+  "page": 511,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "子新",
+  "hao": null,
+  "native": "無錫",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 86
+ },
+ {
+  "name": "寶璘",
+  "page": 511,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "延暉",
+  "hao": null,
+  "native": "襄陽",
+  "exam_era": "成化",
+  "exam_year": "十四",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 93
+ },
+ {
+  "name": "寶璜",
+  "page": 511,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "于渭",
+  "hao": "礎石",
+  "native": "益都",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "。官至通政司左參議。有大塗集。贈曹太守序",
+    "book": "九恩山房稿25",
+    "vol": 15,
+    "page": ""
+   },
+   {
+    "title": "字汝節，號松薙居士。曹公嘉誌銘",
+    "book": "居東集4",
+    "vol": 23,
+    "page": "下"
+   }
+  ],
+  "raw_len": 147
+ },
+ {
+  "name": "寶興",
+  "page": 511,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "不詳何許",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 93
+ },
+ {
+  "name": "寶衡",
+  "page": 511,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "宗衡",
+  "hao": null,
+  "native": "浙江臨海",
+  "exam_era": "景泰",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "順五年陞湖廣參議。送曹宗衡省祭還天台壽序",
+    "book": "方洲張先生文集20",
+    "vol": 14,
+    "page": ""
+   }
+  ],
+  "raw_len": 70
+ },
+ {
+  "name": "寶學侄",
+  "page": 511,
+  "birth": 1574,
+  "death": 1646,
+  "ming": null,
+  "zi": "能始",
+  "hao": "石倉",
+  "native": "侯官",
+  "exam_era": "萬曆",
+  "exam_year": "二十三",
+  "exam_type": "進士",
+  "shi": "忠節",
+  "cites": [
+   {
+    "title": "詩選、鳳山鄭氏詩選、石倉集等。入蜀三編下",
+    "book": "大泌山房藻10",
+    "vol": 19,
+    "page": "下"
+   }
+  ],
+  "raw_len": 200
+ },
+ {
+  "name": "寶學程",
+  "page": 511,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "希明",
+  "hao": null,
+  "native": "全州",
+  "exam_era": "萬曆",
+  "exam_year": "十一",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 130
+ },
+ {
+  "name": "寶謙",
+  "page": 511,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "西安左衛",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 49
+ },
+ {
+  "name": "張景賢",
+  "page": 541,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": "明崖",
+  "native": "四川眉州",
+  "exam_era": "嘉靖",
+  "exam_year": "十七",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "應天，三十五年罷歸。送中丞明崖張公遷蜀序",
+    "book": "陸文定公集9",
+    "vol": 48,
+    "page": ""
+   }
+  ],
+  "raw_len": 81
+ },
+ {
+  "name": "張崙",
+  "page": 541,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "廷瞻",
+  "hao": null,
+  "native": "上虞",
+  "exam_era": "永樂",
+  "exam_year": "九",
+  "exam_type": "舉人",
+  "shi": null,
+  "cites": [
+   {
+    "title": "移知荆州，乞歸，成化四年卒於家。張公誌表",
+    "book": "王儁撰文朝獻徵錄89",
+    "vol": 2,
+    "page": ""
+   }
+  ],
+  "raw_len": 94
+ },
+ {
+  "name": "張督",
+  "page": 541,
+  "birth": 1335,
+  "death": 1406,
+  "ming": null,
+  "zi": "玄略",
+  "hao": null,
+  "native": "延平順昌",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "司業，永樂四年卒官，年七十二。張公墓誌銘",
+    "book": "楊文敏公集21",
+    "vol": 11,
+    "page": ""
+   }
+  ],
+  "raw_len": 136
+ },
+ {
+  "name": "皇明",
+  "page": 541,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "立夫",
+  "hao": "獻齋",
+  "native": "鳳翔",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "，名重一時，學者稱五經先生。默齋夏先生傳",
+    "book": "馮少墻集22",
+    "vol": 5,
+    "page": "下"
+   }
+  ],
+  "raw_len": 128
+ },
+ {
+  "name": "張欽",
+  "page": 541,
+  "birth": 1405,
+  "death": 1475,
+  "ming": null,
+  "zi": "克敬",
+  "hao": null,
+  "native": "順天",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 111
+ },
+ {
+  "name": "張欽",
+  "page": 541,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "敬之",
+  "hao": "禾山",
+  "native": "南昌",
+  "exam_era": "弘治",
+  "exam_year": "十四",
+  "exam_type": "舉人",
+  "shi": null,
+  "cites": [],
+  "raw_len": 108
+ },
+ {
+  "name": "張欽",
+  "page": 541,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "敬之",
+  "hao": "心齋",
+  "native": "順天通州",
+  "exam_era": "正德",
+  "exam_year": "六",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "部左侍郎，被論罷。賀心齋先生進山東大鬬序",
+    "book": "王襄毅公集11",
+    "vol": 6,
+    "page": ""
+   }
+  ],
+  "raw_len": 161
+ },
+ {
+  "name": "張欽",
+  "page": 541,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "士敬",
+  "hao": "震齋",
+  "native": "祥符",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 33
+ },
+ {
+  "name": "張鈞",
+  "page": 541,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "石州",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 65
+ },
+ {
+  "name": "張溥",
+  "page": 541,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "天如",
+  "hao": "要東二張",
+  "native": "太倉",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 175
+ },
+ {
+  "name": "張溥年譜",
+  "page": 541,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": "慮宇",
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "字創謨，號慮宇。先考行狀",
+    "book": "七錄齋文集6",
+    "vol": 11,
+    "page": ""
+   }
+  ],
+  "raw_len": 62
+ },
+ {
+  "name": "張廉",
+  "page": 541,
+  "birth": 1402,
+  "death": 1458,
+  "ming": null,
+  "zi": "惟清",
+  "hao": null,
+  "native": "陝西咸寧",
+  "exam_era": "永樂",
+  "exam_year": "二十一",
+  "exam_type": "舉人",
+  "shi": null,
+  "cites": [],
+  "raw_len": 108
+ },
+ {
+  "name": "張廉",
+  "page": 541,
+  "birth": 1434,
+  "death": 1509,
+  "ming": null,
+  "zi": "孟介",
+  "hao": null,
+  "native": "歸安",
+  "exam_era": "成化",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 48
+ },
+ {
+  "name": "陸靈",
+  "page": 571,
+  "birth": 1464,
+  "death": 1519,
+  "ming": null,
+  "zi": "汝亨",
+  "hao": "鶴山",
+  "native": "蘭谿",
+  "exam_era": "正德",
+  "exam_year": "三",
+  "exam_type": "進士",
+  "shi": "忠定",
+  "cites": [
+   {
+    "title": "死，年五十六。福王時追諡忠定。祭陸汝亨文",
+    "book": "梁陵文集5",
+    "vol": 22,
+    "page": ""
+   },
+   {
+    "title": "名臣蓋議",
+    "book": "公拠集5",
+    "vol": 23,
+    "page": "下"
+   }
+  ],
+  "raw_len": 186
+ },
+ {
+  "name": "聖朝",
+  "page": 571,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 28
+ },
+ {
+  "name": "陸樹德",
+  "page": 571,
+  "birth": 1522,
+  "death": 1587,
+  "ming": null,
+  "zi": "與成",
+  "hao": "阜南",
+  "native": "松江華亭",
+  "exam_era": "嘉靖",
+  "exam_year": "四十四",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "，乞休歸卒，年六十六。刻陸中丞北運奏疏序",
+    "book": "澹渦集1",
+    "vol": 6,
+    "page": "下"
+   },
+   {
+    "title": "嚴州府推官陸侯生祠記",
+    "book": "許文穆公集2",
+    "vol": 51,
+    "page": ""
+   },
+   {
+    "title": "亡弟中丞阜南行狀",
+    "book": "陸文定公集8",
+    "vol": 14,
+    "page": "下"
+   },
+   {
+    "title": "祭與成中丞弟文",
+    "book": "同上12",
+    "vol": 10,
+    "page": ""
+   }
+  ],
+  "raw_len": 259
+ },
+ {
+  "name": "陸樹聲",
+  "page": 571,
+  "birth": 1509,
+  "death": 1605,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 15
+ },
+ {
+  "name": "本姓林",
+  "page": 571,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "興吉",
+  "hao": "平泉",
+  "native": "松江華亭",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": "文定",
+  "cites": [
+   {
+    "title": "、陸學士雜著，陸文定公集。送林徐二先生序",
+    "book": "萬文恭公摘集5",
+    "vol": 9,
+    "page": ""
+   },
+   {
+    "title": "賀大司成平泉陸公得子序",
+    "book": "環溪集6",
+    "vol": 29,
+    "page": ""
+   },
+   {
+    "title": "送少宰平泉陸公北上字",
+    "book": "同上3",
+    "vol": 5,
+    "page": "下"
+   },
+   {
+    "title": "贈大宗伯陸公予告南還序",
+    "book": "賜間堂集11",
+    "vol": 1,
+    "page": ""
+   },
+   {
+    "title": "送大宗伯平泉陸公予告南歸叙",
+    "book": "穀城山館文集1",
+    "vol": 1,
+    "page": ""
+   },
+   {
+    "title": "川岳迎輝圖詠序",
+    "book": "盧賓堂集6",
+    "vol": 2,
+    "page": ""
+   },
+   {
+    "title": "從心需壽平泉陸公",
+    "book": "龍谿王先生全集14",
+    "vol": 27,
+    "page": ""
+   },
+   {
+    "title": "壽大宗伯平泉陸年丈先生七十序",
+    "book": "萬文恭公摘集5",
+    "vol": 30,
+    "page": ""
+   },
+   {
+    "title": "大宗伯陸平泉八十序",
+    "book": "天遠樓桌11",
+    "vol": 9,
+    "page": ""
+   },
+   {
+    "title": "壽大宗伯平泉翁陸老先生九十叙",
+    "book": "楊復所先生家藏文集2",
+    "vol": 4,
+    "page": ""
+   },
+   {
+    "title": "壽大宗伯平泉陸先生九十序",
+    "book": "茅鹿門先生文集16",
+    "vol": 18,
+    "page": ""
+   },
+   {
+    "title": "大宗伯陸公九十存問序",
+    "book": "賜間堂集13",
+    "vol": 1,
+    "page": ""
+   },
+   {
+    "title": "賀平泉翁九十序",
+    "book": "王文肅公文草2",
+    "vol": 1,
+    "page": ""
+   },
+   {
+    "title": "祭宗伯陸公文",
+    "book": "賜聞堂集34",
+    "vol": 30,
+    "page": ""
+   },
+   {
+    "title": "祭平泉陸宗伯文",
+    "book": "快雪堂集21",
+    "vol": 2,
+    "page": ""
+   },
+   {
+    "title": "祭陸宗伯先生文",
+    "book": "寶日堂初集17",
+    "vol": 3,
+    "page": ""
+   },
+   {
+    "title": "陸公傳",
+    "book": "鄒子願學集6",
+    "vol": 78,
+    "page": "下"
+   },
+   {
+    "title": "書平原陸公傳徵",
+    "book": "同上6",
+    "vol": 86,
+    "page": "下"
+   },
+   {
+    "title": "陸文定公特祠記",
+    "book": "顧端文公集10",
+    "vol": 13,
+    "page": ""
+   },
+   {
+    "title": "先進蕭聞",
+    "book": "寶日堂初集29",
+    "vol": 5,
+    "page": ""
+   },
+   {
+    "title": "，號志梅。志梅府君行實",
+    "book": "陸文定公集8",
+    "vol": 1,
+    "page": ""
+   }
+  ],
+  "raw_len": 733
+ },
+ {
+  "name": "夔顯氏",
+  "page": 571,
+  "birth": 1530,
+  "death": 1600,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "顧珊入墓誌銘",
+    "book": "大泌山房集100",
+    "vol": 17,
+    "page": ""
+   }
+  ],
+  "raw_len": 33
+ },
+ {
+  "name": "陸應龍",
+  "page": 571,
+  "birth": 1455,
+  "death": 1538,
+  "ming": null,
+  "zi": "翼之",
+  "hao": "南丘",
+  "native": "長洲",
+  "exam_era": "弘治",
+  "exam_year": "十二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 60
+ },
+ {
+  "name": "陳賢",
+  "page": 601,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "廷傑",
+  "hao": "爲古道先",
+  "native": "莆田",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 224
+ },
+ {
+  "name": "陳德",
+  "page": 601,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "至善",
+  "hao": "雪峯",
+  "native": "保昌",
+  "exam_era": "弘治",
+  "exam_year": "十一",
+  "exam_type": "舉人",
+  "shi": "定襄",
+  "cites": [
+   {
+    "title": "按察僉事，致仕卒，年六十八。雪峯陳公行狀",
+    "book": "龍津原集5",
+    "vol": 84,
+    "page": ""
+   },
+   {
+    "title": "雪峯陳公墓誌銘",
+    "book": "歐陽南野文集26",
+    "vol": 1,
+    "page": ""
+   },
+   {
+    "title": "兵自守，奪祿閒住，卒年六十四。陳公墓誌铭",
+    "book": "懷麓堂文後簡26",
+    "vol": 1,
+    "page": ""
+   },
+   {
+    "title": "，沐英曾係女。平江伯夫人沐氏墓誌铭",
+    "book": "徐文靖公讜察集5",
+    "vol": 37,
+    "page": ""
+   }
+  ],
+  "raw_len": 548
+ },
+ {
+  "name": "陳寶",
+  "page": 601,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "文彬",
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 107
+ },
+ {
+  "name": "陳濂",
+  "page": 601,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "德清",
+  "hao": null,
+  "native": "番禺",
+  "exam_era": "正統",
+  "exam_year": "十",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "遷鎮江同知。致仕卒，年六十八。陳公墓誌铭",
+    "book": "朱與昔撰、皇朝名臣.琬琰錄24",
+    "vol": 18,
+    "page": ""
+   }
+  ],
+  "raw_len": 283
+ },
+ {
+  "name": "聖朝",
+  "page": 601,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 34
+ },
+ {
+  "name": "童祝",
+  "page": 631,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "勉和",
+  "hao": null,
+  "native": "浙江蘭溪",
+  "exam_era": "成化",
+  "exam_year": "十一",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 66
+ },
+ {
+  "name": "童佩",
+  "page": 631,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "子鳴",
+  "hao": null,
+  "native": "龍游",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "藏書萬卷，手自響校，有童子鳴集。童子鳴傳",
+    "book": "弇州山人續稿72",
+    "vol": 15,
+    "page": ""
+   }
+  ],
+  "raw_len": 98
+ },
+ {
+  "name": "童軒",
+  "page": 631,
+  "birth": 1425,
+  "death": 1498,
+  "ming": null,
+  "zi": "士昂",
+  "hao": null,
+  "native": "江西鄱陽",
+  "exam_era": "景泰",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "紀夢要覽、清風亭稿、枕肱集。童公神道碑銘",
+    "book": "懷懿堂文後稿18",
+    "vol": 13,
+    "page": ""
+   }
+  ],
+  "raw_len": 200
+ },
+ {
+  "name": "童實",
+  "page": 631,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "以敬",
+  "hao": null,
+  "native": "隨州",
+  "exam_era": "永樂",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "部尚書，卒年七十四。送浙江參政童君世奇序",
+    "book": "東川劉文簡公集4",
+    "vol": 7,
+    "page": ""
+   },
+   {
+    "title": "送童公赴京尹序",
+    "book": "空同子集54",
+    "vol": 11,
+    "page": ""
+   }
+  ],
+  "raw_len": 210
+ },
+ {
+  "name": "董漢臣",
+  "page": 631,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "仲良",
+  "hao": "南衡",
+  "native": "錢塘",
+  "exam_era": "嘉靖",
+  "exam_year": "十四",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "功，終江西副使。爲郡侯南衡童老先生祝壽序",
+    "book": "可泉先生文集4",
+    "vol": 4,
+    "page": ""
+   },
+   {
+    "title": "修性需爲郡侯南衡童老先生祝壽作",
+    "book": "同上4",
+    "vol": 6,
+    "page": ""
+   },
+   {
+    "title": "壽童南衡老先生序",
+    "book": "遊慶先生文集12",
+    "vol": 47,
+    "page": ""
+   }
+  ],
+  "raw_len": 158
+ },
+ {
+  "name": "董寬",
+  "page": 631,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": "後溪",
+  "native": "浙江蘭谿",
+  "exam_era": "正德",
+  "exam_year": "三",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "、鄭州知州，以蘇州同知罷歸。後溪西遊詩序",
+    "book": "涇野先生文集7",
+    "vol": 21,
+    "page": ""
+   }
+  ],
+  "raw_len": 62
+ },
+ {
+  "name": "曾曾于拱",
+  "page": 631,
+  "birth": 1521,
+  "death": 1588,
+  "ming": null,
+  "zi": "思極",
+  "hao": "魯源",
+  "native": "泰和",
+  "exam_era": "嘉靖",
+  "exam_year": "二十",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "糧儲，致仕卒，年六十八。曾魯源先生墓志銘",
+    "book": "郭子章撰、國朝獻徵錄59",
+    "vol": 23,
+    "page": ""
+   }
+  ],
+  "raw_len": 90
+ },
+ {
+  "name": "曾大有",
+  "page": 631,
+  "birth": 1466,
+  "death": 1523,
+  "ming": null,
+  "zi": "世享",
+  "hao": "麟肢",
+  "native": "湖廣麻城",
+  "exam_era": "弘治",
+  "exam_year": "六",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "，累官江西按察使，卒年五十九。曾公墓誌銘",
+    "book": "張文定公藤海軒集10",
+    "vol": 9,
+    "page": "下"
+   }
+  ],
+  "raw_len": 112
+ },
+ {
+  "name": "曾可前",
+  "page": 631,
+  "birth": 1572,
+  "death": null,
+  "ming": null,
+  "zi": "退如",
+  "hao": "長石",
+  "native": "石首",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 58
+ },
+ {
+  "name": "顛母旦氏",
+  "page": 631,
+  "birth": 1507,
+  "death": 1593,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "呂太夫人墓志銘",
+    "book": "蟬眞草堂文集23",
+    "vol": 11,
+    "page": "下"
+   },
+   {
+    "title": "李屬人曾母墓誌銘",
+    "book": "睡庵文稿17",
+    "vol": 3,
+    "page": ""
+   }
+  ],
+  "raw_len": 96
+ },
+ {
+  "name": "曾弘",
+  "page": 631,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "士弘",
+  "hao": null,
+  "native": "江西泰和",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 17
+ },
+ {
+  "name": "黄壽生",
+  "page": 661,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "莆田",
+  "exam_era": "永樂",
+  "exam_year": "九",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 164
+ },
+ {
+  "name": "黄裳",
+  "page": 661,
+  "birth": 1517,
+  "death": 1594,
+  "ming": null,
+  "zi": "子重",
+  "hao": "鶴洲",
+  "native": "錢唐",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "日。萬曆廿二年卒，年七十八。貢士黃公行狀",
+    "book": "劉嘉陵撰、國朝永徵錄114",
+    "vol": 67,
+    "page": ""
+   },
+   {
+    "title": "處士黃先生墓誌鉛",
+    "book": "大泌山房集89",
+    "vol": 1,
+    "page": ""
+   },
+   {
+    "title": "潁洲居士墓表",
+    "book": "快雲堂集17",
+    "vol": 17,
+    "page": ""
+   },
+   {
+    "title": "潁洲黃先生傳",
+    "book": "茅商門先生文集19",
+    "vol": 13,
+    "page": "下"
+   },
+   {
+    "title": "妻王氏王麗人墓表",
+    "book": "茅商門先生文集25",
+    "vol": 24,
+    "page": ""
+   },
+   {
+    "title": "有五經古原、石龍集。贖石龍黃宗賢赴南臺序",
+    "book": "泉翁大全集17",
+    "vol": 22,
+    "page": ""
+   },
+   {
+    "title": "送少宗伯黃先生考績序",
+    "book": "王氏家藏集23",
+    "vol": 9,
+    "page": "下"
+   },
+   {
+    "title": "黃公行狀",
+    "book": "李一瀚潤、國朝賦後錄34",
+    "vol": 11,
+    "page": ""
+   },
+   {
+    "title": "，成北十七年進士，官吏部郎中。先育君行狀",
+    "book": "石龍集23",
+    "vol": 17,
+    "page": "下"
+   },
+   {
+    "title": "先考批暹墓記",
+    "book": "同上14下",
+    "vol": 9,
+    "page": "下"
+   },
+   {
+    "title": "黃公神道碑",
+    "book": "張文定公潔悔軒集4",
+    "vol": 36,
+    "page": "下"
+   },
+   {
+    "title": "壽黃母鮑太叔人八衰序",
+    "book": "梁巖文集21",
+    "vol": 9,
+    "page": ""
+   },
+   {
+    "title": "黃太叔人傳",
+    "book": "黃門集9",
+    "vol": 7,
+    "page": ""
+   },
+   {
+    "title": "先母太叔人墓誌",
+    "book": "石龍集26",
+    "vol": 1,
+    "page": ""
+   }
+  ],
+  "raw_len": 648
+ },
+ {
+  "name": "黄絵",
+  "page": 661,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "河南息麻",
+  "exam_era": "正德",
+  "exam_year": "十二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 72
+ },
+ {
+  "name": "責魁",
+  "page": 661,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 43
+ },
+ {
+  "name": "聖朝",
+  "page": 661,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 27
+ },
+ {
+  "name": "責應期",
+  "page": 661,
+  "birth": 1545,
+  "death": null,
+  "ming": null,
+  "zi": "鳴周",
+  "hao": "儀庭",
+  "native": "晋江",
+  "exam_era": "隆慶",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 131
+ },
+ {
+  "name": "責澍",
+  "page": 661,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "山東益都",
+  "exam_era": "永樂",
+  "exam_year": "十九",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 48
+ },
+ {
+  "name": "責瀾",
+  "page": 661,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "以誠",
+  "hao": null,
+  "native": "晋江",
+  "exam_era": "正德",
+  "exam_year": "十六",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "吏部郎出知松江府。送邵守黃君以餓之松江序",
+    "book": "方蕭存稿3",
+    "vol": 15,
+    "page": "下"
+   }
+  ],
+  "raw_len": 58
+ },
+ {
+  "name": "責瀾玉",
+  "page": 661,
+  "birth": 1389,
+  "death": 1477,
+  "ming": null,
+  "zi": "孟清",
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 40
+ },
+ {
+  "name": "途塗時相",
+  "page": 691,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "英字",
+  "hao": null,
+  "native": "石屏",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "，人咸稱其鯁直。大名守撰字塗公者拜膳卿序",
+    "book": "昭甫集19",
+    "vol": 10,
+    "page": ""
+   }
+  ],
+  "raw_len": 98
+ },
+ {
+  "name": "雍雍泰",
+  "page": 691,
+  "birth": 1435,
+  "death": 1514,
+  "ming": null,
+  "zi": "世隆",
+  "hao": "正誼",
+  "native": "陝西咸寧",
+  "exam_era": "成化",
+  "exam_year": "五",
+  "exam_type": "進士",
+  "shi": "端惠",
+  "cites": [],
+  "raw_len": 252
+ },
+ {
+  "name": "道道永",
+  "page": 691,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "無涯",
+  "hao": "非幻",
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 125
+ },
+ {
+  "name": "道同",
+  "page": 691,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": "煩劇",
+  "native": "河間",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 113
+ },
+ {
+  "name": "達成",
+  "page": 691,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "鶴峰",
+  "hao": "雪軒",
+  "native": "耐北雲州",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 157
+ },
+ {
+  "name": "道季",
+  "page": 691,
+  "birth": 1402,
+  "death": 1456,
+  "ming": null,
+  "zi": "僧庵",
+  "hao": "知幻子",
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 184
+ },
+ {
+  "name": "道聯",
+  "page": 691,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "秀芳",
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 72
+ },
+ {
+  "name": "賈寶三近",
+  "page": 691,
+  "birth": 1534,
+  "death": 1592,
+  "ming": null,
+  "zi": "德修",
+  "hao": "石葵",
+  "native": "山東嶧縣",
+  "exam_era": "隆慶",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "滑耀編，又有東披漫稿。祭少司馬石葵賈年丈",
+    "book": "天遠挾集23",
+    "vol": 26,
+    "page": ""
+   },
+   {
+    "title": "祭少司馬賈公文",
+    "book": "毅城山館文集33",
+    "vol": 6,
+    "page": ""
+   }
+  ],
+  "raw_len": 202
+ },
+ {
+  "name": "楚煙",
+  "page": 721,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "非煙",
+  "hao": null,
+  "native": "曹州",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 59
+ },
+ {
+  "name": "楚銓",
+  "page": 721,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "汝安",
+  "hao": null,
+  "native": "河南杞縣",
+  "exam_era": "洪武",
+  "exam_year": "二十",
+  "exam_type": "舉人",
+  "shi": null,
+  "cites": [],
+  "raw_len": 41
+ },
+ {
+  "name": "裘裘壤",
+  "page": 721,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "本厚",
+  "hao": null,
+  "native": "慈谿",
+  "exam_era": "弘治",
+  "exam_year": "六",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "福建右參議。送福建布政司右參議裘君本厚序",
+    "book": "費文憲公摘稿11",
+    "vol": 46,
+    "page": "下"
+   }
+  ],
+  "raw_len": 68
+ },
+ {
+  "name": "達邁雲",
+  "page": 721,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "涼州衞",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 113
+ },
+ {
+  "name": "靳斬貴",
+  "page": 721,
+  "birth": 1464,
+  "death": 1520,
+  "ming": null,
+  "zi": "充道",
+  "hao": "戒菴",
+  "native": "丹徒",
+  "exam_era": "弘治",
+  "exam_year": "三",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "年五十七，謚文僖。有戒菴文集。送斬充道叙",
+    "book": "柴城文集7",
+    "vol": 2,
+    "page": "下"
+   },
+   {
+    "title": "師儉堂記",
+    "book": "中峰文選2",
+    "vol": 13,
+    "page": ""
+   },
+   {
+    "title": "代六卿祭戒軒斬公文",
+    "book": "陽峰家藏集31",
+    "vol": 7,
+    "page": ""
+   },
+   {
+    "title": "祭相園斬老先生文",
+    "book": "少華山人文集13",
+    "vol": 15,
+    "page": ""
+   },
+   {
+    "title": "祭戒軒斬公文",
+    "book": "湘阜集33",
+    "vol": 9,
+    "page": "下"
+   },
+   {
+    "title": "祭斬文僖公文",
+    "book": "王文恪公集31",
+    "vol": 23,
+    "page": "下"
+   },
+   {
+    "title": "斬公墓誌銘",
+    "book": "王鑑撰、國朝獻徵錄15",
+    "vol": 66,
+    "page": ""
+   },
+   {
+    "title": "字廷璧，官溫州府經歷。斬公行述",
+    "book": "費文憲公摘稿16",
+    "vol": 38,
+    "page": ""
+   },
+   {
+    "title": "斬君遷葬墓誌銘",
+    "book": "餵懿堂文後稿27",
+    "vol": 7,
+    "page": "下"
+   },
+   {
+    "title": "老先生傳",
+    "book": "羅文肅公集12",
+    "vol": 1,
+    "page": ""
+   },
+   {
+    "title": "母范氏，卒年九十。壽祈母太孺入序",
+    "book": "羅文憲公集10",
+    "vol": 19,
+    "page": ""
+   },
+   {
+    "title": "斬太夫人哀阿",
+    "book": "柴墟文集10",
+    "vol": 13,
+    "page": ""
+   },
+   {
+    "title": "斬太夫人哀阿幷辛",
+    "book": "泉翁大全集14",
+    "vol": 5,
+    "page": ""
+   },
+   {
+    "title": "賽□氏祭斬天人文",
+    "book": "王文恪公集31",
+    "vol": 24,
+    "page": ""
+   }
+  ],
+  "raw_len": 411
+ },
+ {
+  "name": "斬義",
+  "page": 721,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "原禮",
+  "hao": null,
+  "native": "淇縣",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 114
+ },
+ {
+  "name": "斬聖居",
+  "page": 721,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "淑孔",
+  "hao": null,
+  "native": "長垣",
+  "exam_era": "崇禎",
+  "exam_year": "元",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 68
+ },
+ {
+  "name": "斬學會",
+  "page": 721,
+  "birth": 1516,
+  "death": 1564,
+  "ming": null,
+  "zi": "子魯",
+  "hao": null,
+  "native": "濟寧",
+  "exam_era": "嘉靖",
+  "exam_year": "二十三",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 56
+ },
+ {
+  "name": "騎舍人",
+  "page": 751,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "騎舍",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 137
+ },
+ {
+  "name": "福福湛",
+  "page": 751,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": "天淵",
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 63
+ },
+ {
+  "name": "福登",
+  "page": 751,
+  "birth": 1547,
+  "death": 1619,
+  "ming": null,
+  "zi": null,
+  "hao": "妙峰",
+  "native": "山西平陽",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 154
+ },
+ {
+  "name": "福報",
+  "page": 751,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "復原",
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 98
+ },
+ {
+  "name": "端端宏",
+  "page": 751,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "仲仁",
+  "hao": "坦齋",
+  "native": "當塗",
+  "exam_era": "天順",
+  "exam_year": "元",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "右都御史端廷敕祭葬",
+    "book": "歐陽南野文集15",
+    "vol": 4,
+    "page": ""
+   },
+   {
+    "title": "祭大中丞堺虹川文",
+    "book": "端溪先生集6",
+    "vol": 18,
+    "page": ""
+   },
+   {
+    "title": "端公墓誌銘",
+    "book": "順應辟撰、國朝獻徵錄64",
+    "vol": 25,
+    "page": ""
+   },
+   {
+    "title": "父端文用端公合葬墓誌銘",
+    "book": "崔東洲集17",
+    "vol": 6,
+    "page": "下"
+   }
+  ],
+  "raw_len": 319
+ },
+ {
+  "name": "端復初",
+  "page": 751,
+  "birth": 1321,
+  "death": 1373,
+  "ming": null,
+  "zi": "以善",
+  "hao": null,
+  "native": "溧水",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 145
+ },
+ {
+  "name": "端紘",
+  "page": 751,
+  "birth": 1522,
+  "death": 1585,
+  "ming": null,
+  "zi": "威伯",
+  "hao": "靜襄",
+  "native": "當塗",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "試永寧令，有善政，年六十四卒。端公墓誌銘",
+    "book": "玉茗堂全集13",
+    "vol": 18,
+    "page": ""
+   }
+  ],
+  "raw_len": 68
+ },
+ {
+  "name": "榮榮清",
+  "page": 751,
+  "birth": 1418,
+  "death": 1484,
+  "ming": null,
+  "zi": "元潔",
+  "hao": null,
+  "native": "陝西藍田",
+  "exam_era": "成化",
+  "exam_year": "十七",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "成化十七年進士，治鞏、洛陽有聲。榮君墓表",
+    "book": "王端毅公文集4",
+    "vol": 17,
+    "page": ""
+   }
+  ],
+  "raw_len": 103
+ },
+ {
+  "name": "榮瑄",
+  "page": 751,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "瓊州",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 120
+ },
+ {
+  "name": "古文辭",
+  "page": 811,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": "橘洲",
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "字侍清，號橘洲。先考橘洲府君行狀",
+    "book": "林屋集18",
+    "vol": 10,
+    "page": "下"
+   }
+  ],
+  "raw_len": 137
+ },
+ {
+  "name": "蔡事",
+  "page": 811,
+  "birth": 1457,
+  "death": 1528,
+  "ming": null,
+  "zi": "嘉會",
+  "hao": "南洲",
+  "native": "無錫",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "光祿寺少卿。嘉靖七年卒年七十二。蔡公墓將",
+    "book": "林星集19",
+    "vol": 18,
+    "page": ""
+   }
+  ],
+  "raw_len": 97
+ },
+ {
+  "name": "蔡克廉",
+  "page": 811,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "道卿",
+  "hao": "可泉",
+  "native": "晉江",
+  "exam_era": "嘉靖",
+  "exam_year": "八",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "文名。有可泉集傳世。送蔡進士道鄭諱晉江序",
+    "book": "午辰文集2",
+    "vol": 19,
+    "page": ""
+   },
+   {
+    "title": "賄可泉公序",
+    "book": "敬所王先生集4",
+    "vol": 18,
+    "page": ""
+   },
+   {
+    "title": "園蔡可泉序",
+    "book": "石蓮洞羅先生文集17",
+    "vol": 13,
+    "page": ""
+   },
+   {
+    "title": "親寶樂尊堂記",
+    "book": "虎所李公文集6",
+    "vol": 2,
+    "page": ""
+   },
+   {
+    "title": "，號勉隴，湖州府儒學教授。勉菴先大天行真",
+    "book": "可泉先生文集11",
+    "vol": 19,
+    "page": ""
+   },
+   {
+    "title": "蔡勉菴公行狀",
+    "book": "慈嶺先生文集18",
+    "vol": 17,
+    "page": "下"
+   },
+   {
+    "title": "母包氏薛察中丞母太安人七十",
+    "book": "歐陽南野文集22",
+    "vol": 34,
+    "page": "下"
+   },
+   {
+    "title": "薛察太夫人序",
+    "book": "邁歲先生文集12",
+    "vol": 54,
+    "page": ""
+   },
+   {
+    "title": "率智蔡太夫人七十壽序",
+    "book": "河上12",
+    "vol": 64,
+    "page": "下"
+   }
+  ],
+  "raw_len": 258
+ },
+ {
+  "name": "蔡宗克",
+  "page": 811,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "希淵",
+  "hao": "我齋",
+  "native": "浙江山陰",
+  "exam_era": "正德",
+  "exam_year": "十二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "。送提學四川伐齋蔡君序",
+    "book": "涇野先生文集5",
+    "vol": 7,
+    "page": ""
+   },
+   {
+    "title": "贈蔡伐齋督學四川序",
+    "book": "東鄧鄧先生文集3",
+    "vol": 2,
+    "page": "下"
+   },
+   {
+    "title": "贈郡博蔡伐齋致仕序",
+    "book": "方簡諱公文集3",
+    "vol": 7,
+    "page": ""
+   },
+   {
+    "title": "送蔡帝淵致仕序",
+    "book": "梓溪文鈔外集3",
+    "vol": 44,
+    "page": ""
+   },
+   {
+    "title": "我齋歸山儀序",
+    "book": "見素集6",
+    "vol": 18,
+    "page": "下"
+   }
+  ],
+  "raw_len": 220
+ },
+ {
+  "name": "蔡承植",
+  "page": 811,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "槐庭",
+  "hao": null,
+  "native": "湖廣攸縣",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 62
+ },
+ {
+  "name": "蔡烈",
+  "page": 811,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "文繼",
+  "hao": null,
+  "native": "龍溪",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "，熙已心醉矣。學者稱鶴峯先生。蔡文繼字序",
+    "book": "見素集6",
+    "vol": 5,
+    "page": "下"
+   }
+  ],
+  "raw_len": 101
+ },
+ {
+  "name": "蔡時鼎",
+  "page": 811,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "合甫",
+  "hao": null,
+  "native": "漳浦",
+  "exam_era": "萬曆",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 120
+ },
+ {
+  "name": "蔡清",
+  "page": 811,
+  "birth": 1453,
+  "death": 1508,
+  "ming": null,
+  "zi": "介夫",
+  "hao": "虛齋",
+  "native": "福建晉江",
+  "exam_era": "成化",
+  "exam_year": "二十",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "齋集、密箴、看河圖洛書說。送蔡介夫南還序",
+    "book": "柴墟文集6",
+    "vol": 6,
+    "page": ""
+   },
+   {
+    "title": "蔡盡齋文集序",
+    "book": "見素集6",
+    "vol": 24,
+    "page": ""
+   },
+   {
+    "title": "劉蔡盡齋太極圖解序",
+    "book": "遺慢先生文集10",
+    "vol": 15,
+    "page": ""
+   },
+   {
+    "title": "重刻四書索引序",
+    "book": "天遜模集9",
+    "vol": 4,
+    "page": ""
+   },
+   {
+    "title": "蔡氏圖解序",
+    "book": "洹剣4",
+    "vol": 14,
+    "page": ""
+   }
+  ],
+  "raw_len": 317
+ },
+ {
+  "name": "劉逕",
+  "page": 841,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "仲方",
+  "hao": null,
+  "native": "大名闕州",
+  "exam_era": "永樂",
+  "exam_year": "十九",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "醇典雅，以病歸卒，年七十一。內翰劉公墓表",
+    "book": "張元禎撰、國朝獻徵錄21",
+    "vol": 25,
+    "page": ""
+   }
+  ],
+  "raw_len": 79
+ },
+ {
+  "name": "劉桑",
+  "page": 841,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": "五泉",
+  "native": "鍾祥",
+  "exam_era": "正德",
+  "exam_year": "十六",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "，嘉靖廿一年辭戍。蕭五泉劉君赴京兆爵序.",
+    "book": "陽峯家藏集24",
+    "vol": 54,
+    "page": ""
+   }
+  ],
+  "raw_len": 68
+ },
+ {
+  "name": "劉耘",
+  "page": 841,
+  "birth": 1478,
+  "death": 1513,
+  "ming": null,
+  "zi": "景艷",
+  "hao": null,
+  "native": "江西安福",
+  "exam_era": "弘治",
+  "exam_year": "十八",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "科給事中，以疾卒官，年三十六。劉君墓誌銘",
+    "book": "整苑先生有稿13",
+    "vol": 3,
+    "page": "下"
+   }
+  ],
+  "raw_len": 81
+ },
+ {
+  "name": "劉恕",
+  "page": 841,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "寬仁",
+  "hao": null,
+  "native": "江西永豐",
+  "exam_era": "景泰",
+  "exam_year": "五",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "成化中屢官廣東參議。贈廣東參議劉君赴官序",
+    "book": "青雞沒稿17",
+    "vol": 17,
+    "page": ""
+   }
+  ],
+  "raw_len": 79
+ },
+ {
+  "name": "劉婦顯",
+  "page": 841,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "方回",
+  "hao": null,
+  "native": "興國",
+  "exam_era": "嘉靖",
+  "exam_year": "三十二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 71
+ },
+ {
+  "name": "劉倬",
+  "page": 841,
+  "birth": 1534,
+  "death": 1585,
+  "ming": null,
+  "zi": "原檢",
+  "hao": null,
+  "native": "長洲",
+  "exam_era": "隆慶",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "副使，任至湖廣參政，卒年五十二。劉京檢傳",
+    "book": "太改草14",
+    "vol": 4,
+    "page": ""
+   },
+   {
+    "title": "劉君京檢野丑朱徐二恭人合葬墓志銘",
+    "book": "天遠棲集16",
+    "vol": 27,
+    "page": "下"
+   },
+   {
+    "title": "祭劉參政",
+    "book": "同上23",
+    "vol": 22,
+    "page": "下"
+   },
+   {
+    "title": "祭族孫京檢",
+    "book": "太震草15",
+    "vol": 16,
+    "page": ""
+   }
+  ],
+  "raw_len": 128
+ },
+ {
+  "name": "劉淮",
+  "page": 841,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "濤之",
+  "hao": "西溪",
+  "native": "山西淳縣",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "作軍威，地方爲之一清，致仕卒。劉公墓誌銘",
+    "book": "伍倫撰、國朝獻徵錄106",
+    "vol": 40,
+    "page": ""
+   }
+  ],
+  "raw_len": 104
+ },
+ {
+  "name": "劉淮",
+  "page": 841,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "東注",
+  "hao": "平岡",
+  "native": "河南睢州",
+  "exam_era": "正德",
+  "exam_year": "十二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "副，擢陝西僉事。有平岡集。送劉陝西僉忠序",
+    "book": "涇好先生文集3",
+    "vol": 38,
+    "page": ""
+   }
+  ],
+  "raw_len": 60
+ },
+ {
+  "name": "劉清",
+  "page": 841,
+  "birth": 1417,
+  "death": 1461,
+  "ming": null,
+  "zi": "席夫",
+  "hao": "楊蕊",
+  "native": "直隸滁州",
+  "exam_era": "正統",
+  "exam_year": "十三",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "左遷四川參政。卒官，年僅四十五。劉博墓傳",
+    "book": "胡莊重公文集6",
+    "vol": 88,
+    "page": ""
+   }
+  ],
+  "raw_len": 117
+ },
+ {
+  "name": "劉淳",
+  "page": 841,
+  "birth": 1329,
+  "death": 1425,
+  "ming": null,
+  "zi": "文中",
+  "hao": "菊莊",
+  "native": "南陽",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 132
+ },
+ {
+  "name": "劉制",
+  "page": 841,
+  "birth": 1544,
+  "death": 1614,
+  "ming": null,
+  "zi": "君東",
+  "hao": "匡南",
+  "native": "泰和",
+  "exam_era": "隆慶",
+  "exam_year": "元",
+  "exam_type": "舉人",
+  "shi": null,
+  "cites": [
+   {
+    "title": "讀書自娛，年七十一卒。劉孚廉約堂尤生行狀",
+    "book": "羅大赦撰、國朝獻徵錄114",
+    "vol": 92,
+    "page": ""
+   },
+   {
+    "title": "劉公墓誌銘",
+    "book": "鄒元撰撰、同上114",
+    "vol": 98,
+    "page": "下"
+   }
+  ],
+  "raw_len": 148
+ },
+ {
+  "name": "劉淑相",
+  "page": 841,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "養忠",
+  "hao": "東磯",
+  "native": "麻城",
+  "exam_era": "正德",
+  "exam_year": "九",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "要得罪下獄，赦歸，卒於家。送劉東僕入懲序",
+    "book": "潘笠江集7",
+    "vol": 12,
+    "page": "下"
+   },
+   {
+    "title": "送劉茂忠少賓東藩序",
+    "book": "崔東洲集13",
+    "vol": 12,
+    "page": ""
+   },
+   {
+    "title": "劉公墓誌銘",
+    "book": "霍新要、國朝獻徵錄75",
+    "vol": 6,
+    "page": ""
+   }
+  ],
+  "raw_len": 127
+ },
+ {
+  "name": "劉淵然",
+  "page": 841,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "贛縣",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 17
+ },
+ {
+  "name": "盧巽",
+  "page": 871,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "餘姚",
+  "exam_era": "嘉靖",
+  "exam_year": "十四",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "進士，歷刑部郎中，出知襄陽府。送盧襄陽序",
+    "book": "敬所王先生集2",
+    "vol": 17,
+    "page": "下"
+   }
+  ],
+  "raw_len": 45
+ },
+ {
+  "name": "盧惠",
+  "page": 871,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": "抑齋",
+  "native": "山陽",
+  "exam_era": "嘉靖",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "，授刑部主事，累官浙江按察使。秋江別意叙",
+    "book": "弘藝錄23",
+    "vol": 4,
+    "page": "下"
+   }
+  ],
+  "raw_len": 47
+ },
+ {
+  "name": "盧儒",
+  "page": 871,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "爲已",
+  "hao": "重齋",
+  "native": "崑山",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 91
+ },
+ {
+  "name": "盧學古",
+  "page": 871,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "夏縣",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 54
+ },
+ {
+  "name": "盧學禮",
+  "page": 871,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "立夫",
+  "hao": "趨庭",
+  "native": "東明",
+  "exam_era": "萬曆",
+  "exam_year": "五",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "襄陽知府，官至陝西副使。贈郡侯趨庭盧公叙",
+    "book": "載城山館文集5",
+    "vol": 19,
+    "page": ""
+   }
+  ],
+  "raw_len": 88
+ },
+ {
+  "name": "盧勳",
+  "page": 871,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "汝立",
+  "hao": "後屏",
+  "native": "浙江縉雲",
+  "exam_era": "嘉靖",
+  "exam_year": "十一",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "書，四十三年致仕。贈大理卿盧公應昭北上序",
+    "book": "存简稿4",
+    "vol": 14,
+    "page": "下"
+   },
+   {
+    "title": "贈大中丞盧公序",
+    "book": "潘笠江集8",
+    "vol": 32,
+    "page": ""
+   },
+   {
+    "title": "中丞盧公提督四省軍務",
+    "book": "歐陽南野文集22",
+    "vol": 16,
+    "page": "下"
+   },
+   {
+    "title": "賀卞丞后昇盧公壽序",
+    "book": "龍津原集3",
+    "vol": 34,
+    "page": "下"
+   },
+   {
+    "title": "盧公皆壽承恩序",
+    "book": "張文定公轩玉樓集9",
+    "vol": 14,
+    "page": "下"
+   },
+   {
+    "title": "字時勉，號梅軒生。盧公皆配合葬墓铭銘",
+    "book": "歐陽南野文集24",
+    "vol": 20,
+    "page": "下"
+   }
+  ],
+  "raw_len": 231
+ },
+ {
+  "name": "盧廉",
+  "page": 871,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "希哲",
+  "hao": null,
+  "native": "天台",
+  "exam_era": "成化",
+  "exam_year": "二十三",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "上官去職。有涉粟稿，黃州集。復蘇公墓跡記",
+    "book": "羅文憲公集17",
+    "vol": 2,
+    "page": "下"
+   }
+  ],
+  "raw_len": 79
+ },
+ {
+  "name": "盧襄",
+  "page": 871,
+  "birth": 1481,
+  "death": 1531,
+  "ming": null,
+  "zi": "師陳",
+  "hao": "五塢山人",
+  "native": "吳縣",
+  "exam_era": "嘉靖",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "塢草堂集、石湖文略。陝西右參議盧公司堂碑",
+    "book": "劉子威集25",
+    "vol": 4,
+    "page": ""
+   }
+  ],
+  "raw_len": 125
+ },
+ {
+  "name": "盧謙",
+  "page": 871,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "吉甫",
+  "hao": null,
+  "native": "盧江",
+  "exam_era": "萬曆",
+  "exam_year": "卅二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 130
+ },
+ {
+  "name": "盧建",
+  "page": 871,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "獻卿",
+  "hao": null,
+  "native": "浮梁",
+  "exam_era": "正德",
+  "exam_year": "六",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 108
+ },
+ {
+  "name": "盧鐘",
+  "page": 871,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "汝寧衛",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 162
+ },
+ {
+  "name": "暈暈",
+  "page": 871,
+  "birth": 1285,
+  "death": 1372,
+  "ming": null,
+  "zi": "無夢",
+  "hao": "酉菴",
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 40
+ },
+ {
+  "name": "薛俊",
+  "page": 901,
+  "birth": 1474,
+  "death": 1524,
+  "ming": null,
+  "zi": "尚節",
+  "hao": "靖軒",
+  "native": "揭陽",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "溪，卒於子宗鎧邸，年五十一。薛助敎墓志銘",
+    "book": "石龍集24",
+    "vol": 4,
+    "page": ""
+   }
+  ],
+  "raw_len": 134
+ },
+ {
+  "name": "薛章憲",
+  "page": 901,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "堯卿",
+  "hao": "浮休居士",
+  "native": "江陰",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 61
+ },
+ {
+  "name": "薛祥",
+  "page": 901,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "彥牂",
+  "hao": null,
+  "native": "無為",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 246
+ },
+ {
+  "name": "薛理",
+  "page": 901,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "山東歷城",
+  "exam_era": "永樂",
+  "exam_year": "二十二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 46
+ },
+ {
+  "name": "薛園用",
+  "page": 901,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "洛南",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 82
+ },
+ {
+  "name": "薛國觀",
+  "page": 901,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "賓廷",
+  "hao": null,
+  "native": "韓城",
+  "exam_era": "萬曆",
+  "exam_year": "四十七",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 155
+ },
+ {
+  "name": "薛斌",
+  "page": 901,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "蒙古",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 112
+ },
+ {
+  "name": "薛崑",
+  "page": 901,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "闕鄉",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 138
+ },
+ {
+  "name": "薛貴",
+  "page": 901,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "原蒙古",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 100
+ },
+ {
+  "name": "薛爲學",
+  "page": 901,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "志淵",
+  "hao": null,
+  "native": "武進",
+  "exam_era": "成化",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 55
+ },
+ {
+  "name": "譚太初",
+  "page": 931,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "宗元",
+  "hao": "次川",
+  "native": "廣東始興",
+  "exam_era": "嘉靖",
+  "exam_year": "十七",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "01/16父譚竊字尚德，號悔溪。譚君墓表",
+    "book": "群玉槓稿7",
+    "vol": 31,
+    "page": ""
+   }
+  ],
+  "raw_len": 187
+ },
+ {
+  "name": "譚先哲",
+  "page": 931,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "平壩衞",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 48
+ },
+ {
+  "name": "譚希思",
+  "page": 931,
+  "birth": 1542,
+  "death": 1610,
+  "ming": null,
+  "zi": "子誠",
+  "hao": "獄南",
+  "native": "茶陵",
+  "exam_era": "萬曆",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "大政纂要，四川土夷考。賀大中丞譚公平播序",
+    "book": "芝圖文稿4",
+    "vol": 9,
+    "page": ""
+   },
+   {
+    "title": "譚公墓誌銘",
+    "book": "慣修堂集20",
+    "vol": 1,
+    "page": ""
+   }
+  ],
+  "raw_len": 128
+ },
+ {
+  "name": "譚昌言",
+  "page": 931,
+  "birth": 1571,
+  "death": 1625,
+  "ming": null,
+  "zi": "聖俞",
+  "hao": "譚公嶺",
+  "native": "嘉興",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "毛文龍所陷，嘔血卒，年五十五。譚公墓誌銘",
+    "book": "牧齋初學集58",
+    "vol": 1,
+    "page": ""
+   },
+   {
+    "title": "譚參政傳",
+    "book": "居梁堂文集1",
+    "vol": 18,
+    "page": "下"
+   }
+  ],
+  "raw_len": 196
+ },
+ {
+  "name": "譚忠",
+  "page": 931,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "清流",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 73
+ },
+ {
+  "name": "譚貞良",
+  "page": 931,
+  "birth": 1599,
+  "death": 1648,
+  "ming": null,
+  "zi": "元孩",
+  "hao": "雲谿",
+  "native": "嘉興",
+  "exam_era": "崇禎",
+  "exam_year": "十六",
+  "exam_type": "進士",
+  "shi": "莊僖",
+  "cites": [
+   {
+    "title": "離以死，年五十。有狷石居遺稿。譚君權厝誌",
+    "book": "牧齋有學集29",
+    "vol": 8,
+    "page": "下"
+   },
+   {
+    "title": "譚先生墓表",
+    "book": "曜書亭集72",
+    "vol": 1,
+    "page": ""
+   },
+   {
+    "title": "，嘉靖四年卒，年八十，諡莊僖。譚公墓誌銘",
+    "book": "費文憲公摘稿18",
+    "vol": 11,
+    "page": "下"
+   },
+   {
+    "title": "新亭伯母太夫人張氏墓誌銘",
+    "book": "徐文靖公謹蕭集5",
+    "vol": 32,
+    "page": "下"
+   }
+  ],
+  "raw_len": 257
+ },
+ {
+  "name": "譚淵",
+  "page": 931,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "清流",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": "壯節",
+  "cites": [
+   {
+    "title": "夾河之戰，以馬蹶被殺，諡壯節。壯節錄後序",
+    "book": "王文恪公集12",
+    "vol": 6,
+    "page": ""
+   }
+  ],
+  "raw_len": 159
+ },
+ {
+  "name": "譚業",
+  "page": 931,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": "少媚",
+  "native": "涪州",
+  "exam_era": "嘉靖",
+  "exam_year": "十七",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "事，歷浙江按察僉事。送譚僉事赴浙江按察序",
+    "book": "自知堂集8",
+    "vol": 34,
+    "page": ""
+   },
+   {
+    "title": "父譚二，號松軒。封砥尉松軒譚翁壽序",
+    "book": "龍潭原集3",
+    "vol": 57,
+    "page": "下"
+   }
+  ],
+  "raw_len": 81
+ },
+ {
+  "name": "譚福",
+  "page": 931,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "山東濟寧",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 45
+ },
+ {
+  "name": "譚輪",
+  "page": 931,
+  "birth": 1520,
+  "death": 1577,
+  "ming": null,
+  "zi": "子理",
+  "hao": "二華",
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 21
+ },
+ {
+  "name": "龔有成",
+  "page": 961,
+  "birth": 1500,
+  "death": null,
+  "ming": null,
+  "zi": "子完",
+  "hao": null,
+  "native": "蘇州嘉定",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "卒，年九十餘。賀蜀左史子完龔先生九十壽釵",
+    "book": "歸有圖稿3",
+    "vol": 18,
+    "page": ""
+   },
+   {
+    "title": "祭鴻良史文",
+    "book": "同上10",
+    "vol": 6,
+    "page": ""
+   }
+  ],
+  "raw_len": 137
+ },
+ {
+  "name": "龔全安",
+  "page": 961,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "希寧",
+  "hao": null,
+  "native": "浙江蘭谿",
+  "exam_era": "永樂",
+  "exam_year": "二十二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 72
+ },
+ {
+  "name": "龔作梅",
+  "page": 961,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": "陳州",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 67
+ },
+ {
+  "name": "龔廷祥",
+  "page": 961,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "伯興",
+  "hao": null,
+  "native": "無錫",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "衛指揮僉事，改羽林前衛。兩陽龔氏先塗碑文",
+    "book": "龔齋集5",
+    "vol": 31,
+    "page": ""
+   }
+  ],
+  "raw_len": 148
+ },
+ {
+  "name": "龔泰",
+  "page": 961,
+  "birth": 1367,
+  "death": 1402,
+  "ming": null,
+  "zi": "叔安",
+  "hao": null,
+  "native": "義烏",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "，自投城下死，年僅三十六。龔君叔安墓陽銘",
+    "book": "金文靖公集9",
+    "vol": 56,
+    "page": ""
+   },
+   {
+    "title": "龔君墓表",
+    "book": "王驍撰、國朝獻徵錄80",
+    "vol": 6,
+    "page": ""
+   }
+  ],
+  "raw_len": 168
+ },
+ {
+  "name": "聖朝",
+  "page": 961,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 61
+ },
+ {
+  "name": "龔起鳳",
+  "page": 961,
+  "birth": 1524,
+  "death": 1574,
+  "ming": null,
+  "zi": null,
+  "hao": null,
+  "native": null,
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [],
+  "raw_len": 14
+ },
+ {
+  "name": "崑山人",
+  "page": 961,
+  "birth": null,
+  "death": null,
+  "ming": "江",
+  "zi": "瑞周",
+  "hao": null,
+  "native": "崑山",
+  "exam_era": null,
+  "exam_year": null,
+  "exam_type": null,
+  "shi": null,
+  "cites": [
+   {
+    "title": "司務，屢遷杞縣知縣，卒年五十一。龔君墓志",
+    "book": "王世懸撰、國朝獻徵錄93",
+    "vol": 48,
+    "page": ""
+   }
+  ],
+  "raw_len": 105
+ },
+ {
+  "name": "龔勉",
+  "page": 961,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "子勤",
+  "hao": "毅所",
+  "native": "無錫",
+  "exam_era": "隆慶",
+  "exam_year": "二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "，屢官至浙江布政使。有尚友堂集。襄方伯傳",
+    "book": "石語齋集20",
+    "vol": 24,
+    "page": ""
+   },
+   {
+    "title": "襄子勳詩序",
+    "book": "大泌山房集19",
+    "vol": 21,
+    "page": ""
+   },
+   {
+    "title": "龔毅所先生城南書院生祠永思碑記",
+    "book": "顧端文公集10",
+    "vol": 17,
+    "page": ""
+   }
+  ],
+  "raw_len": 101
+ },
+ {
+  "name": "龔情",
+  "page": 961,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "善甫",
+  "hao": "方山",
+  "native": "上海",
+  "exam_era": "嘉靖",
+  "exam_year": "三十二",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "丞，屢遷南京工部郎中，免官歸卒。先進舊聞",
+    "book": "寶日堂初集23",
+    "vol": 26,
+    "page": "下"
+   }
+  ],
+  "raw_len": 89
+ },
+ {
+  "name": "龔理",
+  "page": 961,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "彥文",
+  "hao": null,
+  "native": "崑山",
+  "exam_era": "正統",
+  "exam_year": "元",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [
+   {
+    "title": "字思齊。龔思齋墓表",
+    "book": "楊文敏公集20",
+    "vol": 4,
+    "page": ""
+   }
+  ],
+  "raw_len": 114
+ },
+ {
+  "name": "龔敟",
+  "page": 961,
+  "birth": null,
+  "death": null,
+  "ming": null,
+  "zi": "子來",
+  "hao": "鳳泉居士",
+  "native": "高郵",
+  "exam_era": "嘉靖",
+  "exam_year": "四十四",
+  "exam_type": "進士",
+  "shi": null,
+  "cites": [],
+  "raw_len": 36
+ }
+]

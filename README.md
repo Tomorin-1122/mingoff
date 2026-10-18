@@ -31,12 +31,13 @@
 | 阶段①½ demo | 九职位可视化原型（无限画布·月格等宽·实录月份接入） | ✅ 完成（2026-10-16） |
 | **正式站** | `site/` 按 demo 模板逐项重做（全朝内阁 + 年号跳转 + 实录抽屉） | ✅ 2026-10-17（D24） |
 | **数据重建 v3** | 重解析年表逐年名单（保留无注文行）+ CBDB 修错 + 1644.3 南明剔除 + 画布前移洪武 | ✅ 2026-10-17（D25） |
-| 阶段② 中高层全量 | 六部七卿+内阁+督抚+科道；同年多月实录校勘 | ⬜ |
+| 阶段② 中高层全量 | 六部七卿+内阁+督抚+科道；同年多月实录校勘 | 🟡 部院数据 v3 已入库，未接站点 |
 | 阶段③ 全朝中层 | 接入 CBDB 全量 + NLP 半自动抽取 | ⬜ |
 | 阶段④ 地方官 | 府州县官 + 卫所武官（百万级） | ⬜ |
+| **外部校勘层** | 《明人傳記資料索引》全书 OCR + 人名目录 + 人物库（6,487 人） | ✅ 2026-10-18（D38，尚未对接 MingOff） |
 
 已完成：6 张表 schema、数据存取层、崇祯朝兵部尚书 14 任种子数据、CLI、
-**176 个测试**、单文件可视化 demo（`web/demo.html`，双击即开）、
+**185 个测试**、单文件可视化 demo（`web/demo.html`，双击即开）、
 正式站 `site/`（Next.js 静态导出，**192 段 / 167 人全朝内阁**，画布 1368–1644.3）。
 
 > ✅ **数据源问题已处理（D25）**：旧版丢“无注文人名行”导致 360 段事件碎片；
@@ -95,7 +96,7 @@ python -m mingoff.cli stats              # 库内计数
 python -m mingoff.backfill_months        # 实录月份回填（需先抓 sinica_months.json）
 python -m mingoff.export_demo            # 重建 web/demo.html
 python -m mingoff.official               # 重建正式站数据（v2：含离任/实录）
-python -m pytest tests                   # 156 个测试
+python -m pytest tests                   # 185 个测试
 ```
 
 ---
@@ -167,13 +168,16 @@ python -m guji.cli shidian chapter LS0026 <chapterId>
 ```
 mingoff/
 ├─ README.md              本文件
-├─ docs/DECISIONS.md      设计决策记录（D1–D36）
+├─ docs/DECISIONS.md      设计决策记录（D1–D38）
 ├─ docs/demo开发经验总结.md  本轮 demo 开发的坑与方法
 ├─ docs/数据源月份精度实测.md  CBDB/中研院月份能力实测
 ├─ docs/数据接入规范.md    ★ 数据接入硬规则（D26：解析/实体/时间/校验门 G1–G6）
 ├─ docs/年表PDF_OCR规范.md  ★ PDF→OCR 规范（D27：页码校准/切片/版式/校验门 O1–O7）
 ├─ docs/发展路线.md        分阶段方向（P0 收尾 → P1 中书省 → P2 殿阁+首辅 → …）
 ├─ docs/明人传记资料索引评估.md  工具书调研：人物校勘/出处层（L4）评估
+├─ docs/明人传记资料索引OCR与核验报告.md ★ 全书 963 页 OCR 与首轮核验（D38）
+├─ docs/明人传记资料索引_人名目录核对报告.md ★ 目录 9,651 人对校、CBDB 裁决、置信分层（D38）
+├─ docs/人物数据库试点报告.md  ★ 6,487 人字段抽取、与 CBDB 逐字段对账、净增量（D38）
 ├─ docs/ming-official-atlas调研.md  对标调研：大明职官图（可借鉴的 10 条）
 ├─ docs/部院数据接收报告.md    ★ 部院 v1 质检→v3 修复与站点接入评估（D30–D33）
 ├─ docs/部院数据待办清单.md    ★ 部院 v2 残留待办（身份/注文/缺口/表头/CBDB/页码）
@@ -201,6 +205,9 @@ mingoff/
 ├─ src/mingoff/data/vol1_person_cbdb.json 人物→CBDB 映射（v3 修错版）
 ├─ src/mingoff/data/person_profiles.json  CBDB 人物小传（抽屉展示）
 ├─ src/mingoff/data/official_cabinet.json 正式版导出（tenures + shilu）
+├─ src/mingoff/data/mrzj/   ★ 《明人傳記資料索引》资产（D38）：目录 9,651、人物库 6,487、逐页 OCR
+├─ scripts/mrzj/            ★ 该书从切片→OCR→解析→人物库的 18 个脚本（原在 _scratch）
+├─ _stage_mrzj.py          把 _scratch 里的该书产出归档进仓（可复跑）
 ├─ docs/正式数据管线报告.md  正式版产出规模、源复核与 v3 重建报告
 ├─ site/                  ★ 正式网站（Next.js 静态导出，D22；按 demo 重做 D24；见 site/README.md）
 └─ data/mingoff.sqlite    运行时数据库（不入库）

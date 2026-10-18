@@ -1,0 +1,826 @@
+[
+ {
+  "old": "世恩",
+  "new": "士恩",
+  "page": 10,
+  "roman": "Shih Yu",
+  "from_sur": "世",
+  "to_sur": "士"
+ },
+ {
+  "old": "卜榮",
+  "new": "卞榮",
+  "page": 18,
+  "roman": "Pien Jung",
+  "from_sur": "卜",
+  "to_sur": "卞"
+ },
+ {
+  "old": "非田",
+  "new": "景田",
+  "page": 88,
+  "roman": "Ching T'ien",
+  "from_sur": "非",
+  "to_sur": "景"
+ },
+ {
+  "old": "円恩",
+  "new": "官恩",
+  "page": 89,
+  "roman": "Kuan An",
+  "from_sur": "円",
+  "to_sur": "官"
+ },
+ {
+  "old": "毛吉",
+  "new": "馬吉",
+  "page": 99,
+  "roman": "Mao Chi",
+  "from_sur": "毛",
+  "to_sur": "馬"
+ },
+ {
+  "old": "末端儀",
+  "new": "宋端儀",
+  "page": 184,
+  "roman": "Sung Tuan I",
+  "from_sur": "末",
+  "to_sur": "宋"
+ },
+ {
+  "old": "初瀨",
+  "new": "諸瀨",
+  "page": 186,
+  "roman": "Ch'u Hao",
+  "from_sur": "初",
+  "to_sur": "諸"
+ },
+ {
+  "old": "初杲",
+  "new": "諸杲",
+  "page": 186,
+  "roman": "Ch'u Kao",
+  "from_sur": "初",
+  "to_sur": "諸"
+ },
+ {
+  "old": "浙源",
+  "new": "浦源",
+  "page": 384,
+  "roman": "P'u Yuan",
+  "from_sur": "浙",
+  "to_sur": "浦"
+ },
+ {
+  "old": "康激",
+  "new": "唐激",
+  "page": 400,
+  "roman": "T'ang Chi",
+  "from_sur": "康",
+  "to_sur": "唐"
+ },
+ {
+  "old": "桑初",
+  "new": "秦初",
+  "page": 429,
+  "roman": "Ch'in Ch'u",
+  "from_sur": "桑",
+  "to_sur": "秦"
+ },
+ {
+  "old": "尺琛",
+  "new": "晁琛",
+  "page": 446,
+  "roman": "Chao Li",
+  "from_sur": "尺",
+  "to_sur": "晁"
+ },
+ {
+  "old": "党承志",
+  "new": "唐承志",
+  "page": 447,
+  "roman": "Tang Ch'eng Chih",
+  "from_sur": "党",
+  "to_sur": "唐"
+ },
+ {
+  "old": "党以平",
+  "new": "唐以平",
+  "page": 447,
+  "roman": "Tang I Ping",
+  "from_sur": "党",
+  "to_sur": "唐"
+ },
+ {
+  "old": "殷汝麟",
+  "new": "陰汝麟",
+  "page": 447,
+  "roman": "Yin Ju Lin",
+  "from_sur": "殷",
+  "to_sur": "陰"
+ },
+ {
+  "old": "殷士儋",
+  "new": "陰士儋",
+  "page": 447,
+  "roman": "Yin Shih Tan",
+  "from_sur": "殷",
+  "to_sur": "陰"
+ },
+ {
+  "old": "殷士望",
+  "new": "陰士望",
+  "page": 447,
+  "roman": "Yin Shih Wang",
+  "from_sur": "殷",
+  "to_sur": "陰"
+ },
+ {
+  "old": "郜光先",
+  "new": "高光先",
+  "page": 449,
+  "roman": "Kao Kuang Hsien",
+  "from_sur": "郜",
+  "to_sur": "高"
+ },
+ {
+  "old": "郜壬",
+  "new": "高壬",
+  "page": 449,
+  "roman": "Kao Jen",
+  "from_sur": "郜",
+  "to_sur": "高"
+ },
+ {
+  "old": "郜永春",
+  "new": "高永春",
+  "page": 449,
+  "roman": "Kao Yung Ch'un",
+  "from_sur": "郜",
+  "to_sur": "高"
+ },
+ {
+  "old": "郴夔",
+  "new": "智夔",
+  "page": 450,
+  "roman": "Ch'ih K'uel",
+  "from_sur": "郴",
+  "to_sur": "智"
+ },
+ {
+  "old": "爰昌",
+  "new": "奚昌",
+  "page": 450,
+  "roman": "Hsi Ch'ang",
+  "from_sur": "爰",
+  "to_sur": "奚"
+ },
+ {
+  "old": "爰昊",
+  "new": "奚昊",
+  "page": 450,
+  "roman": "Hsi Hao",
+  "from_sur": "爰",
+  "to_sur": "奚"
+ },
+ {
+  "old": "商喜",
+  "new": "上喜",
+  "page": 484,
+  "roman": "Shang Hsi",
+  "from_sur": "商",
+  "to_sur": "上"
+ },
+ {
+  "old": "商輅",
+  "new": "上輅",
+  "page": 484,
+  "roman": "Shang Lu",
+  "from_sur": "商",
+  "to_sur": "上"
+ },
+ {
+  "old": "商為正",
+  "new": "上為正",
+  "page": 484,
+  "roman": "Shang Wei Cheng",
+  "from_sur": "商",
+  "to_sur": "上"
+ },
+ {
+  "old": "梵琦",
+  "new": "弘琦",
+  "page": 504,
+  "roman": "Fan Ch'i",
+  "from_sur": "梵",
+  "to_sur": "弘"
+ },
+ {
+  "old": "陶詰",
+  "new": "道詰",
+  "page": 565,
+  "roman": "T'ao Wang Ling",
+  "from_sur": "陶",
+  "to_sur": "道"
+ },
+ {
+  "old": "陶熾",
+  "new": "道熾",
+  "page": 565,
+  "roman": "T'ao Tsao",
+  "from_sur": "陶",
+  "to_sur": "道"
+ },
+ {
+  "old": "聴讓",
+  "new": "丁讓",
+  "page": 609,
+  "roman": "Liao Jang",
+  "from_sur": "聴",
+  "to_sur": "丁"
+ },
+ {
+  "old": "妻良",
+  "new": "奏良",
+  "page": 610,
+  "roman": "Lou Liang",
+  "from_sur": "妻",
+  "to_sur": "奏"
+ },
+ {
+  "old": "晕鏘",
+  "new": "畢鏘",
+  "page": 610,
+  "roman": "Pi Ch'iang",
+  "from_sur": "晕",
+  "to_sur": "畢"
+ },
+ {
+  "old": "晕彌",
+  "new": "畢彌",
+  "page": 610,
+  "roman": "Pi Luan",
+  "from_sur": "晕",
+  "to_sur": "畢"
+ },
+ {
+  "old": "妻騄",
+  "new": "奏騄",
+  "page": 611,
+  "roman": "Lou Hsiu",
+  "from_sur": "妻",
+  "to_sur": "奏"
+ },
+ {
+  "old": "妻鬼里",
+  "new": "奏鬼里",
+  "page": 611,
+  "roman": "Lou Kuel Li",
+  "from_sur": "妻",
+  "to_sur": "奏"
+ },
+ {
+  "old": "甯正",
+  "new": "宗正",
+  "page": 630,
+  "roman": "Ning Cheng",
+  "from_sur": "甯",
+  "to_sur": "宗"
+ },
+ {
+  "old": "甯忠",
+  "new": "宗忠",
+  "page": 630,
+  "roman": "Ning Chung",
+  "from_sur": "甯",
+  "to_sur": "宗"
+ },
+ {
+  "old": "消化龍",
+  "new": "宗化龍",
+  "page": 630,
+  "roman": "Ning Hua Lung",
+  "from_sur": "消",
+  "to_sur": "宗"
+ },
+ {
+  "old": "雷志及",
+  "new": "劉志及",
+  "page": 637,
+  "roman": "Liu Chih Chi",
+  "from_sur": "雷",
+  "to_sur": "劉"
+ },
+ {
+  "old": "亞志淑",
+  "new": "劉志淑",
+  "page": 637,
+  "roman": "Liu Chih Shu",
+  "from_sur": "亞",
+  "to_sur": "劉"
+ },
+ {
+  "old": "毕旭",
+  "new": "華旭",
+  "page": 671,
+  "roman": "Hua Hsu",
+  "from_sur": "毕",
+  "to_sur": "華"
+ },
+ {
+  "old": "喬綱",
+  "new": "焦綱",
+  "page": 676,
+  "roman": "Ch'iao Chin",
+  "from_sur": "喬",
+  "to_sur": "焦"
+ },
+ {
+  "old": "喬毅",
+  "new": "焦毅",
+  "page": 676,
+  "roman": "Ch'iao I",
+  "from_sur": "喬",
+  "to_sur": "焦"
+ },
+ {
+  "old": "喬懋敏",
+  "new": "焦懋敏",
+  "page": 676,
+  "roman": "Ch'iao Mao Ching",
+  "from_sur": "喬",
+  "to_sur": "焦"
+ },
+ {
+  "old": "喬璧星",
+  "new": "焦璧星",
+  "page": 676,
+  "roman": "Ch'iao P'i Hsing",
+  "from_sur": "喬",
+  "to_sur": "焦"
+ },
+ {
+  "old": "喬鐘",
+  "new": "焦鐘",
+  "page": 676,
+  "roman": "Ch'iao T'ang",
+  "from_sur": "喬",
+  "to_sur": "焦"
+ },
+ {
+  "old": "喬應甲",
+  "new": "焦應甲",
+  "page": 676,
+  "roman": "Ch'iao Ying Chia",
+  "from_sur": "喬",
+  "to_sur": "焦"
+ },
+ {
+  "old": "塗時相",
+  "new": "都時相",
+  "page": 691,
+  "roman": "Tu Shih Hsiang",
+  "from_sur": "塗",
+  "to_sur": "都"
+ },
+ {
+  "old": "途雲",
+  "new": "大雲",
+  "page": 721,
+  "roman": "Ta Yuan",
+  "from_sur": "途",
+  "to_sur": "大"
+ },
+ {
+  "old": "過儀",
+  "new": "國儀",
+  "page": 738,
+  "roman": "Kuo I",
+  "from_sur": "過",
+  "to_sur": "國"
+ },
+ {
+  "old": "詹瀚",
+  "new": "魯瀚",
+  "page": 748,
+  "roman": "Chan Han",
+  "from_sur": "詹",
+  "to_sur": "魯"
+ },
+ {
+  "old": "廖平",
+  "new": "丁平",
+  "page": 749,
+  "roman": "Liao P'ing",
+  "from_sur": "廖",
+  "to_sur": "丁"
+ },
+ {
+  "old": "廖昇",
+  "new": "丁昇",
+  "page": 749,
+  "roman": "Liao Sheng",
+  "from_sur": "廖",
+  "to_sur": "丁"
+ },
+ {
+  "old": "廖天明",
+  "new": "丁天明",
+  "page": 749,
+  "roman": "Liao T'ien Ming",
+  "from_sur": "廖",
+  "to_sur": "丁"
+ },
+ {
+  "old": "廖永安",
+  "new": "丁永安",
+  "page": 749,
+  "roman": "Liao Yung An",
+  "from_sur": "廖",
+  "to_sur": "丁"
+ },
+ {
+  "old": "廖永忠",
+  "new": "丁永忠",
+  "page": 749,
+  "roman": "Liao Yung Chung",
+  "from_sur": "廖",
+  "to_sur": "丁"
+ },
+ {
+  "old": "廖紀",
+  "new": "丁紀",
+  "page": 750,
+  "roman": "Liao Chi",
+  "from_sur": "廖",
+  "to_sur": "丁"
+ },
+ {
+  "old": "廖謹",
+  "new": "丁謹",
+  "page": 750,
+  "roman": "Liao Chin",
+  "from_sur": "廖",
+  "to_sur": "丁"
+ },
+ {
+  "old": "廖莊",
+  "new": "丁莊",
+  "page": 750,
+  "roman": "Liao Chuang",
+  "from_sur": "廖",
+  "to_sur": "丁"
+ },
+ {
+  "old": "廖鏞",
+  "new": "丁鏞",
+  "page": 750,
+  "roman": "Liao Jung",
+  "from_sur": "廖",
+  "to_sur": "丁"
+ },
+ {
+  "old": "廖謨",
+  "new": "丁謨",
+  "page": 750,
+  "roman": "Liao Mo",
+  "from_sur": "廖",
+  "to_sur": "丁"
+ },
+ {
+  "old": "廖道南",
+  "new": "丁道南",
+  "page": 750,
+  "roman": "Liao Tao Nan",
+  "from_sur": "廖",
+  "to_sur": "丁"
+ },
+ {
+  "old": "薄緩",
+  "new": "魏緩",
+  "page": 804,
+  "roman": "Wei Shou",
+  "from_sur": "薄",
+  "to_sur": "魏"
+ },
+ {
+  "old": "厨春",
+  "new": "魏春",
+  "page": 804,
+  "roman": "Wei Ch'un",
+  "from_sur": "厨",
+  "to_sur": "魏"
+ },
+ {
+  "old": "薄能",
+  "new": "魏能",
+  "page": 804,
+  "roman": "Wei Neng",
+  "from_sur": "薄",
+  "to_sur": "魏"
+ },
+ {
+  "old": "蕭瑞",
+  "new": "小瑞",
+  "page": 809,
+  "roman": "Hsiao Jui",
+  "from_sur": "蕭",
+  "to_sur": "小"
+ },
+ {
+  "old": "盛祥",
+  "new": "遂祥",
+  "page": 860,
+  "roman": "Lu Hsiang",
+  "from_sur": "盛",
+  "to_sur": "遂"
+ },
+ {
+  "old": "翟榮",
+  "new": "霍榮",
+  "page": 863,
+  "roman": "Huo Yung",
+  "from_sur": "翟",
+  "to_sur": "霍"
+ },
+ {
+  "old": "興安",
+  "new": "行安",
+  "page": 864,
+  "roman": "Hsing An",
+  "from_sur": "興",
+  "to_sur": "行"
+ },
+ {
+  "old": "晕噩",
+  "new": "譚噩",
+  "page": 871,
+  "roman": "T'an o",
+  "from_sur": "晕",
+  "to_sur": "譚"
+ },
+ {
+  "old": "獨孤明",
+  "new": "都孤明",
+  "page": 873,
+  "roman": "Tu Ku Ming",
+  "from_sur": "獨",
+  "to_sur": "都"
+ },
+ {
+  "old": "獨孤樂善",
+  "new": "都孤樂善",
+  "page": 873,
+  "roman": "Tu Ku Lo Shan",
+  "from_sur": "獨",
+  "to_sur": "都"
+ },
+ {
+  "old": "濃英",
+  "new": "濮英",
+  "page": 882,
+  "roman": "Pu Ying",
+  "from_sur": "濃",
+  "to_sur": "濮"
+ },
+ {
+  "old": "鈍繼英",
+  "new": "鐘繼英",
+  "page": 911,
+  "roman": "Chung Chi Ying",
+  "from_sur": "鈍",
+  "to_sur": "鐘"
+ },
+ {
+  "old": "鈍其碩",
+  "new": "鐘其碩",
+  "page": 911,
+  "roman": "Chung Ch'i Shih",
+  "from_sur": "鈍",
+  "to_sur": "鐘"
+ },
+ {
+  "old": "鍾復",
+  "new": "鐘復",
+  "page": 911,
+  "roman": "Chung Fu",
+  "from_sur": "鍾",
+  "to_sur": "鐘"
+ },
+ {
+  "old": "鍾禮",
+  "new": "鐘禮",
+  "page": 911,
+  "roman": "Chung Li",
+  "from_sur": "鍾",
+  "to_sur": "鐘"
+ },
+ {
+  "old": "鍾渤",
+  "new": "鐘渤",
+  "page": 911,
+  "roman": "Chung P'o",
+  "from_sur": "鍾",
+  "to_sur": "鐘"
+ },
+ {
+  "old": "鍾鐸",
+  "new": "鐘鐸",
+  "page": 911,
+  "roman": "Chung To",
+  "from_sur": "鍾",
+  "to_sur": "鐘"
+ },
+ {
+  "old": "磊大年",
+  "new": "聶大年",
+  "page": 913,
+  "roman": "Nieh Ta Nien",
+  "from_sur": "磊",
+  "to_sur": "聶"
+ },
+ {
+  "old": "磊良杞",
+  "new": "聶良杞",
+  "page": 914,
+  "roman": "Nieh Liang Chi",
+  "from_sur": "磊",
+  "to_sur": "聶"
+ },
+ {
+  "old": "磊玉治",
+  "new": "聶玉治",
+  "page": 914,
+  "roman": "Nieh Yu Chih",
+  "from_sur": "磊",
+  "to_sur": "聶"
+ },
+ {
+  "old": "儲壎",
+  "new": "諸壎",
+  "page": 923,
+  "roman": "Ch'u Kuan",
+  "from_sur": "儲",
+  "to_sur": "諸"
+ },
+ {
+  "old": "儲懋",
+  "new": "諸懋",
+  "page": 923,
+  "roman": "Ch'u Mao",
+  "from_sur": "儲",
+  "to_sur": "諸"
+ },
+ {
+  "old": "谭昌言",
+  "new": "譚昌言",
+  "page": 931,
+  "roman": "T'an Ch'ang Yen",
+  "from_sur": "谭",
+  "to_sur": "譚"
+ },
+ {
+  "old": "澤淵",
+  "new": "譚淵",
+  "page": 931,
+  "roman": "T'an Yuan",
+  "from_sur": "澤",
+  "to_sur": "譚"
+ },
+ {
+  "old": "蔡琦",
+  "new": "蘭琦",
+  "page": 945,
+  "roman": "Lin Ch'i",
+  "from_sur": "蔡",
+  "to_sur": "蘭"
+ },
+ {
+  "old": "荫從善",
+  "new": "蘭從善",
+  "page": 945,
+  "roman": "Lin Ch'ung Shan",
+  "from_sur": "荫",
+  "to_sur": "蘭"
+ },
+ {
+  "old": "繼曉",
+  "new": "及曉",
+  "page": 948,
+  "roman": "Chi Hsiao",
+  "from_sur": "繼",
+  "to_sur": "及"
+ },
+ {
+  "old": "顧濟",
+  "new": "龔濟",
+  "page": 958,
+  "roman": "Ku Chi",
+  "from_sur": "顧",
+  "to_sur": "龔"
+ },
+ {
+  "old": "顧鑑",
+  "new": "龔鑑",
+  "page": 958,
+  "roman": "Ku Chien",
+  "from_sur": "顧",
+  "to_sur": "龔"
+ },
+ {
+  "old": "顧翰",
+  "new": "龔翰",
+  "page": 958,
+  "roman": "Ku Han",
+  "from_sur": "顧",
+  "to_sur": "龔"
+ },
+ {
+  "old": "顧錫疇",
+  "new": "龔錫疇",
+  "page": 958,
+  "roman": "Ku Hsi Ch'ou",
+  "from_sur": "顧",
+  "to_sur": "龔"
+ },
+ {
+  "old": "顧應祥",
+  "new": "龔應祥",
+  "page": 958,
+  "roman": "Ku Ying Hsiang",
+  "from_sur": "顧",
+  "to_sur": "龔"
+ },
+ {
+  "old": "饞秀",
+  "new": "饒秀",
+  "page": 959,
+  "roman": "Jao Hsiu",
+  "from_sur": "饞",
+  "to_sur": "饒"
+ },
+ {
+  "old": "饞伸",
+  "new": "饒伸",
+  "page": 959,
+  "roman": "Jao Sheng",
+  "from_sur": "饞",
+  "to_sur": "饒"
+ },
+ {
+  "old": "饞位",
+  "new": "饒位",
+  "page": 959,
+  "roman": "Jao Wei",
+  "from_sur": "饞",
+  "to_sur": "饒"
+ },
+ {
+  "old": "顧聚",
+  "new": "龔聚",
+  "page": 959,
+  "roman": "Ku Ch'ang",
+  "from_sur": "顧",
+  "to_sur": "龔"
+ },
+ {
+  "old": "龍三益",
+  "new": "龔三益",
+  "page": 960,
+  "roman": "Kung San I",
+  "from_sur": "龍",
+  "to_sur": "龔"
+ },
+ {
+  "old": "襄敘",
+  "new": "龔敘",
+  "page": 961,
+  "roman": "Kung Fu",
+  "from_sur": "襄",
+  "to_sur": "龔"
+ },
+ {
+  "old": "襄理",
+  "new": "龔理",
+  "page": 961,
+  "roman": "Kung Li",
+  "from_sur": "襄",
+  "to_sur": "龔"
+ },
+ {
+  "old": "龍泰",
+  "new": "龔泰",
+  "page": 961,
+  "roman": "Kung T'ai",
+  "from_sur": "龍",
+  "to_sur": "龔"
+ },
+ {
+  "old": "獲源",
+  "new": "龔源",
+  "page": 961,
+  "roman": "Kung Yuan",
+  "from_sur": "獲",
+  "to_sur": "龔"
+ }
+]
