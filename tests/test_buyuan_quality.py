@@ -122,6 +122,17 @@ def test_d08_page_index_coverage():
     assert covered / len(entries) >= 0.9
 
 
+def test_d03_gap_review_complete():
+    """D-03 筛查：117 条长缺口均有 status，且 0 条 unexplained。"""
+    p = DATA / "vol1_buyuan_gap_review.json"
+    if not p.is_file():
+        pytest.skip("gap review 未生成")
+    gr = json.loads(p.read_text(encoding="utf-8"))
+    assert len(gr["gaps"]) == 117
+    assert gr["counts"].get("unexplained", 0) == 0
+    assert {g["status"] for g in gr["gaps"]} <= {"verified-real", "screened-real", "unexplained"}
+
+
 def test_identity_split_d01(doc):
     """D-01：同名多人必须拆成独立 person_id；同一实体跨度不得跨代。"""
     tenures = doc["tenures"]

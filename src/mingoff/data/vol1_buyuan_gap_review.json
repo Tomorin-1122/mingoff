@@ -1,0 +1,1529 @@
+{
+ "counts": {
+  "screened-real": 104,
+  "verified-real": 13
+ },
+ "gaps": [
+  {
+   "person_id": "余子俊",
+   "person": "余子俊",
+   "office": "兵部",
+   "gap": [
+    1482,
+    1486
+   ],
+   "status": "screened-real",
+   "name_hits": 2,
+   "other_office_hits": 2,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "侯觀",
+   "person": "侯觀",
+   "office": "總督京儲",
+   "gap": [
+    1514,
+    1518
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "倪岳",
+   "person": "倪岳",
+   "office": "禮部",
+   "gap": [
+    1497,
+    1499
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "劉元霖",
+   "person": "劉元霖",
+   "office": "工部",
+   "gap": [
+    1608,
+    1609
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "劉遵憲",
+   "person": "劉遵憲",
+   "office": "工部",
+   "gap": [
+    1631,
+    1633
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "劉體乾",
+   "person": "劉體乾",
+   "office": "總督倉場",
+   "gap": [
+    1568,
+    1569
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "吳中",
+   "person": "吳中",
+   "office": "刑部",
+   "gap": [
+    1422,
+    1423
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "吳中",
+   "person": "吳中",
+   "office": "工部",
+   "gap": [
+    1421,
+    1423
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "吳時來",
+   "person": "吳時來",
+   "office": "都察院",
+   "gap": [
+    1588,
+    1588
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "吳鵬",
+   "person": "吳鵬",
+   "office": "工部",
+   "gap": [
+    1557,
+    1557
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "呂震",
+   "person": "呂震",
+   "office": "刑部",
+   "gap": [
+    1409,
+    1409
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "呂震",
+   "person": "呂震",
+   "office": "禮部",
+   "gap": [
+    1410,
+    1410
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "呂震",
+   "person": "呂震",
+   "office": "禮部",
+   "gap": [
+    1412,
+    1412
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "唐鐸",
+   "person": "唐鐸",
+   "office": "兵部",
+   "gap": [
+    1383,
+    1386
+   ],
+   "status": "screened-real",
+   "name_hits": 2,
+   "other_office_hits": 2,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "喬允升",
+   "person": "喬允升",
+   "office": "刑部",
+   "gap": [
+    1625,
+    1627
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "單安仁",
+   "person": "單安仁",
+   "office": "兵部",
+   "gap": [
+    1370,
+    1374
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "嚴震直",
+   "person": "嚴震直",
+   "office": "工部",
+   "gap": [
+    1394,
+    1396
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "夏原吉",
+   "person": "夏原吉",
+   "office": "戶部",
+   "gap": [
+    1422,
+    1423
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "孫丕揚",
+   "person": "孫丕揚",
+   "office": "吏部",
+   "gap": [
+    1597,
+    1607
+   ],
+   "status": "verified-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "孫交",
+   "person": "孫交",
+   "office": "戶部",
+   "gap": [
+    1514,
+    1520
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "孫交",
+   "person": "孫交",
+   "office": "總督京儲",
+   "gap": [
+    1510,
+    1511
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "孫慎行",
+   "person": "孫慎行",
+   "office": "禮部",
+   "gap": [
+    1615,
+    1619
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "孫瑋",
+   "person": "孫瑋",
+   "office": "都察院",
+   "gap": [
+    1614,
+    1622
+   ],
+   "status": "verified-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "宋禮",
+   "person": "宋禮",
+   "office": "工部",
+   "gap": [
+    1406,
+    1406
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "宋禮",
+   "person": "宋禮",
+   "office": "禮部",
+   "gap": [
+    1403,
+    1405
+   ],
+   "status": "screened-real",
+   "name_hits": 2,
+   "other_office_hits": 2,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "屠滽",
+   "person": "屠滽",
+   "office": "兵部",
+   "gap": [
+    1487,
+    1489
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "屠滽",
+   "person": "屠滽",
+   "office": "都察院",
+   "gap": [
+    1486,
+    1490
+   ],
+   "status": "verified-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "屠滽",
+   "person": "屠滽",
+   "office": "都察院",
+   "gap": [
+    1492,
+    1492
+   ],
+   "status": "verified-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "屠滽",
+   "person": "屠滽",
+   "office": "都察院",
+   "gap": [
+    1497,
+    1506
+   ],
+   "status": "verified-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "崔景榮",
+   "person": "崔景榮",
+   "office": "兵部",
+   "gap": [
+    1616,
+    1619
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "張問達",
+   "person": "張問達",
+   "office": "都察院",
+   "gap": [
+    1616,
+    1618
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "張守直",
+   "person": "張守直",
+   "office": "總督倉場",
+   "gap": [
+    1566,
+    1569
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "張睿",
+   "person": "張睿",
+   "office": "總督京儲",
+   "gap": [
+    1458,
+    1459
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "張籌",
+   "person": "張籌",
+   "office": "禮部",
+   "gap": [
+    1378,
+    1378
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "彭澤",
+   "person": "彭澤",
+   "office": "都察院",
+   "gap": [
+    1518,
+    1521
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "徐鐸",
+   "person": "徐鐸",
+   "office": "戶部",
+   "gap": [
+    1381,
+    1384
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "方獻夫",
+   "person": "方獻夫",
+   "office": "吏部",
+   "gap": [
+    1531,
+    1531
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "李世達",
+   "person": "李世達",
+   "office": "刑部",
+   "gap": [
+    1591,
+    1591
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "李信",
+   "person": "李信",
+   "office": "吏部",
+   "gap": [
+    1374,
+    1381
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "李友直",
+   "person": "李友直",
+   "office": "工部",
+   "gap": [
+    1426,
+    1427
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "李戴",
+   "person": "李戴",
+   "office": "工部",
+   "gap": [
+    1596,
+    1599
+   ],
+   "status": "screened-real",
+   "name_hits": 2,
+   "other_office_hits": 2,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "李本#1",
+   "person": "李本",
+   "office": "吏部",
+   "gap": [
+    1374,
+    1374
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "李本#1",
+   "person": "李本",
+   "office": "禮部",
+   "gap": [
+    1375,
+    1376
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "李賓",
+   "person": "李賓",
+   "office": "都察院",
+   "gap": [
+    1466,
+    1469
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "李鐩",
+   "person": "李鐩",
+   "office": "工部",
+   "gap": [
+    1509,
+    1509
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "李默",
+   "person": "李默",
+   "office": "吏部",
+   "gap": [
+    1552,
+    1552
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "梁材",
+   "person": "梁材",
+   "office": "戶部",
+   "gap": [
+    1532,
+    1533
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "楊俊民",
+   "person": "楊俊民",
+   "office": "戶部",
+   "gap": [
+    1592,
+    1592
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "楊博",
+   "person": "楊博",
+   "office": "兵部",
+   "gap": [
+    1557,
+    1557
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "楊博",
+   "person": "楊博",
+   "office": "兵部",
+   "gap": [
+    1567,
+    1567
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "楊博",
+   "person": "楊博",
+   "office": "兵部",
+   "gap": [
+    1569,
+    1570
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "楊博",
+   "person": "楊博",
+   "office": "吏部",
+   "gap": [
+    1568,
+    1568
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "楊博",
+   "person": "楊博",
+   "office": "吏部",
+   "gap": [
+    1570,
+    1571
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "楊靖",
+   "person": "楊靖",
+   "office": "刑部",
+   "gap": [
+    1391,
+    1391
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "毛伯溫",
+   "person": "毛伯溫",
+   "office": "兵部",
+   "gap": [
+    1539,
+    1541
+   ],
+   "status": "screened-real",
+   "name_hits": 3,
+   "other_office_hits": 3,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "沈應文",
+   "person": "沈應文",
+   "office": "工部",
+   "gap": [
+    1606,
+    1609
+   ],
+   "status": "screened-real",
+   "name_hits": 4,
+   "other_office_hits": 4,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "潘晟",
+   "person": "潘晟",
+   "office": "禮部",
+   "gap": [
+    1573,
+    1577
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "王國光",
+   "person": "王國光",
+   "office": "總督倉場",
+   "gap": [
+    1566,
+    1570
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "王在晉",
+   "person": "王在晉",
+   "office": "兵部",
+   "gap": [
+    1623,
+    1627
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "王復",
+   "person": "王復",
+   "office": "工部",
+   "gap": [
+    1468,
+    1468
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "王憲",
+   "person": "王憲",
+   "office": "兵部",
+   "gap": [
+    1522,
+    1530
+   ],
+   "status": "verified-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "王文",
+   "person": "王文",
+   "office": "都察院",
+   "gap": [
+    1446,
+    1449
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "王時中",
+   "person": "王時中",
+   "office": "刑部",
+   "gap": [
+    1532,
+    1532
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "王永光",
+   "person": "王永光",
+   "office": "吏部",
+   "gap": [
+    1627,
+    1627
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "王瓊",
+   "person": "王瓊",
+   "office": "吏部",
+   "gap": [
+    1522,
+    1530
+   ],
+   "status": "verified-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "王象乾",
+   "person": "王象乾",
+   "office": "兵部",
+   "gap": [
+    1615,
+    1620
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "王越",
+   "person": "王越",
+   "office": "都察院",
+   "gap": [
+    1482,
+    1495
+   ],
+   "status": "verified-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "王鈍",
+   "person": "王鈍",
+   "office": "戶部",
+   "gap": [
+    1385,
+    1397
+   ],
+   "status": "verified-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "王驥",
+   "person": "王驥",
+   "office": "兵部",
+   "gap": [
+    1443,
+    1456
+   ],
+   "status": "verified-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "甘為霖",
+   "person": "甘為霖",
+   "office": "工部",
+   "gap": [
+    1537,
+    1539
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "甘爲霖",
+   "person": "甘爲霖",
+   "office": "工部",
+   "gap": [
+    1538,
+    1538
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "白圭",
+   "person": "白圭",
+   "office": "兵部",
+   "gap": [
+    1472,
+    1472
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "白圭",
+   "person": "白圭",
+   "office": "工部",
+   "gap": [
+    1468,
+    1471
+   ],
+   "status": "screened-real",
+   "name_hits": 4,
+   "other_office_hits": 4,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "盛原輔",
+   "person": "盛原輔",
+   "office": "吏部",
+   "gap": [
+    1369,
+    1373
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "羅欽順",
+   "person": "羅欽順",
+   "office": "禮部",
+   "gap": [
+    1524,
+    1526
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "翁世資",
+   "person": "翁世資",
+   "office": "戶部",
+   "gap": [
+    1482,
+    1482
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "翁萬達",
+   "person": "翁萬達",
+   "office": "兵部",
+   "gap": [
+    1551,
+    1551
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "耿裕",
+   "person": "耿裕",
+   "office": "吏部",
+   "gap": [
+    1487,
+    1492
+   ],
+   "status": "screened-real",
+   "name_hits": 5,
+   "other_office_hits": 5,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "聶賢",
+   "person": "聶賢",
+   "office": "都察院",
+   "gap": [
+    1528,
+    1531
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "胡執禮",
+   "person": "胡執禮",
+   "office": "總督倉場",
+   "gap": [
+    1582,
+    1586
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "葛守禮",
+   "person": "葛守禮",
+   "office": "戶部",
+   "gap": [
+    1568,
+    1569
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "葛守禮",
+   "person": "葛守禮",
+   "office": "戶部",
+   "gap": [
+    1571,
+    1571
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "董方",
+   "person": "董方",
+   "office": "都察院",
+   "gap": [
+    1475,
+    1475
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "蔡國珍",
+   "person": "蔡國珍",
+   "office": "吏部",
+   "gap": [
+    1594,
+    1596
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "蔣瑶",
+   "person": "蔣瑶",
+   "office": "工部",
+   "gap": [
+    1533,
+    1538
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "薛祥",
+   "person": "薛祥",
+   "office": "工部",
+   "gap": [
+    1377,
+    1379
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "衷貞吉",
+   "person": "衷貞吉",
+   "office": "工部",
+   "gap": [
+    1595,
+    1595
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "許讚",
+   "person": "許讚",
+   "office": "戶部",
+   "gap": [
+    1535,
+    1537
+   ],
+   "status": "screened-real",
+   "name_hits": 2,
+   "other_office_hits": 2,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "詹徽",
+   "person": "詹徽",
+   "office": "吏部",
+   "gap": [
+    1391,
+    1391
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "謝陞",
+   "person": "謝陞",
+   "office": "吏部",
+   "gap": [
+    1638,
+    1638
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "趙世卿",
+   "person": "趙世卿",
+   "office": "吏部",
+   "gap": [
+    1605,
+    1607
+   ],
+   "status": "screened-real",
+   "name_hits": 3,
+   "other_office_hits": 3,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "趙煥",
+   "person": "趙煥",
+   "office": "吏部",
+   "gap": [
+    1613,
+    1617
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "趙煥",
+   "person": "趙煥",
+   "office": "工部",
+   "gap": [
+    1607,
+    1609
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "趙璜",
+   "person": "趙璜",
+   "office": "工部",
+   "gap": [
+    1528,
+    1531
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "趙羾",
+   "person": "趙羾",
+   "office": "兵部",
+   "gap": [
+    1418,
+    1420
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "郭乾",
+   "person": "郭乾",
+   "office": "兵部",
+   "gap": [
+    1568,
+    1569
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "郭樸",
+   "person": "郭樸",
+   "office": "吏部",
+   "gap": [
+    1564,
+    1564
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "郭資",
+   "person": "郭資",
+   "office": "戶部",
+   "gap": [
+    1404,
+    1419
+   ],
+   "status": "verified-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "郭資",
+   "person": "郭資",
+   "office": "戶部",
+   "gap": [
+    1425,
+    1428
+   ],
+   "status": "verified-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "鄭三俊",
+   "person": "鄭三俊",
+   "office": "刑部",
+   "gap": [
+    1639,
+    1641
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "鄭宗仁",
+   "person": "鄭宗仁",
+   "office": "總督京儲",
+   "gap": [
+    1517,
+    1520
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "鄭沂",
+   "person": "鄭沂",
+   "office": "禮部",
+   "gap": [
+    1399,
+    1402
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "鄭賜",
+   "person": "鄭賜",
+   "office": "工部",
+   "gap": [
+    1403,
+    1405
+   ],
+   "status": "screened-real",
+   "name_hits": 3,
+   "other_office_hits": 3,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "金濂",
+   "person": "金濂",
+   "office": "刑部",
+   "gap": [
+    1451,
+    1451
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "金純",
+   "person": "金純",
+   "office": "禮部",
+   "gap": [
+    1425,
+    1425
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "陳珮",
+   "person": "陳珮",
+   "office": "總督京儲",
+   "gap": [
+    1436,
+    1438
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "陳金",
+   "person": "陳金",
+   "office": "都察院",
+   "gap": [
+    1510,
+    1516
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "項忠",
+   "person": "項忠",
+   "office": "都察院",
+   "gap": [
+    1475,
+    1475
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "馬文升",
+   "person": "馬文升",
+   "office": "兵部",
+   "gap": [
+    1486,
+    1488
+   ],
+   "status": "screened-real",
+   "name_hits": 3,
+   "other_office_hits": 3,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "馬文升",
+   "person": "馬文升",
+   "office": "兵部",
+   "gap": [
+    1490,
+    1490
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "馬文升",
+   "person": "馬文升",
+   "office": "兵部",
+   "gap": [
+    1492,
+    1492
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "馬昂",
+   "person": "馬昂",
+   "office": "兵部",
+   "gap": [
+    1465,
+    1465
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "馬森",
+   "person": "馬森",
+   "office": "總督倉場",
+   "gap": [
+    1562,
+    1564
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "高拱",
+   "person": "高拱",
+   "office": "禮部",
+   "gap": [
+    1567,
+    1569
+   ],
+   "status": "screened-real",
+   "name_hits": 1,
+   "other_office_hits": 1,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "黃克纘",
+   "person": "黃克纘",
+   "office": "工部",
+   "gap": [
+    1621,
+    1623
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "黃福",
+   "person": "黃福",
+   "office": "工部",
+   "gap": [
+    1406,
+    1423
+   ],
+   "status": "verified-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  },
+  {
+   "person_id": "齊泰",
+   "person": "齊泰",
+   "office": "兵部",
+   "gap": [
+    1400,
+    1400
+   ],
+   "status": "screened-real",
+   "name_hits": 0,
+   "other_office_hits": 0,
+   "unexplained_years": []
+  }
+ ]
+}
