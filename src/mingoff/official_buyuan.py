@@ -151,7 +151,6 @@ def build_buyuan_tenures() -> list[dict]:
         years = [e["year"] for e in rows]
         note_of = {e["year"]: e["note"] for e in rows}
         flag_of = {e["year"]: e.get("flag") or "" for e in rows}
-        period_of = {e["year"]: e.get("office_period") or office for e in rows}
         raw_of = {e["year"]: e.get("raw_office") or office for e in rows}
         segs, cur = [], [years[0]]
         for y in years[1:]:
@@ -204,7 +203,6 @@ def build_buyuan_tenures() -> list[dict]:
                 "cbdb_id": m.get("cbdb_id"),
                 "cbdb_name": m.get("cbdb_name"),
                 "office": office,
-                "office_period": period_of.get(sy, office),
                 "office_raw": raw_of.get(sy, office),
                 "tenure_type": ttype,
                 "start_year": sy,
@@ -380,6 +378,8 @@ def refresh_manifest(doc: dict) -> None:
     m["stats"].update({
         "entries": len(entries), "persons_unique": len({e["person"] for e in entries}),
         "years": len(years), "missing_years": missing,
+        "no_office_entries": sum(1 for e in entries if not e.get("office")),
+        "offices": sorted({e["office"] for e in entries if e.get("office")}),
         "quarantined_notes": repair.get("quarantined"),
         "book_patches": repair.get("book_patch"),
         "review_items": len(gaps),

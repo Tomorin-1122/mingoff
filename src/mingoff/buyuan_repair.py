@@ -101,17 +101,19 @@ def canon_person(raw: str) -> str:
         return ""
     return s
 
-# ---------------------------------------------------------------- 衙署分期
-# raw label -> (office_id, period label)
+# ---------------------------------------------------------------- 衙署（不合并！）
+# 原书/史料中不同衙署不得合并为一条；沿用原书表头作为 office 实体。
+# 沿革关系只写入 docs（明会要/吾学编），不进入数据、不做分组合并。
+# raw label -> office
 OFFICE_MAP = {
-    "吏部": ("吏部", "吏部"), "戶部": ("戶部", "戶部"), "户部": ("戶部", "戶部"),
-    "禮部": ("禮部", "禮部"), "礼部": ("禮部", "禮部"),
-    "兵部": ("兵部", "兵部"), "刑部": ("刑部", "刑部"), "工部": ("工部", "工部"),
-    "都察院": ("都察院", "都察院"), "御史臺": ("都察院", "御史臺"),
-    "御史台": ("都察院", "御史臺"), "御史府": ("都察院", "御史府"),
-    "總督京儲": ("總督倉場", "總督京儲"), "总督京储": ("總督倉場", "總督京儲"),
-    "總倉場": ("總督倉場", "總倉場"), "总仓场": ("總督倉場", "總倉場"),
-    "總督倉場": ("總督倉場", "總督倉場"), "督倉場": ("總督倉場", "總倉場"),
+    "吏部": "吏部", "戶部": "戶部", "户部": "戶部",
+    "禮部": "禮部", "礼部": "禮部",
+    "兵部": "兵部", "刑部": "刑部", "工部": "工部",
+    "御史臺": "御史臺", "御史台": "御史臺",
+    "都察院": "都察院", "御史府": "御史府",
+    "總督京儲": "總督京儲", "总督京储": "總督京儲",
+    "總督倉場": "總督倉場", "總倉場": "總督倉場",
+    "督倉場": "總督倉場", "总仓场": "總督倉場",
 }
 
 # ---------------------------------------------------------------- 原书页可定错配
@@ -128,10 +130,10 @@ BOOK_PATCH = {
     (1449, "于謙", "兵部"): (
         "七、癸巳、十五,扈從;八、戊辰、廿,兵右侍遷;十、壬戌、十五,遷少保,兼兵尚。", "book-p484"),
     (1449, "鄺埜", "兵部"): ("七、癸巳、十五,扈從;八、壬戌、十五,死難。", "book-p484"),
-    (1399, "景清", "都察院"): ("二月,左僉都遷,尋改北平參議。", "book-jiwen1"),
-    (1399, "練子寧", "都察院"): ("二月,任。", "book-jiwen1"),
-    (1400, "景清", "都察院"): ("三、辛巳、十六,北平參議遷御史大夫。", "book-jiwen2"),
-    (1400, "練子寧", "都察院"): ("三、辛巳,十六,改御史中丞。", "book-jiwen2"),
+    (1399, "景清", "御史府"): ("二月,左僉都遷,尋改北平參議。", "book-jiwen1"),
+    (1399, "練子寧", "御史府"): ("二月,任。", "book-jiwen1"),
+    (1400, "景清", "御史府"): ("三、辛巳、十六,北平參議遷御史大夫。", "book-jiwen2"),
+    (1400, "練子寧", "御史府"): ("三、辛巳,十六,改御史中丞。", "book-jiwen2"),
 }
 
 # ---------------------------------------------------------------- CBDB 修复
@@ -179,14 +181,14 @@ def repair_entries(entries: list[dict]) -> tuple[list[dict], dict]:
         if person != raw:
             changed[(raw, person)] += 1
         office_raw = e.get("office") or ""
-        office, period = OFFICE_MAP.get(office_raw, (None, None))
+        office = OFFICE_MAP.get(office_raw)
         if not office:
             dropped.append({"year": e.get("year"), "office": office_raw, "raw": raw,
                             "reason": "office-unmapped"})
             continue
         note = e.get("note", "") or ""
         out.append({
-            "year": e["year"], "office": office, "office_period": period,
+            "year": e["year"], "office": office,
             "person": person, "note": note, "raw_person": raw,
             "raw_office": office_raw, "src": e.get("src", "table"),
             "flag": e.get("flag"),
@@ -212,7 +214,7 @@ def apply_book_patch(entries: list[dict], report: dict) -> None:
             applied.append({"year": year, "person": person, "office": office,
                             "source": source})
         elif note:
-            entries.append({"year": year, "office": office, "office_period": "",
+            entries.append({"year": year, "office": office,
                             "person": person, "note": note, "note_status": "book-patched",
                             "note_source": source, "raw_person": person,
                             "raw_office": office, "src": "book-patch"})
@@ -373,10 +375,6 @@ def recover_from_pages(entries: list[dict], report: dict) -> list[dict]:
                     continue
                 if any(alias and alias in blob for alias in alias_of[person]):
                     entries.append({"year": y, "office": office,
-                                    "office_period": next(
-                                        (e.get("office_period") for e in entries
-                                         if e["person"] == person and e["office"] == office),
-                                        office),
                                     "person": person, "note": "",
                                     "note_status": "page-recovered",
                                     "raw_person": person, "raw_office": office,

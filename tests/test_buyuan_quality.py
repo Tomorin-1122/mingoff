@@ -47,14 +47,16 @@ def test_book_patched_cases():
     assert note(1433, "胡濙", "戶部") == ""
     assert "死難" not in note(1449, "于謙", "兵部")
     assert "死難" in note(1449, "鄺埜", "兵部")
-    people_1399 = {e["person"] for e in entries if e["year"] == 1399 and e["office"] == "都察院"}
+    people_1399 = {e["person"] for e in entries if e["year"] == 1399 and e["office"] == "御史府"}
     assert "練子寧" in people_1399
 
 
-def test_offices_canonical_and_periods(doc):
+def test_offices_not_merged(doc):
+    """不同衙署不得合并：御史臺/都察院/御史府、總督京儲/總督倉場各自独立。"""
     offices = {t["office"] for t in doc["tenures"]}
-    assert offices == {"吏部", "戶部", "禮部", "兵部", "刑部", "工部", "都察院", "總督倉場"}
-    assert all(t.get("office_period") for t in doc["tenures"])
+    assert {"御史臺", "都察院", "御史府", "總督京儲", "總督倉場"} <= offices
+    assert {"吏部", "戶部", "禮部", "兵部", "刑部", "工部"} <= offices
+    assert all("office_lineage" not in t for t in doc["tenures"])
 
 
 def test_gap_flags_are_explicit(doc):

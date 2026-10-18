@@ -8,7 +8,7 @@
   4. 人名：伪人名（閏/扈駕/右侍/官署字碎片）、未映射；
   5. 注文：活跃注文中不得出现另一人名；同 (年,人,衙) 不得重复；
   6. CBDB：生卒/任期冲突；同一 id 多正名；
-  7. 衙署：只能出现 canonical office（分期用 office_period 表达）；
+  7. 衙署：不得合并不同衙署（御史臺/都察院/御史府、總督京儲/總督倉場各自独立）；
   8. manifest：统计与实测一致。
 
 用法：
@@ -32,9 +32,8 @@ _CBDB = [DATA.parents[3] / "_cbdb" / "cbdb_20261010.sqlite3",
          Path.cwd() / "_cbdb" / "cbdb_20261010.sqlite3"]
 CBDB = next((p for p in _CBDB if p.is_file()), _CBDB[-1])
 
-CANON_OFFICES = {"吏部", "戶部", "禮部", "兵部", "刑部", "工部", "都察院", "總督倉場"}
-PERIODS = {"吏部", "戶部", "禮部", "兵部", "刑部", "工部", "都察院", "御史臺",
-           "御史府", "總督京儲", "總倉場"}
+CANON_OFFICES = {"吏部", "戶部", "禮部", "兵部", "刑部", "工部",
+                 "御史臺", "都察院", "御史府", "總督京儲", "總督倉場"}
 LEAVE = ("罷", "卒", "致仕", "削籍", "下獄", "被執", "戍", "謫", "丁憂", "憂去",
          "乞歸", "乞休", "養病", "免", "回籍", "為民", "降", "死於難", "死難", "歿於",
          "正法", "自盡", "殉難", "棄市", "革職", "奪官", "奔喪", "守制", "出", "調", "改除")
@@ -195,8 +194,7 @@ def audit() -> dict:
 
     # 7 衙署
     canon_bad = sorted({t["office"] for t in tenures} - CANON_OFFICES)
-    period_bad = sorted({t.get("office_period") for t in tenures} - PERIODS)
-    r["offices"] = dict(canon_bad=canon_bad, period_bad=period_bad,
+    r["offices"] = dict(canon_bad=canon_bad,
                         offices=sorted({t["office"] for t in tenures}))
 
     # 8 manifest
@@ -225,8 +223,8 @@ def audit() -> dict:
         blockers.append(f"CBDB 生卒/任期冲突 {len(r['cbdb']['date_conflicts'])}")
     if r["cbdb"]["shared_ids"]:
         blockers.append(f"同一 id 多正名 {len(r['cbdb']['shared_ids'])}")
-    if r["offices"]["canon_bad"] or r["offices"]["period_bad"]:
-        blockers.append("衙署未归并/分期非法")
+    if r["offices"]["canon_bad"]:
+        blockers.append("衙署未登记（不同衙署必须各自独立）")
     if r["manifest"]["entries_claimed"] not in (None, len(entries)):
         blockers.append("manifest 条目数与实测不一致")
     r["blockers"] = blockers
@@ -251,7 +249,7 @@ def main() -> None:
           f"隔离 {r['notes']['quarantined']}；原书补注 {r['notes']['book_patches']}")
     print(f"CBDB: 生卒冲突 {len(r['cbdb']['date_conflicts'])}；同 id 多正名 {len(r['cbdb']['shared_ids'])}；"
           f"对齐 {r['cbdb']['aligned_tenures']}/{s['tenures']}")
-    print(f"衙署: {r['offices']['offices']}；非法 {r['offices']['canon_bad']} / {r['offices']['period_bad']}")
+    print(f"衙署: {r['offices']['offices']}；非法 {r['offices']['canon_bad']}")
     print(f"manifest: 条目 {r['manifest']['entries_claimed']} vs {r['manifest']['entries_actual']}；"
           f"人物 {r['manifest']['persons_claimed']} vs {r['manifest']['persons_actual']}")
     print("\n阻断项 BLOCKERS:")

@@ -54,8 +54,8 @@
   "persons_unique": 790,
   "years": 277,
   "missing_years": [],
-  "no_office_entries": 8,
-  "review_items": 120,
+  "no_office_entries": 0,
+  "review_items": 119,
   "name_dict": 914,
   "anchor_stats": {
    "①人名锚": 979,
@@ -67,7 +67,20 @@
   "per_year_min": 6,
   "per_year_max": 25,
   "quarantined_notes": 186,
-  "book_patches": 14
+  "book_patches": 14,
+  "offices": [
+   "兵部",
+   "刑部",
+   "吏部",
+   "工部",
+   "御史府",
+   "御史臺",
+   "戶部",
+   "禮部",
+   "總督京儲",
+   "總督倉場",
+   "都察院"
+  ]
  },
  "evidence": [
   "docs/evidence/book_p402_bujuan1368.png",
@@ -80,19 +93,22 @@
   "docs/evidence/book_p679_bujuan1644.png"
  ],
  "tenure_assembly": {
-  "date": "2026-10-18T05:27:10+00:00",
+  "date": "2026-10-18T05:36:33+00:00",
   "pipeline": "mingoff.official_buyuan (v2: repair + (person,office) 分组 + gap 合并 + D15)",
   "output": "official_buyuan.json",
   "stats": {
-   "tenures": 1203,
+   "tenures": 1205,
    "persons": 790,
    "offices": [
     "兵部",
     "刑部",
     "吏部",
     "工部",
+    "御史府",
+    "御史臺",
     "戶部",
     "禮部",
+    "總督京儲",
     "總督倉場",
     "都察院"
    ],
@@ -103,9 +119,9 @@
     1644
    ],
    "with_start_month": 815,
-   "with_end_month": 452,
+   "with_end_month": 453,
    "cbdb_aligned": 822,
-   "with_leave": 480,
+   "with_leave": 481,
    "shu_li": 71,
    "same_name_risk": 17,
    "shilu_persons": 130,
