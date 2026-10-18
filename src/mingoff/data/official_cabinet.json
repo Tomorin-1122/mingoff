@@ -5,21 +5,21 @@
   "canvas_from": 1368,
   "source": "张德信《明代职官年表》册1·內閣大臣年表（MinerU OCR；缺块以原书 PDF 页补录）；人物对齐 CBDB（cbdb_20261010）；《明實錄》命中据中研院检索",
   "pipeline": "mingoff.official (v3: 表格重解析 + CBDB 修复 + D15 南明过滤)",
-  "generated_at": "2026-10-17T10:34:28+00:00",
+  "generated_at": "2026-10-18T02:33:03+00:00",
   "stats": {
-   "tenures": 195,
+   "tenures": 192,
    "persons": 167,
    "years_covered": [
     1402,
     1644
    ],
-   "with_start_month": 192,
-   "with_end_month": 157,
-   "cbdb_aligned": 190,
-   "with_leave": 160,
+   "with_start_month": 189,
+   "with_end_month": 159,
+   "cbdb_aligned": 187,
+   "with_leave": 162,
    "shilu_persons": 155,
    "shilu_hits": 9687,
-   "person_years": 1035
+   "person_years": 1039
   }
  },
  "tenures": [
@@ -585,35 +585,18 @@
    "tenure_type": "实授",
    "start_year": 1613,
    "start_month": 9,
-   "end_year": 1615,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
-   "note": "九、壬申、十七,禮右侍遷禮尚兼東閣大學士入。",
-   "years": [
-    1613,
-    1614,
-    1615
-   ]
-  },
-  {
-   "person": "吳道南",
-   "cbdb_id": 123972,
-   "cbdb_name": "吳道南",
-   "office": "內閣",
-   "tenure_type": "实授",
-   "start_year": 1617,
-   "start_month": 7,
    "end_year": 1617,
    "end_month": 7,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
+   "confidence": 0.8,
    "leave": "丁憂",
-   "note": "七、壬申、十,丁憂歸。泰昌元年十二、己酉、六,進太子太保戶尚兼文淵閣大學士。天啟三年九、乙巳、十八,卒,贈少保,謚文恪。",
+   "note": "九、壬申、十七,禮右侍遷禮尚兼東閣大學士入。",
    "years": [
+    1613,
+    1614,
+    1615,
+    1616,
     1617
    ]
   },
@@ -1304,11 +1287,11 @@
    "start_year": 1449,
    "start_month": 5,
    "end_year": 1449,
-   "end_month": null,
+   "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "死於難",
    "note": "五、戊戌、十九,侍讀學士入閣;七、癸巳、十五,扈從;八、壬戌、十五,死於難,贈翰林學士。",
    "years": [
     1449
@@ -1708,16 +1691,17 @@
    "cbdb_name": "曹鼐",
    "office": "內閣",
    "tenure_type": "实授",
-   "start_year": 1441,
+   "start_year": 1440,
    "start_month": 2,
    "end_year": 1449,
-   "end_month": null,
+   "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "死於難",
    "note": "二、乙亥、二,侍講,入閣。",
    "years": [
+    1440,
     1441,
     1442,
     1443,
@@ -2444,34 +2428,16 @@
    "tenure_type": "实授",
    "start_year": 1570,
    "start_month": 11,
-   "end_year": 1570,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
-   "note": "十一、己丑、廿五,太子太保禮尚兼文淵閣大學士入;十二、戊午、廿五,加少保兼武英殿大學士,餘官如故。",
-   "years": [
-    1570
-   ]
-  },
-  {
-   "person": "殷士儋",
-   "cbdb_id": 68217,
-   "cbdb_name": "殷士儋",
-   "office": "內閣",
-   "tenure_type": "实授",
-   "start_year": 1572,
-   "start_month": 11,
-   "end_year": 1572,
+   "end_year": 1571,
    "end_month": 11,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
+   "confidence": 0.8,
    "leave": "致仕",
-   "note": "十一、己巳、十一,致仕。萬曆十年六、甲午、八,卒。萬曆十一年正、辛巳、廿七,贈太保,諡文通。萬曆廿四年二、庚子、三,改諡文莊。(五、庚戌、廿六,穆宗崩;六、甲子、十,神宗即位。)",
+   "note": "十一、己丑、廿五,太子太保禮尚兼文淵閣大學士入;十二、戊午、廿五,加少保兼武英殿大學士,餘官如故。",
    "years": [
-    1572
+    1570,
+    1571
    ]
   },
   {
@@ -3051,12 +3017,12 @@
    "tenure_type": "实授",
    "start_year": 1402,
    "start_month": 8,
-   "end_year": 1411,
-   "end_month": null,
+   "end_year": 1418,
+   "end_month": 5,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "卒于任",
    "note": "八月，侍講；十一、戊子，九，遷侍讀。",
    "years": [
     1402,
@@ -3068,25 +3034,8 @@
     1408,
     1409,
     1410,
-    1411
-   ]
-  },
-  {
-   "person": "胡廣",
-   "cbdb_id": 263425,
-   "cbdb_name": "胡廣",
-   "office": "內閣",
-   "tenure_type": "实授",
-   "start_year": 1413,
-   "start_month": 2,
-   "end_year": 1418,
-   "end_month": 5,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "卒于任",
-   "note": "二、甲子、十五，北巡扈從；四、己酉、一，至北京。",
-   "years": [
+    1411,
+    1412,
     1413,
     1414,
     1415,
@@ -3487,7 +3436,7 @@
    "cbdb_name": "許國",
    "office": "內閣",
    "tenure_type": "实授",
-   "start_year": 1584,
+   "start_year": 1583,
    "start_month": 4,
    "end_year": 1591,
    "end_month": 9,
@@ -3495,8 +3444,9 @@
    "end_clamped": false,
    "confidence": 0.8,
    "leave": "致仕",
-   "note": "四、己未、八,掌詹事府事吏左侍遷禮尚兼東閣大學士入;九、乙未、十七,加太子太保兼文淵閣大學士。 九、戊寅、五,加少保兼太子太傅進武英殿大學士,餘如故。",
+   "note": "四、己未、八,掌詹事府事吏左侍遷禮尚兼東閣大學士入;九、乙未、十七,加太子太保兼文淵閣大學士。",
    "years": [
+    1583,
     1584,
     1585,
     1586,
@@ -10738,7 +10688,7 @@
    ]
   },
   "殷士儋": {
-   "count": 21,
+   "count": 19,
    "hits": [
     {
      "year": 1569,
@@ -12977,8 +12927,26 @@
    ]
   },
   "許國": {
-   "count": 119,
+   "count": 121,
    "hits": [
+    {
+     "year": 1582,
+     "era": "萬曆",
+     "era_year": 10,
+     "month": 6,
+     "leap": false,
+     "source": "明實錄 神宗 卷一百二十五 萬曆十年六月",
+     "content": "○庚戌改禮部左侍郎兼翰林院侍讀學士許國為吏部左侍郎掌詹事府事會典副總裁經筵講官如故"
+    },
+    {
+     "year": 1582,
+     "era": "萬曆",
+     "era_year": 10,
+     "month": 10,
+     "leap": false,
+     "source": "明實錄 神宗 卷一百二十九 萬曆十年十月",
+     "content": "○以恩詔廕吏部左侍郎兼侍讀學士掌詹事府事許國男立功總督倉塲戶部左侍郎劉思問男承遇禮部左侍郎兼侍讀學士陳經邦孫鍾岱刑部右侍郎胡價男可化廵撫大同右副都御史賈應元男維鉉大理寺卿辛自修男啟元太常寺卿李輔男大綱順天府府尹張國彥男我繗光祿寺卿臧惟一男爾用太僕寺卿陸樹德男彥禎為國子生"
+    },
     {
      "year": 1583,
      "era": "萬曆",
@@ -13032,24 +13000,6 @@
      "leap": false,
      "source": "明實錄 神宗 卷一百三十七 萬曆十一年五月",
      "content": "明神宗顯皇帝實錄卷之一百三十七萬曆十一年五月壬午朔○甲申夏至遣定國公徐文璧祭地于方澤公朱應禎伯楊炳大學士許國尚書楊巍分祭五嶽之神"
-    },
-    {
-     "year": 1583,
-     "era": "萬曆",
-     "era_year": 11,
-     "month": 8,
-     "leap": false,
-     "source": "明實錄 神宗 卷一百四十 萬曆十一年八月",
-     "content": "○乙卯以萬壽聖節賜元輔申時行銀六十兩斗牛叚及彩叚四表裏次輔余有丁許國各銀五十兩彩叚四表裏日講官陳經邦等六員各銀二十兩彩叚一表裏"
-    },
-    {
-     "year": 1583,
-     "era": "萬曆",
-     "era_year": 11,
-     "month": 8,
-     "leap": false,
-     "source": "明實錄 神宗 卷一百四十 萬曆十一年八月",
-     "content": "○遣大學士許國祭先師孔子"
     }
    ]
   },

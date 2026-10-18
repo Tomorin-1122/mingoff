@@ -64,6 +64,52 @@ def test_known_year_rosters_present():
     assert {"楊廷和", "梁儲", "靳貴", "楊一清"} <= by_year[1515]
 
 
+def test_merged_year_header_repairs():
+    """OCR 把下一年的年份头并进上一年的末行 → 末行人物被错归到下一年（2026-10-18 修）。
+
+    实测：1440 曹鼐 / 1571 殷士儋 / 1583 許國 / 1616 吳道南；
+    另有永乐十年（1412）胡廣的裸名行被挪到 1411 年末（按原书 p19 补录）。
+    """
+    by_year = defaultdict(set)
+    for e in load_entries():
+        by_year[e["year"]].add(e["person"])
+    assert "曹鼐" in by_year[1440]
+    assert "胡廣" in by_year[1412]
+    assert "殷士儋" in by_year[1571]
+    assert "許國" in by_year[1583]
+    assert "吳道南" in by_year[1616]
+
+    ts = {t["person"]: t for t in build_cabinet_tenures()}
+    assert (ts["曹鼐"]["start_year"], ts["曹鼐"]["start_month"]) == (1440, 2)
+    assert ts["胡廣"]["years"] == list(range(1402, 1419))
+    assert (ts["殷士儋"]["start_year"], ts["殷士儋"]["end_year"]) == (1570, 1571)
+    assert ts["許國"]["start_year"] == 1583
+
+
+def test_wu_daonan_single_tenure_1613_1617():
+    """吳道南：原书万历四十四年（1616）仍在阁，四十五年七月丁憂。
+
+    旧数据因 1616 被吞进 1617 年份头，截到 1615，并留下 1617 孤立丁憂事件。
+    """
+    ts = [t for t in build_cabinet_tenures() if t["person"] == "吳道南"]
+    assert len(ts) == 1, ts
+    t = ts[0]
+    assert (t["start_year"], t["start_month"]) == (1613, 9)
+    assert (t["end_year"], t["end_month"]) == (1617, 7)
+    assert t["leave"] == "丁憂"
+    assert t["years"] == [1613, 1614, 1615, 1616, 1617]
+
+
+def test_caoding_died_at_tumu():
+    """曹鼐 1440 入阁、1449 土木之变死难（注文「死於難」→ 迄月 8）。"""
+    ts = [t for t in build_cabinet_tenures() if t["person"] == "曹鼐"]
+    assert len(ts) == 1, ts
+    t = ts[0]
+    assert (t["start_year"], t["start_month"]) == (1440, 2)
+    assert (t["end_year"], t["end_month"]) == (1449, 8)
+    assert t["leave"] == "死於難"
+
+
 def test_only_neige_office():
     ts = build_cabinet_tenures()
     assert ts, "内阁段不应为空"
