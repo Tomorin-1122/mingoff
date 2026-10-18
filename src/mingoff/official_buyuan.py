@@ -380,6 +380,8 @@ def refresh_manifest(doc: dict) -> None:
                          "years": t["gap_after"]})
     review_v2 = {"long_gaps": gaps,
                  "quarantined_notes": repair_full.get("note_quarantine", []),
+                 "note_resolution": repair_full.get("note_resolution", []),
+                 "note_resolution_counts": repair_full.get("note_resolution_counts", {}),
                  "dup_conflicts": repair_full.get("dup_conflicts", [])}
     (DATA / "vol1_buyuan_review_v2.json").write_text(
         json.dumps(review_v2, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -395,6 +397,10 @@ def refresh_manifest(doc: dict) -> None:
         "no_office_entries": sum(1 for e in entries if not e.get("office")),
         "offices": sorted({e["office"] for e in entries if e.get("office")}),
         "quarantined_notes": repair.get("quarantined"),
+        "notes_inferred": repair.get("notes_inferred"),
+        "notes_prefix": repair.get("notes_prefix"),
+        "notes_manual": repair.get("notes_manual"),
+        "note_resolution": repair_full.get("note_resolution_counts", {}),
         "book_patches": repair.get("book_patch"),
         "review_items": len(gaps),
     })

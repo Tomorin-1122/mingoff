@@ -176,6 +176,7 @@ def audit() -> dict:
     r["notes"] = dict(active_note_with_other_name=len(hits), samples=hits[:15],
                       duplicate_entries=len(dup_entry), dup_samples=dup_entry[:15],
                       quarantined=(repair.get("counts") or {}).get("quarantined"),
+                      resolution=repair.get("note_resolution_counts", {}),
                       book_patches=(repair.get("counts") or {}).get("book_patch"))
 
     # 6 CBDB
@@ -271,9 +272,12 @@ def main() -> None:
           f"{r['fragmentation']['unexplained']}（其中短缺口 {r['fragmentation']['short_unexplained']}）")
     print(f"人名: 伪名 {len(r['names']['pseudo'])}；未映射实体 {r['names']['unmapped_persons']}；"
           f"同名拆分 {len(r['names']['split_names'])} 组")
+    res = r["notes"].get("resolution") or {}
     print(f"注文: 活跃注含他人名 {r['notes']['active_note_with_other_name']}；"
           f"重复条目 {r['notes']['duplicate_entries']}；"
-          f"隔离 {r['notes']['quarantined']}；原书补注 {r['notes']['book_patches']}")
+          f"隔离 {r['notes']['quarantined']}（推断补注 {res.get('reassigned-inferred',0)} / "
+          f"前缀推断 {res.get('restored-prefix-inferred',0)} / "
+          f"人工待核 {res.get('manual-review',0)}）；原书补注 {r['notes']['book_patches']}")
     print(f"CBDB: 生卒冲突 {len(r['cbdb']['date_conflicts'])}；同 id 多正名 {len(r['cbdb']['shared_ids'])}；"
           f"对齐 {r['cbdb']['aligned_tenures']}/{s['tenures']}")
     print(f"衙署: {r['offices']['offices']}；非法 {r['offices']['canon_bad']}")

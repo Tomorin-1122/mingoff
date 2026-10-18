@@ -285,7 +285,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "是年,撫州知府遷,尋卒.",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "李廷桂",
   "person_label": "李廷桂"
@@ -408,7 +408,7 @@
   "src": "table",
   "flag": "note?;note?;note?;note?",
   "raw_note": "是年,遷;是年,刑侍遷,尋卒。正、丁巳、廿七,河十一、乙卯、卅,間鹽運使遷,未視改吏尚。間鹽運使遷,未視事,貶惠州經歷。雜理遷;後無考。班用吉是年,陝西參政遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:班用吉",
   "person_id": "劉大昕",
   "person_label": "劉大昕"
@@ -609,13 +609,15 @@
   "year": 1370,
   "office": "禮部",
   "person": "崔亮",
-  "note": "",
+  "note": "九月,卒",
   "raw_person": "崔亮",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
   "person_id": "崔亮",
-  "person_label": "崔亮"
+  "person_label": "崔亮",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:楊訓文@1370"
  },
  {
   "year": 1370,
@@ -627,7 +629,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "九月,卒。七、甲寅、廿八,翰林應奉遷。九、庚子、十五,汀州知府遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "楊訓文",
   "person_label": "楊訓文"
@@ -828,13 +830,13 @@
   "year": 1371,
   "office": "戶部",
   "person": "秦文繹",
-  "note": "",
+  "note": "四、甲申、二,禮侍遷",
   "raw_person": "秦文繹",
   "raw_office": "戶部",
   "src": "table",
   "flag": null,
   "raw_note": "四、甲申、二,禮侍遷。海淵八、己亥、十九,左司郎中遷。",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:海淵",
   "person_id": "秦文繹",
   "person_label": "秦文繹"
@@ -843,13 +845,13 @@
   "year": 1371,
   "office": "戶部",
   "person": "蔣思德",
-  "note": "",
+  "note": "四、癸未、一,岳州知府遷",
   "raw_person": "蔣思德",
   "raw_office": "戶部",
   "src": "table",
   "flag": null,
   "raw_note": "四、癸未、一,岳州知府遷。徐本六、壬午、一,平陽知府遷。",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:徐本",
   "person_id": "蔣思德",
   "person_label": "蔣思德"
@@ -900,7 +902,7 @@
   "src": "table",
   "flag": "note?",
   "raw_note": "是年春,出湖廣参政。三、丙辰、九,出福建參政。三月,刑侍遷;是年,磨勘司令遷。六年三、乙卯、十三,卒。九月,出浙江參政。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "吳雲",
   "person_label": "吳雲"
@@ -951,7 +953,7 @@
   "src": "table",
   "flag": "note?;note?",
   "raw_note": "四、丁亥、十,刑侍遷。是年,邵州知府遷。是年任,本年免。本年坐事降鎮江知府,尋改李信福建轉運鹽使。十二、甲午、廿,兩浙轉運鹽使遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:李信",
   "person_id": "周時中",
   "person_label": "周時中"
@@ -1158,7 +1160,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "六、乙酉、十五,浙江按副遷;七、丙辰、十七,改兵尚。劉惟謙七、丙辰、十七,四川參政遷;閏十一、乙丑、廿二,詳定大明律。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:劉惟謙",
   "person_id": "孫克義",
   "person_label": "孫克義"
@@ -1419,13 +1421,13 @@
   "year": 1374,
   "office": "刑部",
   "person": "馮冕",
-  "note": "",
+  "note": "七、壬辰、廿九,出陝西參政,是年實授",
   "raw_person": "馮冕",
   "raw_office": "刑部",
   "src": "table",
   "flag": null,
   "raw_note": "七、壬辰、廿九,出陝西參政,是年實授。唐鐸尋卒。四、己亥、四,改太常卿,未任徐本守制歸。是年,浙江參政遷。",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:徐本",
   "person_id": "馮冕",
   "person_label": "馮冕"
@@ -1518,13 +1520,13 @@
   "year": 1374,
   "office": "御史臺",
   "person": "汪廣洋",
-  "note": "",
+  "note": "四、戊午、廿三,廣東參政遷",
   "raw_person": "汪廣洋",
   "raw_office": "御史臺",
   "src": "table",
   "flag": null,
   "raw_note": "四、戊午、廿三,廣東參政遷。陳寧",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:陳寧",
   "person_id": "汪廣洋",
   "person_label": "汪廣洋"
@@ -1611,7 +1613,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、丁亥、廿四,降主事;是年免。五、丙子、十一,工尚改,八、甲午、一,復;尋專理太子贊善大夫事。十二、己未、廿九,致仕卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "趙翥",
   "person_label": "趙翥"
@@ -1776,13 +1778,13 @@
   "year": 1375,
   "office": "戶部",
   "person": "俞溥",
-  "note": "",
+  "note": "二、丙午、十六,出江西參政",
   "raw_person": "俞溥",
   "raw_office": "戶部",
   "src": "table",
   "flag": ";office重复",
   "raw_note": "二、丙午、十六,出江西參政。宋冕三、己卯、十九,河南參政遷;五、庚辰、廿一,出陝西參政。",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:宋冕",
   "person_id": "俞溥",
   "person_label": "俞溥"
@@ -1803,13 +1805,13 @@
   "year": 1375,
   "office": "戶部",
   "person": "韓焯",
-  "note": "",
+  "note": "二、乙巳、十五,大都督府經歷遷,尋免",
   "raw_person": "韓焯",
   "raw_office": "戶部",
   "src": "table",
   "flag": ";office重复",
   "raw_note": "二、乙巳、十五,大都督府經歷遷,尋免。周肅十一、戊寅、廿二,河南知府遷,尋卒。",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:周肅",
   "person_id": "韓焯",
   "person_label": "韓焯"
@@ -1818,13 +1820,13 @@
   "year": 1375,
   "office": "戶部",
   "person": "馬貫",
-  "note": "",
+  "note": "二、王子、廿二,出浙江參政",
   "raw_person": "馬貫",
   "raw_office": "戶部",
   "src": "table",
   "flag": ";office重复",
   "raw_note": "二、王子、廿二,出浙江參政。李泰十一、戊寅、廿二,福建按僉遷。",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:李泰",
   "person_id": "馬貫",
   "person_label": "馬貫"
@@ -1911,7 +1913,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "是年,出陝西參政,後卒於官。十二、庚申、十一、中書郎中遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "王敏",
   "person_label": "王敏"
@@ -1920,13 +1922,15 @@
   "year": 1376,
   "office": "吏部",
   "person": "趙好德",
-  "note": "",
+  "note": "是年,出陝西參政,後卒於官",
   "raw_person": "趙好德",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "趙好德",
-  "person_label": "趙好德"
+  "person_label": "趙好德",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:王敏@1376"
  },
  {
   "year": 1376,
@@ -1998,7 +2002,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "正、甲戌、廿九,遷靖江府六、丙申、十三、開封知府遷,八、甲申、二、戶郎遷右傅。尋免。周斌八、甲申、二、戶侍遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:周斌",
   "person_id": "偰斯",
   "person_label": "偰斯"
@@ -2387,7 +2391,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "是年,免。六、己酉、九,兵尚改;陳銘十二、丙辰、十八,出四川左政。四、己酉、七,兵郎遷;陳煜六、己酉、九,降都府判。是年,戶侍遷試。十二年三、壬申、五,遷福建布政使。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:陳銘",
   "person_id": "李焕文",
   "person_label": "李焕文"
@@ -2944,7 +2948,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "正、戊戌、六、賜死;正、己亥、七、伏誅。安然正、丁巳、廿五、遷左御史中丞。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:安然",
   "person_id": "陳寧",
   "person_label": "陳寧"
@@ -3445,13 +3449,13 @@
   "year": 1384,
   "office": "都察院",
   "person": "詹徽",
-  "note": "",
+  "note": "正、己酉、十一,左僉都遷",
   "raw_person": "詹徽",
   "raw_office": "都察院",
   "src": "table",
   "flag": null,
   "raw_note": "正、己酉、十一,左僉都遷。湯友恭是年任。",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:湯友恭",
   "person_id": "詹徽",
   "person_label": "詹徽"
@@ -3838,7 +3842,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "是年,卒於官。六、丁未、五,刑尚改。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "唐鐸",
   "person_label": "唐鐸"
@@ -3847,13 +3851,15 @@
   "year": 1388,
   "office": "兵部",
   "person": "趙仁",
-  "note": "",
+  "note": "是年,卒於官",
   "raw_person": "趙仁",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "趙仁",
-  "person_label": "趙仁"
+  "person_label": "趙仁",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:唐鐸@1388"
  },
  {
   "year": 1388,
@@ -4433,7 +4439,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十二、甲戌、廿八,解院務。袁泰八、庚戌、一,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:袁泰",
   "person_id": "詹徽",
   "person_label": "詹徽"
@@ -4600,13 +4606,13 @@
   "year": 1394,
   "office": "都察院",
   "person": "曹銘",
-  "note": "",
+  "note": "九月,左副都遷",
   "raw_person": "曹銘",
   "raw_office": "都察院",
   "src": "table",
   "flag": null,
   "raw_note": "九月,左副都遷。解敏",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:解敏",
   "person_id": "曹銘",
   "person_label": "曹銘"
@@ -4693,7 +4699,7 @@
   "src": "table",
   "flag": ";office重复",
   "raw_note": "正月,刑主遷;尋免,後無考。王平二、甲戌、十,左僉都遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:王平",
   "person_id": "吳斌",
   "person_label": "吳斌"
@@ -5808,7 +5814,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "是年,遣住陝西營長安郡主府第。七年二、丁亥、十四,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "劉儁",
   "person_label": "劉儁"
@@ -5817,13 +5823,15 @@
   "year": 1403,
   "office": "兵部",
   "person": "茹瑺",
-  "note": "",
+  "note": "是年,遣住陝西營長安郡主府第",
   "raw_person": "茹瑞",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "茹瑺",
-  "person_label": "茹瑺"
+  "person_label": "茹瑺",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:劉儁@1403"
  },
  {
   "year": 1403,
@@ -6171,7 +6179,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "八、戊辰、五,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "夏原吉",
   "person_label": "夏原吉"
@@ -6180,25 +6188,29 @@
   "year": 1405,
   "office": "戶部",
   "person": "郁新",
-  "note": "",
+  "note": "八、戊辰、五,卒",
   "raw_person": "郁新",
   "raw_office": "戶部",
   "src": "table",
   "flag": null,
   "person_id": "郁新",
-  "person_label": "郁新"
+  "person_label": "郁新",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:夏原吉@1405"
  },
  {
   "year": 1405,
   "office": "禮部",
   "person": "李至剛",
-  "note": "",
+  "note": "八、戊辰、五,下獄;九、己亥、七,刑尚改",
   "raw_person": "李至剛",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
   "person_id": "李至剛",
-  "person_label": "李至剛"
+  "person_label": "李至剛",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:鄭賜@1405"
  },
  {
   "year": 1405,
@@ -6210,7 +6222,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "八、戊辰、五,下獄;九、己亥、七,刑尚改。六年九、丁未、二,釋,降郎中。宣德二年七、庚寅、四,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "鄭賜",
   "person_label": "鄭賜"
@@ -6471,13 +6483,15 @@
   "year": 1408,
   "office": "兵部",
   "person": "劉儁",
-  "note": "",
+  "note": "五月,還:八、乙酉、十,參沐晟軍務;十二、丁酉、廿四,卒",
   "raw_person": "劉儁",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "劉儁",
-  "person_label": "劉儁"
+  "person_label": "劉儁",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:金忠@1408"
  },
  {
   "year": 1408,
@@ -6489,7 +6503,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "五月,還:八、乙酉、十,參沐晟軍務;十二、丁酉、廿四,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "金忠",
   "person_label": "金忠"
@@ -6972,7 +6986,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、辛亥、十九,罪下獄死。陳德文六月,詔還京",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:陳德文",
   "person_id": "陳瑛",
   "person_label": "陳瑛"
@@ -7329,13 +7343,15 @@
   "year": 1415,
   "office": "兵部",
   "person": "金忠",
-  "note": "",
+  "note": "四、癸未、十五、卒",
   "raw_person": "金忠",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "金忠",
-  "person_label": "金忠"
+  "person_label": "金忠",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:陳洽@1415"
  },
  {
   "year": 1415,
@@ -7347,7 +7363,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "四、癸未、十五、卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "陳洽",
   "person_label": "陳洽"
@@ -8240,7 +8256,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "四、癸丑、廿一,巡撫陝西。王彰四、癸丑、廿一,巡撫河南。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:王彰",
   "person_id": "劉觀",
   "person_label": "劉觀"
@@ -8285,13 +8301,15 @@
   "year": 1422,
   "office": "工部",
   "person": "宋禮",
-  "note": "",
+  "note": "七、乙亥、廿,卒",
   "raw_person": "宋禮",
   "raw_office": "工部",
   "src": "table",
   "flag": ";office重复",
   "person_id": "宋禮",
-  "person_label": "宋禮"
+  "person_label": "宋禮",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:李慶@1422"
  },
  {
   "year": 1422,
@@ -8303,7 +8321,7 @@
   "src": "table",
   "flag": ";office重复",
   "raw_note": "七、乙亥、廿,卒。二、乙巳、十八,督餉。萬曆元年正、戊申、廿七,贈太子太保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "李慶",
   "person_label": "李慶"
@@ -9218,7 +9236,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "六、丁未、廿六,巡視河道;十、己亥、廿一,下獄。四年七、庚午、廿六,宥,遼東閑住。七年七、壬戌、六,復,改河間監司同知。顧佐七、丙辰、六,通政使遷;八、癸卯、廿四,居守。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:顧佐",
   "person_id": "劉觀",
   "person_label": "劉觀"
@@ -9515,13 +9533,15 @@
   "year": 1431,
   "office": "兵部",
   "person": "張本",
-  "note": "",
+  "note": "正、壬申、七,卒正、壬午、十七,工左侍遷",
   "raw_person": "張本",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "張本",
-  "person_label": "張本"
+  "person_label": "張本",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:許廓@1431"
  },
  {
   "year": 1431,
@@ -9533,7 +9553,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "正、壬申、七,卒正、壬午、十七,工左侍遷",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "許廓",
   "person_label": "許廓"
@@ -9656,13 +9676,15 @@
   "year": 1431,
   "office": "總督京儲",
   "person": "李昶",
-  "note": "",
+  "note": "十、己亥、八,卒是年,戶右侍任",
   "raw_person": "李昶",
   "raw_office": "總督京儲",
   "src": "table",
   "flag": null,
   "person_id": "李昶",
-  "person_label": "李昶"
+  "person_label": "李昶",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:陳瑞@1431"
  },
  {
   "year": 1431,
@@ -9674,7 +9696,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十、己亥、八,卒是年,戶右侍任",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "陳瑞",
   "person_label": "陳瑞"
@@ -10101,13 +10123,15 @@
   "year": 1435,
   "office": "吏部",
   "person": "蹇義",
-  "note": "",
+  "note": "正、丁亥、十五,卒,贈太師,謚忠定",
   "raw_person": "蹇義",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "蹇義",
-  "person_label": "蹇義"
+  "person_label": "蹇義",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:郭琎@1435"
  },
  {
   "year": 1435,
@@ -10119,7 +10143,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "正、丁亥、十五,卒,贈太師,謚忠定。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "郭琎",
   "person_label": "郭琎"
@@ -11022,7 +11046,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "正、己巳、十三,免,令致仕。正、庚午、十四,禮左侍兼侍讀學士遷。十二年十一、丁巳、廿九,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "王直",
   "person_label": "王直"
@@ -11031,13 +11055,15 @@
   "year": 1443,
   "office": "吏部",
   "person": "郭琎",
-  "note": "",
+  "note": "正、己巳、十三,免,令致仕",
   "raw_person": "郭琎",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "郭琎",
-  "person_label": "郭琎"
+  "person_label": "郭琎",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:王直@1443"
  },
  {
   "year": 1443,
@@ -11199,13 +11225,15 @@
   "year": 1445,
   "office": "兵部",
   "person": "徐晞",
-  "note": "",
+  "note": "十、甲辰、四,致仕",
   "raw_person": "徐晞",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "徐晞",
-  "person_label": "徐晞"
+  "person_label": "徐晞",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:鄺埜@1445"
  },
  {
   "year": 1445,
@@ -11217,7 +11245,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十、甲辰、四,致仕。九、庚寅、廿,兵左侍遷。十一年三、辛巳、十四,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "鄺埜",
   "person_label": "鄺埜"
@@ -11298,13 +11326,15 @@
   "year": 1445,
   "office": "總督京儲",
   "person": "李暹",
-  "note": "",
+  "note": "九、癸巳、廿三,卒",
   "raw_person": "李暹",
   "raw_office": "總督京儲",
   "src": "table",
   "flag": null,
   "person_id": "李暹",
-  "person_label": "李暹"
+  "person_label": "李暹",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:焦宏@1445"
  },
  {
   "year": 1445,
@@ -11316,7 +11346,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "九、癸巳、廿三,卒。十、癸卯、三,戶右侍改任。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "焦宏",
   "person_label": "焦宏"
@@ -11601,13 +11631,15 @@
   "year": 1448,
   "office": "工部",
   "person": "王卺",
-  "note": "",
+  "note": "二、丁卯、十一,致仕",
   "raw_person": "王卺",
   "raw_office": "工部",
   "src": "table",
   "flag": null,
   "person_id": "王卺",
-  "person_label": "王卺"
+  "person_label": "王卺",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:石璞@1448"
  },
  {
   "year": 1448,
@@ -11619,7 +11651,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、丁卯、十一,致仕。五、丁亥、三,山西左布使遷;天順七年七、庚子、十三,卒。十一、丙戌、四,參贊南征軍務。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "石璞",
   "person_label": "石璞"
@@ -11764,13 +11796,15 @@
   "year": 1449,
   "office": "戶部",
   "person": "王佐",
-  "note": "",
+  "note": "七、癸巳、十五,扈從;十一、癸未、七,刑尚改,仍兼太子賓客;八、壬戌、十五,死難",
   "raw_person": "王佐",
   "raw_office": "戶部",
   "src": "table",
   "flag": null,
   "person_id": "王佐#1",
-  "person_label": "王佐（1441–1449）"
+  "person_label": "王佐（1441–1449）",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:金濂@1449"
  },
  {
   "year": 1449,
@@ -11782,7 +11816,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、癸巳、十五,扈從;十一、癸未、七,刑尚改,仍兼太子賓客;八、壬戌、十五,死難。十一、戊子、十二,遷太子太保,仍兼尚書。景泰初,贈少保.成化二年九、甲戌、六,謚忠簡",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "金濂",
   "person_label": "金濂"
@@ -12369,13 +12403,15 @@
   "year": 1453,
   "office": "吏部",
   "person": "何文淵",
-  "note": "",
+  "note": "五、丁丑、廿一,致仕;六、癸巳、八,左都改",
   "raw_person": "何文淵",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "何文淵",
-  "person_label": "何文淵"
+  "person_label": "何文淵",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:王翱@1453"
  },
  {
   "year": 1453,
@@ -12399,7 +12435,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "五、丁丑、廿一,致仕;六、癸巳、八,左都改。五、癸未、廿七,復任;六、壬辰、七,下獄,旋釋致仕。天順元年四、丁未、十四,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "王翱",
   "person_label": "王翱"
@@ -12510,7 +12546,7 @@
   "src": "table",
   "flag": "note?",
   "raw_note": "九、乙卯、二,致仕。三、己卯、廿一,召還;七、癸酉、十八,太子少七年三、丙申、廿七,卒,六、癸巳、八,改吏尚。贈太保,謚僖敏。察兼大理卿遷;十一、己卯、廿七,丁憂。洪英六月,撫浙江召還;八、戊戌、十四,下獄放歸。天順二年十一、辛亥、廿七,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "蕭維禎",
   "person_label": "蕭維禎"
@@ -12519,13 +12555,15 @@
   "year": 1453,
   "office": "都察院",
   "person": "陳鎰",
-  "note": "",
+  "note": "九、乙卯、二,致仕",
   "raw_person": "陳鎰",
   "raw_office": "都察院",
   "src": "table",
   "flag": null,
   "person_id": "陳鎰",
-  "person_label": "陳鎰"
+  "person_label": "陳鎰",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:蕭維禎@1453"
  },
  {
   "year": 1454,
@@ -13029,7 +13067,7 @@
   "src": "table",
   "flag": "note?",
   "raw_note": "正、壬午、十七,逮;正、癸卯、十二,回京,致仕。兼兵尚,掌部事;六、庚子、八,致仕,仍朝朔望。四年五、丙戌、十一,卒,追",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "陳汝言",
   "person_label": "陳汝言"
@@ -13098,13 +13136,15 @@
   "year": 1457,
   "office": "工部",
   "person": "江淵",
-  "note": "",
+  "note": "正、甲申、十九,辭太子少師;正、辛卯、廿六,工左侍遷",
   "raw_person": "江淵",
   "raw_office": "工部",
   "src": "table",
   "flag": null,
   "person_id": "江淵",
-  "person_label": "江淵"
+  "person_label": "江淵",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:趙榮@1457"
  },
  {
   "year": 1457,
@@ -13116,7 +13156,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "正、甲申、十九,辭太子少師;正、辛卯、廿六,工左侍遷。正、丁亥、廿二,充鐵嶺衛軍,未幾卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "趙榮",
   "person_label": "趙榮"
@@ -13155,7 +13195,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "正、甲申、十九,辭少傅兼太子太師致仕。三、壬午、十九,以濟興伯管部事。天順七年八、丙辰、卅,卒,贈太保,謚忠安。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "楊善",
   "person_label": "楊善"
@@ -13164,13 +13204,15 @@
   "year": 1457,
   "office": "禮部",
   "person": "胡濙",
-  "note": "",
+  "note": "正、甲申、十九,辭少傅兼太子太師致仕",
   "raw_person": "胡濙",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
   "person_id": "胡濙",
-  "person_label": "胡濙"
+  "person_label": "胡濙",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:楊善@1457"
  },
  {
   "year": 1457,
@@ -13206,7 +13248,7 @@
   "src": "table",
   "flag": "note?;note?;note?",
   "raw_note": "正、甲申、十九,正、甲申、十九,辭太保;正、丙戌、廿一,封興濟伯;正、庚寅、廿五,理左府事;正、甲午、廿九,兼掌鴻臺寺事;三、壬午、十九,兼禮尚。五、丙戌、廿四,總兩廣右都回;五、丁亥、廿五,往山西撫安軍民;十一、庚午、十,回院。李實",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:李實",
   "person_id": "寇深",
   "person_label": "寇深"
@@ -13287,13 +13329,15 @@
   "year": 1458,
   "office": "刑部",
   "person": "劉廣衡",
-  "note": "",
+  "note": "七、乙未、十,奪俸;十、癸亥、九,山東左布使遷",
   "raw_person": "劉廣衡",
   "raw_office": "刑部",
   "src": "table",
   "flag": ";office重复",
   "person_id": "劉廣衡",
-  "person_label": "劉廣衡"
+  "person_label": "劉廣衡",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:陸瑜@1458"
  },
  {
   "year": 1458,
@@ -13305,7 +13349,7 @@
   "src": "table",
   "flag": ";office重复",
   "raw_note": "七、乙未、十,奪俸;十、癸亥、九,山東左布使遷。十、丁巳、三,歸鄉治疾;十二、己巳、十五,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "陸瑜",
   "person_label": "陸瑜"
@@ -13476,7 +13520,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "是年,服闊參贊京師軍務右都改,尋致仕。成化六年三、庚子、廿一,卒;九月,贈太子太保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "寇深",
   "person_label": "寇深"
@@ -13707,7 +13751,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、庚子、二,死難,贈少保,謚莊愍。李賓七、辛亥、十三,大理卿遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:李賓",
   "person_id": "寇深",
   "person_label": "寇深"
@@ -14046,7 +14090,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "九、己未、十五,致仕。十、壬辰、十八,兵左侍遷。弘治元年十二、壬辰、三,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "王復",
   "person_label": "王復"
@@ -14055,13 +14099,15 @@
   "year": 1465,
   "office": "兵部",
   "person": "王竑",
-  "note": "",
+  "note": "九、己未、十五,致仕",
   "raw_person": "王竑",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "王竑",
-  "person_label": "王竑"
+  "person_label": "王竑",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:王復@1465"
  },
  {
   "year": 1465,
@@ -14301,7 +14347,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、壬午、十九,病免;十二、辛丑、九,左都改。十一、戊辰、六,卒,赠少保,謚忠肅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "李秉",
   "person_label": "李秉"
@@ -14310,13 +14356,15 @@
   "year": 1467,
   "office": "吏部",
   "person": "王翱",
-  "note": "",
+  "note": "七、壬午、十九,病免;十二、辛丑、九,左都改",
   "raw_person": "王翱",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "王翱",
-  "person_label": "王翱"
+  "person_label": "王翱",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:李秉@1467"
  },
  {
   "year": 1467,
@@ -14370,13 +14418,15 @@
   "year": 1467,
   "office": "總督京儲",
   "person": "張睿",
-  "note": "",
+  "note": "八、己亥、六,致仕",
   "raw_person": "張睿",
   "raw_office": "總督京儲",
   "src": "table",
   "flag": null,
   "person_id": "張睿",
-  "person_label": "張睿"
+  "person_label": "張睿",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:薛遠@1467"
  },
  {
   "year": 1467,
@@ -14388,7 +14438,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "八、己亥、六,致仕。八、癸卯、十,戶左侍遷戶尚。七年五、戊子、十六,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "薛遠",
   "person_label": "薛遠"
@@ -14403,7 +14453,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三、甲午、廿九,回院;五、己丑、廿五,督師遼東;十一、乙酉、廿三,召還京;十二、辛丑、九,改吏尚。林聰四、己亥、四,右副都遷;五、己丑、廿五,掌院事。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:林聰",
   "person_id": "李秉",
   "person_label": "李秉"
@@ -14466,7 +14516,7 @@
   "src": "table",
   "flag": ";office重复",
   "raw_note": "九、癸酉、十七,致仕。十、甲寅、廿七,戶左侍遷。成化十二年五月,卒,贈少保,謚恭襄。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "楊鼎",
   "person_label": "楊鼎"
@@ -14475,13 +14525,15 @@
   "year": 1468,
   "office": "戶部",
   "person": "馬昂",
-  "note": "",
+  "note": "九、癸酉、十七,致仕",
   "raw_person": "馬昂",
   "raw_office": "戶部",
   "src": "table",
   "flag": ";office重复",
   "person_id": "馬昂",
-  "person_label": "馬昂"
+  "person_label": "馬昂",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:楊鼎@1468"
  },
  {
   "year": 1468,
@@ -15075,13 +15127,15 @@
   "year": 1473,
   "office": "吏部",
   "person": "姚夔",
-  "note": "",
+  "note": "二、庚午、九、卒,贈少保,謚文敏",
   "raw_person": "姚夔",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "姚夔",
-  "person_label": "姚夔"
+  "person_label": "姚夔",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:尹旻@1473"
  },
  {
   "year": 1473,
@@ -15093,7 +15147,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、庚午、九、卒,贈少保,謚文敏。三、己亥、九,吏左侍遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "尹旻",
   "person_label": "尹旻"
@@ -15186,13 +15240,15 @@
   "year": 1474,
   "office": "兵部",
   "person": "白圭",
-  "note": "",
+  "note": "十二、辛丑、廿,卒、贈少傅,謚恭敏",
   "raw_person": "白圭",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "白圭",
-  "person_label": "白圭"
+  "person_label": "白圭",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:項忠@1474"
  },
  {
   "year": 1474,
@@ -15204,7 +15260,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十二、辛丑、廿,卒、贈少傅,謚恭敏。十二、乙巳、廿四,刑尚改。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "項忠",
   "person_label": "項忠"
@@ -15543,7 +15599,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "五、甲午、廿八,致仕;七、辛卯、廿六,巡撫陝西右都遷。六、甲辰、九,罷為民。十九年八、壬申、十二,復職致仕。弘治元年,進光祿大夫。弘治十五年八、庚戌、十一,卒,贈太子太保,謚襄毅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "余子俊",
   "person_label": "余子俊"
@@ -15552,13 +15608,15 @@
   "year": 1477,
   "office": "兵部",
   "person": "項忠",
-  "note": "",
+  "note": "五、甲午、廿八,致仕;七、辛卯、廿六,巡撫陝西右都遷",
   "raw_person": "項忠",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "項忠",
-  "person_label": "項忠"
+  "person_label": "項忠",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:余子俊@1477"
  },
  {
   "year": 1477,
@@ -15570,7 +15628,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、丁卯、二,致仕。七、辛卯、廿六,南右都遷十九年三、辛亥、十九,卒,贈太子少保,謚襄敏。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "林聰",
   "person_label": "林聰"
@@ -15579,13 +15637,15 @@
   "year": 1477,
   "office": "刑部",
   "person": "董方",
-  "note": "",
+  "note": "七、丁卯、二,致仕",
   "raw_person": "董方",
   "raw_office": "刑部",
   "src": "table",
   "flag": null,
   "person_id": "董方",
-  "person_label": "董方"
+  "person_label": "董方",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:林聰@1477"
  },
  {
   "year": 1477,
@@ -15663,13 +15723,15 @@
   "year": 1477,
   "office": "都察院",
   "person": "李賓",
-  "note": "",
+  "note": "七、丁卯、二,致仕",
   "raw_person": "李賓",
   "raw_office": "都察院",
   "src": "table",
   "flag": null,
   "person_id": "李賓",
-  "person_label": "李賓"
+  "person_label": "李賓",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:王越@1477"
  },
  {
   "year": 1477,
@@ -15681,7 +15743,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、丁卯、二,致仕。十二、丙辰、廿三,加兵尚。廿一年五、乙丑、十六,卒,贈太子太保,謚襄敏。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "王越",
   "person_label": "王越"
@@ -15828,7 +15890,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十二、乙亥、廿四,致仕。十二、乙亥、廿四,工右侍遷。廿一年六、丙午、廿七,卒,贈太子太保,謚莊簡。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "劉昭",
   "person_label": "劉昭"
@@ -15837,13 +15899,15 @@
   "year": 1479,
   "office": "工部",
   "person": "王復",
-  "note": "",
+  "note": "十二、乙亥、廿四,致仕",
   "raw_person": "王復",
   "raw_office": "工部",
   "src": "table",
   "flag": null,
   "person_id": "王復",
-  "person_label": "王復"
+  "person_label": "王復",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:劉昭@1479"
  },
  {
   "year": 1479,
@@ -15879,7 +15943,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十二、乙亥、廿四,致仕。十二、乙亥、廿四,太子少保工尚,理通政司事改弘治五年四、戊午、十八,卒,贈太子太保,謚康靖。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "張文質",
   "person_label": "張文質"
@@ -15888,13 +15952,15 @@
   "year": 1479,
   "office": "禮部",
   "person": "鄒幹",
-  "note": "",
+  "note": "十二、乙亥、廿四,致仕",
   "raw_person": "鄒幹",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
   "person_id": "鄒幹",
-  "person_label": "鄒幹"
+  "person_label": "鄒幹",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:張文質@1479"
  },
  {
   "year": 1479,
@@ -16158,7 +16224,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三、辛卯、十七,加太子太傅,掌領前軍府事,總五軍營,提督團營操練;五、己亥、廿五,赴宣府;十一、己卯、九,還;十二、庚申、廿,鎮大同。戴縉三、戊戌、廿四,右副都遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:戴縉",
   "person_id": "王越",
   "person_label": "王越"
@@ -16341,7 +16407,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、辛卯、廿八,加太子太保致仕;七、辛亥、廿一,服闕兵尚改,尋加太子太保。六、戊辰、七,卒。廿年三、乙巳、十八,贈太子少傅,謚襄敏。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "余子俊",
   "person_label": "余子俊"
@@ -16350,13 +16416,15 @@
   "year": 1483,
   "office": "戶部",
   "person": "翁世資",
-  "note": "",
+  "note": "二、辛卯、廿八,加太子太保致仕;七、辛亥、廿一,服闕兵尚改,尋加太子太保",
   "raw_person": "翁世資",
   "raw_office": "戶部",
   "src": "table",
   "flag": null,
   "person_id": "翁世資",
-  "person_label": "翁世資"
+  "person_label": "翁世資",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:余子俊@1483"
  },
  {
   "year": 1483,
@@ -16530,13 +16598,15 @@
   "year": 1485,
   "office": "兵部",
   "person": "張鵬",
-  "note": "",
+  "note": "四、辛丑、廿一,致仕",
   "raw_person": "張鵬",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "張鵬",
-  "person_label": "張鵬"
+  "person_label": "張鵬",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:馬文升@1485"
  },
  {
   "year": 1485,
@@ -16548,7 +16618,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "四、辛丑、廿一,致仕。十一、辛未、廿四,巡撫鳳陽右都任。弘治四年六、癸亥、十八,卒,謚懿簡。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "馬文升",
   "person_label": "馬文升"
@@ -16647,7 +16717,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、庚申、十二,卒,贈太子太保.正德十三年,謚恭簡。七、甲戌、廿六,右副都遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "屠滽",
   "person_label": "屠滽"
@@ -16656,13 +16726,15 @@
   "year": 1485,
   "office": "都察院",
   "person": "朱英",
-  "note": "",
+  "note": "七、甲戌、廿六,右副都遷",
   "raw_person": "朱英",
   "raw_office": "都察院",
   "src": "table",
   "flag": null,
   "person_id": "朱英",
-  "person_label": "朱英"
+  "person_label": "朱英",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:屠滽@1485"
  },
  {
   "year": 1486,
@@ -16872,13 +16944,15 @@
   "year": 1487,
   "office": "吏部",
   "person": "李裕",
-  "note": "",
+  "note": "十一、辛丑、六,致仕",
   "raw_person": "李裕",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "李裕",
-  "person_label": "李裕"
+  "person_label": "李裕",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:王恕@1487"
  },
  {
   "year": 1487,
@@ -16890,7 +16964,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十一、辛丑、六,致仕。十一、乙巳、十,致仕南兵尚起復改;正德六年八、癸未、六,卒。十二、癸巳、廿八,至京;十二、乙未、卅,加太子太保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "王恕",
   "person_label": "王恕"
@@ -16971,13 +17045,13 @@
   "year": 1487,
   "office": "都察院",
   "person": "馬文升",
-  "note": "",
+  "note": "十一、乙巳、十,南兵尚改",
   "raw_person": "馬文升",
   "raw_office": "都察院",
   "src": "table",
   "flag": null,
   "raw_note": "十一、乙巳、十,南兵尚改。劉敷二、壬午、十二,赴任;十一、癸卯、八,致仕。弘治五年,進散官一級。弘治十五年卒。",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:劉敷",
   "person_id": "馬文升",
   "person_label": "馬文升"
@@ -17094,13 +17168,15 @@
   "year": 1489,
   "office": "兵部",
   "person": "余子俊",
-  "note": "",
+  "note": "二、辛亥、廿三,卒,贈太保,謚襄敏",
   "raw_person": "余子俊",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "余子俊",
-  "person_label": "余子俊"
+  "person_label": "余子俊",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:馬文升@1489"
  },
  {
   "year": 1489,
@@ -17112,7 +17188,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、辛亥、廿三,卒,贈太保,謚襄敏。二、乙卯、廿七,左都改。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "馬文升",
   "person_label": "馬文升"
@@ -17301,13 +17377,15 @@
   "year": 1491,
   "office": "刑部",
   "person": "何喬新",
-  "note": "",
+  "note": "八、甲寅、十,致仕",
   "raw_person": "何喬新",
   "raw_office": "刑部",
   "src": "table",
   "flag": null,
   "person_id": "何喬新",
-  "person_label": "何喬新"
+  "person_label": "何喬新",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:彭韶@1491"
  },
  {
   "year": 1491,
@@ -17319,7 +17397,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "八、甲寅、十,致仕。九、戊寅、五,吏左侍遷。十五年十二、庚申、廿二,卒。正德十三年八、庚寅、廿三,贈太子太保,謚文肅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "彭韶",
   "person_label": "彭韶"
@@ -17352,13 +17430,15 @@
   "year": 1491,
   "office": "戶部",
   "person": "李敏",
-  "note": "",
+  "note": "正、甲辰、廿七,致仕;二、乙丑、十九,戶左侍遷",
   "raw_person": "李敏",
   "raw_office": "戶部",
   "src": "table",
   "flag": null,
   "person_id": "李敏#2",
-  "person_label": "李敏（1487–1491）"
+  "person_label": "李敏（1487–1491）",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:葉淇@1491"
  },
  {
   "year": 1491,
@@ -17370,7 +17450,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "正、甲辰、廿七,致仕;二、乙丑、十九,戶左侍遷。二、辛未、廿五,卒,贈太子少保,謚恭靖。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "葉淇",
   "person_label": "葉淇"
@@ -17535,13 +17615,15 @@
   "year": 1493,
   "office": "刑部",
   "person": "彭韶",
-  "note": "",
+  "note": "七、庚戌、十八,致仕",
   "raw_person": "彭韶",
   "raw_office": "刑部",
   "src": "table",
   "flag": null,
   "person_id": "彭韶",
-  "person_label": "彭韶"
+  "person_label": "彭韶",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:白昂@1493"
  },
  {
   "year": 1493,
@@ -17553,7 +17635,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、庚戌、十八,致仕。八、丙寅、四,右都遷。八年正、己未、十一,卒,贈太子少保,謚惠安。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "白昂",
   "person_label": "白昂"
@@ -17562,13 +17644,15 @@
   "year": 1493,
   "office": "吏部",
   "person": "王恕",
-  "note": "",
+  "note": "五、乙卯、廿二,致仕",
   "raw_person": "王恕",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "王恕",
-  "person_label": "王恕"
+  "person_label": "王恕",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:耿裕@1493"
  },
  {
   "year": 1493,
@@ -17580,7 +17664,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "五、乙卯、廿二,致仕。六、壬午、廿,禮尚改。正德三年四、己卯、十二,卒,贈太師,謚端毅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "耿裕",
   "person_label": "耿裕"
@@ -17691,7 +17775,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、丙子、十七,致仕。八年六、己巳、十八,卒。二、丁亥、廿八,南禮尚改。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "劉璋",
   "person_label": "劉璋"
@@ -17700,13 +17784,15 @@
   "year": 1494,
   "office": "工部",
   "person": "賈俊",
-  "note": "",
+  "note": "二、丙子、十七,致仕",
   "raw_person": "賈俊",
   "raw_office": "工部",
   "src": "table",
   "flag": null,
   "person_id": "賈俊",
-  "person_label": "賈俊"
+  "person_label": "賈俊",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:劉璋@1494"
  },
  {
   "year": 1494,
@@ -19226,13 +19312,13 @@
   "year": 1505,
   "office": "都察院",
   "person": "戴珊",
-  "note": "",
+  "note": "十二、癸酉、廿三,卒,贈太子太保,謚恭簡",
   "raw_person": "戴珊",
   "raw_office": "都察院",
   "src": "table",
   "flag": null,
   "raw_note": "十二、癸酉、廿三,卒,贈太子太保,謚恭簡。史琳",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:史琳",
   "person_id": "戴珊",
   "person_label": "戴珊"
@@ -19427,7 +19513,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "四、丁亥、十四,加太子太保致仕。四、甲午、廿一,左都改;七年八、癸丑、十二,卒。四、壬寅、廿九、兼督團營;八、丙戌、十五,加太子少保;九、癸卯、三,遷太子太傅,尚書如故。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "劉宇",
   "person_label": "劉宇"
@@ -19436,13 +19522,15 @@
   "year": 1507,
   "office": "兵部",
   "person": "閻仲宇",
-  "note": "",
+  "note": "四、丁亥、十四,加太子太保致仕",
   "raw_person": "閻仲宇",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "閻仲宇",
-  "person_label": "閻仲宇"
+  "person_label": "閻仲宇",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:劉宇@1507"
  },
  {
   "year": 1507,
@@ -19454,7 +19542,7 @@
   "src": "table",
   "flag": "note?",
   "raw_note": "正、癸亥、十九,加少保致仕。閏正、己巳、廿五,右都遷。六年十、壬辰、十五,卒,贈太保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "屠勳",
   "person_label": "屠勳"
@@ -19463,13 +19551,15 @@
   "year": 1507,
   "office": "刑部",
   "person": "閻珪",
-  "note": "",
+  "note": "正、癸亥、十九,加少保致仕",
   "raw_person": "閻珪",
   "raw_office": "刑部",
   "src": "table",
   "flag": null,
   "person_id": "閻珪",
-  "person_label": "閻珪"
+  "person_label": "閻珪",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:屠勳@1507"
  },
  {
   "year": 1507,
@@ -19529,7 +19619,7 @@
   "src": "table",
   "flag": "note?;note?",
   "raw_note": "正、辛酉、十七,加太子太保致仕。閏正、丁卯、廿三,南吏尚改;十、丙子、六,禮左侍兼翰林九、辛酉、廿一,致仕。院學士遷。十二年十二、壬子、十一,卒,十二年閏十二、丙戌、十五,贈太子太傅。十六年五、庚辰、廿九,謚文僖。卒,贈太子太保,諡文安。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "劉機",
   "person_label": "劉機"
@@ -19562,13 +19652,15 @@
   "year": 1507,
   "office": "總督京儲",
   "person": "何鈞",
-  "note": "",
+  "note": "是年,歸養疾",
   "raw_person": "何鈞",
   "raw_office": "總督京儲",
   "src": "table",
   "flag": null,
   "person_id": "何鈞",
-  "person_label": "何鈞"
+  "person_label": "何鈞",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:林泮@1507"
  },
  {
   "year": 1507,
@@ -19580,7 +19672,7 @@
   "src": "table",
   "flag": "note?",
   "raw_note": "是年,歸養疾。閏正、壬子、八,順天尹遷戶右侍。三年十二、壬申、九,致仕。五年十、庚子、十七,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "林泮",
   "person_label": "林泮"
@@ -19607,7 +19699,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "正、甲子、廿、右都遷;四、己亥、廿六,致仕太子太傅吏尚起復,兼左四、甲午、廿一,改兵尚。都掌院事。屠勳",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:屠勳",
   "person_id": "屠滽",
   "person_label": "屠滽"
@@ -19838,7 +19930,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "正、癸丑、廿,致仕。正、丙辰、廿三,工尚改;十二、丁酉、十,刑左侍遷。十四年七、甲午、三,卒。十一、丁卯、九,加太子太保;十一、乙酉、廿七,兼左都莅院事。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "洪鍾",
   "person_label": "洪鍾"
@@ -19847,13 +19939,15 @@
   "year": 1509,
   "office": "刑部",
   "person": "王鑑之",
-  "note": "",
+  "note": "正、癸丑、廿,致仕",
   "raw_person": "王鑑之",
   "raw_office": "刑部",
   "src": "table",
   "flag": null,
   "person_id": "王鑑之",
-  "person_label": "王鑑之"
+  "person_label": "王鑑之",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:洪鍾@1509"
  },
  {
   "year": 1509,
@@ -20399,13 +20493,15 @@
   "year": 1512,
   "office": "戶部",
   "person": "洪鍾",
-  "note": "",
+  "note": "九、戊子、十六,還;十二、壬寅、二,加榮祿大夫致仕",
   "raw_person": "洪鍾",
   "raw_office": "戶部",
   "src": "table",
   "flag": ";③顺序兜底",
   "person_id": "洪鍾",
-  "person_label": "洪鍾"
+  "person_label": "洪鍾",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:陸完@1512"
  },
  {
   "year": 1512,
@@ -20417,7 +20513,7 @@
   "src": "table",
   "flag": ";③顺序兜底",
   "raw_note": "九、戊子、十六,還;十二、壬寅、二,加榮祿大夫致仕。嘉靖十、辛酉、廿一,右都遷。二年四、庚寅、十九,卒。嘉靖三年十二、己亥、九,謚襄惠。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "陸完",
   "person_label": "陸完"
@@ -20510,13 +20606,15 @@
   "year": 1513,
   "office": "兵部",
   "person": "何鑑",
-  "note": "",
+  "note": "十一、己巳、五,致仕",
   "raw_person": "何鑑",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "何鑑",
-  "person_label": "何鑑"
+  "person_label": "何鑑",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:陸完@1513"
  },
  {
   "year": 1513,
@@ -20528,7 +20626,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十一、己巳、五,致仕。十一、辛巳、十七,左都遷;十六年八月,卒。十一、己丑、廿五,提督團營",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "陸完",
   "person_label": "陸完"
@@ -20597,13 +20695,15 @@
   "year": 1513,
   "office": "禮部",
   "person": "傅珪",
-  "note": "",
+  "note": "六、辛亥、十四,致仕",
   "raw_person": "傅珪",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
   "person_id": "傅珪",
-  "person_label": "傅珪"
+  "person_label": "傅珪",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:劉春@1513"
  },
  {
   "year": 1513,
@@ -20615,7 +20715,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "六、辛亥、十四,致仕。六、丙寅、廿九,吏左侍遷。十年四、辛丑、十四,卒。十六年五、丙辰、五,贈太子少保,謚文毅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "劉春",
   "person_label": "劉春"
@@ -20648,13 +20748,13 @@
   "year": 1513,
   "office": "都察院",
   "person": "陸完",
-  "note": "",
+  "note": "十一、辛巳、十七,遷兵尚",
   "raw_person": "陸完",
   "raw_office": "都察院",
   "src": "table",
   "flag": null,
   "raw_note": "十一、辛巳、十七,遷兵尚李士實",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:李士實",
   "person_id": "陸完",
   "person_label": "陸完"
@@ -21401,7 +21501,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "四、辛巳、十八,致仕。五、辛丑、九,總京儲戶尚回。十六年二、己丑、六,卒;五、壬戌、十一,贈太子少保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "楊潭",
   "person_label": "楊潭"
@@ -21410,13 +21510,15 @@
   "year": 1519,
   "office": "戶部",
   "person": "石玠",
-  "note": "",
+  "note": "四、辛巳、十八,致仕",
   "raw_person": "石玠",
   "raw_office": "戶部",
   "src": "table",
   "flag": null,
   "person_id": "石玠",
-  "person_label": "石玠"
+  "person_label": "石玠",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:楊潭@1519"
  },
  {
   "year": 1519,
@@ -21776,7 +21878,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "四、戊申、廿七,致仕。嘉靖十二年正、辛未、廿八,卒,贈少保,謚恭靖。張綸七、己未、十,令自陳;七、乙丑、十六,致仕。嘉靖二年十二、庚申、廿四,卒。嘉靖五年三、丙午、廿一,贈太子少保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:張綸",
   "person_id": "王璟",
   "person_label": "王璟"
@@ -21791,7 +21893,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "四、戊申、廿七,致仕。嘉靖八年七、庚申、廿七,卒。金獻民六、辛丑、廿一,南刑尚改。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:金獻民",
   "person_id": "陳金",
   "person_label": "陳金"
@@ -21914,7 +22016,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十一、丙寅、廿四,卒。.金獻民",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:金獻民",
   "person_id": "鄭宗仁",
   "person_label": "鄭宗仁"
@@ -21935,13 +22037,15 @@
   "year": 1523,
   "office": "兵部",
   "person": "彭澤",
-  "note": "",
+  "note": "六、丁卯、廿八,在部調理;十一、壬申、六,刑尚改",
   "raw_person": "彭澤",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "彭澤",
-  "person_label": "彭澤"
+  "person_label": "彭澤",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:金獻民@1523"
  },
  {
   "year": 1523,
@@ -21953,7 +22057,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "六、丁卯、廿八,在部調理;十一、壬申、六,刑尚改。十、己未、廿三,加少保致仕,尋奪官,卒於家。隆慶元年八、甲申、二,復官,贈少保,謚襄毅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "金獻民",
   "person_label": "金獻民"
@@ -21962,13 +22066,15 @@
   "year": 1523,
   "office": "刑部",
   "person": "林俊",
-  "note": "",
+  "note": "七、庚寅、廿二,加太子太保致仕",
   "raw_person": "林俊",
   "raw_office": "刑部",
   "src": "table",
   "flag": null,
   "person_id": "林俊",
-  "person_label": "林俊"
+  "person_label": "林俊",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:金獻民@1523"
  },
  {
   "year": 1523,
@@ -21992,7 +22098,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、庚寅、廿二,加太子太保致仕。八、己亥、二,左都改;六年四、王子、六,卒。十一、壬申、六,改兵尚。七年削官。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "金獻民",
   "person_label": "金獻民"
@@ -22025,13 +22131,15 @@
   "year": 1523,
   "office": "戶部",
   "person": "孫交",
-  "note": "",
+  "note": "四、丁亥、十六,病滿三月乞住俸不允;十一、丁卯、一,南兵尚改",
   "raw_person": "孫交",
   "raw_office": "戶部",
   "src": "table",
   "flag": null,
   "person_id": "孫交",
-  "person_label": "孫交"
+  "person_label": "孫交",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:秦金@1523"
  },
  {
   "year": 1523,
@@ -22043,7 +22151,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "四、丁亥、十六,病滿三月乞住俸不允;十一、丁卯、一,南兵尚改。十、辛亥、十五,加太子太保致仕。十二年二、庚子、廿七,卒,赠少保,謚榮僖。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "秦金",
   "person_label": "秦金"
@@ -22052,13 +22160,15 @@
   "year": 1523,
   "office": "禮部",
   "person": "毛澄",
-  "note": "",
+  "note": "二、辛丑、卅,致仕;三、壬子、十一,南吏尚改,尋七、戊子、廿,吏左侍遷",
   "raw_person": "毛澄",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
   "person_id": "毛澄",
-  "person_label": "毛澄"
+  "person_label": "毛澄",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:汪俊@1523"
  },
  {
   "year": 1523,
@@ -22070,7 +22180,7 @@
   "src": "table",
   "flag": "note?;note?",
   "raw_note": "二、辛丑、卅,致仕;三、壬子、十一,南吏尚改,尋七、戊子、廿,吏左侍遷。閏四、庚戌、十,卒,贈少傅,誡文簡。丁憂歸。六年二、辛酉、十四,服闊復原官。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "汪俊",
   "person_label": "汪俊"
@@ -22127,13 +22237,13 @@
   "year": 1523,
   "office": "都察院",
   "person": "金獻民",
-  "note": "",
+  "note": "八、己亥、二,改刑尚",
   "raw_person": "金獻民",
   "raw_office": "都察院",
   "src": "table",
   "flag": null,
   "raw_note": "八、己亥、二,改刑尚。俞諫八、乙巳、八,總漕運右都回院..",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:俞諫",
   "person_id": "金獻民",
   "person_label": "金獻民"
@@ -22256,7 +22366,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三、丙戌、廿一,致仕閑住,卒。隆慶元年四、甲寅、廿九,復官,贈少保,謚文莊。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "汪俊",
   "person_label": "汪俊"
@@ -22319,7 +22429,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三、癸酉、十四,還京辭兼職,理部事;六、庚戌、廿二,右都遷。六、丁酉、九、致仕。七年五、甲午、廿四,下獄,尋令革職冠帶閑住,卒於家。隆慶二年十一、庚申、十五,復秩,予祭葬。隆慶三年正、丁巳、十三,贈太子少保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "李鉞",
   "person_label": "李鉞"
@@ -22328,13 +22438,15 @@
   "year": 1525,
   "office": "兵部",
   "person": "金獻民",
-  "note": "",
+  "note": "三、癸酉、十四,還京辭兼職,理部事;六、庚戌、廿二,右都遷",
   "raw_person": "金獻民",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "金獻民",
-  "person_label": "金獻民"
+  "person_label": "金獻民",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:李鉞@1525"
  },
  {
   "year": 1525,
@@ -22412,13 +22524,13 @@
   "year": 1525,
   "office": "都察院",
   "person": "顏頤壽",
-  "note": "",
+  "note": "六、丙辰、廿八,南吏尚改",
   "raw_person": "顏頤壽",
   "raw_office": "都察院",
   "src": "table",
   "flag": null,
   "raw_note": "六、丙辰、廿八,南吏尚改。李鉞六、庚戌、廿二,遷兵尚。",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:李鉞",
   "person_id": "顏頤壽",
   "person_label": "顏頤壽"
@@ -22733,7 +22845,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "五、丙申、廿,掌詹事府事禮尔回部;九、丁亥、十三,改南吏尚,加太子少保。方獻夫十一、戊子、十四,吏左侍遷,仍兼學士。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:方獻夫",
   "person_id": "吳一鵬",
   "person_label": "吳一鵬"
@@ -22904,7 +23016,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "六月,卒。七、庚辰、十,刑左侍遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "劉麟",
   "person_label": "劉麟"
@@ -22913,13 +23025,15 @@
   "year": 1528,
   "office": "工部",
   "person": "童瑞",
-  "note": "",
+  "note": "六月,卒",
   "raw_person": "童瑞",
   "raw_office": "工部",
   "src": "table",
   "flag": null,
   "person_id": "童瑞",
-  "person_label": "童瑞"
+  "person_label": "童瑞",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:劉麟@1528"
  },
  {
   "year": 1528,
@@ -22931,7 +23045,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十二、辛巳、十四,致仕。十二、戊子、廿一,戶左侍遷。十六年七、乙巳、廿八,卒,贈太子少保,謚莊簡。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "梁材",
   "person_label": "梁材"
@@ -22940,13 +23054,15 @@
   "year": 1528,
   "office": "戶部",
   "person": "鄒文盛",
-  "note": "",
+  "note": "十二、辛巳、十四,致仕",
   "raw_person": "鄒文盛",
   "raw_office": "戶部",
   "src": "table",
   "flag": null,
   "person_id": "鄒文盛",
-  "person_label": "鄒文盛"
+  "person_label": "鄒文盛",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:梁材@1528"
  },
  {
   "year": 1528,
@@ -23042,7 +23158,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "四、丁亥、廿一,致仕。五、甲辰、十,南刑尚改;九、乙巳、十三,刑左侍遷。廿五年三、己卯、廿二,卒,九、乙巳、十三,改南刑尚。贈太子少保,謚襄簡。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "許讚",
   "person_label": "許讚"
@@ -23087,13 +23203,15 @@
   "year": 1529,
   "office": "工部",
   "person": "劉麟",
-  "note": "",
+  "note": "七、丁酉、四,致仕;八、庚午、七,南工尚改",
   "raw_person": "劉麟",
   "raw_office": "工部",
   "src": "table",
   "flag": null,
   "person_id": "劉麟",
-  "person_label": "劉麟"
+  "person_label": "劉麟",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:章拯@1529"
  },
  {
   "year": 1529,
@@ -23105,7 +23223,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、丁酉、四,致仕;八、庚午、七,南工尚改。八、丙子、十三,革新任以原職致仕。四十年四、辛卯、二,卒,贈太子少保,謚清惠。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "章拯",
   "person_label": "章拯"
@@ -23180,7 +23298,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、癸酉、七,回部。八、乙丑、二,南兵尚改,仍太子太保;十二、辛未、九、罷。十年十一、甲子、十四,召改兵尚。伍文定熊浹汪銥二、癸酉、七,總雲貴二、戊寅、十二,左副都遷,十二、庚辰、十八,刑右侍遷,兵尚兼右都回;三、己未、廿四,致仕。七、甲午、一,罷。九年十、辛未、十五,卒。十八年七、庚寅、廿五,起改天敬年間,謚忠襄。南禮尚。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:熊浹",
   "person_id": "王憲",
   "person_label": "王憲"
@@ -23297,13 +23415,15 @@
   "year": 1531,
   "office": "兵部",
   "person": "李承勛",
-  "note": "",
+  "note": "三、己丑、四,卒,四、壬戌、八,起復兵尚;十一、甲子、十四,起左都改",
   "raw_person": "李承勛",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "李承勛",
-  "person_label": "李承勛"
+  "person_label": "李承勛",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:王憲@1531"
  },
  {
   "year": 1531,
@@ -23315,7 +23435,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三、己丑、四,卒,四、壬戌、八,起復兵尚;十一、甲子、十四,起左都改。贈少保,謚康惠。九、甲戌、廿四,改刑尚。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "王憲",
   "person_label": "王憲"
@@ -23636,13 +23756,15 @@
   "year": 1533,
   "office": "刑部",
   "person": "王時中",
-  "note": "",
+  "note": "二、癸卯、卅,閑住",
   "raw_person": "王時中",
   "raw_office": "刑部",
   "src": "table",
   "flag": null,
   "person_id": "王時中",
-  "person_label": "王時中"
+  "person_label": "王時中",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:聶賢@1533"
  },
  {
   "year": 1533,
@@ -23654,7 +23776,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、癸卯、卅,閑住。四、甲戌、二,左都改。十五年致仕。廿一年正、丁酉、十六,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "聶賢",
   "person_label": "聶賢"
@@ -23825,7 +23947,7 @@
   "src": "table",
   "flag": ";office重复",
   "raw_note": "七、己巳、四,罷。七、丁亥、廿二,大理卿遷戶右侍。廿三年,卒,贈右都。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "周叙",
   "person_label": "周叙"
@@ -23834,13 +23956,15 @@
   "year": 1534,
   "office": "總督京儲",
   "person": "黃芳",
-  "note": "",
+  "note": "七、己巳、四,罷",
   "raw_person": "黃芳",
   "raw_office": "總督京儲",
   "src": "table",
   "flag": ";office重复",
   "person_id": "黃芳",
-  "person_label": "黃芳"
+  "person_label": "黃芳",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:周叙@1534"
  },
  {
   "year": 1534,
@@ -23876,7 +24000,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三、乙亥、十五,致仕。三、甲申、廿四,兩廣提督兵左侍兼左僉都遷。十六年十、乙亥、廿九,卒,贈少保,謚康毅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "張瓚",
   "person_label": "張瓚"
@@ -23885,13 +24009,15 @@
   "year": 1535,
   "office": "兵部",
   "person": "王憲",
-  "note": "",
+  "note": "三、乙亥、十五,致仕",
   "raw_person": "王憲",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "王憲",
-  "person_label": "王憲"
+  "person_label": "王憲",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:張瓚@1535"
  },
  {
   "year": 1535,
@@ -23903,7 +24029,7 @@
   "src": "table",
   "flag": "note?;note?",
   "raw_note": "七、庚辰、廿一,令自陳,尋致仕。七、戊子、廿九,總制三邊兵尚改,仍加太子十九年七、甲寅、廿五,卒,贈太子少保,謚榮襄。太保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "唐龍",
   "person_label": "唐龍"
@@ -23912,13 +24038,15 @@
   "year": 1535,
   "office": "刑部",
   "person": "聶賢",
-  "note": "",
+  "note": "七、庚辰、廿一,令自陳,尋致仕",
   "raw_person": "聶賢",
   "raw_office": "刑部",
   "src": "table",
   "flag": null,
   "person_id": "聶賢",
-  "person_label": "聶賢"
+  "person_label": "聶賢",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:唐龍@1535"
  },
  {
   "year": 1535,
@@ -24134,7 +24262,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十一、甲寅、二,戶尚兼西苑農事;閏十二、丁丑、廿六,辭總京儲事,專營西苑農事。十六年六、甲寅、七,致仕。廿三年四、戊寅、十一,卒,贈太子少保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "張雲",
   "person_label": "張雲"
@@ -24161,7 +24289,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "四、己亥、十五,加太子少保。毛伯溫十一、壬申、廿,起閑住右副都遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:毛伯溫",
   "person_id": "王廷相",
   "person_label": "王廷相"
@@ -24584,7 +24712,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、乙卯、十六,南巡扈從;六、丙辰、廿,掌大理卿印右都遷。四、癸亥、廿九,還京;六、甲辰、八,致仕。廿年正、壬子、廿六,卒,贈太子太保,謚康惠。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "周期雍",
   "person_label": "周期雍"
@@ -24593,13 +24721,15 @@
   "year": 1539,
   "office": "刑部",
   "person": "楊志學",
-  "note": "",
+  "note": "二、乙卯、十六,南巡扈從;六、丙辰、廿,掌大理卿印右都遷",
   "raw_person": "楊志學",
   "raw_office": "刑部",
   "src": "table",
   "flag": null,
   "person_id": "楊志學",
-  "person_label": "楊志學"
+  "person_label": "楊志學",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:周期雍@1539"
  },
  {
   "year": 1539,
@@ -24641,13 +24771,15 @@
   "year": 1539,
   "office": "戶部",
   "person": "李廷相",
-  "note": "",
+  "note": "二、癸丑、十四,加太子賓客;五、丙子、九,原戶尚起復,二、乙卯、十六,南巡扈從;加太子少保",
   "raw_person": "李廷相",
   "raw_office": "戶部",
   "src": "table",
   "flag": null,
   "person_id": "李廷相",
-  "person_label": "李廷相"
+  "person_label": "李廷相",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:梁材@1539"
  },
  {
   "year": 1539,
@@ -24659,7 +24791,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、癸丑、十四,加太子賓客;五、丙子、九,原戶尚起復,二、乙卯、十六,南巡扈從;加太子少保。三、辛巳、十三,降二級;四、丙寅、廿九,還京;五、戊辰、一,致仕。廿三年七、戊戌、一,卒,贈太子少保,謚文敏。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "梁材",
   "person_label": "梁材"
@@ -24710,8 +24842,8 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、乙卯、十六,南巡扈從;三、丙戌、十八,加太子太保;四、丙寅、廿九,還京。毛伯溫周期雍二、壬寅、三,總宣大山西三關;是年,刑左侍遷;四、庚申、廿三,召還京;六、丙辰、廿,遷刑尚。五、戊辰、一,加太子賓客;閏七、辛酉、廿六,敕南征;十、壬午、十八,加太子少保。",
-  "note_status": "quarantined",
-  "note_quarantine_reason": "contains-other-name:周期雍",
+  "note_status": "manual-review",
+  "note_quarantine_reason": "contains-other-name:毛伯溫",
   "person_id": "王廷相",
   "person_label": "王廷相"
  },
@@ -25061,7 +25193,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七月,罷為民。廿三年九、癸卯、七,卒。隆慶元年五、甲子、上,復秩;六、戊申、廿五,謚肅敏;七、庚申、七,贈少保。毛伯溫四、己未、三,進太子太保;八、辛巳、廿八,回掌院事。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:毛伯溫",
   "person_id": "王廷相",
   "person_label": "王廷相"
@@ -25100,7 +25232,7 @@
   "src": "table",
   "flag": "note?",
   "raw_note": "九、甲寅、七,兼督團營;八、辛丑、廿四,致仕。十一、壬申、廿六,右都兼兵尚改,十、丙午、卅,卒,贈太傅,廿四年十二、甲寅、廿五,卒,贈少兼督團營,謚恭襄。保,謚莊襄。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "毛伯溫",
   "person_label": "毛伯溫"
@@ -25109,13 +25241,15 @@
   "year": 1542,
   "office": "刑部",
   "person": "吳山",
-  "note": "",
+  "note": "十、丁亥、十一,罷為民歸;十、庚子、廿四,南吏尚改",
   "raw_person": "吴山",
   "raw_office": "刑部",
   "src": "table",
   "flag": null,
   "person_id": "吳山#1",
-  "person_label": "吳山（1541–1542）"
+  "person_label": "吳山（1541–1542）",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:聞淵@1542"
  },
  {
   "year": 1542,
@@ -25127,7 +25261,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十、丁亥、十一,罷為民歸;十、庚子、廿四,南吏尚改。十一、癸丑、七,道卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "聞淵",
   "person_label": "聞淵"
@@ -25496,13 +25630,15 @@
   "year": 1545,
   "office": "兵部",
   "person": "戴金",
-  "note": "",
+  "note": "正、甲戌、十一,致仕",
   "raw_person": "戴金",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "戴金",
-  "person_label": "戴金"
+  "person_label": "戴金",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:路迎@1545"
  },
  {
   "year": 1545,
@@ -25514,7 +25650,7 @@
   "src": "table",
   "flag": "note?",
   "raw_note": "正、甲戌、十一,致仕。閏正、丁丑、十四,十二、甲辰、十五,兵左侍遷廿七年五、辛巳、六,卒。南太子少保吏尚改;兼提督團營。四、戊戌、六,兼督團營;七、甲子、四,加太子太保;十二、癸巳、四,改吏尚。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "路迎",
   "person_label": "路迎"
@@ -25541,7 +25677,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、辛酉、一,加太子太保;十二、癸巳、四,兵尚改。十一、辛巳、廿二,罷為民。卅三年九、辛酉、廿三,卒。隆慶元年正、辛酉、五,贈少保,謚恭肅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "唐龍",
   "person_label": "唐龍"
@@ -25550,13 +25686,15 @@
   "year": 1545,
   "office": "吏部",
   "person": "熊浹",
-  "note": "",
+  "note": "七、辛酉、一,加太子太保;十二、癸巳、四,兵尚改",
   "raw_person": "熊浹",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "熊浹",
-  "person_label": "熊浹"
+  "person_label": "熊浹",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:唐龍@1545"
  },
  {
   "year": 1545,
@@ -25810,7 +25948,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、甲辰、廿二,南刑尚改;九、己巳、廿一,改左都。喻茂堅閏九、戊子、十,總漕右都遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:喻茂堅",
   "person_id": "屠僑",
   "person_label": "屠僑"
@@ -25957,7 +26095,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、丁酉、十五,工尚改;九、丙辰、八,改兵尚。屠僑九、己巳、廿一,刑尚改。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:屠僑",
   "person_id": "王以旂",
   "person_label": "王以旂"
@@ -26116,7 +26254,7 @@
   "src": "table",
   "flag": "note?",
   "raw_note": "三、壬午、十二,加四、丙辰、十七,兵左侍遷,未任罷。五、甲戌、五,總宣大兵尙回部;六、丙寅、廿八,兼督團營;十、辛酉、廿五,丁憂歸。十、癸亥、廿七,吏左侍遷;十一、乙亥、十,兼督團營。四、辛亥、十二,革職閑住;六、庚子、二,卒。兵左侍遷,未任罷。六、丙寅、廿八,兼督團營;十、辛酉、廿五,丁憂歸。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "丁汝夔",
   "person_label": "丁汝夔"
@@ -26191,7 +26329,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "九、戊寅、十二,致仕。九、癸巳、廿四,戶尚改。四十二年十一、丙戌、十一,卒,贈少保,謚莊簡。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "夏邦謨",
   "person_label": "夏邦謨"
@@ -26200,25 +26338,29 @@
   "year": 1549,
   "office": "吏部",
   "person": "聞淵",
-  "note": "",
+  "note": "九、戊寅、十二,致仕",
   "raw_person": "聞淵",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "聞淵",
-  "person_label": "聞淵"
+  "person_label": "聞淵",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:夏邦謨@1549"
  },
  {
   "year": 1549,
   "office": "工部",
   "person": "文明",
-  "note": "",
+  "note": "十一、庚寅、廿五,卒",
   "raw_person": "文明",
   "raw_office": "工部",
   "src": "table",
   "flag": null,
   "person_id": "文明",
-  "person_label": "文明"
+  "person_label": "文明",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:李士翱@1549"
  },
  {
   "year": 1549,
@@ -26230,7 +26372,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十一、庚寅、廿五,卒。十二、丁未、十二,督倉場戶左侍遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "李士翱",
   "person_label": "李士翱"
@@ -26917,7 +27059,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三、癸卯、廿七,加太子少保;八、癸未、十,原任吏尚復;八、己卯、五,削籍。十一、辛未、廿九,至京。四十四年卒。隆慶元年十二、己巳、廿五,復官秩,贈太子太保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "李默",
   "person_label": "李默"
@@ -26926,13 +27068,15 @@
   "year": 1553,
   "office": "吏部",
   "person": "萬鎧",
-  "note": "",
+  "note": "三、癸卯、廿七,加太子少保;八、癸未、十,原任吏尚復;八、己卯、五,削籍",
   "raw_person": "萬鎧",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "萬鎧",
-  "person_label": "萬鎧"
+  "person_label": "萬鎧",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:李默@1553"
  },
  {
   "year": 1553,
@@ -27082,13 +27226,15 @@
   "year": 1554,
   "office": "禮部",
   "person": "歐陽德",
-  "note": "",
+  "note": "三、癸亥、廿三,卒,贈太子少保,謚文莊",
   "raw_person": "歐陽德",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
   "person_id": "歐陽德",
-  "person_label": "歐陽德"
+  "person_label": "歐陽德",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:王用賓@1554"
  },
  {
   "year": 1554,
@@ -27100,7 +27246,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三、癸亥、廿三,卒,贈太子少保,謚文莊。三、丁卯、廿七,吏左侍遷;十一、癸卯、六,加太子少保;十一、戊申、十一,兼翰林學士。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "王用賓",
   "person_label": "王用賓"
@@ -27151,7 +27297,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、甲午、廿九,回籍閑住。三、丙申、一,總薊遼右都遷;四十二年十一、己卯、四,卒。十一、己亥、八,加太子少保。隆慶元年五、甲子、十,復秩;六、戊申、廿五,謚貞襄;七、庚申、七,贈少保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "楊博",
   "person_label": "楊博"
@@ -27160,13 +27306,15 @@
   "year": 1555,
   "office": "兵部",
   "person": "聶豹",
-  "note": "",
+  "note": "二、甲午、廿九,回籍閑住",
   "raw_person": "聶豹",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "聶豹",
-  "person_label": "聶豹"
+  "person_label": "聶豹",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:楊博@1555"
  },
  {
   "year": 1555,
@@ -27250,7 +27398,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "正、戊申、十二,卒,贈少保,謚簡肅。正、庚申、廿四,南兵尚遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "周延",
   "person_label": "周延"
@@ -27259,13 +27407,15 @@
   "year": 1555,
   "office": "都察院",
   "person": "屠僑",
-  "note": "",
+  "note": "正、戊申、十二,卒,贈少保,謚簡肅",
   "raw_person": "屠僑",
   "raw_office": "都察院",
   "src": "table",
   "flag": null,
   "person_id": "屠僑",
-  "person_label": "屠僑"
+  "person_label": "屠僑",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:周延@1555"
  },
  {
   "year": 1556,
@@ -27445,7 +27595,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "八、辛丑、廿一,罷,回籍養病;八、辛丑、廿一,刑尚改。九、辛亥、一,削籍為民,尋卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "歐陽必進",
   "person_label": "歐陽必進"
@@ -27454,13 +27604,15 @@
   "year": 1557,
   "office": "工部",
   "person": "趙文華",
-  "note": "",
+  "note": "八、辛丑、廿一,罷,回籍養病;八、辛丑、廿一,刑尚改",
   "raw_person": "趙文華",
   "raw_office": "工部",
   "src": "table",
   "flag": null,
   "person_id": "趙文華",
-  "person_label": "趙文華"
+  "person_label": "趙文華",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:歐陽必進@1557"
  },
  {
   "year": 1557,
@@ -27694,13 +27846,15 @@
   "year": 1559,
   "office": "戶部",
   "person": "賈應春",
-  "note": "",
+  "note": "六、甲寅、十四,致仕",
   "raw_person": "賈應春",
   "raw_office": "戶部",
   "src": "table",
   "flag": null,
   "person_id": "賈應春",
-  "person_label": "賈應春"
+  "person_label": "賈應春",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:馬坤@1559"
  },
  {
   "year": 1559,
@@ -27712,7 +27866,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "六、甲寅、十四,致仕。六、甲寅、十四,南户尚改。卅九年八、乙卯、廿二,卒,贈太子太保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "馬坤",
   "person_label": "馬坤"
@@ -27955,7 +28109,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三、丁亥、廿七,改左都。四、甲午、五,吏右侍遷;七、癸巳、五,南刑尚改。六、丁亥、廿九,回籍閑住。四十三年二月,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "蔡雲程",
   "person_label": "蔡雲程"
@@ -27964,13 +28118,15 @@
   "year": 1561,
   "office": "刑部",
   "person": "馮天馭",
-  "note": "",
+  "note": "三、丁亥、廿七,改左都",
   "raw_person": "馮天馭",
   "raw_office": "刑部",
   "src": "table",
   "flag": null,
   "person_id": "馮天馭",
-  "person_label": "馮天馭"
+  "person_label": "馮天馭",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:蔡雲程@1561"
  },
  {
   "year": 1561,
@@ -28102,7 +28258,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、辛丑、十一,卒,二、壬子、廿二,少保兼太子三、丁亥、廿七,刑尚改,贈太子太保,謚簡肅。太保工尚改;三、戊寅、十八,改吏尚。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "潘恩",
   "person_label": "潘恩"
@@ -29763,7 +29919,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "九、戊子、十一,加少傅兼太子太傅致仕。九、辛卯、十四,南工尚改。二年十、乙巳、四,卒,謚襄毅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "張瀚",
   "person_label": "張瀚"
@@ -29772,13 +29928,15 @@
   "year": 1573,
   "office": "吏部",
   "person": "楊博",
-  "note": "",
+  "note": "九、戊子、十一,加少傅兼太子太傅致仕",
   "raw_person": "楊博",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "楊博",
-  "person_label": "楊博"
+  "person_label": "楊博",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:張瀚@1573"
  },
  {
   "year": 1573,
@@ -29814,7 +29972,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十二、甲寅、八,回籍養病。十二、甲子、十八,禮左侍署祭酒遷。十六年正、癸丑、廿九,加太子少保。卅三年七、辛巳、九,卒。卅四年二、癸卯、四,贈太子太保,謚文定。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "萬士和",
   "person_label": "萬士和"
@@ -29823,13 +29981,15 @@
   "year": 1573,
   "office": "禮部",
   "person": "陸樹聲",
-  "note": "",
+  "note": "十二、甲寅、八,回籍養病",
   "raw_person": "陸樹聲",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
   "person_id": "陸樹聲",
-  "person_label": "陸樹聲"
+  "person_label": "陸樹聲",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:萬士和@1573"
  },
  {
   "year": 1573,
@@ -29895,13 +30055,15 @@
   "year": 1574,
   "office": "工部",
   "person": "朱衡",
-  "note": "",
+  "note": "五、癸巳、廿,致仕,加太子太保;六、甲辰、一,總倉場戶左侍遷",
   "raw_person": "朱衡",
   "raw_office": "工部",
   "src": "table",
   "flag": null,
   "person_id": "朱衡",
-  "person_label": "朱衡"
+  "person_label": "朱衡",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:郭朝賓@1574"
  },
  {
   "year": 1574,
@@ -29913,7 +30075,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "五、癸巳、廿,致仕,加太子太保;六、甲辰、一,總倉場戶左侍遷。八、甲辰、三,以尚書致仕。十二年七、戊寅、四,卒。十三年正、丁酉、廿五,贈太子太保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "郭朝賓",
   "person_label": "郭朝賓"
@@ -29952,7 +30114,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "六、甲辰、一,遷工尚。六、戊申、五,南刑尚改戶尚,尋卒;是年,刑右侍遷戶左侍。十、乙巳、四,賜祭葬。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "畢鏘",
   "person_label": "畢鏘"
@@ -29961,13 +30123,15 @@
   "year": 1574,
   "office": "總督倉場",
   "person": "謝登之",
-  "note": "",
+  "note": "六、甲辰、一,遷工尚",
   "raw_person": "謝登之",
   "raw_office": "總倉場",
   "src": "table",
   "flag": null,
   "person_id": "謝登之",
-  "person_label": "謝登之"
+  "person_label": "謝登之",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:畢鏘@1574"
  },
  {
   "year": 1574,
@@ -30069,13 +30233,15 @@
   "year": 1575,
   "office": "禮部",
   "person": "萬士和",
-  "note": "",
+  "note": "九、戊午、廿三,致仕",
   "raw_person": "萬士和",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
   "person_id": "萬士和",
-  "person_label": "萬士和"
+  "person_label": "萬士和",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:馬自強@1575"
  },
  {
   "year": 1575,
@@ -30087,7 +30253,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "九、戊午、廿三,致仕。九、甲子、廿九,掌詹事府吏左侍兼學士遷。十二年正、乙酉、七,起改南禮尚(未赴)。十四年卒。十五年二、庚午、十一,贈太子太保,予祭葬,謚文恭。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "馬自強",
   "person_label": "馬自強"
@@ -30108,13 +30274,15 @@
   "year": 1575,
   "office": "都察院",
   "person": "葛守禮",
-  "note": "",
+  "note": "六、乙亥、八,加太子少保致仕",
   "raw_person": "葛守禮",
   "raw_office": "都察院",
   "src": "table",
   "flag": null,
   "person_id": "葛守禮",
-  "person_label": "葛守禮"
+  "person_label": "葛守禮",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:陳瓚@1575"
  },
  {
   "year": 1575,
@@ -30126,7 +30294,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "六、乙亥、八,加太子少保致仕。六、壬午、十五,南戶尚改。六年五、辛亥、一,卒,贈太子太保,謚端肅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "陳瓚",
   "person_label": "陳瓚"
@@ -30261,7 +30429,7 @@
   "src": "table",
   "flag": "note?;note?",
   "raw_note": "四、庚申、三,卒,四、丙寅、九,刑尚改;十、壬辰、九,協理戎政兵尚赠太子太保,謚襄敏。十、丁亥、四,致仕。兼右副都回;十六年十一、丙寅、十七,卒。十、丁酉、十四,辭兼憲職;十七年二月,贈太傅,謔襄毅。十、戊申、廿五,暫署吏部事。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "方逢時",
   "person_label": "方逢時"
@@ -30312,7 +30480,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "四、丙寅、九,改兵尚。四、戊辰、十一,協理戎政兵尚改;閏八、辛亥、廿七,致仕。十八年六月,卒。十九年閏三、己巳、四,予祭葬,贈太子少保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "吳百朋",
   "person_label": "吳百朋"
@@ -30333,13 +30501,15 @@
   "year": 1577,
   "office": "吏部",
   "person": "張瀚",
-  "note": "",
+  "note": "十、丁酉、十四,致仕",
   "raw_person": "張瀚",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "張瀚",
-  "person_label": "張瀚"
+  "person_label": "張瀚",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:王國光@1577"
  },
  {
   "year": 1577,
@@ -30351,7 +30521,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十、丁酉、十四,致仕。十、戊申、廿五,起戶尚改。廿一年卒。廿二年二、辛未、廿二,謚恭毅,贈太子少保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "王國光",
   "person_label": "王國光"
@@ -30366,7 +30536,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十一、丙子、廿四,致仕。十二、癸未、一,南右都遷。十三年六、庚戌、十一,卒;十一、癸卯、七,予祭葬。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "李幼滋",
   "person_label": "李幼滋"
@@ -30375,13 +30545,15 @@
   "year": 1577,
   "office": "工部",
   "person": "郭朝賓",
-  "note": "",
+  "note": "十一、丙子、廿四,致仕",
   "raw_person": "郭朝賓",
   "raw_office": "工部",
   "src": "table",
   "flag": null,
   "person_id": "郭朝賓",
-  "person_label": "郭朝賓"
+  "person_label": "郭朝賓",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:李幼滋@1577"
  },
  {
   "year": 1577,
@@ -30819,13 +30991,15 @@
   "year": 1581,
   "office": "兵部",
   "person": "方逢時",
-  "note": "",
+  "note": "二、丁未、十三,被劾留用;四、丁未、十四,總督薊遼兵尙回",
   "raw_person": "方逢時",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "方逢時",
-  "person_label": "方逢時"
+  "person_label": "方逢時",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:梁夢龍@1581"
  },
  {
   "year": 1581,
@@ -30837,7 +31011,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、丁未、十三,被劾留用;四、丁未、十四,總督薊遼兵尙回。四、庚子、七,致仕。四十四年七、戊子、廿,卒,予祭葬。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "梁夢龍",
   "person_label": "梁夢龍"
@@ -31086,13 +31260,15 @@
   "year": 1583,
   "office": "兵部",
   "person": "吳兑",
-  "note": "",
+  "note": "三、丁未、廿五,致仕",
   "raw_person": "吴兑",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "吳兑",
-  "person_label": "吳兑"
+  "person_label": "吳兑",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:張學顏@1583"
  },
  {
   "year": 1583,
@@ -31104,7 +31280,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三、丁未、廿五,致仕。四、癸丑、二,戶尚改。廿四年四、己未、廿三,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "張學顏",
   "person_label": "張學顏"
@@ -31155,7 +31331,7 @@
   "src": "table",
   "flag": "note?",
   "raw_note": "十六年正、癸丑、廿七,加太子少保。十八年六、戊戌、廿八,卒,贈太子太保,謚恭肅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "楊巍",
   "person_label": "楊巍"
@@ -31224,13 +31400,15 @@
   "year": 1583,
   "office": "禮部",
   "person": "徐學謨",
-  "note": "",
+  "note": "九、乙未、十七,加太子少保;十、辛未、廿三,致仕",
   "raw_person": "徐學謨",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
   "person_id": "徐學謨",
-  "person_label": "徐學謨"
+  "person_label": "徐學謨",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:陳經邦@1583"
  },
  {
   "year": 1583,
@@ -31242,7 +31420,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "九、乙未、十七,加太子少保;十、辛未、廿三,致仕。十、丁丑、廿九,掌詹事府事吏左侍兼侍讀學士遷。廿一年十二、辛亥、二,卒。廿三年五、丁丑、五,予祭葬。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "陳經邦",
   "person_label": "陳經邦"
@@ -31293,7 +31471,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、辛卯、十二,致仕。七、庚子、廿一,南吏尚改。十二年三、甲辰、廿七,卒;十二、庚申、十八,予祭葬。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "趙錦",
   "person_label": "趙錦"
@@ -31302,13 +31480,15 @@
   "year": 1583,
   "office": "都察院",
   "person": "陳炌",
-  "note": "",
+  "note": "七、辛卯、十二,致仕",
   "raw_person": "陳炌",
   "raw_office": "都察院",
   "src": "table",
   "flag": null,
   "person_id": "陳炌",
-  "person_label": "陳炌"
+  "person_label": "陳炌",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:趙錦@1583"
  },
  {
   "year": 1584,
@@ -31392,7 +31572,7 @@
   "src": "table",
   "flag": ";office重复",
   "raw_note": "十、壬戌、廿,致仕。十、丁卯、廿五,吏左侍兼侍讀學士遷,兼翰林學士。四十三年六、甲辰、廿九,卒。四十五年六、丁巳、廿四,謚文恪。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "沈鯉",
   "person_label": "沈鯉"
@@ -31401,13 +31581,15 @@
   "year": 1584,
   "office": "禮部",
   "person": "陳經邦",
-  "note": "",
+  "note": "十、壬戌、廿,致仕",
   "raw_person": "陳經邦",
   "raw_office": "禮部",
   "src": "table",
   "flag": ";office重复",
   "person_id": "陳經邦",
-  "person_label": "陳經邦"
+  "person_label": "陳經邦",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:沈鯉@1584"
  },
  {
   "year": 1584,
@@ -31455,7 +31637,7 @@
   "src": "table",
   "flag": "note?;note?;note?;note?",
   "raw_note": "三、庚寅、十九,致仕。三、壬辰、廿一,戶尚改;閏九、乙卯、十八,總薊遼還,廿六年十一、辛亥、卒。九、戊子、廿一,致仕。辭憲職。廿八年正、戊辰、廿三,贈少保。卅六年卒。卅七年四、辛酉、十,卒;九、辛卯、十三,贈少保。天啟年間,謚恭肅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "張佳胤",
   "person_label": "張佳胤"
@@ -31728,13 +31910,15 @@
   "year": 1587,
   "office": "兵部",
   "person": "嚴清",
-  "note": "",
+  "note": "是年辭不赴",
   "raw_person": "嚴清",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "嚴清",
-  "person_label": "嚴清"
+  "person_label": "嚴清",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:王一鶚@1587"
  },
  {
   "year": 1587,
@@ -31746,7 +31930,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "是年辭不赴。四、庚申、一,總薊遼右都兼兵右侍遷。十六年正、癸丑、廿七,加太子少保。十八年六、戊戌、廿八,卒,贈太子太保,謚恭肅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "王一鶚",
   "person_label": "王一鶚"
@@ -31821,7 +32005,7 @@
   "src": "table",
   "flag": "note?",
   "raw_note": "二月,卒;正、丙辰、廿七,理工左侍事工尙回部;三、庚辰、一,罷。五、丁酉、十,贈少保。十八年十一、丙寅、廿八,卒。天啟元年二、乙巳、三,復官。十九年五、辛卯、廿七,贈太子太保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "石星",
   "person_label": "石星"
@@ -31866,13 +32050,15 @@
   "year": 1587,
   "office": "總督倉場",
   "person": "毛綱",
-  "note": "",
+  "note": "是年致仕",
   "raw_person": "毛綱",
   "raw_office": "總倉場",
   "src": "table",
   "flag": null,
   "person_id": "毛綱",
-  "person_label": "毛綱"
+  "person_label": "毛綱",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:胡執禮@1587"
  },
  {
   "year": 1587,
@@ -31884,7 +32070,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "是年致仕。二、庚午、十一,戶左侍改;四、丁卯、八,致仕兵左侍管十八年正、戊申、五,卒。四、甲子、五,遷右都總督薊遼。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "胡執禮",
   "person_label": "胡執禮"
@@ -32139,7 +32325,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "六、癸卯、廿八,卒,六、乙巳、卅,戶左侍遷右都兼戶右侍;九、戊午、十四,丁憂歸。九、戊午、十四,南右都遷戶尚;十一、己巳、廿五,致仕。廿四年六、丁巳、廿一,卒;十一、己未、廿七,贈太子少保,諡恭簡。十二、戊寅、五,兵左侍遷戶尚.",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "楊俊民",
   "person_label": "楊俊民"
@@ -32352,13 +32538,15 @@
   "year": 1591,
   "office": "兵部",
   "person": "王一鶚",
-  "note": "",
+  "note": "八、癸卯、十一,加太子少保致仕;九、丁丑、十五,卒,贈太子太保",
   "raw_person": "王一鶚",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "王一鶚",
-  "person_label": "王一鶚"
+  "person_label": "王一鶚",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:石星@1591"
  },
  {
   "year": 1591,
@@ -32370,7 +32558,7 @@
   "src": "table",
   "flag": "note?",
   "raw_note": "八、癸卯、十一,加太子少保致仕;九、丁丑、十五,卒,贈太子太保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "石星",
   "person_label": "石星"
@@ -32385,7 +32573,7 @@
   "src": "table",
   "flag": "note?;note?;note?",
   "raw_note": "四、丙辰、廿一,改吏尚。五、己巳、五,掌都察院事兵尚起改;十、丙辰、廿四,赴任次蘇州卒,贈太子太保,謚端肅。右副都改;十二、壬寅、十,回籍養病;十二、己酉、十七,加太子少保候用。廿六年十、庚申、八,卒。廿七年閏四、壬寅、廿四,贈太子太保。十二、丙申、四,協戎政兵尚兼五,起南右都遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "孫丕揚",
   "person_label": "孫丕揚"
@@ -32430,13 +32618,15 @@
   "year": 1591,
   "office": "吏部",
   "person": "宋纁",
-  "note": "",
+  "note": "五、乙亥、十一,卒",
   "raw_person": "宋纁",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "宋纁",
-  "person_label": "宋纁"
+  "person_label": "宋纁",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:陸光祖@1591"
  },
  {
   "year": 1591,
@@ -32448,7 +32638,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "五、乙亥、十一,卒。四、丙辰、廿一,刑尚改。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "陸光祖",
   "person_label": "陸光祖"
@@ -33279,7 +33469,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、丙子、十五,革職候勘;二、丁亥、廿六,兵左侍署。三、己酉、十九,革職候旨;九、辛丑、十三,下獄誅死。廿七年卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "李楨",
   "person_label": "李楨"
@@ -33288,13 +33478,15 @@
   "year": 1597,
   "office": "兵部",
   "person": "石星",
-  "note": "",
+  "note": "二、丙子、十五,革職候勘;二、丁亥、廿六,兵左侍署",
   "raw_person": "石星",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "石星",
-  "person_label": "石星"
+  "person_label": "石星",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:李楨@1597"
  },
  {
   "year": 1597,
@@ -33354,7 +33546,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十、丙戌、廿九,卒。十、丙戌、廿,禮左侍署。廿六年二、戊辰、十三,贈太子太保,諡文恪。天啟三年、庚午、十二,贈太子太傅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "劉楚先",
   "person_label": "劉楚先"
@@ -33363,13 +33555,15 @@
   "year": 1597,
   "office": "禮部",
   "person": "范謙",
-  "note": "",
+  "note": "十、丙戌、廿九,卒",
   "raw_person": "范謙",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
   "person_id": "范謙",
-  "person_label": "范謙"
+  "person_label": "范謙",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:劉楚先@1597"
  },
  {
   "year": 1597,
@@ -33591,13 +33785,15 @@
   "year": 1599,
   "office": "戶部",
   "person": "楊俊民",
-  "note": "",
+  "note": "四、壬戌、十三,致仕;四、壬戌、十三,戶左侍署;六、己亥、廿二,卒,予祭葬;五、丁巳、十,戶左侍遷",
   "raw_person": "楊俊民",
   "raw_office": "戶部",
   "src": "table",
   "flag": null,
   "person_id": "楊俊民",
-  "person_label": "楊俊民"
+  "person_label": "楊俊民",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:陳蕖@1599"
  },
  {
   "year": 1599,
@@ -33609,7 +33805,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "四、壬戌、十三,致仕;四、壬戌、十三,戶左侍署;六、己亥、廿二,卒,予祭葬;五、丁巳、十,戶左侍遷。七、己未、十二,贈少保;九、乙卯、九,贈少傅兼太子太傅。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "陳蕖",
   "person_label": "陳蕖"
@@ -33726,13 +33922,15 @@
   "year": 1600,
   "office": "禮部",
   "person": "余繼登",
-  "note": "",
+  "note": "七、丁巳、十七，卒，贈太子少保，謚文恪",
   "raw_person": "余繼登",
   "raw_office": "禮部",
   "src": "table",
   "flag": ";office重复",
   "person_id": "余繼登",
-  "person_label": "余繼登"
+  "person_label": "余繼登",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:朱國祚@1600"
  },
  {
   "year": 1600,
@@ -33744,7 +33942,7 @@
   "src": "table",
   "flag": ";office重复",
   "raw_note": "七、丁巳、十七，卒，贈太子少保，謚文恪。七、丁巳、十七，禮右侍署。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "朱國祚",
   "person_label": "朱國祚"
@@ -34043,13 +34241,15 @@
   "year": 1603,
   "office": "吏部",
   "person": "李戴",
-  "note": "",
+  "note": "十二、丁酉、十六,致仕",
   "raw_person": "李戴",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "李戴",
-  "person_label": "李戴"
+  "person_label": "李戴",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:趙世卿@1603"
  },
  {
   "year": 1603,
@@ -34061,7 +34261,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十二、丁酉、十六,致仕。十二、己亥、十八,戶尚兼署。卅五年二、戊戌、五,卒;七、乙巳、十五,贈少保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "趙世卿",
   "person_label": "趙世卿"
@@ -34100,7 +34300,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三、己未、三,卒;四、己酉、廿三,贈太子少保。卅九年七、丁卯、廿八,諡文敏。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "李廷機",
   "person_label": "李廷機"
@@ -34109,13 +34309,15 @@
   "year": 1603,
   "office": "禮部",
   "person": "馮琦",
-  "note": "",
+  "note": "三、己未、三,卒;四、己酉、廿三,贈太子少保",
   "raw_person": "馮琦",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
   "person_id": "馮琦",
-  "person_label": "馮琦"
+  "person_label": "馮琦",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:李廷機@1603"
  },
  {
   "year": 1603,
@@ -34273,7 +34475,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "四、壬子、八,刑左侍遷,仍署侍十一月,刑右侍署郎事;十二、乙卯、十五,致仕。卅四年十月,卒。卅五年七、乙巳、十五,贈太子少保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "沈應文",
   "person_label": "沈應文"
@@ -34282,13 +34484,15 @@
   "year": 1605,
   "office": "刑部",
   "person": "董裕",
-  "note": "",
+  "note": "四、壬子、八,刑左侍遷,仍署侍十一月,刑右侍署郎事;十二、乙卯、十五,致仕",
   "raw_person": "董裕",
   "raw_office": "刑部",
   "src": "table",
   "flag": null,
   "person_id": "董裕",
-  "person_label": "董裕"
+  "person_label": "董裕",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:沈應文@1605"
  },
  {
   "year": 1605,
@@ -34318,13 +34522,15 @@
   "year": 1605,
   "office": "工部",
   "person": "姚繼可",
-  "note": "",
+  "note": "七、庚子、廿八、致仕",
   "raw_person": "姚繼可",
   "raw_office": "工部",
   "src": "table",
   "flag": null,
   "person_id": "姚繼可",
-  "person_label": "姚繼可"
+  "person_label": "姚繼可",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:沈應文@1605"
  },
  {
   "year": 1605,
@@ -34336,7 +34542,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、庚子、廿八、致仕。八、甲寅、十二,刑右侍署。卅六年六、丙子、廿一,卒。卅七年四、己未、八,子祭葬;",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "沈應文",
   "person_label": "沈應文"
@@ -34399,7 +34605,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、辛巳、九、致仕。卅五年閏六、甲子、三,卒。卅六年二、庚午、十三,贈少保,謚恭毅。詹沂八、丙午、四,左副都署印。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:詹沂",
   "person_id": "溫純",
   "person_label": "溫純"
@@ -34786,7 +34992,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、庚午、十八,卒;四、丁卯、十六,到任。七、戊子、九,贈吏尚,謚端潔,尋贈少保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "孫丕揚",
   "person_label": "孫丕揚"
@@ -34795,13 +35001,15 @@
   "year": 1609,
   "office": "吏部",
   "person": "楊時喬",
-  "note": "",
+  "note": "二、庚午、十八,卒;四、丁卯、十六,到任",
   "raw_person": "楊時喬",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "楊時喬",
-  "person_label": "楊時喬"
+  "person_label": "楊時喬",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:孫丕揚@1609"
  },
  {
   "year": 1609,
@@ -34837,7 +35045,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、辛未、十九,卒;二、庚辰、廿八,禮右侍署。七、戊子、九,贈禮尚,謚文恪。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "吳道南",
   "person_label": "吳道南"
@@ -34846,13 +35054,15 @@
   "year": 1609,
   "office": "禮部",
   "person": "楊道賓",
-  "note": "",
+  "note": "二、辛未、十九,卒;二、庚辰、廿八,禮右侍署",
   "raw_person": "楊道賓",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
   "person_id": "楊道賓",
-  "person_label": "楊道賓"
+  "person_label": "楊道賓",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:吳道南@1609"
  },
  {
   "year": 1609,
@@ -34876,7 +35086,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十二、戊午、十一,總倉場右都署。詹沂九、丁亥、九,封印求罷,尋冠帶閑住。四十六年九、甲辰、十九,予祭葬。四十七年六、戊午、七,赠左都。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:詹沂",
   "person_id": "孫瑋",
   "person_label": "孫瑋"
@@ -35487,13 +35697,15 @@
   "year": 1614,
   "office": "工部",
   "person": "劉元霖",
-  "note": "",
+  "note": "三、辛酉、九,卒,贈太子太保",
   "raw_person": "劉元霖",
   "raw_office": "工部",
   "src": "table",
   "flag": null,
   "person_id": "劉元霖",
-  "person_label": "劉元霖"
+  "person_label": "劉元霖",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:林如楚@1614"
  },
  {
   "year": 1614,
@@ -35505,7 +35717,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三、辛酉、九,卒,贈太子太保。五、庚午、十九,工右侍署。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "林如楚",
   "person_label": "林如楚"
@@ -36028,7 +36240,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十一、戊申、廿九,調理。十一、戊申、廿九,兵左侍署。四十八年九、辛丑、廿七,病免。天啟元年十、辛巳、十四,加太子太傅;十、辛卯、廿四,加太子太師。天啟三年二、丁卯、七,致仕;十二、甲午、九,進少保。天啟六年四、辛巳、九,卒,贈太保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "楊應聘",
   "person_label": "楊應聘"
@@ -36037,13 +36249,15 @@
   "year": 1619,
   "office": "兵部",
   "person": "黃嘉善",
-  "note": "",
+  "note": "十一、戊申、廿九,調理",
   "raw_person": "黃嘉善",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "黃嘉善",
-  "person_label": "黃嘉善"
+  "person_label": "黃嘉善",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:楊應聘@1619"
  },
  {
   "year": 1619,
@@ -36067,7 +36281,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十一、辛巳、二,卒。十一、乙巳、廿六,戶尚署。四十八年十一、壬午、九,贈太子少保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "李汝華",
   "person_label": "李汝華"
@@ -36076,13 +36290,15 @@
   "year": 1619,
   "office": "吏部",
   "person": "趙煥",
-  "note": "",
+  "note": "十一、辛巳、二,卒",
   "raw_person": "趙煥",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "趙煥",
-  "person_label": "趙煥"
+  "person_label": "趙煥",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:李汝華@1619"
  },
  {
   "year": 1619,
@@ -36346,7 +36562,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十一、戊寅、五,禮右侍署。孫慎行十二、癸丑、九,南禮尚改。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:孫慎行",
   "person_id": "鄭以偉",
   "person_label": "鄭以偉"
@@ -36499,13 +36715,15 @@
   "year": 1621,
   "office": "戶部",
   "person": "李汝華",
-  "note": "",
+  "note": "六、乙亥、五,加太子太保致仕",
   "raw_person": "李汝華",
   "raw_office": "戶部",
   "src": "table",
   "flag": null,
   "person_id": "李汝華",
-  "person_label": "李汝華"
+  "person_label": "李汝華",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:汪應蛟@1621"
  },
  {
   "year": 1621,
@@ -36517,7 +36735,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "六、乙亥、五,加太子太保致仕。六、丙戌、十六,南戶尚改。四年十二月,卒。五年三、辛未、廿三,贈少保,謚恭敏。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "汪應蛟",
   "person_label": "汪應蛟"
@@ -36580,7 +36798,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "二、己丑、廿三,大學士暫掌;六、丁丑、十二,出巡關門;六、己卯、十四,加太子太保;八、己巳、六,辭加恩;八、庚辰、十七,自請經略遼東。董漢儒九、甲午、一,協理戎政兵左侍遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:董漢儒",
   "person_id": "孫承宗",
   "person_label": "孫承宗"
@@ -36607,7 +36825,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "正、甲子、廿八,兵左侍署;三、甲辰、八,遷兵尚兼右副都經略遼東。張經世六、丁丑、十二,兵左侍暫署。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:張經",
   "person_id": "王在晉",
   "person_label": "王在晉"
@@ -36640,13 +36858,13 @@
   "year": 1622,
   "office": "刑部",
   "person": "黃克纘",
-  "note": "",
+  "note": "正、壬戌、廿六,改兵尚協理戎政",
   "raw_person": "黃克纘",
   "raw_office": "刑部",
   "src": "table",
   "flag": null,
   "raw_note": "正、壬戌、廿六,改兵尚協理戎政。王永光正、壬戌、廿六,管工左侍事工尚兼署;二、乙未、廿九,遷戶尚總倉場。",
-  "note_status": "quarantined",
+  "note_status": "restored-prefix-inferred",
   "note_quarantine_reason": "contains-other-name:王永光",
   "person_id": "黃克纘",
   "person_label": "黃克纘"
@@ -36673,7 +36891,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "正、辛丑、五,加太子太傅;三、己未、廿三,致仕;十二、乙亥、十四,卒。三年二、壬申、十二,予祭葬并謚;三、丙午、十六,贈少傅。五年正、戊寅、廿九,贈少保。崇禎元年八、己亥、十一,贈少保。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "姚思仁",
   "person_label": "姚思仁"
@@ -36682,13 +36900,15 @@
   "year": 1622,
   "office": "工部",
   "person": "王佐",
-  "note": "",
+  "note": "正、辛丑、五,加太子太傅;三、己未、廿三,致仕;十二、乙亥、十四,卒",
   "raw_person": "王佐",
   "raw_office": "工部",
   "src": "table",
   "flag": null,
   "person_id": "王佐#2",
-  "person_label": "王佐（1620–1622）"
+  "person_label": "王佐（1620–1622）",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:姚思仁@1622"
  },
  {
   "year": 1622,
@@ -36772,7 +36992,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "十、乙酉、廿三,加太子太保致仕。十一、壬寅、十,工部協理右侍遷。四年,卒於家。五年八、壬午、六,削奪官誥。崇禎元年十一、庚辰、廿三,贈太子太傅吏尚,謚忠介,予祭葬。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "趙南星",
   "person_label": "趙南星"
@@ -36781,13 +37001,15 @@
   "year": 1622,
   "office": "都察院",
   "person": "鄒元標",
-  "note": "",
+  "note": "十、乙酉、廿三,加太子太保致仕",
   "raw_person": "鄒元標",
   "raw_office": "都察院",
   "src": "table",
   "flag": null,
   "person_id": "鄒元標",
-  "person_label": "鄒元標"
+  "person_label": "鄒元標",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:趙南星@1622"
  },
  {
   "year": 1623,
@@ -36841,13 +37063,15 @@
   "year": 1623,
   "office": "吏部",
   "person": "張問達",
-  "note": "",
+  "note": "九、癸丑、廿六,加少保致仕",
   "raw_person": "張問達",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "張問達",
-  "person_label": "張問達"
+  "person_label": "張問達",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:趙南星@1623"
  },
  {
   "year": 1623,
@@ -36859,7 +37083,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "九、癸丑、廿六,加少保致仕。十、癸酉、十六,左都遷。五年五、甲子、十七,閑住,尋卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "趙南星",
   "person_label": "趙南星"
@@ -37222,7 +37446,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "五、己酉、二,致仕。六年十一、乙未、廿六,加太子太傅。崇禎二年九、丙戌、五,卒。王永光十、辛卯、十六,南兵尚改。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:王永光",
   "person_id": "趙彥",
   "person_label": "趙彥"
@@ -37297,7 +37521,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "六、辛丑、廿五,署左都事吏尚代攝;七、庚午、廿四,署篆;七、丙子、卅,署左都事吏尔回部;十二、癸未、九,致仕。七年四、乙卯、十九,卒,贈太子太保。王紹徽十二、戊子、十四,左都遷。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:王紹徽",
   "person_id": "李宗延",
   "person_label": "李宗延"
@@ -37614,7 +37838,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三、辛巳、十四,加太子太師;四、己亥、三,卒,贈少師,謚忠襄。王之臣七、己巳、五,添設兵左侍署;八、乙未、二,加兵尚;八,乙巳、十二,加太子太保;八,癸丑、廿,罷;十一、己丑、廿六,起改協理戎政。閻鳴泰十、庚申、廿七,協理戎政少師兼太子太師兵尔回部管事。崇禎元年正、丁亥、廿五,戮尸於蘇州。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "contains-other-name:閻鳴泰",
   "person_id": "崔呈秀",
   "person_label": "崔呈秀"
@@ -38391,13 +38615,15 @@
   "year": 1631,
   "office": "吏部",
   "person": "王永光",
-  "note": "",
+  "note": "三、壬午、八,致仕",
   "raw_person": "王永光",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
   "person_id": "王永光",
-  "person_label": "王永光"
+  "person_label": "王永光",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:閔洪學@1631"
  },
  {
   "year": 1631,
@@ -38409,7 +38635,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三、壬午、八,致仕。三、壬寅、廿八,太子太保左都改。十二年十二、戊子、六,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "閔洪學",
   "person_label": "閔洪學"
@@ -38442,13 +38668,15 @@
   "year": 1631,
   "office": "禮部",
   "person": "李騰芳",
-  "note": "",
+  "note": "五、戊子、十五,致仕;五、乙未、廿二,掌詹事府事六、甲寅、十二,卒;太子太傅禮尚回部;六、丙寅、廿四,贈太子太保",
   "raw_person": "李騰芳",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
   "person_id": "李騰芳",
-  "person_label": "李騰芳"
+  "person_label": "李騰芳",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:黃汝良@1631"
  },
  {
   "year": 1631,
@@ -38460,7 +38688,7 @@
   "src": "table",
   "flag": "note?",
   "raw_note": "五、戊子、十五,致仕;五、乙未、廿二,掌詹事府事六、甲寅、十二,卒;太子太傅禮尚回部;六、丙寅、廿四,贈太子太保。九、癸未、十二,未到任;十一、甲申、十五,到任。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "黃汝良",
   "person_label": "黃汝良"
@@ -38715,7 +38943,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "三月下獄。五、戊戌、七,任。七年四、己未、四,削籍。八年五月,復官致仕。十一年,卒。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "侯恂",
   "person_label": "侯恂"
@@ -38724,13 +38952,15 @@
   "year": 1633,
   "office": "戶部",
   "person": "畢自嚴",
-  "note": "",
+  "note": "三月下獄",
   "raw_person": "畢自嚴",
   "raw_office": "戶部",
   "src": "table",
   "flag": null,
   "person_id": "畢自嚴",
-  "person_label": "畢自嚴"
+  "person_label": "畢自嚴",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:侯恂@1633"
  },
  {
   "year": 1633,
@@ -39060,13 +39290,15 @@
   "year": 1636,
   "office": "兵部",
   "person": "張鳳翼",
-  "note": "",
+  "note": "七、癸亥、廿一,自請出師;十、甲申、十三,起總宣大兵右侍兼右僉都遷",
   "raw_person": "張鳳翼",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
   "person_id": "張鳳翼",
-  "person_label": "張鳳翼"
+  "person_label": "張鳳翼",
+  "note_status": "restored-inferred",
+  "note_source": "inferred:楊嗣昌@1636"
  },
  {
   "year": 1636,
@@ -39078,7 +39310,7 @@
   "src": "table",
   "flag": null,
   "raw_note": "七、癸亥、廿一,自請出師;十、甲申、十三,起總宣大兵右侍兼右僉都遷。九、癸卯、二,卒於營,尋奪官。十一年七月,復官。",
-  "note_status": "quarantined",
+  "note_status": "manual-review",
   "note_quarantine_reason": "death-note-but-later-entries",
   "person_id": "楊嗣昌",
   "person_label": "楊嗣昌"

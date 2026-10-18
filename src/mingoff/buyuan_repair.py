@@ -267,6 +267,186 @@ def quarantine_notes(entries: list[dict], report: dict) -> None:
     report["note_quarantine"] = flagged
 
 
+def _clean_segment(seg: str, name: str = "") -> str:
+    s = (seg or "").strip()
+    if name and s.startswith(name):
+        s = s[len(name):]
+    return s.strip("。；;，,、 \n")
+
+
+def resolve_quarantined_notes(entries: list[dict], report: dict) -> list[dict]:
+    """D-02：对 186 条隔离注文逐条给出处置。
+
+    保守规则（不猜配）：
+      1. 注文里出现同 (年,衙) 的另一人名 → 按名字切段，段归该人（目标须无活跃注文）；
+         切段/目标不满足则 manual；
+      2. 无他人名，且当前 person_id 在该年之后已无条目 → 视为该实体离任/卒注，恢复；
+      3. 其余（复合注文、无候选）→ manual-review，原文留 raw_note。
+    所有条目都写处置，不再"沉默隔离"。
+    """
+    rows = defaultdict(list)
+    for e in entries:
+        rows[(e["year"], e["office"])].append(e)
+    later = defaultdict(set)
+    for e in entries:
+        later[e["person_id"]].add(e["year"])
+    last_year = {pid: max(ys) for pid, ys in later.items()}
+    all_names = {e["person"] for e in entries if len(e["person"]) >= 2}
+    decisions = []
+    actions = Counter()
+    for e in entries:
+        if e.get("note_status") not in ("quarantined", "manual-review") \
+                or not e.get("raw_note"):
+            continue
+        raw = e["raw_note"]
+        reason = e.get("note_quarantine_reason", "")
+        row = [x for x in rows[(e["year"], e["office"])] if x is not e]
+        named = []
+        for x in row:
+            if x["person"] and x["person"] != e["person"] and x["person"] in raw:
+                named.append((raw.find(x["person"]), x["person"], x))
+        named.sort()
+        if named:
+            # 目标必须无活跃注文；否则无法安全切段
+            if not all((not t["note"]) for _, _, t in named) or \
+                    len({t["person_id"] for _, _, t in named}) != len(named):
+                e["note_status"] = "manual-review"
+                decisions.append({"year": e["year"], "person_id": e["person_id"],
+                                  "person": e["person"], "office": e["office"],
+                                  "raw_note": raw, "action": "manual-review",
+                                  "reason": "target-has-active-note"})
+                actions["manual-review"] += 1
+                continue
+            positions = named
+            prefix = _clean_segment(raw[:positions[0][0]])
+            segs = []
+            for k, (i, name, t) in enumerate(positions):
+                end = positions[k + 1][0] if k + 1 < len(positions) else len(raw)
+                segs.append((_clean_segment(raw[i:end], name), t))
+            # 安全校验：切出的每段不得再含其他全局人名
+            if any(n != e["person"] and n in prefix for n in all_names) or \
+                    any(any(n != t["person"] and n in seg for n in all_names)
+                        for seg, t in segs if seg):
+                e["note_status"] = "manual-review"
+                decisions.append({"year": e["year"], "person_id": e["person_id"],
+                                  "person": e["person"], "office": e["office"],
+                                  "raw_note": raw, "action": "manual-review",
+                                  "reason": "segment-still-has-other-name"})
+                actions["manual-review"] += 1
+                continue
+            if prefix:
+                e["note"] = prefix
+                e["note_status"] = "restored-prefix"
+            else:
+                e["note"] = ""
+                e["note_status"] = "reassigned-out"
+            for seg, target in segs:
+                if not seg:
+                    continue
+                target["note"] = seg
+                target["note_status"] = "restored-from-other"
+                target["note_source"] = f"from:{e['person_id']}@{e['year']}"
+            decisions.append({"year": e["year"], "person_id": e["person_id"],
+                              "person": e["person"], "office": e["office"],
+                              "raw_note": raw, "action": "reassigned",
+                              "targets": [{"person_id": t["person_id"],
+                                           "person": t["person"],
+                                           "note": seg} for seg, t in segs if seg],
+                              "prefix": prefix})
+            actions["reassigned"] += 1
+            continue
+        # 无同衙同名目标：先尝试「同一行唯一在本年结束者」的推断补注（仅限无他人名、
+        # 非跨年引用的死亡/离任 chunk），并把来源条目标为 manual-review 保留原文。
+        if not reason.startswith("contains-other-name"):
+            chunks = [c for c in re.split(r"(?<=[。；])", raw) if c.strip()]
+            assigned, remaining = [], []
+            for ch in chunks:
+                has_other = any(n != e["person"] and n in ch for n in all_names)
+                has_future_year = bool(re.search(r"[元二三四五六七八九十]+年", ch))
+                cands = [z for z in row
+                         if last_year[z["person_id"]] == e["year"] and not z["note"]]
+                if (not has_other) and (not has_future_year) and len(cands) == 1:
+                    target = cands[0]
+                    seg = _clean_segment(ch)
+                    target["note"] = seg
+                    target["note_status"] = "restored-inferred"
+                    target["note_source"] = f"inferred:{e['person_id']}@{e['year']}"
+                    assigned.append({"person_id": target["person_id"],
+                                     "person": target["person"], "note": seg})
+                else:
+                    remaining.append(ch)
+            if assigned:
+                e["note"] = ""
+                e["note_status"] = "manual-review"
+                decisions.append({"year": e["year"], "person_id": e["person_id"],
+                                  "person": e["person"], "office": e["office"],
+                                  "raw_note": raw, "action": "reassigned-inferred",
+                                  "targets": assigned, "remaining_chunks": remaining,
+                                  "reason": "same-row-unique-ending"})
+                actions["reassigned-inferred"] += 1
+                continue
+        # 无同衙目标：
+        #   contains-other-name：先把「另一人名之前」的 prefix 还给本人（若有月份/事件），
+        #   其余保留 raw（不猜配）；death-later 仅当实体已结束且注文不含其他全局人名时恢复
+        if reason.startswith("contains-other-name"):
+            first_other = min((raw.find(n) for n in all_names
+                               if n != e["person"] and n in raw), default=-1)
+            prefix = _clean_segment(raw[:first_other]) if first_other > 0 else ""
+            prefix_ok = (prefix and len(prefix) <= 40
+                         and not any(sep in prefix for sep in "；;。")
+                         and any(v in prefix for v in
+                                 ("遷", "改", "任", "入", "起", "卒", "免", "出",
+                                  "降", "罷", "致仕", "調", "謫", "復", "還")))
+            if prefix_ok and not any(n != e["person"] and n in prefix for n in all_names):
+                e["note"] = prefix
+                e["note_status"] = "restored-prefix-inferred"
+                decisions.append({"year": e["year"], "person_id": e["person_id"],
+                                  "person": e["person"], "office": e["office"],
+                                  "raw_note": raw, "action": "restored-prefix-inferred",
+                                  "note": prefix, "reason": "prefix-before-other-name"})
+                actions["restored-prefix-inferred"] += 1
+            else:
+                e["note_status"] = "manual-review"
+                decisions.append({"year": e["year"], "person_id": e["person_id"],
+                                  "person": e["person"], "office": e["office"],
+                                  "raw_note": raw, "action": "manual-review",
+                                  "reason": "contains-other-name-no-row-target"})
+                actions["manual-review"] += 1
+            continue
+        has_other = any(n != e["person"] and n in raw for n in all_names)
+        entity_ends = not any(y > e["year"] for y in later[e["person_id"]])
+        if has_other or not entity_ends:
+            e["note_status"] = "manual-review"
+            decisions.append({"year": e["year"], "person_id": e["person_id"],
+                              "person": e["person"], "office": e["office"],
+                              "raw_note": raw, "action": "manual-review",
+                              "reason": ("composite-or-other-name" if has_other
+                                         else "entity-continues")})
+            actions["manual-review"] += 1
+            continue
+        e["note"] = raw
+        e["note_status"] = "restored"
+        decisions.append({"year": e["year"], "person_id": e["person_id"],
+                          "person": e["person"], "office": e["office"],
+                          "raw_note": raw, "action": "restored-self",
+                          "reason": "entity-ends-this-year"})
+        actions["restored-self"] += 1
+    # 与 quarantine 报告对账：dedupe 合并掉的 2 条也必须有处置记录（D-02 100%）
+    covered = {(d["year"], d["person"], d["office"]) for d in decisions}
+    for q in report.get("note_quarantine", []):
+        key = (q["year"], q["person"], q["office"])
+        if key in covered:
+            continue
+        decisions.append({"year": q["year"], "person_id": q["person"],
+                          "person": q["person"], "office": q["office"],
+                          "raw_note": q.get("note", ""), "action": "manual-review",
+                          "reason": "merged-during-dedupe"})
+        actions["manual-review"] += 1
+    report["note_resolution"] = decisions
+    report["note_resolution_counts"] = dict(actions)
+    return entries
+
+
 def dedupe_entries(entries: list[dict], report: dict) -> list[dict]:
     groups = defaultdict(list)
     for e in entries:
@@ -496,6 +676,7 @@ def main() -> None:
     # 必须先逐页核对（部院 v1 教训）；长缺口用 gap_after 显式登记，不做插值。
     report["page_recovery"] = {"status": "disabled(需逐页核对，不插值)"}
     entries = assign_identities(entries, report)
+    entries = resolve_quarantined_notes(entries, report)
     entries.sort(key=lambda e: (e["year"], e["office"], e["person_id"]))
     new_mapping = repair_mapping(mapping, persons, report)
     entity_mapping = build_entity_mapping(entries, new_mapping, report)
@@ -516,9 +697,18 @@ def main() -> None:
         "book_patch": len(report.get("book_patch", [])),
         "mapping_out": len(entity_mapping),
         "mapping_ids": sum(1 for v in entity_mapping.values() if v.get("cbdb_id")),
+        "notes_restored": (report.get("note_resolution_counts", {}).get("restored-self", 0)
+                           + report.get("note_resolution_counts", {}).get("reassigned", 0)),
+        "notes_inferred": report.get("note_resolution_counts", {}).get("reassigned-inferred", 0),
+        "notes_prefix": report.get("note_resolution_counts", {}).get("restored-prefix-inferred", 0),
+        "notes_manual": report.get("note_resolution_counts", {}).get("manual-review", 0),
     }
     (DATA / "vol1_buyuan_repair.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
+    (DATA / "vol1_buyuan_note_review.json").write_text(
+        json.dumps({"counts": report.get("note_resolution_counts", {}),
+                    "decisions": report.get("note_resolution", [])},
+                   ensure_ascii=False, indent=1), encoding="utf-8")
     print(json.dumps(report["counts"], ensure_ascii=False, indent=1))
     print("quarantine reasons:", dict(Counter(q["reason"] for q in report["note_quarantine"]).most_common(10)))
     print("dropped:", report.get("dropped", [])[:10])

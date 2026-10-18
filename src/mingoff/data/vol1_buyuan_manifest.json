@@ -82,7 +82,15 @@
    "都察院"
   ],
   "display_persons": 790,
-  "split_entities": 12
+  "split_entities": 12,
+  "notes_inferred": 116,
+  "notes_prefix": 15,
+  "notes_manual": 55,
+  "note_resolution": {
+   "manual-review": 55,
+   "reassigned-inferred": 116,
+   "restored-prefix-inferred": 15
+  }
  },
  "evidence": [
   "docs/evidence/book_p402_bujuan1368.png",
@@ -95,7 +103,7 @@
   "docs/evidence/book_p679_bujuan1644.png"
  ],
  "tenure_assembly": {
-  "date": "2026-10-18T07:15:00+00:00",
+  "date": "2026-10-18T07:29:10+00:00",
   "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
   "output": "official_buyuan.json",
   "stats": {
@@ -123,11 +131,11 @@
     1368,
     1644
    ],
-   "with_start_month": 815,
-   "with_end_month": 453,
+   "with_start_month": 832,
+   "with_end_month": 553,
    "cbdb_aligned": 819,
-   "with_leave": 481,
-   "shu_li": 71,
+   "with_leave": 584,
+   "shu_li": 72,
    "same_name_risk": 15,
    "shilu_persons": 130,
    "shilu_hits": 3913,
@@ -300,7 +308,11 @@
    "dup_conflicts": 17,
    "book_patch": 14,
    "mapping_out": 555,
-   "mapping_ids": 513
+   "mapping_ids": 513,
+   "notes_restored": 0,
+   "notes_inferred": 116,
+   "notes_prefix": 15,
+   "notes_manual": 55
   }
  }
 }

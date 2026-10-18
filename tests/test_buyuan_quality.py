@@ -68,6 +68,20 @@ def test_gap_flags_are_explicit(doc):
             assert all(y > t["end_year"] for y in t["gap_after"]), t
 
 
+def test_note_review_d02_is_exhaustive():
+    """D-02：186 条隔离注文必须 100% 有处置记录。"""
+    p = DATA / "vol1_buyuan_note_review.json"
+    if not p.is_file():
+        pytest.skip("note review 未生成")
+    nr = json.loads(p.read_text(encoding="utf-8"))
+    assert len(nr["decisions"]) == 186
+    counts = nr["counts"]
+    assert sum(counts.values()) == 186
+    allowed = {"restored-self", "reassigned", "reassigned-inferred",
+               "restored-prefix-inferred", "manual-review"}
+    assert {d["action"] for d in nr["decisions"]} <= allowed
+
+
 def test_identity_split_d01(doc):
     """D-01：同名多人必须拆成独立 person_id；同一实体跨度不得跨代。"""
     tenures = doc["tenures"]
