@@ -1,0 +1,2197 @@
+{
+ "dropped": [
+  {
+   "year": 1419,
+   "office": "兵部",
+   "raw": "參軍"
+  },
+  {
+   "year": 1419,
+   "office": "兵部",
+   "raw": "屯戍"
+  },
+  {
+   "year": 1506,
+   "office": "",
+   "raw": "張敷華",
+   "reason": "office-unmapped"
+  },
+  {
+   "year": 1523,
+   "office": "總督京儲",
+   "raw": "右侍"
+  },
+  {
+   "year": 1523,
+   "office": "總督京儲",
+   "raw": "右侍"
+  },
+  {
+   "year": 1523,
+   "office": "總督京儲",
+   "raw": "都遷戶"
+  },
+  {
+   "year": 1530,
+   "office": "",
+   "raw": "汪俊",
+   "reason": "office-unmapped"
+  },
+  {
+   "year": 1556,
+   "office": "",
+   "raw": "何鰲",
+   "reason": "office-unmapped"
+  },
+  {
+   "year": 1556,
+   "office": "",
+   "raw": "歐陽必進",
+   "reason": "office-unmapped"
+  },
+  {
+   "year": 1556,
+   "office": "",
+   "raw": "盧紳",
+   "reason": "office-unmapped"
+  },
+  {
+   "year": 1556,
+   "office": "",
+   "raw": "高燿",
+   "reason": "office-unmapped"
+  },
+  {
+   "year": 1558,
+   "office": "",
+   "raw": "歐陽必進",
+   "reason": "office-unmapped"
+  },
+  {
+   "year": 1558,
+   "office": "",
+   "raw": "雷禮",
+   "reason": "office-unmapped"
+  },
+  {
+   "year": 1587,
+   "office": "總倉場",
+   "raw": "南兵"
+  },
+  {
+   "year": 1587,
+   "office": "總倉場",
+   "raw": "右侍"
+  },
+  {
+   "year": 1598,
+   "office": "吏部",
+   "raw": "井八年閏"
+  },
+  {
+   "year": 1613,
+   "office": "都察院",
+   "raw": "右侍"
+  },
+  {
+   "year": 1629,
+   "office": "兵部",
+   "raw": "右侍"
+  }
+ ],
+ "renamed": [
+  {
+   "raw": "吴中",
+   "person": "吳中",
+   "count": 36
+  },
+  {
+   "raw": "吕震",
+   "person": "呂震",
+   "count": 22
+  },
+  {
+   "raw": "茹瑞",
+   "person": "茹瑺",
+   "count": 14
+  },
+  {
+   "raw": "屠湧",
+   "person": "屠滽",
+   "count": 9
+  },
+  {
+   "raw": "吴鵬",
+   "person": "吳鵬",
+   "count": 9
+  },
+  {
+   "raw": "温純",
+   "person": "溫純",
+   "count": 9
+  },
+  {
+   "raw": "吴山",
+   "person": "吳山",
+   "count": 7
+  },
+  {
+   "raw": "吕本",
+   "person": "李本",
+   "count": 5
+  },
+  {
+   "raw": "吴琳",
+   "person": "吳琳",
+   "count": 4
+  },
+  {
+   "raw": "吕熙",
+   "person": "呂熙",
+   "count": 4
+  },
+  {
+   "raw": "趙羥",
+   "person": "趙羾",
+   "count": 4
+  },
+  {
+   "raw": "屠漑",
+   "person": "屠滽",
+   "count": 4
+  },
+  {
+   "raw": "洪鐘",
+   "person": "洪鍾",
+   "count": 4
+  },
+  {
+   "raw": "夏原吉扈駕",
+   "person": "夏原吉",
+   "count": 3
+  },
+  {
+   "raw": "屠瀟",
+   "person": "屠滽",
+   "count": 3
+  },
+  {
+   "raw": "吴原",
+   "person": "吳原",
+   "count": 3
+  },
+  {
+   "raw": "吴時來",
+   "person": "吳時來",
+   "count": 3
+  },
+  {
+   "raw": "吴雲",
+   "person": "吳雲",
+   "count": 2
+  },
+  {
+   "raw": "吕宗藝",
+   "person": "呂宗藝",
+   "count": 2
+  },
+  {
+   "raw": "趙勉閏",
+   "person": "趙勉",
+   "count": 2
+  },
+  {
+   "raw": "吴中扈駕",
+   "person": "吳中",
+   "count": 2
+  },
+  {
+   "raw": "金純扈駕",
+   "person": "金純",
+   "count": 2
+  },
+  {
+   "raw": "黄福",
+   "person": "黃福",
+   "count": 2
+  },
+  {
+   "raw": "胡渙",
+   "person": "胡濙",
+   "count": 2
+  },
+  {
+   "raw": "毛伯温",
+   "person": "毛伯溫",
+   "count": 2
+  },
+  {
+   "raw": "吕時中",
+   "person": "呂時中",
+   "count": 2
+  },
+  {
+   "raw": "黄光昇",
+   "person": "黃光昇",
+   "count": 2
+  },
+  {
+   "raw": "吴百朋",
+   "person": "吳百朋",
+   "count": 2
+  },
+  {
+   "raw": "吴兑",
+   "person": "吳兑",
+   "count": 2
+  },
+  {
+   "raw": "吴道南",
+   "person": "吳道南",
+   "count": 2
+  },
+  {
+   "raw": "劉貞閏",
+   "person": "劉貞",
+   "count": 1
+  },
+  {
+   "raw": "李有諒閏",
+   "person": "李有諒",
+   "count": 1
+  },
+  {
+   "raw": "班用吉閏",
+   "person": "班用吉",
+   "count": 1
+  },
+  {
+   "raw": "温祥卿",
+   "person": "溫祥卿",
+   "count": 1
+  },
+  {
+   "raw": "詹徽閏",
+   "person": "詹徽",
+   "count": 1
+  },
+  {
+   "raw": "吴斌",
+   "person": "吳斌",
+   "count": 1
+  },
+  {
+   "raw": "吕震扈駕",
+   "person": "呂震",
+   "count": 1
+  },
+  {
+   "raw": "趙班扈駕",
+   "person": "趙班",
+   "count": 1
+  },
+  {
+   "raw": "李昶閏",
+   "person": "李昶",
+   "count": 1
+  },
+  {
+   "raw": "郭璉閏",
+   "person": "郭琎",
+   "count": 1
+  },
+  {
+   "raw": "熊榮閏",
+   "person": "熊榮",
+   "count": 1
+  },
+  {
+   "raw": "劉中敷閏",
+   "person": "劉中敷",
+   "count": 1
+  },
+  {
+   "raw": "魏源閏",
+   "person": "魏源",
+   "count": 1
+  },
+  {
+   "raw": "陳智閏",
+   "person": "陳智",
+   "count": 1
+  },
+  {
+   "raw": "楊善閏",
+   "person": "楊善",
+   "count": 1
+  },
+  {
+   "raw": "姚夔閏",
+   "person": "姚夔",
+   "count": 1
+  },
+  {
+   "raw": "馬文升閏",
+   "person": "馬文升",
+   "count": 1
+  },
+  {
+   "raw": "屠勳閏",
+   "person": "屠勳",
+   "count": 1
+  },
+  {
+   "raw": "李鏜閏",
+   "person": "李鏜",
+   "count": 1
+  },
+  {
+   "raw": "劉機閏",
+   "person": "劉機",
+   "count": 1
+  },
+  {
+   "raw": "劉宇閏",
+   "person": "劉宇",
+   "count": 1
+  },
+  {
+   "raw": "屠湧閏",
+   "person": "屠滽",
+   "count": 1
+  },
+  {
+   "raw": "席書閏",
+   "person": "席書",
+   "count": 1
+  },
+  {
+   "raw": "吴一鵬",
+   "person": "吳一鵬",
+   "count": 1
+  },
+  {
+   "raw": "胡世寧閏",
+   "person": "胡世寧",
+   "count": 1
+  },
+  {
+   "raw": "王堯封閏",
+   "person": "王堯封",
+   "count": 1
+  },
+  {
+   "raw": "路迎閏",
+   "person": "路迎",
+   "count": 1
+  },
+  {
+   "raw": "劉儲秀閏",
+   "person": "劉儲秀",
+   "count": 1
+  },
+  {
+   "raw": "董分",
+   "person": "董份",
+   "count": 1
+  },
+  {
+   "raw": "吕調陽",
+   "person": "呂調陽",
+   "count": 1
+  },
+  {
+   "raw": "邊維垣閏",
+   "person": "邊維垣",
+   "count": 1
+  },
+  {
+   "raw": "孫丕揚閏",
+   "person": "孫丕揚",
+   "count": 1
+  },
+  {
+   "raw": "田樂閏",
+   "person": "田樂",
+   "count": 1
+  },
+  {
+   "raw": "姚繼可閏",
+   "person": "姚繼可",
+   "count": 1
+  },
+  {
+   "raw": "陳蕖閏",
+   "person": "陳蕖",
+   "count": 1
+  },
+  {
+   "raw": "吕兆熊",
+   "person": "呂兆熊",
+   "count": 1
+  },
+  {
+   "raw": "徐兆魁閏",
+   "person": "徐兆魁",
+   "count": 1
+  },
+  {
+   "raw": "王紹徽閏",
+   "person": "王紹徽",
+   "count": 1
+  },
+  {
+   "raw": "商周祚閏",
+   "person": "商周祚",
+   "count": 1
+  },
+  {
+   "raw": "吴履中",
+   "person": "吳履中",
+   "count": 1
+  }
+ ],
+ "person_rename": [
+  {
+   "from": "張鳳",
+   "to": "張鳳翔",
+   "year": 1629,
+   "office": "工部"
+  }
+ ],
+ "book_patch": [
+  {
+   "year": 1431,
+   "person": "郭敦",
+   "office": "戶部",
+   "source": "book-p466"
+  },
+  {
+   "year": 1431,
+   "person": "胡濙",
+   "office": "戶部",
+   "source": "book-p466"
+  },
+  {
+   "year": 1431,
+   "person": "胡濙",
+   "office": "禮部",
+   "source": "book-p466"
+  },
+  {
+   "year": 1432,
+   "person": "黃福",
+   "office": "戶部",
+   "source": "book-p467"
+  },
+  {
+   "year": 1432,
+   "person": "胡濙",
+   "office": "戶部",
+   "source": "book-p467"
+  },
+  {
+   "year": 1433,
+   "person": "郭資",
+   "office": "戶部",
+   "source": "book-p468"
+  },
+  {
+   "year": 1433,
+   "person": "胡濙",
+   "office": "戶部",
+   "source": "book-p468"
+  },
+  {
+   "year": 1434,
+   "person": "胡濙",
+   "office": "禮部",
+   "source": "book-p468"
+  },
+  {
+   "year": 1449,
+   "person": "于謙",
+   "office": "兵部",
+   "source": "book-p484"
+  },
+  {
+   "year": 1449,
+   "person": "鄺埜",
+   "office": "兵部",
+   "source": "book-p484"
+  },
+  {
+   "year": 1399,
+   "person": "景清",
+   "office": "都察院",
+   "source": "book-jiwen1"
+  },
+  {
+   "year": 1399,
+   "person": "練子寧",
+   "office": "都察院",
+   "source": "book-jiwen1",
+   "added": true
+  },
+  {
+   "year": 1400,
+   "person": "景清",
+   "office": "都察院",
+   "source": "book-jiwen2"
+  },
+  {
+   "year": 1400,
+   "person": "練子寧",
+   "office": "都察院",
+   "source": "book-jiwen2",
+   "added": true
+  }
+ ],
+ "note_quarantine": [
+  {
+   "year": 1369,
+   "person": "李廷桂",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "是年,撫州知府遷,尋卒."
+  },
+  {
+   "year": 1370,
+   "person": "劉大昕",
+   "office": "刑部",
+   "reason": "contains-other-name:班用吉",
+   "note": "是年,遷;是年,刑侍遷,尋卒。正、丁巳、廿七,河十一、乙卯、卅,間鹽運使遷,未視改吏尚。間鹽運使遷,未視事,貶惠州經歷。"
+  },
+  {
+   "year": 1370,
+   "person": "楊訓文",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "九月,卒。七、甲寅、廿八,翰林應奉遷。九、庚子、十五,汀州知府遷。"
+  },
+  {
+   "year": 1371,
+   "person": "秦文繹",
+   "office": "戶部",
+   "reason": "contains-other-name:海淵",
+   "note": "四、甲申、二,禮侍遷。海淵八、己亥、十九,左司郎中遷。"
+  },
+  {
+   "year": 1371,
+   "person": "蔣思德",
+   "office": "戶部",
+   "reason": "contains-other-name:徐本",
+   "note": "四、癸未、一,岳州知府遷。徐本六、壬午、一,平陽知府遷。"
+  },
+  {
+   "year": 1372,
+   "person": "吳雲",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "是年春,出湖廣参政。三、丙辰、九,出福建參政。三月,刑侍遷;是年,磨勘司令遷。六年三、乙卯、十三,卒。九月,出浙江參政。"
+  },
+  {
+   "year": 1372,
+   "person": "周時中",
+   "office": "吏部",
+   "reason": "contains-other-name:李信",
+   "note": "四、丁亥、十,刑侍遷。是年,邵州知府遷。是年任,本年免。本年坐事降鎮江知府,尋改李信福建轉運鹽使。十二、甲午、廿,兩浙轉"
+  },
+  {
+   "year": 1373,
+   "person": "孫克義",
+   "office": "刑部",
+   "reason": "contains-other-name:劉惟謙",
+   "note": "六、乙酉、十五,浙江按副遷;七、丙辰、十七,改兵尚。劉惟謙七、丙辰、十七,四川參政遷;閏十一、乙丑、廿二,詳定大明律。"
+  },
+  {
+   "year": 1374,
+   "person": "馮冕",
+   "office": "刑部",
+   "reason": "contains-other-name:徐本",
+   "note": "七、壬辰、廿九,出陝西參政,是年實授。唐鐸尋卒。四、己亥、四,改太常卿,未任徐本守制歸。是年,浙江參政遷。"
+  },
+  {
+   "year": 1374,
+   "person": "汪廣洋",
+   "office": "都察院",
+   "reason": "contains-other-name:陳寧",
+   "note": "四、戊午、廿三,廣東參政遷。陳寧"
+  },
+  {
+   "year": 1374,
+   "person": "趙翥",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "七、丁亥、廿四,降主事;是年免。五、丙子、十一,工尚改,八、甲午、一,復;尋專理太子贊善大夫事。十二、己未、廿九,致仕卒"
+  },
+  {
+   "year": 1375,
+   "person": "俞溥",
+   "office": "戶部",
+   "reason": "contains-other-name:宋冕",
+   "note": "二、丙午、十六,出江西參政。宋冕三、己卯、十九,河南參政遷;五、庚辰、廿一,出陝西參政。"
+  },
+  {
+   "year": 1375,
+   "person": "韓焯",
+   "office": "戶部",
+   "reason": "contains-other-name:周肅",
+   "note": "二、乙巳、十五,大都督府經歷遷,尋免。周肅十一、戊寅、廿二,河南知府遷,尋卒。"
+  },
+  {
+   "year": 1375,
+   "person": "馬貫",
+   "office": "戶部",
+   "reason": "contains-other-name:李泰",
+   "note": "二、王子、廿二,出浙江參政。李泰十一、戊寅、廿二,福建按僉遷。"
+  },
+  {
+   "year": 1376,
+   "person": "王敏",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "是年,出陝西參政,後卒於官。十二、庚申、十一、中書郎中遷。"
+  },
+  {
+   "year": 1376,
+   "person": "偰斯",
+   "office": "戶部",
+   "reason": "contains-other-name:周斌",
+   "note": "正、甲戌、廿九,遷靖江府六、丙申、十三、開封知府遷,八、甲申、二、戶郎遷右傅。尋免。周斌八、甲申、二、戶侍遷。"
+  },
+  {
+   "year": 1378,
+   "person": "李焕文",
+   "office": "吏部",
+   "reason": "contains-other-name:陳銘",
+   "note": "是年,免。六、己酉、九,兵尚改;陳銘十二、丙辰、十八,出四川左政。四、己酉、七,兵郎遷;陳煜六、己酉、九,降都府判。是年"
+  },
+  {
+   "year": 1380,
+   "person": "陳寧",
+   "office": "都察院",
+   "reason": "contains-other-name:安然",
+   "note": "正、戊戌、六、賜死;正、己亥、七、伏誅。安然正、丁巳、廿五、遷左御史中丞。"
+  },
+  {
+   "year": 1384,
+   "person": "詹徽",
+   "office": "都察院",
+   "reason": "contains-other-name:湯友恭",
+   "note": "正、己酉、十一,左僉都遷。湯友恭是年任。"
+  },
+  {
+   "year": 1388,
+   "person": "唐鐸",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "是年,卒於官。六、丁未、五,刑尚改。"
+  },
+  {
+   "year": 1392,
+   "person": "詹徽",
+   "office": "都察院",
+   "reason": "contains-other-name:袁泰",
+   "note": "十二、甲戌、廿八,解院務。袁泰八、庚戌、一,卒。"
+  },
+  {
+   "year": 1394,
+   "person": "曹銘",
+   "office": "都察院",
+   "reason": "contains-other-name:解敏",
+   "note": "九月,左副都遷。解敏"
+  },
+  {
+   "year": 1395,
+   "person": "吳斌",
+   "office": "都察院",
+   "reason": "contains-other-name:王平",
+   "note": "正月,刑主遷;尋免,後無考。王平二、甲戌、十,左僉都遷。"
+  },
+  {
+   "year": 1403,
+   "person": "劉儁",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "是年,遣住陝西營長安郡主府第。七年二、丁亥、十四,卒。"
+  },
+  {
+   "year": 1405,
+   "person": "夏原吉",
+   "office": "戶部",
+   "reason": "death-note-but-later-entries",
+   "note": "八、戊辰、五,卒。"
+  },
+  {
+   "year": 1405,
+   "person": "鄭賜",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "八、戊辰、五,下獄;九、己亥、七,刑尚改。六年九、丁未、二,釋,降郎中。宣德二年七、庚寅、四,卒。"
+  },
+  {
+   "year": 1408,
+   "person": "金忠",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "五月,還:八、乙酉、十,參沐晟軍務;十二、丁酉、廿四,卒。"
+  },
+  {
+   "year": 1411,
+   "person": "陳瑛",
+   "office": "都察院",
+   "reason": "contains-other-name:陳德文",
+   "note": "二、辛亥、十九,罪下獄死。陳德文六月,詔還京"
+  },
+  {
+   "year": 1415,
+   "person": "陳洽",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "四、癸未、十五、卒。"
+  },
+  {
+   "year": 1421,
+   "person": "劉觀",
+   "office": "都察院",
+   "reason": "contains-other-name:王彰",
+   "note": "四、癸丑、廿一,巡撫陝西。王彰四、癸丑、廿一,巡撫河南。"
+  },
+  {
+   "year": 1422,
+   "person": "李慶",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "七、乙亥、廿,卒。二、乙巳、十八,督餉。萬曆元年正、戊申、廿七,贈太子太保。"
+  },
+  {
+   "year": 1428,
+   "person": "劉觀",
+   "office": "都察院",
+   "reason": "contains-other-name:顧佐",
+   "note": "六、丁未、廿六,巡視河道;十、己亥、廿一,下獄。四年七、庚午、廿六,宥,遼東閑住。七年七、壬戌、六,復,改河間監司同知。"
+  },
+  {
+   "year": 1431,
+   "person": "許廓",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "正、壬申、七,卒正、壬午、十七,工左侍遷"
+  },
+  {
+   "year": 1431,
+   "person": "陳瑞",
+   "office": "總督倉場",
+   "reason": "death-note-but-later-entries",
+   "note": "十、己亥、八,卒是年,戶右侍任"
+  },
+  {
+   "year": 1435,
+   "person": "郭琎",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "正、丁亥、十五,卒,贈太師,謚忠定。"
+  },
+  {
+   "year": 1443,
+   "person": "王直",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "正、己巳、十三,免,令致仕。正、庚午、十四,禮左侍兼侍讀學士遷。十二年十一、丁巳、廿九,卒。"
+  },
+  {
+   "year": 1445,
+   "person": "鄺埜",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "十、甲辰、四,致仕。九、庚寅、廿,兵左侍遷。十一年三、辛巳、十四,卒。"
+  },
+  {
+   "year": 1445,
+   "person": "焦宏",
+   "office": "總督倉場",
+   "reason": "death-note-but-later-entries",
+   "note": "九、癸巳、廿三,卒。十、癸卯、三,戶右侍改任。"
+  },
+  {
+   "year": 1448,
+   "person": "石璞",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "二、丁卯、十一,致仕。五、丁亥、三,山西左布使遷;天順七年七、庚子、十三,卒。十一、丙戌、四,參贊南征軍務。"
+  },
+  {
+   "year": 1449,
+   "person": "金濂",
+   "office": "戶部",
+   "reason": "death-note-but-later-entries",
+   "note": "七、癸巳、十五,扈從;十一、癸未、七,刑尚改,仍兼太子賓客;八、壬戌、十五,死難。十一、戊子、十二,遷太子太保,仍兼尚書"
+  },
+  {
+   "year": 1453,
+   "person": "王翱",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "五、丁丑、廿一,致仕;六、癸巳、八,左都改。五、癸未、廿七,復任;六、壬辰、七,下獄,旋釋致仕。天順元年四、丁未、十四,"
+  },
+  {
+   "year": 1453,
+   "person": "蕭維禎",
+   "office": "都察院",
+   "reason": "death-note-but-later-entries",
+   "note": "九、乙卯、二,致仕。三、己卯、廿一,召還;七、癸酉、十八,太子少七年三、丙申、廿七,卒,六、癸巳、八,改吏尚。贈太保,謚"
+  },
+  {
+   "year": 1457,
+   "person": "陳汝言",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "正、壬午、十七,逮;正、癸卯、十二,回京,致仕。兼兵尚,掌部事;六、庚子、八,致仕,仍朝朔望。四年五、丙戌、十一,卒,追"
+  },
+  {
+   "year": 1457,
+   "person": "趙榮",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "正、甲申、十九,辭太子少師;正、辛卯、廿六,工左侍遷。正、丁亥、廿二,充鐵嶺衛軍,未幾卒。"
+  },
+  {
+   "year": 1457,
+   "person": "楊善",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "正、甲申、十九,辭少傅兼太子太師致仕。三、壬午、十九,以濟興伯管部事。天順七年八、丙辰、卅,卒,贈太保,謚忠安。"
+  },
+  {
+   "year": 1457,
+   "person": "寇深",
+   "office": "都察院",
+   "reason": "contains-other-name:李實",
+   "note": "正、甲申、十九,正、甲申、十九,辭太保;正、丙戌、廿一,封興濟伯;正、庚寅、廿五,理左府事;正、甲午、廿九,兼掌鴻臺寺事"
+  },
+  {
+   "year": 1458,
+   "person": "陸瑜",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "七、乙未、十,奪俸;十、癸亥、九,山東左布使遷。十、丁巳、三,歸鄉治疾;十二、己巳、十五,卒。"
+  },
+  {
+   "year": 1459,
+   "person": "寇深",
+   "office": "都察院",
+   "reason": "death-note-but-later-entries",
+   "note": "是年,服闊參贊京師軍務右都改,尋致仕。成化六年三、庚子、廿一,卒;九月,贈太子太保。"
+  },
+  {
+   "year": 1461,
+   "person": "寇深",
+   "office": "都察院",
+   "reason": "contains-other-name:李賓",
+   "note": "七、庚子、二,死難,贈少保,謚莊愍。李賓七、辛亥、十三,大理卿遷。"
+  },
+  {
+   "year": 1465,
+   "person": "王復",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "九、己未、十五,致仕。十、壬辰、十八,兵左侍遷。弘治元年十二、壬辰、三,卒。"
+  },
+  {
+   "year": 1467,
+   "person": "李秉",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "七、壬午、十九,病免;十二、辛丑、九,左都改。十一、戊辰、六,卒,赠少保,謚忠肅。"
+  },
+  {
+   "year": 1467,
+   "person": "薛遠",
+   "office": "總督倉場",
+   "reason": "death-note-but-later-entries",
+   "note": "八、己亥、六,致仕。八、癸卯、十,戶左侍遷戶尚。七年五、戊子、十六,卒。"
+  },
+  {
+   "year": 1467,
+   "person": "李秉",
+   "office": "都察院",
+   "reason": "contains-other-name:林聰",
+   "note": "三、甲午、廿九,回院;五、己丑、廿五,督師遼東;十一、乙酉、廿三,召還京;十二、辛丑、九,改吏尚。林聰四、己亥、四,右副"
+  },
+  {
+   "year": 1468,
+   "person": "楊鼎",
+   "office": "戶部",
+   "reason": "death-note-but-later-entries",
+   "note": "九、癸酉、十七,致仕。十、甲寅、廿七,戶左侍遷。成化十二年五月,卒,贈少保,謚恭襄。"
+  },
+  {
+   "year": 1473,
+   "person": "尹旻",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "二、庚午、九、卒,贈少保,謚文敏。三、己亥、九,吏左侍遷。"
+  },
+  {
+   "year": 1474,
+   "person": "項忠",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "十二、辛丑、廿,卒、贈少傅,謚恭敏。十二、乙巳、廿四,刑尚改。"
+  },
+  {
+   "year": 1474,
+   "person": "董方",
+   "office": "都察院",
+   "reason": "death-note-but-later-entries",
+   "note": "八、壬子、卅,卒,謚恭敦。九、丁卯、十五,左都改;十二、乙巳、廿四,巡撫大同右都改。十二、乙巳、廿四,改兵尚。"
+  },
+  {
+   "year": 1477,
+   "person": "余子俊",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "五、甲午、廿八,致仕;七、辛卯、廿六,巡撫陝西右都遷。六、甲辰、九,罷為民。十九年八、壬申、十二,復職致仕。弘治元年,進"
+  },
+  {
+   "year": 1477,
+   "person": "林聰",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "七、丁卯、二,致仕。七、辛卯、廿六,南右都遷十九年三、辛亥、十九,卒,贈太子少保,謚襄敏。"
+  },
+  {
+   "year": 1477,
+   "person": "王越",
+   "office": "都察院",
+   "reason": "death-note-but-later-entries",
+   "note": "七、丁卯、二,致仕。十二、丙辰、廿三,加兵尚。廿一年五、乙丑、十六,卒,贈太子太保,謚襄敏。"
+  },
+  {
+   "year": 1479,
+   "person": "劉昭",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "十二、乙亥、廿四,致仕。十二、乙亥、廿四,工右侍遷。廿一年六、丙午、廿七,卒,贈太子太保,謚莊簡。"
+  },
+  {
+   "year": 1479,
+   "person": "張文質",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "十二、乙亥、廿四,致仕。十二、乙亥、廿四,太子少保工尚,理通政司事改弘治五年四、戊午、十八,卒,贈太子太保,謚康靖。"
+  },
+  {
+   "year": 1481,
+   "person": "王越",
+   "office": "都察院",
+   "reason": "contains-other-name:戴縉",
+   "note": "三、辛卯、十七,加太子太傅,掌領前軍府事,總五軍營,提督團營操練;五、己亥、廿五,赴宣府;十一、己卯、九,還;十二、庚申"
+  },
+  {
+   "year": 1483,
+   "person": "余子俊",
+   "office": "戶部",
+   "reason": "death-note-but-later-entries",
+   "note": "二、辛卯、廿八,加太子太保致仕;七、辛亥、廿一,服闕兵尚改,尋加太子太保。六、戊辰、七,卒。廿年三、乙巳、十八,贈太子少"
+  },
+  {
+   "year": 1485,
+   "person": "馬文升",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "四、辛丑、廿一,致仕。十一、辛未、廿四,巡撫鳳陽右都任。弘治四年六、癸亥、十八,卒,謚懿簡。"
+  },
+  {
+   "year": 1485,
+   "person": "屠滽",
+   "office": "都察院",
+   "reason": "death-note-but-later-entries",
+   "note": "七、庚申、十二,卒,贈太子太保.正德十三年,謚恭簡。七、甲戌、廿六,右副都遷。"
+  },
+  {
+   "year": 1487,
+   "person": "王恕",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "十一、辛丑、六,致仕。十一、乙巳、十,致仕南兵尚起復改;正德六年八、癸未、六,卒。十二、癸巳、廿八,至京;十二、乙未、卅"
+  },
+  {
+   "year": 1487,
+   "person": "馬文升",
+   "office": "都察院",
+   "reason": "contains-other-name:劉敷",
+   "note": "十一、乙巳、十,南兵尚改。劉敷二、壬午、十二,赴任;十一、癸卯、八,致仕。弘治五年,進散官一級。弘治十五年卒。"
+  },
+  {
+   "year": 1489,
+   "person": "馬文升",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "二、辛亥、廿三,卒,贈太保,謚襄敏。二、乙卯、廿七,左都改。"
+  },
+  {
+   "year": 1491,
+   "person": "彭韶",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "八、甲寅、十,致仕。九、戊寅、五,吏左侍遷。十五年十二、庚申、廿二,卒。正德十三年八、庚寅、廿三,贈太子太保,謚文肅。"
+  },
+  {
+   "year": 1491,
+   "person": "葉淇",
+   "office": "戶部",
+   "reason": "death-note-but-later-entries",
+   "note": "正、甲辰、廿七,致仕;二、乙丑、十九,戶左侍遷。二、辛未、廿五,卒,贈太子少保,謚恭靖。"
+  },
+  {
+   "year": 1493,
+   "person": "白昂",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "七、庚戌、十八,致仕。八、丙寅、四,右都遷。八年正、己未、十一,卒,贈太子少保,謚惠安。"
+  },
+  {
+   "year": 1493,
+   "person": "耿裕",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "五、乙卯、廿二,致仕。六、壬午、廿,禮尚改。正德三年四、己卯、十二,卒,贈太師,謚端毅。"
+  },
+  {
+   "year": 1494,
+   "person": "劉璋",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "二、丙子、十七,致仕。八年六、己巳、十八,卒。二、丁亥、廿八,南禮尚改。"
+  },
+  {
+   "year": 1505,
+   "person": "戴珊",
+   "office": "都察院",
+   "reason": "contains-other-name:史琳",
+   "note": "十二、癸酉、廿三,卒,贈太子太保,謚恭簡。史琳"
+  },
+  {
+   "year": 1507,
+   "person": "劉宇",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "四、丁亥、十四,加太子太保致仕。四、甲午、廿一,左都改;七年八、癸丑、十二,卒。四、壬寅、廿九、兼督團營;八、丙戌、十五"
+  },
+  {
+   "year": 1507,
+   "person": "屠勳",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "正、癸亥、十九,加少保致仕。閏正、己巳、廿五,右都遷。六年十、壬辰、十五,卒,贈太保。"
+  },
+  {
+   "year": 1507,
+   "person": "劉機",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "正、辛酉、十七,加太子太保致仕。閏正、丁卯、廿三,南吏尚改;十、丙子、六,禮左侍兼翰林九、辛酉、廿一,致仕。院學士遷。十"
+  },
+  {
+   "year": 1507,
+   "person": "林泮",
+   "office": "總督倉場",
+   "reason": "death-note-but-later-entries",
+   "note": "是年,歸養疾。閏正、壬子、八,順天尹遷戶右侍。三年十二、壬申、九,致仕。五年十、庚子、十七,卒。"
+  },
+  {
+   "year": 1507,
+   "person": "屠滽",
+   "office": "都察院",
+   "reason": "contains-other-name:屠勳",
+   "note": "正、甲子、廿、右都遷;四、己亥、廿六,致仕太子太傅吏尚起復,兼左四、甲午、廿一,改兵尚。都掌院事。屠勳"
+  },
+  {
+   "year": 1509,
+   "person": "洪鍾",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "正、癸丑、廿,致仕。正、丙辰、廿三,工尚改;十二、丁酉、十,刑左侍遷。十四年七、甲午、三,卒。十一、丁卯、九,加太子太保"
+  },
+  {
+   "year": 1512,
+   "person": "陸完",
+   "office": "戶部",
+   "reason": "death-note-but-later-entries",
+   "note": "九、戊子、十六,還;十二、壬寅、二,加榮祿大夫致仕。嘉靖十、辛酉、廿一,右都遷。二年四、庚寅、十九,卒。嘉靖三年十二、己"
+  },
+  {
+   "year": 1513,
+   "person": "陸完",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "十一、己巳、五,致仕。十一、辛巳、十七,左都遷;十六年八月,卒。十一、己丑、廿五,提督團營"
+  },
+  {
+   "year": 1513,
+   "person": "劉春",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "六、辛亥、十四,致仕。六、丙寅、廿九,吏左侍遷。十年四、辛丑、十四,卒。十六年五、丙辰、五,贈太子少保,謚文毅。"
+  },
+  {
+   "year": 1513,
+   "person": "陸完",
+   "office": "都察院",
+   "reason": "contains-other-name:李士實",
+   "note": "十一、辛巳、十七,遷兵尚李士實"
+  },
+  {
+   "year": 1519,
+   "person": "楊潭",
+   "office": "戶部",
+   "reason": "death-note-but-later-entries",
+   "note": "四、辛巳、十八,致仕。五、辛丑、九,總京儲戶尚回。十六年二、己丑、六,卒;五、壬戌、十一,贈太子少保。"
+  },
+  {
+   "year": 1521,
+   "person": "王璟",
+   "office": "都察院",
+   "reason": "contains-other-name:張綸",
+   "note": "四、戊申、廿七,致仕。嘉靖十二年正、辛未、廿八,卒,贈少保,謚恭靖。張綸七、己未、十,令自陳;七、乙丑、十六,致仕。嘉靖"
+  },
+  {
+   "year": 1521,
+   "person": "陳金",
+   "office": "都察院",
+   "reason": "contains-other-name:金獻民",
+   "note": "四、戊申、廿七,致仕。嘉靖八年七、庚申、廿七,卒。金獻民六、辛丑、廿一,南刑尚改。"
+  },
+  {
+   "year": 1522,
+   "person": "鄭宗仁",
+   "office": "總督倉場",
+   "reason": "contains-other-name:金獻民",
+   "note": "十一、丙寅、廿四,卒。.金獻民"
+  },
+  {
+   "year": 1523,
+   "person": "金獻民",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "六、丁卯、廿八,在部調理;十一、壬申、六,刑尚改。十、己未、廿三,加少保致仕,尋奪官,卒於家。隆慶元年八、甲申、二,復官"
+  },
+  {
+   "year": 1523,
+   "person": "金獻民",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "七、庚寅、廿二,加太子太保致仕。八、己亥、二,左都改;六年四、王子、六,卒。十一、壬申、六,改兵尚。七年削官。"
+  },
+  {
+   "year": 1523,
+   "person": "秦金",
+   "office": "戶部",
+   "reason": "death-note-but-later-entries",
+   "note": "四、丁亥、十六,病滿三月乞住俸不允;十一、丁卯、一,南兵尚改。十、辛亥、十五,加太子太保致仕。十二年二、庚子、廿七,卒,"
+  },
+  {
+   "year": 1523,
+   "person": "汪俊",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "二、辛丑、卅,致仕;三、壬子、十一,南吏尚改,尋七、戊子、廿,吏左侍遷。閏四、庚戌、十,卒,贈少傅,誡文簡。丁憂歸。六年"
+  },
+  {
+   "year": 1523,
+   "person": "金獻民",
+   "office": "都察院",
+   "reason": "contains-other-name:俞諫",
+   "note": "八、己亥、二,改刑尚。俞諫八、乙巳、八,總漕運右都回院.."
+  },
+  {
+   "year": 1524,
+   "person": "汪俊",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "三、丙戌、廿一,致仕閑住,卒。隆慶元年四、甲寅、廿九,復官,贈少保,謚文莊。"
+  },
+  {
+   "year": 1525,
+   "person": "李鉞",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "三、癸酉、十四,還京辭兼職,理部事;六、庚戌、廿二,右都遷。六、丁酉、九、致仕。七年五、甲午、廿四,下獄,尋令革職冠帶閑"
+  },
+  {
+   "year": 1525,
+   "person": "顏頤壽",
+   "office": "都察院",
+   "reason": "contains-other-name:李鉞",
+   "note": "六、丙辰、廿八,南吏尚改。李鉞六、庚戌、廿二,遷兵尚。"
+  },
+  {
+   "year": 1527,
+   "person": "吳一鵬",
+   "office": "禮部",
+   "reason": "contains-other-name:方獻夫",
+   "note": "五、丙申、廿,掌詹事府事禮尔回部;九、丁亥、十三,改南吏尚,加太子少保。方獻夫十一、戊子、十四,吏左侍遷,仍兼學士。"
+  },
+  {
+   "year": 1528,
+   "person": "劉麟",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "六月,卒。七、庚辰、十,刑左侍遷。"
+  },
+  {
+   "year": 1528,
+   "person": "梁材",
+   "office": "戶部",
+   "reason": "death-note-but-later-entries",
+   "note": "十二、辛巳、十四,致仕。十二、戊子、廿一,戶左侍遷。十六年七、乙巳、廿八,卒,贈太子少保,謚莊簡。"
+  },
+  {
+   "year": 1529,
+   "person": "許讚",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "四、丁亥、廿一,致仕。五、甲辰、十,南刑尚改;九、乙巳、十三,刑左侍遷。廿五年三、己卯、廿二,卒,九、乙巳、十三,改南刑"
+  },
+  {
+   "year": 1529,
+   "person": "章拯",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "七、丁酉、四,致仕;八、庚午、七,南工尚改。八、丙子、十三,革新任以原職致仕。四十年四、辛卯、二,卒,贈太子少保,謚清惠"
+  },
+  {
+   "year": 1529,
+   "person": "王憲",
+   "office": "都察院",
+   "reason": "contains-other-name:熊浹",
+   "note": "二、癸酉、七,回部。八、乙丑、二,南兵尚改,仍太子太保;十二、辛未、九、罷。十年十一、甲子、十四,召改兵尚。伍文定熊浹汪"
+  },
+  {
+   "year": 1531,
+   "person": "王憲",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "三、己丑、四,卒,四、壬戌、八,起復兵尚;十一、甲子、十四,起左都改。贈少保,謚康惠。九、甲戌、廿四,改刑尚。"
+  },
+  {
+   "year": 1533,
+   "person": "聶賢",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "二、癸卯、卅,閑住。四、甲戌、二,左都改。十五年致仕。廿一年正、丁酉、十六,卒。"
+  },
+  {
+   "year": 1534,
+   "person": "周叙",
+   "office": "總督倉場",
+   "reason": "death-note-but-later-entries",
+   "note": "七、己巳、四,罷。七、丁亥、廿二,大理卿遷戶右侍。廿三年,卒,贈右都。"
+  },
+  {
+   "year": 1535,
+   "person": "張瓚",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "三、乙亥、十五,致仕。三、甲申、廿四,兩廣提督兵左侍兼左僉都遷。十六年十、乙亥、廿九,卒,贈少保,謚康毅。"
+  },
+  {
+   "year": 1535,
+   "person": "唐龍",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "七、庚辰、廿一,令自陳,尋致仕。七、戊子、廿九,總制三邊兵尚改,仍加太子十九年七、甲寅、廿五,卒,贈太子少保,謚榮襄。太"
+  },
+  {
+   "year": 1536,
+   "person": "張雲",
+   "office": "總督倉場",
+   "reason": "death-note-but-later-entries",
+   "note": "十一、甲寅、二,戶尚兼西苑農事;閏十二、丁丑、廿六,辭總京儲事,專營西苑農事。十六年六、甲寅、七,致仕。廿三年四、戊寅、"
+  },
+  {
+   "year": 1536,
+   "person": "王廷相",
+   "office": "都察院",
+   "reason": "contains-other-name:毛伯溫",
+   "note": "四、己亥、十五,加太子少保。毛伯溫十一、壬申、廿,起閑住右副都遷。"
+  },
+  {
+   "year": 1539,
+   "person": "周期雍",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "二、乙卯、十六,南巡扈從;六、丙辰、廿,掌大理卿印右都遷。四、癸亥、廿九,還京;六、甲辰、八,致仕。廿年正、壬子、廿六,"
+  },
+  {
+   "year": 1539,
+   "person": "梁材",
+   "office": "戶部",
+   "reason": "death-note-but-later-entries",
+   "note": "二、癸丑、十四,加太子賓客;五、丙子、九,原戶尚起復,二、乙卯、十六,南巡扈從;加太子少保。三、辛巳、十三,降二級;四、"
+  },
+  {
+   "year": 1539,
+   "person": "王廷相",
+   "office": "都察院",
+   "reason": "contains-other-name:毛伯溫",
+   "note": "二、乙卯、十六,南巡扈從;三、丙戌、十八,加太子太保;四、丙寅、廿九,還京。毛伯溫周期雍二、壬寅、三,總宣大山西三關;是"
+  },
+  {
+   "year": 1541,
+   "person": "王廷相",
+   "office": "都察院",
+   "reason": "contains-other-name:毛伯溫",
+   "note": "七月,罷為民。廿三年九、癸卯、七,卒。隆慶元年五、甲子、上,復秩;六、戊申、廿五,謚肅敏;七、庚申、七,贈少保。毛伯溫四"
+  },
+  {
+   "year": 1542,
+   "person": "毛伯溫",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "九、甲寅、七,兼督團營;八、辛丑、廿四,致仕。十一、壬申、廿六,右都兼兵尚改,十、丙午、卅,卒,贈太傅,廿四年十二、甲寅"
+  },
+  {
+   "year": 1542,
+   "person": "聞淵",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "十、丁亥、十一,罷為民歸;十、庚子、廿四,南吏尚改。十一、癸丑、七,道卒。"
+  },
+  {
+   "year": 1545,
+   "person": "路迎",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "正、甲戌、十一,致仕。閏正、丁丑、十四,十二、甲辰、十五,兵左侍遷廿七年五、辛巳、六,卒。南太子少保吏尚改;兼提督團營。"
+  },
+  {
+   "year": 1545,
+   "person": "唐龍",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "七、辛酉、一,加太子太保;十二、癸巳、四,兵尚改。十一、辛巳、廿二,罷為民。卅三年九、辛酉、廿三,卒。隆慶元年正、辛酉、"
+  },
+  {
+   "year": 1547,
+   "person": "屠僑",
+   "office": "刑部",
+   "reason": "contains-other-name:喻茂堅",
+   "note": "二、甲辰、廿二,南刑尚改;九、己巳、廿一,改左都。喻茂堅閏九、戊子、十,總漕右都遷。"
+  },
+  {
+   "year": 1547,
+   "person": "王以旂",
+   "office": "都察院",
+   "reason": "contains-other-name:屠僑",
+   "note": "二、丁酉、十五,工尚改;九、丙辰、八,改兵尚。屠僑九、己巳、廿一,刑尚改。"
+  },
+  {
+   "year": 1549,
+   "person": "丁汝夔",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "三、壬午、十二,加四、丙辰、十七,兵左侍遷,未任罷。五、甲戌、五,總宣大兵尙回部;六、丙寅、廿八,兼督團營;十、辛酉、廿"
+  },
+  {
+   "year": 1549,
+   "person": "夏邦謨",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "九、戊寅、十二,致仕。九、癸巳、廿四,戶尚改。四十二年十一、丙戌、十一,卒,贈少保,謚莊簡。"
+  },
+  {
+   "year": 1549,
+   "person": "李士翱",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "十一、庚寅、廿五,卒。十二、丁未、十二,督倉場戶左侍遷。"
+  },
+  {
+   "year": 1553,
+   "person": "李默",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "三、癸卯、廿七,加太子少保;八、癸未、十,原任吏尚復;八、己卯、五,削籍。十一、辛未、廿九,至京。四十四年卒。隆慶元年十"
+  },
+  {
+   "year": 1554,
+   "person": "王用賓",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "三、癸亥、廿三,卒,贈太子少保,謚文莊。三、丁卯、廿七,吏左侍遷;十一、癸卯、六,加太子少保;十一、戊申、十一,兼翰林學"
+  },
+  {
+   "year": 1555,
+   "person": "楊博",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "二、甲午、廿九,回籍閑住。三、丙申、一,總薊遼右都遷;四十二年十一、己卯、四,卒。十一、己亥、八,加太子少保。隆慶元年五"
+  },
+  {
+   "year": 1555,
+   "person": "周延",
+   "office": "都察院",
+   "reason": "death-note-but-later-entries",
+   "note": "正、戊申、十二,卒,贈少保,謚簡肅。正、庚申、廿四,南兵尚遷。"
+  },
+  {
+   "year": 1557,
+   "person": "歐陽必進",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "八、辛丑、廿一,罷,回籍養病;八、辛丑、廿一,刑尚改。九、辛亥、一,削籍為民,尋卒。"
+  },
+  {
+   "year": 1559,
+   "person": "馬坤",
+   "office": "戶部",
+   "reason": "death-note-but-later-entries",
+   "note": "六、甲寅、十四,致仕。六、甲寅、十四,南户尚改。卅九年八、乙卯、廿二,卒,贈太子太保。"
+  },
+  {
+   "year": 1561,
+   "person": "蔡雲程",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "三、丁亥、廿七,改左都。四、甲午、五,吏右侍遷;七、癸巳、五,南刑尚改。六、丁亥、廿九,回籍閑住。四十三年二月,卒。"
+  },
+  {
+   "year": 1561,
+   "person": "潘恩",
+   "office": "都察院",
+   "reason": "death-note-but-later-entries",
+   "note": "二、辛丑、十一,卒,二、壬子、廿二,少保兼太子三、丁亥、廿七,刑尚改,贈太子太保,謚簡肅。太保工尚改;三、戊寅、十八,改"
+  },
+  {
+   "year": 1573,
+   "person": "張瀚",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "九、戊子、十一,加少傅兼太子太傅致仕。九、辛卯、十四,南工尚改。二年十、乙巳、四,卒,謚襄毅。"
+  },
+  {
+   "year": 1573,
+   "person": "萬士和",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "十二、甲寅、八,回籍養病。十二、甲子、十八,禮左侍署祭酒遷。十六年正、癸丑、廿九,加太子少保。卅三年七、辛巳、九,卒。卅"
+  },
+  {
+   "year": 1574,
+   "person": "郭朝賓",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "五、癸巳、廿,致仕,加太子太保;六、甲辰、一,總倉場戶左侍遷。八、甲辰、三,以尚書致仕。十二年七、戊寅、四,卒。十三年正"
+  },
+  {
+   "year": 1574,
+   "person": "畢鏘",
+   "office": "總督倉場",
+   "reason": "death-note-but-later-entries",
+   "note": "六、甲辰、一,遷工尚。六、戊申、五,南刑尚改戶尚,尋卒;是年,刑右侍遷戶左侍。十、乙巳、四,賜祭葬。"
+  },
+  {
+   "year": 1575,
+   "person": "馬自強",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "九、戊午、廿三,致仕。九、甲子、廿九,掌詹事府吏左侍兼學士遷。十二年正、乙酉、七,起改南禮尚(未赴)。十四年卒。十五年二"
+  },
+  {
+   "year": 1575,
+   "person": "陳瓚",
+   "office": "都察院",
+   "reason": "death-note-but-later-entries",
+   "note": "六、乙亥、八,加太子少保致仕。六、壬午、十五,南戶尚改。六年五、辛亥、一,卒,贈太子太保,謚端肅。"
+  },
+  {
+   "year": 1577,
+   "person": "方逢時",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "四、庚申、三,卒,四、丙寅、九,刑尚改;十、壬辰、九,協理戎政兵尚赠太子太保,謚襄敏。十、丁亥、四,致仕。兼右副都回;十"
+  },
+  {
+   "year": 1577,
+   "person": "吳百朋",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "四、丙寅、九,改兵尚。四、戊辰、十一,協理戎政兵尚改;閏八、辛亥、廿七,致仕。十八年六月,卒。十九年閏三、己巳、四,予祭"
+  },
+  {
+   "year": 1577,
+   "person": "王國光",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "十、丁酉、十四,致仕。十、戊申、廿五,起戶尚改。廿一年卒。廿二年二、辛未、廿二,謚恭毅,贈太子少保。"
+  },
+  {
+   "year": 1577,
+   "person": "李幼滋",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "十一、丙子、廿四,致仕。十二、癸未、一,南右都遷。十三年六、庚戌、十一,卒;十一、癸卯、七,予祭葬。"
+  },
+  {
+   "year": 1581,
+   "person": "梁夢龍",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "二、丁未、十三,被劾留用;四、丁未、十四,總督薊遼兵尙回。四、庚子、七,致仕。四十四年七、戊子、廿,卒,予祭葬。"
+  },
+  {
+   "year": 1583,
+   "person": "張學顏",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "三、丁未、廿五,致仕。四、癸丑、二,戶尚改。廿四年四、己未、廿三,卒。"
+  },
+  {
+   "year": 1583,
+   "person": "楊巍",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "十六年正、癸丑、廿七,加太子少保。十八年六、戊戌、廿八,卒,贈太子太保,謚恭肅。"
+  },
+  {
+   "year": 1583,
+   "person": "陳經邦",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "九、乙未、十七,加太子少保;十、辛未、廿三,致仕。十、丁丑、廿九,掌詹事府事吏左侍兼侍讀學士遷。廿一年十二、辛亥、二,卒"
+  },
+  {
+   "year": 1583,
+   "person": "趙錦",
+   "office": "都察院",
+   "reason": "death-note-but-later-entries",
+   "note": "七、辛卯、十二,致仕。七、庚子、廿一,南吏尚改。十二年三、甲辰、廿七,卒;十二、庚申、十八,予祭葬。"
+  },
+  {
+   "year": 1584,
+   "person": "沈鯉",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "十、壬戌、廿,致仕。十、丁卯、廿五,吏左侍兼侍讀學士遷,兼翰林學士。四十三年六、甲辰、廿九,卒。四十五年六、丁巳、廿四,"
+  },
+  {
+   "year": 1585,
+   "person": "張佳胤",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "三、庚寅、十九,致仕。三、壬辰、廿一,戶尚改;閏九、乙卯、十八,總薊遼還,廿六年十一、辛亥、卒。九、戊子、廿一,致仕。辭"
+  },
+  {
+   "year": 1587,
+   "person": "王一鶚",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "是年辭不赴。四、庚申、一,總薊遼右都兼兵右侍遷。十六年正、癸丑、廿七,加太子少保。十八年六、戊戌、廿八,卒,贈太子太保,"
+  },
+  {
+   "year": 1587,
+   "person": "石星",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "二月,卒;正、丙辰、廿七,理工左侍事工尙回部;三、庚辰、一,罷。五、丁酉、十,贈少保。十八年十一、丙寅、廿八,卒。天啟元"
+  },
+  {
+   "year": 1587,
+   "person": "胡執禮",
+   "office": "總督倉場",
+   "reason": "death-note-but-later-entries",
+   "note": "是年致仕。二、庚午、十一,戶左侍改;四、丁卯、八,致仕兵左侍管十八年正、戊申、五,卒。四、甲子、五,遷右都總督薊遼。"
+  },
+  {
+   "year": 1589,
+   "person": "楊俊民",
+   "office": "總督倉場",
+   "reason": "death-note-but-later-entries",
+   "note": "六、癸卯、廿八,卒,六、乙巳、卅,戶左侍遷右都兼戶右侍;九、戊午、十四,丁憂歸。九、戊午、十四,南右都遷戶尚;十一、己巳"
+  },
+  {
+   "year": 1591,
+   "person": "石星",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "八、癸卯、十一,加太子少保致仕;九、丁丑、十五,卒,贈太子太保。"
+  },
+  {
+   "year": 1591,
+   "person": "孫丕揚",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "四、丙辰、廿一,改吏尚。五、己巳、五,掌都察院事兵尚起改;十、丙辰、廿四,赴任次蘇州卒,贈太子太保,謚端肅。右副都改;十"
+  },
+  {
+   "year": 1591,
+   "person": "陸光祖",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "五、乙亥、十一,卒。四、丙辰、廿一,刑尚改。"
+  },
+  {
+   "year": 1597,
+   "person": "李楨",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "二、丙子、十五,革職候勘;二、丁亥、廿六,兵左侍署。三、己酉、十九,革職候旨;九、辛丑、十三,下獄誅死。廿七年卒。"
+  },
+  {
+   "year": 1597,
+   "person": "劉楚先",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "十、丙戌、廿九,卒。十、丙戌、廿,禮左侍署。廿六年二、戊辰、十三,贈太子太保,諡文恪。天啟三年、庚午、十二,贈太子太傅。"
+  },
+  {
+   "year": 1599,
+   "person": "陳蕖",
+   "office": "戶部",
+   "reason": "death-note-but-later-entries",
+   "note": "四、壬戌、十三,致仕;四、壬戌、十三,戶左侍署;六、己亥、廿二,卒,予祭葬;五、丁巳、十,戶左侍遷。七、己未、十二,贈少"
+  },
+  {
+   "year": 1600,
+   "person": "朱國祚",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "七、丁巳、十七，卒，贈太子少保，謚文恪。七、丁巳、十七，禮右侍署。"
+  },
+  {
+   "year": 1603,
+   "person": "趙世卿",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "十二、丁酉、十六,致仕。十二、己亥、十八,戶尚兼署。卅五年二、戊戌、五,卒;七、乙巳、十五,贈少保。"
+  },
+  {
+   "year": 1603,
+   "person": "李廷機",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "三、己未、三,卒;四、己酉、廿三,贈太子少保。卅九年七、丁卯、廿八,諡文敏。"
+  },
+  {
+   "year": 1605,
+   "person": "沈應文",
+   "office": "刑部",
+   "reason": "death-note-but-later-entries",
+   "note": "四、壬子、八,刑左侍遷,仍署侍十一月,刑右侍署郎事;十二、乙卯、十五,致仕。卅四年十月,卒。卅五年七、乙巳、十五,贈太子"
+  },
+  {
+   "year": 1605,
+   "person": "沈應文",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "七、庚子、廿八、致仕。八、甲寅、十二,刑右侍署。卅六年六、丙子、廿一,卒。卅七年四、己未、八,子祭葬;"
+  },
+  {
+   "year": 1605,
+   "person": "溫純",
+   "office": "都察院",
+   "reason": "contains-other-name:詹沂",
+   "note": "七、辛巳、九、致仕。卅五年閏六、甲子、三,卒。卅六年二、庚午、十三,贈少保,謚恭毅。詹沂八、丙午、四,左副都署印。"
+  },
+  {
+   "year": 1609,
+   "person": "孫丕揚",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "二、庚午、十八,卒;四、丁卯、十六,到任。七、戊子、九,贈吏尚,謚端潔,尋贈少保。"
+  },
+  {
+   "year": 1609,
+   "person": "吳道南",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "二、辛未、十九,卒;二、庚辰、廿八,禮右侍署。七、戊子、九,贈禮尚,謚文恪。"
+  },
+  {
+   "year": 1609,
+   "person": "孫瑋",
+   "office": "都察院",
+   "reason": "contains-other-name:詹沂",
+   "note": "十二、戊午、十一,總倉場右都署。詹沂九、丁亥、九,封印求罷,尋冠帶閑住。四十六年九、甲辰、十九,予祭葬。四十七年六、戊午"
+  },
+  {
+   "year": 1610,
+   "person": "劉元霖",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "五、丁卯、廿三,卒,贈工尚,謚恭介。五月,工右侍署,兼署刑部。"
+  },
+  {
+   "year": 1614,
+   "person": "林如楚",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "三、辛酉、九,卒,贈太子太保。五、庚午、十九,工右侍署。"
+  },
+  {
+   "year": 1619,
+   "person": "楊應聘",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "十一、戊申、廿九,調理。十一、戊申、廿九,兵左侍署。四十八年九、辛丑、廿七,病免。天啟元年十、辛巳、十四,加太子太傅;十"
+  },
+  {
+   "year": 1619,
+   "person": "李汝華",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "十一、辛巳、二,卒。十一、乙巳、廿六,戶尚署。四十八年十一、壬午、九,贈太子少保。"
+  },
+  {
+   "year": 1620,
+   "person": "鄭以偉",
+   "office": "禮部",
+   "reason": "contains-other-name:孫慎行",
+   "note": "十一、戊寅、五,禮右侍署。孫慎行十二、癸丑、九,南禮尚改。"
+  },
+  {
+   "year": 1621,
+   "person": "汪應蛟",
+   "office": "戶部",
+   "reason": "death-note-but-later-entries",
+   "note": "六、乙亥、五,加太子太保致仕。六、丙戌、十六,南戶尚改。四年十二月,卒。五年三、辛未、廿三,贈少保,謚恭敏。"
+  },
+  {
+   "year": 1622,
+   "person": "孫承宗",
+   "office": "兵部",
+   "reason": "contains-other-name:董漢儒",
+   "note": "二、己丑、廿三,大學士暫掌;六、丁丑、十二,出巡關門;六、己卯、十四,加太子太保;八、己巳、六,辭加恩;八、庚辰、十七,"
+  },
+  {
+   "year": 1622,
+   "person": "王在晉",
+   "office": "兵部",
+   "reason": "contains-other-name:張經世",
+   "note": "正、甲子、廿八,兵左侍署;三、甲辰、八,遷兵尚兼右副都經略遼東。張經世六、丁丑、十二,兵左侍暫署。"
+  },
+  {
+   "year": 1622,
+   "person": "黃克纘",
+   "office": "刑部",
+   "reason": "contains-other-name:王永光",
+   "note": "正、壬戌、廿六,改兵尚協理戎政。王永光正、壬戌、廿六,管工左侍事工尚兼署;二、乙未、廿九,遷戶尚總倉場。"
+  },
+  {
+   "year": 1622,
+   "person": "姚思仁",
+   "office": "工部",
+   "reason": "death-note-but-later-entries",
+   "note": "正、辛丑、五,加太子太傅;三、己未、廿三,致仕;十二、乙亥、十四,卒。三年二、壬申、十二,予祭葬并謚;三、丙午、十六,贈"
+  },
+  {
+   "year": 1622,
+   "person": "趙南星",
+   "office": "都察院",
+   "reason": "death-note-but-later-entries",
+   "note": "十、乙酉、廿三,加太子太保致仕。十一、壬寅、十,工部協理右侍遷。四年,卒於家。五年八、壬午、六,削奪官誥。崇禎元年十一、"
+  },
+  {
+   "year": 1623,
+   "person": "趙南星",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "九、癸丑、廿六,加少保致仕。十、癸酉、十六,左都遷。五年五、甲子、十七,閑住,尋卒。"
+  },
+  {
+   "year": 1625,
+   "person": "趙彥",
+   "office": "兵部",
+   "reason": "contains-other-name:王永光",
+   "note": "五、己酉、二,致仕。六年十一、乙未、廿六,加太子太傅。崇禎二年九、丙戌、五,卒。王永光十、辛卯、十六,南兵尚改。"
+  },
+  {
+   "year": 1625,
+   "person": "李宗延",
+   "office": "吏部",
+   "reason": "contains-other-name:王紹徽",
+   "note": "六、辛丑、廿五,署左都事吏尚代攝;七、庚午、廿四,署篆;七、丙子、卅,署左都事吏尔回部;十二、癸未、九,致仕。七年四、乙"
+  },
+  {
+   "year": 1627,
+   "person": "崔呈秀",
+   "office": "兵部",
+   "reason": "contains-other-name:閻鳴泰",
+   "note": "三、辛巳、十四,加太子太師;四、己亥、三,卒,贈少師,謚忠襄。王之臣七、己巳、五,添設兵左侍署;八、乙未、二,加兵尚;八"
+  },
+  {
+   "year": 1631,
+   "person": "閔洪學",
+   "office": "吏部",
+   "reason": "death-note-but-later-entries",
+   "note": "三、壬午、八,致仕。三、壬寅、廿八,太子太保左都改。十二年十二、戊子、六,卒。"
+  },
+  {
+   "year": 1631,
+   "person": "黃汝良",
+   "office": "禮部",
+   "reason": "death-note-but-later-entries",
+   "note": "五、戊子、十五,致仕;五、乙未、廿二,掌詹事府事六、甲寅、十二,卒;太子太傅禮尚回部;六、丙寅、廿四,贈太子太保。九、癸"
+  },
+  {
+   "year": 1633,
+   "person": "侯恂",
+   "office": "戶部",
+   "reason": "death-note-but-later-entries",
+   "note": "三月下獄。五、戊戌、七,任。七年四、己未、四,削籍。八年五月,復官致仕。十一年,卒。"
+  },
+  {
+   "year": 1636,
+   "person": "楊嗣昌",
+   "office": "兵部",
+   "reason": "death-note-but-later-entries",
+   "note": "七、癸亥、廿一,自請出師;十、甲申、十三,起總宣大兵右侍兼右僉都遷。九、癸卯、二,卒於營,尋奪官。十一年七月,復官。"
+  }
+ ],
+ "dup_conflicts": [
+  {
+   "year": 1377,
+   "person": "陳寧",
+   "office": "都察院",
+   "notes": [
+    "九、辛丑、廿六,右御史大夫遷。",
+    "九、辛丑、廿六,遷左御史大夫。"
+   ]
+  },
+  {
+   "year": 1379,
+   "person": "丁玉",
+   "office": "都察院",
+   "notes": [
+    "九、甲辰、十一,右御史大夫遷;十二、甲申、廿二,遷左都督。丁玉",
+    "九、甲辰、十一,遷左御史大夫。"
+   ]
+  },
+  {
+   "year": 1391,
+   "person": "趙勉",
+   "office": "戶部",
+   "notes": [
+    "是年,兼署禮尚事。",
+    "是年,戶尚兼署。"
+   ]
+  },
+  {
+   "year": 1391,
+   "person": "詹徽",
+   "office": "都察院",
+   "notes": [
+    "十二、癸丑、一,左都改,仍兼左都。",
+    "十二、癸丑、一,改吏尚,仍兼左都。"
+   ]
+  },
+  {
+   "year": 1393,
+   "person": "楊靖",
+   "office": "戶部",
+   "notes": [
+    "正、辛未、廿六,刑尚兼署;尋坐事免。",
+    "正、辛未、廿六,兼太子賓客,兼署禮部;尋坐事免。卅年四、癸卯、廿一,改遷左都。"
+   ]
+  },
+  {
+   "year": 1397,
+   "person": "嚴震直",
+   "office": "工部",
+   "notes": [
+    "八、己丑、十，御史遷",
+    "四、癸卯、廿一，監察御史遷；七月，降御史；八、乙丑、十，遷工尚。"
+   ]
+  },
+  {
+   "year": 1416,
+   "person": "吳中",
+   "office": "工部",
+   "notes": [
+    "八、丙寅、七、工尚改.",
+    "是年屬駕;八、丙寅、七、改刑尚"
+   ]
+  },
+  {
+   "year": 1450,
+   "person": "楊善",
+   "office": "都察院",
+   "notes": [
+    "七、庚申、十八,使瓦剌,尋還;八、壬辰、廿一,遷左都。",
+    "正、癸亥、十八,由陝西回院。八、壬辰、廿一,右都遷,仍掌寺事。"
+   ]
+  },
+  {
+   "year": 1494,
+   "person": "屠滽",
+   "office": "都察院",
+   "notes": [
+    "九、己酉、廿四,右都遷,加太子少保。",
+    "九、己酉、廿四,遷左都。"
+   ]
+  },
+  {
+   "year": 1546,
+   "person": "陳經",
+   "office": "總督倉場",
+   "notes": [
+    "六、辛亥、廿六,署通政司事禮尚改;七、己未、五,督團營。",
+    "二、癸丑、廿六,改禮尚署通政司事。"
+   ]
+  },
+  {
+   "year": 1565,
+   "person": "董份",
+   "office": "禮部",
+   "notes": [
+    "四、庚辰、十四,兼武英殿大學士入閣。",
+    "四、庚辰、十四,工尚掌吏左侍事兼翰林院學士改;六、戊寅、十三,罷為民。萬曆廿三年三、戊寅、五,卒。"
+   ]
+  },
+  {
+   "year": 1602,
+   "person": "蕭大亨",
+   "office": "刑部",
+   "notes": [
+    "六、丙申、六,刑尚兼署。",
+    "六、丙申、六,署兵部事。"
+   ]
+  },
+  {
+   "year": 1604,
+   "person": "蕭大亨",
+   "office": "刑部",
+   "notes": [
+    "十、甲寅、八,刑尚改。",
+    "十、甲寅、八,改兵尚,仍署刑部事。"
+   ]
+  },
+  {
+   "year": 1612,
+   "person": "許弘綱",
+   "office": "都察院",
+   "notes": [
+    "九、癸巳、二,左副都署印。",
+    "九、癸巳、二,兼署刑尚。"
+   ]
+  },
+  {
+   "year": 1616,
+   "person": "李誌",
+   "office": "都察院",
+   "notes": [
+    "正、乙亥、四，吏左侍遷，兼署都察院事。",
+    "正、乙亥、四，刑尚兼署。"
+   ]
+  },
+  {
+   "year": 1618,
+   "person": "李誌",
+   "office": "都察院",
+   "notes": [
+    "十一、丁酉、十二,改左都。",
+    "十一、丁酉、十二,刑尚改。"
+   ]
+  },
+  {
+   "year": 1626,
+   "person": "薛貞",
+   "office": "刑部",
+   "notes": [
+    "七、辛巳、十一,總倉場戶左侍遷;十、甲寅、十五,加太子太保。",
+    "七、辛巳、十一,遷改刑尚。"
+   ]
+  }
+ ],
+ "page_recovery": {
+  "status": "disabled(需逐页核对，不插值)"
+ },
+ "mapping": {
+  "merges": [
+   {
+    "from": "屠漑",
+    "to": "屠滽"
+   },
+   {
+    "from": "屠瀟",
+    "to": "屠滽"
+   },
+   {
+    "from": "毛伯溫",
+    "to": "毛伯溫"
+   },
+   {
+    "from": "洪鐘",
+    "to": "洪鍾"
+   },
+   {
+    "from": "溫純",
+    "to": "溫純"
+   },
+   {
+    "from": "董分",
+    "to": "董份"
+   },
+   {
+    "from": "呂本",
+    "to": "李本"
+   },
+   {
+    "from": "茹瑺",
+    "to": "茹瑺"
+   },
+   {
+    "from": "胡濙",
+    "to": "胡濙"
+   }
+  ],
+  "nulled": [
+   {
+    "person": "高燿",
+    "id": 30847
+   },
+   {
+    "person": "何鈞",
+    "id": 67998
+   },
+   {
+    "person": "侯庸",
+    "id": 66544
+   },
+   {
+    "person": "劉仁",
+    "id": 34421
+   },
+   {
+    "person": "劉訥",
+    "id": 34637
+   },
+   {
+    "person": "張遇",
+    "id": 67450
+   },
+   {
+    "person": "李瓊",
+    "id": 201490
+   },
+   {
+    "person": "李瓚",
+    "id": 201490
+   },
+   {
+    "person": "李昶",
+    "id": 67650
+   },
+   {
+    "person": "李暹",
+    "id": 67072
+   },
+   {
+    "person": "李鐩",
+    "id": 67072
+   },
+   {
+    "person": "陳智",
+    "id": 66873
+   },
+   {
+    "person": "陳璟",
+    "id": 66341
+   },
+   {
+    "person": "陳珮",
+    "id": 66341
+   },
+   {
+    "person": "李儼",
+    "id": 66439
+   },
+   {
+    "person": "李信",
+    "id": 66439
+   },
+   {
+    "person": "王壱",
+    "id": 67477
+   },
+   {
+    "person": "王儁",
+    "id": 67477
+   },
+   {
+    "person": "王晉",
+    "id": 67477
+   },
+   {
+    "person": "胡濙",
+    "id": 67968
+   },
+   {
+    "person": "趙犭",
+    "id": 66668
+   },
+   {
+    "person": "趙紅",
+    "id": 66668
+   },
+   {
+    "person": "趙勉",
+    "id": 66668
+   },
+   {
+    "person": "趙肛",
+    "id": 66668
+   },
+   {
+    "person": "趙仁",
+    "id": 66668
+   },
+   {
+    "person": "趙粑",
+    "id": 66668
+   },
+   {
+    "person": "趙犏",
+    "id": 66668
+   },
+   {
+    "person": "趙本",
+    "id": 66668
+   },
+   {
+    "person": "趙瑁",
+    "id": 66668
+   },
+   {
+    "person": "顧佐",
+    "id": 66995
+   },
+   {
+    "person": "李敏",
+    "id": 67840
+   },
+   {
+    "person": "宋冕",
+    "id": 127666
+   },
+   {
+    "person": "張鳳",
+    "id": 66963
+   }
+  ]
+ },
+ "counts": {
+  "entries_in": 3353,
+  "entries_out": 3309,
+  "persons": 790,
+  "dropped": 18,
+  "quarantined": 186,
+  "dup_conflicts": 17,
+  "book_patch": 14,
+  "mapping_out": 548,
+  "mapping_ids": 513
+ }
+}

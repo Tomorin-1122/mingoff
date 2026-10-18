@@ -5,7 +5,7 @@
   "canvas_from": 1368,
   "source": "张德信《明代职官年表》册1·內閣大臣年表（MinerU OCR；缺块以原书 PDF 页补录）；人物对齐 CBDB（cbdb_20261010）；《明實錄》命中据中研院检索",
   "pipeline": "mingoff.official (v3: 表格重解析 + CBDB 修复 + D15 南明过滤)",
-  "generated_at": "2026-10-18T05:14:20+00:00",
+  "generated_at": "2026-10-18T05:28:40+00:00",
   "stats": {
    "tenures": 192,
    "persons": 167,

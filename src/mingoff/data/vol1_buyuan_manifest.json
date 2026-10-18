@@ -50,12 +50,12 @@
  },
  "year_header_jumps": [],
  "stats": {
-  "entries": 3359,
-  "persons_unique": 877,
+  "entries": 3309,
+  "persons_unique": 790,
   "years": 277,
   "missing_years": [],
   "no_office_entries": 8,
-  "review_items": 189,
+  "review_items": 120,
   "name_dict": 914,
   "anchor_stats": {
    "①人名锚": 979,
@@ -65,7 +65,9 @@
    "未定office": 10
   },
   "per_year_min": 6,
-  "per_year_max": 25
+  "per_year_max": 25,
+  "quarantined_notes": 186,
+  "book_patches": 14
  },
  "evidence": [
   "docs/evidence/book_p402_bujuan1368.png",
@@ -78,33 +80,57 @@
   "docs/evidence/book_p679_bujuan1644.png"
  ],
  "tenure_assembly": {
-  "date": "2026-10-18T05:02:10+00:00",
-  "pipeline": "mingoff.official_buyuan v1",
+  "date": "2026-10-18T05:27:10+00:00",
+  "pipeline": "mingoff.official_buyuan (v2: repair + (person,office) 分组 + gap 合并 + D15)",
   "output": "official_buyuan.json",
   "stats": {
-   "tenures": 1417,
-   "persons": 841,
-   "person_years": 3319,
-   "with_start_month": 1038,
-   "with_end_month": 508,
-   "cbdb_aligned_tenures": 992,
-   "with_leave": 544,
-   "shu_li": 97,
-   "same_name_risk_tenures": 13,
-   "shilu_hits": 3847,
-   "shilu_persons": 127
+   "tenures": 1203,
+   "persons": 790,
+   "offices": [
+    "兵部",
+    "刑部",
+    "吏部",
+    "工部",
+    "戶部",
+    "禮部",
+    "總督倉場",
+    "都察院"
+   ],
+   "gap_merged_tenures": 109,
+   "gap_years_total": 161,
+   "years_covered": [
+    1368,
+    1644
+   ],
+   "with_start_month": 815,
+   "with_end_month": 452,
+   "cbdb_aligned": 822,
+   "with_leave": 480,
+   "shu_li": 71,
+   "same_name_risk": 17,
+   "shilu_persons": 130,
+   "shilu_hits": 3913,
+   "person_years": 3470
   },
   "gates": {
-   "G1": "pass(277年零缺年；NULL-office 8条入待校)",
-   "G2": "pass(years连续、同名风险标记13段)",
-   "G3": "pass(月∈1-12∪null；1644截3月end_clamped)",
-   "G4": "pass(pytest 166项全过)",
-   "G5": "pass(锚点：于謙1449.8/胡濙1426.4/李遇知1643.5/張璁署理/寇深1457-1461)"
+   "G1": "pass",
+   "G2": "pass",
+   "G3": "pass",
+   "G4": "run pytest tests/test_official_buyuan.py",
+   "G5": "见 docs/部院数据接收报告.md 抽检",
+   "G6": "pass"
   },
-  "known_limits": [
-   "多人同格注归属：1449于謙段起注含鄺埜死難（多人格注边界），leave标签可能误挂",
-   "胡濙禮部 1426-1457 因缺年碎片化为6段（上游OCR缺年，非任职中断）",
-   "office=NULL 8条不入段（張敷華/汪俊/何鰲重/歐陽必進×2/盧紳/高燿/雷禮），待回原书"
-  ]
+  "status": "v2-g6-pass",
+  "repair": {
+   "entries_in": 3353,
+   "entries_out": 3309,
+   "persons": 790,
+   "dropped": 18,
+   "quarantined": 186,
+   "dup_conflicts": 17,
+   "book_patch": 14,
+   "mapping_out": 548,
+   "mapping_ids": 513
+  }
  }
 }

@@ -24,9 +24,9 @@ def tenures(doc):
 
 
 def test_scale(tenures):
-    # 人-年 3300+，覆盖 1368–1644 全期
-    assert len(tenures) >= 1300
-    assert sum(len(t["years"]) for t in tenures) >= 3200
+    # v2 修复后：1,200+ 段（quarantine 与分段合并后）；覆盖 1368–1644 全期
+    assert len(tenures) >= 1100
+    assert sum(len(t["years"]) for t in tenures) >= 3400
     span = (min(t["start_year"] for t in tenures), max(t["end_year"] for t in tenures))
     assert span == (1368, 1644)
 
@@ -82,9 +82,9 @@ def test_tenure_type(tenures):
 
 
 def test_same_name_risk_flagged(tenures):
-    # 同名组（張鳳/胡松/李敏/王佐/顧佐/吴山）的段必须带风险标记
+    # 同名组（張鳳/胡松/李敏/王佐/顧佐/吳山/李本）的段必须带风险标记
     risky = {t["person"] for t in tenures if t.get("same_name_risk")}
-    assert {"張鳳", "胡松", "李敏", "王佐", "顧佐", "吴山"} <= risky
+    assert {"張鳳", "胡松", "李敏", "王佐", "顧佐", "吳山", "李本"} <= risky
 
 
 def test_anchor_tenures(tenures):

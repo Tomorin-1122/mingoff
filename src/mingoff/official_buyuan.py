@@ -101,16 +101,24 @@ def _leave(note: str) -> tuple[int | None, str]:
     return None, "未載"
 
 
-SAME_NAME_GROUPS = {"張鳳", "胡松", "李敏", "王佐", "顧佐", "吴山"}
+SAME_NAME_GROUPS = {"張鳳", "胡松", "李敏", "王佐", "顧佐", "吳山", "李本"}
 GAP_SPLIT_YEARS = 15  # 同名组内间隔 ≥15 年视为不同实体
+# 断段合并后降一档置信度（仍限定在既有档位，避免出现 0.55 之类）
+CONF_DOWN = {0.8: 0.7, 0.7: 0.6, 0.6: 0.5, 0.5: 0.5}
 
 
 def load_buyuan() -> list[dict]:
-    return json.loads((DATA / "vol1_buyuan_entries.json").read_text(encoding="utf-8"))
+    """v2 修复版条目（买院 repair 生成的规范化资产）；缺 v2 时回退 v1。"""
+    p2 = DATA / "vol1_buyuan_entries_v2.json"
+    p1 = DATA / "vol1_buyuan_entries.json"
+    p = p2 if p2.is_file() else p1
+    return json.loads(p.read_text(encoding="utf-8"))
 
 
 def load_buyuan_cbdb() -> dict:
-    p = DATA / "vol1_buyuan_person_cbdb.json"
+    p2 = DATA / "vol1_buyuan_person_cbdb_v2.json"
+    p1 = DATA / "vol1_buyuan_person_cbdb.json"
+    p = p2 if p2.is_file() else p1
     return json.loads(p.read_text(encoding="utf-8")) if p.is_file() else {}
 
 
@@ -143,6 +151,8 @@ def build_buyuan_tenures() -> list[dict]:
         years = [e["year"] for e in rows]
         note_of = {e["year"]: e["note"] for e in rows}
         flag_of = {e["year"]: e.get("flag") or "" for e in rows}
+        period_of = {e["year"]: e.get("office_period") or office for e in rows}
+        raw_of = {e["year"]: e.get("raw_office") or office for e in rows}
         segs, cur = [], [years[0]]
         for y in years[1:]:
             if y == cur[-1] + 1:
@@ -194,6 +204,8 @@ def build_buyuan_tenures() -> list[dict]:
                 "cbdb_id": m.get("cbdb_id"),
                 "cbdb_name": m.get("cbdb_name"),
                 "office": office,
+                "office_period": period_of.get(sy, office),
+                "office_raw": raw_of.get(sy, office),
                 "tenure_type": ttype,
                 "start_year": sy,
                 "start_month": sm,
@@ -209,7 +221,61 @@ def build_buyuan_tenures() -> list[dict]:
             })
     if skipped_no_office:
         _append_review(skipped_no_office)
-    return tenures
+    return merge_gap_segments(tenures)
+
+
+def merge_gap_segments(tenures: list[dict]) -> list[dict]:
+    """合并同人同衙 1–2 年「无离任/入场注文」的缺口段，并显式记录 gap_years。
+
+    年表为逐年名单：同人同衙中间缺 1–2 年、且前段无离任、后段无入场事件，
+    绝大多数是上游 OCR 缺行（部院 v1 实测 282 段假断段）。合并只为呈现，**不伪造**：
+    缺失年份写入 `gap_years`，置信度降一档，前端应以虚线段标识。
+    """
+    by_key = defaultdict(list)
+    for t in tenures:
+        by_key[(t["person"], t["office"])].append(t)
+    out: list[dict] = []
+    for key, ts in by_key.items():
+        ts.sort(key=lambda t: t["start_year"])
+        cur = ts[0]
+        for nxt in ts[1:]:
+            gap = nxt["start_year"] - cur["end_year"] - 1
+            boundary_end = cur["leave"] != "未載"
+            boundary_start = any(v in (nxt["note"] or "") for v in ENTER_BASE)
+            if 0 < gap <= 2 and not boundary_end and not boundary_start \
+                    and not cur["end_clamped"]:
+                merged = dict(cur)
+                merged["end_year"] = nxt["end_year"]
+                merged["end_month"] = nxt["end_month"]
+                merged["end_clamped"] = nxt["end_clamped"]
+                merged["leave"] = nxt["leave"]
+                merged["month_conflict"] = cur["month_conflict"] or nxt["month_conflict"]
+                merged["years"] = cur["years"] + list(
+                    range(cur["end_year"] + 1, nxt["end_year"] + 1))
+                merged["gap_years"] = (cur.get("gap_years") or []) + list(
+                    range(cur["end_year"] + 1, nxt["start_year"]))
+                merged["merged_segments"] = (cur.get("merged_segments") or 1) + \
+                    (nxt.get("merged_segments") or 1)
+                merged["confidence"] = CONF_DOWN.get(
+                    min(cur["confidence"], nxt["confidence"]), 0.5)
+                cur = merged
+            else:
+                out.append(cur)
+                cur = nxt
+        out.append(cur)
+    out.sort(key=lambda t: (t["person"], t["office"], t["start_year"]))
+    # 剩余多段之间的缺口：不合并，但显式登记 gap_after（供前端虚线/待校），
+    # 避免「静默两段」；同名风险组的缺口另行标记。
+    by2 = defaultdict(list)
+    for t in out:
+        by2[(t["person"], t["office"])].append(t)
+    for ts in by2.values():
+        ts.sort(key=lambda t: t["start_year"])
+        for a, b in zip(ts, ts[1:]):
+            gap = b["start_year"] - a["end_year"] - 1
+            if gap > 0:
+                a["gap_after"] = list(range(a["end_year"] + 1, b["start_year"]))
+    return out
 
 
 def _append_review(rows: list[dict]) -> None:
@@ -233,17 +299,21 @@ def export_buyuan(out_path: Path | None = None) -> dict:
     doc = {
         "meta": {
             "dataset": "mingoff-buyuan",
-            "version": 1,
+            "version": 2,
             "canvas_from": 1368,
             "source": "张德信《明代职官年表》册1·部院大臣年表（京師）（MinerU OCR）；"
+                      "v2 修复：人名归一/伪名清理/注文隔离/衙署分期/CBDB 重挂；"
                       "人名校验：CBDB 20261010 + 中研院明實錄 + 弇山堂别集/國榷（识典古籍）；"
                       "《明實錄》命中据中研院检索",
-            "pipeline": "mingoff.official_buyuan (v1: (person,office) 分组 + 遷/改/署 适配 + D15)",
+            "pipeline": "mingoff.official_buyuan (v2: repair + (person,office) 分组 + "
+                        "gap 合并 + D15)",
             "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "stats": {
                 "tenures": len(tenures),
                 "persons": len({t["person"] for t in tenures}),
                 "offices": sorted({t["office"] for t in tenures}),
+                "gap_merged_tenures": sum(1 for t in tenures if t.get("gap_years")),
+                "gap_years_total": sum(len(t.get("gap_years") or []) for t in tenures),
                 "years_covered": [min(t["start_year"] for t in tenures),
                                   max(t["end_year"] for t in tenures)],
                 "with_start_month": sum(1 for t in tenures if t["start_month"]),
@@ -266,8 +336,77 @@ def export_buyuan(out_path: Path | None = None) -> dict:
     return doc
 
 
+def refresh_manifest(doc: dict) -> None:
+    """由当前数据实测刷新 manifest（规范 3.7：禁止手写统计/Gates）。"""
+    p = DATA / "vol1_buyuan_manifest.json"
+    if not p.is_file():
+        return
+    m = json.loads(p.read_text(encoding="utf-8"))
+    entries = load_buyuan()
+    years = sorted({e["year"] for e in entries})
+    missing = [y for y in range(1368, CUT_Y + 1) if y not in years]
+    tenures = doc["tenures"]
+    bad_years = [t for t in tenures if t["years"] != list(range(t["start_year"], t["end_year"] + 1))]
+    bad_month = [t for t in tenures if any(
+        mm is not None and not 1 <= mm <= 12 for mm in (t["start_month"], t["end_month"]))]
+    d15 = [t for t in tenures if t["end_year"] > CUT_Y
+           or (t["start_year"] == CUT_Y and (t["start_month"] or 1) > 3)
+           or (t["end_year"] == CUT_Y and not (t["end_clamped"] and t["end_month"] == 3))]
+    repair = {}
+    repair_full = {}
+    rp = DATA / "vol1_buyuan_repair.json"
+    if rp.is_file():
+        repair_full = json.loads(rp.read_text(encoding="utf-8"))
+        repair = repair_full.get("counts", {})
+    # G6：直接跑审计（审计只读当前数据；失败不阻塞导出，但必须如实写状态）
+    try:
+        from mingoff.audit_buyuan import audit as _audit
+        _r = _audit()
+        g6 = "pass" if not _r["blockers"] else f"fail({_r['blockers']})"
+    except Exception as exc:  # pragma: no cover
+        g6 = f"not-run({exc})"
+    # 剩余待校：长缺口 + 隔离注文 + 重复冲突，写入 review_v2
+    gaps = []
+    for t in tenures:
+        if t.get("gap_after"):
+            gaps.append({"person": t["person"], "office": t["office"],
+                         "after": t["end_year"], "years": t["gap_after"]})
+    review_v2 = {"long_gaps": gaps,
+                 "quarantined_notes": repair_full.get("note_quarantine", []),
+                 "dup_conflicts": repair_full.get("dup_conflicts", [])}
+    (DATA / "vol1_buyuan_review_v2.json").write_text(
+        json.dumps(review_v2, ensure_ascii=False, indent=1), encoding="utf-8")
+    m.setdefault("stats", {})
+    m["stats"].update({
+        "entries": len(entries), "persons_unique": len({e["person"] for e in entries}),
+        "years": len(years), "missing_years": missing,
+        "quarantined_notes": repair.get("quarantined"),
+        "book_patches": repair.get("book_patch"),
+        "review_items": len(gaps),
+    })
+    m["tenure_assembly"] = {
+        "date": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "pipeline": doc["meta"]["pipeline"],
+        "output": "official_buyuan.json",
+        "stats": doc["meta"]["stats"],
+        "gates": {
+            "G1": "pass" if not missing else f"fail(缺年 {missing[:5]})",
+            "G2": "pass" if not bad_years else f"fail(段年不连续 {len(bad_years)})",
+            "G3": "pass" if not bad_month and not d15 else
+                  f"fail(月 {len(bad_month)} / D15 {len(d15)})",
+            "G4": "run pytest tests/test_official_buyuan.py",
+            "G5": "见 docs/部院数据接收报告.md 抽检",
+            "G6": g6,
+        },
+        "status": "v2-g6-pass" if g6 == "pass" else "review",
+        "repair": repair,
+    }
+    p.write_text(json.dumps(m, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 if __name__ == "__main__":
     doc = export_buyuan()
+    refresh_manifest(doc)
     s = doc["meta"]["stats"]
     print(f"部院任职段 {s['tenures']}（{s['persons']} 人，"
           f"{s['years_covered'][0]}–{s['years_covered'][1]}，人-年 {s['person_years']}）")
