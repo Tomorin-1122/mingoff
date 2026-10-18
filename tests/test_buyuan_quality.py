@@ -66,3 +66,32 @@ def test_gap_flags_are_explicit(doc):
             assert set(t["gap_years"]) <= set(t["years"]), t
         if t.get("gap_after"):
             assert all(y > t["end_year"] for y in t["gap_after"]), t
+
+
+def test_identity_split_d01(doc):
+    """D-01：同名多人必须拆成独立 person_id；同一实体跨度不得跨代。"""
+    tenures = doc["tenures"]
+    assert all(t.get("person_id") and t.get("person_label") for t in tenures)
+    # person_id 是实体主键，姓名可以重名
+    by_id = {}
+    for t in tenures:
+        by_id.setdefault(t["person_id"], []).append(t)
+    spans = {pid: (min(t["start_year"] for t in ts), max(t["end_year"] for t in ts))
+             for pid, ts in by_id.items()}
+    assert spans["李本#1"][1] <= 1400
+    assert spans["李本#2"][0] == 1556
+    assert spans["王佐#1"][1] <= 1500
+    assert spans["王佐#2"][0] >= 1600
+    # 6 组同名各 2 个实体
+    groups = {}
+    for t in tenures:
+        groups.setdefault(t["person"], set()).add(t["person_id"])
+    for name in ("李本", "李敏", "王佐", "顧佐", "吳山", "胡松"):
+        assert len(groups[name]) == 2, (name, groups[name])
+    # 張鳳 1629 已改名張鳳翔，不再与正统張鳳串人
+    assert "張鳳" not in {t["person"] for t in tenures if "#" in t["person_id"]}
+    assert "張鳳翔" in {t["person"] for t in tenures}
+    # CBDB 只挂到有证据的实体
+    assert doc["tenures"] and any(t["person_id"] == "李本#2" and t["cbdb_id"] == 223131
+                                  for t in tenures)
+    assert all(t["cbdb_id"] is None for t in tenures if t["person_id"] == "李本#1")

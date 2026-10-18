@@ -145,12 +145,24 @@ SHARED_ID_OWNER = {  # 同一 id 只允许这些正名保留；其余置 NULL
     68016: {"洪鍾"}, 131299: {"屠滽"}, 131989: {"董份"}, 201490: set(),
     223131: {"李本"},
 }
-CBDB_ID_OVERRIDE = {"李鐩": 128075, "趙羾": 66668}
-CBDB_NULL = {"宋冕", "張鳳", "李敏", "顧佐", "李信", "胡濙", "陳珮", "陳璟",
+CBDB_ID_OVERRIDE = {"李鐩": 128075, "趙羾": 66668, "張鳳": 66963}
+CBDB_NULL = {"宋冕", "李敏", "顧佐", "李信", "胡濙", "陳珮", "陳璟",
              "趙仁", "趙勉", "趙本", "趙犏", "趙犭", "趙粑", "趙紅", "趙肛",
              "陳智", "李暹", "張遇", "王儁", "王壱", "王晉", "李昶", "何鈞",
              "李瓊", "李瓚", "高燿", "劉仁", "劉訥", "侯庸", "茹瑞"}
-# 需要改名的个体（同人不同人共用正名时拆分）
+# 同名多人拆分（D-01）：同一姓名下按年份区间分实体。
+# 依据：docs/部院数据待办清单 D-01；张德信原书两个同名者分处不同时代/衙署。
+PERSON_SPLIT = {
+    "李本": [(1368, 1499), (1500, 1644)],   # 洪武李本 1372–77 / 嘉靖李本 1556
+    "李敏": [(1368, 1449), (1450, 1644)],   # 洪武工部 1373–77 / 成化户部 1487–91
+    "王佐": [(1368, 1550), (1551, 1644)],   # 正统户部 1441–49 / 天启工部 1620–22
+    "顧佐": [(1368, 1470), (1471, 1644)],   # 宣德左都 1429–36 / 正德户部 1506–08
+    "吳山": [(1368, 1549), (1550, 1644)],   # 吴江吴山 1541–42 / 高安吴山 1556–60
+    "胡松": [(1368, 1559), (1560, 1644)],   # 绩溪胡松 1550–51 / 滁州胡松 1566
+}
+# 拆分后 CBDB 归属：名字 -> 实体序号（1-based）；其余实体置 NULL 并写原因
+ENTITY_CBDB_OWNER = {"李本": 2, "王佐": 2}
+# 个体改名（同正名不同人）
 PERSON_RENAME = {("張鳳", 1629, "工部"): "張鳳翔"}
 
 
@@ -329,6 +341,74 @@ def repair_mapping(mapping: dict, persons: set[str], report: dict) -> dict:
     return merged
 
 
+def assign_identities(entries: list[dict], report: dict) -> list[dict]:
+    """D-01：给每条条目分配 person_id；同名多人按 PERSON_SPLIT 拆实体。
+
+    person 仅作显示名；person_label 在拆分时附年代区间，便于 UI 区分。
+    """
+    by_name = defaultdict(list)
+    for e in entries:
+        by_name[e["person"]].append(e)
+    identity = []
+    for name, rows in sorted(by_name.items()):
+        ranges = PERSON_SPLIT.get(name)
+        if not ranges:
+            for e in rows:
+                e["person_id"] = name
+                e["person_label"] = name
+            continue
+        buckets: list[list[dict]] = [[] for _ in ranges]
+        for e in rows:
+            idx = next((i for i, (lo, hi) in enumerate(ranges) if lo <= e["year"] <= hi), None)
+            if idx is None:
+                idx = len(ranges) - 1
+            buckets[idx].append(e)
+        nonempty = [(i, b) for i, b in enumerate(buckets) if b]
+        if len(nonempty) == 1:
+            for e in rows:
+                e["person_id"] = name
+                e["person_label"] = name
+            continue
+        for seq, (i, bucket) in enumerate(nonempty, start=1):
+            ys = [e["year"] for e in bucket]
+            lo, hi = min(ys), max(ys)
+            label = f"{name}（{lo}–{hi}）" if lo != hi else f"{name}（{lo}）"
+            pid = f"{name}#{seq}"
+            for e in bucket:
+                e["person_id"] = pid
+                e["person_label"] = label
+            identity.append({"person": name, "person_id": pid, "label": label,
+                             "years": [lo, hi],
+                             "offices": sorted({e["office"] for e in bucket})})
+    report["identity"] = identity
+    return entries
+
+
+def build_entity_mapping(entries: list[dict], name_mapping: dict, report: dict) -> dict:
+    """D-01：把姓名级 CBDB 映射转成 person_id 级；拆分实体只给有证据的 owner id。"""
+    groups = defaultdict(list)
+    for e in entries:
+        groups[e["person_id"]].append(e)
+    out: dict[str, dict] = {}
+    for pid, rows in groups.items():
+        name = rows[0]["person"]
+        ys = [e["year"] for e in rows]
+        span = [min(ys), max(ys)]
+        base = dict(name_mapping.get(name, {}))
+        if name in PERSON_SPLIT and "#" in pid:
+            seq = int(pid.rsplit("#", 1)[1])
+            owner = ENTITY_CBDB_OWNER.get(name)
+            if seq != owner:
+                base = {"cbdb_id": None, "cbdb_name": None, "method": "same-name-split",
+                        "repair": f"same-name-split:{name}:entity{seq}"}
+        if base:
+            base["span"] = span
+            out[pid] = base
+    report["entity_mapping"] = {"entities": len(out),
+                                "ids": sum(1 for v in out.values() if v.get("cbdb_id"))}
+    return out
+
+
 def recover_from_pages(entries: list[dict], report: dict) -> list[dict]:
     """从 OCR 原文页补回「同人同衙、中间缺年、姓名仍见于该年页」的条目。
 
@@ -415,22 +495,27 @@ def main() -> None:
     # 页内补行（recover_from_pages）暂不启用：姓名出现在年份页 ≠ 该衙在职，
     # 必须先逐页核对（部院 v1 教训）；长缺口用 gap_after 显式登记，不做插值。
     report["page_recovery"] = {"status": "disabled(需逐页核对，不插值)"}
-    entries.sort(key=lambda e: (e["year"], e["office"], e["person"]))
+    entries = assign_identities(entries, report)
+    entries.sort(key=lambda e: (e["year"], e["office"], e["person_id"]))
     new_mapping = repair_mapping(mapping, persons, report)
+    entity_mapping = build_entity_mapping(entries, new_mapping, report)
 
     out_entries = DATA / "vol1_buyuan_entries_v2.json"
-    out_mapping = DATA / "vol1_buyuan_person_cbdb_v2.json"
+    out_mapping = DATA / "vol1_buyuan_person_cbdb_v3.json"
     out_entries.write_text(json.dumps(entries, ensure_ascii=False, indent=1), encoding="utf-8")
-    out_mapping.write_text(json.dumps(new_mapping, ensure_ascii=False, indent=1), encoding="utf-8")
+    out_mapping.write_text(json.dumps(entity_mapping, ensure_ascii=False, indent=1),
+                           encoding="utf-8")
     report["counts"] = {
         "entries_in": 3353, "entries_out": len(entries),
-        "persons": len({e["person"] for e in entries}),
+        "persons_entities": len({e["person_id"] for e in entries}),
+        "display_persons": len({e["person"] for e in entries}),
+        "split_entities": len(report.get("identity", [])),
         "dropped": len(report.get("dropped", [])),
         "quarantined": len(report.get("note_quarantine", [])),
         "dup_conflicts": len(report.get("dup_conflicts", [])),
         "book_patch": len(report.get("book_patch", [])),
-        "mapping_out": len(new_mapping),
-        "mapping_ids": sum(1 for v in new_mapping.values() if v.get("cbdb_id")),
+        "mapping_out": len(entity_mapping),
+        "mapping_ids": sum(1 for v in entity_mapping.values() if v.get("cbdb_id")),
     }
     (DATA / "vol1_buyuan_repair.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -82,9 +82,10 @@ def test_tenure_type(tenures):
 
 
 def test_same_name_risk_flagged(tenures):
-    # 同名组（張鳳/胡松/李敏/王佐/顧佐/吳山/李本）的段必须带风险标记
+    # D-01 拆分后：6 组同名实体仍标风险（張鳳已通过 1629→張鳳翔 改名解决）
     risky = {t["person"] for t in tenures if t.get("same_name_risk")}
-    assert {"張鳳", "胡松", "李敏", "王佐", "顧佐", "吳山", "李本"} <= risky
+    assert {"胡松", "李敏", "王佐", "顧佐", "吳山", "李本"} <= risky
+    assert "張鳳" not in risky
 
 
 def test_anchor_tenures(tenures):
@@ -114,6 +115,7 @@ def test_anchor_tenures(tenures):
 def test_meta_stats(doc):
     s = doc["meta"]["stats"]
     assert s["tenures"] == len(doc["tenures"])
-    assert s["persons"] == len({t["person"] for t in doc["tenures"]})
+    assert s["persons"] == len({t["person_id"] for t in doc["tenures"]})
+    assert s["display_persons"] == len({t["person"] for t in doc["tenures"]})
     assert s["person_years"] == sum(len(t["years"]) for t in doc["tenures"])
     assert doc["meta"]["dataset"] == "mingoff-buyuan"

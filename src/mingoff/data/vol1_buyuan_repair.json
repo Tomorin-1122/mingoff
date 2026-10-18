@@ -608,7 +608,7 @@
    "year": 1374,
    "person": "馮冕",
    "office": "刑部",
-   "reason": "contains-other-name:唐鐸",
+   "reason": "contains-other-name:徐本",
    "note": "七、壬辰、廿九,出陝西參政,是年實授。唐鐸尋卒。四、己亥、四,改太常卿,未任徐本守制歸。是年,浙江參政遷。"
   },
   {
@@ -1770,7 +1770,7 @@
    "year": 1622,
    "person": "王在晉",
    "office": "兵部",
-   "reason": "contains-other-name:張經世",
+   "reason": "contains-other-name:張經",
    "note": "正、甲子、廿八,兵左侍署;三、甲辰、八,遷兵尚兼右副都經略遼東。張經世六、丁丑、十二,兵左侍暫署。"
   },
   {
@@ -2009,6 +2009,153 @@
  "page_recovery": {
   "status": "disabled(需逐页核对，不插值)"
  },
+ "identity": [
+  {
+   "person": "吳山",
+   "person_id": "吳山#1",
+   "label": "吳山（1541–1542）",
+   "years": [
+    1541,
+    1542
+   ],
+   "offices": [
+    "刑部"
+   ]
+  },
+  {
+   "person": "吳山",
+   "person_id": "吳山#2",
+   "label": "吳山（1556–1560）",
+   "years": [
+    1556,
+    1560
+   ],
+   "offices": [
+    "禮部"
+   ]
+  },
+  {
+   "person": "李敏",
+   "person_id": "李敏#1",
+   "label": "李敏（1373–1377）",
+   "years": [
+    1373,
+    1377
+   ],
+   "offices": [
+    "工部"
+   ]
+  },
+  {
+   "person": "李敏",
+   "person_id": "李敏#2",
+   "label": "李敏（1487–1491）",
+   "years": [
+    1487,
+    1491
+   ],
+   "offices": [
+    "戶部"
+   ]
+  },
+  {
+   "person": "李本",
+   "person_id": "李本#1",
+   "label": "李本（1372–1377）",
+   "years": [
+    1372,
+    1377
+   ],
+   "offices": [
+    "吏部",
+    "禮部"
+   ]
+  },
+  {
+   "person": "李本",
+   "person_id": "李本#2",
+   "label": "李本（1556）",
+   "years": [
+    1556,
+    1556
+   ],
+   "offices": [
+    "吏部"
+   ]
+  },
+  {
+   "person": "王佐",
+   "person_id": "王佐#1",
+   "label": "王佐（1441–1449）",
+   "years": [
+    1441,
+    1449
+   ],
+   "offices": [
+    "戶部"
+   ]
+  },
+  {
+   "person": "王佐",
+   "person_id": "王佐#2",
+   "label": "王佐（1620–1622）",
+   "years": [
+    1620,
+    1622
+   ],
+   "offices": [
+    "工部"
+   ]
+  },
+  {
+   "person": "胡松",
+   "person_id": "胡松#1",
+   "label": "胡松（1550–1551）",
+   "years": [
+    1550,
+    1551
+   ],
+   "offices": [
+    "工部"
+   ]
+  },
+  {
+   "person": "胡松",
+   "person_id": "胡松#2",
+   "label": "胡松（1566）",
+   "years": [
+    1566,
+    1566
+   ],
+   "offices": [
+    "吏部"
+   ]
+  },
+  {
+   "person": "顧佐",
+   "person_id": "顧佐#1",
+   "label": "顧佐（1429–1436）",
+   "years": [
+    1429,
+    1436
+   ],
+   "offices": [
+    "都察院"
+   ]
+  },
+  {
+   "person": "顧佐",
+   "person_id": "顧佐#2",
+   "label": "顧佐（1506–1508）",
+   "years": [
+    1506,
+    1508
+   ],
+   "offices": [
+    "戶部"
+   ]
+  }
+ ],
  "mapping": {
   "merges": [
    {
@@ -2074,11 +2221,11 @@
     "id": 67450
    },
    {
-    "person": "李瓊",
+    "person": "李瓚",
     "id": 201490
    },
    {
-    "person": "李瓚",
+    "person": "李瓊",
     "id": 201490
    },
    {
@@ -2086,11 +2233,11 @@
     "id": 67650
    },
    {
-    "person": "李暹",
+    "person": "李鐩",
     "id": 67072
    },
    {
-    "person": "李鐩",
+    "person": "李暹",
     "id": 67072
    },
    {
@@ -2130,15 +2277,7 @@
     "id": 67968
    },
    {
-    "person": "趙瑁",
-    "id": 66668
-   },
-   {
-    "person": "趙犏",
-    "id": 66668
-   },
-   {
-    "person": "趙本",
+    "person": "趙犭",
     "id": 66668
    },
    {
@@ -2146,11 +2285,7 @@
     "id": 66668
    },
    {
-    "person": "趙仁",
-    "id": 66668
-   },
-   {
-    "person": "趙犭",
+    "person": "趙犏",
     "id": 66668
    },
    {
@@ -2158,40 +2293,54 @@
     "id": 66668
    },
    {
-    "person": "趙勉",
-    "id": 66668
-   },
-   {
     "person": "趙粑",
     "id": 66668
    },
    {
-    "person": "宋冕",
-    "id": 127666
+    "person": "趙本",
+    "id": 66668
    },
    {
-    "person": "張鳳",
-    "id": 66963
+    "person": "趙仁",
+    "id": 66668
+   },
+   {
+    "person": "趙勉",
+    "id": 66668
+   },
+   {
+    "person": "趙瑁",
+    "id": 66668
+   },
+   {
+    "person": "李敏",
+    "id": 67840
    },
    {
     "person": "顧佐",
     "id": 66995
    },
    {
-    "person": "李敏",
-    "id": 67840
+    "person": "宋冕",
+    "id": 127666
    }
   ]
+ },
+ "entity_mapping": {
+  "entities": 555,
+  "ids": 513
  },
  "counts": {
   "entries_in": 3353,
   "entries_out": 3309,
-  "persons": 790,
+  "persons_entities": 796,
+  "display_persons": 790,
+  "split_entities": 12,
   "dropped": 18,
   "quarantined": 186,
   "dup_conflicts": 17,
   "book_patch": 14,
-  "mapping_out": 548,
+  "mapping_out": 555,
   "mapping_ids": 513
  }
 }

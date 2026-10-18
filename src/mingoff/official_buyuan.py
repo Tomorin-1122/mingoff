@@ -101,14 +101,13 @@ def _leave(note: str) -> tuple[int | None, str]:
     return None, "未載"
 
 
-SAME_NAME_GROUPS = {"張鳳", "胡松", "李敏", "王佐", "顧佐", "吳山", "李本"}
-GAP_SPLIT_YEARS = 15  # 同名组内间隔 ≥15 年视为不同实体
+# D-01：同名拆分后，是否 risky 由「同名实体数 >1」自动判定，不再硬编码名单。
 # 断段合并后降一档置信度（仍限定在既有档位，避免出现 0.55 之类）
 CONF_DOWN = {0.8: 0.7, 0.7: 0.6, 0.6: 0.5, 0.5: 0.5}
 
 
 def load_buyuan() -> list[dict]:
-    """v2 修复版条目（买院 repair 生成的规范化资产）；缺 v2 时回退 v1。"""
+    """v2 修复版条目（含 person_id/person_label）；缺 v2 时回退 v1。"""
     p2 = DATA / "vol1_buyuan_entries_v2.json"
     p1 = DATA / "vol1_buyuan_entries.json"
     p = p2 if p2.is_file() else p1
@@ -116,15 +115,19 @@ def load_buyuan() -> list[dict]:
 
 
 def load_buyuan_cbdb() -> dict:
+    p3 = DATA / "vol1_buyuan_person_cbdb_v3.json"
     p2 = DATA / "vol1_buyuan_person_cbdb_v2.json"
     p1 = DATA / "vol1_buyuan_person_cbdb.json"
-    p = p2 if p2.is_file() else p1
+    p = p3 if p3.is_file() else (p2 if p2.is_file() else p1)
     return json.loads(p.read_text(encoding="utf-8")) if p.is_file() else {}
 
 
 def build_buyuan_tenures() -> list[dict]:
     entries = [e for e in load_buyuan() if e["year"] <= CUT_Y]
     mapping = load_buyuan_cbdb()
+    name_entities: dict[str, set[str]] = defaultdict(set)
+    for e in entries:
+        name_entities[e["person"]].add(e.get("person_id") or e["person"])
 
     by_key: dict[tuple[str, str], list[dict]] = defaultdict(list)
     skipped_no_office = []
@@ -133,11 +136,14 @@ def build_buyuan_tenures() -> list[dict]:
             # NULL 铁律：office 未归部不得造假值；条目留待回原书核对
             skipped_no_office.append(e)
             continue
-        by_key[(e["person"], e["office"])].append(e)
+        pid = e.get("person_id") or e["person"]
+        by_key[(pid, e["office"])].append(e)
 
     tenures: list[dict] = []
-    for (person, office), rows in sorted(by_key.items()):
+    for (pid, office), rows in sorted(by_key.items()):
         rows.sort(key=lambda e: e["year"])
+        person = rows[0]["person"]
+        person_label = rows[0].get("person_label") or person
         # 防御性去重：同年多条 → 合并注文（多事件年合法，但同段键下同年只留一条）
         dedup: list[dict] = []
         for e in rows:
@@ -161,8 +167,8 @@ def build_buyuan_tenures() -> list[dict]:
                 cur = [y]
         segs.append(cur)
 
-        # 同名不同人风险：人名级标记（同名组跨部跨代，按部内分段无法表达）
-        same_name_risk = person in SAME_NAME_GROUPS
+        # D-01：同名多实体才标风险；拆开后同一 person_id 不得再跨代
+        same_name_risk = len(name_entities[person]) > 1
         for seg in segs:
             sy, ey = seg[0], seg[-1]
             s_note, e_note = note_of.get(sy, ""), note_of.get(ey, "")
@@ -196,10 +202,12 @@ def build_buyuan_tenures() -> list[dict]:
             if conflict:
                 conf = min(conf, 0.5)
 
-            m = mapping.get(person, {})
+            m = mapping.get(pid, {})
             ttype = "署理" if ("署" in s_note or "署" in flag_of.get(sy, "")) else "实授"
             tenures.append({
                 "person": person,
+                "person_id": pid,
+                "person_label": person_label,
                 "cbdb_id": m.get("cbdb_id"),
                 "cbdb_name": m.get("cbdb_name"),
                 "office": office,
@@ -231,7 +239,7 @@ def merge_gap_segments(tenures: list[dict]) -> list[dict]:
     """
     by_key = defaultdict(list)
     for t in tenures:
-        by_key[(t["person"], t["office"])].append(t)
+        by_key[(t["person_id"], t["office"])].append(t)
     out: list[dict] = []
     for key, ts in by_key.items():
         ts.sort(key=lambda t: t["start_year"])
@@ -261,12 +269,12 @@ def merge_gap_segments(tenures: list[dict]) -> list[dict]:
                 out.append(cur)
                 cur = nxt
         out.append(cur)
-    out.sort(key=lambda t: (t["person"], t["office"], t["start_year"]))
+    out.sort(key=lambda t: (t["person_id"], t["office"], t["start_year"]))
     # 剩余多段之间的缺口：不合并，但显式登记 gap_after（供前端虚线/待校），
     # 避免「静默两段」；同名风险组的缺口另行标记。
     by2 = defaultdict(list)
     for t in out:
-        by2[(t["person"], t["office"])].append(t)
+        by2[(t["person_id"], t["office"])].append(t)
     for ts in by2.values():
         ts.sort(key=lambda t: t["start_year"])
         for a, b in zip(ts, ts[1:]):
@@ -297,18 +305,25 @@ def export_buyuan(out_path: Path | None = None) -> dict:
     doc = {
         "meta": {
             "dataset": "mingoff-buyuan",
-            "version": 2,
+            "version": 3,
             "canvas_from": 1368,
             "source": "张德信《明代职官年表》册1·部院大臣年表（京師）（MinerU OCR）；"
                       "v2 修复：人名归一/伪名清理/注文隔离/衙署分期/CBDB 重挂；"
+                      "v3 D-01：同名拆分 person_id（李本/李敏/王佐/顧佐/吳山/胡松），"
+                      "張鳳 1629 改張鳳翔；"
                       "人名校验：CBDB 20261010 + 中研院明實錄 + 弇山堂别集/國榷（识典古籍）；"
                       "《明實錄》命中据中研院检索",
-            "pipeline": "mingoff.official_buyuan (v2: repair + (person,office) 分组 + "
-                        "gap 合并 + D15)",
+            "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) "
+                        "分组 + gap 合并 + D15)",
             "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "stats": {
                 "tenures": len(tenures),
-                "persons": len({t["person"] for t in tenures}),
+                "persons": len({t["person_id"] for t in tenures}),
+                "display_persons": len({t["person"] for t in tenures}),
+                "split_entities": len({t["person_id"] for t in tenures
+                                       if "#" in t["person_id"]}),
+                "same_name_entities": len({t["person"] for t in tenures
+                                           if t.get("same_name_risk")}),
                 "offices": sorted({t["office"] for t in tenures}),
                 "gap_merged_tenures": sum(1 for t in tenures if t.get("gap_years")),
                 "gap_years_total": sum(len(t.get("gap_years") or []) for t in tenures),
@@ -356,27 +371,26 @@ def refresh_manifest(doc: dict) -> None:
     if rp.is_file():
         repair_full = json.loads(rp.read_text(encoding="utf-8"))
         repair = repair_full.get("counts", {})
-    # G6：直接跑审计（审计只读当前数据；失败不阻塞导出，但必须如实写状态）
-    try:
-        from mingoff.audit_buyuan import audit as _audit
-        _r = _audit()
-        g6 = "pass" if not _r["blockers"] else f"fail({_r['blockers']})"
-    except Exception as exc:  # pragma: no cover
-        g6 = f"not-run({exc})"
     # 剩余待校：长缺口 + 隔离注文 + 重复冲突，写入 review_v2
     gaps = []
     for t in tenures:
         if t.get("gap_after"):
-            gaps.append({"person": t["person"], "office": t["office"],
-                         "after": t["end_year"], "years": t["gap_after"]})
+            gaps.append({"person_id": t["person_id"], "person": t["person"],
+                         "office": t["office"], "after": t["end_year"],
+                         "years": t["gap_after"]})
     review_v2 = {"long_gaps": gaps,
                  "quarantined_notes": repair_full.get("note_quarantine", []),
                  "dup_conflicts": repair_full.get("dup_conflicts", [])}
     (DATA / "vol1_buyuan_review_v2.json").write_text(
         json.dumps(review_v2, ensure_ascii=False, indent=1), encoding="utf-8")
+    # G6：先写入实测 stats，再跑审计（审计会对比 manifest）；失败不阻塞导出但如实写状态
     m.setdefault("stats", {})
     m["stats"].update({
-        "entries": len(entries), "persons_unique": len({e["person"] for e in entries}),
+        "entries": len(entries),
+        "persons_unique": len({e.get("person_id") or e["person"] for e in entries}),
+        "display_persons": len({e["person"] for e in entries}),
+        "split_entities": len({e.get("person_id") for e in entries
+                               if "#" in (e.get("person_id") or "")}),
         "years": len(years), "missing_years": missing,
         "no_office_entries": sum(1 for e in entries if not e.get("office")),
         "offices": sorted({e["office"] for e in entries if e.get("office")}),
@@ -384,6 +398,13 @@ def refresh_manifest(doc: dict) -> None:
         "book_patches": repair.get("book_patch"),
         "review_items": len(gaps),
     })
+    p.write_text(json.dumps(m, ensure_ascii=False, indent=1), encoding="utf-8")
+    try:
+        from mingoff.audit_buyuan import audit as _audit
+        _r = _audit()
+        g6 = "pass" if not _r["blockers"] else f"fail({_r['blockers']})"
+    except Exception as exc:  # pragma: no cover
+        g6 = f"not-run({exc})"
     m["tenure_assembly"] = {
         "date": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "pipeline": doc["meta"]["pipeline"],
@@ -398,7 +419,8 @@ def refresh_manifest(doc: dict) -> None:
             "G5": "见 docs/部院数据接收报告.md 抽检",
             "G6": g6,
         },
-        "status": "v2-g6-pass" if g6 == "pass" else "review",
+        "status": "v3-g6-pass" if g6 == "pass" else "review",
+        "identity": repair_full.get("identity", []),
         "repair": repair,
     }
     p.write_text(json.dumps(m, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -408,7 +430,7 @@ if __name__ == "__main__":
     doc = export_buyuan()
     refresh_manifest(doc)
     s = doc["meta"]["stats"]
-    print(f"部院任职段 {s['tenures']}（{s['persons']} 人，"
+    print(f"部院任职段 {s['tenures']}（{s['persons']} 实体 / {s['display_persons']} 姓名，"
           f"{s['years_covered'][0]}–{s['years_covered'][1]}，人-年 {s['person_years']}）")
     print("官职:", "、".join(s["offices"]))
     print(f"有起月 {s['with_start_month']}，有迄月 {s['with_end_month']}，"

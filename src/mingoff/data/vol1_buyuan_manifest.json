@@ -51,11 +51,11 @@
  "year_header_jumps": [],
  "stats": {
   "entries": 3309,
-  "persons_unique": 790,
+  "persons_unique": 796,
   "years": 277,
   "missing_years": [],
   "no_office_entries": 0,
-  "review_items": 119,
+  "review_items": 118,
   "name_dict": 914,
   "anchor_stats": {
    "①人名锚": 979,
@@ -80,7 +80,9 @@
    "總督京儲",
    "總督倉場",
    "都察院"
-  ]
+  ],
+  "display_persons": 790,
+  "split_entities": 12
  },
  "evidence": [
   "docs/evidence/book_p402_bujuan1368.png",
@@ -93,12 +95,15 @@
   "docs/evidence/book_p679_bujuan1644.png"
  ],
  "tenure_assembly": {
-  "date": "2026-10-18T05:36:33+00:00",
-  "pipeline": "mingoff.official_buyuan (v2: repair + (person,office) 分组 + gap 合并 + D15)",
+  "date": "2026-10-18T07:15:00+00:00",
+  "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
   "output": "official_buyuan.json",
   "stats": {
    "tenures": 1205,
-   "persons": 790,
+   "persons": 796,
+   "display_persons": 790,
+   "split_entities": 12,
+   "same_name_entities": 6,
    "offices": [
     "兵部",
     "刑部",
@@ -120,10 +125,10 @@
    ],
    "with_start_month": 815,
    "with_end_month": 453,
-   "cbdb_aligned": 822,
+   "cbdb_aligned": 819,
    "with_leave": 481,
    "shu_li": 71,
-   "same_name_risk": 17,
+   "same_name_risk": 15,
    "shilu_persons": 130,
    "shilu_hits": 3913,
    "person_years": 3470
@@ -136,16 +141,165 @@
    "G5": "见 docs/部院数据接收报告.md 抽检",
    "G6": "pass"
   },
-  "status": "v2-g6-pass",
+  "status": "v3-g6-pass",
+  "identity": [
+   {
+    "person": "吳山",
+    "person_id": "吳山#1",
+    "label": "吳山（1541–1542）",
+    "years": [
+     1541,
+     1542
+    ],
+    "offices": [
+     "刑部"
+    ]
+   },
+   {
+    "person": "吳山",
+    "person_id": "吳山#2",
+    "label": "吳山（1556–1560）",
+    "years": [
+     1556,
+     1560
+    ],
+    "offices": [
+     "禮部"
+    ]
+   },
+   {
+    "person": "李敏",
+    "person_id": "李敏#1",
+    "label": "李敏（1373–1377）",
+    "years": [
+     1373,
+     1377
+    ],
+    "offices": [
+     "工部"
+    ]
+   },
+   {
+    "person": "李敏",
+    "person_id": "李敏#2",
+    "label": "李敏（1487–1491）",
+    "years": [
+     1487,
+     1491
+    ],
+    "offices": [
+     "戶部"
+    ]
+   },
+   {
+    "person": "李本",
+    "person_id": "李本#1",
+    "label": "李本（1372–1377）",
+    "years": [
+     1372,
+     1377
+    ],
+    "offices": [
+     "吏部",
+     "禮部"
+    ]
+   },
+   {
+    "person": "李本",
+    "person_id": "李本#2",
+    "label": "李本（1556）",
+    "years": [
+     1556,
+     1556
+    ],
+    "offices": [
+     "吏部"
+    ]
+   },
+   {
+    "person": "王佐",
+    "person_id": "王佐#1",
+    "label": "王佐（1441–1449）",
+    "years": [
+     1441,
+     1449
+    ],
+    "offices": [
+     "戶部"
+    ]
+   },
+   {
+    "person": "王佐",
+    "person_id": "王佐#2",
+    "label": "王佐（1620–1622）",
+    "years": [
+     1620,
+     1622
+    ],
+    "offices": [
+     "工部"
+    ]
+   },
+   {
+    "person": "胡松",
+    "person_id": "胡松#1",
+    "label": "胡松（1550–1551）",
+    "years": [
+     1550,
+     1551
+    ],
+    "offices": [
+     "工部"
+    ]
+   },
+   {
+    "person": "胡松",
+    "person_id": "胡松#2",
+    "label": "胡松（1566）",
+    "years": [
+     1566,
+     1566
+    ],
+    "offices": [
+     "吏部"
+    ]
+   },
+   {
+    "person": "顧佐",
+    "person_id": "顧佐#1",
+    "label": "顧佐（1429–1436）",
+    "years": [
+     1429,
+     1436
+    ],
+    "offices": [
+     "都察院"
+    ]
+   },
+   {
+    "person": "顧佐",
+    "person_id": "顧佐#2",
+    "label": "顧佐（1506–1508）",
+    "years": [
+     1506,
+     1508
+    ],
+    "offices": [
+     "戶部"
+    ]
+   }
+  ],
   "repair": {
    "entries_in": 3353,
    "entries_out": 3309,
-   "persons": 790,
+   "persons_entities": 796,
+   "display_persons": 790,
+   "split_entities": 12,
    "dropped": 18,
    "quarantined": 186,
    "dup_conflicts": 17,
    "book_patch": 14,
-   "mapping_out": 548,
+   "mapping_out": 555,
    "mapping_ids": 513
   }
  }

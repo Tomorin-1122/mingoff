@@ -1,0 +1,6675 @@
+{
+ "周禎": {
+  "cbdb_id": 66428,
+  "cbdb_name": "周禎",
+  "method": "exact",
+  "score": 131.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1368,
+   1368
+  ]
+ },
+ "錢唐": {
+  "cbdb_id": 66535,
+  "cbdb_name": "錢唐",
+  "method": "exact",
+  "score": 130.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1368,
+   1369
+  ]
+ },
+ "滕毅": {
+  "cbdb_id": 66462,
+  "cbdb_name": "滕毅",
+  "method": "exact",
+  "score": 131.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1368,
+   1368
+  ]
+ },
+ "單安仁": {
+  "cbdb_id": 66518,
+  "cbdb_name": "單安仁",
+  "method": "exact",
+  "score": 145.8,
+  "birth": 1303,
+  "death": 1387,
+  "span": [
+   1368,
+   1377
+  ]
+ },
+ "湯和": {
+  "cbdb_id": 67385,
+  "cbdb_name": "湯和",
+  "method": "exact",
+  "score": 138.0,
+  "birth": 1326,
+  "death": 1395,
+  "span": [
+   1368,
+   1370
+  ]
+ },
+ "杭琪": {
+  "cbdb_id": 104212,
+  "cbdb_name": "杭琪",
+  "method": "exact",
+  "score": 50.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1368,
+   1370
+  ]
+ },
+ "楊思義": {
+  "cbdb_id": 66409,
+  "cbdb_name": "楊思義",
+  "method": "exact",
+  "score": 130.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1368,
+   1369
+  ]
+ },
+ "崔亮": {
+  "cbdb_id": 66454,
+  "cbdb_name": "崔亮",
+  "method": "exact",
+  "score": 136.4,
+  "birth": null,
+  "death": 1370,
+  "span": [
+   1368,
+   1370
+  ]
+ },
+ "錢用壬": {
+  "cbdb_id": 28462,
+  "cbdb_name": "錢用壬",
+  "method": "exact",
+  "score": 133.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1368,
+   1368
+  ]
+ },
+ "王居仁": {
+  "cbdb_id": 101239,
+  "cbdb_name": "王居仁",
+  "method": "exact",
+  "score": 120.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1369,
+   1370
+  ]
+ },
+ "滕德懋": {
+  "cbdb_id": 66412,
+  "cbdb_name": "滕德懋",
+  "method": "exact",
+  "score": 131.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1370,
+   1370
+  ]
+ },
+ "程徐": {
+  "cbdb_id": 66539,
+  "cbdb_name": "程徐",
+  "method": "exact",
+  "score": 137.6,
+  "birth": null,
+  "death": 1370,
+  "span": [
+   1370,
+   1370
+  ]
+ },
+ "商暠": {
+  "cbdb_id": 106345,
+  "cbdb_name": "商暠",
+  "method": "exact",
+  "score": 130.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1370,
+   1377
+  ]
+ },
+ "王興福": {
+  "cbdb_id": 66493,
+  "cbdb_name": "王興福",
+  "method": "exact",
+  "score": 131.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1370,
+   1382
+  ]
+ },
+ "安慶": {
+  "cbdb_id": 3,
+  "cbdb_name": "安燾",
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": null,
+  "death": null,
+  "span": [
+   1370,
+   1371
+  ],
+  "note": "wiki:安燾"
+ },
+ "安然": {
+  "cbdb_id": 66474,
+  "cbdb_name": "安然",
+  "method": "exact",
+  "score": 146.2,
+  "birth": 1323,
+  "death": 1381,
+  "span": [
+   1370,
+   1379
+  ]
+ },
+ "宋冕": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "exact",
+  "score": 87.6,
+  "birth": 1465,
+  "death": 1537,
+  "span": [
+   1370,
+   1371
+  ],
+  "repair": "date-conflict-or-ambiguous:127666"
+ },
+ "陳昱": {
+  "cbdb_id": 502875,
+  "cbdb_name": "陳昱",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1370,
+   1370
+  ]
+ },
+ "楊訓文": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "baike-only",
+  "score": null,
+  "birth": null,
+  "death": 1372,
+  "span": [
+   1370,
+   1372
+  ],
+  "note": "洪武四年(1371)召为礼部尚书与陶凯同理部事，本年改户部尚书，五年(1372)改河南参政卒于官"
+ },
+ "陶凱": {
+  "cbdb_id": 34415,
+  "cbdb_name": "陶凱",
+  "method": "exact",
+  "score": 132.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1370,
+   1373
+  ]
+ },
+ "劉惟謙": {
+  "cbdb_id": 66430,
+  "cbdb_name": "劉惟謙",
+  "method": "exact",
+  "score": 131.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1371,
+   1375
+  ]
+ },
+ "詹同": {
+  "cbdb_id": 66453,
+  "cbdb_name": "詹同",
+  "method": "exact",
+  "score": 134.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1371,
+   1374
+  ]
+ },
+ "陳修": {
+  "cbdb_id": 66446,
+  "cbdb_name": "陳修",
+  "method": "exact",
+  "score": 144.8,
+  "birth": 1321,
+  "death": 1371,
+  "span": [
+   1371,
+   1371
+  ]
+ },
+ "朱守仁": {
+  "cbdb_id": 66520,
+  "cbdb_name": "朱守仁",
+  "method": "exact",
+  "score": 139.0,
+  "birth": null,
+  "death": 1404,
+  "span": [
+   1371,
+   1372
+  ]
+ },
+ "李本#1": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "same-name-split",
+  "repair": "same-name-split:李本:entity1",
+  "span": [
+   1372,
+   1377
+  ]
+ },
+ "黃肅": {
+  "cbdb_id": 131436,
+  "cbdb_name": "黃肅",
+  "method": "exact",
+  "score": 130.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1372,
+   1373
+  ]
+ },
+ "劉仁": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1321,
+  "death": 1381,
+  "span": [
+   1373,
+   1374
+  ],
+  "note": "wiki:劉崧 (明朝)",
+  "repair": "shared-id-34421-not-owner"
+ },
+ "樂韶鳳": {
+  "cbdb_id": 66467,
+  "cbdb_name": "樂韶鳳",
+  "method": "exact",
+  "score": 132.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1373,
+   1373
+  ]
+ },
+ "李儼": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1316,
+  "death": 1380,
+  "span": [
+   1373,
+   1374
+  ],
+  "note": "wiki:李質",
+  "repair": "shared-id-66439-not-owner"
+ },
+ "李信": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1316,
+  "death": 1380,
+  "span": [
+   1373,
+   1383
+  ],
+  "note": "wiki:李質",
+  "repair": "shared-id-66439-not-owner"
+ },
+ "李敏#1": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "same-name-split",
+  "repair": "same-name-split:李敏:entity1",
+  "span": [
+   1373,
+   1377
+  ]
+ },
+ "牛諒": {
+  "cbdb_id": 66455,
+  "cbdb_name": "牛諒",
+  "method": "exact",
+  "score": 131.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1373,
+   1374
+  ]
+ },
+ "趙翥": {
+  "cbdb_id": 66523,
+  "cbdb_name": "趙翥",
+  "method": "exact",
+  "score": 131.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1374,
+   1379
+  ]
+ },
+ "汪廣洋": {
+  "cbdb_id": 66237,
+  "cbdb_name": "汪廣洋",
+  "method": "exact",
+  "score": 129.8,
+  "birth": null,
+  "death": 1379,
+  "span": [
+   1374,
+   1377
+  ]
+ },
+ "趙好德": {
+  "cbdb_id": 66464,
+  "cbdb_name": "趙好德",
+  "method": "exact",
+  "score": 131.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1375,
+   1376
+  ]
+ },
+ "薛祥": {
+  "cbdb_id": 66521,
+  "cbdb_name": "薛祥",
+  "method": "exact",
+  "score": 137.8,
+  "birth": null,
+  "death": 1381,
+  "span": [
+   1375,
+   1381
+  ]
+ },
+ "王敏": {
+  "cbdb_id": 100799,
+  "cbdb_name": "王敏",
+  "method": "exact",
+  "score": 120.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1376,
+   1378
+  ]
+ },
+ "偰斯": {
+  "cbdb_id": 131129,
+  "cbdb_name": "偰斯",
+  "method": "exact",
+  "score": 60.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1376,
+   1380
+  ]
+ },
+ "李泰": {
+  "cbdb_id": 559851,
+  "cbdb_name": "李泰",
+  "method": "exact",
+  "score": 130.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1376,
+   1376
+  ]
+ },
+ "張籌": {
+  "cbdb_id": 66457,
+  "cbdb_name": "張籌",
+  "method": "exact",
+  "score": 131.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1376,
+   1379
+  ]
+ },
+ "尹性": {
+  "cbdb_id": 117550,
+  "cbdb_name": "尹性",
+  "method": "exact",
+  "score": 130.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1377,
+   1377
+  ]
+ },
+ "秦中": {
+  "cbdb_id": 155,
+  "cbdb_name": "秦中",
+  "method": "exact",
+  "score": 100.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1377,
+   1377
+  ]
+ },
+ "丁玉": {
+  "cbdb_id": 54135,
+  "cbdb_name": "丁玉",
+  "method": "exact",
+  "score": 128.2,
+  "birth": null,
+  "death": 1380,
+  "span": [
+   1377,
+   1379
+  ]
+ },
+ "費震": {
+  "cbdb_id": 66425,
+  "cbdb_name": "費震",
+  "method": "exact",
+  "score": 132.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1378,
+   1379
+  ]
+ },
+ "朱夢炎": {
+  "cbdb_id": 66458,
+  "cbdb_name": "朱夢炎",
+  "method": "exact",
+  "score": 139.0,
+  "birth": null,
+  "death": 1380,
+  "span": [
+   1378,
+   1380
+  ]
+ },
+ "趙本": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1364,
+  "death": 1436,
+  "span": [
+   1379,
+   1380
+  ],
+  "note": "wiki:趙羾",
+  "repair": "shared-id-66668-not-owner"
+ },
+ "劉崧": {
+  "cbdb_id": 34421,
+  "cbdb_name": "劉崧",
+  "method": "exact",
+  "score": 146.4,
+  "birth": 1321,
+  "death": 1381,
+  "span": [
+   1380,
+   1380
+  ]
+ },
+ "徐鐸": {
+  "cbdb_id": 513107,
+  "cbdb_name": "徐鐸",
+  "method": "exact",
+  "score": 130.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1380,
+   1385
+  ]
+ },
+ "范敏": {
+  "cbdb_id": 66413,
+  "cbdb_name": "范敏",
+  "method": "exact",
+  "score": 130.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1380,
+   1381
+  ]
+ },
+ "唐鐸": {
+  "cbdb_id": 66548,
+  "cbdb_name": "唐鐸",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1329,
+  "death": 1397,
+  "span": [
+   1381,
+   1389
+  ]
+ },
+ "李叔正": {
+  "cbdb_id": 66408,
+  "cbdb_name": "李叔正",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1319,
+  "death": 1382,
+  "span": [
+   1381,
+   1381
+  ]
+ },
+ "高信": {
+  "cbdb_id": 149170,
+  "cbdb_name": "高熲",
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": null,
+  "death": null,
+  "span": [
+   1381,
+   1382
+  ],
+  "note": "wiki:高熲"
+ },
+ "何禮": {
+  "cbdb_id": 24821,
+  "cbdb_name": "何溥",
+  "method": "fuzzy+sinica",
+  "score": 81.8,
+  "birth": 0,
+  "death": 0,
+  "span": [
+   1382,
+   1382
+  ]
+ },
+ "開濟": {
+  "cbdb_id": 66530,
+  "cbdb_name": "開濟",
+  "method": "exact",
+  "score": 137.0,
+  "birth": null,
+  "death": 1383,
+  "span": [
+   1382,
+   1383
+  ]
+ },
+ "趙俊": {
+  "cbdb_id": 66524,
+  "cbdb_name": "趙俊",
+  "method": "exact",
+  "score": 130.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1382,
+   1384
+  ]
+ },
+ "曾泰": {
+  "cbdb_id": 573547,
+  "cbdb_name": "曾泰",
+  "method": "exact",
+  "score": 130.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1382,
+   1382
+  ]
+ },
+ "任昂": {
+  "cbdb_id": 66461,
+  "cbdb_name": "任昂",
+  "method": "exact",
+  "score": 131.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1382,
+   1385
+  ]
+ },
+ "劉仲質": {
+  "cbdb_id": 66459,
+  "cbdb_name": "劉仲質",
+  "method": "exact",
+  "score": 131.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1382,
+   1382
+  ]
+ },
+ "王鈍": {
+  "cbdb_id": 66716,
+  "cbdb_name": "王鈍",
+  "method": "exact",
+  "score": 133.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1383,
+   1402
+  ]
+ },
+ "劉達": {
+  "cbdb_id": 239985,
+  "cbdb_name": "劉達",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1384,
+   1384
+  ]
+ },
+ "余燦": {
+  "cbdb_id": 22848,
+  "cbdb_name": "余晦",
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": null,
+  "death": null,
+  "span": [
+   1384,
+   1384
+  ],
+  "note": "wiki:余晦"
+ },
+ "趙瑁": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1364,
+  "death": 1436,
+  "span": [
+   1384,
+   1385
+  ],
+  "note": "wiki:趙羾",
+  "repair": "shared-id-66668-not-owner"
+ },
+ "詹徽": {
+  "cbdb_id": 132086,
+  "cbdb_name": "詹徽",
+  "method": "exact",
+  "score": 130.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1384,
+   1393
+  ]
+ },
+ "趙仁": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1364,
+  "death": 1436,
+  "span": [
+   1385,
+   1388
+  ],
+  "note": "wiki:趙羾",
+  "repair": "shared-id-66668-not-owner"
+ },
+ "茹太素": {
+  "cbdb_id": 66532,
+  "cbdb_name": "茹太素",
+  "method": "exact",
+  "score": 139.2,
+  "birth": null,
+  "death": 1389,
+  "span": [
+   1385,
+   1385
+  ]
+ },
+ "侯庸": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": null,
+  "death": 1402,
+  "span": [
+   1387,
+   1389
+  ],
+  "note": "wiki:侯泰",
+  "repair": "shared-id-66544-not-owner"
+ },
+ "李原名": {
+  "cbdb_id": 66466,
+  "cbdb_name": "李原名",
+  "method": "exact",
+  "score": 130.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1387,
+   1390
+  ]
+ },
+ "凌漢": {
+  "cbdb_id": 66516,
+  "cbdb_name": "凌漢",
+  "method": "exact",
+  "score": 123.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1388,
+   1390
+  ]
+ },
+ "沈溍": {
+  "cbdb_id": 66529,
+  "cbdb_name": "沈溍",
+  "method": "exact",
+  "score": 131.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1389,
+   1390
+  ]
+ },
+ "秦逵": {
+  "cbdb_id": 66522,
+  "cbdb_name": "秦逵",
+  "method": "exact",
+  "score": 136.8,
+  "birth": null,
+  "death": 1392,
+  "span": [
+   1389,
+   1392
+  ]
+ },
+ "楊靖": {
+  "cbdb_id": 66443,
+  "cbdb_name": "楊靖",
+  "method": "exact",
+  "score": 146.0,
+  "birth": 1360,
+  "death": 1397,
+  "span": [
+   1389,
+   1397
+  ]
+ },
+ "趙勉": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1364,
+  "death": 1436,
+  "span": [
+   1389,
+   1392
+  ],
+  "note": "wiki:趙羾",
+  "repair": "shared-id-66668-not-owner"
+ },
+ "茹瑺": {
+  "cbdb_id": 66720,
+  "cbdb_name": "茹瑺",
+  "method": "fuzzy+sinica",
+  "score": 89.8,
+  "birth": null,
+  "death": 1409,
+  "span": [
+   1390,
+   1403
+  ]
+ },
+ "楊克明": {
+  "cbdb_id": 256233,
+  "cbdb_name": "楊克明",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1391,
+   1391
+  ]
+ },
+ "翟善": {
+  "cbdb_id": 66465,
+  "cbdb_name": "翟善",
+  "method": "exact",
+  "score": 132.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1393,
+   1395
+  ]
+ },
+ "嚴震直": {
+  "cbdb_id": 66721,
+  "cbdb_name": "嚴震直",
+  "method": "exact",
+  "score": 138.2,
+  "birth": null,
+  "death": 1402,
+  "span": [
+   1393,
+   1402
+  ]
+ },
+ "郁新": {
+  "cbdb_id": 66666,
+  "cbdb_name": "郁新",
+  "method": "exact",
+  "score": 145.8,
+  "birth": 1346,
+  "death": 1405,
+  "span": [
+   1393,
+   1405
+  ]
+ },
+ "解敏": {
+  "cbdb_id": 353050,
+  "cbdb_name": "解敏",
+  "method": "exact",
+  "score": 50.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1393,
+   1395
+  ]
+ },
+ "王儁": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1395,
+  "death": 1470,
+  "span": [
+   1394,
+   1396
+  ],
+  "note": "wiki:王來",
+  "repair": "shared-id-67477-not-owner"
+ },
+ "任亨泰": {
+  "cbdb_id": 349761,
+  "cbdb_name": "任亨泰",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1394,
+   1396
+  ]
+ },
+ "門克新": {
+  "cbdb_id": 66527,
+  "cbdb_name": "門克新",
+  "method": "exact",
+  "score": 136.8,
+  "birth": null,
+  "death": 1396,
+  "span": [
+   1396,
+   1396
+  ]
+ },
+ "鄭沂": {
+  "cbdb_id": 28215,
+  "cbdb_name": "鄭沂",
+  "method": "exact",
+  "score": 130.2,
+  "birth": 0,
+  "death": 0,
+  "span": [
+   1397,
+   1403
+  ]
+ },
+ "齊泰": {
+  "cbdb_id": 66490,
+  "cbdb_name": "齊泰",
+  "method": "exact",
+  "score": 131.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1398,
+   1402
+  ]
+ },
+ "暴昭": {
+  "cbdb_id": 66514,
+  "cbdb_name": "暴昭",
+  "method": "exact",
+  "score": 137.6,
+  "birth": null,
+  "death": 1402,
+  "span": [
+   1398,
+   1402
+  ]
+ },
+ "鄭賜": {
+  "cbdb_id": 66717,
+  "cbdb_name": "鄭賜",
+  "method": "exact",
+  "score": 139.2,
+  "birth": null,
+  "death": 1408,
+  "span": [
+   1398,
+   1408
+  ]
+ },
+ "陳迪": {
+  "cbdb_id": 66598,
+  "cbdb_name": "陳迪",
+  "method": "exact",
+  "score": 137.4,
+  "birth": null,
+  "death": 1402,
+  "span": [
+   1398,
+   1402
+  ]
+ },
+ "侯泰": {
+  "cbdb_id": 66544,
+  "cbdb_name": "侯泰",
+  "method": "exact",
+  "score": 136.8,
+  "birth": null,
+  "death": 1402,
+  "span": [
+   1399,
+   1402
+  ]
+ },
+ "張紞": {
+  "cbdb_id": 66722,
+  "cbdb_name": "張紞",
+  "method": "exact",
+  "score": 138.0,
+  "birth": null,
+  "death": 1402,
+  "span": [
+   1399,
+   1402
+  ]
+ },
+ "景清": {
+  "cbdb_id": 66604,
+  "cbdb_name": "景清",
+  "method": "exact",
+  "score": 127.6,
+  "birth": null,
+  "death": 1402,
+  "span": [
+   1399,
+   1402
+  ]
+ },
+ "鐵鉉": {
+  "cbdb_id": 66512,
+  "cbdb_name": "鐵鉉",
+  "method": "exact",
+  "score": 145.4,
+  "birth": 1366,
+  "death": 1402,
+  "span": [
+   1400,
+   1402
+  ]
+ },
+ "劉儁": {
+  "cbdb_id": 66803,
+  "cbdb_name": "劉儁",
+  "method": "exact",
+  "score": 138.6,
+  "birth": null,
+  "death": 1408,
+  "span": [
+   1402,
+   1408
+  ]
+ },
+ "黃福": {
+  "cbdb_id": 30659,
+  "cbdb_name": "黃福",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1362,
+  "death": 1440,
+  "span": [
+   1402,
+   1432
+  ]
+ },
+ "夏原吉": {
+  "cbdb_id": 252759,
+  "cbdb_name": "夏原吉",
+  "method": "exact",
+  "score": 133.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1402,
+   1430
+  ]
+ },
+ "郭資": {
+  "cbdb_id": 66750,
+  "cbdb_name": "郭資",
+  "method": "exact",
+  "score": 147.4,
+  "birth": 1361,
+  "death": 1433,
+  "span": [
+   1402,
+   1433
+  ]
+ },
+ "宋禮": {
+  "cbdb_id": 66768,
+  "cbdb_name": "宋禮",
+  "method": "exact",
+  "score": 145.6,
+  "birth": 1358,
+  "death": 1422,
+  "span": [
+   1402,
+   1422
+  ]
+ },
+ "李至剛": {
+  "cbdb_id": 103227,
+  "cbdb_name": "李至剛",
+  "method": "baike+cbdb2nd",
+  "score": null,
+  "birth": null,
+  "death": null,
+  "span": [
+   1402,
+   1405
+  ],
+  "note": "元末樞密院掾史背景吻合其早年仕历"
+ },
+ "蹇義": {
+  "cbdb_id": 66658,
+  "cbdb_name": "蹇義",
+  "method": "exact",
+  "score": 146.4,
+  "birth": 1363,
+  "death": 1435,
+  "span": [
+   1403,
+   1435
+  ]
+ },
+ "金忠": {
+  "cbdb_id": 66669,
+  "cbdb_name": "金忠",
+  "method": "exact",
+  "score": 145.0,
+  "birth": 1353,
+  "death": 1415,
+  "span": [
+   1404,
+   1415
+  ]
+ },
+ "吳中": {
+  "cbdb_id": 66757,
+  "cbdb_name": "吳中",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1373,
+  "death": 1442,
+  "span": [
+   1404,
+   1442
+  ]
+ },
+ "趙犭": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1364,
+  "death": 1436,
+  "span": [
+   1407,
+   1407
+  ],
+  "note": "wiki:趙羾",
+  "repair": "shared-id-66668-not-owner"
+ },
+ "劉觀": {
+  "cbdb_id": 66758,
+  "cbdb_name": "劉觀",
+  "method": "exact",
+  "score": 132.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1408,
+   1428
+  ]
+ },
+ "趙羾": {
+  "cbdb_id": 66668,
+  "cbdb_name": "趙羾",
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1364,
+  "death": 1436,
+  "span": [
+   1408,
+   1421
+  ],
+  "note": "wiki:趙羾",
+  "repair": "override:66668"
+ },
+ "方賓": {
+  "cbdb_id": 66755,
+  "cbdb_name": "方賓",
+  "method": "exact",
+  "score": 131.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1409,
+   1421
+  ]
+ },
+ "趙紅": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1364,
+  "death": 1436,
+  "span": [
+   1409,
+   1423
+  ],
+  "note": "wiki:趙羾",
+  "repair": "shared-id-66668-not-owner"
+ },
+ "陳洽": {
+  "cbdb_id": 66812,
+  "cbdb_name": "陳洽",
+  "method": "exact",
+  "score": 146.2,
+  "birth": 1370,
+  "death": 1426,
+  "span": [
+   1415,
+   1426
+  ]
+ },
+ "金純": {
+  "cbdb_id": 66878,
+  "cbdb_name": "金純",
+  "method": "exact",
+  "score": 138.4,
+  "birth": null,
+  "death": 1440,
+  "span": [
+   1416,
+   1428
+  ]
+ },
+ "趙肛": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1364,
+  "death": 1436,
+  "span": [
+   1418,
+   1418
+  ],
+  "note": "wiki:趙羾",
+  "repair": "shared-id-66668-not-owner"
+ },
+ "趙犏": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1364,
+  "death": 1436,
+  "span": [
+   1420,
+   1420
+  ],
+  "note": "wiki:趙羾",
+  "repair": "shared-id-66668-not-owner"
+ },
+ "李慶": {
+  "cbdb_id": 66671,
+  "cbdb_name": "李慶",
+  "method": "exact",
+  "score": 138.4,
+  "birth": null,
+  "death": 1427,
+  "span": [
+   1420,
+   1425
+  ]
+ },
+ "王彰": {
+  "cbdb_id": 67117,
+  "cbdb_name": "王彰",
+  "method": "exact",
+  "score": 145.4,
+  "birth": 1366,
+  "death": 1427,
+  "span": [
+   1420,
+   1427
+  ]
+ },
+ "趙粑": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1364,
+  "death": 1436,
+  "span": [
+   1424,
+   1424
+  ],
+  "note": "wiki:趙羾",
+  "repair": "shared-id-66668-not-owner"
+ },
+ "向寶": {
+  "cbdb_id": 66674,
+  "cbdb_name": "向寶",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1366,
+  "death": 1428,
+  "span": [
+   1424,
+   1425
+  ]
+ },
+ "張本": {
+  "cbdb_id": 66883,
+  "cbdb_name": "張本",
+  "method": "exact",
+  "score": 147.0,
+  "birth": 1367,
+  "death": 1431,
+  "span": [
+   1425,
+   1431
+  ]
+ },
+ "胡濙": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": null,
+  "death": 1522,
+  "span": [
+   1426,
+   1457
+  ],
+  "note": "wiki:胡富",
+  "repair": "shared-id-67968-not-owner"
+ },
+ "郭敦": {
+  "cbdb_id": 66885,
+  "cbdb_name": "郭敦",
+  "method": "exact",
+  "score": 147.0,
+  "birth": 1370,
+  "death": 1431,
+  "span": [
+   1427,
+   1431
+  ]
+ },
+ "古樸": {
+  "cbdb_id": 66673,
+  "cbdb_name": "古樸",
+  "method": "exact",
+  "score": 139.0,
+  "birth": null,
+  "death": 1428,
+  "span": [
+   1428,
+   1428
+  ]
+ },
+ "郭琎": {
+  "cbdb_id": 66904,
+  "cbdb_name": "郭璡",
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1371,
+  "death": 1447,
+  "span": [
+   1429,
+   1443
+  ],
+  "note": "wiki:郭璡 | 原键郭璉"
+ },
+ "顧佐#1": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "same-name-split",
+  "repair": "same-name-split:顧佐:entity1",
+  "span": [
+   1429,
+   1436
+  ]
+ },
+ "李昶": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1408,
+  "death": 1489,
+  "span": [
+   1430,
+   1431
+  ],
+  "note": "wiki:李秉",
+  "repair": "shared-id-67650-not-owner"
+ },
+ "陳瑞": {
+  "cbdb_id": 130943,
+  "cbdb_name": "陳瑞",
+  "method": "exact",
+  "score": 120.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1431,
+   1438
+  ]
+ },
+ "熊榮": {
+  "cbdb_id": 513230,
+  "cbdb_name": "熊繡",
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": null,
+  "death": null,
+  "span": [
+   1433,
+   1434
+  ],
+  "note": "wiki:熊繡"
+ },
+ "王驥": {
+  "cbdb_id": 67399,
+  "cbdb_name": "王驥",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1378,
+  "death": 1460,
+  "span": [
+   1434,
+   1457
+  ]
+ },
+ "陳璟": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+sinica",
+  "score": 88.0,
+  "birth": 1405,
+  "death": 1468,
+  "span": [
+   1434,
+   1437
+  ],
+  "repair": "shared-id-66341-not-owner"
+ },
+ "施禮": {
+  "cbdb_id": 242309,
+  "cbdb_name": "施禮",
+  "method": "exact",
+  "score": 130.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1435,
+   1435
+  ]
+ },
+ "魏源": {
+  "cbdb_id": 67128,
+  "cbdb_name": "魏源",
+  "method": "exact",
+  "score": 147.4,
+  "birth": 1382,
+  "death": 1444,
+  "span": [
+   1435,
+   1443
+  ]
+ },
+ "陳珮": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+sinica",
+  "score": 88.0,
+  "birth": 1405,
+  "death": 1468,
+  "span": [
+   1435,
+   1439
+  ],
+  "repair": "shared-id-66341-not-owner"
+ },
+ "劉中敷": {
+  "cbdb_id": 66947,
+  "cbdb_name": "劉中敷",
+  "method": "exact",
+  "score": 147.4,
+  "birth": 1380,
+  "death": 1453,
+  "span": [
+   1436,
+   1441
+  ]
+ },
+ "陳智": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+sinica",
+  "score": 96.0,
+  "birth": 1389,
+  "death": 1456,
+  "span": [
+   1436,
+   1441
+  ],
+  "repair": "shared-id-66873-not-owner"
+ },
+ "柴車": {
+  "cbdb_id": 66916,
+  "cbdb_name": "柴車",
+  "method": "exact",
+  "score": 146.6,
+  "birth": 1375,
+  "death": 1441,
+  "span": [
+   1439,
+   1441
+  ]
+ },
+ "張鳳": {
+  "cbdb_id": 66963,
+  "cbdb_name": "張鳳",
+  "method": "exact",
+  "score": 146.6,
+  "birth": 1396,
+  "death": 1461,
+  "span": [
+   1439,
+   1457
+  ],
+  "repair": "override:66963"
+ },
+ "王佐#1": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "same-name-split",
+  "repair": "same-name-split:王佐:entity1",
+  "span": [
+   1441,
+   1449
+  ]
+ },
+ "李暹": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1426,
+  "death": 1511,
+  "span": [
+   1441,
+   1445
+  ],
+  "note": "wiki:李裕",
+  "repair": "shared-id-67072-not-owner"
+ },
+ "王文": {
+  "cbdb_id": 67338,
+  "cbdb_name": "王文",
+  "method": "cabinet",
+  "span": [
+   1441,
+   1452
+  ],
+  "birth": 1393,
+  "death": 1457
+ },
+ "徐晞": {
+  "cbdb_id": 129947,
+  "cbdb_name": "徐晞",
+  "method": "exact",
+  "score": 131.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1442,
+   1445
+  ]
+ },
+ "王壱": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1395,
+  "death": 1470,
+  "span": [
+   1442,
+   1442
+  ],
+  "note": "wiki:王來",
+  "repair": "shared-id-67477-not-owner"
+ },
+ "王質": {
+  "cbdb_id": 126812,
+  "cbdb_name": "王質",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1443,
+   1443
+  ]
+ },
+ "金濂": {
+  "cbdb_id": 67132,
+  "cbdb_name": "金濂",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1392,
+  "death": 1454,
+  "span": [
+   1443,
+   1454
+  ]
+ },
+ "王直": {
+  "cbdb_id": 34493,
+  "cbdb_name": "王直",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1379,
+  "death": 1462,
+  "span": [
+   1443,
+   1457
+  ]
+ },
+ "王卺": {
+  "cbdb_id": 67138,
+  "cbdb_name": "王巹",
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1378,
+  "death": 1463,
+  "span": [
+   1443,
+   1448
+  ],
+  "note": "wiki:王巹"
+ },
+ "鄺埜": {
+  "cbdb_id": 67248,
+  "cbdb_name": "鄺埜",
+  "method": "exact",
+  "score": 146.6,
+  "birth": 1385,
+  "death": 1449,
+  "span": [
+   1445,
+   1449
+  ]
+ },
+ "王晉": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1395,
+  "death": 1470,
+  "span": [
+   1445,
+   1445
+  ],
+  "note": "wiki:王來",
+  "repair": "shared-id-67477-not-owner"
+ },
+ "焦宏": {
+  "cbdb_id": 131573,
+  "cbdb_name": "焦宏",
+  "method": "exact",
+  "score": 74.4,
+  "birth": 1392,
+  "death": 1449,
+  "span": [
+   1445,
+   1446
+  ]
+ },
+ "陳鎰": {
+  "cbdb_id": 66873,
+  "cbdb_name": "陳鎰",
+  "method": "exact",
+  "score": 146.0,
+  "birth": 1389,
+  "death": 1456,
+  "span": [
+   1445,
+   1453
+  ]
+ },
+ "張睿": {
+  "cbdb_id": 345527,
+  "cbdb_name": "張睿",
+  "method": "exact",
+  "score": 121.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1446,
+   1467
+  ]
+ },
+ "石璞": {
+  "cbdb_id": 67136,
+  "cbdb_name": "石璞",
+  "method": "exact",
+  "score": 139.0,
+  "birth": null,
+  "death": 1469,
+  "span": [
+   1448,
+   1457
+  ]
+ },
+ "于謙": {
+  "cbdb_id": 34504,
+  "cbdb_name": "于謙",
+  "method": "exact",
+  "score": 147.8,
+  "birth": 1398,
+  "death": 1457,
+  "span": [
+   1449,
+   1457
+  ]
+ },
+ "陳恭": {
+  "cbdb_id": 703053,
+  "cbdb_name": "陳恭",
+  "method": "exact",
+  "score": 131.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1449,
+   1451
+  ]
+ },
+ "俞士悅": {
+  "cbdb_id": 129205,
+  "cbdb_name": "俞士悅",
+  "method": "exact",
+  "score": 120.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1449,
+   1449
+  ]
+ },
+ "楊善": {
+  "cbdb_id": 67437,
+  "cbdb_name": "楊善",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1384,
+  "death": 1458,
+  "span": [
+   1449,
+   1458
+  ]
+ },
+ "楊寧": {
+  "cbdb_id": 67476,
+  "cbdb_name": "楊寧",
+  "method": "exact",
+  "score": 146.6,
+  "birth": 1400,
+  "death": 1458,
+  "span": [
+   1450,
+   1451
+  ]
+ },
+ "何文淵": {
+  "cbdb_id": 34519,
+  "cbdb_name": "何文淵",
+  "method": "exact",
+  "score": 137.2,
+  "birth": 0,
+  "death": 1457,
+  "span": [
+   1451,
+   1453
+  ]
+ },
+ "儀銘": {
+  "cbdb_id": 66761,
+  "cbdb_name": "儀銘",
+  "method": "exact",
+  "score": 147.2,
+  "birth": 1382,
+  "death": 1454,
+  "span": [
+   1452,
+   1454
+  ]
+ },
+ "陳泰": {
+  "cbdb_id": 66920,
+  "cbdb_name": "陳泰",
+  "method": "exact",
+  "score": 137.0,
+  "birth": 1403,
+  "death": 1469,
+  "span": [
+   1452,
+   1453
+  ]
+ },
+ "王翱": {
+  "cbdb_id": 67645,
+  "cbdb_name": "王翱",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1384,
+  "death": 1467,
+  "span": [
+   1452,
+   1467
+  ]
+ },
+ "王永壽": {
+  "cbdb_id": 126481,
+  "cbdb_name": "王永壽",
+  "method": "exact",
+  "score": 130.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1453,
+   1454
+  ]
+ },
+ "蕭維禎": {
+  "cbdb_id": 133358,
+  "cbdb_name": "蕭維禎",
+  "method": "exact",
+  "score": 120.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1453,
+   1457
+  ]
+ },
+ "李實": {
+  "cbdb_id": 67447,
+  "cbdb_name": "李實",
+  "method": "exact",
+  "score": 145.6,
+  "birth": 1413,
+  "death": 1485,
+  "span": [
+   1454,
+   1456
+  ]
+ },
+ "江淵": {
+  "cbdb_id": 207934,
+  "cbdb_name": "江淵",
+  "method": "cabinet",
+  "span": [
+   1455,
+   1457
+  ],
+  "birth": 1411,
+  "death": null
+ },
+ "劉廣衡": {
+  "cbdb_id": 132915,
+  "cbdb_name": "劉廣衡",
+  "method": "exact",
+  "score": 145.4,
+  "birth": 1395,
+  "death": 1458,
+  "span": [
+   1457,
+   1458
+  ]
+ },
+ "軒軺": {
+  "cbdb_id": 66894,
+  "cbdb_name": "軒輗",
+  "method": "fuzzy+sinica",
+  "score": 87.8,
+  "birth": null,
+  "death": 1464,
+  "span": [
+   1457,
+   1457
+  ]
+ },
+ "趙榮": {
+  "cbdb_id": 67455,
+  "cbdb_name": "趙榮",
+  "method": "exact",
+  "score": 146.6,
+  "birth": 1416,
+  "death": 1475,
+  "span": [
+   1457,
+   1462
+  ]
+ },
+ "沈固": {
+  "cbdb_id": 67465,
+  "cbdb_name": "沈固",
+  "method": "exact",
+  "score": 146.0,
+  "birth": 1386,
+  "death": 1467,
+  "span": [
+   1457,
+   1460
+  ]
+ },
+ "耿九疇": {
+  "cbdb_id": 66893,
+  "cbdb_name": "耿九疇",
+  "method": "exact",
+  "score": 146.6,
+  "birth": 1396,
+  "death": 1460,
+  "span": [
+   1457,
+   1457
+  ]
+ },
+ "馬昂": {
+  "cbdb_id": 502819,
+  "cbdb_name": "馬昂",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1457,
+   1468
+  ]
+ },
+ "年富": {
+  "cbdb_id": 67646,
+  "cbdb_name": "年富",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1395,
+  "death": 1464,
+  "span": [
+   1460,
+   1464
+  ]
+ },
+ "石瑁": {
+  "cbdb_id": 127010,
+  "cbdb_name": "石瑁",
+  "method": "exact",
+  "score": 131.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1460,
+   1462
+  ]
+ },
+ "蕭晅": {
+  "cbdb_id": 133335,
+  "cbdb_name": "蕭晅",
+  "method": "exact",
+  "score": 131.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1460,
+   1460
+  ]
+ },
+ "李賓": {
+  "cbdb_id": 127972,
+  "cbdb_name": "李賓",
+  "method": "exact",
+  "score": 134.4,
+  "birth": 1416,
+  "death": 1485,
+  "span": [
+   1462,
+   1477
+  ]
+ },
+ "白圭": {
+  "cbdb_id": 67434,
+  "cbdb_name": "白圭",
+  "method": "exact",
+  "score": 147.4,
+  "birth": 1421,
+  "death": 1474,
+  "span": [
+   1463,
+   1474
+  ]
+ },
+ "姚夔": {
+  "cbdb_id": 67654,
+  "cbdb_name": "姚夔",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1414,
+  "death": 1473,
+  "span": [
+   1463,
+   1473
+  ]
+ },
+ "王竑": {
+  "cbdb_id": 67649,
+  "cbdb_name": "王竑",
+  "method": "exact",
+  "score": 146.8,
+  "birth": 1414,
+  "death": 1488,
+  "span": [
+   1464,
+   1465
+  ]
+ },
+ "李秉": {
+  "cbdb_id": 67650,
+  "cbdb_name": "李秉",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1408,
+  "death": 1489,
+  "span": [
+   1464,
+   1469
+  ]
+ },
+ "王復": {
+  "cbdb_id": 67655,
+  "cbdb_name": "王復",
+  "method": "exact",
+  "score": 147.6,
+  "birth": 1416,
+  "death": 1485,
+  "span": [
+   1465,
+   1479
+  ]
+ },
+ "薛遠": {
+  "cbdb_id": 133309,
+  "cbdb_name": "薛遠",
+  "method": "exact",
+  "score": 134.2,
+  "birth": 1414,
+  "death": 1495,
+  "span": [
+   1467,
+   1477
+  ]
+ },
+ "程信": {
+  "cbdb_id": 29599,
+  "cbdb_name": "程信",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1417,
+  "death": 1479,
+  "span": [
+   1468,
+   1470
+  ]
+ },
+ "楊鼎": {
+  "cbdb_id": 66902,
+  "cbdb_name": "楊鼎",
+  "method": "exact",
+  "score": 147.6,
+  "birth": 1410,
+  "death": 1485,
+  "span": [
+   1468,
+   1479
+  ]
+ },
+ "林聰": {
+  "cbdb_id": 67661,
+  "cbdb_name": "林聰",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1417,
+  "death": 1482,
+  "span": [
+   1468,
+   1482
+  ]
+ },
+ "崔恭": {
+  "cbdb_id": 66979,
+  "cbdb_name": "崔恭",
+  "method": "exact",
+  "score": 147.4,
+  "birth": 1409,
+  "death": 1479,
+  "span": [
+   1469,
+   1469
+  ]
+ },
+ "鄒幹": {
+  "cbdb_id": 284335,
+  "cbdb_name": "鄒榦",
+  "method": "fuzzy+sinica",
+  "score": 80.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1469,
+   1479
+  ]
+ },
+ "項忠": {
+  "cbdb_id": 258033,
+  "cbdb_name": "項忠",
+  "method": "exact",
+  "score": 134.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1469,
+   1477
+  ]
+ },
+ "尹旻": {
+  "cbdb_id": 67539,
+  "cbdb_name": "尹直",
+  "method": "fuzzy+sinica",
+  "score": 98.0,
+  "birth": 1427,
+  "death": 1511,
+  "span": [
+   1473,
+   1486
+  ]
+ },
+ "董方": {
+  "cbdb_id": 132008,
+  "cbdb_name": "董越",
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1431,
+  "death": 1502,
+  "span": [
+   1473,
+   1477
+  ],
+  "note": "wiki:董越"
+ },
+ "王越": {
+  "cbdb_id": 467429,
+  "cbdb_name": "王越",
+  "method": "exact",
+  "score": 134.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1475,
+   1496
+  ]
+ },
+ "余子俊": {
+  "cbdb_id": 67608,
+  "cbdb_name": "余子俊",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1429,
+  "death": 1489,
+  "span": [
+   1477,
+   1489
+  ]
+ },
+ "翁世資": {
+  "cbdb_id": 66906,
+  "cbdb_name": "翁世資",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1415,
+  "death": 1483,
+  "span": [
+   1477,
+   1483
+  ]
+ },
+ "劉昭": {
+  "cbdb_id": 67423,
+  "cbdb_name": "劉昭",
+  "method": "exact",
+  "score": 139.2,
+  "birth": null,
+  "death": 1490,
+  "span": [
+   1479,
+   1486
+  ]
+ },
+ "陳鉞": {
+  "cbdb_id": 130959,
+  "cbdb_name": "陳鉞",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1479,
+   1479
+  ]
+ },
+ "周洪謨": {
+  "cbdb_id": 67787,
+  "cbdb_name": "周洪謨",
+  "method": "exact",
+  "score": 146.6,
+  "birth": 1420,
+  "death": 1491,
+  "span": [
+   1481,
+   1488
+  ]
+ },
+ "殷謙": {
+  "cbdb_id": 129830,
+  "cbdb_name": "殷謙",
+  "method": "exact",
+  "score": 84.2,
+  "birth": 1417,
+  "death": 1504,
+  "span": [
+   1481,
+   1486
+  ]
+ },
+ "張鵬": {
+  "cbdb_id": 67068,
+  "cbdb_name": "張鵬",
+  "method": "exact",
+  "score": 147.2,
+  "birth": 1419,
+  "death": 1491,
+  "span": [
+   1482,
+   1485
+  ]
+ },
+ "戴縉": {
+  "cbdb_id": 133425,
+  "cbdb_name": "戴縉",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1482,
+   1483
+  ]
+ },
+ "張瑩": {
+  "cbdb_id": 93480,
+  "cbdb_name": "張瑩",
+  "method": "exact",
+  "score": 120.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1483,
+   1485
+  ]
+ },
+ "李裕": {
+  "cbdb_id": 67072,
+  "cbdb_name": "李裕",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1426,
+  "death": 1511,
+  "span": [
+   1483,
+   1487
+  ]
+ },
+ "朱英": {
+  "cbdb_id": 67651,
+  "cbdb_name": "朱英",
+  "method": "exact",
+  "score": 147.2,
+  "birth": 1417,
+  "death": 1485,
+  "span": [
+   1484,
+   1485
+  ]
+ },
+ "馬文升": {
+  "cbdb_id": 33862,
+  "cbdb_name": "馬文升",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1426,
+  "death": 1510,
+  "span": [
+   1485,
+   1506
+  ]
+ },
+ "李衍": {
+  "cbdb_id": 127865,
+  "cbdb_name": "李衍",
+  "method": "exact",
+  "score": 134.6,
+  "birth": 1421,
+  "death": 1494,
+  "span": [
+   1485,
+   1487
+  ]
+ },
+ "屠滽": {
+  "cbdb_id": 131299,
+  "cbdb_name": "屠滽",
+  "method": "fuzzy+sinica",
+  "score": 95.6,
+  "birth": 1441,
+  "death": 1512,
+  "span": [
+   1485,
+   1509
+  ]
+ },
+ "劉敷": {
+  "cbdb_id": 132920,
+  "cbdb_name": "劉敷",
+  "method": "exact",
+  "score": 135.4,
+  "birth": 1421,
+  "death": 1502,
+  "span": [
+   1486,
+   1486
+  ]
+ },
+ "杜銘": {
+  "cbdb_id": 127710,
+  "cbdb_name": "杜忠",
+  "method": "fuzzy+sinica",
+  "score": 84.6,
+  "birth": 1441,
+  "death": 1508,
+  "span": [
+   1486,
+   1487
+  ]
+ },
+ "耿裕": {
+  "cbdb_id": 67783,
+  "cbdb_name": "耿裕",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1430,
+  "death": 1496,
+  "span": [
+   1486,
+   1496
+  ]
+ },
+ "謝一夔": {
+  "cbdb_id": 133146,
+  "cbdb_name": "謝一夔",
+  "method": "exact",
+  "score": 145.8,
+  "birth": 1425,
+  "death": 1487,
+  "span": [
+   1486,
+   1487
+  ]
+ },
+ "王恕": {
+  "cbdb_id": 62505,
+  "cbdb_name": "王恕",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1416,
+  "death": 1508,
+  "span": [
+   1487,
+   1493
+  ]
+ },
+ "賈俊": {
+  "cbdb_id": 67855,
+  "cbdb_name": "賈俊",
+  "method": "exact",
+  "score": 146.2,
+  "birth": 1428,
+  "death": 1495,
+  "span": [
+   1487,
+   1494
+  ]
+ },
+ "李敏#2": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "same-name-split",
+  "repair": "same-name-split:李敏:entity2",
+  "span": [
+   1487,
+   1491
+  ]
+ },
+ "何喬新": {
+  "cbdb_id": 34522,
+  "cbdb_name": "何喬新",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1427,
+  "death": 1502,
+  "span": [
+   1488,
+   1491
+  ]
+ },
+ "彭韶": {
+  "cbdb_id": 34516,
+  "cbdb_name": "彭韶",
+  "method": "exact",
+  "score": 147.2,
+  "birth": 1430,
+  "death": 1495,
+  "span": [
+   1491,
+   1493
+  ]
+ },
+ "葉淇": {
+  "cbdb_id": 67854,
+  "cbdb_name": "葉淇",
+  "method": "exact",
+  "score": 147.4,
+  "birth": 1426,
+  "death": 1501,
+  "span": [
+   1491,
+   1496
+  ]
+ },
+ "秦民悦": {
+  "cbdb_id": 129674,
+  "cbdb_name": "秦民悅",
+  "method": "fuzzy+sinica",
+  "score": 84.4,
+  "birth": 1434,
+  "death": 1512,
+  "span": [
+   1491,
+   1493
+  ]
+ },
+ "白昂": {
+  "cbdb_id": 127138,
+  "cbdb_name": "白昂",
+  "method": "exact",
+  "score": 146.8,
+  "birth": 1435,
+  "death": 1503,
+  "span": [
+   1491,
+   1500
+  ]
+ },
+ "倪岳": {
+  "cbdb_id": 34510,
+  "cbdb_name": "倪岳",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1444,
+  "death": 1501,
+  "span": [
+   1493,
+   1501
+  ]
+ },
+ "侣鍾": {
+  "cbdb_id": 389533,
+  "cbdb_name": "侣鍾",
+  "method": "exact",
+  "score": 50.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1493,
+   1504
+  ]
+ },
+ "劉璋": {
+  "cbdb_id": 67890,
+  "cbdb_name": "劉璋",
+  "method": "exact",
+  "score": 147.6,
+  "birth": 1429,
+  "death": 1511,
+  "span": [
+   1494,
+   1496
+  ]
+ },
+ "徐貫": {
+  "cbdb_id": 67939,
+  "cbdb_name": "徐恪",
+  "method": "fuzzy+sinica",
+  "score": 96.2,
+  "birth": 1431,
+  "death": 1503,
+  "span": [
+   1496,
+   1500
+  ]
+ },
+ "周經": {
+  "cbdb_id": 67782,
+  "cbdb_name": "周經",
+  "method": "exact",
+  "score": 147.4,
+  "birth": 1440,
+  "death": 1510,
+  "span": [
+   1496,
+   1508
+  ]
+ },
+ "徐瓊": {
+  "cbdb_id": 130010,
+  "cbdb_name": "徐瓊",
+  "method": "exact",
+  "score": 144.8,
+  "birth": 1425,
+  "death": 1505,
+  "span": [
+   1496,
+   1500
+  ]
+ },
+ "王繼": {
+  "cbdb_id": 502832,
+  "cbdb_name": "王繼",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1496,
+   1501
+  ]
+ },
+ "閔珪": {
+  "cbdb_id": 67785,
+  "cbdb_name": "閔珪",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1430,
+  "death": 1511,
+  "span": [
+   1496,
+   1506
+  ]
+ },
+ "曾鑑": {
+  "cbdb_id": 67936,
+  "cbdb_name": "曾鑑",
+  "method": "exact",
+  "score": 147.0,
+  "birth": 1434,
+  "death": 1507,
+  "span": [
+   1500,
+   1507
+  ]
+ },
+ "傅瀚": {
+  "cbdb_id": 67792,
+  "cbdb_name": "傅瀚",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1435,
+  "death": 1501,
+  "span": [
+   1500,
+   1502
+  ]
+ },
+ "史琳": {
+  "cbdb_id": 127066,
+  "cbdb_name": "史琳",
+  "method": "exact",
+  "score": 146.0,
+  "birth": 1438,
+  "death": 1506,
+  "span": [
+   1500,
+   1506
+  ]
+ },
+ "戴珊": {
+  "cbdb_id": 67786,
+  "cbdb_name": "戴珊",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1437,
+  "death": 1505,
+  "span": [
+   1500,
+   1505
+  ]
+ },
+ "王宗彝": {
+  "cbdb_id": 126562,
+  "cbdb_name": "王宗彝",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1500,
+   1502
+  ]
+ },
+ "劉大夏": {
+  "cbdb_id": 67777,
+  "cbdb_name": "劉大夏",
+  "method": "exact",
+  "score": 147.0,
+  "birth": 1436,
+  "death": 1516,
+  "span": [
+   1501,
+   1506
+  ]
+ },
+ "陳清": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "baike-only",
+  "score": null,
+  "birth": 1438,
+  "death": 1521,
+  "span": [
+   1501,
+   1506
+  ],
+  "note": "正德元年(1506)南京工部尚书，忤刘瑾矫诏致仕；京师工部尚书同期为曾鑑——回原书核 1501-1506 行"
+ },
+ "張昇": {
+  "cbdb_id": 67794,
+  "cbdb_name": "張昇",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1442,
+  "death": 1517,
+  "span": [
+   1502,
+   1507
+  ]
+ },
+ "秦紘": {
+  "cbdb_id": 67657,
+  "cbdb_name": "秦紘",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1426,
+  "death": 1505,
+  "span": [
+   1504,
+   1504
+  ]
+ },
+ "韓文": {
+  "cbdb_id": 67946,
+  "cbdb_name": "韓文",
+  "method": "exact",
+  "score": 147.8,
+  "birth": 1441,
+  "death": 1526,
+  "span": [
+   1504,
+   1506
+  ]
+ },
+ "許進": {
+  "cbdb_id": 67918,
+  "cbdb_name": "許進",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1437,
+  "death": 1510,
+  "span": [
+   1506,
+   1508
+  ]
+ },
+ "閻仲宇": {
+  "cbdb_id": 289679,
+  "cbdb_name": "閻仲宇",
+  "method": "exact",
+  "score": 130.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1506,
+   1507
+  ]
+ },
+ "焦芳": {
+  "cbdb_id": 131574,
+  "cbdb_name": "焦芳",
+  "method": "cabinet",
+  "span": [
+   1506,
+   1506
+  ],
+  "birth": null,
+  "death": null
+ },
+ "顧佐#2": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "same-name-split",
+  "repair": "same-name-split:顧佐:entity2",
+  "span": [
+   1506,
+   1508
+  ]
+ },
+ "何鈞": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1442,
+  "death": 1521,
+  "span": [
+   1506,
+   1507
+  ],
+  "note": "wiki:何鑑",
+  "repair": "shared-id-67998-not-owner"
+ },
+ "劉宇": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "baike-only",
+  "score": null,
+  "birth": null,
+  "death": null,
+  "span": [
+   1507,
+   1509
+  ],
+  "note": "刘瑾党，正德二年(1507)兵部尚书加太子太傅，后改吏部兼大学士，瑾诛削官"
+ },
+ "劉機": {
+  "cbdb_id": 66951,
+  "cbdb_name": "劉機",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1451,
+  "death": 1523,
+  "span": [
+   1507,
+   1510
+  ]
+ },
+ "李傑": {
+  "cbdb_id": 127941,
+  "cbdb_name": "李傑",
+  "method": "exact",
+  "score": 144.2,
+  "birth": 1443,
+  "death": 1517,
+  "span": [
+   1507,
+   1507
+  ]
+ },
+ "林泮": {
+  "cbdb_id": 128598,
+  "cbdb_name": "林泮",
+  "method": "exact",
+  "score": 134.6,
+  "birth": 1438,
+  "death": 1518,
+  "span": [
+   1507,
+   1508
+  ]
+ },
+ "曹元": {
+  "cbdb_id": 130259,
+  "cbdb_name": "曹元",
+  "method": "cabinet",
+  "span": [
+   1508,
+   1510
+  ],
+  "birth": 1449,
+  "death": 1521
+ },
+ "張憲": {
+  "cbdb_id": 67396,
+  "cbdb_name": "張憲",
+  "method": "exact",
+  "score": 138.0,
+  "birth": 1446,
+  "death": 1511,
+  "span": [
+   1508,
+   1508
+  ]
+ },
+ "李鐩": {
+  "cbdb_id": 128075,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1426,
+  "death": 1511,
+  "span": [
+   1508,
+   1521
+  ],
+  "note": "wiki:李裕 | 原键李鏟",
+  "repair": "override:128075"
+ },
+ "洪鍾": {
+  "cbdb_id": 68016,
+  "cbdb_name": "洪鍾",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1443,
+  "death": 1523,
+  "span": [
+   1508,
+   1512
+  ]
+ },
+ "白鉞": {
+  "cbdb_id": 67435,
+  "cbdb_name": "白鉞",
+  "method": "exact",
+  "score": 147.8,
+  "birth": 1454,
+  "death": 1510,
+  "span": [
+   1508,
+   1510
+  ]
+ },
+ "孫交": {
+  "cbdb_id": 68220,
+  "cbdb_name": "孫交",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1453,
+  "death": 1532,
+  "span": [
+   1508,
+   1523
+  ]
+ },
+ "王鑑之": {
+  "cbdb_id": 126887,
+  "cbdb_name": "王鑑之",
+  "method": "exact",
+  "score": 145.4,
+  "birth": 1440,
+  "death": 1519,
+  "span": [
+   1508,
+   1509
+  ]
+ },
+ "張綵": {
+  "cbdb_id": 130595,
+  "cbdb_name": "張綵",
+  "method": "exact",
+  "score": 131.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1509,
+   1510
+  ]
+ },
+ "畢亨": {
+  "cbdb_id": 131062,
+  "cbdb_name": "畢亨",
+  "method": "exact",
+  "score": 130.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1509,
+   1510
+  ]
+ },
+ "陳金": {
+  "cbdb_id": 67924,
+  "cbdb_name": "陳金",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1446,
+  "death": 1528,
+  "span": [
+   1509,
+   1521
+  ]
+ },
+ "王敞": {
+  "cbdb_id": 126724,
+  "cbdb_name": "王敞",
+  "method": "exact",
+  "score": 145.0,
+  "birth": 1453,
+  "death": 1515,
+  "span": [
+   1510,
+   1511
+  ]
+ },
+ "胡汝礪": {
+  "cbdb_id": 279844,
+  "cbdb_name": "胡汝礪",
+  "method": "exact",
+  "score": 130.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1510,
+   1510
+  ]
+ },
+ "劉璟": {
+  "cbdb_id": 280995,
+  "cbdb_name": "劉璟",
+  "method": "exact",
+  "score": 130.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1510,
+   1510
+  ]
+ },
+ "楊一清": {
+  "cbdb_id": 68260,
+  "cbdb_name": "楊一清",
+  "method": "cabinet",
+  "span": [
+   1510,
+   1515
+  ],
+  "birth": 1454,
+  "death": 1530
+ },
+ "費宏": {
+  "cbdb_id": 68133,
+  "cbdb_name": "費宏",
+  "method": "cabinet",
+  "span": [
+   1510,
+   1511
+  ],
+  "birth": 1468,
+  "death": 1535
+ },
+ "何鑑": {
+  "cbdb_id": 67998,
+  "cbdb_name": "何鑑",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1442,
+  "death": 1521,
+  "span": [
+   1511,
+   1513
+  ]
+ },
+ "傅珪": {
+  "cbdb_id": 67815,
+  "cbdb_name": "傅珪",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1459,
+  "death": 1515,
+  "span": [
+   1511,
+   1513
+  ]
+ },
+ "邵寶": {
+  "cbdb_id": 34580,
+  "cbdb_name": "邵寶",
+  "method": "exact",
+  "score": 145.2,
+  "birth": 1460,
+  "death": 1527,
+  "span": [
+   1511,
+   1511
+  ]
+ },
+ "鄧庠": {
+  "cbdb_id": 132485,
+  "cbdb_name": "鄧庠",
+  "method": "exact",
+  "score": 134.6,
+  "birth": 1447,
+  "death": 1524,
+  "span": [
+   1511,
+   1511
+  ]
+ },
+ "黄珂": {
+  "cbdb_id": 67943,
+  "cbdb_name": "黃珂",
+  "method": "exact",
+  "score": 147.2,
+  "birth": 1449,
+  "death": 1523,
+  "span": [
+   1511,
+   1512
+  ],
+  "note": "原键黃珂"
+ },
+ "王鼎": {
+  "cbdb_id": 67762,
+  "cbdb_name": "王鼎",
+  "method": "exact",
+  "score": 139.6,
+  "birth": null,
+  "death": 1517,
+  "span": [
+   1511,
+   1512
+  ]
+ },
+ "陸完": {
+  "cbdb_id": 68015,
+  "cbdb_name": "陸完",
+  "method": "exact",
+  "score": 133.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1512,
+   1520
+  ]
+ },
+ "侯觀": {
+  "cbdb_id": 129268,
+  "cbdb_name": "侯鉞",
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": null,
+  "death": null,
+  "span": [
+   1512,
+   1521
+  ],
+  "note": "wiki:侯鉞"
+ },
+ "王瓊": {
+  "cbdb_id": 68264,
+  "cbdb_name": "王瓊",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1459,
+  "death": 1532,
+  "span": [
+   1513,
+   1532
+  ]
+ },
+ "劉春": {
+  "cbdb_id": 67821,
+  "cbdb_name": "劉春",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1521,
+  "span": [
+   1513,
+   1515
+  ]
+ },
+ "石玠": {
+  "cbdb_id": 34599,
+  "cbdb_name": "石玠",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1463,
+  "death": 1521,
+  "span": [
+   1513,
+   1519
+  ]
+ },
+ "張遇": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1473,
+  "death": 1542,
+  "span": [
+   1514,
+   1514
+  ],
+  "note": "wiki:張瓚",
+  "repair": "shared-id-67450-not-owner"
+ },
+ "鄭宗仁": {
+  "cbdb_id": 132371,
+  "cbdb_name": "鄭宗仁",
+  "method": "exact",
+  "score": 134.4,
+  "birth": 1451,
+  "death": 1522,
+  "span": [
+   1514,
+   1522
+  ]
+ },
+ "毛紀": {
+  "cbdb_id": 68079,
+  "cbdb_name": "毛紀",
+  "method": "cabinet",
+  "span": [
+   1515,
+   1516
+  ],
+  "birth": 1463,
+  "death": 1545
+ },
+ "彭澤": {
+  "cbdb_id": 68267,
+  "cbdb_name": "彭澤",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1459,
+  "death": 1529,
+  "span": [
+   1515,
+   1523
+  ]
+ },
+ "王璟": {
+  "cbdb_id": 67987,
+  "cbdb_name": "王璟",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1447,
+  "death": 1533,
+  "span": [
+   1515,
+   1521
+  ]
+ },
+ "楊旦": {
+  "cbdb_id": 28358,
+  "cbdb_name": "楊旦",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1460,
+  "death": 1530,
+  "span": [
+   1516,
+   1524
+  ]
+ },
+ "毛澄": {
+  "cbdb_id": 68094,
+  "cbdb_name": "毛澄",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1461,
+  "death": 1523,
+  "span": [
+   1517,
+   1523
+  ]
+ },
+ "張綸": {
+  "cbdb_id": 314153,
+  "cbdb_name": "張綸",
+  "method": "exact",
+  "score": 130.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1517,
+   1520
+  ]
+ },
+ "王憲": {
+  "cbdb_id": 68238,
+  "cbdb_name": "王憲",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1537,
+  "span": [
+   1521,
+   1535
+  ]
+ },
+ "喬宇": {
+  "cbdb_id": 68219,
+  "cbdb_name": "喬宇",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1464,
+  "death": 1531,
+  "span": [
+   1521,
+   1524
+  ]
+ },
+ "林俊": {
+  "cbdb_id": 24554,
+  "cbdb_name": "林俊",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1452,
+  "death": 1527,
+  "span": [
+   1521,
+   1523
+  ]
+ },
+ "趙璜": {
+  "cbdb_id": 68203,
+  "cbdb_name": "趙璜",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1463,
+  "death": 1532,
+  "span": [
+   1522,
+   1532
+  ]
+ },
+ "陶琰": {
+  "cbdb_id": 68273,
+  "cbdb_name": "陶琰",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1449,
+  "death": 1532,
+  "span": [
+   1522,
+   1522
+  ]
+ },
+ "沈冬魁": {
+  "cbdb_id": 127553,
+  "cbdb_name": "沈冬魁",
+  "method": "exact",
+  "score": 120.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1522,
+   1522
+  ]
+ },
+ "金獻民": {
+  "cbdb_id": 68191,
+  "cbdb_name": "金獻民",
+  "method": "exact",
+  "score": 133.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1523,
+   1525
+  ]
+ },
+ "趙鑑": {
+  "cbdb_id": 132246,
+  "cbdb_name": "趙鑑",
+  "method": "exact",
+  "score": 134.4,
+  "birth": 1454,
+  "death": 1537,
+  "span": [
+   1523,
+   1526
+  ]
+ },
+ "秦金": {
+  "cbdb_id": 68197,
+  "cbdb_name": "秦金",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1467,
+  "death": 1544,
+  "span": [
+   1523,
+   1535
+  ]
+ },
+ "汪俊": {
+  "cbdb_id": 68083,
+  "cbdb_name": "汪俊",
+  "method": "exact",
+  "score": 134.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1523,
+   1535
+  ]
+ },
+ "羅欽順": {
+  "cbdb_id": 33645,
+  "cbdb_name": "羅欽順",
+  "method": "exact",
+  "score": 146.8,
+  "birth": 1465,
+  "death": 1547,
+  "span": [
+   1523,
+   1527
+  ]
+ },
+ "孟春": {
+  "cbdb_id": 128508,
+  "cbdb_name": "孟洋",
+  "method": "fuzzy+sinica",
+  "score": 86.2,
+  "birth": 1483,
+  "death": 1534,
+  "span": [
+   1523,
+   1524
+  ]
+ },
+ "王承裕": {
+  "cbdb_id": 67772,
+  "cbdb_name": "王承裕",
+  "method": "exact",
+  "score": 139.4,
+  "birth": null,
+  "death": 1538,
+  "span": [
+   1523,
+   1523
+  ]
+ },
+ "邊憲": {
+  "cbdb_id": 133558,
+  "cbdb_name": "邊憲",
+  "method": "exact",
+  "score": 134.4,
+  "birth": 1464,
+  "death": 1524,
+  "span": [
+   1523,
+   1524
+  ]
+ },
+ "俞諫": {
+  "cbdb_id": 67984,
+  "cbdb_name": "俞諫",
+  "method": "exact",
+  "score": 138.0,
+  "birth": 1455,
+  "death": 1524,
+  "span": [
+   1524,
+   1524
+  ]
+ },
+ "李鉞": {
+  "cbdb_id": 68199,
+  "cbdb_name": "李鉞",
+  "method": "exact",
+  "score": 147.2,
+  "birth": 1465,
+  "death": 1526,
+  "span": [
+   1524,
+   1526
+  ]
+ },
+ "廖紀": {
+  "cbdb_id": 68320,
+  "cbdb_name": "廖紀",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1532,
+  "span": [
+   1524,
+   1527
+  ]
+ },
+ "席書": {
+  "cbdb_id": 68201,
+  "cbdb_name": "席書",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1461,
+  "death": 1527,
+  "span": [
+   1524,
+   1527
+  ]
+ },
+ "李瓚": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+sinica",
+  "score": 88.6,
+  "birth": 1472,
+  "death": null,
+  "span": [
+   1524,
+   1528
+  ],
+  "repair": "shared-id-201490-not-owner"
+ },
+ "顏頤壽": {
+  "cbdb_id": 68412,
+  "cbdb_name": "顏頤壽",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1462,
+  "death": 1538,
+  "span": [
+   1525,
+   1527
+  ]
+ },
+ "王時中": {
+  "cbdb_id": 68328,
+  "cbdb_name": "王時中",
+  "method": "exact",
+  "score": 147.8,
+  "birth": 1466,
+  "death": 1542,
+  "span": [
+   1526,
+   1533
+  ]
+ },
+ "聶賢": {
+  "cbdb_id": 68418,
+  "cbdb_name": "聶賢",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1540,
+  "span": [
+   1526,
+   1535
+  ]
+ },
+ "李承勛": {
+  "cbdb_id": 68251,
+  "cbdb_name": "李承勛",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1473,
+  "death": 1531,
+  "span": [
+   1527,
+   1531
+  ]
+ },
+ "桂萼": {
+  "cbdb_id": 68285,
+  "cbdb_name": "桂萼",
+  "method": "cabinet",
+  "span": [
+   1527,
+   1529
+  ],
+  "birth": null,
+  "death": 1531
+ },
+ "胡世寧": {
+  "cbdb_id": 68242,
+  "cbdb_name": "胡世寧",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1470,
+  "death": 1531,
+  "span": [
+   1527,
+   1529
+  ]
+ },
+ "鄒文盛": {
+  "cbdb_id": 68207,
+  "cbdb_name": "鄒文盛",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1459,
+  "death": 1537,
+  "span": [
+   1527,
+   1528
+  ]
+ },
+ "高友璣": {
+  "cbdb_id": 129362,
+  "cbdb_name": "高友璣",
+  "method": "exact",
+  "score": 144.2,
+  "birth": 1461,
+  "death": 1546,
+  "span": [
+   1528,
+   1529
+  ]
+ },
+ "方獻夫": {
+  "cbdb_id": 68286,
+  "cbdb_name": "方獻夫",
+  "method": "cabinet",
+  "span": [
+   1528,
+   1532
+  ],
+  "birth": 1485,
+  "death": 1544
+ },
+ "劉麟": {
+  "cbdb_id": 34637,
+  "cbdb_name": "劉麟",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1475,
+  "death": 1561,
+  "span": [
+   1528,
+   1529
+  ]
+ },
+ "梁材": {
+  "cbdb_id": 68226,
+  "cbdb_name": "梁材",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1470,
+  "death": 1540,
+  "span": [
+   1528,
+   1540
+  ]
+ },
+ "盛應期": {
+  "cbdb_id": 26218,
+  "cbdb_name": "盛應期",
+  "method": "exact",
+  "score": 136.4,
+  "birth": 1474,
+  "death": 1535,
+  "span": [
+   1528,
+   1528
+  ]
+ },
+ "周倫": {
+  "cbdb_id": 128864,
+  "cbdb_name": "周倫",
+  "method": "exact",
+  "score": 144.8,
+  "birth": 1463,
+  "death": 1542,
+  "span": [
+   1529,
+   1529
+  ]
+ },
+ "許讚": {
+  "cbdb_id": 67932,
+  "cbdb_name": "許讚",
+  "method": "cabinet",
+  "span": [
+   1529,
+   1544
+  ],
+  "birth": 1473,
+  "death": 1548
+ },
+ "章拯": {
+  "cbdb_id": 34534,
+  "cbdb_name": "章拯",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1479,
+  "death": 1548,
+  "span": [
+   1529,
+   1530
+  ]
+ },
+ "李時": {
+  "cbdb_id": 68140,
+  "cbdb_name": "李時",
+  "method": "cabinet",
+  "span": [
+   1529,
+   1531
+  ],
+  "birth": 1471,
+  "death": 1538
+ },
+ "李瓊": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+sinica",
+  "score": 88.6,
+  "birth": 1472,
+  "death": null,
+  "span": [
+   1529,
+   1530
+  ],
+  "repair": "shared-id-201490-not-owner"
+ },
+ "蔣瑶": {
+  "cbdb_id": 68240,
+  "cbdb_name": "蔣瑤",
+  "method": "fuzzy+sinica",
+  "score": 98.0,
+  "birth": 1469,
+  "death": 1557,
+  "span": [
+   1530,
+   1540
+  ]
+ },
+ "王軏": {
+  "cbdb_id": 68281,
+  "cbdb_name": "王軏",
+  "method": "exact",
+  "score": 134.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1530,
+   1532
+  ]
+ },
+ "夏言": {
+  "cbdb_id": 68194,
+  "cbdb_name": "夏言",
+  "method": "cabinet",
+  "span": [
+   1531,
+   1536
+  ],
+  "birth": 1482,
+  "death": 1548
+ },
+ "汪鉉": {
+  "cbdb_id": 68442,
+  "cbdb_name": "汪珊",
+  "method": "fuzzy+sinica",
+  "score": 88.6,
+  "birth": null,
+  "death": 1541,
+  "span": [
+   1531,
+   1531
+  ]
+ },
+ "黃芳": {
+  "cbdb_id": 18954,
+  "cbdb_name": "黃由",
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": null,
+  "death": null,
+  "span": [
+   1533,
+   1534
+  ],
+  "note": "wiki:黃由"
+ },
+ "王廷相": {
+  "cbdb_id": 68246,
+  "cbdb_name": "王廷相",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1474,
+  "death": 1544,
+  "span": [
+   1533,
+   1541
+  ]
+ },
+ "張瓚": {
+  "cbdb_id": 67450,
+  "cbdb_name": "張瓚",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1473,
+  "death": 1542,
+  "span": [
+   1535,
+   1542
+  ]
+ },
+ "唐龍": {
+  "cbdb_id": 68335,
+  "cbdb_name": "唐龍",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1475,
+  "death": 1546,
+  "span": [
+   1535,
+   1546
+  ]
+ },
+ "張雲": {
+  "cbdb_id": 130523,
+  "cbdb_name": "張雲",
+  "method": "exact",
+  "score": 131.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1536,
+   1537
+  ]
+ },
+ "嚴嵩": {
+  "cbdb_id": 125411,
+  "cbdb_name": "嚴嵩",
+  "method": "cabinet",
+  "span": [
+   1536,
+   1543
+  ],
+  "birth": 1480,
+  "death": 1565
+ },
+ "王堯封": {
+  "cbdb_id": 126716,
+  "cbdb_name": "王堯封",
+  "method": "exact",
+  "score": 121.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1536,
+   1538
+  ]
+ },
+ "毛伯溫": {
+  "cbdb_id": 488831,
+  "cbdb_name": "毛伯温",
+  "method": "exact",
+  "score": 130.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1537,
+   1544
+  ]
+ },
+ "李廷相": {
+  "cbdb_id": 127810,
+  "cbdb_name": "李廷相",
+  "method": "exact",
+  "score": 145.2,
+  "birth": 1481,
+  "death": 1544,
+  "span": [
+   1537,
+   1539
+  ]
+ },
+ "楊志學": {
+  "cbdb_id": 131766,
+  "cbdb_name": "楊志學",
+  "method": "exact",
+  "score": 134.2,
+  "birth": 1467,
+  "death": 1541,
+  "span": [
+   1538,
+   1539
+  ]
+ },
+ "李如圭": {
+  "cbdb_id": 467585,
+  "cbdb_name": "李如圭",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1538,
+   1542
+  ]
+ },
+ "周期雍": {
+  "cbdb_id": 68331,
+  "cbdb_name": "周期雍",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1479,
+  "death": 1551,
+  "span": [
+   1539,
+   1540
+  ]
+ },
+ "張潤": {
+  "cbdb_id": 502889,
+  "cbdb_name": "張潤",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1539,
+   1548
+  ]
+ },
+ "翟鑾": {
+  "cbdb_id": 68136,
+  "cbdb_name": "翟鑾",
+  "method": "cabinet",
+  "span": [
+   1540,
+   1540
+  ],
+  "birth": 1477,
+  "death": 1546
+ },
+ "張漢": {
+  "cbdb_id": 68350,
+  "cbdb_name": "張漢",
+  "method": "exact",
+  "score": 137.6,
+  "birth": null,
+  "death": 1567,
+  "span": [
+   1540,
+   1541
+  ]
+ },
+ "劉天和": {
+  "cbdb_id": 68255,
+  "cbdb_name": "劉天和",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1485,
+  "death": 1545,
+  "span": [
+   1541,
+   1542
+  ]
+ },
+ "吳山#1": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "same-name-split",
+  "repair": "same-name-split:吳山:entity1",
+  "span": [
+   1541,
+   1542
+  ]
+ },
+ "陳經": {
+  "cbdb_id": 38,
+  "cbdb_name": "陳經",
+  "method": "exact",
+  "score": 131.2,
+  "birth": 0,
+  "death": 0,
+  "span": [
+   1541,
+   1550
+  ]
+ },
+ "聞淵": {
+  "cbdb_id": 68292,
+  "cbdb_name": "聞淵",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1480,
+  "death": 1563,
+  "span": [
+   1542,
+   1549
+  ]
+ },
+ "王杲": {
+  "cbdb_id": 68342,
+  "cbdb_name": "王杲",
+  "method": "exact",
+  "score": 134.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1542,
+   1547
+  ]
+ },
+ "熊浹": {
+  "cbdb_id": 68245,
+  "cbdb_name": "熊浹",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1468,
+  "death": 1554,
+  "span": [
+   1542,
+   1545
+  ]
+ },
+ "張璧": {
+  "cbdb_id": 215995,
+  "cbdb_name": "張璧",
+  "method": "cabinet",
+  "span": [
+   1543,
+   1544
+  ],
+  "birth": null,
+  "death": null
+ },
+ "戴金": {
+  "cbdb_id": 133406,
+  "cbdb_name": "戴金",
+  "method": "exact",
+  "score": 134.2,
+  "birth": 1484,
+  "death": 1548,
+  "span": [
+   1544,
+   1545
+  ]
+ },
+ "周用": {
+  "cbdb_id": 68349,
+  "cbdb_name": "周用",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1476,
+  "death": 1547,
+  "span": [
+   1544,
+   1547
+  ]
+ },
+ "王以旂": {
+  "cbdb_id": 68257,
+  "cbdb_name": "王以旂",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1486,
+  "death": 1553,
+  "span": [
+   1546,
+   1548
+  ]
+ },
+ "張珩": {
+  "cbdb_id": 467444,
+  "cbdb_name": "張珩",
+  "method": "exact",
+  "score": 131.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1546,
+   1546
+  ]
+ },
+ "王暐": {
+  "cbdb_id": 68343,
+  "cbdb_name": "王暐",
+  "method": "exact",
+  "score": 124.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1546,
+   1547
+  ]
+ },
+ "宋景": {
+  "cbdb_id": 68287,
+  "cbdb_name": "宋景",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1547,
+  "span": [
+   1546,
+   1547
+  ]
+ },
+ "屠僑": {
+  "cbdb_id": 68289,
+  "cbdb_name": "屠僑",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1480,
+  "death": 1555,
+  "span": [
+   1547,
+   1555
+  ]
+ },
+ "文明": {
+  "cbdb_id": 126424,
+  "cbdb_name": "文明",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1547,
+   1549
+  ]
+ },
+ "夏邦謨": {
+  "cbdb_id": 470134,
+  "cbdb_name": "夏邦謨",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1547,
+   1551
+  ]
+ },
+ "趙廷瑞": {
+  "cbdb_id": 132156,
+  "cbdb_name": "趙廷瑞",
+  "method": "exact",
+  "score": 134.4,
+  "birth": 1492,
+  "death": 1551,
+  "span": [
+   1548,
+   1549
+  ]
+ },
+ "喻茂堅": {
+  "cbdb_id": 131507,
+  "cbdb_name": "喻茂堅",
+  "method": "exact",
+  "score": 132.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1548,
+   1549
+  ]
+ },
+ "丁汝夔": {
+  "cbdb_id": 68353,
+  "cbdb_name": "丁汝夔",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1550,
+  "span": [
+   1549,
+   1550
+  ]
+ },
+ "翁萬達": {
+  "cbdb_id": 68198,
+  "cbdb_name": "翁萬達",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1498,
+  "death": 1552,
+  "span": [
+   1549,
+   1552
+  ]
+ },
+ "范鐸": {
+  "cbdb_id": 68261,
+  "cbdb_name": "范鏓",
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": null,
+  "death": null,
+  "span": [
+   1549,
+   1549
+  ],
+  "note": "wiki:范鏓"
+ },
+ "劉訒": {
+  "cbdb_id": 68293,
+  "cbdb_name": "劉訒",
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1484,
+  "death": 1559,
+  "span": [
+   1549,
+   1549
+  ],
+  "note": "wiki:劉訒 | 原键劉訡"
+ },
+ "潘潢": {
+  "cbdb_id": 132331,
+  "cbdb_name": "潘潢",
+  "method": "exact",
+  "score": 130.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1549,
+   1550
+  ]
+ },
+ "徐階": {
+  "cbdb_id": 68547,
+  "cbdb_name": "徐階",
+  "method": "cabinet",
+  "span": [
+   1549,
+   1552
+  ],
+  "birth": 1503,
+  "death": 1583
+ },
+ "王邦瑞": {
+  "cbdb_id": 68262,
+  "cbdb_name": "王邦瑞",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1495,
+  "death": 1561,
+  "span": [
+   1550,
+   1551
+  ]
+ },
+ "劉訥": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1475,
+  "death": 1561,
+  "span": [
+   1550,
+   1550
+  ],
+  "note": "wiki:劉麟",
+  "repair": "shared-id-34637-not-owner"
+ },
+ "顧應祥": {
+  "cbdb_id": 133685,
+  "cbdb_name": "顧應祥",
+  "method": "exact",
+  "score": 144.6,
+  "birth": 1483,
+  "death": 1565,
+  "span": [
+   1550,
+   1551
+  ]
+ },
+ "胡松#1": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "same-name-split",
+  "repair": "same-name-split:胡松:entity1",
+  "span": [
+   1550,
+   1551
+  ]
+ },
+ "孫應奎": {
+  "cbdb_id": 68295,
+  "cbdb_name": "孫應奎",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1570,
+  "span": [
+   1550,
+   1552
+  ]
+ },
+ "端廷赦": {
+  "cbdb_id": 132109,
+  "cbdb_name": "端廷赦",
+  "method": "exact",
+  "score": 134.4,
+  "birth": 1493,
+  "death": 1552,
+  "span": [
+   1550,
+   1551
+  ]
+ },
+ "史道": {
+  "cbdb_id": 127069,
+  "cbdb_name": "史道",
+  "method": "exact",
+  "score": 134.2,
+  "birth": 1485,
+  "death": 1554,
+  "span": [
+   1551,
+   1551
+  ]
+ },
+ "趙錦": {
+  "cbdb_id": 68502,
+  "cbdb_name": "趙錦",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1516,
+  "death": 1591,
+  "span": [
+   1551,
+   1591
+  ]
+ },
+ "應大猷": {
+  "cbdb_id": 133210,
+  "cbdb_name": "應大猷",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1487,
+  "death": 1581,
+  "span": [
+   1551,
+   1552
+  ]
+ },
+ "李默": {
+  "cbdb_id": 68299,
+  "cbdb_name": "李默",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1556,
+  "span": [
+   1551,
+   1556
+  ]
+ },
+ "歐陽必進": {
+  "cbdb_id": 132446,
+  "cbdb_name": "歐陽必進",
+  "method": "exact",
+  "score": 134.6,
+  "birth": 1491,
+  "death": 1567,
+  "span": [
+   1551,
+   1561
+  ]
+ },
+ "張經": {
+  "cbdb_id": 46847,
+  "cbdb_name": "張經",
+  "method": "exact",
+  "score": 122.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1551,
+   1551
+  ]
+ },
+ "何鰲": {
+  "cbdb_id": 470206,
+  "cbdb_name": "何鰲",
+  "method": "exact",
+  "score": 120.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1552,
+   1555
+  ]
+ },
+ "方鈍": {
+  "cbdb_id": 68297,
+  "cbdb_name": "方鈍",
+  "method": "exact",
+  "score": 133.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1552,
+   1558
+  ]
+ },
+ "韓士英": {
+  "cbdb_id": 470202,
+  "cbdb_name": "韓士英",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1552,
+   1552
+  ]
+ },
+ "歐陽德": {
+  "cbdb_id": 99984,
+  "cbdb_name": "歐陽德",
+  "method": "exact",
+  "score": 146.8,
+  "birth": 1496,
+  "death": 1554,
+  "span": [
+   1552,
+   1554
+  ]
+ },
+ "聶豹": {
+  "cbdb_id": 68298,
+  "cbdb_name": "聶豹",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1486,
+  "death": 1563,
+  "span": [
+   1553,
+   1555
+  ]
+ },
+ "楊行中": {
+  "cbdb_id": 364607,
+  "cbdb_name": "楊行中",
+  "method": "exact",
+  "score": 120.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1553,
+   1554
+  ]
+ },
+ "盧紳": {
+  "cbdb_id": 133048,
+  "cbdb_name": "盧紳",
+  "method": "exact",
+  "score": 120.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1554,
+   1555
+  ]
+ },
+ "楊博": {
+  "cbdb_id": 69088,
+  "cbdb_name": "楊博",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1509,
+  "death": 1574,
+  "span": [
+   1555,
+   1573
+  ]
+ },
+ "周延": {
+  "cbdb_id": 68302,
+  "cbdb_name": "周延",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1499,
+  "death": 1561,
+  "span": [
+   1555,
+   1561
+  ]
+ },
+ "許論": {
+  "cbdb_id": 67952,
+  "cbdb_name": "許論",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1495,
+  "death": 1566,
+  "span": [
+   1556,
+   1558
+  ]
+ },
+ "李本#2": {
+  "cbdb_id": 223131,
+  "cbdb_name": "呂本",
+  "method": "cabinet",
+  "span": [
+   1556,
+   1556
+  ],
+  "birth": null,
+  "death": null
+ },
+ "趙文華": {
+  "cbdb_id": 232910,
+  "cbdb_name": "趙文華",
+  "method": "exact",
+  "score": 120.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1556,
+   1557
+  ]
+ },
+ "吳山#2": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "same-name-split",
+  "repair": "same-name-split:吳山:entity2",
+  "span": [
+   1556,
+   1560
+  ]
+ },
+ "賈應春": {
+  "cbdb_id": 68304,
+  "cbdb_name": "賈應春",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1560,
+  "span": [
+   1557,
+   1559
+  ]
+ },
+ "高燿": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "fuzzy+wiki",
+  "score": null,
+  "birth": 1510,
+  "death": 1578,
+  "span": [
+   1557,
+   1567
+  ],
+  "note": "wiki:高拱",
+  "repair": "shared-id-30847-not-owner"
+ },
+ "鄭曉": {
+  "cbdb_id": 29589,
+  "cbdb_name": "鄭曉",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1499,
+  "death": 1566,
+  "span": [
+   1558,
+   1560
+  ]
+ },
+ "雷禮": {
+  "cbdb_id": 131720,
+  "cbdb_name": "雷禮",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1505,
+  "death": 1581,
+  "span": [
+   1559,
+   1568
+  ]
+ },
+ "馬坤": {
+  "cbdb_id": 129554,
+  "cbdb_name": "馬坤",
+  "method": "exact",
+  "score": 132.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1559,
+   1560
+  ]
+ },
+ "潘恩": {
+  "cbdb_id": 68303,
+  "cbdb_name": "潘恩",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1496,
+  "death": 1582,
+  "span": [
+   1560,
+   1562
+  ]
+ },
+ "閔煦": {
+  "cbdb_id": 131292,
+  "cbdb_name": "閔煦",
+  "method": "exact",
+  "score": 134.4,
+  "birth": 1507,
+  "death": 1580,
+  "span": [
+   1560,
+   1560
+  ]
+ },
+ "馬森": {
+  "cbdb_id": 69113,
+  "cbdb_name": "馬森",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1507,
+  "death": 1580,
+  "span": [
+   1560,
+   1569
+  ]
+ },
+ "蔡雲程": {
+  "cbdb_id": 132597,
+  "cbdb_name": "蔡雲程",
+  "method": "exact",
+  "score": 147.2,
+  "birth": 1494,
+  "death": 1567,
+  "span": [
+   1561,
+   1562
+  ]
+ },
+ "郭樸": {
+  "cbdb_id": 69006,
+  "cbdb_name": "郭樸",
+  "method": "cabinet",
+  "span": [
+   1561,
+   1566
+  ],
+  "birth": 1511,
+  "death": 1593
+ },
+ "張永明": {
+  "cbdb_id": 34711,
+  "cbdb_name": "張永明",
+  "method": "exact",
+  "score": 147.2,
+  "birth": 1499,
+  "death": 1566,
+  "span": [
+   1562,
+   1566
+  ]
+ },
+ "黃光昇": {
+  "cbdb_id": 131377,
+  "cbdb_name": "黃光昇",
+  "method": "exact",
+  "score": 130.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1562,
+   1567
+  ]
+ },
+ "嚴訥": {
+  "cbdb_id": 68211,
+  "cbdb_name": "嚴訥",
+  "method": "cabinet",
+  "span": [
+   1562,
+   1565
+  ],
+  "birth": 1511,
+  "death": 1584
+ },
+ "李春芳": {
+  "cbdb_id": 218696,
+  "cbdb_name": "李春芳",
+  "method": "cabinet",
+  "span": [
+   1563,
+   1565
+  ],
+  "birth": null,
+  "death": null
+ },
+ "王國光": {
+  "cbdb_id": 125310,
+  "cbdb_name": "王國光",
+  "method": "exact",
+  "score": 135.2,
+  "birth": 1512,
+  "death": 1594,
+  "span": [
+   1563,
+   1582
+  ]
+ },
+ "董份": {
+  "cbdb_id": 131989,
+  "cbdb_name": "董份",
+  "method": "exact",
+  "score": 144.4,
+  "birth": 1510,
+  "death": 1595,
+  "span": [
+   1565,
+   1565
+  ]
+ },
+ "高拱": {
+  "cbdb_id": 30847,
+  "cbdb_name": "高拱",
+  "method": "cabinet",
+  "span": [
+   1565,
+   1572
+  ],
+  "birth": 1510,
+  "death": 1578
+ },
+ "劉自強": {
+  "cbdb_id": 132719,
+  "cbdb_name": "劉自強",
+  "method": "exact",
+  "score": 134.2,
+  "birth": 1508,
+  "death": 1582,
+  "span": [
+   1565,
+   1572
+  ]
+ },
+ "趙炳然": {
+  "cbdb_id": 68291,
+  "cbdb_name": "趙炳然",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1507,
+  "death": 1569,
+  "span": [
+   1566,
+   1567
+  ]
+ },
+ "胡松#2": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "same-name-split",
+  "repair": "same-name-split:胡松:entity2",
+  "span": [
+   1566,
+   1566
+  ]
+ },
+ "高儀": {
+  "cbdb_id": 68218,
+  "cbdb_name": "高儀",
+  "method": "cabinet",
+  "span": [
+   1566,
+   1569
+  ],
+  "birth": 1517,
+  "death": 1572
+ },
+ "劉體乾": {
+  "cbdb_id": 69138,
+  "cbdb_name": "劉體乾",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1574,
+  "span": [
+   1566,
+   1570
+  ]
+ },
+ "王廷": {
+  "cbdb_id": 69148,
+  "cbdb_name": "王廷",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1589,
+  "span": [
+   1566,
+   1570
+  ]
+ },
+ "郭乾": {
+  "cbdb_id": 467448,
+  "cbdb_name": "郭乾",
+  "method": "exact",
+  "score": 120.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1567,
+   1571
+  ]
+ },
+ "霍冀": {
+  "cbdb_id": 133003,
+  "cbdb_name": "霍冀",
+  "method": "exact",
+  "score": 134.4,
+  "birth": 1516,
+  "death": 1575,
+  "span": [
+   1567,
+   1570
+  ]
+ },
+ "毛愷": {
+  "cbdb_id": 69145,
+  "cbdb_name": "毛愷",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1506,
+  "death": 1570,
+  "span": [
+   1567,
+   1570
+  ]
+ },
+ "葛守禮": {
+  "cbdb_id": 69140,
+  "cbdb_name": "葛守禮",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1505,
+  "death": 1578,
+  "span": [
+   1567,
+   1575
+  ]
+ },
+ "萬士和": {
+  "cbdb_id": 124343,
+  "cbdb_name": "萬士和",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1517,
+  "death": 1587,
+  "span": [
+   1567,
+   1575
+  ]
+ },
+ "朱衡": {
+  "cbdb_id": 125136,
+  "cbdb_name": "朱衡",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1512,
+  "death": 1584,
+  "span": [
+   1568,
+   1574
+  ]
+ },
+ "譚大初": {
+  "cbdb_id": 68318,
+  "cbdb_name": "譚大初",
+  "method": "exact",
+  "score": 137.4,
+  "birth": 1504,
+  "death": 1578,
+  "span": [
+   1568,
+   1570
+  ]
+ },
+ "殷士儋": {
+  "cbdb_id": 68217,
+  "cbdb_name": "殷士儋",
+  "method": "cabinet",
+  "span": [
+   1569,
+   1570
+  ],
+  "birth": 1522,
+  "death": 1582
+ },
+ "靳學顏": {
+  "cbdb_id": 69142,
+  "cbdb_name": "靳學顏",
+  "method": "exact",
+  "score": 137.4,
+  "birth": 1515,
+  "death": 1571,
+  "span": [
+   1570,
+   1570
+  ]
+ },
+ "潘晟": {
+  "cbdb_id": 132325,
+  "cbdb_name": "潘晟",
+  "method": "cabinet",
+  "span": [
+   1570,
+   1580
+  ],
+  "birth": null,
+  "death": null
+ },
+ "陳紹儒": {
+  "cbdb_id": 130912,
+  "cbdb_name": "陳紹儒",
+  "method": "exact",
+  "score": 134.2,
+  "birth": 1506,
+  "death": 1581,
+  "span": [
+   1570,
+   1571
+  ]
+ },
+ "趙貞吉": {
+  "cbdb_id": 68216,
+  "cbdb_name": "趙貞吉",
+  "method": "cabinet",
+  "span": [
+   1570,
+   1570
+  ],
+  "birth": 1514,
+  "death": 1576
+ },
+ "譚綸": {
+  "cbdb_id": 124973,
+  "cbdb_name": "譚綸",
+  "method": "exact",
+  "score": 147.2,
+  "birth": 1520,
+  "death": 1577,
+  "span": [
+   1572,
+   1577
+  ]
+ },
+ "王之誥": {
+  "cbdb_id": 467454,
+  "cbdb_name": "王之誥",
+  "method": "exact",
+  "score": 120.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1572,
+   1575
+  ]
+ },
+ "陸樹聲": {
+  "cbdb_id": 33843,
+  "cbdb_name": "陸樹聲",
+  "method": "exact",
+  "score": 147.6,
+  "birth": 1509,
+  "death": 1605,
+  "span": [
+   1572,
+   1573
+  ]
+ },
+ "張瀚": {
+  "cbdb_id": 125309,
+  "cbdb_name": "張瀚",
+  "method": "exact",
+  "score": 137.8,
+  "birth": 1511,
+  "death": 1593,
+  "span": [
+   1573,
+   1577
+  ]
+ },
+ "畢鏘": {
+  "cbdb_id": 124742,
+  "cbdb_name": "畢鏘",
+  "method": "exact",
+  "score": 145.2,
+  "birth": 1517,
+  "death": 1609,
+  "span": [
+   1574,
+   1586
+  ]
+ },
+ "謝登之": {
+  "cbdb_id": 133191,
+  "cbdb_name": "謝登之",
+  "method": "exact",
+  "score": 120.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1574,
+   1574
+  ]
+ },
+ "王崇古": {
+  "cbdb_id": 215866,
+  "cbdb_name": "王崇古",
+  "method": "exact",
+  "score": 131.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1575,
+   1577
+  ]
+ },
+ "馬自強": {
+  "cbdb_id": 204233,
+  "cbdb_name": "馬自強",
+  "method": "cabinet",
+  "span": [
+   1575,
+   1578
+  ],
+  "birth": 1513,
+  "death": null
+ },
+ "陳瓚": {
+  "cbdb_id": 371196,
+  "cbdb_name": "陳瓚",
+  "method": "exact",
+  "score": 122.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1575,
+   1577
+  ]
+ },
+ "殷正茂": {
+  "cbdb_id": 125076,
+  "cbdb_name": "殷正茂",
+  "method": "exact",
+  "score": 147.2,
+  "birth": 1513,
+  "death": 1592,
+  "span": [
+   1576,
+   1578
+  ]
+ },
+ "沈應時": {
+  "cbdb_id": 502904,
+  "cbdb_name": "沈應時",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1576,
+   1578
+  ]
+ },
+ "方逢時": {
+  "cbdb_id": 125000,
+  "cbdb_name": "方逢時",
+  "method": "exact",
+  "score": 135.6,
+  "birth": 1522,
+  "death": 1596,
+  "span": [
+   1577,
+   1581
+  ]
+ },
+ "劉應節": {
+  "cbdb_id": 124715,
+  "cbdb_name": "劉應節",
+  "method": "exact",
+  "score": 126.6,
+  "birth": null,
+  "death": 1590,
+  "span": [
+   1577,
+   1577
+  ]
+ },
+ "陳炌": {
+  "cbdb_id": 203414,
+  "cbdb_name": "陳炌",
+  "method": "exact",
+  "score": 128.8,
+  "birth": 1516,
+  "death": null,
+  "span": [
+   1577,
+   1583
+  ]
+ },
+ "嚴清": {
+  "cbdb_id": 125235,
+  "cbdb_name": "嚴清",
+  "method": "exact",
+  "score": 85.6,
+  "birth": 1524,
+  "death": 1590,
+  "span": [
+   1578,
+   1587
+  ]
+ },
+ "汪宗伊": {
+  "cbdb_id": 127510,
+  "cbdb_name": "汪宗伊",
+  "method": "exact",
+  "score": 120.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1578,
+   1580
+  ]
+ },
+ "曾省吾": {
+  "cbdb_id": 125312,
+  "cbdb_name": "曾省吾",
+  "method": "exact",
+  "score": 129.6,
+  "birth": 1532,
+  "death": null,
+  "span": [
+   1580,
+   1582
+  ]
+ },
+ "劉斯潔": {
+  "cbdb_id": 132853,
+  "cbdb_name": "劉斯潔",
+  "method": "exact",
+  "score": 120.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1580,
+   1580
+  ]
+ },
+ "胡執禮": {
+  "cbdb_id": 129056,
+  "cbdb_name": "胡執禮",
+  "method": "exact",
+  "score": 120.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1580,
+   1589
+  ]
+ },
+ "劉思問": {
+  "cbdb_id": 132781,
+  "cbdb_name": "劉思問",
+  "method": "exact",
+  "score": 134.6,
+  "birth": 1519,
+  "death": 1583,
+  "span": [
+   1581,
+   1583
+  ]
+ },
+ "楊巍": {
+  "cbdb_id": 125335,
+  "cbdb_name": "楊巍",
+  "method": "exact",
+  "score": 134.4,
+  "birth": 1517,
+  "death": 1608,
+  "span": [
+   1582,
+   1590
+  ]
+ },
+ "潘季馴": {
+  "cbdb_id": 125185,
+  "cbdb_name": "潘季馴",
+  "method": "exact",
+  "score": 145.4,
+  "birth": 1521,
+  "death": 1595,
+  "span": [
+   1583,
+   1584
+  ]
+ },
+ "張士佩": {
+  "cbdb_id": 130320,
+  "cbdb_name": "張士佩",
+  "method": "exact",
+  "score": 134.8,
+  "birth": 1531,
+  "death": 1609,
+  "span": [
+   1583,
+   1583
+  ]
+ },
+ "楊兆": {
+  "cbdb_id": 122637,
+  "cbdb_name": "楊成",
+  "method": "fuzzy+sinica",
+  "score": 97.0,
+  "birth": 1521,
+  "death": 1600,
+  "span": [
+   1583,
+   1587
+  ]
+ },
+ "王遴": {
+  "cbdb_id": 124734,
+  "cbdb_name": "王遴",
+  "method": "exact",
+  "score": 146.0,
+  "birth": 1525,
+  "death": 1608,
+  "span": [
+   1583,
+   1585
+  ]
+ },
+ "王廷瞻": {
+  "cbdb_id": 34669,
+  "cbdb_name": "王廷瞻",
+  "method": "exact",
+  "score": 121.0,
+  "birth": 0,
+  "death": 0,
+  "span": [
+   1583,
+   1584
+  ]
+ },
+ "魏學曾": {
+  "cbdb_id": 133492,
+  "cbdb_name": "魏學曾",
+  "method": "exact",
+  "score": 134.8,
+  "birth": 1525,
+  "death": 1596,
+  "span": [
+   1583,
+   1583
+  ]
+ },
+ "沈鯉": {
+  "cbdb_id": 34728,
+  "cbdb_name": "沈鯉",
+  "method": "cabinet",
+  "span": [
+   1584,
+   1588
+  ],
+  "birth": 1531,
+  "death": 1615
+ },
+ "傅希摯": {
+  "cbdb_id": 125188,
+  "cbdb_name": "傅希摯",
+  "method": "exact",
+  "score": 120.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1584,
+   1585
+  ]
+ },
+ "宋纁": {
+  "cbdb_id": 127654,
+  "cbdb_name": "宋仕",
+  "method": "fuzzy+sinica",
+  "score": 84.6,
+  "birth": 1538,
+  "death": 1618,
+  "span": [
+   1585,
+   1591
+  ],
+  "note": "原键宋縉"
+ },
+ "辛自修": {
+  "cbdb_id": 124816,
+  "cbdb_name": "辛自修",
+  "method": "exact",
+  "score": 127.2,
+  "birth": null,
+  "death": 1593,
+  "span": [
+   1586,
+   1593
+  ]
+ },
+ "李世達": {
+  "cbdb_id": 124796,
+  "cbdb_name": "李世達",
+  "method": "exact",
+  "score": 136.0,
+  "birth": 1533,
+  "death": 1599,
+  "span": [
+   1587,
+   1593
+  ]
+ },
+ "吳時來": {
+  "cbdb_id": 68509,
+  "cbdb_name": "吳時來",
+  "method": "exact",
+  "score": 130.0,
+  "birth": null,
+  "death": 1590,
+  "span": [
+   1587,
+   1590
+  ]
+ },
+ "曾同亨": {
+  "cbdb_id": 124804,
+  "cbdb_name": "曾同亨",
+  "method": "exact",
+  "score": 147.4,
+  "birth": 1533,
+  "death": 1607,
+  "span": [
+   1588,
+   1592
+  ]
+ },
+ "朱賡": {
+  "cbdb_id": 124310,
+  "cbdb_name": "朱賡",
+  "method": "cabinet",
+  "span": [
+   1588,
+   1589
+  ],
+  "birth": 1535,
+  "death": 1608
+ },
+ "于慎行": {
+  "cbdb_id": 123963,
+  "cbdb_name": "于慎行",
+  "method": "cabinet",
+  "span": [
+   1589,
+   1591
+  ],
+  "birth": 1545,
+  "death": 1607
+ },
+ "楊俊民": {
+  "cbdb_id": 69102,
+  "cbdb_name": "楊俊民",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1599,
+  "span": [
+   1589,
+   1599
+  ]
+ },
+ "溫純": {
+  "cbdb_id": 34732,
+  "cbdb_name": "溫純",
+  "method": "altname",
+  "score": 84.8,
+  "birth": 1539,
+  "death": 1607,
+  "span": [
+   1589,
+   1605
+  ]
+ },
+ "耿定向": {
+  "cbdb_id": 124891,
+  "cbdb_name": "耿定向",
+  "method": "exact",
+  "score": 136.8,
+  "birth": 1524,
+  "death": 1596,
+  "span": [
+   1589,
+   1589
+  ]
+ },
+ "陸光祖": {
+  "cbdb_id": 33828,
+  "cbdb_name": "陸光祖",
+  "method": "exact",
+  "score": 140.6,
+  "birth": 1521,
+  "death": 0,
+  "span": [
+   1590,
+   1592
+  ]
+ },
+ "孫丕揚": {
+  "cbdb_id": 125303,
+  "cbdb_name": "孫丕揚",
+  "method": "exact",
+  "score": 144.6,
+  "birth": 1532,
+  "death": 1614,
+  "span": [
+   1591,
+   1612
+  ]
+ },
+ "李戴": {
+  "cbdb_id": 125337,
+  "cbdb_name": "李戴",
+  "method": "exact",
+  "score": 137.2,
+  "birth": null,
+  "death": 1607,
+  "span": [
+   1591,
+   1603
+  ]
+ },
+ "孫鑨": {
+  "cbdb_id": 125300,
+  "cbdb_name": "孫鑨",
+  "method": "fuzzy+sinica",
+  "score": 97.6,
+  "birth": 1525,
+  "death": 1594,
+  "span": [
+   1592,
+   1593
+  ],
+  "note": "原键孫籬"
+ },
+ "羅萬化": {
+  "cbdb_id": 133542,
+  "cbdb_name": "羅萬化",
+  "method": "exact",
+  "score": 146.0,
+  "birth": 1536,
+  "death": 1594,
+  "span": [
+   1592,
+   1594
+  ]
+ },
+ "周世選": {
+  "cbdb_id": 128794,
+  "cbdb_name": "周世選",
+  "method": "exact",
+  "score": 134.2,
+  "birth": 1532,
+  "death": 1606,
+  "span": [
+   1592,
+   1593
+  ]
+ },
+ "趙煥": {
+  "cbdb_id": 125347,
+  "cbdb_name": "趙煥",
+  "method": "exact",
+  "score": 145.2,
+  "birth": 1542,
+  "death": 1619,
+  "span": [
+   1593,
+   1619
+  ]
+ },
+ "蔡國珍": {
+  "cbdb_id": 125339,
+  "cbdb_name": "蔡國珍",
+  "method": "exact",
+  "score": 147.8,
+  "birth": 1528,
+  "death": 1611,
+  "span": [
+   1593,
+   1598
+  ]
+ },
+ "陳有年": {
+  "cbdb_id": 125302,
+  "cbdb_name": "陳有年",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1531,
+  "death": 1598,
+  "span": [
+   1593,
+   1594
+  ]
+ },
+ "衷貞吉": {
+  "cbdb_id": 129359,
+  "cbdb_name": "衷貞吉",
+  "method": "exact",
+  "score": 133.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1593,
+   1596
+  ]
+ },
+ "趙參魯": {
+  "cbdb_id": 124953,
+  "cbdb_name": "趙參魯",
+  "method": "exact",
+  "score": 135.2,
+  "birth": 1537,
+  "death": 1609,
+  "span": [
+   1594,
+   1594
+  ]
+ },
+ "舒應龍": {
+  "cbdb_id": 230828,
+  "cbdb_name": "舒應龍",
+  "method": "exact",
+  "score": 120.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1594,
+   1595
+  ]
+ },
+ "范謙": {
+  "cbdb_id": 129175,
+  "cbdb_name": "范謙",
+  "method": "exact",
+  "score": 146.4,
+  "birth": 1534,
+  "death": 1597,
+  "span": [
+   1594,
+   1597
+  ]
+ },
+ "蕭大亨": {
+  "cbdb_id": 133319,
+  "cbdb_name": "蕭大亨",
+  "method": "exact",
+  "score": 134.4,
+  "birth": 1532,
+  "death": 1612,
+  "span": [
+   1595,
+   1608
+  ]
+ },
+ "徐作": {
+  "cbdb_id": 530915,
+  "cbdb_name": "徐作",
+  "method": "exact",
+  "score": 131.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1596,
+   1598
+  ]
+ },
+ "李楨": {
+  "cbdb_id": 125584,
+  "cbdb_name": "李頤",
+  "method": "fuzzy+sinica",
+  "score": 89.4,
+  "birth": null,
+  "death": 1602,
+  "span": [
+   1597,
+   1598
+  ]
+ },
+ "劉楚先": {
+  "cbdb_id": 132881,
+  "cbdb_name": "劉楚先",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1597,
+   1598
+  ]
+ },
+ "李春光": {
+  "cbdb_id": 467605,
+  "cbdb_name": "李春光",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1597,
+   1597
+  ]
+ },
+ "田樂": {
+  "cbdb_id": 502859,
+  "cbdb_name": "田樂",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1598,
+   1602
+  ]
+ },
+ "楊一魁": {
+  "cbdb_id": 131724,
+  "cbdb_name": "楊一魁",
+  "method": "exact",
+  "score": 145.0,
+  "birth": 1534,
+  "death": 1609,
+  "span": [
+   1598,
+   1602
+  ]
+ },
+ "朱國祚": {
+  "cbdb_id": 30142,
+  "cbdb_name": "朱國祚",
+  "method": "cabinet",
+  "span": [
+   1600,
+   1601
+  ],
+  "birth": 0,
+  "death": 1624
+ },
+ "馮琦": {
+  "cbdb_id": 123637,
+  "cbdb_name": "馮琦",
+  "method": "exact",
+  "score": 145.2,
+  "birth": 1548,
+  "death": 1603,
+  "span": [
+   1601,
+   1603
+  ]
+ },
+ "姚繼可": {
+  "cbdb_id": 129341,
+  "cbdb_name": "姚繼可",
+  "method": "exact",
+  "score": 134.6,
+  "birth": 1534,
+  "death": 1608,
+  "span": [
+   1602,
+   1605
+  ]
+ },
+ "李廷機": {
+  "cbdb_id": 123964,
+  "cbdb_name": "李廷機",
+  "method": "cabinet",
+  "span": [
+   1602,
+   1607
+  ],
+  "birth": 1542,
+  "death": 1616
+ },
+ "楊時喬": {
+  "cbdb_id": 125336,
+  "cbdb_name": "楊時喬",
+  "method": "exact",
+  "score": 147.0,
+  "birth": 1531,
+  "death": 1609,
+  "span": [
+   1604,
+   1609
+  ]
+ },
+ "董裕": {
+  "cbdb_id": 132010,
+  "cbdb_name": "董裕",
+  "method": "exact",
+  "score": 145.4,
+  "birth": 1537,
+  "death": 1606,
+  "span": [
+   1605,
+   1605
+  ]
+ },
+ "李化龍": {
+  "cbdb_id": 125694,
+  "cbdb_name": "李化龍",
+  "method": "baike+cbdb2nd",
+  "score": null,
+  "birth": 1552,
+  "death": 1607,
+  "span": [
+   1608,
+   1611
+  ],
+  "note": "1552-1607 南京工部主事/太僕寺少卿链，唯一明代文臣候选"
+ },
+ "孫瑋": {
+  "cbdb_id": 129771,
+  "cbdb_name": "孫瑋",
+  "method": "exact",
+  "score": 121.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1608,
+   1623
+  ]
+ },
+ "王象乾": {
+  "cbdb_id": 65764,
+  "cbdb_name": "王象乾",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1630,
+  "span": [
+   1612,
+   1621
+  ]
+ },
+ "孫慎行": {
+  "cbdb_id": 34215,
+  "cbdb_name": "孫慎行",
+  "method": "exact",
+  "score": 147.4,
+  "birth": 1565,
+  "death": 1636,
+  "span": [
+   1613,
+   1622
+  ]
+ },
+ "李誌": {
+  "cbdb_id": 470223,
+  "cbdb_name": "李誌",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1614,
+   1619
+  ]
+ },
+ "涂宗濬": {
+  "cbdb_id": 129349,
+  "cbdb_name": "涂宗濬",
+  "method": "exact",
+  "score": 133.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1614,
+   1614
+  ]
+ },
+ "鄭繼之": {
+  "cbdb_id": 125389,
+  "cbdb_name": "鄭繼之",
+  "method": "exact",
+  "score": 145.6,
+  "birth": 1535,
+  "death": 1626,
+  "span": [
+   1614,
+   1618
+  ]
+ },
+ "何宗彥": {
+  "cbdb_id": 128409,
+  "cbdb_name": "何宗彥",
+  "method": "cabinet",
+  "span": [
+   1614,
+   1619
+  ],
+  "birth": null,
+  "death": 1624
+ },
+ "崔景榮": {
+  "cbdb_id": 131085,
+  "cbdb_name": "崔景榮",
+  "method": "exact",
+  "score": 120.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1615,
+   1625
+  ]
+ },
+ "黃嘉善": {
+  "cbdb_id": 467465,
+  "cbdb_name": "黃嘉善",
+  "method": "exact",
+  "score": 120.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1616,
+   1619
+  ]
+ },
+ "楊應聘": {
+  "cbdb_id": 467467,
+  "cbdb_name": "楊應聘",
+  "method": "exact",
+  "score": 120.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1619,
+   1620
+  ]
+ },
+ "周嘉謨": {
+  "cbdb_id": 128910,
+  "cbdb_name": "周嘉謨",
+  "method": "exact",
+  "score": 131.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1619,
+   1621
+  ]
+ },
+ "黃克纘": {
+  "cbdb_id": 131382,
+  "cbdb_name": "黃克纘",
+  "method": "baike+cbdb2nd",
+  "score": null,
+  "birth": null,
+  "death": null,
+  "span": [
+   1619,
+   1625
+  ],
+  "note": "CBDB 收异写 黃克纘（缵/纘），有吏部尚書记录 | 原键黃克瓚"
+ },
+ "王佐#2": {
+  "cbdb_id": 67281,
+  "cbdb_name": "王佐",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1622,
+  "span": [
+   1620,
+   1622
+  ]
+ },
+ "孫如游": {
+  "cbdb_id": 129718,
+  "cbdb_name": "孫如游",
+  "method": "cabinet",
+  "span": [
+   1620,
+   1620
+  ],
+  "birth": null,
+  "death": null
+ },
+ "鄭以偉": {
+  "cbdb_id": 132357,
+  "cbdb_name": "鄭以偉",
+  "method": "cabinet",
+  "span": [
+   1620,
+   1620
+  ],
+  "birth": null,
+  "death": null
+ },
+ "王紀": {
+  "cbdb_id": 470248,
+  "cbdb_name": "王紀",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1620,
+   1622
+  ]
+ },
+ "張鶴鳴": {
+  "cbdb_id": 207526,
+  "cbdb_name": "張鶴鳴",
+  "method": "exact",
+  "score": 138.4,
+  "birth": 1559,
+  "death": null,
+  "span": [
+   1621,
+   1622
+  ]
+ },
+ "汪應蛟": {
+  "cbdb_id": 127541,
+  "cbdb_name": "汪應蛟",
+  "method": "exact",
+  "score": 133.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1621,
+   1622
+  ]
+ },
+ "鄒元標": {
+  "cbdb_id": 34747,
+  "cbdb_name": "鄒元標",
+  "method": "exact",
+  "score": 147.0,
+  "birth": 1551,
+  "death": 1624,
+  "span": [
+   1621,
+   1622
+  ]
+ },
+ "孫承宗": {
+  "cbdb_id": 63882,
+  "cbdb_name": "孫承宗",
+  "method": "cabinet",
+  "span": [
+   1622,
+   1622
+  ],
+  "birth": 1563,
+  "death": 1638
+ },
+ "王在晉": {
+  "cbdb_id": 64468,
+  "cbdb_name": "王在晉",
+  "method": "exact",
+  "score": 134.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1622,
+   1628
+  ]
+ },
+ "顧秉謙": {
+  "cbdb_id": 133643,
+  "cbdb_name": "顧秉謙",
+  "method": "cabinet",
+  "span": [
+   1622,
+   1623
+  ],
+  "birth": null,
+  "death": null
+ },
+ "趙南星": {
+  "cbdb_id": 132172,
+  "cbdb_name": "趙南星",
+  "method": "exact",
+  "score": 145.4,
+  "birth": 1550,
+  "death": 1627,
+  "span": [
+   1622,
+   1624
+  ]
+ },
+ "李長庚": {
+  "cbdb_id": 127819,
+  "cbdb_name": "李長庚",
+  "method": "exact",
+  "score": 121.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1623,
+   1634
+  ]
+ },
+ "王舜鼎": {
+  "cbdb_id": 342107,
+  "cbdb_name": "王舜鼎",
+  "method": "exact",
+  "score": 132.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1624,
+   1624
+  ]
+ },
+ "馮從吾": {
+  "cbdb_id": 34744,
+  "cbdb_name": "馮從吾",
+  "method": "exact",
+  "score": 134.6,
+  "birth": 1556,
+  "death": 1627,
+  "span": [
+   1624,
+   1624
+  ]
+ },
+ "李起元": {
+  "cbdb_id": 207274,
+  "cbdb_name": "李起元",
+  "method": "exact",
+  "score": 128.8,
+  "birth": 1565,
+  "death": null,
+  "span": [
+   1624,
+   1626
+  ]
+ },
+ "畢懋良": {
+  "cbdb_id": 131066,
+  "cbdb_name": "畢懋良",
+  "method": "exact",
+  "score": 86.6,
+  "birth": 1562,
+  "death": 1644,
+  "span": [
+   1624,
+   1625
+  ]
+ },
+ "高攀龍": {
+  "cbdb_id": 30849,
+  "cbdb_name": "高攀龍",
+  "method": "exact",
+  "score": 135.2,
+  "birth": 1562,
+  "death": 1626,
+  "span": [
+   1624,
+   1624
+  ]
+ },
+ "周應秋": {
+  "cbdb_id": 128930,
+  "cbdb_name": "周應秋",
+  "method": "baike+cbdb2nd",
+  "score": null,
+  "birth": null,
+  "death": null,
+  "span": [
+   1625,
+   1627
+  ],
+  "note": "刑部左侍郎/吏部郎中链吻合天启仕历；372675 无记录"
+ },
+ "李養正": {
+  "cbdb_id": 470249,
+  "cbdb_name": "李養正",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1625,
+   1625
+  ]
+ },
+ "李思誠": {
+  "cbdb_id": 68214,
+  "cbdb_name": "李思誠",
+  "method": "exact",
+  "score": 123.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1626,
+   1626
+  ]
+ },
+ "蘇茂相": {
+  "cbdb_id": 133575,
+  "cbdb_name": "蘇茂相",
+  "method": "exact",
+  "score": 120.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1626,
+   1628
+  ]
+ },
+ "薛鳳翔": {
+  "cbdb_id": 63339,
+  "cbdb_name": "薛鳳翔",
+  "method": "exact",
+  "score": 132.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1626,
+   1628
+  ]
+ },
+ "郭允厚": {
+  "cbdb_id": 340858,
+  "cbdb_name": "郭允厚",
+  "method": "exact",
+  "score": 132.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1626,
+   1628
+  ]
+ },
+ "崔呈秀": {
+  "cbdb_id": 62529,
+  "cbdb_name": "崔呈秀",
+  "method": "exact",
+  "score": 137.6,
+  "birth": null,
+  "death": 1628,
+  "span": [
+   1627,
+   1627
+  ]
+ },
+ "霍維華": {
+  "cbdb_id": 133002,
+  "cbdb_name": "霍維華",
+  "method": "exact",
+  "score": 60.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1627,
+   1627
+  ]
+ },
+ "來宗道": {
+  "cbdb_id": 128667,
+  "cbdb_name": "來宗道",
+  "method": "cabinet",
+  "span": [
+   1627,
+   1627
+  ],
+  "birth": null,
+  "death": null
+ },
+ "錢象坤": {
+  "cbdb_id": 133125,
+  "cbdb_name": "錢象坤",
+  "method": "cabinet",
+  "span": [
+   1627,
+   1628
+  ],
+  "birth": 1569,
+  "death": 1640
+ },
+ "李從心": {
+  "cbdb_id": 467469,
+  "cbdb_name": "李從心",
+  "method": "exact",
+  "score": 130.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1627,
+   1628
+  ]
+ },
+ "曹思誠": {
+  "cbdb_id": 59467,
+  "cbdb_name": "曹思誠",
+  "method": "exact",
+  "score": 122.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1627,
+   1628
+  ]
+ },
+ "王洽": {
+  "cbdb_id": 64613,
+  "cbdb_name": "王洽",
+  "method": "exact",
+  "score": 139.2,
+  "birth": null,
+  "death": 1629,
+  "span": [
+   1628,
+   1629
+  ]
+ },
+ "閻鳴泰": {
+  "cbdb_id": 63217,
+  "cbdb_name": "閻鳴泰",
+  "method": "exact",
+  "score": 142.0,
+  "birth": 1572,
+  "death": null,
+  "span": [
+   1628,
+   1628
+  ]
+ },
+ "畢自嚴": {
+  "cbdb_id": 34745,
+  "cbdb_name": "畢自嚴",
+  "method": "exact",
+  "score": 145.4,
+  "birth": 1569,
+  "death": 1638,
+  "span": [
+   1628,
+   1633
+  ]
+ },
+ "何如寵": {
+  "cbdb_id": 128400,
+  "cbdb_name": "何如寵",
+  "method": "cabinet",
+  "span": [
+   1628,
+   1629
+  ],
+  "birth": 1568,
+  "death": 1640
+ },
+ "梁廷棟": {
+  "cbdb_id": 59493,
+  "cbdb_name": "梁廷棟",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1636,
+  "span": [
+   1629,
+   1631
+  ]
+ },
+ "申用懋": {
+  "cbdb_id": 123974,
+  "cbdb_name": "申用懋",
+  "method": "exact",
+  "score": 146.0,
+  "birth": 1560,
+  "death": 1638,
+  "span": [
+   1629,
+   1629
+  ]
+ },
+ "孫居相": {
+  "cbdb_id": 129728,
+  "cbdb_name": "孫居相",
+  "method": "exact",
+  "score": 120.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1629,
+   1630
+  ]
+ },
+ "劉遵憲": {
+  "cbdb_id": 61169,
+  "cbdb_name": "劉遵憲",
+  "method": "exact",
+  "score": 133.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1630,
+   1642
+  ]
+ },
+ "錢春": {
+  "cbdb_id": 133108,
+  "cbdb_name": "錢春",
+  "method": "exact",
+  "score": 123.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1630,
+   1634
+  ]
+ },
+ "熊明遇": {
+  "cbdb_id": 64213,
+  "cbdb_name": "熊明遇",
+  "method": "exact",
+  "score": 134.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1631,
+   1632
+  ]
+ },
+ "張鳳翼": {
+  "cbdb_id": 59940,
+  "cbdb_name": "張鳳翼",
+  "method": "exact",
+  "score": 139.0,
+  "birth": null,
+  "death": 1636,
+  "span": [
+   1632,
+   1636
+  ]
+ },
+ "張延登": {
+  "cbdb_id": 59658,
+  "cbdb_name": "張延登",
+  "method": "exact",
+  "score": 133.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1632,
+   1634
+  ]
+ },
+ "侯恂": {
+  "cbdb_id": 63802,
+  "cbdb_name": "侯恂",
+  "method": "exact",
+  "score": 144.4,
+  "birth": 1590,
+  "death": 1659,
+  "span": [
+   1633,
+   1636
+  ]
+ },
+ "李康先": {
+  "cbdb_id": 357387,
+  "cbdb_name": "李康先",
+  "method": "exact",
+  "score": 132.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1633,
+   1635
+  ]
+ },
+ "謝陞": {
+  "cbdb_id": 65935,
+  "cbdb_name": "謝陞",
+  "method": "cabinet",
+  "span": [
+   1634,
+   1640
+  ],
+  "birth": null,
+  "death": 1645
+ },
+ "黃士俊": {
+  "cbdb_id": 64943,
+  "cbdb_name": "黃士俊",
+  "method": "cabinet",
+  "span": [
+   1635,
+   1636
+  ],
+  "birth": null,
+  "death": null
+ },
+ "楊嗣昌": {
+  "cbdb_id": 64264,
+  "cbdb_name": "楊嗣昌",
+  "method": "cabinet",
+  "span": [
+   1636,
+   1639
+  ],
+  "birth": 1588,
+  "death": 1641
+ },
+ "姜逢元": {
+  "cbdb_id": 128975,
+  "cbdb_name": "姜逢元",
+  "method": "exact",
+  "score": 131.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1636,
+   1637
+  ]
+ },
+ "鄭三俊": {
+  "cbdb_id": 62502,
+  "cbdb_name": "鄭三俊",
+  "method": "exact",
+  "score": 133.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1637,
+   1643
+  ]
+ },
+ "程國祥": {
+  "cbdb_id": 62965,
+  "cbdb_name": "程國祥",
+  "method": "cabinet",
+  "span": [
+   1637,
+   1638
+  ],
+  "birth": null,
+  "death": null
+ },
+ "商周祚": {
+  "cbdb_id": 339168,
+  "cbdb_name": "商周祚",
+  "method": "exact",
+  "score": 120.8,
+  "birth": null,
+  "death": null,
+  "span": [
+   1637,
+   1638
+  ]
+ },
+ "李待問": {
+  "cbdb_id": 60278,
+  "cbdb_name": "李待問",
+  "method": "exact",
+  "score": 130.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1638,
+   1642
+  ]
+ },
+ "傅宗龍": {
+  "cbdb_id": 62093,
+  "cbdb_name": "傅宗龍",
+  "method": "exact",
+  "score": 140.0,
+  "birth": null,
+  "death": 1641,
+  "span": [
+   1639,
+   1639
+  ]
+ },
+ "甄淑": {
+  "cbdb_id": 64361,
+  "cbdb_name": "甄淑",
+  "method": "exact",
+  "score": 132.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1639,
+   1640
+  ]
+ },
+ "陳新甲": {
+  "cbdb_id": 61570,
+  "cbdb_name": "陳新甲",
+  "method": "exact",
+  "score": 139.2,
+  "birth": null,
+  "death": 1642,
+  "span": [
+   1640,
+   1642
+  ]
+ },
+ "李日宣": {
+  "cbdb_id": 60004,
+  "cbdb_name": "李日宣",
+  "method": "exact",
+  "score": 133.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1640,
+   1642
+  ]
+ },
+ "王道直": {
+  "cbdb_id": 470265,
+  "cbdb_name": "王道直",
+  "method": "exact",
+  "score": 120.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1640,
+   1642
+  ]
+ },
+ "張國維": {
+  "cbdb_id": 59730,
+  "cbdb_name": "張國維",
+  "method": "exact",
+  "score": 146.8,
+  "birth": 1595,
+  "death": 1646,
+  "span": [
+   1642,
+   1643
+  ]
+ },
+ "范景文": {
+  "cbdb_id": 34752,
+  "cbdb_name": "范景文",
+  "method": "cabinet",
+  "span": [
+   1642,
+   1644
+  ],
+  "birth": 1587,
+  "death": 1644
+ },
+ "傅淑訓": {
+  "cbdb_id": 62191,
+  "cbdb_name": "傅淑訓",
+  "method": "exact",
+  "score": 133.4,
+  "birth": null,
+  "death": null,
+  "span": [
+   1642,
+   1643
+  ]
+ },
+ "白貽清": {
+  "cbdb_id": 62016,
+  "cbdb_name": "白貽清",
+  "method": "exact",
+  "score": 133.6,
+  "birth": null,
+  "death": null,
+  "span": [
+   1642,
+   1643
+  ]
+ },
+ "劉宗周": {
+  "cbdb_id": 34748,
+  "cbdb_name": "劉宗周",
+  "method": "exact",
+  "score": 136.4,
+  "birth": 1578,
+  "death": 1645,
+  "span": [
+   1642,
+   1642
+  ]
+ },
+ "李邦華": {
+  "cbdb_id": 124308,
+  "cbdb_name": "李邦華",
+  "method": "exact",
+  "score": 147.2,
+  "birth": 1574,
+  "death": 1644,
+  "span": [
+   1642,
+   1644
+  ]
+ },
+ "張縉彥": {
+  "cbdb_id": 58538,
+  "cbdb_name": "張縉彥",
+  "method": "exact",
+  "score": 145.4,
+  "birth": 1599,
+  "death": 1660,
+  "span": [
+   1643,
+   1644
+  ]
+ },
+ "馮元颺": {
+  "cbdb_id": 30689,
+  "cbdb_name": "馮元颺",
+  "method": "exact",
+  "score": 136.4,
+  "birth": 1586,
+  "death": 1644,
+  "span": [
+   1643,
+   1643
+  ]
+ },
+ "張忻": {
+  "cbdb_id": 57001,
+  "cbdb_name": "張忻",
+  "method": "exact",
+  "score": 136.4,
+  "birth": null,
+  "death": 1658,
+  "span": [
+   1643,
+   1644
+  ]
+ },
+ "倪元璐": {
+  "cbdb_id": 30734,
+  "cbdb_name": "倪元璐",
+  "method": "exact",
+  "score": 148.0,
+  "birth": 1593,
+  "death": 1644,
+  "span": [
+   1643,
+   1644
+  ]
+ },
+ "党崇雅": {
+  "cbdb_id": 59531,
+  "cbdb_name": "党崇雅",
+  "method": "exact",
+  "score": 64.0,
+  "birth": 1584,
+  "death": 1666,
+  "span": [
+   1643,
+   1644
+  ]
+ },
+ "王鐸": {
+  "cbdb_id": 71166,
+  "cbdb_name": "王鐸",
+  "method": "cabinet",
+  "span": [
+   1644,
+   1644
+  ],
+  "birth": 1592,
+  "death": 1652
+ }
+}
