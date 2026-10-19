@@ -1,0 +1,32 @@
+== 1549 總督京儲 (1) ==
+  李士翱 | note=十二、丁未、十二,遷工尚。 | raw_office=總督京儲 | flag=None | src=table | page=584
+== 1550 總督倉場 (3) ==
+  孫應奎 | note=三、癸酉、九,左副都遷戶右侍兼督西苑農事;十、癸亥、三,遷戶尚。 | raw_office=總倉場 | flag=note?;;③顺序兜底;office重复 | src=table | page=585
+  端廷赦 | note=十、壬申、十一,戶左侍兼理西苑農事。 | raw_office=總倉場 | flag=note?;;③顺序兜底;office重复 | src=table | page=585
+  陳經 | note=二、己亥、四,起太子少保兵尚改,尋卒。 | raw_office=總倉場 | flag=;③顺序兜底;office重复 | src=table | page=585
+== 1551 總督倉場 (3) ==
+  孫禱 | note=五、丁酉、十,掌通政司事兵左侍改戶左侍,兼西苑農事。 | raw_office=總倉場 | flag=None | src=table | page=586
+  張經 | note=四、己巳、十一,起原兩廣兵尚改戶尚兼理西苑農事,守制。卅二年八、丁丑、三,服闊改南戶尚。 | raw_office=總倉場 | flag=None | src=table | page=586
+  端廷赦 | note=三、丙辰、廿八,遷南右都。 | raw_office=總倉場 | flag=None | src=table | page=586
+== 1552 總督倉場 (2) ==
+  余胤緒 | note=八、壬申、廿二,南大理卿遷戶右侍,兼西苑農事,尋閑住。隆慶二年九、乙亥、廿九,復官。 | raw_office=總倉場 | flag=None | src=table | page=587
+  孫禱 | note=八、己未、九,改兵左侍兼右僉都赴薊州;十、丙寅、十七,還京;十一、癸未、五,改戶左侍兼西苑農事。 | raw_office=總倉場 | flag=None | src=table | page=587
+== 1553 總督京儲 (2) ==
+  孫禱 | note= | raw_office=總督京儲 | flag=None | src=table | page=588
+  楊行中 | note=五、丙辰、十一,致仕。五、壬戌、十七,起刑左侍改戶左侍,隆慶三年三、甲子、廿,贈工尚。兼西苑農事。 | raw_office=總督京儲 | flag=note? | src=table | page=588
+== 1556 刑部 (0) ==
+== 1556 總督倉場 (0) ==
+== 1557 總督倉場 (1) ==
+  高燿 | note= | raw_office=總倉場 | flag=None | src=table | page=592
+== 1398 御史臺 (1) ==
+  暴昭 | note=四、戊子、十二,刑右侍遷;五月,改刑尚。 | raw_office=御史臺 | flag=None | src=table | page=432
+== 1399 御史府 (2) ==
+  景清 | note=二月,左僉都遷,尋改北平參議。 | raw_office=御史府 | flag=None | src=table | page=433
+  練子寧 | note=二月,任。 | raw_office=御史府 | flag=None | src=book-patch | page=433
+== 1400 御史府 (2) ==
+  景清 | note=三、辛巳、十六,北平參議遷御史大夫。 | raw_office=御史府 | flag=None | src=table | page=434
+  練子寧 | note=三、辛巳,十六,改御史中丞。 | raw_office=御史府 | flag=None | src=book-patch | page=434
+== 1401 御史府 (1) ==
+  景清 | note= | raw_office=御史府 | flag=None | src=table | page=435
+== 1402 御史府 (1) ==
+  景清 | note=八、丙寅、十五,誅。 | raw_office=御史府 | flag=None | src=table | page=436

@@ -68,3 +68,35 @@ def test_reconcile_net_increment():
     text = (DATA / "reconcile.csv").read_text(encoding="utf-8")
     rows = [line for line in text.splitlines()[1:] if line.strip()]
     assert len(rows) >= 2_700
+
+
+# ---------------------------------------------------------------- D-04 证据（D40，只读核对）
+
+REPO = Path(__file__).resolve().parents[1]
+D04 = REPO / "docs" / "evidence" / "d04"
+
+
+def test_d04_evidence_pages_present():
+    """D-04 第一轮逐页核对的 15 页原书证据不能丢（丢了差异清单就无法复核）。"""
+    pngs = {p.stem for p in D04.glob("pdf*.png")}
+    for pdf in (444, 445, 446, 447, 448, 449, 450, 451,
+                594, 595, 596, 597, 598, 599, 600):
+        assert f"pdf{pdf}" in pngs, f"缺少 D-04 证据页 pdf{pdf}.png"
+    assert all((D04 / f"pdf{p}.png").stat().st_size > 20_000 for p in (447, 596, 600))
+
+
+def test_d04_report_and_audit_table_present():
+    for name in ("部院D04表头核对报告.md", "部院D04逐条审核表.md"):
+        path = REPO / "docs" / name
+        assert path.exists(), f"缺少 {name}"
+        assert path.stat().st_size > 2_000
+
+
+def test_d04_summary_counts():
+    """本轮统计口径：11 个表头年 × 8 衙 = 87 组，一致 77、整行差异 9。"""
+    summary = json.loads((D04 / "_d04_summary.json").read_text(encoding="utf-8"))
+    stats = summary["stats"]
+    assert stats["表头年"] == 11 and stats["表头年衙数"] == 87
+    assert stats["一致衙"] == 77
+    assert stats["整行差异衙"] == 9
+    assert stats["对页年"] == 4 and stats["对页年行数"] == 32

@@ -168,7 +168,7 @@ python -m guji.cli shidian chapter LS0026 <chapterId>
 ```
 mingoff/
 ├─ README.md              本文件
-├─ docs/DECISIONS.md      设计决策记录（D1–D38）
+├─ docs/DECISIONS.md      设计决策记录（D1–D40）
 ├─ docs/demo开发经验总结.md  本轮 demo 开发的坑与方法
 ├─ docs/数据源月份精度实测.md  CBDB/中研院月份能力实测
 ├─ docs/数据接入规范.md    ★ 数据接入硬规则（D26：解析/实体/时间/校验门 G1–G6）
@@ -183,6 +183,8 @@ mingoff/
 ├─ docs/部院数据待办清单.md    ★ 部院 v2 残留待办（身份/注文/缺口/表头/CBDB/页码）
 ├─ docs/部院D03原书核对报告.md  ★ D-03 长缺口/缺年原书页核对（筛查完成，13 页证/104 screened）
 ├─ docs/部院D08页码索引.md      ★ 277 年 year→book_page 索引（100% 条目有页）
+├─ docs/部院D04表头核对报告.md   ★ D-04 表头/对页版式原书核对（只出证据，不改数据，D40）
+├─ docs/部院D04逐条审核表.md       ★ D-04 差异逐条裁决表（18 项，待老板审核）
 ├─ docs/重建数据操作步骤.md  v3 数据重建的脚本与口径
 ├─ pyproject.toml         包定义（一期零第三方依赖）
 ├─ src/mingoff/
