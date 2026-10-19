@@ -1,0 +1,7366 @@
+[
+ {
+  "year": 1402,
+  "person": "楊士奇",
+  "note": "八月，編修；十一、戊子，九，遷侍讀。",
+  "src": "text",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1402,
+  "person": "楊榮",
+  "note": "八月，修撰；十一、戊子，九，遷侍講。",
+  "src": "text",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1402,
+  "person": "胡儼",
+  "note": "八月，侍講；十一、戊子，九，遷侍讀。",
+  "src": "text",
+  "raw_person": "胡儼"
+ },
+ {
+  "year": 1402,
+  "person": "胡廣",
+  "note": "八月，侍講；十一、戊子，九，遷侍讀。",
+  "src": "text",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1402,
+  "person": "解縉",
+  "note": "八月,侍讀;十一、戊子、九,遷侍讀學士.",
+  "src": "text",
+  "raw_person": "解縉/解繉"
+ },
+ {
+  "year": 1402,
+  "person": "金幼孜",
+  "note": "八月，檢討；十一、戊子，九，遷侍講。",
+  "src": "text",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1402,
+  "person": "黃淮",
+  "note": "八月，編修；十一、戊子，九，遷侍讀。",
+  "src": "text",
+  "raw_person": "黃淮"
+ },
+ {
+  "year": 1403,
+  "person": "楊士奇",
+  "note": "",
+  "src": "text",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1403,
+  "person": "楊榮",
+  "note": "",
+  "src": "text",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1403,
+  "person": "胡儼",
+  "note": "",
+  "src": "text",
+  "raw_person": "胡儼"
+ },
+ {
+  "year": 1403,
+  "person": "胡廣",
+  "note": "",
+  "src": "text",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1403,
+  "person": "解縉",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "解縉"
+ },
+ {
+  "year": 1403,
+  "person": "金幼孜",
+  "note": "",
+  "src": "text",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1403,
+  "person": "黃淮",
+  "note": "",
+  "src": "text",
+  "raw_person": "黄淮"
+ },
+ {
+  "year": 1404,
+  "person": "楊士奇",
+  "note": "四、壬申、二，遷左中允，仍兼侍講。",
+  "src": "text",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1404,
+  "person": "楊榮",
+  "note": "四、壬申、二，遷右諭德，仍兼侍講。",
+  "src": "text",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1404,
+  "person": "胡儼",
+  "note": "四、壬申、二，遷左諭德；九、丁卯、廿八，遷祭酒。",
+  "src": "text",
+  "raw_person": "胡儼"
+ },
+ {
+  "year": 1404,
+  "person": "胡廣",
+  "note": "四、壬申、二，遷右庶子，仍兼侍讀。",
+  "src": "text",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1404,
+  "person": "解縉",
+  "note": "四、壬申、二，遷學士，兼右春坊大學士。",
+  "src": "text",
+  "raw_person": "解繉"
+ },
+ {
+  "year": 1404,
+  "person": "金幼孜",
+  "note": "",
+  "src": "text",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1404,
+  "person": "黃淮",
+  "note": "四、壬申、二，遷左庶子，仍兼侍讀。",
+  "src": "text",
+  "raw_person": "黄淮"
+ },
+ {
+  "year": 1405,
+  "person": "楊士奇",
+  "note": "",
+  "src": "text",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1405,
+  "person": "楊榮",
+  "note": "",
+  "src": "text",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1405,
+  "person": "胡廣",
+  "note": "",
+  "src": "text",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1405,
+  "person": "解縉",
+  "note": "",
+  "src": "text",
+  "raw_person": "解縉"
+ },
+ {
+  "year": 1405,
+  "person": "金幼孜",
+  "note": "",
+  "src": "text",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1405,
+  "person": "黃淮",
+  "note": "",
+  "src": "text",
+  "raw_person": "黄淮"
+ },
+ {
+  "year": 1406,
+  "person": "楊士奇",
+  "note": "",
+  "src": "text",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1406,
+  "person": "楊榮",
+  "note": "",
+  "src": "text",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1406,
+  "person": "胡廣",
+  "note": "",
+  "src": "text",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1406,
+  "person": "解縉",
+  "note": "",
+  "src": "text",
+  "raw_person": "解縉"
+ },
+ {
+  "year": 1406,
+  "person": "金幼孜",
+  "note": "",
+  "src": "text",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1406,
+  "person": "黃淮",
+  "note": "",
+  "src": "text",
+  "raw_person": "黄淮"
+ },
+ {
+  "year": 1407,
+  "person": "楊士奇",
+  "note": "十一、辛亥、一，遷左春坊左諭德，仍兼侍講。",
+  "src": "text",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1407,
+  "person": "楊榮",
+  "note": "十一、辛亥、一，遷右春坊右庶子，仍兼侍講。 六、庚寅、十三,丁父憂歸;十、壬寅、廿八,起復。",
+  "src": "text",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1407,
+  "person": "胡廣",
+  "note": "十一、辛亥、一，遷翰林學士，兼左春坊大學士。",
+  "src": "text",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1407,
+  "person": "解縉",
+  "note": "二、庚寅、五，降廣西右議，又改交阯。十三年正月，卒。 萬曆十八年十二、丙子、八，復官謚。",
+  "src": "text",
+  "raw_person": "解繉"
+ },
+ {
+  "year": 1407,
+  "person": "金幼孜",
+  "note": "十一、辛亥、一，遷右春坊右諭德，仍兼侍講。",
+  "src": "text",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1407,
+  "person": "黃淮",
+  "note": "十一、辛亥、一，遷右春坊大學士兼侍讀。",
+  "src": "text",
+  "raw_person": "黃淮"
+ },
+ {
+  "year": 1408,
+  "person": "楊士奇",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1408,
+  "person": "楊榮",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1408,
+  "person": "胡廣",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1408,
+  "person": "金幼孜",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1408,
+  "person": "黃淮",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "黃淮"
+ },
+ {
+  "year": 1409,
+  "person": "楊士奇",
+  "note": "二、戊寅、五,命輔東宮監國。",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1409,
+  "person": "楊榮",
+  "note": "正、辛亥、八,起復扈從;三、壬戌、十九,至北京。",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1409,
+  "person": "胡廣",
+  "note": "正、癸亥、廿,命扈從;三、壬戌、十九,至北京。",
+  "src": "table",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1409,
+  "person": "金幼孜",
+  "note": "正、癸亥、廿,命扈從;三、壬戌、十九,至北京。",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1409,
+  "person": "黃淮",
+  "note": "二、戊寅、五,命輔東官監國。",
+  "src": "table",
+  "raw_person": "黃淮"
+ },
+ {
+  "year": 1410,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1410,
+  "person": "楊榮",
+  "note": "二、丁未、十二,北征扈從;七、壬午、十七,還北京;十一、甲戌、十二,還至京師。",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1410,
+  "person": "胡廣",
+  "note": "二、丁未、十,北征扈從;七、壬壬、十七,還北京。十一、甲戌、十二,還京師。",
+  "src": "table",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1410,
+  "person": "金幼孜",
+  "note": "二、丁未、十二,北征扈從;七、壬午、十七,還北京;十一、甲戌、十二,還京師。",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1410,
+  "person": "黃淮",
+  "note": "",
+  "src": "table",
+  "raw_person": "黃淮"
+ },
+ {
+  "year": 1411,
+  "person": "楊士奇",
+  "note": "十、乙巳、十七，充重修太祖實錄纂修官。",
+  "src": "text",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1411,
+  "person": "楊榮",
+  "note": "六、壬子、廿三，奔喪還京；十、乙巳、十七，充實錄總裁。",
+  "src": "text",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1411,
+  "person": "胡廣",
+  "note": "十、乙巳、十七，充重修太祖實錄總裁官。",
+  "src": "text",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1411,
+  "person": "金幼孜",
+  "note": "十、乙巳、十七，充重修太祖實錄纂修官。",
+  "src": "text",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1411,
+  "person": "黃淮",
+  "note": "十、乙巳、十七，充重修太祖實錄總裁官。",
+  "src": "text",
+  "raw_person": "黃淮"
+ },
+ {
+  "year": 1412,
+  "person": "楊士奇",
+  "note": "",
+  "src": "text",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1412,
+  "person": "楊榮",
+  "note": "十一、壬午、一，經略甘肅；十二、戊寅、廿七，還。",
+  "src": "text",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1412,
+  "person": "胡廣",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1412,
+  "person": "金幼孜",
+  "note": "",
+  "src": "text",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1412,
+  "person": "黃淮",
+  "note": "",
+  "src": "text",
+  "raw_person": "黄淮"
+ },
+ {
+  "year": 1413,
+  "person": "楊士奇",
+  "note": "",
+  "src": "text",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1413,
+  "person": "楊榮",
+  "note": "二、甲子、十五，北巡扈從；四、己酉、一，至北京。",
+  "src": "text",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1413,
+  "person": "胡廣",
+  "note": "二、甲子、十五，北巡扈從；四、己酉、一，至北京。",
+  "src": "text",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1413,
+  "person": "金幼孜",
+  "note": "二、甲子、十五，北巡扈從；四、己酉、一，至北京。",
+  "src": "text",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1413,
+  "person": "黃淮",
+  "note": "",
+  "src": "text",
+  "raw_person": "黄淮"
+ },
+ {
+  "year": 1414,
+  "person": "楊士奇",
+  "note": "閏九、丙午、六,下獄,未幾復職。",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1414,
+  "person": "楊榮",
+  "note": "三、庚寅、十七,北征扈從;八、辛丑、一,還北京;十一、甲寅、十五,修五經四書性理大全。",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1414,
+  "person": "胡廣",
+  "note": "三、庚寅、十七,北征扈從;八、辛丑、一,還北京;十一、甲寅、十五,總修五經四書性理大全。",
+  "src": "table",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1414,
+  "person": "金幼孜",
+  "note": "三、庚寅、十七,北征扈從;八、辛丑、一,還北京;十一、甲寅、十五,修五經四書性理大全。",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1414,
+  "person": "黃淮",
+  "note": "閏九、甲辰、四,下獄。",
+  "src": "table",
+  "raw_person": "黃淮"
+ },
+ {
+  "year": 1415,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1415,
+  "person": "楊榮",
+  "note": "在北京;九、己酉、十五,大全成。",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1415,
+  "person": "胡廣",
+  "note": "在北京;九、己酉、十五,大全成。",
+  "src": "table",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1415,
+  "person": "金幼孜",
+  "note": "在北京;九、己酉、十五,大全成。",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1416,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1416,
+  "person": "楊榮",
+  "note": "四、乙亥、十三,遷翰林學士,仍兼右庶子。",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1416,
+  "person": "胡廣",
+  "note": "四、乙亥、十三,遷文淵閣大學士,仍兼左春坊大學士。",
+  "src": "table",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1416,
+  "person": "金幼孜",
+  "note": "四、乙亥、十三,遷翰林學士,仍兼右諭德。",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1417,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1417,
+  "person": "楊榮",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1417,
+  "person": "胡廣",
+  "note": "",
+  "src": "table",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1417,
+  "person": "金幼孜",
+  "note": "",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1418,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1418,
+  "person": "楊榮",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1418,
+  "person": "胡廣",
+  "note": "五、丁巳、八,卒,贈禮尚,謚文穆。洪熙元年四、壬子、十三,贈太師。",
+  "src": "table",
+  "raw_person": "胡廣"
+ },
+ {
+  "year": 1418,
+  "person": "金幼孜",
+  "note": "",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1419,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1419,
+  "person": "楊榮",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1419,
+  "person": "金幼孜",
+  "note": "",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1420,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1420,
+  "person": "楊榮",
+  "note": "閏正、丙子、七,遷文淵閣大學士,兼翰林學士。",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1420,
+  "person": "金幼孜",
+  "note": "閏正、丙子、七,遷文淵閣大學士,兼翰林學士。",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1421,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1421,
+  "person": "楊榮",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1421,
+  "person": "金幼孜",
+  "note": "",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1422,
+  "person": "楊士奇",
+  "note": "九、癸亥、九,下獄;九、癸酉、十九,復。",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1422,
+  "person": "楊榮",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1422,
+  "person": "金幼孜",
+  "note": "",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1423,
+  "person": "楊士奇",
+  "note": "八、己未、十七,遷禮左侍兼華蓋殿大學士;九、丁酉、廿五,加少保,兼如故;十一、丙戌、十五,進少傅。",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1423,
+  "person": "楊榮",
+  "note": "八、己未、十七,遷太常卿,仍兼前職;九、丁酉、廿五,加少傅,兼謹身殿大學士;十二、甲寅、十三,加工尚。",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1423,
+  "person": "金幼孜",
+  "note": "八、己未、十七,遷戶右侍,仍兼前職;九、丁酉、廿五,加少保,兼武英殿大學士。",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1423,
+  "person": "黃淮",
+  "note": "八、己未、十七,出獄,遷通政使,兼武英殿大學士。",
+  "src": "table",
+  "raw_person": "黃淮"
+ },
+ {
+  "year": 1424,
+  "person": "楊士奇",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1424,
+  "person": "楊榮",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1424,
+  "person": "金幼孜",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1424,
+  "person": "黃淮",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "黃淮"
+ },
+ {
+  "year": 1425,
+  "person": "楊士奇",
+  "note": "(六、庚戌、十二,宣宗即位。) 正、丙子、五,進兵尚;五、癸酉、四,充修太宗實錄總裁;閏七、乙巳、八,充修仁宗實錄總裁。",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1425,
+  "person": "楊榮",
+  "note": "五、癸酉、四,充修太宗實錄總裁;閏七、乙巳、八,充修仁宗實錄總裁。",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1425,
+  "person": "楊溥",
+  "note": "閏七、乙丑、廿八,太常卿兼翰林學士入直閣。",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1425,
+  "person": "金幼孜",
+  "note": "正、丙子、五,進禮尚;五、癸酉、四,充修太宗實錄總裁;閏七、乙巳、八、充修仁宗實錄總裁,尋乞省歸。",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1425,
+  "person": "黃淮",
+  "note": "正、丙子、五,進戶尚、少保;五、癸酉、四,充修太宗實錄總裁;閏七、乙巳、八,充修仁宗實錄總裁。",
+  "src": "table",
+  "raw_person": "黃淮"
+ },
+ {
+  "year": 1426,
+  "person": "張瑛",
+  "note": "三、癸丑、十九，遷禮左侍，兼華蓋殿大學士入閣。",
+  "src": "text",
+  "raw_person": "張瑛"
+ },
+ {
+  "year": 1426,
+  "person": "楊士奇",
+  "note": "八、己巳、八，扈從；八、乙酉、廿四，還；九、丙申、六，還京師。",
+  "src": "text",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1426,
+  "person": "楊榮",
+  "note": "八、己巳、八，扈從；八、乙酉、廿四，還；九、丙申、六，還京師。",
+  "src": "text",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1426,
+  "person": "楊溥",
+  "note": "八、己巳、八，扈從；八、乙酉、廿四，還；九、丙申、六，還京師。",
+  "src": "text",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1426,
+  "person": "金幼孜",
+  "note": "五、己酉、十六，召。",
+  "src": "text",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1426,
+  "person": "黃淮",
+  "note": "",
+  "src": "text",
+  "raw_person": "黄淮"
+ },
+ {
+  "year": 1427,
+  "person": "張瑛",
+  "note": "二、癸亥、五，遷禮尚兼華蓋殿大學士。",
+  "src": "text",
+  "raw_person": "張瑛"
+ },
+ {
+  "year": 1427,
+  "person": "楊士奇",
+  "note": "",
+  "src": "text",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1427,
+  "person": "楊榮",
+  "note": "",
+  "src": "text",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1427,
+  "person": "楊溥",
+  "note": "",
+  "src": "text",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1427,
+  "person": "金幼孜",
+  "note": "",
+  "src": "text",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1427,
+  "person": "陳山",
+  "note": "二、癸亥、五，遷戶尚兼謹身殿大學士。",
+  "src": "text",
+  "raw_person": "陳山"
+ },
+ {
+  "year": 1427,
+  "person": "黃淮",
+  "note": "八、甲子、九，致仕。正統十四年六、辛亥、三，卒，謚文簡，贈太師。",
+  "src": "text",
+  "raw_person": "黃淮"
+ },
+ {
+  "year": 1428,
+  "person": "張瑛",
+  "note": "八、癸卯、廿四，居守。",
+  "src": "text",
+  "raw_person": "張瑛"
+ },
+ {
+  "year": 1428,
+  "person": "楊士奇",
+  "note": "八、癸卯、廿四，扈從北巡；九、癸酉、廿四，還。",
+  "src": "text",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1428,
+  "person": "楊榮",
+  "note": "八、癸卯、廿四，扈從北巡；九、癸酉、廿四，還。",
+  "src": "text",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1428,
+  "person": "楊溥",
+  "note": "八、癸卯、廿四，扈從北巡；九、癸酉、廿四，還。",
+  "src": "text",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1428,
+  "person": "金幼孜",
+  "note": "",
+  "src": "text",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1428,
+  "person": "陳山",
+  "note": "",
+  "src": "text",
+  "raw_person": "陳山"
+ },
+ {
+  "year": 1429,
+  "person": "張瑛",
+  "note": "十、庚寅、十七,改南京禮尚,兼職如故。正統元年十、丙寅、四,卒。",
+  "src": "table",
+  "raw_person": "張瑛"
+ },
+ {
+  "year": 1429,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1429,
+  "person": "楊榮",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1429,
+  "person": "楊溥",
+  "note": "八、己卯、五,丁憂,尋起復。",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1429,
+  "person": "金幼孜",
+  "note": "",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1429,
+  "person": "陳山",
+  "note": "十、庚寅、十七,專授小内使書。",
+  "src": "table",
+  "raw_person": "陳山"
+ },
+ {
+  "year": 1430,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1430,
+  "person": "楊榮",
+  "note": "四、甲申、十四,進少傅,兼職如故。",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1430,
+  "person": "楊溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1430,
+  "person": "金幼孜",
+  "note": "",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1431,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1431,
+  "person": "楊榮",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1431,
+  "person": "楊溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1431,
+  "person": "金幼孜",
+  "note": "十二、丁未、十六,卒,贈少保,謚文靖。",
+  "src": "table",
+  "raw_person": "金幼孜"
+ },
+ {
+  "year": 1432,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1432,
+  "person": "楊榮",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1432,
+  "person": "楊溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1433,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1433,
+  "person": "楊榮",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1433,
+  "person": "楊溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1434,
+  "person": "張瑛",
+  "note": "九、丙子、二,丁外艱歸,葬畢起復,以禮尚兼華蓋殿大學士入閣。",
+  "src": "table",
+  "raw_person": "張瑛"
+ },
+ {
+  "year": 1434,
+  "person": "楊士奇",
+  "note": "九、庚辰、六,巡邊扈從;十、丙午、三,還京師。",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1434,
+  "person": "楊榮",
+  "note": "九、庚辰、六,巡邊扈從;十、丙午、三,還京師。",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1434,
+  "person": "楊溥",
+  "note": "八、丁巳、十三,進禮尚,仍兼學士;九、庚辰、六,巡邊扈從;十、丙午、三,還京師。",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1435,
+  "person": "張瑛",
+  "note": "",
+  "src": "table",
+  "raw_person": "張瑛"
+ },
+ {
+  "year": 1435,
+  "person": "楊士奇",
+  "note": "(正、壬午、十,英宗即位。)",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1435,
+  "person": "楊榮",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1435,
+  "person": "楊溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1436,
+  "person": "張瑛",
+  "note": "十、丙寅、四,卒。",
+  "src": "table",
+  "raw_person": "張瑛"
+ },
+ {
+  "year": 1436,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1436,
+  "person": "楊榮",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1436,
+  "person": "楊溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1437,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1437,
+  "person": "楊榮",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1437,
+  "person": "楊溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1438,
+  "person": "楊士奇",
+  "note": "四、辛未、十八,進太子少師,兼職如故。",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1438,
+  "person": "楊榮",
+  "note": "四、辛未、十八,進太子少師,兼職如故。",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1438,
+  "person": "楊溥",
+  "note": "四、辛未、十八,進少保,兼禮尚武英殿大學士。",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1439,
+  "person": "楊士奇",
+  "note": "二、已未、十,歸省;五、辛酉、十四,還京。",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1439,
+  "person": "楊榮",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1439,
+  "person": "楊溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1440,
+  "person": "曹鼐",
+  "note": "二、乙亥、二,侍講,入閣。",
+  "src": "table",
+  "raw_person": "曹鼐"
+ },
+ {
+  "year": 1440,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1440,
+  "person": "楊榮",
+  "note": "二、丙戌、十三,歸省;七、壬寅、二,卒,贈太師,諡文敏。",
+  "src": "table",
+  "raw_person": "楊榮"
+ },
+ {
+  "year": 1440,
+  "person": "楊溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1440,
+  "person": "馬愉",
+  "note": "二、乙亥、二,侍講學士,入閣。",
+  "src": "table",
+  "raw_person": "馬愉"
+ },
+ {
+  "year": 1441,
+  "person": "曹鼐",
+  "note": "",
+  "src": "table",
+  "raw_person": "曹霸"
+ },
+ {
+  "year": 1441,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1441,
+  "person": "楊溥",
+  "note": "二、丁亥、廿,歸省。",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1441,
+  "person": "馬愉",
+  "note": "",
+  "src": "table",
+  "raw_person": "馬愉"
+ },
+ {
+  "year": 1442,
+  "person": "曹鼐",
+  "note": "",
+  "src": "table",
+  "raw_person": "曹霸"
+ },
+ {
+  "year": 1442,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1442,
+  "person": "楊溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1442,
+  "person": "馬愉",
+  "note": "",
+  "src": "table",
+  "raw_person": "馬愉"
+ },
+ {
+  "year": 1443,
+  "person": "曹鼐",
+  "note": "",
+  "src": "table",
+  "raw_person": "曹霸"
+ },
+ {
+  "year": 1443,
+  "person": "楊士奇",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1443,
+  "person": "楊溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1443,
+  "person": "馬愉",
+  "note": "",
+  "src": "table",
+  "raw_person": "馬愉"
+ },
+ {
+  "year": 1444,
+  "person": "曹鼐",
+  "note": "正、乙丑、十五，遷翰林學士。",
+  "src": "text",
+  "raw_person": "曹鼐"
+ },
+ {
+  "year": 1444,
+  "person": "楊士奇",
+  "note": "三、甲子、十四，卒，贈太師，謚文貞。",
+  "src": "text",
+  "raw_person": "楊士奇"
+ },
+ {
+  "year": 1444,
+  "person": "楊溥",
+  "note": "",
+  "src": "text",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1444,
+  "person": "陳循",
+  "note": "四、丙戌、七，翰林學士，入閣。",
+  "src": "text",
+  "raw_person": "陳循"
+ },
+ {
+  "year": 1444,
+  "person": "馬愉",
+  "note": "正、乙丑、十五，遷翰林學士。",
+  "src": "text",
+  "raw_person": "馬愉"
+ },
+ {
+  "year": 1445,
+  "person": "曹鼐",
+  "note": "十、戊辰、廿八，遷吏左侍兼學士。",
+  "src": "text",
+  "raw_person": "曹禮"
+ },
+ {
+  "year": 1445,
+  "person": "楊溥",
+  "note": "",
+  "src": "text",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1445,
+  "person": "苗衷",
+  "note": "侍讀學士；十、戊辰、廿八，遷兵右侍，入閣仍兼學士。",
+  "src": "text",
+  "raw_person": "苗衷"
+ },
+ {
+  "year": 1445,
+  "person": "陳循",
+  "note": "十、戊辰、廿八，遷戶右侍兼學士。",
+  "src": "text",
+  "raw_person": "陳循"
+ },
+ {
+  "year": 1445,
+  "person": "馬愉",
+  "note": "十、戊辰、廿八，遷禮右侍兼學士。",
+  "src": "text",
+  "raw_person": "馬愉"
+ },
+ {
+  "year": 1445,
+  "person": "高穀",
+  "note": "侍講學士；十、戊辰、廿八，遷工右侍，入閣仍兼學士。",
+  "src": "text",
+  "raw_person": "高穀"
+ },
+ {
+  "year": 1446,
+  "person": "曹鼐",
+  "note": "",
+  "src": "text",
+  "raw_person": "曹霰"
+ },
+ {
+  "year": 1446,
+  "person": "楊溥",
+  "note": "七、己卯、十三，卒，贈太師，謚文定。",
+  "src": "text",
+  "raw_person": "楊溥"
+ },
+ {
+  "year": 1446,
+  "person": "苗衷",
+  "note": "",
+  "src": "text",
+  "raw_person": "苗衷"
+ },
+ {
+  "year": 1446,
+  "person": "陳循",
+  "note": "",
+  "src": "text",
+  "raw_person": "陳循"
+ },
+ {
+  "year": 1446,
+  "person": "馬愉",
+  "note": "三、戊辰、一，歸省。",
+  "src": "text",
+  "raw_person": "馬愉"
+ },
+ {
+  "year": 1446,
+  "person": "高穀",
+  "note": "",
+  "src": "text",
+  "raw_person": "高穀"
+ },
+ {
+  "year": 1447,
+  "person": "曹鼐",
+  "note": "",
+  "src": "table",
+  "raw_person": "曹鼎"
+ },
+ {
+  "year": 1447,
+  "person": "苗衷",
+  "note": "",
+  "src": "table",
+  "raw_person": "苗衷"
+ },
+ {
+  "year": 1447,
+  "person": "陳循",
+  "note": "",
+  "src": "table",
+  "raw_person": "陳循"
+ },
+ {
+  "year": 1447,
+  "person": "馬愉",
+  "note": "九、乙未、六,卒,贈禮尚兼翰林學士。",
+  "src": "table",
+  "raw_person": "馬愉"
+ },
+ {
+  "year": 1447,
+  "person": "高穀",
+  "note": "",
+  "src": "table",
+  "raw_person": "高穀"
+ },
+ {
+  "year": 1448,
+  "person": "曹鼐",
+  "note": "",
+  "src": "table",
+  "raw_person": "曹鼎"
+ },
+ {
+  "year": 1448,
+  "person": "苗衷",
+  "note": "",
+  "src": "table",
+  "raw_person": "苗衷"
+ },
+ {
+  "year": 1448,
+  "person": "陳循",
+  "note": "",
+  "src": "table",
+  "raw_person": "陳循"
+ },
+ {
+  "year": 1448,
+  "person": "高穀",
+  "note": "",
+  "src": "table",
+  "raw_person": "高穀"
+ },
+ {
+  "year": 1449,
+  "person": "商輅",
+  "note": "八、丙子、廿九,入閣,修撰;十二、戊辰、廿二,遷侍讀。",
+  "src": "table",
+  "raw_person": "商輔"
+ },
+ {
+  "year": 1449,
+  "person": "張益",
+  "note": "五、戊戌、十九,侍讀學士入閣;七、癸巳、十五,扈從;八、壬戌、十五,死於難,贈翰林學士。",
+  "src": "table",
+  "raw_person": "張益"
+ },
+ {
+  "year": 1449,
+  "person": "彭時",
+  "note": "八、丙子、廿九,入閣,修撰;十二、戊辰、廿二,遷侍讀。",
+  "src": "table",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1449,
+  "person": "曹鼐",
+  "note": "(九、癸未、六,代宗即位。) 七、癸巳、十五,扈從;八、壬戌、十五,死於難,贈少傅、禮尚兼文淵閣大學士,謚文襄。天順元年十一、庚寅、卅,進太傅、吏尚兼文淵閣大學士。",
+  "src": "table",
+  "raw_person": "曹鼎"
+ },
+ {
+  "year": 1449,
+  "person": "苗衷",
+  "note": "",
+  "src": "table",
+  "raw_person": "苗衷"
+ },
+ {
+  "year": 1449,
+  "person": "陳循",
+  "note": "八、己巳、廿二,遷戶尚,仍兼學士。",
+  "src": "table",
+  "raw_person": "陳循"
+ },
+ {
+  "year": 1449,
+  "person": "高穀",
+  "note": "八、己巳、廿二,遷工尚,仍兼學士。",
+  "src": "table",
+  "raw_person": "高穀"
+ },
+ {
+  "year": 1450,
+  "person": "俞綱",
+  "note": "三、甲子、廿，兵右侍入閣，疏辭，出理部事。",
+  "src": "text",
+  "raw_person": "俞綱"
+ },
+ {
+  "year": 1450,
+  "person": "商輅",
+  "note": "九、庚戌、九，遷翰林學士。",
+  "src": "text",
+  "raw_person": "商輧"
+ },
+ {
+  "year": 1450,
+  "person": "彭時",
+  "note": "閏正、丁卯、廿二，回籍守制；三年三、辛酉、廿八，除侍讀。",
+  "src": "text",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1450,
+  "person": "江淵",
+  "note": "八、辛卯、廿，刑右侍兼翰林學士，入閣；九、丙午、五，遷戶右侍，仍兼學士。",
+  "src": "text",
+  "raw_person": "江淵"
+ },
+ {
+  "year": 1450,
+  "person": "苗衷",
+  "note": "二、己卯、四，遷兵尚兼翰林學士；八、己亥、廿八，致仕。天順四年二、甲寅、七，卒，贈少保，謚文康。",
+  "src": "text",
+  "raw_person": "苗衷"
+ },
+ {
+  "year": 1450,
+  "person": "陳循",
+  "note": "",
+  "src": "text",
+  "raw_person": "陳循"
+ },
+ {
+  "year": 1450,
+  "person": "高穀",
+  "note": "",
+  "src": "text",
+  "raw_person": "高穀"
+ },
+ {
+  "year": 1451,
+  "person": "商輅",
+  "note": "",
+  "src": "text",
+  "raw_person": "商輕"
+ },
+ {
+  "year": 1451,
+  "person": "江淵",
+  "note": "",
+  "src": "text",
+  "raw_person": "江淵"
+ },
+ {
+  "year": 1451,
+  "person": "王一寧",
+  "note": "十二、庚寅、廿六，禮左侍兼翰林學十入閣。",
+  "src": "text",
+  "raw_person": "王一寧"
+ },
+ {
+  "year": 1451,
+  "person": "蕭鎡",
+  "note": "十二、庚寅、廿六，祭酒兼翰林學士入閣。",
+  "src": "text",
+  "raw_person": "蕭鑛"
+ },
+ {
+  "year": 1451,
+  "person": "陳循",
+  "note": "十二、壬辰、廿八，進少保，戶尚兼文淵閣大學士。",
+  "src": "text",
+  "raw_person": "陳循"
+ },
+ {
+  "year": 1451,
+  "person": "高穀",
+  "note": "十二、壬辰、廿八，進少保，工尚兼東閣大學士。",
+  "src": "text",
+  "raw_person": "高穀"
+ },
+ {
+  "year": 1452,
+  "person": "商輅",
+  "note": "四、乙酉、廿二，進兵左侍兼左春坊大學士，仍兼舊職。",
+  "src": "text",
+  "raw_person": "商載"
+ },
+ {
+  "year": 1452,
+  "person": "江淵",
+  "note": "二、辛未、七，進吏左侍，仍兼學士；四、乙酉、廿二，太子少師，仍兼舊職；九、庚寅、一，奔喪。",
+  "src": "text",
+  "raw_person": "江淵"
+ },
+ {
+  "year": 1452,
+  "person": "王一寧",
+  "note": "四、乙酉、廿二，太子少師，仍兼舊職；七、壬寅、十一，卒，贈太保、禮尚，謚文通。",
+  "src": "text",
+  "raw_person": "王一寧"
+ },
+ {
+  "year": 1452,
+  "person": "王文",
+  "note": "十、戊戌、十，太子太保兼左郎入閣。",
+  "src": "text",
+  "raw_person": "王文"
+ },
+ {
+  "year": 1452,
+  "person": "蕭鎡",
+  "note": "二、辛未、七，進戶右侍，仍兼學士；四、乙酉、廿二，太子少師，仍兼舊職。",
+  "src": "text",
+  "raw_person": "蕭鑛"
+ },
+ {
+  "year": 1452,
+  "person": "陳循",
+  "note": "四、乙酉、廿二，兼太子太傅，仍兼舊職。",
+  "src": "text",
+  "raw_person": "陳循"
+ },
+ {
+  "year": 1452,
+  "person": "高穀",
+  "note": "四、乙酉、廿二，兼太子太傅，仍兼舊職。",
+  "src": "text",
+  "raw_person": "高穀"
+ },
+ {
+  "year": 1453,
+  "person": "商輅",
+  "note": "正、丁丑、十九,還京;二、癸巳、六,進吏尚兼翰林學士;五、己巳、十三,葬喪;九、乙卯、二,復任。",
+  "src": "table",
+  "raw_person": "江淵商輅"
+ },
+ {
+  "year": 1453,
+  "person": "江淵",
+  "note": "正、丁丑、十九,還京;二、癸巳、六,進吏尚兼翰林學士;五、己巳、十三,葬喪;九、乙卯、二,復任。",
+  "src": "table",
+  "raw_person": "江淵商輅"
+ },
+ {
+  "year": 1453,
+  "person": "王文",
+  "note": "正、丁丑、十九,還京;二、癸巳、六,進吏尚兼翰林學士;五、己巳、十三,葬喪;九、乙卯、二,復任。",
+  "src": "table",
+  "raw_person": "王文"
+ },
+ {
+  "year": 1453,
+  "person": "蕭鎡",
+  "note": "正、丁丑、十九,還京;二、癸巳、六,進吏尚兼翰林學士;五、己巳、十三,葬喪;九、乙卯、二,復任。",
+  "src": "table",
+  "raw_person": "蕭鎐"
+ },
+ {
+  "year": 1453,
+  "person": "陳循",
+  "note": "正、丁丑、十九,還京;二、癸巳、六,進吏尚兼翰林學士;五、己巳、十三,葬喪;九、乙卯、二,復任。",
+  "src": "table",
+  "raw_person": "陳循"
+ },
+ {
+  "year": 1453,
+  "person": "高穀",
+  "note": "正、丁丑、十九,還京;二、癸巳、六,進吏尚兼翰林學士;五、己巳、十三,葬喪;九、乙卯、二,復任。",
+  "src": "table",
+  "raw_person": "高穀"
+ },
+ {
+  "year": 1454,
+  "person": "商輅",
+  "note": "六、戊申、廿八,進少保吏尚兼東閣大學士。正、甲戌、廿二,撫安山東;七、丙寅、十七,還。",
+  "src": "table",
+  "raw_person": "江淵商輅"
+ },
+ {
+  "year": 1454,
+  "person": "江淵",
+  "note": "六、戊申、廿八,進少保吏尚兼東閣大學士。正、甲戌、廿二,撫安山東;七、丙寅、十七,還。",
+  "src": "table",
+  "raw_person": "江淵商輅"
+ },
+ {
+  "year": 1454,
+  "person": "王文",
+  "note": "六、戊申、廿八,進少保吏尚兼東閣大學士。正、甲戌、廿二,撫安山東;七、丙寅、十七,還。",
+  "src": "table",
+  "raw_person": "王文"
+ },
+ {
+  "year": 1454,
+  "person": "蕭鎡",
+  "note": "六、戊申、廿八,進少保吏尚兼東閣大學士。正、甲戌、廿二,撫安山東;七、丙寅、十七,還。",
+  "src": "table",
+  "raw_person": "蕭鎐"
+ },
+ {
+  "year": 1454,
+  "person": "陳循",
+  "note": "六、戊申、廿八,進少保吏尚兼東閣大學士。正、甲戌、廿二,撫安山東;七、丙寅、十七,還。",
+  "src": "table",
+  "raw_person": "陳循"
+ },
+ {
+  "year": 1454,
+  "person": "高穀",
+  "note": "六、戊申、廿八,進少保吏尚兼東閣大學士。正、甲戌、廿二,撫安山東;七、丙寅、十七,還。",
+  "src": "table",
+  "raw_person": "高穀"
+ },
+ {
+  "year": 1455,
+  "person": "商輅",
+  "note": "正、庚戌、四,進太子少師兼工尚理部專。",
+  "src": "table",
+  "raw_person": "商輅"
+ },
+ {
+  "year": 1455,
+  "person": "江淵",
+  "note": "正、庚戌、四,進太子少師兼工尚理部專。",
+  "src": "table",
+  "raw_person": "江淵"
+ },
+ {
+  "year": 1455,
+  "person": "王文",
+  "note": "正、庚戌、四,進太子少師兼工尚理部專。",
+  "src": "table",
+  "raw_person": "王文"
+ },
+ {
+  "year": 1455,
+  "person": "蕭鎡",
+  "note": "正、庚戌、四,進太子少師兼工尚理部專。",
+  "src": "table",
+  "raw_person": "蕭鎐"
+ },
+ {
+  "year": 1455,
+  "person": "陳循",
+  "note": "正、庚戌、四,進太子少師兼工尚理部專。",
+  "src": "table",
+  "raw_person": "陳循"
+ },
+ {
+  "year": 1455,
+  "person": "高穀",
+  "note": "正、庚戌、四,進太子少師兼工尚理部專。",
+  "src": "table",
+  "raw_person": "高穀"
+ },
+ {
+  "year": 1456,
+  "person": "商輅",
+  "note": "五、丁丑、九，兼太常卿。 景泰八年 天順元年",
+  "src": "text",
+  "raw_person": "商輫"
+ },
+ {
+  "year": 1456,
+  "person": "王文",
+  "note": "五、丁丑、九，兼謹身殿大學士。",
+  "src": "text",
+  "raw_person": "王文"
+ },
+ {
+  "year": 1456,
+  "person": "蕭鎡",
+  "note": "五、丁丑、九，遷戶尚。",
+  "src": "text",
+  "raw_person": "蕭鑛"
+ },
+ {
+  "year": 1456,
+  "person": "陳循",
+  "note": "五、丁丑、九，兼華蓋殿大學士。",
+  "src": "text",
+  "raw_person": "陳循"
+ },
+ {
+  "year": 1456,
+  "person": "高穀",
+  "note": "五、丁丑、九，兼謹身殿大學士。",
+  "src": "text",
+  "raw_person": "高穀"
+ },
+ {
+  "year": 1457,
+  "person": "呂原",
+  "note": "六、庚子、八，通政左參議兼侍講入閣；十二、己酉、十九，遷翰林學士。",
+  "src": "text",
+  "raw_person": "呂原"
+ },
+ {
+  "year": 1457,
+  "person": "商輅",
+  "note": "正、甲申、十九，辭左春坊大學士；正、丁亥、廿二，罷為民。",
+  "src": "text",
+  "raw_person": "商輯"
+ },
+ {
+  "year": 1457,
+  "person": "岳正",
+  "note": "六、癸卯、十一，翰林修撰入閣；七、庚午、九，仍於內府授內使書；七、辛未、十，改廣東欽州同知；尋下獄，罷爲民。天順八年三、壬申、十九，起復翰林修撰。",
+  "src": "text",
+  "raw_person": "岳正"
+ },
+ {
+  "year": 1457,
+  "person": "彭時",
+  "note": "九、甲子、三，太常少兼侍讀入閣；十二、己酉、十九，兼翰林學士。",
+  "src": "text",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1457,
+  "person": "徐有貞",
+  "note": "正、壬午、十七，左副都兼翰林學士入閣；正、癸未、十八，遷兵尚，兼職視事加故；三、癸酉、十，封武功伯；三、丙子、十三，兼華蓋殿大學士；六、己亥、七，下獄；六、庚子、八、降廣東右政；七、乙丑、四，下獄；七、癸未、廿二，發金齒爲民。",
+  "src": "text",
+  "raw_person": "徐有貞"
+ },
+ {
+  "year": 1457,
+  "person": "李賢",
+  "note": "二、癸卯、九，吏右侍兼翰林學士入閣；三、癸酉、十，遷吏尚，任事如故；六、己亥、七，下獄；六、庚子、八，降福建右政；六、甲辰、十二，復吏右侍；七、庚午、九，復吏尚兼學士入閣。",
+  "src": "text",
+  "raw_person": "李賢"
+ },
+ {
+  "year": 1457,
+  "person": "王文",
+  "note": "正、壬午、十七，逮；正、丁亥、廿二，誅。 成化五年五、辛丑、十八，復官賜祭。 弘治十年十、己丑、廿二，贈太保，謚毅愍。",
+  "src": "text",
+  "raw_person": "王文"
+ },
+ {
+  "year": 1457,
+  "person": "蕭鎡",
+  "note": "正、甲申、十九，辭少師；正、丁亥、廿二，罷爲民。 八年卒。 成化五年四、乙卯、二，復戶尚兼翰林學士。",
+  "src": "text",
+  "raw_person": "蕭鑑"
+ },
+ {
+  "year": 1457,
+  "person": "薛瑄",
+  "note": "正、甲申、十九，禮右侍兼翰林學士入閣；五、甲子、二，進禮左侍，仍兼學士；六、壬寅、十，致仕。天順八年十、甲申、四，卒。",
+  "src": "text",
+  "raw_person": "薛瑄"
+ },
+ {
+  "year": 1457,
+  "person": "許彬",
+  "note": "正、壬午、十七，太常卿遷禮右侍兼翰林學士入閣；",
+  "src": "text",
+  "raw_person": "許彬"
+ },
+ {
+  "year": 1457,
+  "person": "陳循",
+  "note": "正、壬午、十七，英宗復位，改元天順。 正、甲申、十九，辭太傅；正、丁亥、廿二，充鐵嶺衛軍。天順五年十二、庚寅、廿四，釋爲民。抵家一年卒。",
+  "src": "text",
+  "raw_person": "陳循"
+ },
+ {
+  "year": 1457,
+  "person": "高穀",
+  "note": "正、甲申、十九，辭太傅；二、庚子、六，致仕。 四年正、戊子、十，卒。 成化二年十、戊申、十，謚文毅。",
+  "src": "text",
+  "raw_person": "高毅"
+ },
+ {
+  "year": 1458,
+  "person": "呂原",
+  "note": "",
+  "src": "table",
+  "raw_person": "呂原"
+ },
+ {
+  "year": 1458,
+  "person": "彭時",
+  "note": "",
+  "src": "table",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1458,
+  "person": "李賢",
+  "note": "",
+  "src": "table",
+  "raw_person": "李賢"
+ },
+ {
+  "year": 1459,
+  "person": "呂原",
+  "note": "",
+  "src": "table",
+  "raw_person": "呂原"
+ },
+ {
+  "year": 1459,
+  "person": "彭時",
+  "note": "",
+  "src": "table",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1459,
+  "person": "李賢",
+  "note": "",
+  "src": "table",
+  "raw_person": "李賢"
+ },
+ {
+  "year": 1460,
+  "person": "呂原",
+  "note": "",
+  "src": "table",
+  "raw_person": "呂原"
+ },
+ {
+  "year": 1460,
+  "person": "彭時",
+  "note": "",
+  "src": "table",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1460,
+  "person": "李賢",
+  "note": "",
+  "src": "table",
+  "raw_person": "李賢"
+ },
+ {
+  "year": 1461,
+  "person": "呂原",
+  "note": "",
+  "src": "table",
+  "raw_person": "呂原"
+ },
+ {
+  "year": 1461,
+  "person": "彭時",
+  "note": "",
+  "src": "table",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1461,
+  "person": "李賢",
+  "note": "八、癸未、十六,加太子少保。",
+  "src": "table",
+  "raw_person": "李賢"
+ },
+ {
+  "year": 1462,
+  "person": "呂原",
+  "note": "十一、庚申、廿九,卒,贈禮左侍,謚文懿。",
+  "src": "table",
+  "raw_person": "呂原"
+ },
+ {
+  "year": 1462,
+  "person": "彭時",
+  "note": "",
+  "src": "table",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1462,
+  "person": "李賢",
+  "note": "",
+  "src": "table",
+  "raw_person": "李賢"
+ },
+ {
+  "year": 1463,
+  "person": "彭時",
+  "note": "",
+  "src": "table",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1463,
+  "person": "李賢",
+  "note": "",
+  "src": "table",
+  "raw_person": "李賢"
+ },
+ {
+  "year": 1463,
+  "person": "陳文",
+  "note": "二、壬戌、三,禮右侍兼翰林學士,入閣。 (正、乙亥、廿二，憲宗即位。)",
+  "src": "table",
+  "raw_person": "陳文"
+ },
+ {
+  "year": 1464,
+  "person": "彭時",
+  "note": "二、庚子、十七，遷吏右侍兼學士。",
+  "src": "text",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1464,
+  "person": "李賢",
+  "note": "二、庚子、十七，遷少保吏尚兼華蓋殿大學士。",
+  "src": "text",
+  "raw_person": "李賢"
+ },
+ {
+  "year": 1464,
+  "person": "陳文",
+  "note": "二、庚子、十七，遷吏左侍兼學士。",
+  "src": "text",
+  "raw_person": "陳文"
+ },
+ {
+  "year": 1465,
+  "person": "彭時",
+  "note": "十、辛丑、廿七，遷兵尚，仍兼學士。",
+  "src": "text",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1465,
+  "person": "李賢",
+  "note": "",
+  "src": "text",
+  "raw_person": "李賢"
+ },
+ {
+  "year": 1465,
+  "person": "陳文",
+  "note": "三、己酉、二，遷禮尚，仍兼學士。",
+  "src": "text",
+  "raw_person": "陳文"
+ },
+ {
+  "year": 1466,
+  "person": "劉定之",
+  "note": "十二、丙辰、十九，太常少兼侍讀學士入閣。",
+  "src": "text",
+  "raw_person": "劉定之"
+ },
+ {
+  "year": 1466,
+  "person": "彭時",
+  "note": "七、壬午、十三，奔喪。",
+  "src": "text",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1466,
+  "person": "李賢",
+  "note": "三、己酉、八，奔喪；五、丙子、六，起復；十二、甲寅、十七，卒，贈太師，謚文達。",
+  "src": "text",
+  "raw_person": "李賢"
+ },
+ {
+  "year": 1466,
+  "person": "陳文",
+  "note": "",
+  "src": "text",
+  "raw_person": "陳文"
+ },
+ {
+  "year": 1467,
+  "person": "劉定之",
+  "note": "八、戊午、廿五，遷工右侍兼學士。",
+  "src": "text",
+  "raw_person": "劉定之"
+ },
+ {
+  "year": 1467,
+  "person": "商輅",
+  "note": "三、戊辰、三，兵左侍兼翰林學士入閣。",
+  "src": "text",
+  "raw_person": "商輯"
+ },
+ {
+  "year": 1467,
+  "person": "彭時",
+  "note": "二、甲辰、八，還朝；八、戊午、廿五，遷太子太保，兼文淵閣大學士，尚書如故。",
+  "src": "text",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1467,
+  "person": "陳文",
+  "note": "八、戊午、廿五，遷太子少保，兼文淵閣大學士，尚書如故。",
+  "src": "text",
+  "raw_person": "陳文"
+ },
+ {
+  "year": 1468,
+  "person": "劉定之",
+  "note": "十、癸丑、廿七，遷禮左侍，仍兼學士。",
+  "src": "text",
+  "raw_person": "劉定之"
+ },
+ {
+  "year": 1468,
+  "person": "商輅",
+  "note": "十、癸丑、廿七，遷兵尚，仍兼學士。",
+  "src": "text",
+  "raw_person": "商輧"
+ },
+ {
+  "year": 1468,
+  "person": "彭時",
+  "note": "",
+  "src": "text",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1468,
+  "person": "陳文",
+  "note": "四、丁巳、廿八，卒，贈少傅，謚莊靖。",
+  "src": "text",
+  "raw_person": "陳文"
+ },
+ {
+  "year": 1469,
+  "person": "劉定之",
+  "note": "八、辛酉、十，卒，贈禮尚，謚文安。",
+  "src": "text",
+  "raw_person": "劉定之"
+ },
+ {
+  "year": 1469,
+  "person": "商輅",
+  "note": "",
+  "src": "text",
+  "raw_person": "商輔"
+ },
+ {
+  "year": 1469,
+  "person": "彭時",
+  "note": "",
+  "src": "text",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1469,
+  "person": "萬安",
+  "note": "五、辛丑、十八，禮左侍兼翰林學士入閣。",
+  "src": "text",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1470,
+  "person": "商輅",
+  "note": "",
+  "src": "table",
+  "raw_person": "商輅"
+ },
+ {
+  "year": 1470,
+  "person": "彭時",
+  "note": "",
+  "src": "table",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1470,
+  "person": "萬安",
+  "note": "",
+  "src": "table",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1471,
+  "person": "商輅",
+  "note": "",
+  "src": "table",
+  "raw_person": "商輅"
+ },
+ {
+  "year": 1471,
+  "person": "彭時",
+  "note": "",
+  "src": "table",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1471,
+  "person": "萬安",
+  "note": "",
+  "src": "table",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1472,
+  "person": "商輅",
+  "note": "",
+  "src": "table",
+  "raw_person": "商輅"
+ },
+ {
+  "year": 1472,
+  "person": "彭時",
+  "note": "",
+  "src": "table",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1472,
+  "person": "萬安",
+  "note": "",
+  "src": "table",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1473,
+  "person": "商輅",
+  "note": "五、辛亥、廿一,遷戶尚,兼職如故。",
+  "src": "table",
+  "raw_person": "商輅"
+ },
+ {
+  "year": 1473,
+  "person": "彭時",
+  "note": "",
+  "src": "table",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1473,
+  "person": "萬安",
+  "note": "五、辛亥、廿一,遷禮尚,兼職如故。",
+  "src": "table",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1474,
+  "person": "商輅",
+  "note": "",
+  "src": "table",
+  "raw_person": "商輅"
+ },
+ {
+  "year": 1474,
+  "person": "彭時",
+  "note": "",
+  "src": "table",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1474,
+  "person": "萬安",
+  "note": "",
+  "src": "table",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1475,
+  "person": "劉吉",
+  "note": "四、乙酉、七,禮左侍兼翰林學士入閣。",
+  "src": "table",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1475,
+  "person": "劉翔",
+  "note": "四、乙酉、七,吏左侍兼翰林學士入閣。",
+  "src": "table",
+  "raw_person": "劉翔"
+ },
+ {
+  "year": 1475,
+  "person": "商輅",
+  "note": "四、乙酉、七,兼文淵閣大學士,尚書如故。",
+  "src": "table",
+  "raw_person": "商輅"
+ },
+ {
+  "year": 1475,
+  "person": "彭時",
+  "note": "正、己巳、十九,進少保,兼職如故;三、辛未、廿二,卒,贈太師,謚文憲。",
+  "src": "table",
+  "raw_person": "彭時"
+ },
+ {
+  "year": 1475,
+  "person": "萬安",
+  "note": "",
+  "src": "table",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1476,
+  "person": "劉吉",
+  "note": "",
+  "src": "text",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1476,
+  "person": "劉珝",
+  "note": "",
+  "src": "text",
+  "raw_person": "劉珰"
+ },
+ {
+  "year": 1476,
+  "person": "商輅",
+  "note": "二、甲申、十，進太子少保吏尚，兼如故。",
+  "src": "text",
+  "raw_person": "商輔"
+ },
+ {
+  "year": 1476,
+  "person": "萬安",
+  "note": "二、甲申、十，進戶尚，兼如故。",
+  "src": "text",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1477,
+  "person": "劉吉",
+  "note": "四、乙巳、八，遷禮尚，仍兼學士。",
+  "src": "text",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1477,
+  "person": "劉珝",
+  "note": "四、乙巳、八，遷吏尚，仍兼學士。",
+  "src": "text",
+  "raw_person": "劉珰"
+ },
+ {
+  "year": 1477,
+  "person": "商輅",
+  "note": "四、乙巳、八，兼謹身殿大學士，兼如故； 六、丁巳、廿二，加太保致仕。 廿二年七、辛酉、十八，卒，贈太傅，謚文毅。",
+  "src": "text",
+  "raw_person": "商輔"
+ },
+ {
+  "year": 1477,
+  "person": "萬安",
+  "note": "四、乙巳、八，加太子少保，兼如故；六月，改文淵閣大學士。",
+  "src": "text",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1478,
+  "person": "劉吉",
+  "note": "二、庚戌、十七、加太子少保，兼文淵閣大學士，尚書如故。",
+  "src": "text",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1478,
+  "person": "劉珝",
+  "note": "二、庚戌、十七，加太子少保，兼文淵閣大學士，尚書如故。",
+  "src": "text",
+  "raw_person": "劉珰"
+ },
+ {
+  "year": 1478,
+  "person": "萬安",
+  "note": "二、庚戌、十七，遷吏尚兼謹身殿大學士；",
+  "src": "text",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1479,
+  "person": "劉吉",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1479,
+  "person": "劉珝",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "劉珝"
+ },
+ {
+  "year": 1479,
+  "person": "萬安",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1480,
+  "person": "劉吉",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1480,
+  "person": "劉珝",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "劉珝"
+ },
+ {
+  "year": 1480,
+  "person": "萬安",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1481,
+  "person": "劉吉",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1481,
+  "person": "劉珝",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "劉珝"
+ },
+ {
+  "year": 1481,
+  "person": "萬安",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1482,
+  "person": "劉吉",
+  "note": "正、庚寅、廿一,丁憂歸;七、壬申、五,起復;十二、辛未、七,遷太子太保兼武英殿大學士,尚書如故。",
+  "src": "table",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1482,
+  "person": "劉翊",
+  "note": "十二、辛未、七,遷太子太保兼謹身殿大學士,尚書如故。",
+  "src": "table",
+  "raw_person": "劉翊"
+ },
+ {
+  "year": 1482,
+  "person": "萬安",
+  "note": "十二、辛未、七,遷太子太傅兼華蓋殿大學士,尚書如故。",
+  "src": "table",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1483,
+  "person": "劉吉",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1483,
+  "person": "劉翊",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉翊"
+ },
+ {
+  "year": 1483,
+  "person": "萬安",
+  "note": "",
+  "src": "table",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1484,
+  "person": "劉吉",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1484,
+  "person": "劉翊",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉翊"
+ },
+ {
+  "year": 1484,
+  "person": "萬安",
+  "note": "",
+  "src": "table",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1485,
+  "person": "劉吉",
+  "note": "十二、甲申、七,遷戶尚兼謹身殿大學士。",
+  "src": "table",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1485,
+  "person": "劉翊",
+  "note": "九、甲子、十六,致仕。弘治三年三、己未、七,卒,謚文和。",
+  "src": "table",
+  "raw_person": "劉翊"
+ },
+ {
+  "year": 1485,
+  "person": "彭華",
+  "note": "十二、甲申、七,吏左侍兼翰林學士入閣。",
+  "src": "table",
+  "raw_person": "彭華"
+ },
+ {
+  "year": 1485,
+  "person": "萬安",
+  "note": "",
+  "src": "table",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1486,
+  "person": "劉吉",
+  "note": "十、己亥、廿八,加少保兼太傅,尚書大學士如故。",
+  "src": "table",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1486,
+  "person": "尹直",
+  "note": "九、丁卯、廿五,戶左侍兼翰林學士入閣;十、己亥、廿八,加太子少保,遷兵尚,仍兼學士。",
+  "src": "table",
+  "raw_person": "尹直"
+ },
+ {
+  "year": 1486,
+  "person": "彭華",
+  "note": "十、己亥、廿八,遷禮尚加少保,仍兼學士。",
+  "src": "table",
+  "raw_person": "彭華"
+ },
+ {
+  "year": 1486,
+  "person": "萬安",
+  "note": "十、己亥、廿八,加少傅兼太師,尚書大學士如故。",
+  "src": "table",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1487,
+  "person": "劉健",
+  "note": "十一、乙卯、廿,禮右侍兼翰林學士入閣。",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1487,
+  "person": "劉吉",
+  "note": "十一、乙卯、廿,遷少傅兼太師吏尚,大學士如故。",
+  "src": "table",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1487,
+  "person": "尹直",
+  "note": "十一、癸丑、十八,致仕。正德六年十二、戊子、十二,卒,謚文和。",
+  "src": "table",
+  "raw_person": "尹直"
+ },
+ {
+  "year": 1487,
+  "person": "彭華",
+  "note": "三、丁未、七,致仕。弘治九年十、己卯、六,卒,贈少傅,謚文惠。",
+  "src": "table",
+  "raw_person": "彭華"
+ },
+ {
+  "year": 1487,
+  "person": "徐溥",
+  "note": "十、癸巳、廿七,吏左侍兼翰林學士入閣;十一、乙卯、廿,遷禮尚兼文淵閣大學士。",
+  "src": "table",
+  "raw_person": "徐溥"
+ },
+ {
+  "year": 1487,
+  "person": "萬安",
+  "note": "(九、壬寅、六,孝宗即位。) 七、己未、廿二,遷少師,兼職如故;十、丁亥,廿一、致仕。弘治二年三、己巳、十一,卒,贈太師,謚文康。",
+  "src": "table",
+  "raw_person": "萬安"
+ },
+ {
+  "year": 1488,
+  "person": "劉健",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1488,
+  "person": "劉吉",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1488,
+  "person": "徐溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "徐溥"
+ },
+ {
+  "year": 1489,
+  "person": "劉健",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1489,
+  "person": "劉吉",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1489,
+  "person": "徐溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "徐溥"
+ },
+ {
+  "year": 1490,
+  "person": "劉健",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1490,
+  "person": "劉吉",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1490,
+  "person": "徐溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "徐溥"
+ },
+ {
+  "year": 1491,
+  "person": "丘濬",
+  "note": "十、乙丑、廿二,太保禮尚兼文淵閣大學十入。",
+  "src": "table",
+  "raw_person": "丘濬"
+ },
+ {
+  "year": 1491,
+  "person": "劉健",
+  "note": "八、戊辰、廿四,進禮尚兼文淵閣學士。",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1491,
+  "person": "劉吉",
+  "note": "八、戊辰、廿四,進少師華蓋殿大學士。",
+  "src": "table",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1491,
+  "person": "徐溥",
+  "note": "八、戊辰、廿四,進太傅戶尚兼武英殿大學士。",
+  "src": "table",
+  "raw_person": "徐溥"
+ },
+ {
+  "year": 1492,
+  "person": "丘濬",
+  "note": "",
+  "src": "table",
+  "raw_person": "丘濬"
+ },
+ {
+  "year": 1492,
+  "person": "劉健",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1492,
+  "person": "劉吉",
+  "note": "八、癸卯、五,致仕。六年十一、丁未、十六,卒,贈太師,諡文穆。",
+  "src": "table",
+  "raw_person": "劉吉"
+ },
+ {
+  "year": 1492,
+  "person": "徐溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "徐溥"
+ },
+ {
+  "year": 1493,
+  "person": "丘濬",
+  "note": "",
+  "src": "table",
+  "raw_person": "丘濬"
+ },
+ {
+  "year": 1493,
+  "person": "劉健",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1493,
+  "person": "徐溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "徐溥"
+ },
+ {
+  "year": 1494,
+  "person": "丘濬",
+  "note": "八、乙丑、九,進少保兼太子太保戶尚武英殿大學士。",
+  "src": "table",
+  "raw_person": "丘濬"
+ },
+ {
+  "year": 1494,
+  "person": "劉健",
+  "note": "八、乙丑、九,進太保兼禮尚武英殿大學士。",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1494,
+  "person": "徐溥",
+  "note": "八、乙丑、九,進少傅兼太子太傅吏尚謹身殿大學士。",
+  "src": "table",
+  "raw_person": "徐溥"
+ },
+ {
+  "year": 1495,
+  "person": "丘濬",
+  "note": "二、戊午、四,卒,贈太傅,諡文莊。",
+  "src": "table",
+  "raw_person": "丘濬"
+ },
+ {
+  "year": 1495,
+  "person": "劉健",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1495,
+  "person": "徐溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "徐溥"
+ },
+ {
+  "year": 1495,
+  "person": "李東陽",
+  "note": "二、乙丑、十一,禮右侍兼侍讀學士入。",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1495,
+  "person": "謝遷",
+  "note": "二、乙丑、十一,少詹事兼侍講學士入;十、己巳、廿,服閎,遷詹事兼侍講學士。",
+  "src": "table",
+  "raw_person": "謝遷"
+ },
+ {
+  "year": 1496,
+  "person": "劉健",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1496,
+  "person": "徐溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "徐溥"
+ },
+ {
+  "year": 1496,
+  "person": "李東陽",
+  "note": "",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1496,
+  "person": "謝遷",
+  "note": "",
+  "src": "table",
+  "raw_person": "謝遷"
+ },
+ {
+  "year": 1497,
+  "person": "劉健",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1497,
+  "person": "徐溥",
+  "note": "",
+  "src": "table",
+  "raw_person": "徐溥"
+ },
+ {
+  "year": 1497,
+  "person": "李東陽",
+  "note": "",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1497,
+  "person": "謝遷",
+  "note": "",
+  "src": "table",
+  "raw_person": "謝邋"
+ },
+ {
+  "year": 1498,
+  "person": "劉健",
+  "note": "二、丙申、卅,加少傅兼太子太傅戶尚謹身殿大學士;五、甲辰、九,秩滿加特進。",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1498,
+  "person": "徐溥",
+  "note": "二、丙申、卅,加少師兼太子太傅華蓋殿大學士,尚書如故;七、癸亥、廿九,致仕。十二年九、戊辰、十一,卒,贈太師,謚文靖。",
+  "src": "table",
+  "raw_person": "徐溥"
+ },
+ {
+  "year": 1498,
+  "person": "李東陽",
+  "note": "二、丙申、卅,遷太子少保禮尚兼文淵閣大學士。",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1498,
+  "person": "謝遷",
+  "note": "二、丙申、卅,遷太子少保兵尚兼東閣大學士。",
+  "src": "table",
+  "raw_person": "謝邋"
+ },
+ {
+  "year": 1499,
+  "person": "劉健",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1499,
+  "person": "李東陽",
+  "note": "",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1499,
+  "person": "謝遷",
+  "note": "",
+  "src": "table",
+  "raw_person": "謝邋"
+ },
+ {
+  "year": 1500,
+  "person": "劉健",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1500,
+  "person": "李東陽",
+  "note": "",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1500,
+  "person": "謝遷",
+  "note": "",
+  "src": "table",
+  "raw_person": "謝邋"
+ },
+ {
+  "year": 1501,
+  "person": "劉健",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1501,
+  "person": "李東陽",
+  "note": "",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1501,
+  "person": "謝遷",
+  "note": "",
+  "src": "table",
+  "raw_person": "謝邋"
+ },
+ {
+  "year": 1502,
+  "person": "劉健",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1502,
+  "person": "李東陽",
+  "note": "",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1502,
+  "person": "謝遷",
+  "note": "",
+  "src": "table",
+  "raw_person": "謝邋"
+ },
+ {
+  "year": 1503,
+  "person": "劉健",
+  "note": "二、乙丑、廿八,加少師兼太子太師吏尚華蓋殿大學士。",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1503,
+  "person": "李東陽",
+  "note": "二、乙丑、廿八,進太子太保戶尚兼謹身殿大學士。",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1503,
+  "person": "謝遷",
+  "note": "二、乙丑、廿八,進太子少保禮尚兼武英殿大學士。",
+  "src": "table",
+  "raw_person": "謝遷"
+ },
+ {
+  "year": 1504,
+  "person": "劉健",
+  "note": "",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1504,
+  "person": "李東陽",
+  "note": "",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1504,
+  "person": "謝遷",
+  "note": "",
+  "src": "table",
+  "raw_person": "謝遷"
+ },
+ {
+  "year": 1505,
+  "person": "劉健",
+  "note": "(五、壬寅、十八,武宗即位。) 七、戊戌、十五,加左柱國。",
+  "src": "table",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1505,
+  "person": "李東陽",
+  "note": "七、戊戌、十五,加少傅兼太子太傅;八、乙丑、十三,加柱國。",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1505,
+  "person": "謝遷",
+  "note": "七、戊戌、十五,加少傅兼太子太傅;八、乙丑、十三,加柱國。",
+  "src": "table",
+  "raw_person": "謝遷"
+ },
+ {
+  "year": 1506,
+  "person": "劉健",
+  "note": "十、戊午、十三，致仕。嘉靖六年三、壬午、五，卒，贈太師，謚文靖。",
+  "src": "text",
+  "raw_person": "劉健"
+ },
+ {
+  "year": 1506,
+  "person": "李東陽",
+  "note": "十二、庚申、十六，遷少師兼太子太師吏尚華蓋殿大學士。 謝遷十、戊午、十三，致仕。嘉靖十年二、戊辰、十三，卒，贈太傅，謚文正。",
+  "src": "text",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1506,
+  "person": "焦芳",
+  "note": "十、壬戌、十七，吏尚兼文淵閣大學士人，仍掌吏部印；",
+  "src": "text",
+  "raw_person": "焦芳"
+ },
+ {
+  "year": 1506,
+  "person": "王鏊",
+  "note": "十、壬戌、十七，吏左侍兼翰林學士入；十二、庚申、十六，遷戶尚兼文淵閣大學士。",
+  "src": "text",
+  "raw_person": "王整"
+ },
+ {
+  "year": 1507,
+  "person": "李東陽",
+  "note": "",
+  "src": "text",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1507,
+  "person": "楊廷和",
+  "note": "八、丁亥、十六，南戶尚入；十、丙戌、十六，改戶尚兼文淵閣大學士。",
+  "src": "text",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1507,
+  "person": "焦芳",
+  "note": "八、丙戌、十五，進少傅兼太子太傅謹身殿大學士，尚書如故。",
+  "src": "text",
+  "raw_person": "焦芳"
+ },
+ {
+  "year": 1507,
+  "person": "王鏊",
+  "note": "八、丙戌、十五，進少傅兼太子太傅武英殿大學士，尚書如故。",
+  "src": "text",
+  "raw_person": "王鎏"
+ },
+ {
+  "year": 1508,
+  "person": "李東陽",
+  "note": "",
+  "src": "text",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1508,
+  "person": "楊廷和",
+  "note": "八、壬午、十七，進少保兼太子太保，尚書大學士如故。",
+  "src": "text",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1508,
+  "person": "焦芳",
+  "note": "",
+  "src": "text",
+  "raw_person": "焦芳"
+ },
+ {
+  "year": 1508,
+  "person": "王鏊",
+  "note": "",
+  "src": "text",
+  "raw_person": "王鎏"
+ },
+ {
+  "year": 1509,
+  "person": "劉宇",
+  "note": "六、戊子、廿八,吏尚兼文淵閣大學士入,予告。五年六、丙午、廿二,致仕。七年五、癸酉、卅,卒。",
+  "src": "table",
+  "raw_person": "劉宇"
+ },
+ {
+  "year": 1509,
+  "person": "李東陽",
+  "note": "",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1509,
+  "person": "楊廷和",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1509,
+  "person": "焦芳",
+  "note": "五、丙午、十五,進少師兼太子太師華蓋殿大學士,尚書如故。",
+  "src": "table",
+  "raw_person": "焦芳"
+ },
+ {
+  "year": 1509,
+  "person": "王鏊",
+  "note": "四、乙亥、十四,致仕。嘉靖三年三、丙子、十一,卒;五、己巳、五,卒,贈太傅,諡文恪。",
+  "src": "table",
+  "raw_person": "王鏊"
+ },
+ {
+  "year": 1510,
+  "person": "劉忠",
+  "note": "九、戊午、五,掌詹事府事吏尚兼文淵閣大學士入;九、癸酉、廿,進少傅兼太子太傅武英殿大學士,吏尚如故。",
+  "src": "table",
+  "raw_person": "劉忠"
+ },
+ {
+  "year": 1510,
+  "person": "曹元",
+  "note": "二、癸巳、七,吏尚兼文淵閣大學士入,兼如故;八、己亥、十六,罷為民。十六年卒。",
+  "src": "table",
+  "raw_person": "曹元"
+ },
+ {
+  "year": 1510,
+  "person": "李東陽",
+  "note": "九、癸酉、廿,進左柱國,兼職如故。",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1510,
+  "person": "梁儲",
+  "note": "九、戊午、五,改太子少保吏尚兼文淵閣大學士入;九、癸酉、廿,遷少保兼太子少保武英殿大學士,吏尚如故。",
+  "src": "table",
+  "raw_person": "梁儲"
+ },
+ {
+  "year": 1510,
+  "person": "楊廷和",
+  "note": "二、癸巳、七,進吏尚武英殿大學士,兼職如故。",
+  "src": "table",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1510,
+  "person": "焦芳",
+  "note": "五、癸未、廿九,致仕。十二年三、丁酉、廿二,卒。",
+  "src": "table",
+  "raw_person": "焦芳"
+ },
+ {
+  "year": 1511,
+  "person": "劉忠",
+  "note": "四、癸未、四,展墓,尋致仕歸。嘉靖二年七、癸巳、廿五,卒,贈太傅,諡文肅。",
+  "src": "table",
+  "raw_person": "劉忠"
+ },
+ {
+  "year": 1511,
+  "person": "李東陽",
+  "note": "",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1511,
+  "person": "梁儲",
+  "note": "",
+  "src": "table",
+  "raw_person": "梁儲"
+ },
+ {
+  "year": 1511,
+  "person": "楊廷和",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1511,
+  "person": "費宏",
+  "note": "十二、癸巳、十七,禮尚兼文淵閣大學士入。",
+  "src": "table",
+  "raw_person": "費宏"
+ },
+ {
+  "year": 1512,
+  "person": "李東陽",
+  "note": "十、癸亥、廿三,乞休,允;十二、丁卯、廿七,致仕。十一年七、己亥、廿,卒,贈太師,謚文正。",
+  "src": "table",
+  "raw_person": "李東陽"
+ },
+ {
+  "year": 1512,
+  "person": "梁儲",
+  "note": "十、丁卯、廿七,進少傅兼太子太傅謹身殿大學士,尚書如故。",
+  "src": "table",
+  "raw_person": "梁儲"
+ },
+ {
+  "year": 1512,
+  "person": "楊廷和",
+  "note": "十、丁卯、廿七,進少師兼太子太師華蓋殿大學士,尚書如故。",
+  "src": "table",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1512,
+  "person": "費宏",
+  "note": "十、丁卯、廿七,進太子太保兼武英殿大學士戶尚。",
+  "src": "table",
+  "raw_person": "費宏"
+ },
+ {
+  "year": 1513,
+  "person": "梁儲",
+  "note": "",
+  "src": "table",
+  "raw_person": "梁儲"
+ },
+ {
+  "year": 1513,
+  "person": "楊廷和",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1513,
+  "person": "費宏",
+  "note": "",
+  "src": "table",
+  "raw_person": "費宏"
+ },
+ {
+  "year": 1514,
+  "person": "梁儲",
+  "note": "",
+  "src": "table",
+  "raw_person": "梁儲"
+ },
+ {
+  "year": 1514,
+  "person": "楊一清",
+  "note": "閏四、辛酉、四，吏尚兼武英殿大學士人。",
+  "src": "text",
+  "raw_person": "楊一清"
+ },
+ {
+  "year": 1514,
+  "person": "楊廷和",
+  "note": "三、壬申、十五，丁憂歸，葬畢復任。十一年二、己巳、十八，許終制。",
+  "src": "table",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1514,
+  "person": "費宏",
+  "note": "五、乙丑、三,致仕。",
+  "src": "table",
+  "raw_person": "費宏"
+ },
+ {
+  "year": 1514,
+  "person": "靳貴",
+  "note": "二、丙午、十二,禮尚兼文淵閣大學士人。",
+  "src": "table",
+  "raw_person": "靳貴"
+ },
+ {
+  "year": 1515,
+  "person": "梁儲",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "梁儲"
+ },
+ {
+  "year": 1515,
+  "person": "楊一清",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "楊一清"
+ },
+ {
+  "year": 1515,
+  "person": "楊廷和",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1515,
+  "person": "靳貴",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "靳貴"
+ },
+ {
+  "year": 1516,
+  "person": "梁儲",
+  "note": "",
+  "src": "text",
+  "raw_person": "梁儲"
+ },
+ {
+  "year": 1516,
+  "person": "楊一清",
+  "note": "八、甲子、十五，致仕。嘉靖三年十二、戊午、廿八，起復改兵尚兼左都提督陝西三邊軍務。",
+  "src": "text",
+  "raw_person": "楊一清"
+ },
+ {
+  "year": 1516,
+  "person": "蔣冕",
+  "note": "八、丁丑、廿八，禮尚兼文淵閣大學士人。",
+  "src": "text",
+  "raw_person": "蔣冕"
+ },
+ {
+  "year": 1516,
+  "person": "靳貴",
+  "note": "",
+  "src": "text",
+  "raw_person": "靳貴"
+ },
+ {
+  "year": 1517,
+  "person": "梁儲",
+  "note": "",
+  "src": "text",
+  "raw_person": "梁储"
+ },
+ {
+  "year": 1517,
+  "person": "楊廷和",
+  "note": "十一、丁亥、十五，服閥復入。",
+  "src": "text",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1517,
+  "person": "毛紀",
+  "note": "五、丙子、二，禮尚兼東閣大學士入； 七、甲申、十，加太子太傅兼文淵閣大學士，禮尚如故。",
+  "src": "text",
+  "raw_person": "毛紀"
+ },
+ {
+  "year": 1517,
+  "person": "蔣冕",
+  "note": "七、甲申、十，加太子太傅兼武英殿大學士，禮尚如故。",
+  "src": "text",
+  "raw_person": "蔣冕"
+ },
+ {
+  "year": 1517,
+  "person": "靳貴",
+  "note": "四、壬子、七，致仕。十五年八、壬戌、七，卒，贈太傅，謚文僖。",
+  "src": "text",
+  "raw_person": "靳貴"
+ },
+ {
+  "year": 1518,
+  "person": "梁儲",
+  "note": "",
+  "src": "table",
+  "raw_person": "梁儲"
+ },
+ {
+  "year": 1518,
+  "person": "楊廷和",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1518,
+  "person": "毛紀",
+  "note": "",
+  "src": "table",
+  "raw_person": "毛紀"
+ },
+ {
+  "year": 1518,
+  "person": "蔣冕",
+  "note": "",
+  "src": "table",
+  "raw_person": "蔣冕"
+ },
+ {
+  "year": 1519,
+  "person": "梁儲",
+  "note": "",
+  "src": "table",
+  "raw_person": "梁儲"
+ },
+ {
+  "year": 1519,
+  "person": "楊廷和",
+  "note": "七、丙午、十五,加特進,餘如故。七、丙午、十五,加特進,餘如故;八、壬申、十一,扈從南征。八、壬申、十一,扈從南征。",
+  "src": "table",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1519,
+  "person": "毛紀",
+  "note": "",
+  "src": "table",
+  "raw_person": "毛紀"
+ },
+ {
+  "year": 1519,
+  "person": "蔣冕",
+  "note": "",
+  "src": "table",
+  "raw_person": "蔣冕"
+ },
+ {
+  "year": 1520,
+  "person": "梁儲",
+  "note": "",
+  "src": "table",
+  "raw_person": "梁儲"
+ },
+ {
+  "year": 1520,
+  "person": "楊廷和",
+  "note": "十二、甲午、十,扈從還京。十二、甲午、十,扈從還京。",
+  "src": "table",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1520,
+  "person": "毛紀",
+  "note": "",
+  "src": "table",
+  "raw_person": "毛紀"
+ },
+ {
+  "year": 1520,
+  "person": "蔣冕",
+  "note": "",
+  "src": "table",
+  "raw_person": "蔣冕"
+ },
+ {
+  "year": 1521,
+  "person": "梁儲",
+  "note": "五、丙辰、五,致仕。嘉靖六年九、壬午、八,卒,贈太師,謚文康。",
+  "src": "table",
+  "raw_person": "梁儲"
+ },
+ {
+  "year": 1521,
+  "person": "楊廷和",
+  "note": "(四、癸卯、廿二,世宗即位。)",
+  "src": "table",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1521,
+  "person": "毛紀",
+  "note": "正、庚午、十七,加少保,改戶尚兼武英殿大學士。",
+  "src": "table",
+  "raw_person": "毛紀"
+ },
+ {
+  "year": 1521,
+  "person": "蔣晁",
+  "note": "正、庚午、十七,加少傅謹身殿大學士,尚書如故。",
+  "src": "table",
+  "raw_person": "蔣晁"
+ },
+ {
+  "year": 1521,
+  "person": "袁宗皋",
+  "note": "五、壬戌、十一,吏左侍兼翰林學士遷禮尚兼文淵閣大學士入;九、乙卯、七,卒,贈太子少保,謚榮襄。",
+  "src": "table",
+  "raw_person": "袁宗皋"
+ },
+ {
+  "year": 1521,
+  "person": "費宏",
+  "note": "四、丙午、廿五,召,太子太保禮尚兼武英殿大學士;十、丙午、廿八,復入;十一、庚戌、二,加少保階。",
+  "src": "table",
+  "raw_person": "費宏"
+ },
+ {
+  "year": 1522,
+  "person": "楊廷和",
+  "note": "",
+  "src": "table",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1522,
+  "person": "毛紀",
+  "note": "",
+  "src": "table",
+  "raw_person": "毛紀"
+ },
+ {
+  "year": 1522,
+  "person": "蔣晁",
+  "note": "",
+  "src": "table",
+  "raw_person": "蔣晁"
+ },
+ {
+  "year": 1522,
+  "person": "費宏",
+  "note": "",
+  "src": "table",
+  "raw_person": "費宏"
+ },
+ {
+  "year": 1523,
+  "person": "楊廷和",
+  "note": "九、甲戌、七,加太傅。",
+  "src": "table",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1523,
+  "person": "毛紀",
+  "note": "",
+  "src": "table",
+  "raw_person": "毛紀"
+ },
+ {
+  "year": 1523,
+  "person": "蔣晁",
+  "note": "",
+  "src": "table",
+  "raw_person": "蔣晁"
+ },
+ {
+  "year": 1523,
+  "person": "費宏",
+  "note": "",
+  "src": "table",
+  "raw_person": "費宏"
+ },
+ {
+  "year": 1524,
+  "person": "楊廷和",
+  "note": "二、丙午、十一，致仕。七年六、癸卯、三，削籍。八年六、甲申、廿一，卒。隆慶元年五、甲子、十，復秩；六、戊申、廿五，謚文忠；七、庚申、七，贈太保。",
+  "src": "text",
+  "raw_person": "楊廷和"
+ },
+ {
+  "year": 1524,
+  "person": "毛紀",
+  "note": "七、己丑、廿六，致仕。廿四年六、丁酉、六，卒，贈太保，謚文簡。",
+  "src": "text",
+  "raw_person": "毛紀"
+ },
+ {
+  "year": 1524,
+  "person": "石珤",
+  "note": "五、己卯、十五，吏尚兼文淵閣學士入。",
+  "src": "text",
+  "raw_person": "石珉"
+ },
+ {
+  "year": 1524,
+  "person": "蔣冕",
+  "note": "五、乙丑、一，致仕。十二年卒。隆慶元年四、甲寅、廿九，贈少師，謚文定；六月，進吏尚兼謹身殿大學士。",
+  "src": "text",
+  "raw_person": "蔣冕"
+ },
+ {
+  "year": 1524,
+  "person": "費宏",
+  "note": "五、己卯、十五，吏尚謹身殿大學士，餘如故。",
+  "src": "text",
+  "raw_person": "費宏"
+ },
+ {
+  "year": 1524,
+  "person": "賈詠",
+  "note": "八、乙卯、廿三，禮尚兼文淵閣學士人。",
+  "src": "text",
+  "raw_person": "賈詠"
+ },
+ {
+  "year": 1525,
+  "person": "楊一清",
+  "note": "十一、辛巳、廿六，召。",
+  "src": "text",
+  "raw_person": "楊一清"
+ },
+ {
+  "year": 1525,
+  "person": "石珤",
+  "note": "六、辛亥、廿三，加太子太保，武英殿大學士尚書如故。",
+  "src": "text",
+  "raw_person": "石珉"
+ },
+ {
+  "year": 1525,
+  "person": "費宏",
+  "note": "六、辛亥、廿三，加少師兼太子太師，尚書大學士如故。",
+  "src": "text",
+  "raw_person": "費宏"
+ },
+ {
+  "year": 1525,
+  "person": "賈詠",
+  "note": "六、辛亥、廿三，加太子太保，武英殿大學士尚書如故。",
+  "src": "text",
+  "raw_person": "賈詠"
+ },
+ {
+  "year": 1526,
+  "person": "楊一清",
+  "note": "五、庚子、十八，復吏尚武英殿大學士，加少師，仍兼太子太傅；七、癸未、二，加兼太子太師謹身殿大學士。",
+  "src": "text",
+  "raw_person": "楊一清"
+ },
+ {
+  "year": 1526,
+  "person": "石珤",
+  "note": "七、癸未、二，加少保，餘如故。",
+  "src": "text",
+  "raw_person": "石珉"
+ },
+ {
+  "year": 1526,
+  "person": "費宏",
+  "note": "七、癸未、二，進華蓋殿大學士，餘如故。",
+  "src": "text",
+  "raw_person": "費宏"
+ },
+ {
+  "year": 1526,
+  "person": "賈詠",
+  "note": "七、癸未、二，加少保，餘如故。",
+  "src": "text",
+  "raw_person": "賈詠"
+ },
+ {
+  "year": 1527,
+  "person": "張孚敬",
+  "note": "十、戊申、四，禮尚兼文淵閣大學士人。 謝遷二、庚午、廿三，召；十、甲子、廿，少傅兼太子太傅武英殿大學士人。",
+  "src": "text",
+  "raw_person": "張聰"
+ },
+ {
+  "year": 1527,
+  "person": "楊一清",
+  "note": "八、甲寅、九，加左柱國，華蓋殿大學士，餘如故。",
+  "src": "text",
+  "raw_person": "楊一清"
+ },
+ {
+  "year": 1527,
+  "person": "石珤",
+  "note": "二、癸亥、十六，致仕。八年正、丁巳、廿，卒，贈太保，謚文隱。隆慶元年四、甲寅、廿九，贈少保，改謚文介。",
+  "src": "text",
+  "raw_person": "石珉"
+ },
+ {
+  "year": 1527,
+  "person": "翟鑾",
+  "note": "三、甲午、十七，吏左侍兼翰林院學士入。",
+  "src": "text",
+  "raw_person": "翟鑾"
+ },
+ {
+  "year": 1527,
+  "person": "費宏",
+  "note": "二、癸亥、十六，致仕。",
+  "src": "text",
+  "raw_person": "費宏"
+ },
+ {
+  "year": 1527,
+  "person": "賈詠",
+  "note": "八、癸亥、十八，致仕。十八年三、辛未、四，褫教職。廿六年八、戊申、卅，卒，贈太保，謚文靖。",
+  "src": "text",
+  "raw_person": "賈詠"
+ },
+ {
+  "year": 1528,
+  "person": "張孚敬",
+  "note": "正、癸未、十，加少保兼太子太保，餘如故；",
+  "src": "text",
+  "raw_person": "張聰"
+ },
+ {
+  "year": 1528,
+  "person": "楊一清",
+  "note": "謝遷三、戊寅、七，致仕。",
+  "src": "text",
+  "raw_person": "楊一清"
+ },
+ {
+  "year": 1528,
+  "person": "翟鑾",
+  "note": "六、辛丑、一，遷禮尚兼文淵閣大學上。",
+  "src": "text",
+  "raw_person": "翟鑾"
+ },
+ {
+  "year": 1529,
+  "person": "張孚敬",
+  "note": "八、丙子、十三，回家深省；九、癸巳、一，召還；九、戊戌、六，入閣辦事。",
+  "src": "text",
+  "raw_person": "張聰"
+ },
+ {
+  "year": 1529,
+  "person": "桂萼",
+  "note": "二、癸酉、七，少傅兼太子太傅吏尚武英殿大學士； 八、丙子、十三，革散官學士，以尚書致仕； 九、戊申、十六，復少保兼太子太傅吏尚武英殿大學士致仕； 十一、庚子、八，召。",
+  "src": "text",
+  "raw_person": "桂萼"
+ },
+ {
+  "year": 1529,
+  "person": "楊一清",
+  "note": "九、癸丑、廿一，致仕。 九年四、丙寅、七，削籍；九、甲寅、廿八，卒。十二年，復官。 廿七年，贈太保，謚文襄。",
+  "src": "text",
+  "raw_person": "楊一清"
+ },
+ {
+  "year": 1529,
+  "person": "翟鑾",
+  "note": "",
+  "src": "text",
+  "raw_person": "翟鑾"
+ },
+ {
+  "year": 1530,
+  "person": "張孚敬",
+  "note": "",
+  "src": "table",
+  "raw_person": "張聰"
+ },
+ {
+  "year": 1530,
+  "person": "桂萼",
+  "note": "四、己卯、廿,以原職入閣。",
+  "src": "table",
+  "raw_person": "桂萼"
+ },
+ {
+  "year": 1530,
+  "person": "翟鑾",
+  "note": "",
+  "src": "table",
+  "raw_person": "翟鑾"
+ },
+ {
+  "year": 1531,
+  "person": "張孚敬",
+  "note": "二、壬午、廿七,賜名孚敬,字恭茂;七、戊午、七,免;十一、丁丑、廿七,召。",
+  "src": "table",
+  "raw_person": "張聰"
+ },
+ {
+  "year": 1531,
+  "person": "李時",
+  "note": "九、丙寅、十六,禮尚兼文淵閣大學士人。",
+  "src": "table",
+  "raw_person": "李時"
+ },
+ {
+  "year": 1531,
+  "person": "桂萼",
+  "note": "正、乙巳、廿,疾歸;八、甲辰、廿三,卒,贈太傅,諡文襄。",
+  "src": "table",
+  "raw_person": "桂萼"
+ },
+ {
+  "year": 1531,
+  "person": "翟鑾",
+  "note": "",
+  "src": "table",
+  "raw_person": "翟鑾"
+ },
+ {
+  "year": 1532,
+  "person": "張孚敬",
+  "note": "三、甲寅、五,至京,遷兼太子太師華蓋殿大學士,餘如故;八、辛丑、廿六,致仕。",
+  "src": "table",
+  "raw_person": "張孚敬"
+ },
+ {
+  "year": 1532,
+  "person": "方獻夫",
+  "note": "五、丙子、廿九,太子太保吏尚武英殿大學士人;七、戊辰、廿二,掌吏部事。",
+  "src": "table",
+  "raw_person": "方獻夫"
+ },
+ {
+  "year": 1532,
+  "person": "李時",
+  "note": "",
+  "src": "table",
+  "raw_person": "李時"
+ },
+ {
+  "year": 1532,
+  "person": "翟鑾",
+  "note": "",
+  "src": "table",
+  "raw_person": "翟鑾"
+ },
+ {
+  "year": 1533,
+  "person": "張孚敬",
+  "note": "正、丙辰、十三,召;四、乙亥、三,入。",
+  "src": "table",
+  "raw_person": "張孚敬"
+ },
+ {
+  "year": 1533,
+  "person": "方獻夫",
+  "note": "",
+  "src": "table",
+  "raw_person": "方獻夫"
+ },
+ {
+  "year": 1533,
+  "person": "李時",
+  "note": "",
+  "src": "table",
+  "raw_person": "李時"
+ },
+ {
+  "year": 1533,
+  "person": "翟鑾",
+  "note": "十一、癸丑、十五,丁憂歸。十八年二、壬寅、三,起改兵尚兼右都,充行邊使。",
+  "src": "table",
+  "raw_person": "翟鑾"
+ },
+ {
+  "year": 1534,
+  "person": "張孚敬",
+  "note": "正、丙辰、十九,進少師,餘官如故。",
+  "src": "table",
+  "raw_person": "張孚敬"
+ },
+ {
+  "year": 1534,
+  "person": "方獻夫",
+  "note": "正、丙辰、十九,進少保,餘如故;四、己酉、十三,致仕。廿三年六、甲戌、七,卒,贈太傅,謚文襄。",
+  "src": "table",
+  "raw_person": "方獻夫"
+ },
+ {
+  "year": 1534,
+  "person": "李時",
+  "note": "正、丙辰、十九,進少保,餘如故。",
+  "src": "table",
+  "raw_person": "李時"
+ },
+ {
+  "year": 1535,
+  "person": "張孚敬",
+  "note": "四、甲午、四,致仕。十八年二、乙巳、六,卒,贈太師,謚文忠。",
+  "src": "table",
+  "raw_person": "張孚敬"
+ },
+ {
+  "year": 1535,
+  "person": "李時",
+  "note": "",
+  "src": "table",
+  "raw_person": "李時"
+ },
+ {
+  "year": 1535,
+  "person": "費宏",
+  "note": "七、辛巳、廿二,召;八、庚寅、二,入;十、戊申、廿,卒,贈太保,謚文憲。",
+  "src": "table",
+  "raw_person": "費宏"
+ },
+ {
+  "year": 1536,
+  "person": "夏言",
+  "note": "閏十二、癸亥、十二,少傅太子太師禮尚兼武英殿大學士人。",
+  "src": "table",
+  "raw_person": "夏言"
+ },
+ {
+  "year": 1536,
+  "person": "李時",
+  "note": "九、癸丑、一,加少傅兼謹身殿大學士,餘官如故;十一、己卯、廿七,加兼太子太師;閏十二、癸亥、十二,進華蓋殿大學士。",
+  "src": "table",
+  "raw_person": "李時"
+ },
+ {
+  "year": 1537,
+  "person": "夏言",
+  "note": "",
+  "src": "table",
+  "raw_person": "夏言"
+ },
+ {
+  "year": 1537,
+  "person": "李時",
+  "note": "",
+  "src": "table",
+  "raw_person": "李時"
+ },
+ {
+  "year": 1538,
+  "person": "夏言",
+  "note": "",
+  "src": "table",
+  "raw_person": "夏言"
+ },
+ {
+  "year": 1538,
+  "person": "李時",
+  "note": "十二、乙卯、十六,卒,贈太傅,諡文康。",
+  "src": "table",
+  "raw_person": "李時"
+ },
+ {
+  "year": 1538,
+  "person": "顧鼎臣",
+  "note": "八、丙辰、十六,太子太保禮尚兼文淵閣大學士人。",
+  "src": "table",
+  "raw_person": "顧鼎臣"
+ },
+ {
+  "year": 1539,
+  "person": "夏言",
+  "note": "正、戊戌、廿九,加特進光祿大夫上柱國少師;二、乙卯、十六,南巡扈從;五、己巳、二,以少保兼尚書學士致仕;五、丁丑、十,以少傅兼太子太傅禮尚武英殿大學士復入。",
+  "src": "table",
+  "raw_person": "夏言"
+ },
+ {
+  "year": 1539,
+  "person": "顧鼎臣",
+  "note": "正、戊戌、廿九,加少保兼太子太保,改武英殿大學士。二、乙卯、十六,留守。",
+  "src": "table",
+  "raw_person": "顧鼎臣"
+ },
+ {
+  "year": 1540,
+  "person": "夏言",
+  "note": "十一、甲寅、廿七,加少師兼太子太師,吏尚華蓋殿大學士。",
+  "src": "table",
+  "raw_person": "夏言"
+ },
+ {
+  "year": 1540,
+  "person": "翟鑾",
+  "note": "正、丙午、十三,太子少保禮尚兼武英殿大學十入;十一、甲寅、廿七,加少保兼太子太保,尚書學士如故。",
+  "src": "table",
+  "raw_person": "翟鑾"
+ },
+ {
+  "year": 1540,
+  "person": "顧鼎臣",
+  "note": "十、甲子、六,卒,贈太保,謚文康。",
+  "src": "table",
+  "raw_person": "顧鼎臣"
+ },
+ {
+  "year": 1541,
+  "person": "夏言",
+  "note": "八、庚辰、廿七,奪少師兼太子太師吏尚華蓋殿大學士秩,以少保兼禮尚武英殿大學士致仕;十、丁卯、十五,復。",
+  "src": "table",
+  "raw_person": "夏言"
+ },
+ {
+  "year": 1541,
+  "person": "翟鑾",
+  "note": "",
+  "src": "table",
+  "raw_person": "翟鑾"
+ },
+ {
+  "year": 1542,
+  "person": "嚴嵩",
+  "note": "八、癸巳、十六，禮尚兼武英殿大學士人。",
+  "src": "text",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1542,
+  "person": "夏言",
+  "note": "七、己酉、一，閑住。廿二年十二、己丑、十九，以舊銜致仕。",
+  "src": "text",
+  "raw_person": "夏言"
+ },
+ {
+  "year": 1542,
+  "person": "翟鑾",
+  "note": "八、癸巳、十六，加光祿大夫、柱國、少傅，兼太子太傅謹身殿大學士，餘如故。",
+  "src": "text",
+  "raw_person": "翟鑾"
+ },
+ {
+  "year": 1543,
+  "person": "嚴嵩",
+  "note": "",
+  "src": "text",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1544,
+  "person": "嚴嵩",
+  "note": "八、己巳、三，加太子太傅； 九、戊午、廿二，進吏尚兼謹身殿大學士； 十二、己巳、五，加少傅。",
+  "src": "text",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1544,
+  "person": "張璧",
+  "note": "九、丁未、十一，禮尚兼東閣大學士人。",
+  "src": "text",
+  "raw_person": "張璧"
+ },
+ {
+  "year": 1544,
+  "person": "翟鑾",
+  "note": "八、甲午、廿八，削籍。廿五年十二、癸丑、卅，卒。卅八年十一、丁酉、卅，復職。四十四年十二、乙酉、廿二，謚文懿。",
+  "src": "text",
+  "raw_person": "翟鑾"
+ },
+ {
+  "year": 1544,
+  "person": "許讚",
+  "note": "九、丁未、十一，吏尚兼文淵閣大學士人。",
+  "src": "text",
+  "raw_person": "許讚"
+ },
+ {
+  "year": 1545,
+  "person": "嚴嵩",
+  "note": "七、甲子、四,加太子太師;八、辛卯、一,加少師。",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1545,
+  "person": "夏言",
+  "note": "九、丁丑、十七,召;十二、戊申、十九,少師兼太子太師吏尚華蓋殿大學士起用赴京。",
+  "src": "table",
+  "raw_person": "夏言"
+ },
+ {
+  "year": 1545,
+  "person": "張璧",
+  "note": "七、甲子、四,加太子太保;八、己酉、十九,卒,贈少保,謚文簡。",
+  "src": "table",
+  "raw_person": "張璧"
+ },
+ {
+  "year": 1545,
+  "person": "許讚",
+  "note": "七、甲子、四,加少傅;十一、辛巳、廿二,革職閑住。廿七年七、戊戌、廿五,卒,贈少師,謚文簡。卅一年五、戊申、廿七,復官。",
+  "src": "table",
+  "raw_person": "許讚"
+ },
+ {
+  "year": 1546,
+  "person": "嚴嵩",
+  "note": "",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1546,
+  "person": "夏言",
+  "note": "",
+  "src": "table",
+  "raw_person": "夏言"
+ },
+ {
+  "year": 1547,
+  "person": "嚴嵩",
+  "note": "十一、癸巳、十六,晉華蓋殿大學士,餘如故。",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1547,
+  "person": "夏言",
+  "note": "",
+  "src": "table",
+  "raw_person": "夏言"
+ },
+ {
+  "year": 1548,
+  "person": "嚴嵩",
+  "note": "",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1548,
+  "person": "夏言",
+  "note": "正、癸未、六,革保傅,以吏尚致仕;三、癸巳、十八,逮;十、癸卯、二,殺。隆慶元年十二、己丑、九,復吏尚。",
+  "src": "table",
+  "raw_person": "夏言"
+ },
+ {
+  "year": 1549,
+  "person": "嚴嵩",
+  "note": "二、辛亥、十一,南吏尚改禮尚兼文淵閣大學士人。",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1549,
+  "person": "張治",
+  "note": "二、辛亥、十一,南吏尚改禮尚兼文淵閣大學士人。",
+  "src": "table",
+  "raw_person": "張治"
+ },
+ {
+  "year": 1549,
+  "person": "李本",
+  "note": "二、辛亥、十一,少詹事兼翰林學士人。",
+  "src": "table",
+  "raw_person": "李本"
+ },
+ {
+  "year": 1550,
+  "person": "嚴嵩",
+  "note": "八、乙丑、四,加上柱國;八、辛未、十,辭。八、乙丑、四,加太子太保;十、乙亥、十四,卒,贈少保,謚文隱。隆慶四年六、丙寅、卅,謚文毅。",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1550,
+  "person": "張治",
+  "note": "八、乙丑、四,加上柱國;八、辛未、十,辭。八、乙丑、四,加太子太保;十、乙亥、十四,卒,贈少保,謚文隱。隆慶四年六、丙寅、卅,謚文毅。",
+  "src": "table",
+  "raw_person": "張治"
+ },
+ {
+  "year": 1550,
+  "person": "李本",
+  "note": "八、乙丑、四,遷吏右侍兼東閣大學士。",
+  "src": "table",
+  "raw_person": "李本"
+ },
+ {
+  "year": 1551,
+  "person": "嚴嵩",
+  "note": "十一、庚寅、六,遷禮尚兼東閣大學士。",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1551,
+  "person": "李本",
+  "note": "十一、庚寅、六,遷禮尚兼東閣大學士。",
+  "src": "table",
+  "raw_person": "李本"
+ },
+ {
+  "year": 1552,
+  "person": "嚴嵩",
+  "note": "三、辛卯、九,少保兼太子太保禮尚東閣大學士入,仍掌部事。十、癸丑、四,解部事。",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1552,
+  "person": "徐階",
+  "note": "三、辛卯、九,少保兼太子太保禮尚東閣大學士入,仍掌部事。十、癸丑、四,解部事。",
+  "src": "table",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1552,
+  "person": "李本",
+  "note": "三、辛卯、九,少保兼太子太保禮尚東閣大學士入,仍掌部事。十、癸丑、四,解部事。",
+  "src": "table",
+  "raw_person": "李本"
+ },
+ {
+  "year": 1553,
+  "person": "嚴嵩",
+  "note": "七、壬戌、十八,加柱國。",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1553,
+  "person": "徐階",
+  "note": "七、壬戌、十八,加柱國。",
+  "src": "table",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1553,
+  "person": "李本",
+  "note": "七、壬戌、十八,加柱國。",
+  "src": "table",
+  "raw_person": "李本"
+ },
+ {
+  "year": 1554,
+  "person": "嚴嵩",
+  "note": "八、辛未、三,加太子太傅,進武英殿大學士。八、辛未、三,加太子太保,進文淵閣大學士。",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1554,
+  "person": "徐階",
+  "note": "八、辛未、三,加太子太傅,進武英殿大學士。八、辛未、三,加太子太保,進文淵閣大學士。",
+  "src": "table",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1554,
+  "person": "李本",
+  "note": "八、辛未、三,加太子太傅,進武英殿大學士。八、辛未、三,加太子太保,進文淵閣大學士。",
+  "src": "table",
+  "raw_person": "李本"
+ },
+ {
+  "year": 1555,
+  "person": "嚴嵩",
+  "note": "",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1555,
+  "person": "徐階",
+  "note": "",
+  "src": "table",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1555,
+  "person": "李本",
+  "note": "",
+  "src": "table",
+  "raw_person": "李本"
+ },
+ {
+  "year": 1556,
+  "person": "嚴嵩",
+  "note": "二、己未、卅,暫管吏部事;三、庚辰、廿一,加少保兼武英殿大學士。",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1556,
+  "person": "徐階",
+  "note": "二、己未、卅,暫管吏部事;三、庚辰、廿一,加少保兼武英殿大學士。",
+  "src": "table",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1556,
+  "person": "李本",
+  "note": "二、己未、卅,暫管吏部事;三、庚辰、廿一,加少保兼武英殿大學士。",
+  "src": "table",
+  "raw_person": "李本"
+ },
+ {
+  "year": 1557,
+  "person": "嚴嵩",
+  "note": "",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1557,
+  "person": "徐階",
+  "note": "八、癸巳、十三,加少傅。",
+  "src": "table",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1557,
+  "person": "李本",
+  "note": "七、壬戌、十一,加柱國;八、癸巳、十三,加太子太保。",
+  "src": "table",
+  "raw_person": "李本"
+ },
+ {
+  "year": 1558,
+  "person": "嚴嵩",
+  "note": "",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1558,
+  "person": "徐階",
+  "note": "",
+  "src": "table",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1558,
+  "person": "李本",
+  "note": "",
+  "src": "table",
+  "raw_person": "李本"
+ },
+ {
+  "year": 1559,
+  "person": "嚴嵩",
+  "note": "",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1559,
+  "person": "徐階",
+  "note": "",
+  "src": "table",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1559,
+  "person": "李本",
+  "note": "",
+  "src": "table",
+  "raw_person": "李本"
+ },
+ {
+  "year": 1560,
+  "person": "嚴嵩",
+  "note": "",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1560,
+  "person": "徐階",
+  "note": "八、甲午、一,加太子太師。",
+  "src": "table",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1560,
+  "person": "李本",
+  "note": "八、甲午、一,加少傅。",
+  "src": "table",
+  "raw_person": "李本"
+ },
+ {
+  "year": 1561,
+  "person": "嚴嵩",
+  "note": "",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1561,
+  "person": "徐階",
+  "note": "",
+  "src": "table",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1561,
+  "person": "李本",
+  "note": "五、乙亥、十六,丁憂歸。萬曆十五年六、癸亥、五,卒。",
+  "src": "table",
+  "raw_person": "李本"
+ },
+ {
+  "year": 1561,
+  "person": "袁煒",
+  "note": "十一、甲午、八,太子少保禮尚遷太子太保戶尚兼武英殿大學士人。",
+  "src": "table",
+  "raw_person": "袁煒"
+ },
+ {
+  "year": 1562,
+  "person": "嚴嵩",
+  "note": "五、壬寅、十九,致仕,尋削爲民。四十四年卒。",
+  "src": "table",
+  "raw_person": "嚴嵩"
+ },
+ {
+  "year": 1562,
+  "person": "徐階",
+  "note": "三、己酉、廿五,加少師。",
+  "src": "table",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1562,
+  "person": "袁煒",
+  "note": "三、己酉、廿五,加少保。",
+  "src": "table",
+  "raw_person": "袁煒"
+ },
+ {
+  "year": 1563,
+  "person": "徐階",
+  "note": "",
+  "src": "table",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1563,
+  "person": "袁煒",
+  "note": "",
+  "src": "table",
+  "raw_person": "袁煒"
+ },
+ {
+  "year": 1564,
+  "person": "徐階",
+  "note": "八、丙子、七,進建極殿大學士。",
+  "src": "table",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1564,
+  "person": "袁煒",
+  "note": "八、丙子、七,進少傅兼太子太傅建極殿大學士。",
+  "src": "table",
+  "raw_person": "袁煒"
+ },
+ {
+  "year": 1565,
+  "person": "嚴訥",
+  "note": "四、庚辰、十四,太子太保吏尚兼武英殿大學士入;十一、癸卯、十,予告。萬曆十二年十二、壬戌、廿,卒,贈少保,謐文靖。",
+  "src": "table",
+  "raw_person": "嚴訥"
+ },
+ {
+  "year": 1565,
+  "person": "徐階",
+  "note": "",
+  "src": "table",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1565,
+  "person": "李春芳",
+  "note": "四、庚辰、十四,太子太保禮尚兼武英殿大學士入。 （十二、庚子、十四，世宗薨；十二、壬子、廿六，穆宗即位。）",
+  "src": "table",
+  "raw_person": "李春芳"
+ },
+ {
+  "year": 1565,
+  "person": "袁煒",
+  "note": "三、己未、廿二,疾歸;四、壬午、十六,卒,贈少師,謐文榮。",
+  "src": "table",
+  "raw_person": "袁煒"
+ },
+ {
+  "year": 1566,
+  "person": "徐階",
+  "note": "",
+  "src": "text",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1566,
+  "person": "李春芳",
+  "note": "三、己未、廿八，遷吏尚，兼官如故。",
+  "src": "text",
+  "raw_person": "李春芳"
+ },
+ {
+  "year": 1566,
+  "person": "郭樸",
+  "note": "三、己未、廿八，太子太保吏尚兼武英殿大學士人。",
+  "src": "text",
+  "raw_person": "郭樸"
+ },
+ {
+  "year": 1566,
+  "person": "高拱",
+  "note": "三、己未、廿八，禮尚兼文淵閣大學士人。",
+  "src": "text",
+  "raw_person": "高拱"
+ },
+ {
+  "year": 1567,
+  "person": "張居正",
+  "note": "二、乙未、九，禮右侍兼翰林學士遷吏左侍兼東閣大學十入；四、丁酉、十二，遷禮尚兼武英殿大學士。",
+  "src": "text",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1567,
+  "person": "徐階",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1567,
+  "person": "李春芳",
+  "note": "二、乙未、九，加少保；四、丁酉、十二，加少傅兼太子太傅。",
+  "src": "text",
+  "raw_person": "李春芳"
+ },
+ {
+  "year": 1567,
+  "person": "郭樸",
+  "note": "二、乙未、九，加少保；四、丁酉、十二，加少傅兼太子太傅； 七、甲子、十一，養疾；八、戊子、六，致仕。萬曆廿一年五、壬申、十九，卒；十、癸卯、廿三，予祭葬，謚文簡。",
+  "src": "text",
+  "raw_person": "郭樸"
+ },
+ {
+  "year": 1567,
+  "person": "陳以勤",
+  "note": "二、乙未、九，掌詹事府事吏左侍兼翰林學士遷禮尚兼文淵閣大學士入；四、丁酉、十二，加太子太保。",
+  "src": "text",
+  "raw_person": "陳以勤"
+ },
+ {
+  "year": 1567,
+  "person": "高拱",
+  "note": "二、乙未、九，加少保兼太子太保武英殿大學士；四、丁酉、十二，加少傅兼太子太傅；五、丁丑、廿三，罷。三年十二、庚申、廿二，起復兼掌吏部事。",
+  "src": "text",
+  "raw_person": "高拱"
+ },
+ {
+  "year": 1568,
+  "person": "張居正",
+  "note": "正、乙丑、十五，加少保兼太子太保。",
+  "src": "text",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1568,
+  "person": "徐階",
+  "note": "七、丙寅、十九，致仕。 萬曆十一年閏二、己卯、廿六，卒，贈太師，謚文貞。",
+  "src": "text",
+  "raw_person": "徐階"
+ },
+ {
+  "year": 1568,
+  "person": "李春芳",
+  "note": "正、乙丑、十五，加少師兼太子太師，建極殿大學士。",
+  "src": "text",
+  "raw_person": "李春芳"
+ },
+ {
+  "year": 1568,
+  "person": "陳以勤",
+  "note": "正、乙丑、十五，加少傅兼太子太傅。",
+  "src": "text",
+  "raw_person": "陳以勤"
+ },
+ {
+  "year": 1569,
+  "person": "張居正",
+  "note": "",
+  "src": "table",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1569,
+  "person": "李春芳",
+  "note": "",
+  "src": "table",
+  "raw_person": "李春芳"
+ },
+ {
+  "year": 1569,
+  "person": "趙貞吉",
+  "note": "八、壬戌、廿一,禮尚兼文淵閣大學士入。",
+  "src": "table",
+  "raw_person": "趙貞吉"
+ },
+ {
+  "year": 1569,
+  "person": "陳以勤",
+  "note": "",
+  "src": "table",
+  "raw_person": "陳以勤"
+ },
+ {
+  "year": 1569,
+  "person": "高拱",
+  "note": "十二、庚申、廿二,原少傅兼太子太傅吏尚兼武英殿大學士起復,兼掌吏部事。",
+  "src": "table",
+  "raw_person": "高拱"
+ },
+ {
+  "year": 1570,
+  "person": "張居正",
+  "note": "十二、庚戌、十七,加兼太子太傅吏尚柱國;十二、戊午、廿五,加少傅兼建極殿大學士,餘官如故。",
+  "src": "table",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1570,
+  "person": "李春芳",
+  "note": "六、乙巳、九,加少師;十二、戊午、廿五,進中極殿大學士,餘如故。",
+  "src": "table",
+  "raw_person": "李春芳"
+ },
+ {
+  "year": 1570,
+  "person": "殷士儋",
+  "note": "十一、己丑、廿五,太子太保禮尚兼文淵閣大學士入;十二、戊午、廿五,加少保兼武英殿大學士,餘官如故。",
+  "src": "table",
+  "raw_person": "殷士儋"
+ },
+ {
+  "year": 1570,
+  "person": "趙貞吉",
+  "note": "正、己丑、廿一,加太子太保;二、己亥、一,兼掌都察院;十一、乙酉、廿一,致仕。萬曆四年三、戊申、十五,卒,贈少保,諡文肅。萬曆十八年七、己酉、十,贈光祿大夫。",
+  "src": "table",
+  "raw_person": "趙貞吉"
+ },
+ {
+  "year": 1570,
+  "person": "陳以勤",
+  "note": "三、丁亥、廿,加柱國;七、戊子、廿二,加太子太師致仕。萬曆十四年八、戊子、廿六,卒,贈太保,諡文端。",
+  "src": "table",
+  "raw_person": "陳以勤"
+ },
+ {
+  "year": 1570,
+  "person": "高拱",
+  "note": "十二、戊午、廿五,加少師兼太子太師建極殿大學士,尚書如故。",
+  "src": "table",
+  "raw_person": "高拱"
+ },
+ {
+  "year": 1571,
+  "person": "張居正",
+  "note": "",
+  "src": "table",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1571,
+  "person": "李春芳",
+  "note": "五、戊寅、十七,致仕。萬曆十三年三、庚寅、十九,卒,贈太師,諡文定,予祭葬。",
+  "src": "table",
+  "raw_person": "李春芳"
+ },
+ {
+  "year": 1571,
+  "person": "殷士儋",
+  "note": "十一、己巳、十一,致仕。萬曆十年六、甲午、八,卒。萬曆十一年正、辛巳、廿七,贈太保,諡文通。萬曆廿四年二、庚子、三,改諡文莊。",
+  "src": "table",
+  "raw_person": "殷士儋"
+ },
+ {
+  "year": 1571,
+  "person": "高拱",
+  "note": "",
+  "src": "table",
+  "raw_person": "高拱"
+ },
+ {
+  "year": 1572,
+  "person": "呂調陽",
+  "note": "六、壬午、廿八,禮尚兼文淵閣大學士入;八、丁巳、四,加太子少保,進武英殿大學士。",
+  "src": "table",
+  "raw_person": "呂調陽"
+ },
+ {
+  "year": 1572,
+  "person": "張居正",
+  "note": "八、丁巳、四,加左柱國,進中極殿大學士。",
+  "src": "table",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1572,
+  "person": "高儀",
+  "note": "四、戊辰、十三,太子少保禮尚兼文淵閣大學士入;六、丁丑、廿三,卒;八、辛巳、廿八,贈太子太保,謚文端。天啟元年十二、丁亥、廿,贈少保;",
+  "src": "table",
+  "raw_person": "高儀"
+ },
+ {
+  "year": 1572,
+  "person": "高拱",
+  "note": "六、庚午、十六,罷。萬曆六年十二、戊戌、廿二,卒。萬曆七年二、乙巳、卅,復原職。萬曆卅年三、壬午、廿,贈太師,謚文襄。萬曆卅五年六、丙辰、廿五,加特進光祿大夫。",
+  "src": "table",
+  "raw_person": "高拱"
+ },
+ {
+  "year": 1573,
+  "person": "呂調陽",
+  "note": "十一、戊子、十二,加太子太保。",
+  "src": "table",
+  "raw_person": "呂調陽"
+ },
+ {
+  "year": 1573,
+  "person": "張居正",
+  "note": "",
+  "src": "table",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1574,
+  "person": "呂調陽",
+  "note": "七、丙戌、十四,加少保。",
+  "src": "table",
+  "raw_person": "呂調陽"
+ },
+ {
+  "year": 1574,
+  "person": "張居正",
+  "note": "",
+  "src": "table",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1575,
+  "person": "呂調陽",
+  "note": "",
+  "src": "table",
+  "raw_person": "呂調陽"
+ },
+ {
+  "year": 1575,
+  "person": "張四維",
+  "note": "八、丙子、十一,遷禮尚兼東閣大學士人。",
+  "src": "table",
+  "raw_person": "張四維"
+ },
+ {
+  "year": 1575,
+  "person": "張居正",
+  "note": "",
+  "src": "table",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1576,
+  "person": "呂調陽",
+  "note": "十、乙亥、十六,加太子太傅,晉吏尚,餘如故。",
+  "src": "table",
+  "raw_person": "呂調陽"
+ },
+ {
+  "year": 1576,
+  "person": "張四維",
+  "note": "",
+  "src": "table",
+  "raw_person": "張四維"
+ },
+ {
+  "year": 1576,
+  "person": "張居正",
+  "note": "十、丙子、十七,特進左柱國太傳,俸如伯爵,尋辭太傅伯祿。",
+  "src": "table",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1577,
+  "person": "呂調陽",
+  "note": "八、丙子、廿一,加少傅。",
+  "src": "table",
+  "raw_person": "呂調陽"
+ },
+ {
+  "year": 1577,
+  "person": "張四維",
+  "note": "八、丙子、廿一,加太子太保文淵閣大學士。",
+  "src": "table",
+  "raw_person": "張四維"
+ },
+ {
+  "year": 1577,
+  "person": "張居正",
+  "note": "",
+  "src": "table",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1578,
+  "person": "呂調陽",
+  "note": "二、己酉、廿八,進建極殿大學士,餘如故;七、乙卯、六,疾歸。",
+  "src": "table",
+  "raw_person": "呂調陽"
+ },
+ {
+  "year": 1578,
+  "person": "張四維",
+  "note": "二、己酉、廿八,加少保進武英殿大學士,餘如故。",
+  "src": "table",
+  "raw_person": "張四維"
+ },
+ {
+  "year": 1578,
+  "person": "張居正",
+  "note": "",
+  "src": "table",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1578,
+  "person": "申時行",
+  "note": "三、甲寅、三,吏右侍遷吏左侍兼東閣大學士人。",
+  "src": "table",
+  "raw_person": "申時行"
+ },
+ {
+  "year": 1578,
+  "person": "馬自強",
+  "note": "三、甲寅、三,太子少保禮尚遷太子太保禮尚兼文淵閣大學士人;十、辛卯、十四,卒,贈少保,諧文莊。",
+  "src": "table",
+  "raw_person": "馬自強"
+ },
+ {
+  "year": 1579,
+  "person": "呂調陽",
+  "note": "二、丙申、廿一,致仕。八年正、辛丑、一,卒,贈太傅,諧文簡。",
+  "src": "table",
+  "raw_person": "呂調陽"
+ },
+ {
+  "year": 1579,
+  "person": "張四維",
+  "note": "",
+  "src": "table",
+  "raw_person": "張四維"
+ },
+ {
+  "year": 1579,
+  "person": "張居正",
+  "note": "",
+  "src": "table",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1579,
+  "person": "申時行",
+  "note": "十二、癸酉、二,進禮尚兼文淵閣大學士。",
+  "src": "table",
+  "raw_person": "申時行"
+ },
+ {
+  "year": 1580,
+  "person": "張四維",
+  "note": "四、癸巳、廿四,疾乞假;六、丁卯、廿九,加少傅兼太子太傅。",
+  "src": "table",
+  "raw_person": "張四維"
+ },
+ {
+  "year": 1580,
+  "person": "張居正",
+  "note": "",
+  "src": "table",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1580,
+  "person": "申時行",
+  "note": "",
+  "src": "table",
+  "raw_person": "申時行"
+ },
+ {
+  "year": 1581,
+  "person": "張四維",
+  "note": "十一、癸未,廿三,加柱國。",
+  "src": "table",
+  "raw_person": "張四維"
+ },
+ {
+  "year": 1581,
+  "person": "張居正",
+  "note": "十一、癸未,廿三,加上柱國太傅。",
+  "src": "table",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1581,
+  "person": "申時行",
+  "note": "",
+  "src": "table",
+  "raw_person": "申時行"
+ },
+ {
+  "year": 1582,
+  "person": "余有丁",
+  "note": "六、乙巳、十九,掌詹事府吏左侍遷禮尚兼文淵閣大學士入;九、丁卯、十二,加太子太保。",
+  "src": "table",
+  "raw_person": "余有丁"
+ },
+ {
+  "year": 1582,
+  "person": "張四維",
+  "note": "六、丁酉、十一,加太子太師;九、丁卯、十二,加少師。",
+  "src": "table",
+  "raw_person": "張四維"
+ },
+ {
+  "year": 1582,
+  "person": "張居正",
+  "note": "六、丙申、廿,卒,贈上柱國,謚文忠。十一年三、癸未、一,奪上柱國太師兼太子太師;八、戊午、九,追奪謚。",
+  "src": "table",
+  "raw_person": "張居正"
+ },
+ {
+  "year": 1582,
+  "person": "潘晟",
+  "note": "六、乙巳、十九,太子太保禮尚兼武英殿大學士入;六、庚戌、廿四,致仕。十一年三、癸未、一,冠帶閑住。",
+  "src": "table",
+  "raw_person": "潘晟"
+ },
+ {
+  "year": 1582,
+  "person": "申時行",
+  "note": "六、丁酉、十一,加太子太保;九、丁卯、十二,加少保。",
+  "src": "table",
+  "raw_person": "申時行"
+ },
+ {
+  "year": 1583,
+  "person": "余有丁",
+  "note": "九、乙未、十七,加少保,改戶尚武英殿大學士。",
+  "src": "table",
+  "raw_person": "余有丁"
+ },
+ {
+  "year": 1583,
+  "person": "張四維",
+  "note": "四、丁巳、六,丁憂歸。十三年十、壬午、十六,卒,贈太師,謚文毅。",
+  "src": "table",
+  "raw_person": "張四維"
+ },
+ {
+  "year": 1583,
+  "person": "申時行",
+  "note": "九、乙未、十七,加少保兼太子太傅,改吏尚建極殿大學士。",
+  "src": "table",
+  "raw_person": "申時行"
+ },
+ {
+  "year": 1583,
+  "person": "許國",
+  "note": "四、己未、八,掌詹事府事吏左侍遷禮尚兼東閣大學士入;九、乙未、十七,加太子太保兼文淵閣大學士。",
+  "src": "table",
+  "raw_person": "許國"
+ },
+ {
+  "year": 1584,
+  "person": "余有丁",
+  "note": "九、戊寅、五,加少傅兼太子太傅進建極殿大學士,餘如故;十一、己丑、十七,卒,贈太傅,諡文敏。",
+  "src": "table",
+  "raw_person": "余有丁"
+ },
+ {
+  "year": 1584,
+  "person": "王家屏",
+  "note": "十二、甲辰、二,吏右侍兼侍讀學士遷吏左侍兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "王家屏"
+ },
+ {
+  "year": 1584,
+  "person": "王錫爵",
+  "note": "十二、甲辰、二,省親禮右侍起遷禮尚兼文淵閣大學士入閣。",
+  "src": "table",
+  "raw_person": "王錫爵"
+ },
+ {
+  "year": 1584,
+  "person": "申時行",
+  "note": "九、戊寅、五,加少師兼太子太師進中極殿大學士,餘如故。",
+  "src": "table",
+  "raw_person": "申時行"
+ },
+ {
+  "year": 1584,
+  "person": "許國",
+  "note": "九、戊寅、五,加少保兼太子太傅進武英殿大學士,餘如故。",
+  "src": "table",
+  "raw_person": "許國"
+ },
+ {
+  "year": 1585,
+  "person": "王家屏",
+  "note": "",
+  "src": "table",
+  "raw_person": "王家屏"
+ },
+ {
+  "year": 1585,
+  "person": "王錫爵",
+  "note": "",
+  "src": "table",
+  "raw_person": "王錫爵"
+ },
+ {
+  "year": 1585,
+  "person": "申時行",
+  "note": "五、丙戌、十六,加進光祿大夫。",
+  "src": "table",
+  "raw_person": "申時行"
+ },
+ {
+  "year": 1585,
+  "person": "許國",
+  "note": "",
+  "src": "table",
+  "raw_person": "許國"
+ },
+ {
+  "year": 1586,
+  "person": "王家屏",
+  "note": "九、壬辰、一,丁憂歸。十六年十二、丙申、十七,起遷禮尚兼東閣大學士復入。",
+  "src": "table",
+  "raw_person": "王家屏"
+ },
+ {
+  "year": 1586,
+  "person": "王錫爵",
+  "note": "",
+  "src": "table",
+  "raw_person": "王錫爵"
+ },
+ {
+  "year": 1586,
+  "person": "申時行",
+  "note": "",
+  "src": "table",
+  "raw_person": "申時行"
+ },
+ {
+  "year": 1586,
+  "person": "許國",
+  "note": "八、丁亥、廿五,柱國加少傅兼太子太傅。",
+  "src": "table",
+  "raw_person": "許國"
+ },
+ {
+  "year": 1587,
+  "person": "王錫爵",
+  "note": "二、己卯、廿,加太子太保武英殿大學士;八、辛巳、廿四,給假調理。",
+  "src": "table",
+  "raw_person": "王錫爵"
+ },
+ {
+  "year": 1587,
+  "person": "申時行",
+  "note": "二、己卯、廿,兼支大學士俸。",
+  "src": "table",
+  "raw_person": "申時行"
+ },
+ {
+  "year": 1587,
+  "person": "許國",
+  "note": "二、己卯、廿,兼吏尚建極殿大學士,餘如故。",
+  "src": "table",
+  "raw_person": "許國"
+ },
+ {
+  "year": 1588,
+  "person": "王家屏",
+  "note": "十二、丙申、十七,丁憂吏左侍兼東閣大學士起遷禮尚兼東閣大學士復入。",
+  "src": "table",
+  "raw_person": "王家屏"
+ },
+ {
+  "year": 1588,
+  "person": "王錫爵",
+  "note": "六、甲子、十二,加太子太保。",
+  "src": "table",
+  "raw_person": "王錫爵"
+ },
+ {
+  "year": 1588,
+  "person": "申時行",
+  "note": "四、戊寅、廿五,加左柱國。",
+  "src": "table",
+  "raw_person": "申時行"
+ },
+ {
+  "year": 1588,
+  "person": "許國",
+  "note": "",
+  "src": "table",
+  "raw_person": "許國"
+ },
+ {
+  "year": 1589,
+  "person": "王家屏",
+  "note": "四、己亥、廿三,還朝入閣。",
+  "src": "table",
+  "raw_person": "王家屏"
+ },
+ {
+  "year": 1589,
+  "person": "王錫爵",
+  "note": "",
+  "src": "table",
+  "raw_person": "王錫爵"
+ },
+ {
+  "year": 1589,
+  "person": "申時行",
+  "note": "",
+  "src": "table",
+  "raw_person": "申時行"
+ },
+ {
+  "year": 1589,
+  "person": "許國",
+  "note": "八、辛丑、廿六,晉兼太子太師吏尚,餘如故。",
+  "src": "table",
+  "raw_person": "許國"
+ },
+ {
+  "year": 1590,
+  "person": "王家屏",
+  "note": "",
+  "src": "table",
+  "raw_person": "王家屏"
+ },
+ {
+  "year": 1590,
+  "person": "王錫爵",
+  "note": "四、戊寅、七,乞假調理。",
+  "src": "table",
+  "raw_person": "王錫爵"
+ },
+ {
+  "year": 1590,
+  "person": "申時行",
+  "note": "",
+  "src": "table",
+  "raw_person": "申時行"
+ },
+ {
+  "year": 1590,
+  "person": "許國",
+  "note": "",
+  "src": "table",
+  "raw_person": "許國"
+ },
+ {
+  "year": 1591,
+  "person": "張位",
+  "note": "九、丁丑、十五,教庶吉士禮右侍兼侍讀學士起遷吏左侍兼東閣大學士人;十一、丙子、十四,仍在籍調理。",
+  "src": "table",
+  "raw_person": "張位"
+ },
+ {
+  "year": 1591,
+  "person": "王家屏",
+  "note": "正、癸卯、六,加太子少保。",
+  "src": "table",
+  "raw_person": "王家屏"
+ },
+ {
+  "year": 1591,
+  "person": "王錫爵",
+  "note": "正、癸卯、六,加少傅;六、壬子、十九,歸省;九、癸未、廿一,召。",
+  "src": "table",
+  "raw_person": "王錫爵"
+ },
+ {
+  "year": 1591,
+  "person": "申時行",
+  "note": "正、癸卯、六,加太師;三、庚戌、十四,加太傅;九、辛未、九,致仕。",
+  "src": "table",
+  "raw_person": "申時行"
+ },
+ {
+  "year": 1591,
+  "person": "許國",
+  "note": "正、癸卯、六,加少師;九、己巳、七,致仕。廿四年十二、己巳、七,卒,贈太保,謚文穆。",
+  "src": "table",
+  "raw_person": "許國"
+ },
+ {
+  "year": 1591,
+  "person": "趙志皋",
+  "note": "九、丁丑、十五,吏左侍兼侍禮尚兼東閣大學士人。",
+  "src": "table",
+  "raw_person": "趙志皋"
+ },
+ {
+  "year": 1592,
+  "person": "張位",
+  "note": "四、戊戌、九,入直。",
+  "src": "table",
+  "raw_person": "張位"
+ },
+ {
+  "year": 1592,
+  "person": "王家屏",
+  "note": "三、辛未、十一,疾歸。卅一年十二、庚戌、廿九,卒,贈少保,謚文端。泰昌元年十一、己亥、廿六,加贈太保。",
+  "src": "table",
+  "raw_person": "王家屏"
+ },
+ {
+  "year": 1592,
+  "person": "趙志皋",
+  "note": "",
+  "src": "table",
+  "raw_person": "趙志皋"
+ },
+ {
+  "year": 1593,
+  "person": "張位",
+  "note": "四月，遷禮尚兼文淵閣大學士。",
+  "src": "text",
+  "raw_person": "張位"
+ },
+ {
+  "year": 1593,
+  "person": "王錫爵",
+  "note": "正、辛未、十六，入朝。",
+  "src": "text",
+  "raw_person": "王錫爵"
+ },
+ {
+  "year": 1593,
+  "person": "趙志皋",
+  "note": "四月，加太子太保文淵閣大學士。",
+  "src": "text",
+  "raw_person": "趙志皋"
+ },
+ {
+  "year": 1594,
+  "person": "張位",
+  "note": "二、辛未、廿二，加太子太保。",
+  "src": "text",
+  "raw_person": "張位"
+ },
+ {
+  "year": 1594,
+  "person": "沈一貫",
+  "note": "五、辛卯、十四，南禮尚改禮尚兼東閣大學士人。",
+  "src": "text",
+  "raw_person": "沈一貫"
+ },
+ {
+  "year": 1594,
+  "person": "王錫爵",
+  "note": "二、辛未、廿二，加少傅兼太子太保吏尚進建極殿大學士； 五、庚子、廿三，仍加吏尚兼建極殿大學士致仕。 卅五年五、己丑、廿七，加少保兼太子太保召。",
+  "src": "text",
+  "raw_person": "王錫爵"
+ },
+ {
+  "year": 1594,
+  "person": "趙志皋",
+  "note": "二、辛未、廿二，加少保兼太子太保戶尚；八、乙卯、十，給假。",
+  "src": "text",
+  "raw_person": "趙志皋"
+ },
+ {
+  "year": 1594,
+  "person": "陳于陛",
+  "note": "五、辛卯、十四，掌詹事府事兼教庶吉士禮尚兼翰林學士遷兼東閣大學士入。",
+  "src": "text",
+  "raw_person": "陳於陛"
+ },
+ {
+  "year": 1595,
+  "person": "張位",
+  "note": "十、乙丑、廿六，加太子太保。",
+  "src": "text",
+  "raw_person": "張位"
+ },
+ {
+  "year": 1595,
+  "person": "沈一貫",
+  "note": "十、乙丑、廿六，加太子少保。",
+  "src": "text",
+  "raw_person": "沈一貫"
+ },
+ {
+  "year": 1595,
+  "person": "趙志皋",
+  "note": "",
+  "src": "text",
+  "raw_person": "趙志皋"
+ },
+ {
+  "year": 1595,
+  "person": "陳于陛",
+  "note": "十、乙丑、廿六，加太子少保。",
+  "src": "text",
+  "raw_person": "陳於陛"
+ },
+ {
+  "year": 1596,
+  "person": "張位",
+  "note": "",
+  "src": "table",
+  "raw_person": "張位"
+ },
+ {
+  "year": 1596,
+  "person": "沈一貫",
+  "note": "",
+  "src": "table",
+  "raw_person": "沈一貫"
+ },
+ {
+  "year": 1596,
+  "person": "趙志皋",
+  "note": "三、庚午、三,加少傅兼太子太傅進建極殿大學士,餘如故。",
+  "src": "table",
+  "raw_person": "趙志皋"
+ },
+ {
+  "year": 1596,
+  "person": "陳于陛",
+  "note": "八、丙辰、廿一,加太子太保,改文淵閣大學士;十二、乙亥、十三,卒,贈太保,謚文憲。",
+  "src": "table",
+  "raw_person": "陳於陞"
+ },
+ {
+  "year": 1597,
+  "person": "張位",
+  "note": "五、壬子、廿二,加少保兼太子太保進武英殿大學士兼史尚。",
+  "src": "table",
+  "raw_person": "張位"
+ },
+ {
+  "year": 1597,
+  "person": "沈一貫",
+  "note": "正、癸丑、廿二,給假歸;五、壬子、廿二,加太子太保進武英殿大學士兼戶尚。",
+  "src": "table",
+  "raw_person": "沈一貫"
+ },
+ {
+  "year": 1597,
+  "person": "趙志皋",
+  "note": "",
+  "src": "table",
+  "raw_person": "趙志皋"
+ },
+ {
+  "year": 1598,
+  "person": "張位",
+  "note": "六、癸酉、廿,回籍閑住;六、甲戌,廿一,罷為民當差。",
+  "src": "table",
+  "raw_person": "張位"
+ },
+ {
+  "year": 1598,
+  "person": "沈一貫",
+  "note": "六、甲戌、廿一,給假調理。",
+  "src": "table",
+  "raw_person": "沈一貫"
+ },
+ {
+  "year": 1598,
+  "person": "趙志皋",
+  "note": "十月,養病。",
+  "src": "table",
+  "raw_person": "趙志皋"
+ },
+ {
+  "year": 1599,
+  "person": "沈一貫",
+  "note": "四、庚申、十一,加少保,改吏尚;九、己未、十三,加少保,遷吏尚;九、乙丑、十九,辭;十、戊寅、二,辭恩命。",
+  "src": "table",
+  "raw_person": "沈一貫"
+ },
+ {
+  "year": 1599,
+  "person": "趙志皋",
+  "note": "四、庚申、十一,加太子太師進中極殿大學士;九、己未、十三,加太子太師進中極殿大學士;九、乙丑、十九,辭;十、戊寅,二,辭恩命。",
+  "src": "table",
+  "raw_person": "趙志皋"
+ },
+ {
+  "year": 1600,
+  "person": "沈一貫",
+  "note": "二、己丑、十五,假滿入見;五、丙寅、廿四,加少保,遷吏尚。",
+  "src": "table",
+  "raw_person": "沈一貫"
+ },
+ {
+  "year": 1600,
+  "person": "趙志皋",
+  "note": "養病。",
+  "src": "table",
+  "raw_person": "趙志皋"
+ },
+ {
+  "year": 1601,
+  "person": "朱賡",
+  "note": "九、戊午、廿四,起禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "朱賡"
+ },
+ {
+  "year": 1601,
+  "person": "沈一貫",
+  "note": "七、戊申,十三,加少傅;十一、丙申、二,加兼太子太傅進建極殿大學士。",
+  "src": "table",
+  "raw_person": "沈一貫"
+ },
+ {
+  "year": 1601,
+  "person": "沈鯉",
+  "note": "九、戊午、廿四,起禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "沈鯉"
+ },
+ {
+  "year": 1601,
+  "person": "趙志皋",
+  "note": "是年養病;七、戊申、十三,加少師;九、丁未、十三,卒,贈太傅,謚文懿;九、辛酉、廿七,贈太傅。卅四年八、辛酉、廿五,贈特進光祿大夫。",
+  "src": "table",
+  "raw_person": "趙志皋"
+ },
+ {
+  "year": 1602,
+  "person": "朱賡",
+  "note": "四、癸卯、十二，入朝；七、庚午、十一，加太子少保；七、丁丑、十八，辭。",
+  "src": "text",
+  "raw_person": "朱廣"
+ },
+ {
+  "year": 1602,
+  "person": "沈一貫",
+  "note": "閏二、辛亥、十八，加少傅兼太子太傅；閏二、丁巳、廿四，辭；",
+  "src": "text",
+  "raw_person": "沈一貫"
+ },
+ {
+  "year": 1602,
+  "person": "沈鯉",
+  "note": "七、戊寅、十九，入朝。",
+  "src": "text",
+  "raw_person": "沈鯉"
+ },
+ {
+  "year": 1603,
+  "person": "朱賡",
+  "note": "",
+  "src": "text",
+  "raw_person": "朱赣"
+ },
+ {
+  "year": 1603,
+  "person": "沈一貫",
+  "note": "四、乙巳、十九，加左柱國少傅，兼官如故，遷中極殿大學士。",
+  "src": "text",
+  "raw_person": "沈一貫"
+ },
+ {
+  "year": 1603,
+  "person": "沈鯉",
+  "note": "",
+  "src": "text",
+  "raw_person": "沈鯉"
+ },
+ {
+  "year": 1604,
+  "person": "朱賡",
+  "note": "六、庚辰、一，加太子少保、六、癸未、四，辭；十、乙卯、九，加太子太保文淵閣大學士。",
+  "src": "text",
+  "raw_person": "朱廣"
+ },
+ {
+  "year": 1604,
+  "person": "沈一貫",
+  "note": "六、庚辰、一，加少師兼太子太師；六、壬午、三，辭。",
+  "src": "text",
+  "raw_person": "沈一貫"
+ },
+ {
+  "year": 1604,
+  "person": "沈鯉",
+  "note": "六、庚辰、一，加太子太保；六、癸未、四，辭； 十、乙卯、九，加少保兼太子太保文淵閣大學士。",
+  "src": "text",
+  "raw_person": "沈鯉"
+ },
+ {
+  "year": 1605,
+  "person": "朱賡",
+  "note": "十、癸卯、二,加少保兼太子太保;十、甲子、廿三,辭;十一、甲午、廿四,加少保兼太子太保。",
+  "src": "table",
+  "raw_person": "朱賡"
+ },
+ {
+  "year": 1605,
+  "person": "沈一貫",
+  "note": "十、癸卯、二,加少師兼太子太師;十、甲子、廿三,辭;十一、甲午、廿四,加少師兼太子太師。",
+  "src": "table",
+  "raw_person": "沈一貫"
+ },
+ {
+  "year": 1605,
+  "person": "沈鯉",
+  "note": "十、癸卯、二,加少傅兼太子太傅;十、甲子、廿三,辭;十一、甲午、廿四,加少傅兼太子太傅。",
+  "src": "table",
+  "raw_person": "沈鯉"
+ },
+ {
+  "year": 1606,
+  "person": "朱賡",
+  "note": "",
+  "src": "table",
+  "raw_person": "朱賡"
+ },
+ {
+  "year": 1606,
+  "person": "沈一貫",
+  "note": "七、癸未、十六,致仕。四十三年正、丙子、廿九,卒,贈太師,諡文恭。天啟元年十一、丙午、九,贈太傅。天啟五年四、己丑、十二,加贈太師。",
+  "src": "table",
+  "raw_person": "沈一貫"
+ },
+ {
+  "year": 1606,
+  "person": "沈鯉",
+  "note": "七、癸未、十六,致仕。四十三年六、辛卯、十六,卒,諡文端。四十六年九、辛丑、十六,贈太保。崇禎元年正、己丑、廿七,贈太師;三、丁亥、廿六,給還誥命。",
+  "src": "table",
+  "raw_person": "沈鯉"
+ },
+ {
+  "year": 1607,
+  "person": "于慎行",
+  "note": "五、戊子、廿六,掌詹事府事禮尚太子太保兼東閣大學士入;十一、庚子、十一,至京;十一、乙巳、十六,暫假調理;十二、壬申、十四,卒。卅六年正、癸丑、廿五、贈太子太保,諡文定。天啟元年二、己未、十七,加贈少保。",
+  "src": "table",
+  "raw_person": "于慎行"
+ },
+ {
+  "year": 1607,
+  "person": "朱賡",
+  "note": "正、乙酉、廿一,給假;三、辛未、八,視事;三、庚辰、十七,加少保,進武英殿大學士,改戶尚;十、丙子、十七,加少保,進吏尚兼文華殿大學士。",
+  "src": "table",
+  "raw_person": "朱賡"
+ },
+ {
+  "year": 1607,
+  "person": "李廷機",
+  "note": "五、戊子、廿六,禮左侍遷禮尚兼東閣大學士入;七、壬辰、二,入閣視事。",
+  "src": "table",
+  "raw_person": "李廷機"
+ },
+ {
+  "year": 1607,
+  "person": "王錫爵",
+  "note": "五、己丑、廿七,起吏尚建極殿大學士,加少保兼太子太保召,辭不至。卅八年十二、庚寅、十九卅九年七、癸卯、六,贈太保,諡文肅。天啟元年十一、丁卯、卅,贈太傅。",
+  "src": "table",
+  "raw_person": "王錫爵"
+ },
+ {
+  "year": 1607,
+  "person": "葉向高",
+  "note": "五、戊子、廿六,南吏右侍遷禮尚兼東閣大學士入;十一、乙巳、十六,上疏名列廷機後。",
+  "src": "table",
+  "raw_person": "葉向高"
+ },
+ {
+  "year": 1608,
+  "person": "朱賡",
+  "note": "十一、壬子、廿九,卒,贈太保,諡文懿。天啟元年十一、丙午、九,贈太傅。",
+  "src": "table",
+  "raw_person": "朱赣"
+ },
+ {
+  "year": 1608,
+  "person": "李廷機",
+  "note": "",
+  "src": "table",
+  "raw_person": "李廷機"
+ },
+ {
+  "year": 1608,
+  "person": "葉向高",
+  "note": "",
+  "src": "table",
+  "raw_person": "葉向高"
+ },
+ {
+  "year": 1609,
+  "person": "李廷機",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "李廷機"
+ },
+ {
+  "year": 1609,
+  "person": "葉向高",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "葉向高"
+ },
+ {
+  "year": 1610,
+  "person": "李廷機",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "李廷機"
+ },
+ {
+  "year": 1610,
+  "person": "葉向高",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "葉向高"
+ },
+ {
+  "year": 1611,
+  "person": "李廷機",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "李廷機"
+ },
+ {
+  "year": 1611,
+  "person": "葉向高",
+  "note": "",
+  "src": "book-patch",
+  "raw_person": "葉向高"
+ },
+ {
+  "year": 1612,
+  "person": "李廷機",
+  "note": "九、辛亥、廿,進太子太保致仕;十、壬戌、二,回。 四十四年十一、丁亥、廿,卒。四十六年九、壬辰、七,贈少保,謚文節。",
+  "src": "table",
+  "raw_person": "李廷機"
+ },
+ {
+  "year": 1612,
+  "person": "葉向高",
+  "note": "",
+  "src": "table",
+  "raw_person": "葉向高"
+ },
+ {
+  "year": 1613,
+  "person": "吳道南",
+  "note": "九、壬申、十七,禮右侍遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "吳道南"
+ },
+ {
+  "year": 1613,
+  "person": "方從哲",
+  "note": "九、壬申、十七,吏左侍遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "方從哲"
+ },
+ {
+  "year": 1613,
+  "person": "葉向高",
+  "note": "十一、庚申、六,進少保兼太子太保武英殿大學士,改戶尚; 十二、庚寅、七,加少傅兼太子太傅,改吏尚進建極殿大學士。",
+  "src": "table",
+  "raw_person": "葉向高"
+ },
+ {
+  "year": 1614,
+  "person": "吳道南",
+  "note": "",
+  "src": "table",
+  "raw_person": "吳道南"
+ },
+ {
+  "year": 1614,
+  "person": "方從哲",
+  "note": "",
+  "src": "table",
+  "raw_person": "方從哲"
+ },
+ {
+  "year": 1614,
+  "person": "葉向高",
+  "note": "八、癸卯、廿三,加少師兼太子太師回籍調理。四十八年八、乙丑、廿,召。",
+  "src": "table",
+  "raw_person": "葉向高"
+ },
+ {
+  "year": 1615,
+  "person": "吳道南",
+  "note": "五、戊申、三,入朝。",
+  "src": "table",
+  "raw_person": "吳道南"
+ },
+ {
+  "year": 1615,
+  "person": "方從哲",
+  "note": "",
+  "src": "table",
+  "raw_person": "方從哲"
+ },
+ {
+  "year": 1616,
+  "person": "吳道南",
+  "note": "",
+  "src": "table",
+  "raw_person": "吳道南"
+ },
+ {
+  "year": 1616,
+  "person": "方從哲",
+  "note": "十二、戊申、十二,加太子太保文淵閣大學士。",
+  "src": "table",
+  "raw_person": "方從哲"
+ },
+ {
+  "year": 1617,
+  "person": "吳道南",
+  "note": "七、壬申、十,丁憂歸。泰昌元年十二、己酉、六,進太子太保戶尚兼文淵閣大學士。天啟三年九、乙巳、十八,卒,贈少保,謚文恪。",
+  "src": "table",
+  "raw_person": "吳道南"
+ },
+ {
+  "year": 1617,
+  "person": "方從哲",
+  "note": "正、己丑、廿三,加太子太保。",
+  "src": "table",
+  "raw_person": "方從哲"
+ },
+ {
+  "year": 1618,
+  "person": "方從哲",
+  "note": "",
+  "src": "table",
+  "raw_person": "方從哲"
+ },
+ {
+  "year": 1619,
+  "person": "方從哲",
+  "note": "",
+  "src": "table",
+  "raw_person": "方從哲"
+ },
+ {
+  "year": 1620,
+  "person": "何宗彥",
+  "note": "八、甲子、十九,予告禮左侍遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "何宗彥"
+ },
+ {
+  "year": 1620,
+  "person": "劉一燝",
+  "note": "是年,掌院事禮左侍兼侍讀學士教庶吉士遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "劉一燝"
+ },
+ {
+  "year": 1620,
+  "person": "史繼偕",
+  "note": "八、己酉、四,吏右侍兼侍讀學士遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "史繼偕"
+ },
+ {
+  "year": 1620,
+  "person": "孫如游",
+  "note": "十、庚申、十七,禮尚兼東閣大學士入;十一、己卯、六,入。",
+  "src": "table",
+  "raw_person": "孫如游"
+ },
+ {
+  "year": 1620,
+  "person": "方從哲",
+  "note": "(七、丙申、廿一,神宗崩;八、丙午、一,光宗即位。) 八、癸酉、廿八,加少保,改戶尚,進武英殿大學士;十二、辛酉、十八,進中極殿大學士,致仕。崇禎元年二、戊申、十六,卒,贈太傅,諡文端。",
+  "src": "table",
+  "raw_person": "方從哲"
+ },
+ {
+  "year": 1620,
+  "person": "朱國祚",
+  "note": "八、乙丑、廿,南禮尚改禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "朱國祚"
+ },
+ {
+  "year": 1620,
+  "person": "沈㴶",
+  "note": "八、己酉、四,南禮右侍遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "沈滥"
+ },
+ {
+  "year": 1620,
+  "person": "葉向高",
+  "note": "八、乙丑、廿,召。",
+  "src": "table",
+  "raw_person": "葉向高"
+ },
+ {
+  "year": 1620,
+  "person": "韓爌",
+  "note": "八、甲子、十九,協理詹事府事禮左侍兼侍讀學士教庶吉士起遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "韓燷"
+ },
+ {
+  "year": 1621,
+  "person": "何宗彥",
+  "note": "六、壬申、二,入閣辦事;九、戊午、廿,加太子太傅進文淵閣大學士。",
+  "src": "table",
+  "raw_person": "何宗彥"
+ },
+ {
+  "year": 1621,
+  "person": "劉一燝",
+  "note": "六、壬申、二,加少保兼太子太保進武英殿大學士,改吏尚;六、甲申、十四,加少傅兼太子太傅進建極殿大學士,辭;九、戊午、廿,進中極殿大學士。",
+  "src": "table",
+  "raw_person": "劉一燝"
+ },
+ {
+  "year": 1621,
+  "person": "史繼偕",
+  "note": "十、丙子、九,入,進太子太保文淵閣大學士。",
+  "src": "table",
+  "raw_person": "史繼偕"
+ },
+ {
+  "year": 1621,
+  "person": "孫如游",
+  "note": "閏二、丁亥、十五,進太子太保,文淵閣大學士致仕。天啟五年二、壬寅、廿三,卒,贈少保,諡文恭;四、丙申、十九,贈少保。",
+  "src": "table",
+  "raw_person": "孫如游"
+ },
+ {
+  "year": 1621,
+  "person": "朱國祚",
+  "note": "六、丙子、六,入閣辦事;九、戊午、廿,加太子太保進文淵閣大學士。",
+  "src": "table",
+  "raw_person": "朱國祚"
+ },
+ {
+  "year": 1621,
+  "person": "沈㴶",
+  "note": "六、戊戌、廿八,至京陛見;七,乙巳,六,入閣辦事;九、戊午、廿,加太子太保進文淵閣大學士。",
+  "src": "table",
+  "raw_person": "沈滥"
+ },
+ {
+  "year": 1621,
+  "person": "葉向高",
+  "note": "六、甲申、十四,進中極殿大學士;十、壬辰、廿五,入,加少師兼太子太師進中極殿大學士,辭。",
+  "src": "table",
+  "raw_person": "葉向高"
+ },
+ {
+  "year": 1621,
+  "person": "韓爌",
+  "note": "六、壬申、二,加少保兼太子太保進武英殿大學士,改吏尚;六、甲申、十四,加少傅兼太子太傅進建極殿大學士;九、戊午、廿,進中極殿大學士;十、壬辰、廿五,加少師兼太子太師,進中極殿大學士。",
+  "src": "table",
+  "raw_person": "韓燷"
+ },
+ {
+  "year": 1622,
+  "person": "何宗彥",
+  "note": "",
+  "src": "table",
+  "raw_person": "何宗彥"
+ },
+ {
+  "year": 1622,
+  "person": "劉一燝",
+  "note": "三、丁酉、一,加少師兼太子太師致仕。五年四、戊戌、廿一,削籍,奪誥命。七年十二、己酉、十六,給誥致仕。崇禎元年正、丙戌、廿四,以少傅兼太子太傅吏尚中極殿大學士致仕;七、庚申、一,加少師兼太子太師。崇禎八年卒。崇禎十年六、戊戌、一,贈少師。崇禎十七年六、戊辰、十二,福王時諡文端。",
+  "src": "table",
+  "raw_person": "劉一燝"
+ },
+ {
+  "year": 1622,
+  "person": "史繼偕",
+  "note": "",
+  "src": "table",
+  "raw_person": "史繼偕"
+ },
+ {
+  "year": 1622,
+  "person": "孫承宗",
+  "note": "二、戊寅、十二,禮右侍兼侍讀學士遷兵尚兼東閣大學士入;六、己卯、十五,加太子太保;八、己巳、六,辭加恩。",
+  "src": "table",
+  "raw_person": "孫承宗"
+ },
+ {
+  "year": 1622,
+  "person": "朱國祚",
+  "note": "",
+  "src": "table",
+  "raw_person": "朱國祚"
+ },
+ {
+  "year": 1622,
+  "person": "沈㴶",
+  "note": "七、癸丑、十九,請告歸,加少保。四年五、甲子、十一,卒,贈太保,諡文定。五年五、庚戌、三,贈太保。",
+  "src": "table",
+  "raw_person": "沈滇"
+ },
+ {
+  "year": 1622,
+  "person": "葉向高",
+  "note": "七、壬寅、八,乞假。",
+  "src": "table",
+  "raw_person": "葉向高"
+ },
+ {
+  "year": 1622,
+  "person": "韓爌",
+  "note": "",
+  "src": "table",
+  "raw_person": "韓瘠"
+ },
+ {
+  "year": 1623,
+  "person": "何宗彥",
+  "note": "正、庚子、九,加少保兼太子太保武英殿大學士;七、辛亥、廿三,加少傅兼太子太傅;十一、己未、三,加少傅兼太子太師。",
+  "src": "table",
+  "raw_person": "何宗彥"
+ },
+ {
+  "year": 1623,
+  "person": "史繼偕",
+  "note": "正、庚子、九,改戶尚,加太子太保兼文淵閣大學士;七、己亥、十一,加少保致仕;七、辛亥、廿三,加少傅兼太子太傅。崇禎元年七、庚申、一,加少師兼太子太師。崇禎二年七、丙午、廿三,辭。崇禎八年十二、癸巳、十七,贈少師。",
+  "src": "table",
+  "raw_person": "史繼偕"
+ },
+ {
+  "year": 1623,
+  "person": "孫承宗",
+  "note": "正、庚子、九,加少保兼太子太保文淵閣大學士;七、辛亥、廿三,加少傅兼太子太傅;十一、己未、三,加少傅兼太子太師。",
+  "src": "table",
+  "raw_person": "孫承宗"
+ },
+ {
+  "year": 1623,
+  "person": "朱國祚",
+  "note": "正、庚子、九,加少傅兼太子太保戶尚武英殿大學士;四、己巳、十,加少傅兼太子太傅致仕。四年十、丙午、廿五、卒,贈太傅,諡文恪,五年五、庚戌、三,贈太傅。",
+  "src": "table",
+  "raw_person": "朱國祚"
+ },
+ {
+  "year": 1623,
+  "person": "朱國禎",
+  "note": "正、己酉、十八,協理詹事府事禮右侍兼侍讀學士遷禮尚兼東閣大學士入;六、壬午、廿三,入朝;七、辛亥、廿三,加太子太保兼文淵閣大學士;十一、己未、三,加少保兼太子太保。",
+  "src": "table",
+  "raw_person": "朱國禎"
+ },
+ {
+  "year": 1623,
+  "person": "朱延禧",
+  "note": "正、己酉、十八,教庶吉士禮右侍兼侍讀學士遷禮尚兼東閣大學士入;七、辛亥、廿三,加太子太保兼文淵閣大學士;十一、己未、三,加少保兼太子太保。",
+  "src": "table",
+  "raw_person": "朱延禧"
+ },
+ {
+  "year": 1623,
+  "person": "葉向高",
+  "note": "正、庚子、九,進中極殿大學士;七、辛亥、廿三,加特進光祿大夫左柱國;十二、壬子、廿七,加上柱國太傅。",
+  "src": "table",
+  "raw_person": "葉向高"
+ },
+ {
+  "year": 1623,
+  "person": "韓爌",
+  "note": "正、庚子、九,加少師兼太子太師,進中極殿大學士;七、辛亥、廿三,加特進光祿大夫;十二、壬子、廿七,加左柱國。",
+  "src": "table",
+  "raw_person": "韓瘠"
+ },
+ {
+  "year": 1623,
+  "person": "顧秉謙",
+  "note": "正、己酉、十八,禮尚兼東閣大學士入;七、辛亥、廿三,加太子太保兼文淵閣大學士;十一、己未、三,加少保兼太子太保。",
+  "src": "table",
+  "raw_person": "顧秉謙"
+ },
+ {
+  "year": 1623,
+  "person": "魏廣微",
+  "note": "正、己酉、十八,南禮右侍遷禮尚兼東閣大學士入;十一、己未、三,加太子太保進文淵閣。",
+  "src": "table",
+  "raw_person": "魏廣微"
+ },
+ {
+  "year": 1624,
+  "person": "何宗彥",
+  "note": "正、庚午、十五,卒,贈太傅,謚文毅。",
+  "src": "table",
+  "raw_person": "何宗彥"
+ },
+ {
+  "year": 1624,
+  "person": "孫承宗",
+  "note": "是年出鎮。",
+  "src": "table",
+  "raw_person": "孫承宗"
+ },
+ {
+  "year": 1624,
+  "person": "朱國禎",
+  "note": "十二、壬寅、廿二,加少傅致仕。五年正、戊寅、廿九,進少師兼太子太師改吏尚建極殿大學士。七年十、庚申、廿七,謚文肅。崇禎元年七、庚申、一,加太保。",
+  "src": "table",
+  "raw_person": "朱國禎"
+ },
+ {
+  "year": 1624,
+  "person": "朱延禧",
+  "note": "",
+  "src": "table",
+  "raw_person": "朱延禧"
+ },
+ {
+  "year": 1624,
+  "person": "葉向高",
+  "note": "七、辛酉、九,致仕。五年正、戊寅、廿九,加上柱國。七年八、戊戌、五,加太保。七年八月卒。崇禎元年四、乙未、四,贈太師,謚文忠。",
+  "src": "table",
+  "raw_person": "葉向高"
+ },
+ {
+  "year": 1624,
+  "person": "韓爌",
+  "note": "十一、己巳、十九,致仕。五年七、壬申、廿六,削籍。七年十二、己酉、十六,給誥致仕。崇禎元年正、丙戌、廿四,以光祿大夫少師兼太子太師吏尚兼中極殿大學士致仕;四、庚戌、十九,召;四、丙辰、廿五,存間;四、丁巳、廿六,召。",
+  "src": "table",
+  "raw_person": "韓燥"
+ },
+ {
+  "year": 1624,
+  "person": "顧秉謙",
+  "note": "",
+  "src": "table",
+  "raw_person": "顧秉謙"
+ },
+ {
+  "year": 1624,
+  "person": "魏廣微",
+  "note": "",
+  "src": "table",
+  "raw_person": "魏廣微"
+ },
+ {
+  "year": 1625,
+  "person": "丁紹軾",
+  "note": "八、戊子、十二,實錄副總裁禮右侍遷禮尚兼東閣大學士入;九、甲寅、九,加太子太傅進文淵閣大學士。",
+  "src": "table",
+  "raw_person": "丁紹軾"
+ },
+ {
+  "year": 1625,
+  "person": "周如磐",
+  "note": "八、戊子、十二,協理府事禮尚兼翰林學士遷禮尚兼東閣大學士入;九、甲寅、九,加太子太保進文淵閣大學士;十一、壬子、七,致仕。六年二、甲申、十一,卒,贈少保,謚文懿。",
+  "src": "table",
+  "raw_person": "周如磐"
+ },
+ {
+  "year": 1625,
+  "person": "孫承宗",
+  "note": "是年出鎮;正、戊寅、廿九,進少師兼太子太師兵尚;九、甲寅、九,進左柱國加少師兼太子太師兵尚中極殿大學士;十、庚寅、十五,加光祿大夫致仕。六年四、辛卯、十九,改吏尚,餘官如故;六、戊寅、七,辭改吏尚。崇禎二年十一、辛卯、十,召。",
+  "src": "table",
+  "raw_person": "孫承宗"
+ },
+ {
+  "year": 1625,
+  "person": "朱延禧",
+  "note": "正、戊寅、廿九,進少傅兼太子太師吏尚建極殿大學士;六、丙戌、十,致仕。崇禎元年七、庚申、一,加少師兼太子太師。崇禎十年三、戊辰、廿九,贈太保。",
+  "src": "table",
+  "raw_person": "朱延禧"
+ },
+ {
+  "year": 1625,
+  "person": "顧秉謙",
+  "note": "正、戊寅、廿九,進少傅兼太子太師吏尚建極殿大學士;九、甲寅、九,進左柱國加少師兼太子太師吏尚建極殿大學士。",
+  "src": "table",
+  "raw_person": "顧秉謙"
+ },
+ {
+  "year": 1625,
+  "person": "馮銓",
+  "note": "八、戊子、十二,禮右侍兼東閣大學士入;九、甲寅、九,遷禮尚進文淵閣大學士。",
+  "src": "table",
+  "raw_person": "馮鉓"
+ },
+ {
+  "year": 1625,
+  "person": "魏廣微",
+  "note": "正、戊寅、廿九,進少保兼太子太傅吏尚建極殿大學士;八、己丑、十三,引疾乞休,溫旨慰留;九,丙午、一,引疾致仕歸;九、甲寅、九,起左柱國,少師兼太子太師吏尚,中極殿大學士。七年二月卒,贈太師;八、戊戌、五,加贈太傅。崇禎元年六、丙辰、廿七,削職為民,奪誥。",
+  "src": "table",
+  "raw_person": "魏廣微"
+ },
+ {
+  "year": 1625,
+  "person": "黃立極",
+  "note": "八、戊子、十二,實錄副總裁禮右侍兼侍讀學士遷禮尚兼東閣大學士入;九、甲寅、九,加太子太保進文淵閣大學士。",
+  "src": "table",
+  "raw_person": "黃立極"
+ },
+ {
+  "year": 1626,
+  "person": "丁紹軾",
+  "note": "四、辛卯、十九,加少保兼太子太保改戶尚進武英殿大學士;四、戊戌、廿六,卒,贈太保,謚文恪。",
+  "src": "table",
+  "raw_person": "丁紹軾"
+ },
+ {
+  "year": 1626,
+  "person": "張瑞圖",
+  "note": "七、丙戌、十六,協理府事禮右侍兼侍讀學士遷禮尚兼東閣大學士入;十、甲寅、十五,加太子太保兼文淵閣大學士,餘如故。",
+  "src": "table",
+  "raw_person": "張瑞圖"
+ },
+ {
+  "year": 1626,
+  "person": "施鳳來",
+  "note": "七、丙戌、十六,禮左侍遷禮尚兼東閣大學士入;十一、甲寅、十五,加太子太保進文淵閣,餘如故。",
+  "src": "table",
+  "raw_person": "施鳳來"
+ },
+ {
+  "year": 1626,
+  "person": "李國楷",
+  "note": "七、丙戌、十六,詹事兼侍讀學士副總裁遷禮尚兼東閣大學士入;十、甲寅、十五,加太子太保兼文淵閣大學士,餘如故。",
+  "src": "table",
+  "raw_person": "李國楷"
+ },
+ {
+  "year": 1626,
+  "person": "顧秉謙",
+  "note": "四、辛卯、十九,進光祿大夫太保;閏六、丁未、七,加特進光祿大夫上柱國太師;閏六、己酉、九,辭太師兼俸上柱國;九、庚寅、廿一,加太師致仕。七年八、戊戌五,加太傅;十二、庚戌、十七,辭太傅。崇禎元年七、甲戌、十五,削恩廢。",
+  "src": "table",
+  "raw_person": "顧秉謙"
+ },
+ {
+  "year": 1626,
+  "person": "馮銓",
+  "note": "四、辛卯、十九,加少保兼太子太保改戶尚進武英殿大學士;閏六、壬寅、二,回籍閑住。七年十二、己酉、十六,給誥致仕。崇禎元年正、丙戌、廿四,以太子太保禮尚兼文淵閣大學士致仕。順治元年降清。康熙十一年十一月卒。",
+  "src": "table",
+  "raw_person": "馮銓"
+ },
+ {
+  "year": 1626,
+  "person": "黃立極",
+  "note": "四、辛卯、十九,加少保兼太子太保改戶尚進武英殿大學士;卜、甲寅、十五,加官與四月同。",
+  "src": "table",
+  "raw_person": "黃立極"
+ },
+ {
+  "year": 1627,
+  "person": "來宗道",
+  "note": "十二、丙辰、廿三,太子少保禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "來宗道"
+ },
+ {
+  "year": 1627,
+  "person": "劉鴻訓",
+  "note": "十二、丙辰、廿三,起少詹事遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "劉鴻訓"
+ },
+ {
+  "year": 1627,
+  "person": "周道登",
+  "note": "十二、丙辰、廿三,起禮左侍遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "周道登"
+ },
+ {
+  "year": 1627,
+  "person": "張瑞圖",
+  "note": "三、辛巳、十四,加少保兼太子太保戶尚武英殿大學士;八、戊戌、五,進少師兼太子太師中極殿大學士;十、己亥、六,進左柱國吏尚。",
+  "src": "table",
+  "raw_person": "張瑞圖"
+ },
+ {
+  "year": 1627,
+  "person": "施鳳來",
+  "note": "三、辛巳、十四,加少保兼太子太保戶尚武英殿大學士;八、戊戌、五,進少師兼太子太師中極殿大學士;十、己亥、六,進左柱國吏尚。",
+  "src": "table",
+  "raw_person": "施鳳來"
+ },
+ {
+  "year": 1627,
+  "person": "李國楷",
+  "note": "三、辛巳、十四,加少保兼太子太保戶尚武英殿大學士;八、戊戌、五,進少師兼太子太師中極殿大學士;十、己亥、六,進左柱國吏尚。",
+  "src": "table",
+  "raw_person": "李國楷"
+ },
+ {
+  "year": 1627,
+  "person": "李標",
+  "note": "十二、丙辰、廿三,起實錄副總裁禮右侍兼侍讀學士遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "李標"
+ },
+ {
+  "year": 1627,
+  "person": "楊景辰",
+  "note": "十二、丙辰、廿三,吏左侍遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "楊景辰"
+ },
+ {
+  "year": 1627,
+  "person": "錢龍錫",
+  "note": "十二、丙辰、廿三,起南吏右侍遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "錢龍錫"
+ },
+ {
+  "year": 1627,
+  "person": "黃立極",
+  "note": "三、辛巳、十四,加少傅兼太子太傅吏尚建極殿大學士;八、戊戌、五,加左柱國,少師兼太子太師中極殿大學士;十一、癸巳、卅,加太保致仕。崇禎元年四、辛亥、廿,加太保。崇禎二年正、丁丑、廿一,閑住。",
+  "src": "table",
+  "raw_person": "黃立極"
+ },
+ {
+  "year": 1628,
+  "person": "來宗道",
+  "note": "四、辛亥、廿,加少保兼太子太保戶尚文淵閣大學士;六、壬子、廿三,加少傅兼太子太傅致仕。",
+  "src": "table",
+  "raw_person": "來宗道"
+ },
+ {
+  "year": 1628,
+  "person": "劉鴻訓",
+  "note": "二月,入直;七、庚申、一,加太子太保文淵閣大學士;十、戊申、廿一,削籍。二年正月戊代州。五年正、庚戌、十二,卒於戊所。",
+  "src": "table",
+  "raw_person": "劉鴻訓"
+ },
+ {
+  "year": 1628,
+  "person": "周道登",
+  "note": "六、壬寅、十三,入直;七、庚申、一,加太子太保文淵閣大學士。",
+  "src": "table",
+  "raw_person": "周道登"
+ },
+ {
+  "year": 1628,
+  "person": "張瑞圖",
+  "note": "三、癸未、廿二,加太保致仕;三、丙戌、廿五,辭太保;四、辛亥、廿,加太保。",
+  "src": "table",
+  "raw_person": "張瑞圖"
+ },
+ {
+  "year": 1628,
+  "person": "施鳳來",
+  "note": "三、癸未,廿二,加太傅致仕;三、丁亥、廿六,辭太傅;四、辛亥、廿,加太保。五年削籍。十五年八、丙寅、廿九,卒。",
+  "src": "table",
+  "raw_person": "施鳳來"
+ },
+ {
+  "year": 1628,
+  "person": "李國𣚴",
+  "note": "四、辛亥、廿,加太保;四、庚申、廿九,辭加太保;五、己巳、九,加太傅致仕;五、癸酉、十三,辭太傅;七、庚申、一,加太傅;八、甲午、六,辭太傅。四年四、壬子、九,卒,贈太保,謚文敏。",
+  "src": "table",
+  "raw_person": "李國檜"
+ },
+ {
+  "year": 1628,
+  "person": "李標",
+  "note": "二月,入直;七、庚申、一,加太子太保文淵閣大學士。",
+  "src": "table",
+  "raw_person": "李標"
+ },
+ {
+  "year": 1628,
+  "person": "楊景辰",
+  "note": "正、戊辰、六,入直;四、辛亥、廿,加太子太保戶尚文淵閣大學士;六、壬子、廿三,加少保致仕。",
+  "src": "table",
+  "raw_person": "楊景辰"
+ },
+ {
+  "year": 1628,
+  "person": "錢龍錫",
+  "note": "六、壬寅、十三,入直;七、庚申、一,加太子太保文淵閣大學士。",
+  "src": "table",
+  "raw_person": "錢龍錫"
+ },
+ {
+  "year": 1628,
+  "person": "韓爌",
+  "note": "四、庚戌、十九,召;七、庚申、一,加太保;九,丙寅、九,辭太保;十二、丙申、十,入朝。",
+  "src": "table",
+  "raw_person": "韓爌"
+ },
+ {
+  "year": 1629,
+  "person": "何如寵",
+  "note": "十二、丙子、廿六,禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "何如寵"
+ },
+ {
+  "year": 1629,
+  "person": "周延儒",
+  "note": "十二、甲子、十四,禮右侍遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "周延儒"
+ },
+ {
+  "year": 1629,
+  "person": "周道登",
+  "note": "正月致仕。五年十二、丁亥、廿四,卒。",
+  "src": "table",
+  "raw_person": "周道登"
+ },
+ {
+  "year": 1629,
+  "person": "孫承宗",
+  "note": "十一、辛卯、十,召,以少師兼太子太師兵尚兼中極殿大學士督理兵馬錢糧駐紮通州。",
+  "src": "table",
+  "raw_person": "孫承宗"
+ },
+ {
+  "year": 1629,
+  "person": "成基命",
+  "note": "十一、辛卯、十,管吏右侍事吏左侍兼侍讀學士遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "成基命"
+ },
+ {
+  "year": 1629,
+  "person": "李標",
+  "note": "三、壬申、十六,加太子太保進文淵閣大學士。",
+  "src": "table",
+  "raw_person": "李標"
+ },
+ {
+  "year": 1629,
+  "person": "錢象坤",
+  "note": "十二、丙子、廿六,掌府事禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "錢象坤"
+ },
+ {
+  "year": 1629,
+  "person": "錢龍錫",
+  "note": "三、壬申、十六,加太子太保進文淵閣大學士;十二、乙丑、十五,致仕。三年八、甲子、十七,削職下獄賜死;十一、辛丑、廿六,押解至京下法司。四年五、庚辰、七,釋獄。九年十、戊寅、七,卒。",
+  "src": "table",
+  "raw_person": "錢龍錫"
+ },
+ {
+  "year": 1629,
+  "person": "韓爌",
+  "note": "三、壬申、十六,加太保。",
+  "src": "table",
+  "raw_person": "韓爌"
+ },
+ {
+  "year": 1630,
+  "person": "何如寵",
+  "note": "二、甲子、十四,加太子太保進文淵閣大學士;二、庚午、廿,辭;七、甲午、十七,太子太保進文淵閣;十一、戊戌、廿三,加少保兼太子太保戶尚武英殿大學士。",
+  "src": "table",
+  "raw_person": "何如寵"
+ },
+ {
+  "year": 1630,
+  "person": "吳宗達",
+  "note": "六、辛酉、十三,協理府事禮尚兼東閣大學士入;七、甲午、十七,加太子太保進文淵閣大學士;七、癸卯、廿六,辭;十一、戊戌、廿三,加太子太保進文淵閣大學士。",
+  "src": "table",
+  "raw_person": "吳宗達"
+ },
+ {
+  "year": 1630,
+  "person": "周延儒",
+  "note": "正、丙戌、六,入閣辦事;二、甲子、十四,加太子太保進文淵閣大學士;二、庚午、廿,辭;七、甲午、十七,加太子太保進文淵閣大學士;十一、戊戌、廿三,加少保戶尚武英殿大學士。",
+  "src": "table",
+  "raw_person": "周延儒"
+ },
+ {
+  "year": 1630,
+  "person": "孫承宗",
+  "note": "二、甲子、十四,加太保;二、庚午、廿,辭;七、丁亥、十,加太傅。",
+  "src": "table",
+  "raw_person": "孫承宗"
+ },
+ {
+  "year": 1630,
+  "person": "成基命",
+  "note": "二、甲子、十四,加太子太保進文淵閣大學士;二、庚午、廿,辭;七、甲午、十七,加太子太保文淵閣大學士;九月,致仕。八年七月卒,贈少保,諡文穆。",
+  "src": "table",
+  "raw_person": "成基命"
+ },
+ {
+  "year": 1630,
+  "person": "李標",
+  "note": "二、甲子、十四,加少保兼太子太保戶尚武英殿大學士;二、庚午、廿,辭;三、壬午、二,致仕。弘光元年三、辛亥、廿八,贈少保,諡文節。",
+  "src": "table",
+  "raw_person": "李標"
+ },
+ {
+  "year": 1630,
+  "person": "溫體仁",
+  "note": "六、辛酉、十三,掌詹事府事禮尚兼東閣大學士入;七、甲午、十七,加太子太保進文淵閣大學士;七、癸卯、廿六,辭;十一、戊戌、廿三,加太子太保進文淵閣大學士。",
+  "src": "table",
+  "raw_person": "溫體仁"
+ },
+ {
+  "year": 1630,
+  "person": "錢象坤",
+  "note": "正、丙戌、六,入閣辦事;二、甲子、十四,加太子太保進文淵閣大學士;二、庚午、廿,辭;七、甲午、十七,加太子太保進文淵閣;十一、戊戌、廿三,加少保兼太子太保戶尚武英殿大學士。",
+  "src": "table",
+  "raw_person": "錢象坤"
+ },
+ {
+  "year": 1630,
+  "person": "韓爌",
+  "note": "正、己亥、十九,致仕。",
+  "src": "table",
+  "raw_person": "韓燷"
+ },
+ {
+  "year": 1631,
+  "person": "何如寵",
+  "note": "八、丙辰、十五,致仕。五年二、庚午、二,加太子太保。六年七、戊戌、八,召,辭不赴。十四年卒。十五年十、己未、廿二,贈太保。十七年九、戊戌、十三,諡文端。",
+  "src": "table",
+  "raw_person": "何如寵"
+ },
+ {
+  "year": 1631,
+  "person": "吳宗達",
+  "note": "",
+  "src": "table",
+  "raw_person": "吳宗達"
+ },
+ {
+  "year": 1631,
+  "person": "周延儒",
+  "note": "九、辛巳、十,給假治喪。",
+  "src": "table",
+  "raw_person": "周延儒"
+ },
+ {
+  "year": 1631,
+  "person": "孫承宗",
+  "note": "十一、壬辰、廿三,致仕;十二、丁丑、九,冠帶閑住,奪寧遠叙功。十一年十一、戊辰、十,卒。十二年三、癸未、廿六,復官,予祭葬,贈太傅。十七年九、戊戌、十三,諡文忠,後改諡文正、忠定。",
+  "src": "table",
+  "raw_person": "孫承宗"
+ },
+ {
+  "year": 1631,
+  "person": "溫體仁",
+  "note": "",
+  "src": "table",
+  "raw_person": "溫體仁"
+ },
+ {
+  "year": 1631,
+  "person": "錢象坤",
+  "note": "六、庚戌、八,致仕。十四年四、庚午、廿五,卒。十五年三、庚午、一,贈太保,諡文貞。",
+  "src": "table",
+  "raw_person": "錢象坤"
+ },
+ {
+  "year": 1632,
+  "person": "吳宗達",
+  "note": "二、丁丑、九，加少保兼太子太保改戶尚進武英殿大學士。",
+  "src": "text",
+  "raw_person": "吳宗達"
+ },
+ {
+  "year": 1632,
+  "person": "周延儒",
+  "note": "二、丁丑、九，加少傅兼太子太傅吏尚進建極殿大學士。",
+  "src": "text",
+  "raw_person": "周延儒"
+ },
+ {
+  "year": 1632,
+  "person": "徐光啟",
+  "note": "五月，協理詹事府禮尚兼東閣大學士入；十、辛巳、十七，加太子少保。",
+  "src": "text",
+  "raw_person": "徐光啟"
+ },
+ {
+  "year": 1632,
+  "person": "溫體仁",
+  "note": "二、丁丑、九，加少保兼太子太保改戶尚進武英殿大學士。",
+  "src": "text",
+  "raw_person": "溫體仁"
+ },
+ {
+  "year": 1632,
+  "person": "鄭以偉",
+  "note": "五月，協理詹事府禮尚兼東閣大學士入；十、辛巳、十七，加太子少保。",
+  "src": "text",
+  "raw_person": "鄭以偉"
+ },
+ {
+  "year": 1633,
+  "person": "何吾騶",
+  "note": "十一、癸巳、五，協理府事禮右侍兼東閣大學士入。",
+  "src": "text",
+  "raw_person": "何吾騶"
+ },
+ {
+  "year": 1633,
+  "person": "吳宗達",
+  "note": "十一、己巳、十一，加少傅兼太子太傅吏尚建極殿大學士。",
+  "src": "text",
+  "raw_person": "吳宗達"
+ },
+ {
+  "year": 1633,
+  "person": "周延儒",
+  "note": "六、庚辰、廿，罷。十四年四、甲戌、廿九，召；九、甲申、十一，入朝。",
+  "src": "text",
+  "raw_person": "周延儒"
+ },
+ {
+  "year": 1633,
+  "person": "徐光啟",
+  "note": "七、乙卯、廿五，復官進太子太保文淵閣大學士； 十、戊辰、九，辛，贈少保，謚文定。 十六年十二、癸酉、十三，加贈太保。",
+  "src": "text",
+  "raw_person": "徐光啟"
+ },
+ {
+  "year": 1633,
+  "person": "溫體仁",
+  "note": "十一、丁巳、廿九，加少傅兼太子太傅吏尚進建極殿大學士。",
+  "src": "text",
+  "raw_person": "溫體仁"
+ },
+ {
+  "year": 1633,
+  "person": "王應熊",
+  "note": "十一、癸巳、五，禮左侍遷禮尚兼東閣大學士入。",
+  "src": "text",
+  "raw_person": "王應熊"
+ },
+ {
+  "year": 1633,
+  "person": "鄭以偉",
+  "note": "六、乙亥、十五，卒，贈太子太保，謚文恪。",
+  "src": "text",
+  "raw_person": "鄭以偉"
+ },
+ {
+  "year": 1633,
+  "person": "錢溥",
+  "note": "升 九、庚戌、廿一，南禮右侍遷禮尚兼東閣大學士入。",
+  "src": "text",
+  "raw_person": "錢士"
+ },
+ {
+  "year": 1634,
+  "person": "何吾騶",
+  "note": "",
+  "src": "table",
+  "raw_person": "何吾騶"
+ },
+ {
+  "year": 1634,
+  "person": "吳宗達",
+  "note": "二月,加少師中極殿大學士。",
+  "src": "table",
+  "raw_person": "吳宗達"
+ },
+ {
+  "year": 1634,
+  "person": "溫體仁",
+  "note": "",
+  "src": "table",
+  "raw_person": "溫體仁"
+ },
+ {
+  "year": 1634,
+  "person": "王應熊",
+  "note": "",
+  "src": "table",
+  "raw_person": "王應熊"
+ },
+ {
+  "year": 1634,
+  "person": "錢士升",
+  "note": "正、癸丑、廿六,入朝。",
+  "src": "table",
+  "raw_person": "錢士升"
+ },
+ {
+  "year": 1635,
+  "person": "何吾騶",
+  "note": "十一、癸丑、七,致仕。",
+  "src": "table",
+  "raw_person": "何吾騶"
+ },
+ {
+  "year": 1635,
+  "person": "吳宗達",
+  "note": "五、乙亥、廿六,致仕。九年卒,謚文端。",
+  "src": "table",
+  "raw_person": "吳宗達"
+ },
+ {
+  "year": 1635,
+  "person": "張至發",
+  "note": "七、甲戌、廿六,刑右侍遷禮左侍兼東閣大學士人。",
+  "src": "table",
+  "raw_person": "張至發"
+ },
+ {
+  "year": 1635,
+  "person": "文震孟",
+  "note": "七、甲戌、廿六,少詹事兼侍讀學士遷禮左侍兼東閣大學十人;十一、癸丑、七,冠帶閑住。九年六、丙子、三,卒。十二年四、辛丑、十四,復官致仕。十五年十一、丁卯、一,贈禮尚。十七年六、癸未、廿七,謚文肅。",
+  "src": "table",
+  "raw_person": "文震孟"
+ },
+ {
+  "year": 1635,
+  "person": "溫體仁",
+  "note": "",
+  "src": "table",
+  "raw_person": "溫體仁"
+ },
+ {
+  "year": 1635,
+  "person": "王應熊",
+  "note": "九、壬申、廿五,免;十一、癸丑、七、致仕。十五年十一、甲申、十八,召。",
+  "src": "table",
+  "raw_person": "王應熊"
+ },
+ {
+  "year": 1635,
+  "person": "錢溥",
+  "note": "升",
+  "src": "table",
+  "raw_person": "錢士"
+ },
+ {
+  "year": 1636,
+  "person": "孔貞運",
+  "note": "六、甲戌、一,吏右侍遷禮尚兼東閣大學士入;十、辛巳、十,進太子太保文淵閣大學士。",
+  "src": "table",
+  "raw_person": "孔貞運"
+ },
+ {
+  "year": 1636,
+  "person": "張至發",
+  "note": "六、甲戌、一、進禮尚;十、辛巳、十,進太子太保文淵閣大學士。",
+  "src": "table",
+  "raw_person": "張至發"
+ },
+ {
+  "year": 1636,
+  "person": "林鈺",
+  "note": "正、丁卯、廿一,禮左侍遷禮尚兼東閣大學士入;六、乙亥、二,卒,贈禮尚,謚文穆。",
+  "src": "table",
+  "raw_person": "林鈺"
+ },
+ {
+  "year": 1636,
+  "person": "溫體仁",
+  "note": "十、辛巳、十,進少師兼太子太師中極殿大學士。",
+  "src": "table",
+  "raw_person": "溫體仁"
+ },
+ {
+  "year": 1636,
+  "person": "賀逢聖",
+  "note": "六、甲戌、一,吏右侍遷禮尚兼東閣大學士入;十、辛巳、十,進太子太保文淵閣大學士。",
+  "src": "table",
+  "raw_person": "賀逢聖"
+ },
+ {
+  "year": 1636,
+  "person": "錢士升",
+  "note": "四、壬午、八,致仕。十七年十二、癸酉、十九,進太子太保。",
+  "src": "table",
+  "raw_person": "錢士升"
+ },
+ {
+  "year": 1636,
+  "person": "黃士俊",
+  "note": "六、甲戌、一,禮尚兼東閣大學士入;十、辛巳、十,進太子太保文淵閣大學士。",
+  "src": "table",
+  "raw_person": "黃士俊"
+ },
+ {
+  "year": 1637,
+  "person": "傅冠",
+  "note": "八月,署詹事府禮右侍遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "傅冠"
+ },
+ {
+  "year": 1637,
+  "person": "劉宇亮",
+  "note": "八、己酉、十四,管吏右侍事吏左侍遷禮尚兼東閣大學士入閣;九、丁卯、二,入。",
+  "src": "table",
+  "raw_person": "劉宇亮"
+ },
+ {
+  "year": 1637,
+  "person": "孔貞運",
+  "note": "",
+  "src": "table",
+  "raw_person": "孔貞運"
+ },
+ {
+  "year": 1637,
+  "person": "張至發",
+  "note": "",
+  "src": "table",
+  "raw_person": "張至發"
+ },
+ {
+  "year": 1637,
+  "person": "溫體仁",
+  "note": "正、庚申、廿,進左柱國;六、戊申、十一,致仕。十一年七、癸亥、二,卒,贈太傅,謚文忠。十七年六、癸未、廿七,奪謚;七、乙巳、廿,奪官廢。弘光元年三、丁亥、四,復謚。",
+  "src": "table",
+  "raw_person": "溫體仁"
+ },
+ {
+  "year": 1637,
+  "person": "薛國觀",
+  "note": "八、己酉、十四,左僉都遷禮左侍兼東閣大學士入閣;九、丁卯、二,入。",
+  "src": "table",
+  "raw_person": "薛國觀"
+ },
+ {
+  "year": 1637,
+  "person": "賀逢聖",
+  "note": "",
+  "src": "table",
+  "raw_person": "賀逢聖"
+ },
+ {
+  "year": 1637,
+  "person": "黃士俊",
+  "note": "",
+  "src": "table",
+  "raw_person": "黃士俊"
+ },
+ {
+  "year": 1638,
+  "person": "傅冠",
+  "note": "六、乙卯、廿四，進文淵閣大學士； 八、癸丑、廿三，致仕。",
+  "src": "text",
+  "raw_person": "傅冠"
+ },
+ {
+  "year": 1638,
+  "person": "劉宇亮",
+  "note": "六、乙卯、廿四，進文淵閣大學士；十二、辛卯、三，督察各鎮援兵。",
+  "src": "text",
+  "raw_person": "劉宇亮"
+ },
+ {
+  "year": 1638,
+  "person": "孔貞運",
+  "note": "四、己酉、十六，致仕。 十七年七、己丑、四，卒；十、癸亥、九，贈少保，謚文忠。",
+  "src": "text",
+  "raw_person": "孔貞運"
+ },
+ {
+  "year": 1638,
+  "person": "張至發",
+  "note": "四、戊申、十五，罷。",
+  "src": "text",
+  "raw_person": "張至發"
+ },
+ {
+  "year": 1638,
+  "person": "方逢年",
+  "note": "六、乙卯、廿四，禮右侍遷禮左侍兼東閣大學士入；十二、庚子、十二，罷。",
+  "src": "text",
+  "raw_person": "方逢年"
+ },
+ {
+  "year": 1638,
+  "person": "楊嗣昌",
+  "note": "六、乙卯、廿四，兵尚改禮尚兼東閣大學士入，仍署兵部事；十二、丁未、十九，降三級。",
+  "src": "text",
+  "raw_person": "楊嗣昌"
+ },
+ {
+  "year": 1638,
+  "person": "程國祥",
+  "note": "六、乙卯、廿四，戶尚改禮尚兼東閣大學士入。",
+  "src": "text",
+  "raw_person": "程國祥"
+ },
+ {
+  "year": 1638,
+  "person": "蔡國用",
+  "note": "六、乙卯、廿四，工左侍遷禮尚兼東閣大學上人。 范復粹 六、乙卯、廿四，大理少遷禮左侍兼東閣大學士人。",
+  "src": "text",
+  "raw_person": "蔡國用"
+ },
+ {
+  "year": 1638,
+  "person": "薛國觀",
+  "note": "六、乙卯、廿四，遷禮尚。",
+  "src": "text",
+  "raw_person": "薛國觀"
+ },
+ {
+  "year": 1638,
+  "person": "賀逢聖",
+  "note": "三、戊寅、十五，致仕。 十四年四、甲戌、廿九，召。",
+  "src": "text",
+  "raw_person": "賀逢聖"
+ },
+ {
+  "year": 1638,
+  "person": "黃士俊",
+  "note": "正、丙寅、二，罷。",
+  "src": "text",
+  "raw_person": "黃士俊"
+ },
+ {
+  "year": 1639,
+  "person": "劉宇亮",
+  "note": "二、壬辰、四，戴罪；二、丙申、八，削籍。",
+  "src": "text",
+  "raw_person": "劉宇亮"
+ },
+ {
+  "year": 1639,
+  "person": "姚明恭",
+  "note": "五、甲子、八，禮左侍遷禮尚兼東閣大學十人。",
+  "src": "text",
+  "raw_person": "姚明恭"
+ },
+ {
+  "year": 1639,
+  "person": "張四知",
+  "note": "五、甲子、八，禮右侍遷禮尚兼東閣大學士人。",
+  "src": "text",
+  "raw_person": "張四知"
+ },
+ {
+  "year": 1639,
+  "person": "楊嗣昌",
+  "note": "三、丁丑、廿，奪職視事；六、己丑、三，復官； 八、壬子、廿七，以原官兼兵尚，督師討流賊八省，賜尚方劍。",
+  "src": "text",
+  "raw_person": "楊嗣昌"
+ },
+ {
+  "year": 1639,
+  "person": "程國祥",
+  "note": "四、戊申、廿一，致仕。",
+  "src": "text",
+  "raw_person": "程國祥"
+ },
+ {
+  "year": 1639,
+  "person": "蔡國用",
+  "note": "六、己丑、三，加太子太保戶尚文淵閣大學士。 范復粹 五、甲子、八，遷禮尚； 十、戊戌、十五，進少保吏尚武英殿大學士。",
+  "src": "text",
+  "raw_person": "蔡國用"
+ },
+ {
+  "year": 1639,
+  "person": "薛國觀",
+  "note": "六、己丑、三，加太子太保進戶尚文淵閣大學士；十、戊戌、十五，進少保吏尚武英殿大學上。",
+  "src": "text",
+  "raw_person": "薛國觀"
+ },
+ {
+  "year": 1639,
+  "person": "魏照乘",
+  "note": "五、甲子、八，協理戍政兵左侍遷禮尚兼東閣大學士人。",
+  "src": "text",
+  "raw_person": "魏照乘"
+ },
+ {
+  "year": 1640,
+  "person": "姚明恭",
+  "note": "五、丙午、廿六,致仕。",
+  "src": "table",
+  "raw_person": "姚明恭"
+ },
+ {
+  "year": 1640,
+  "person": "張四知",
+  "note": "八、辛酉、十二,進少保兼太子太保吏尚武英殿大學士。",
+  "src": "table",
+  "raw_person": "張四知"
+ },
+ {
+  "year": 1640,
+  "person": "楊嗣昌",
+  "note": "八、丁丑、廿八,進太子少保。",
+  "src": "table",
+  "raw_person": "楊嗣昌"
+ },
+ {
+  "year": 1640,
+  "person": "范復粹",
+  "note": "八、辛酉、十二,進少保兼太子太保吏尚武英殿大學士。",
+  "src": "table",
+  "raw_person": "范復粹"
+ },
+ {
+  "year": 1640,
+  "person": "蔡國用",
+  "note": "六、庚午、廿,卒,贈太子太保,謚文恪。",
+  "src": "table",
+  "raw_person": "蔡國用"
+ },
+ {
+  "year": 1640,
+  "person": "薛國觀",
+  "note": "六、癸酉、廿三,免;九、壬午、四,削籍。十四年八、辛亥、八,賜死。十七年七、乙巳、廿,奪官廢。",
+  "src": "table",
+  "raw_person": "薛國觀"
+ },
+ {
+  "year": 1640,
+  "person": "謝陞",
+  "note": "四、己卯、廿八,太子少保吏尚改太子太保禮尚兼東閣大學士入;六、乙丑、十五,進太子太保戶尚兼武英殿大學士。",
+  "src": "table",
+  "raw_person": "謝陞"
+ },
+ {
+  "year": 1640,
+  "person": "陳演",
+  "note": "四、己卯、廿八,署詹事府禮右侍遷禮左侍兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "陳演"
+ },
+ {
+  "year": 1640,
+  "person": "魏照乘",
+  "note": "",
+  "src": "table",
+  "raw_person": "魏照乘"
+ },
+ {
+  "year": 1641,
+  "person": "周延儒",
+  "note": "四、甲戌、廿九,召;九、甲申、十一,入朝;十一、癸未、十一,進少師兼太子太師中極殿大學士。",
+  "src": "table",
+  "raw_person": "周延儒"
+ },
+ {
+  "year": 1641,
+  "person": "張四知",
+  "note": "二、辛酉、十六,進太子少保吏尚武英殿大學士。",
+  "src": "table",
+  "raw_person": "張四知"
+ },
+ {
+  "year": 1641,
+  "person": "張至發",
+  "note": "四、甲戌、廿九,召,辭不赴。十五年六、辛酉、廿三,卒,贈謚。",
+  "src": "table",
+  "raw_person": "張至發"
+ },
+ {
+  "year": 1641,
+  "person": "楊嗣昌",
+  "note": "三、丙子、一,自經。十五年三月,贈太子太保。",
+  "src": "table",
+  "raw_person": "楊嗣昌"
+ },
+ {
+  "year": 1641,
+  "person": "范復粹",
+  "note": "二、辛酉、十六,進少保兼太子太傅建極殿大學士;五、庚辰、六,致仕。",
+  "src": "table",
+  "raw_person": "范復粹"
+ },
+ {
+  "year": 1641,
+  "person": "謝陞",
+  "note": "",
+  "src": "table",
+  "raw_person": "謝陞"
+ },
+ {
+  "year": 1641,
+  "person": "賀逢聖",
+  "note": "四、甲戌、廿九,召;九、甲申、十一,入朝。",
+  "src": "table",
+  "raw_person": "賀逢聖"
+ },
+ {
+  "year": 1641,
+  "person": "陳演",
+  "note": "二、辛酉、十六,進禮尚文淵閣大學士。",
+  "src": "table",
+  "raw_person": "陳演"
+ },
+ {
+  "year": 1641,
+  "person": "魏照乘",
+  "note": "二、辛酉、十六,進太子少傅戶尚文淵閣大學士。",
+  "src": "table",
+  "raw_person": "魏照乘"
+ },
+ {
+  "year": 1642,
+  "person": "吳甡",
+  "note": "六、戊午、廿,協理戍政兵左侍兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "吳蛍"
+ },
+ {
+  "year": 1642,
+  "person": "周延儒",
+  "note": "七、辛未、三,進少師中極殿大學士。",
+  "src": "table",
+  "raw_person": "周延儒"
+ },
+ {
+  "year": 1642,
+  "person": "張四知",
+  "note": "六、癸丑、十五,致仕。",
+  "src": "table",
+  "raw_person": "張四知"
+ },
+ {
+  "year": 1642,
+  "person": "王應熊",
+  "note": "十一、甲申、十八,召。十六年四、癸未、廿,趣入朝;十、乙酉、廿五,入朝,請老許之。十七年八、癸未、廿八,召兼兵尚兼文淵閣大學士總督川貴湖廣軍務,開府遵義。",
+  "src": "table",
+  "raw_person": "王應熊"
+ },
+ {
+  "year": 1642,
+  "person": "蔣德璟",
+  "note": "六、戊午、廿,禮右侍遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "蔣德璟"
+ },
+ {
+  "year": 1642,
+  "person": "謝陞",
+  "note": "四、丙午、七,削籍。十七年六、壬午、廿六,進上柱國少師;七、己丑、四,清授內院大學士。",
+  "src": "table",
+  "raw_person": "謝陞"
+ },
+ {
+  "year": 1642,
+  "person": "賀逢聖",
+  "note": "六、戊申、卩,致仕。十六年五、壬戌、卅、卒。十七年六、戊辰、十二,贈太師,謚文忠。",
+  "src": "table",
+  "raw_person": "賀逢聖"
+ },
+ {
+  "year": 1642,
+  "person": "陳演",
+  "note": "七、辛未、三,進太子少保戶尚武英殿大學士。",
+  "src": "table",
+  "raw_person": "陳演"
+ },
+ {
+  "year": 1642,
+  "person": "魏照乘",
+  "note": "三、丁丑、八,罷。",
+  "src": "table",
+  "raw_person": "魏照乘"
+ },
+ {
+  "year": 1642,
+  "person": "黃景昉",
+  "note": "六、戊午、廿,詹事遷禮尚兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "黃景昉"
+ },
+ {
+  "year": 1643,
+  "person": "吳甡",
+  "note": "三、癸卯、十,兼兵尚督師平寇,賜尚方劍未行;五、丁未、十五,太子少保戶尚文淵閣大學士;五、戊申、十六,署督師;五、戊午、廿六,致仕;十一、癸丑、廿三,戍金齒衛。",
+  "src": "table",
+  "raw_person": "吳蛍"
+ },
+ {
+  "year": 1643,
+  "person": "周延儒",
+  "note": "四、戊辰、五,自請督師;五、甲午、二,召入朝;五、乙巳、十三,入直;五、丁未、十五,太師兼太子太師,吏尚中極殿大學士;五、丁巳、廿五,致仕;十二、乙丑、五,賜死。十七年七、乙巳、廿,奪官廢。",
+  "src": "table",
+  "raw_person": "周延儒"
+ },
+ {
+  "year": 1643,
+  "person": "方岳貢",
+  "note": "十一、辛亥、廿一,左副都兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "方岳貢"
+ },
+ {
+  "year": 1643,
+  "person": "李建泰",
+  "note": "十一、辛亥、廿一,吏右侍兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "李建泰"
+ },
+ {
+  "year": 1643,
+  "person": "蔣德璟",
+  "note": "五、丁未、十五,太子少保戶尚文淵閣大學士。",
+  "src": "table",
+  "raw_person": "蔣德璟"
+ },
+ {
+  "year": 1643,
+  "person": "陳演",
+  "note": "五、丁未、十五,太子太保戶尚武英殿大學士;十二、壬申、十二,進太子太保吏尚中極殿大學士。",
+  "src": "table",
+  "raw_person": "陳演"
+ },
+ {
+  "year": 1643,
+  "person": "魏藻德",
+  "note": "五、丁未、十五,修撰遷禮右侍兼東閣大學士入;五、甲寅、廿二,辭禮右侍,以侍讀學士入直;五、戊午、廿六,進少詹事兼東閣大學士。",
+  "src": "table",
+  "raw_person": "魏藻德"
+ },
+ {
+  "year": 1643,
+  "person": "黃景昉",
+  "note": "五、丁未、十五,太子少保戶尚文淵閣大學士;九、壬辰、一,予告。",
+  "src": "table",
+  "raw_person": "黃景昉"
+ },
+ {
+  "year": 1644,
+  "person": "丘瑜",
+  "note": "正、乙卯、廿六,禮左侍兼東閣大學士入;三、戊申、廿,被執;四、己巳、十二,自經。",
+  "src": "table",
+  "raw_person": "丘瑜"
+ },
+ {
+  "year": 1644,
+  "person": "史可法",
+  "note": "(五、庚寅、三,福王監國;五、壬寅、十五,福王即帝位。) 五、壬辰、五,南兵尚改禮尚兼東閣大學士;五、戊戌、十一,出族,改兵尚,進太子太保;八、辛酉、六,進少保武英殿大學士;十二、甲戌、廿,進少保兼太子太保;十二、癸未、廿九,進太傅兼太子太傅。",
+  "src": "table",
+  "raw_person": "史可法"
+ },
+ {
+  "year": 1644,
+  "person": "姜曰廣",
+  "note": "五、癸巳、六,南詹事兼侍讀學士遷禮尚兼東閣大學士;五、庚子、十三,辭閣銜,改禮左侍入直;八、辛酉、六,太子太保兵尚武英殿大學士;九、甲午、九,引疾歸。弘光元年三、乙巳、廿二,進太子太傅。",
+  "src": "table",
+  "raw_person": "姜曰廣"
+ },
+ {
+  "year": 1644,
+  "person": "方岳貢",
+  "note": "二、乙酉、廿六,進戶尚兼兵尚文淵閣大學士總漕運屯練,往濟寧;三、戊申、廿,被執;四、己巳、十二,自經。",
+  "src": "table",
+  "raw_person": "方岳貢"
+ },
+ {
+  "year": 1644,
+  "person": "李建泰",
+  "note": "正、丙辰、廿七,加兵尚督師;三、癸巳、五,被執;七、己丑、四,清授内院大學士。",
+  "src": "table",
+  "raw_person": "李建泰"
+ },
+ {
+  "year": 1644,
+  "person": "王應熊",
+  "note": "八、癸未、廿八,召禮尚兼東閣大學士兼兵尚督師川湖雲貴,開府遵義;八、甲申、廿九,賜尚方劍。",
+  "src": "table",
+  "raw_person": "王應熊"
+ },
+ {
+  "year": 1644,
+  "person": "王鐸",
+  "note": "五、癸巳、六,起南禮尚改禮尚兼東閣大學士入;八、辛酉、六,太子少保戶尚文淵閣大學士。",
+  "src": "table",
+  "raw_person": "王鐸"
+ },
+ {
+  "year": 1644,
+  "person": "范景文",
+  "note": "正、乙卯、廿六,工尚兼東閣大學士入;三、丁未、十九,殉難;八月,贈太傅,謚文貞,清謚文忠。",
+  "src": "table",
+  "raw_person": "范景文"
+ },
+ {
+  "year": 1644,
+  "person": "蔣德璟",
+  "note": "三、壬辰、四,致仕;七、庚寅、五,上中興三策許致仕。順治三年九月卒。",
+  "src": "table",
+  "raw_person": "蔣德璟"
+ },
+ {
+  "year": 1644,
+  "person": "陳演",
+  "note": "正、癸丑、廿四,進少保吏尚建極殿大學士;二、戊子、廿九,致仕;三、戊申、廿,降,斥之;四、己巳、十二,被殺。",
+  "src": "table",
+  "raw_person": "陳演"
+ },
+ {
+  "year": 1644,
+  "person": "馬士英",
+  "note": "五、壬辰、五,總督鳳陽兵右侍兼右僉都遷兵尚仍總督;五、辛丑、十四,進太子少保;五、癸卯、十六,進禮尚;五、乙巳、十八,進太子太保;六、乙亥、十九,在告引疾;十二、壬申、十八,進少師。",
+  "src": "table",
+  "raw_person": "馬士英"
+ },
+ {
+  "year": 1644,
+  "person": "高弘圖",
+  "note": "五、壬辰、五,南戶尚改禮尚兼東閣大學士;八、辛酉、六,進太子太傅吏尚;十、己未、五,引疾歸。弘光元年三、乙巳、廿二,進太子太傅。",
+  "src": "table",
+  "raw_person": "高弘圖"
+ },
+ {
+  "year": 1644,
+  "person": "魏藻德",
+  "note": "二、乙酉、廿六,進禮尚兼工尚文淵閣大學士總河道屯練,往天津;二、戊子、廿九,辭新銜,上不遣;三、戊申、廿,降,斥之;四、己未、二,死。",
+  "src": "table",
+  "raw_person": "魏藻德"
+ },
+ {
+  "year": 1645,
+  "person": "史可法",
+  "note": "三、辛丑、十八,進太子少保;四、丁丑、廿五,被俘,死。",
+  "src": "table",
+  "raw_person": "史可法"
+ },
+ {
+  "year": 1645,
+  "person": "方拱乾",
+  "note": "五、甲午、十三,禮右侍兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "方拱乾"
+ },
+ {
+  "year": 1645,
+  "person": "王應熊",
+  "note": "",
+  "src": "table",
+  "raw_person": "王應熊"
+ },
+ {
+  "year": 1645,
+  "person": "王鐸",
+  "note": "二、己卯、廿六,進太傅;三、乙巳、廿二,進少保;五、壬辰、十一,逃遁,衆縛入中城獄;五、癸巳、十二,釋,官如故。",
+  "src": "table",
+  "raw_person": "王鐸"
+ },
+ {
+  "year": 1645,
+  "person": "蔡奕琛",
+  "note": "正、辛丑、十七,吏左侍兼東閣大學士入;二、壬申、十九,進禮尚文淵閣大學士。後無考。",
+  "src": "table",
+  "raw_person": "蔡奕琛"
+ },
+ {
+  "year": 1645,
+  "person": "馬士英",
+  "note": "二、己卯、廿六,進太傅;三、乙巳、廿二,進太保;五、壬辰、十一,逃遁;五、乙未、十四,起廣德。",
+  "src": "table",
+  "raw_person": "馬士英"
+ },
+ {
+  "year": 1645,
+  "person": "高夢箕",
+  "note": "五、甲午、十三,禮右侍兼東閣大學士入。",
+  "src": "table",
+  "raw_person": "高夢箕"
+ }
+]
