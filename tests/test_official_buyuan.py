@@ -84,7 +84,7 @@ def test_tenure_type(tenures):
 def test_same_name_risk_flagged(tenures):
     # D-01 拆分后：6 组同名实体仍标风险（張鳳已通过 1629→張鳳翔 改名解决）
     risky = {t["person"] for t in tenures if t.get("same_name_risk")}
-    assert {"胡松", "李敏", "王佐", "顧佐", "吳山", "李本"} <= risky
+    assert {"胡松", "李敏", "王佐", "顧佐", "吳山"} <= risky  # D44: 呂本/李本 复原，李本退出同名组
     assert "張鳳" not in risky
 
 

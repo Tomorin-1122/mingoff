@@ -5,13 +5,13 @@
   "canvas_from": 1368,
   "source": "张德信《明代职官年表》册1·部院大臣年表（京師）（MinerU OCR）；v2 修复：人名归一/伪名清理/注文隔离/衙署分期/CBDB 重挂；v3 D-01：同名拆分 person_id（李本/李敏/王佐/顧佐/吳山/胡松），張鳳 1629 改張鳳翔；人名校验：CBDB 20261010 + 中研院明實錄 + 弇山堂别集/國榷（识典古籍）；《明實錄》命中据中研院检索",
   "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
-  "generated_at": "2026-10-19T06:52:45+00:00",
+  "generated_at": "2026-10-19T07:06:44+00:00",
   "stats": {
-   "tenures": 1203,
-   "persons": 794,
-   "display_persons": 788,
-   "split_entities": 12,
-   "same_name_entities": 6,
+   "tenures": 1198,
+   "persons": 789,
+   "display_persons": 784,
+   "split_entities": 10,
+   "same_name_entities": 5,
    "offices": [
     "兵部",
     "刑部",
@@ -27,29 +27,29 @@
     "都察院"
    ],
    "gap_merged_tenures": 103,
-   "gap_years_total": 150,
+   "gap_years_total": 151,
    "years_covered": [
     1368,
     1644
    ],
-   "with_start_month": 831,
-   "with_end_month": 552,
-   "with_start_page": 1203,
-   "with_end_page": 1203,
-   "cbdb_aligned": 871,
-   "with_leave": 583,
+   "with_start_month": 828,
+   "with_end_month": 551,
+   "with_start_page": 1198,
+   "with_end_page": 1198,
+   "cbdb_aligned": 875,
+   "with_leave": 582,
    "shu_li": 73,
-   "same_name_risk": 15,
+   "same_name_risk": 10,
    "office_status_dist": {
-    "mixed": 392,
-    "null": 601,
-    "row-order": 114,
+    "mixed": 393,
+    "null": 598,
+    "row-order": 111,
     "name-anchor": 85,
     "page-verified": 11
    },
    "shilu_persons": 130,
    "shilu_hits": 3913,
-   "person_years": 3471
+   "person_years": 3472
   }
  },
  "tenures": [
@@ -4126,6 +4126,114 @@
    "years": [
     1562,
     1563
+   ]
+  },
+  {
+   "person": "呂本",
+   "person_id": "呂本",
+   "person_label": "呂本",
+   "cbdb_id": 223131,
+   "cbdb_name": "呂本",
+   "office": "吏部",
+   "office_raw": "吏部",
+   "office_status": "mixed",
+   "tenure_type": "实授",
+   "start_year": 1372,
+   "start_month": null,
+   "end_year": 1373,
+   "end_month": 7,
+   "month_conflict": false,
+   "end_clamped": false,
+   "confidence": 0.7,
+   "leave": "改除",
+   "note": "",
+   "start_book_page": 406,
+   "end_book_page": 409,
+   "years": [
+    1372,
+    1373
+   ],
+   "gap_after": [
+    1374
+   ]
+  },
+  {
+   "person": "呂本",
+   "person_id": "呂本",
+   "person_label": "呂本",
+   "cbdb_id": 223131,
+   "cbdb_name": "呂本",
+   "office": "吏部",
+   "office_raw": "吏部",
+   "office_status": "row-order",
+   "tenure_type": "实授",
+   "start_year": 1375,
+   "start_month": null,
+   "end_year": 1375,
+   "end_month": null,
+   "month_conflict": false,
+   "end_clamped": false,
+   "confidence": 0.7,
+   "leave": "卒于任",
+   "note": "是年,出為兩浙都轉運鹽使。十三年遷太常寺卿。十四年卒於官。",
+   "start_book_page": 406,
+   "end_book_page": 409,
+   "years": [
+    1375
+   ]
+  },
+  {
+   "person": "呂本",
+   "person_id": "呂本",
+   "person_label": "呂本",
+   "cbdb_id": 223131,
+   "cbdb_name": "呂本",
+   "office": "禮部",
+   "office_raw": "禮部",
+   "office_status": null,
+   "tenure_type": "实授",
+   "start_year": 1374,
+   "start_month": null,
+   "end_year": 1374,
+   "end_month": null,
+   "month_conflict": false,
+   "end_clamped": false,
+   "confidence": 0.5,
+   "leave": "未載",
+   "note": "是年,北平按僉遷。",
+   "start_book_page": 408,
+   "end_book_page": 411,
+   "years": [
+    1374
+   ],
+   "gap_after": [
+    1375,
+    1376
+   ]
+  },
+  {
+   "person": "呂本",
+   "person_id": "呂本",
+   "person_label": "呂本",
+   "cbdb_id": 223131,
+   "cbdb_name": "呂本",
+   "office": "禮部",
+   "office_raw": "禮部",
+   "office_status": "name-anchor",
+   "tenure_type": "实授",
+   "start_year": 1377,
+   "start_month": 2,
+   "end_year": 1377,
+   "end_month": 5,
+   "month_conflict": false,
+   "end_clamped": false,
+   "confidence": 0.8,
+   "leave": "改除",
+   "note": "二、壬申、廿四,北平按僉遷;五、戊子、十一,改兩浙鹽使。十三年復太常卿。十四年卒於官。",
+   "start_book_page": 408,
+   "end_book_page": 411,
+   "years": [
+    1377
    ]
   },
   {
@@ -12893,122 +13001,10 @@
   },
   {
    "person": "李本",
-   "person_id": "李本#1",
-   "person_label": "李本（1372–1377）",
+   "person_id": "李本",
+   "person_label": "李本",
    "cbdb_id": null,
    "cbdb_name": null,
-   "office": "吏部",
-   "office_raw": "吏部",
-   "office_status": "mixed",
-   "tenure_type": "实授",
-   "start_year": 1372,
-   "start_month": null,
-   "end_year": 1373,
-   "end_month": 7,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "改除",
-   "note": "",
-   "start_book_page": 406,
-   "end_book_page": 409,
-   "years": [
-    1372,
-    1373
-   ],
-   "same_name_risk": true,
-   "gap_after": [
-    1374
-   ]
-  },
-  {
-   "person": "李本",
-   "person_id": "李本#1",
-   "person_label": "李本（1372–1377）",
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "office": "吏部",
-   "office_raw": "吏部",
-   "office_status": "row-order",
-   "tenure_type": "实授",
-   "start_year": 1375,
-   "start_month": null,
-   "end_year": 1375,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "卒于任",
-   "note": "是年,出為兩浙都轉運鹽使。十三年遷太常寺卿。十四年卒於官。",
-   "start_book_page": 406,
-   "end_book_page": 409,
-   "years": [
-    1375
-   ],
-   "same_name_risk": true
-  },
-  {
-   "person": "李本",
-   "person_id": "李本#1",
-   "person_label": "李本（1372–1377）",
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "office": "禮部",
-   "office_raw": "禮部",
-   "office_status": null,
-   "tenure_type": "实授",
-   "start_year": 1374,
-   "start_month": null,
-   "end_year": 1374,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.5,
-   "leave": "未載",
-   "note": "是年,北平按僉遷。",
-   "start_book_page": 408,
-   "end_book_page": 411,
-   "years": [
-    1374
-   ],
-   "same_name_risk": true,
-   "gap_after": [
-    1375,
-    1376
-   ]
-  },
-  {
-   "person": "李本",
-   "person_id": "李本#1",
-   "person_label": "李本（1372–1377）",
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "office": "禮部",
-   "office_raw": "禮部",
-   "office_status": "name-anchor",
-   "tenure_type": "实授",
-   "start_year": 1377,
-   "start_month": 2,
-   "end_year": 1377,
-   "end_month": 5,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.8,
-   "leave": "改除",
-   "note": "二、壬申、廿四,北平按僉遷;五、戊子、十一,改兩浙鹽使。十三年復太常卿。十四年卒於官。",
-   "start_book_page": 408,
-   "end_book_page": 411,
-   "years": [
-    1377
-   ],
-   "same_name_risk": true
-  },
-  {
-   "person": "李本",
-   "person_id": "李本#2",
-   "person_label": "李本（1556）",
-   "cbdb_id": 223131,
-   "cbdb_name": "呂本",
    "office": "吏部",
    "office_raw": "吏部",
    "office_status": "name-anchor",
@@ -13026,8 +13022,7 @@
    "end_book_page": 591,
    "years": [
     1556
-   ],
-   "same_name_risk": true
+   ]
   },
   {
    "person": "李楨",
@@ -26681,56 +26676,6 @@
    ]
   },
   {
-   "person": "趙犏",
-   "person_id": "趙犏",
-   "person_label": "趙犏",
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "office": "兵部",
-   "office_raw": "兵部",
-   "office_status": "row-order",
-   "tenure_type": "实授",
-   "start_year": 1420,
-   "start_month": null,
-   "end_year": 1420,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.5,
-   "leave": "未載",
-   "note": "",
-   "start_book_page": 455,
-   "end_book_page": 455,
-   "years": [
-    1420
-   ]
-  },
-  {
-   "person": "趙犭",
-   "person_id": "趙犭",
-   "person_label": "趙犭",
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "office": "禮部",
-   "office_raw": "禮部",
-   "office_status": null,
-   "tenure_type": "实授",
-   "start_year": 1407,
-   "start_month": 6,
-   "end_year": 1407,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
-   "note": "六、辛卯、九、禮右侍遷。",
-   "start_book_page": 442,
-   "end_book_page": 442,
-   "years": [
-    1407
-   ]
-  },
-  {
    "person": "趙班",
    "person_id": "趙班",
    "person_label": "趙班",
@@ -26868,88 +26813,6 @@
    ]
   },
   {
-   "person": "趙粑",
-   "person_id": "趙粑",
-   "person_label": "趙粑",
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "office": "兵部",
-   "office_raw": "兵部",
-   "office_status": "row-order",
-   "tenure_type": "实授",
-   "start_year": 1424,
-   "start_month": 9,
-   "end_year": 1424,
-   "end_month": 8,
-   "month_conflict": true,
-   "end_clamped": false,
-   "confidence": 0.5,
-   "leave": "改除",
-   "note": "九、丙子、四,代掌交阯布按司事。八、庚申、十八,工尚改;八、庚申、十八,改南刑尚。十、壬寅、一,加太子少保。",
-   "start_book_page": 459,
-   "end_book_page": 459,
-   "years": [
-    1424
-   ]
-  },
-  {
-   "person": "趙紅",
-   "person_id": "趙紅",
-   "person_label": "趙紅",
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "office": "兵部",
-   "office_raw": "兵部",
-   "office_status": "mixed",
-   "tenure_type": "实授",
-   "start_year": 1422,
-   "start_month": 2,
-   "end_year": 1423,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
-   "note": "二、乙巳、十八,督餉。",
-   "start_book_page": 457,
-   "end_book_page": 458,
-   "years": [
-    1422,
-    1423
-   ]
-  },
-  {
-   "person": "趙紅",
-   "person_id": "趙紅",
-   "person_label": "趙紅",
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "office": "禮部",
-   "office_raw": "禮部",
-   "office_status": null,
-   "tenure_type": "实授",
-   "start_year": 1409,
-   "start_month": null,
-   "end_year": 1411,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.5,
-   "leave": "未載",
-   "note": "",
-   "start_book_page": 444,
-   "end_book_page": 446,
-   "years": [
-    1409,
-    1410,
-    1411
-   ],
-   "gap_years": [
-    1410
-   ],
-   "merged_segments": 2
-  },
-  {
    "person": "趙羾",
    "person_id": "趙羾",
    "person_label": "趙羾",
@@ -26957,26 +26820,25 @@
    "cbdb_name": "趙羾",
    "office": "兵部",
    "office_raw": "兵部",
-   "office_status": null,
+   "office_status": "mixed",
    "tenure_type": "实授",
    "start_year": 1417,
    "start_month": 11,
-   "end_year": 1417,
-   "end_month": 11,
+   "end_year": 1418,
+   "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.8,
    "leave": "戍",
    "note": "扈駕是年,參李彬軍務.十一、癸酉、廿一,前禮尚復,巡督塞北屯戍,尋丁憂歸。",
    "start_book_page": 452,
-   "end_book_page": 456,
+   "end_book_page": 459,
    "years": [
-    1417
+    1417,
+    1418
    ],
    "gap_after": [
-    1418,
-    1419,
-    1420
+    1419
    ]
   },
   {
@@ -26987,21 +26849,25 @@
    "cbdb_name": "趙羾",
    "office": "兵部",
    "office_raw": "兵部",
-   "office_status": null,
+   "office_status": "mixed",
    "tenure_type": "实授",
-   "start_year": 1421,
-   "start_month": 11,
-   "end_year": 1421,
-   "end_month": null,
+   "start_year": 1420,
+   "start_month": null,
+   "end_year": 1424,
+   "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
-   "note": "十一、丙子、十七,自縊。",
+   "confidence": 0.7,
+   "leave": "改除",
+   "note": "",
    "start_book_page": 452,
-   "end_book_page": 456,
+   "end_book_page": 459,
    "years": [
-    1421
+    1420,
+    1421,
+    1422,
+    1423,
+    1424
    ]
   },
   {
@@ -27034,6 +26900,40 @@
     1409
    ],
    "merged_segments": 2
+  },
+  {
+   "person": "趙羾",
+   "person_id": "趙羾",
+   "person_label": "趙羾",
+   "cbdb_id": 66668,
+   "cbdb_name": "趙羾",
+   "office": "禮部",
+   "office_raw": "禮部",
+   "office_status": null,
+   "tenure_type": "实授",
+   "start_year": 1407,
+   "start_month": 6,
+   "end_year": 1411,
+   "end_month": null,
+   "month_conflict": false,
+   "end_clamped": false,
+   "confidence": 0.5,
+   "leave": "未載",
+   "note": "六、辛卯、九、禮右侍遷。",
+   "start_book_page": 442,
+   "end_book_page": 446,
+   "years": [
+    1407,
+    1408,
+    1409,
+    1410,
+    1411
+   ],
+   "gap_years": [
+    1408,
+    1410
+   ],
+   "merged_segments": 3
   },
   {
    "person": "趙翥",
@@ -27118,31 +27018,6 @@
    "end_book_page": 408,
    "years": [
     1374
-   ]
-  },
-  {
-   "person": "趙肛",
-   "person_id": "趙肛",
-   "person_label": "趙肛",
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "office": "兵部",
-   "office_raw": "兵部",
-   "office_status": "row-order",
-   "tenure_type": "实授",
-   "start_year": 1418,
-   "start_month": null,
-   "end_year": 1418,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "戍",
-   "note": "是年屯戍,丁憂歸,尋起復。",
-   "start_book_page": 453,
-   "end_book_page": 453,
-   "years": [
-    1418
    ]
   },
   {

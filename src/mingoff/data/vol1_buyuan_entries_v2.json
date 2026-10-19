@@ -1094,15 +1094,20 @@
  {
   "year": 1372,
   "office": "吏部",
-  "person": "李本",
+  "person": "呂本",
   "note": "",
   "raw_person": "吕本",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
-  "person_id": "李本#1",
-  "person_label": "李本（1372–1377）",
-  "book_page": 406
+  "person_id": "呂本",
+  "person_label": "呂本",
+  "book_page": 406,
+  "entityFix": {
+   "from": "李本#1",
+   "op": "identity-fix",
+   "src": "D44"
+  }
  },
  {
   "year": 1372,
@@ -1380,16 +1385,21 @@
  {
   "year": 1373,
   "office": "吏部",
-  "person": "李本",
+  "person": "呂本",
   "note": "七、壬戌、廿三,改太常卿。七年,以事遷北平按命。十年二月,改禮尚。",
   "raw_person": "吕本",
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
-  "person_id": "李本#1",
-  "person_label": "李本（1372–1377）",
+  "person_id": "呂本",
+  "person_label": "呂本",
   "book_page": 407,
-  "office_status": "row-order"
+  "office_status": "row-order",
+  "entityFix": {
+   "from": "李本#1",
+   "op": "identity-fix",
+   "src": "D44"
+  }
  },
  {
   "year": 1373,
@@ -1788,15 +1798,20 @@
  {
   "year": 1374,
   "office": "禮部",
-  "person": "李本",
+  "person": "呂本",
   "note": "是年,北平按僉遷。",
   "raw_person": "吕本",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
-  "person_id": "李本#1",
-  "person_label": "李本（1372–1377）",
-  "book_page": 408
+  "person_id": "呂本",
+  "person_label": "呂本",
+  "book_page": 408,
+  "entityFix": {
+   "from": "李本#1",
+   "op": "identity-fix",
+   "src": "D44"
+  }
  },
  {
   "year": 1374,
@@ -1900,16 +1915,21 @@
  {
   "year": 1375,
   "office": "吏部",
-  "person": "李本",
+  "person": "呂本",
   "note": "是年,出為兩浙都轉運鹽使。十三年遷太常寺卿。十四年卒於官。",
   "raw_person": "吕本",
   "raw_office": "吏部",
   "src": "table",
   "flag": ";office重复",
-  "person_id": "李本#1",
-  "person_label": "李本（1372–1377）",
+  "person_id": "呂本",
+  "person_label": "呂本",
   "book_page": 409,
-  "office_status": "row-order"
+  "office_status": "row-order",
+  "entityFix": {
+   "from": "李本#1",
+   "op": "identity-fix",
+   "src": "D44"
+  }
  },
  {
   "year": 1375,
@@ -2625,16 +2645,21 @@
  {
   "year": 1377,
   "office": "禮部",
-  "person": "李本",
+  "person": "呂本",
   "note": "二、壬申、廿四,北平按僉遷;五、戊子、十一,改兩浙鹽使。十三年復太常卿。十四年卒於官。",
   "raw_person": "吕本",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
-  "person_id": "李本#1",
-  "person_label": "李本（1372–1377）",
+  "person_id": "呂本",
+  "person_label": "呂本",
   "book_page": 411,
-  "office_status": "name-anchor"
+  "office_status": "name-anchor",
+  "entityFix": {
+   "from": "李本#1",
+   "op": "identity-fix",
+   "src": "D44"
+  }
  },
  {
   "year": 1378,
@@ -7201,15 +7226,20 @@
  {
   "year": 1407,
   "office": "禮部",
-  "person": "趙犭",
+  "person": "趙羾",
   "note": "六、辛卯、九、禮右侍遷。",
   "raw_person": "趙犭",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
-  "person_id": "趙犭",
-  "person_label": "趙犭",
-  "book_page": 442
+  "person_id": "趙羾",
+  "person_label": "趙羾",
+  "book_page": 442,
+  "entityFix": {
+   "from": "趙犭",
+   "op": "identity-fix",
+   "src": "D44"
+  }
  },
  {
   "year": 1407,
@@ -7514,15 +7544,20 @@
  {
   "year": 1409,
   "office": "禮部",
-  "person": "趙紅",
+  "person": "趙羾",
   "note": "",
   "raw_person": "趙紅",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
-  "person_id": "趙紅",
-  "person_label": "趙紅",
-  "book_page": 444
+  "person_id": "趙羾",
+  "person_label": "趙羾",
+  "book_page": 444,
+  "entityFix": {
+   "from": "趙紅",
+   "op": "identity-fix",
+   "src": "D44"
+  }
  },
  {
   "year": 1409,
@@ -7796,15 +7831,20 @@
  {
   "year": 1411,
   "office": "禮部",
-  "person": "趙紅",
+  "person": "趙羾",
   "note": "",
   "raw_person": "趙紅",
   "raw_office": "禮部",
   "src": "table",
   "flag": null,
-  "person_id": "趙紅",
-  "person_label": "趙紅",
-  "book_page": 446
+  "person_id": "趙羾",
+  "person_label": "趙羾",
+  "book_page": 446,
+  "entityFix": {
+   "from": "趙紅",
+   "op": "identity-fix",
+   "src": "D44"
+  }
  },
  {
   "year": 1411,
@@ -8615,16 +8655,21 @@
  {
   "year": 1418,
   "office": "兵部",
-  "person": "趙肛",
+  "person": "趙羾",
   "note": "是年屯戍,丁憂歸,尋起復。",
   "raw_person": "趙肛",
   "raw_office": "兵部",
   "src": "table",
   "flag": "note?;;office重复",
-  "person_id": "趙肛",
-  "person_label": "趙肛",
+  "person_id": "趙羾",
+  "person_label": "趙羾",
   "book_page": 453,
-  "office_status": "row-order"
+  "office_status": "row-order",
+  "entityFix": {
+   "from": "趙肛",
+   "op": "identity-fix",
+   "src": "D44"
+  }
  },
  {
   "year": 1418,
@@ -8885,16 +8930,21 @@
  {
   "year": 1420,
   "office": "兵部",
-  "person": "趙犏",
+  "person": "趙羾",
   "note": "",
   "raw_person": "趙犏",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
-  "person_id": "趙犏",
-  "person_label": "趙犏",
+  "person_id": "趙羾",
+  "person_label": "趙羾",
   "book_page": 455,
-  "office_status": "row-order"
+  "office_status": "row-order",
+  "entityFix": {
+   "from": "趙犏",
+   "op": "identity-fix",
+   "src": "D44"
+  }
  },
  {
   "year": 1420,
@@ -9250,16 +9300,21 @@
  {
   "year": 1422,
   "office": "兵部",
-  "person": "趙紅",
+  "person": "趙羾",
   "note": "二、乙巳、十八,督餉。",
   "raw_person": "趙紅",
   "raw_office": "兵部",
   "src": "table",
   "flag": ";office重复",
-  "person_id": "趙紅",
-  "person_label": "趙紅",
+  "person_id": "趙羾",
+  "person_label": "趙羾",
   "book_page": 457,
-  "office_status": "row-order"
+  "office_status": "row-order",
+  "entityFix": {
+   "from": "趙紅",
+   "op": "identity-fix",
+   "src": "D44"
+  }
  },
  {
   "year": 1422,
@@ -9393,15 +9448,20 @@
  {
   "year": 1423,
   "office": "兵部",
-  "person": "趙紅",
+  "person": "趙羾",
   "note": "",
   "raw_person": "趙紅",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
-  "person_id": "趙紅",
-  "person_label": "趙紅",
-  "book_page": 458
+  "person_id": "趙羾",
+  "person_label": "趙羾",
+  "book_page": 458,
+  "entityFix": {
+   "from": "趙紅",
+   "op": "identity-fix",
+   "src": "D44"
+  }
  },
  {
   "year": 1423,
@@ -9524,16 +9584,21 @@
  {
   "year": 1424,
   "office": "兵部",
-  "person": "趙粑",
+  "person": "趙羾",
   "note": "九、丙子、四,代掌交阯布按司事。八、庚申、十八,工尚改;八、庚申、十八,改南刑尚。十、壬寅、一,加太子少保。",
   "raw_person": "趙粑",
   "raw_office": "兵部",
   "src": "table",
   "flag": null,
-  "person_id": "趙粑",
-  "person_label": "趙粑",
+  "person_id": "趙羾",
+  "person_label": "趙羾",
   "book_page": 459,
-  "office_status": "row-order"
+  "office_status": "row-order",
+  "entityFix": {
+   "from": "趙粑",
+   "op": "identity-fix",
+   "src": "D44"
+  }
  },
  {
   "year": 1424,
@@ -30862,10 +30927,15 @@
   "raw_office": "吏部",
   "src": "table",
   "flag": null,
-  "person_id": "李本#2",
-  "person_label": "李本（1556）",
+  "person_id": "李本",
+  "person_label": "李本",
   "book_page": 591,
-  "office_status": "name-anchor"
+  "office_status": "name-anchor",
+  "entityFix": {
+   "from": "李本#2",
+   "op": "identity-fix",
+   "src": "D44"
+  }
  },
  {
   "year": 1556,

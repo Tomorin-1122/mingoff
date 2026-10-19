@@ -110,6 +110,25 @@
    ]
   },
   {
+   "person_id": "呂本",
+   "person": "呂本",
+   "office": "吏部",
+   "after": 1373,
+   "years": [
+    1374
+   ]
+  },
+  {
+   "person_id": "呂本",
+   "person": "呂本",
+   "office": "禮部",
+   "after": 1374,
+   "years": [
+    1375,
+    1376
+   ]
+  },
+  {
    "person_id": "呂震",
    "person": "呂震",
    "office": "刑部",
@@ -495,25 +514,6 @@
     1597,
     1598,
     1599
-   ]
-  },
-  {
-   "person_id": "李本#1",
-   "person": "李本",
-   "office": "吏部",
-   "after": 1373,
-   "years": [
-    1374
-   ]
-  },
-  {
-   "person_id": "李本#1",
-   "person": "李本",
-   "office": "禮部",
-   "after": 1374,
-   "years": [
-    1375,
-    1376
    ]
   },
   {
@@ -1110,11 +1110,9 @@
    "person_id": "趙羾",
    "person": "趙羾",
    "office": "兵部",
-   "after": 1417,
+   "after": 1418,
    "years": [
-    1418,
-    1419,
-    1420
+    1419
    ]
   },
   {

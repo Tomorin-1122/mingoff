@@ -291,16 +291,6 @@
    1372
   ]
  },
- "李本#1": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "same-name-split",
-  "repair": "same-name-split:李本:entity1",
-  "span": [
-   1372,
-   1377
-  ]
- },
  "黃肅": {
   "cbdb_id": 131436,
   "cbdb_name": "黃肅",
@@ -1211,20 +1201,6 @@
    1442
   ]
  },
- "趙犭": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "fuzzy+wiki",
-  "score": null,
-  "birth": 1364,
-  "death": 1436,
-  "span": [
-   1407,
-   1407
-  ],
-  "note": "wiki:趙羾",
-  "repair": "shared-id-66668-not-owner"
- },
  "劉觀": {
   "cbdb_id": 66758,
   "cbdb_name": "劉觀",
@@ -1240,16 +1216,15 @@
  "趙羾": {
   "cbdb_id": 66668,
   "cbdb_name": "趙羾",
-  "method": "fuzzy+wiki",
+  "method": "d44-fix",
   "score": null,
   "birth": 1364,
   "death": 1436,
   "span": [
-   1408,
-   1421
+   1407,
+   1424
   ],
-  "note": "wiki:趙羾",
-  "repair": "override:66668"
+  "note": "禮部尚書1407-1411→兵部尚書1417-1425→改南刑部；五個 OCR 碎片(犭/紅/肛/粑/犏)並入"
  },
  "方賓": {
   "cbdb_id": 66755,
@@ -1262,20 +1237,6 @@
    1409,
    1421
   ]
- },
- "趙紅": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "fuzzy+wiki",
-  "score": null,
-  "birth": 1364,
-  "death": 1436,
-  "span": [
-   1409,
-   1423
-  ],
-  "note": "wiki:趙羾",
-  "repair": "shared-id-66668-not-owner"
  },
  "陳洽": {
   "cbdb_id": 66812,
@@ -1301,34 +1262,6 @@
    1428
   ]
  },
- "趙肛": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "fuzzy+wiki",
-  "score": null,
-  "birth": 1364,
-  "death": 1436,
-  "span": [
-   1418,
-   1418
-  ],
-  "note": "wiki:趙羾",
-  "repair": "shared-id-66668-not-owner"
- },
- "趙犏": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "fuzzy+wiki",
-  "score": null,
-  "birth": 1364,
-  "death": 1436,
-  "span": [
-   1420,
-   1420
-  ],
-  "note": "wiki:趙羾",
-  "repair": "shared-id-66668-not-owner"
- },
  "李慶": {
   "cbdb_id": 66671,
   "cbdb_name": "李慶",
@@ -1352,20 +1285,6 @@
    1420,
    1427
   ]
- },
- "趙粑": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "fuzzy+wiki",
-  "score": null,
-  "birth": 1364,
-  "death": 1436,
-  "span": [
-   1424,
-   1424
-  ],
-  "note": "wiki:趙羾",
-  "repair": "shared-id-66668-not-owner"
  },
  "向寶": {
   "cbdb_id": 66674,
@@ -4503,17 +4422,6 @@
    1558
   ]
  },
- "李本#2": {
-  "cbdb_id": 223131,
-  "cbdb_name": "呂本",
-  "method": "cabinet",
-  "span": [
-   1556,
-   1556
-  ],
-  "birth": null,
-  "death": null
- },
  "趙文華": {
   "cbdb_id": 232910,
   "cbdb_name": "趙文華",
@@ -6955,5 +6863,31 @@
    1369,
    1369
   ]
+ },
+ "呂本": {
+  "cbdb_id": 223131,
+  "cbdb_name": "呂本",
+  "method": "d44-fix",
+  "score": null,
+  "birth": null,
+  "death": null,
+  "span": [
+   1372,
+   1377
+  ],
+  "note": "洪武禮部尚書呂本（懿文太子妃之父）；原被呂本→李本别名误改，D44 复原"
+ },
+ "李本": {
+  "cbdb_id": null,
+  "cbdb_name": null,
+  "method": "d44-fix",
+  "score": null,
+  "birth": null,
+  "death": null,
+  "span": [
+   1556,
+   1556
+  ],
+  "note": "嘉靖三十五年吏部（大學士署部事）；CBDB 候选皆不可辨，保持 NULL"
  }
 }

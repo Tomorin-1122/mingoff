@@ -1,22 +1,24 @@
 
 ---
 
-## D43 D-11 方案B 落地 + D-05/D-06 重挂（2026-10-19）
+## D44 遗留三件清账（2026-10-19，老板指令"继续做遗留三件"）
 
-**D-11 方案B**（老板拍板"做B"）：`scripts/pilot/d11_apply_b.py` 把行序兜底行按 (year, office)
-显式降级——entries_v2 打 `office_status`（row-order 685 / name-anchor 788 / page-verified 54，
-D42 页核四年豁免）；任职段贯通（段内逐年聚合：row-order 114 / mixed 392 / name-anchor 85 /
-page-verified 11 段），站点可据 `office_status` 灰显。A（回原书页核）按 D-08 页表另排。
+**① 李本#2→223131 疑误挂 → 破案，根因修复**：
+repair 全局别名「呂本→李本」把洪武禮部尚書**呂本**（真名，懿文太子妃之父）错改成李本，
+D33 被迫拆出 李本#1/#2。复原：**呂本**（1372–77，挂 223131）与**李本**（1556 吏部，
+"大學士署部事"，CBDB 无可靠候选 → NULL）为两个独立真名；repair 源同步撤销该别名，
+李本退出同名拆分组（AMBIG/era-split/ENTITY_CBDB_OWNER 三处清理）。
 
-**D-05/D-06**（老板拍板"做0506"）：`scripts/pilot/d0506_mount.py` exact 重挂——
-D-06 42 NULL 实体：13 挂上 + 6 人工裁决（胡濙→222777、顧佐#1→66992/顧佐#2→66995 分流、
-胡松#1→68290/#2→68288 分流、高燿→129415、宋冕 audit 拦截回 NULL）；余 29 逐人有结论。
-D-05：22 未映射实体挂上（呂震/張璁/袁煒/費寀 等）；mrzj 出处层
-`vol1_buyuan_mrzj.json` 75 实体（L4，不入主数据）。映射终态 547/576 键有 id。
+**② 赵氏 OCR 碎片 5 个 → 并入趙羾**：
+趙犭/趙紅/趙肛/趙粑/趙犏（1407 禮 / 1409-11 禮 / 1418 兵 / 1420 兵 / 1422-24 兵）
+全部= **趙羾**（CBDB 66668，1364-1436：禮部尚書 1407-1411 → 兵部尚書 1417-1425 → 改南刑部；
+弇山堂"永樂十五年任，二十一年改南刑部"逐年吻合）。repair 别名表 + CBDB_ID_OVERRIDE 同步。
 
-**验收**：audit blockers 0（宋冕冲突被拦截回退）；pytest 190 全过。
-**遗留**：李本#2→223131(呂本) 疑误挂待复核；赵氏碎片 5 待 repair；8 个 office=NULL 待回原书。
-来。裸 SQL 里 `COALESCE(start_year,-1)` 这种写法是**看得见**的。
+**③ 8 个 office=NULL**：核实 v2 已清零（D34/D37 repair 轮处置），待办文档口径过时，已更正。
+
+**验收**：1,198 段 / 789 实体 / 3,472 人-年；CBDB 对齐 875；同 id 多正名 0；
+audit blockers 0；pytest 190 全过（test_identity_split/test_same_name_risk 同步 D44 口径）。
+*的。
 
 **代价**：没有自动迁移工具。当前靠 `CREATE TABLE IF NOT EXISTS`；
 真要改 schema 时需要手写迁移（见 D3）。

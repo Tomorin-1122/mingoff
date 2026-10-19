@@ -51,7 +51,7 @@
  "year_header_jumps": [],
  "stats": {
   "entries": 3321,
-  "persons_unique": 794,
+  "persons_unique": 789,
   "years": 277,
   "missing_years": [],
   "no_office_entries": 0,
@@ -66,8 +66,8 @@
   },
   "per_year_min": 6,
   "per_year_max": 25,
-  "display_persons": 788,
-  "split_entities": 12,
+  "display_persons": 784,
+  "split_entities": 10,
   "offices": [
    "兵部",
    "刑部",
@@ -106,15 +106,15 @@
   "docs/evidence/book_p679_bujuan1644.png"
  ],
  "tenure_assembly": {
-  "date": "2026-10-19T06:52:45+00:00",
+  "date": "2026-10-19T07:06:45+00:00",
   "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
   "output": "official_buyuan.json",
   "stats": {
-   "tenures": 1203,
-   "persons": 794,
-   "display_persons": 788,
-   "split_entities": 12,
-   "same_name_entities": 6,
+   "tenures": 1198,
+   "persons": 789,
+   "display_persons": 784,
+   "split_entities": 10,
+   "same_name_entities": 5,
    "offices": [
     "兵部",
     "刑部",
@@ -130,29 +130,29 @@
     "都察院"
    ],
    "gap_merged_tenures": 103,
-   "gap_years_total": 150,
+   "gap_years_total": 151,
    "years_covered": [
     1368,
     1644
    ],
-   "with_start_month": 831,
-   "with_end_month": 552,
-   "with_start_page": 1203,
-   "with_end_page": 1203,
-   "cbdb_aligned": 871,
-   "with_leave": 583,
+   "with_start_month": 828,
+   "with_end_month": 551,
+   "with_start_page": 1198,
+   "with_end_page": 1198,
+   "cbdb_aligned": 875,
+   "with_leave": 582,
    "shu_li": 73,
-   "same_name_risk": 15,
+   "same_name_risk": 10,
    "office_status_dist": {
-    "mixed": 392,
-    "null": 601,
-    "row-order": 114,
+    "mixed": 393,
+    "null": 598,
+    "row-order": 111,
     "name-anchor": 85,
     "page-verified": 11
    },
    "shilu_persons": 130,
    "shilu_hits": 3913,
-   "person_years": 3471
+   "person_years": 3472
   },
   "gates": {
    "G1": "pass",
