@@ -5,21 +5,21 @@
   "canvas_from": 1368,
   "source": "张德信《明代职官年表》册1·內閣大臣年表（MinerU OCR；缺块以原书 PDF 页补录）；人物对齐 CBDB（cbdb_20261010）；《明實錄》命中据中研院检索",
   "pipeline": "mingoff.official (v3: 表格重解析 + CBDB 修复 + D15 南明过滤)",
-  "generated_at": "2026-10-19T07:14:07+00:00",
+  "generated_at": "2026-10-19T11:23:24+00:00",
   "stats": {
-   "tenures": 192,
-   "persons": 167,
+   "tenures": 184,
+   "persons": 163,
    "years_covered": [
     1402,
     1644
    ],
-   "with_start_month": 189,
+   "with_start_month": 183,
    "with_end_month": 159,
-   "cbdb_aligned": 187,
+   "cbdb_aligned": 179,
    "with_leave": 162,
    "shilu_persons": 155,
-   "shilu_hits": 9687,
-   "person_years": 1039
+   "shilu_hits": 9695,
+   "person_years": 1040
   }
  },
  "tenures": [
@@ -432,16 +432,17 @@
    "cbdb_name": "劉珝",
    "office": "內閣",
    "tenure_type": "实授",
-   "start_year": 1476,
-   "start_month": null,
+   "start_year": 1475,
+   "start_month": 4,
    "end_year": 1481,
    "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
+   "confidence": 0.7,
    "leave": "未載",
-   "note": "",
+   "note": "四、乙酉、七,吏左侍兼翰林學士入閣。",
    "years": [
+    1475,
     1476,
     1477,
     1478,
@@ -470,25 +471,6 @@
     1483,
     1484,
     1485
-   ]
-  },
-  {
-   "person": "劉翔",
-   "cbdb_id": 300407,
-   "cbdb_name": "劉翔",
-   "office": "內閣",
-   "tenure_type": "实授",
-   "start_year": 1475,
-   "start_month": 4,
-   "end_year": 1475,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
-   "note": "四、乙酉、七,吏左侍兼翰林學士入閣。",
-   "years": [
-    1475
    ]
   },
   {
@@ -1803,41 +1785,23 @@
    ]
   },
   {
-   "person": "李國楷",
-   "cbdb_id": 507420,
-   "cbdb_name": "李國楷",
-   "office": "內閣",
-   "tenure_type": "实授",
-   "start_year": 1626,
-   "start_month": 7,
-   "end_year": 1627,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
-   "note": "七、丙戌、十六,詹事兼侍讀學士副總裁遷禮尚兼東閣大學士入;十、甲寅、十五,加太子太保兼文淵閣大學士,餘如故。",
-   "years": [
-    1626,
-    1627
-   ]
-  },
-  {
    "person": "李國𣚴",
    "cbdb_id": 517572,
    "cbdb_name": "李國𣚴",
    "office": "內閣",
    "tenure_type": "实授",
-   "start_year": 1628,
-   "start_month": 4,
+   "start_year": 1626,
+   "start_month": 7,
    "end_year": 1628,
    "end_month": 5,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
+   "confidence": 0.8,
    "leave": "致仕",
-   "note": "四、辛亥、廿,加太保;四、庚申、廿九,辭加太保;五、己巳、九,加太傅致仕;五、癸酉、十三,辭太傅;七、庚申、一,加太傅;八、甲午、六,辭太傅。四年四、壬子、九,卒,贈太保,謚文敏。",
+   "note": "七、丙戌、十六,詹事兼侍讀學士副總裁遷禮尚兼東閣大學士入;十、甲寅、十五,加太子太保兼文淵閣大學士,餘如故。",
    "years": [
+    1626,
+    1627,
     1628
    ]
   },
@@ -2956,35 +2920,18 @@
    "tenure_type": "实授",
    "start_year": 1540,
    "start_month": 1,
-   "end_year": 1542,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
-   "note": "正、丙午、十三,太子少保禮尚兼武英殿大學十入;十一、甲寅、廿七,加少保兼太子太保,尚書學士如故。",
-   "years": [
-    1540,
-    1541,
-    1542
-   ]
-  },
-  {
-   "person": "翟鑾",
-   "cbdb_id": 68136,
-   "cbdb_name": "翟鑾",
-   "office": "內閣",
-   "tenure_type": "实授",
-   "start_year": 1544,
-   "start_month": 8,
    "end_year": 1544,
    "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
+   "confidence": 0.8,
    "leave": "削籍",
-   "note": "八、甲午、廿八，削籍。廿五年十二、癸丑、卅，卒。卅八年十一、丁酉、卅，復職。四十四年十二、乙酉、廿二，謚文懿。",
+   "note": "正、丙午、十三,太子少保禮尚兼武英殿大學十入;十一、甲寅、廿七,加少保兼太子太保,尚書學士如故。",
    "years": [
+    1540,
+    1541,
+    1542,
+    1543,
     1544
    ]
   },
@@ -3222,37 +3169,22 @@
    "tenure_type": "实授",
    "start_year": 1516,
    "start_month": 8,
-   "end_year": 1520,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
-   "note": "八、丁丑、廿八，禮尚兼文淵閣大學士人。",
-   "years": [
-    1516,
-    1517,
-    1518,
-    1519,
-    1520
-   ]
-  },
-  {
-   "person": "蔣冕",
-   "cbdb_id": 68073,
-   "cbdb_name": "蔣冕",
-   "office": "內閣",
-   "tenure_type": "实授",
-   "start_year": 1524,
-   "start_month": 5,
    "end_year": 1524,
    "end_month": 5,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
    "leave": "致仕",
-   "note": "五、乙丑、一，致仕。十二年卒。隆慶元年四、甲寅、廿九，贈少師，謚文定；六月，進吏尚兼謹身殿大學士。",
+   "note": "八、丁丑、廿八，禮尚兼文淵閣大學士人。",
    "years": [
+    1516,
+    1517,
+    1518,
+    1519,
+    1520,
+    1521,
+    1522,
+    1523,
     1524
    ]
   },
@@ -3275,27 +3207,6 @@
     1642,
     1643,
     1644
-   ]
-  },
-  {
-   "person": "蔣晁",
-   "cbdb_id": 448647,
-   "cbdb_name": "蔣晁",
-   "office": "內閣",
-   "tenure_type": "实授",
-   "start_year": 1521,
-   "start_month": 1,
-   "end_year": 1523,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
-   "note": "正、庚午、十七,加少傅謹身殿大學士,尚書如故。",
-   "years": [
-    1521,
-    1522,
-    1523
    ]
   },
   {
@@ -3818,74 +3729,20 @@
    "cbdb_name": "錢士升",
    "office": "內閣",
    "tenure_type": "实授",
-   "start_year": 1634,
-   "start_month": 1,
-   "end_year": 1634,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
-   "note": "正、癸丑、廿六,入朝。",
-   "years": [
-    1634
-   ]
-  },
-  {
-   "person": "錢士升",
-   "cbdb_id": 86453,
-   "cbdb_name": "錢士升",
-   "office": "內閣",
-   "tenure_type": "实授",
-   "start_year": 1636,
-   "start_month": 4,
+   "start_year": 1633,
+   "start_month": 9,
    "end_year": 1636,
    "end_month": 4,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
+   "confidence": 0.8,
    "leave": "致仕",
-   "note": "四、壬午、八,致仕。十七年十二、癸酉、十九,進太子太保。",
+   "note": "九、庚戌、廿一，南禮右侍遷禮尚兼東閣大學士入。",
    "years": [
+    1633,
+    1634,
+    1635,
     1636
-   ]
-  },
-  {
-   "person": "錢溥",
-   "cbdb_id": 260821,
-   "cbdb_name": "錢溥",
-   "office": "內閣",
-   "tenure_type": "实授",
-   "start_year": 1633,
-   "start_month": 9,
-   "end_year": 1633,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
-   "note": "升 九、庚戌、廿一，南禮右侍遷禮尚兼東閣大學士入。",
-   "years": [
-    1633
-   ]
-  },
-  {
-   "person": "錢溥",
-   "cbdb_id": 260821,
-   "cbdb_name": "錢溥",
-   "office": "內閣",
-   "tenure_type": "实授",
-   "start_year": 1635,
-   "start_month": null,
-   "end_year": 1635,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.5,
-   "leave": "未載",
-   "note": "升",
-   "years": [
-    1635
    ]
   },
   {
@@ -5763,8 +5620,17 @@
    ]
   },
   "劉珝": {
-   "count": 21,
+   "count": 22,
    "hits": [
+    {
+     "year": 1474,
+     "era": "成化",
+     "era_year": 10,
+     "month": 6,
+     "leap": false,
+     "source": "明實錄 憲宗 卷一百二十九 成化十年六月",
+     "content": "○癸亥陞太常寺卿兼翰林院侍讀學士劉珝為吏部左侍郎仍於經筵會講改工部左侍郎杜銘于刑部"
+    },
     {
      "year": 1475,
      "era": "成化",
@@ -5827,15 +5693,6 @@
      "leap": false,
      "source": "明實錄 憲宗 卷一百六十七 成化十三年六月",
      "content": "○乙丑太子少保戶部尚書兼翰林院學士萬安戶部尚書兼學士劉珝禮部尚書兼學士劉吉俱自陳乞罷免詔曰卿等職居輔導朕方倚任宜盡心幹濟所辭不允"
-    },
-    {
-     "year": 1477,
-     "era": "成化",
-     "era_year": 13,
-     "month": 11,
-     "leap": false,
-     "source": "明實錄 憲宗 卷一百七十二 成化十三年十一月",
-     "content": "○丙寅嚴文武官乘轎之禁太監汪直言洪武永樂間人臣無敢乘轎者正統時文官年老或乘肩輿景泰以來師保既多延至于今兩京五品以上無不乘轎者文職三品年六十以上可許武職宜一切禁止從之本藳吳綬所撰也是時都御史王越尚書尹旻及戴縉吳綬皆為直心腹而學士劉珝為越所誘亦與直通數人者凡有謀議直徑達於上輒見施行人皆畏懼雖司禮當道亦謹避之云"
     }
    ]
   },
@@ -12424,7 +12281,7 @@
    ]
   },
   "蔣冕": {
-   "count": 74,
+   "count": 81,
    "hits": [
     {
      "year": 1515,
