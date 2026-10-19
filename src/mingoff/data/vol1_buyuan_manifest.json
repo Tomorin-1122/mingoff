@@ -106,7 +106,7 @@
   "docs/evidence/book_p679_bujuan1644.png"
  ],
  "tenure_assembly": {
-  "date": "2026-10-19T03:15:11+00:00",
+  "date": "2026-10-19T06:52:45+00:00",
   "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
   "output": "official_buyuan.json",
   "stats": {
@@ -139,10 +139,17 @@
    "with_end_month": 552,
    "with_start_page": 1203,
    "with_end_page": 1203,
-   "cbdb_aligned": 819,
+   "cbdb_aligned": 871,
    "with_leave": 583,
    "shu_li": 73,
    "same_name_risk": 15,
+   "office_status_dist": {
+    "mixed": 392,
+    "null": 601,
+    "row-order": 114,
+    "name-anchor": 85,
+    "page-verified": 11
+   },
    "shilu_persons": 130,
    "shilu_hits": 3913,
    "person_years": 3471

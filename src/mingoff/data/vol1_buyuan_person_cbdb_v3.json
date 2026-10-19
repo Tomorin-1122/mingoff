@@ -195,15 +195,16 @@
  "宋冕": {
   "cbdb_id": null,
   "cbdb_name": null,
-  "method": "exact",
-  "score": 87.6,
+  "method": "d06-remount",
+  "score": 70.0,
   "birth": 1465,
   "death": 1537,
   "span": [
    1370,
    1371
   ],
-  "repair": "date-conflict-or-ambiguous:127666"
+  "repair": "date-conflict-or-ambiguous:127666",
+  "note": "audit 拦截：127666(1465-1537) 为成化宋冕；本实体=洪武三年宋冕，同名二人不合并"
  },
  "陳昱": {
   "cbdb_id": 502875,
@@ -339,12 +340,12 @@
   ]
  },
  "李儼": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "fuzzy+wiki",
-  "score": null,
-  "birth": 1316,
-  "death": 1380,
+  "cbdb_id": 263516,
+  "cbdb_name": "李儼",
+  "method": "d06-remount",
+  "score": 60.0,
+  "birth": null,
+  "death": null,
   "span": [
    1373,
    1374
@@ -367,14 +368,17 @@
   "repair": "shared-id-66439-not-owner"
  },
  "李敏#1": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "same-name-split",
+  "cbdb_id": 67846,
+  "cbdb_name": "李敏",
+  "method": "d06-remount",
   "repair": "same-name-split:李敏:entity1",
   "span": [
    1373,
    1377
-  ]
+  ],
+  "score": 140.0,
+  "birth": null,
+  "death": null
  },
  "牛諒": {
   "cbdb_id": 66455,
@@ -1388,9 +1392,9 @@
   ]
  },
  "胡濙": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "fuzzy+wiki",
+  "cbdb_id": 222777,
+  "cbdb_name": "胡濙",
+  "method": "d06-remount",
   "score": null,
   "birth": null,
   "death": 1522,
@@ -1398,7 +1402,7 @@
    1426,
    1457
   ],
-  "note": "wiki:胡富",
+  "note": "人工裁决：222777 有 addr/assoc 数据，701535 为空壳；任职记录 CBDB 缺失",
   "repair": "shared-id-67968-not-owner"
  },
  "郭敦": {
@@ -1439,14 +1443,18 @@
   "note": "wiki:郭璡 | 原键郭璉"
  },
  "顧佐#1": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "same-name-split",
+  "cbdb_id": 66992,
+  "cbdb_name": "顧佐",
+  "method": "d06-remount",
   "repair": "same-name-split:顧佐:entity1",
   "span": [
    1429,
    1436
-  ]
+  ],
+  "score": 210.0,
+  "birth": 1443,
+  "death": 1516,
+  "note": "人工裁决：66992(-1446, 都御史级3) 为宣德左都御史；66995(1443-1516) 是另一人"
  },
  "李昶": {
   "cbdb_id": null,
@@ -1600,14 +1608,17 @@
   "repair": "override:66963"
  },
  "王佐#1": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "same-name-split",
+  "cbdb_id": 67259,
+  "cbdb_name": "王佐",
+  "method": "d06-remount",
   "repair": "same-name-split:王佐:entity1",
   "span": [
    1441,
    1449
-  ]
+  ],
+  "score": 110.0,
+  "birth": null,
+  "death": 1449
  },
  "李暹": {
   "cbdb_id": null,
@@ -2480,14 +2491,17 @@
   ]
  },
  "李敏#2": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "same-name-split",
+  "cbdb_id": 67840,
+  "cbdb_name": "李敏",
+  "method": "d06-remount",
   "repair": "same-name-split:李敏:entity2",
   "span": [
    1487,
    1491
-  ]
+  ],
+  "score": 140.0,
+  "birth": 1425,
+  "death": 1491
  },
  "何喬新": {
   "cbdb_id": 34522,
@@ -2802,14 +2816,18 @@
   "death": null
  },
  "顧佐#2": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "same-name-split",
+  "cbdb_id": 66995,
+  "cbdb_name": "顧佐",
+  "method": "d06-remount",
   "repair": "same-name-split:顧佐:entity2",
   "span": [
    1506,
    1508
-  ]
+  ],
+  "score": 280.0,
+  "birth": 1443,
+  "death": 1516,
+  "note": "人工裁决：66995 戶部尚書1506-08，与正德戶部顧佐吻合"
  },
  "何鈞": {
   "cbdb_id": null,
@@ -3953,14 +3971,17 @@
   ]
  },
  "吳山#1": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "same-name-split",
+  "cbdb_id": 69276,
+  "cbdb_name": "吳山",
+  "method": "d06-remount",
   "repair": "same-name-split:吳山:entity1",
   "span": [
    1541,
    1542
-  ]
+  ],
+  "score": 370.0,
+  "birth": 1470,
+  "death": 1542
  },
  "陳經": {
   "cbdb_id": 38,
@@ -4253,14 +4274,18 @@
   ]
  },
  "胡松#1": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "same-name-split",
+  "cbdb_id": 68290,
+  "cbdb_name": "胡松",
+  "method": "d06-remount",
   "repair": "same-name-split:胡松:entity1",
   "span": [
    1550,
    1551
-  ]
+  ],
+  "score": 170.0,
+  "birth": 1503,
+  "death": 1566,
+  "note": "人工裁决：68290(1490-1572) 工部尚書1550-1551，绩溪胡松"
  },
  "孫應奎": {
   "cbdb_id": 68295,
@@ -4502,14 +4527,17 @@
   ]
  },
  "吳山#2": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "same-name-split",
+  "cbdb_id": 69268,
+  "cbdb_name": "吳山",
+  "method": "d06-remount",
   "repair": "same-name-split:吳山:entity2",
   "span": [
    1556,
    1560
-  ]
+  ],
+  "score": 240.0,
+  "birth": 1501,
+  "death": 1577
  },
  "賈應春": {
   "cbdb_id": 68304,
@@ -4524,9 +4552,9 @@
   ]
  },
  "高燿": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "fuzzy+wiki",
+  "cbdb_id": 129415,
+  "cbdb_name": "高燿",
+  "method": "baike+d06",
   "score": null,
   "birth": 1510,
   "death": 1578,
@@ -4534,7 +4562,7 @@
    1557,
    1567
   ],
-  "note": "wiki:高拱",
+  "note": "人工裁决：CBDB 唯一候选但记录空；百科实证(1514-1598, 嘉靖三十九年戶部尚書)",
   "repair": "shared-id-30847-not-owner"
  },
  "鄭曉": {
@@ -4738,14 +4766,18 @@
   ]
  },
  "胡松#2": {
-  "cbdb_id": null,
-  "cbdb_name": null,
-  "method": "same-name-split",
+  "cbdb_id": 68288,
+  "cbdb_name": "胡松",
+  "method": "d06-remount",
   "repair": "same-name-split:胡松:entity2",
   "span": [
    1566,
    1566
-  ]
+  ],
+  "score": 200.0,
+  "birth": 1503,
+  "death": 1566,
+  "note": "人工裁决：68288(1503-1566) 兵部尚書1565-66→吏部尚書1566，滁州胡松"
  },
  "高儀": {
   "cbdb_id": 68218,
@@ -6659,5 +6691,269 @@
   ],
   "birth": 1592,
   "death": 1652
+ },
+ "劉元震": {
+  "cbdb_id": 132669,
+  "cbdb_name": "劉元震",
+  "method": "d05-exact",
+  "score": 60.0,
+  "birth": 1540,
+  "death": 1620,
+  "span": [
+   1594,
+   1594
+  ]
+ },
+ "吳一鵬": {
+  "cbdb_id": 68108,
+  "cbdb_name": "吳一鵬",
+  "method": "d05-exact",
+  "score": 240.0,
+  "birth": 1461,
+  "death": 1543,
+  "span": [
+   1527,
+   1527
+  ]
+ },
+ "吳琳": {
+  "cbdb_id": 66405,
+  "cbdb_name": "吳琳",
+  "method": "d05-exact",
+  "score": 160.0,
+  "birth": null,
+  "death": 1374,
+  "span": [
+   1371,
+   1374
+  ]
+ },
+ "吳百朋": {
+  "cbdb_id": 124375,
+  "cbdb_name": "吳百朋",
+  "method": "d05-exact",
+  "score": 80.0,
+  "birth": 1519,
+  "death": 1578,
+  "span": [
+   1577,
+   1578
+  ]
+ },
+ "吳道南": {
+  "cbdb_id": 123972,
+  "cbdb_name": "吳道南",
+  "method": "d05-exact",
+  "score": 60.0,
+  "birth": null,
+  "death": 1623,
+  "span": [
+   1609,
+   1610
+  ]
+ },
+ "吳雲": {
+  "cbdb_id": 67803,
+  "cbdb_name": "吳雲",
+  "method": "d05-exact",
+  "score": 140.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1372,
+   1373
+  ]
+ },
+ "吳鵬": {
+  "cbdb_id": 323138,
+  "cbdb_name": "吳鵬",
+  "method": "d05-exact",
+  "score": 90.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1554,
+   1561
+  ]
+ },
+ "呂兆熊": {
+  "cbdb_id": 207244,
+  "cbdb_name": "呂兆熊",
+  "method": "d05-exact",
+  "score": 110.0,
+  "birth": 1562,
+  "death": null,
+  "span": [
+   1625,
+   1625
+  ]
+ },
+ "呂調陽": {
+  "cbdb_id": 215889,
+  "cbdb_name": "呂調陽",
+  "method": "d05-exact",
+  "score": 80.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1572,
+   1572
+  ]
+ },
+ "呂震": {
+  "cbdb_id": 66753,
+  "cbdb_name": "呂震",
+  "method": "d05-exact",
+  "score": 130.0,
+  "birth": 1365,
+  "death": 1426,
+  "span": [
+   1405,
+   1426
+  ]
+ },
+ "周肅": {
+  "cbdb_id": 555695,
+  "cbdb_name": "周肅",
+  "method": "d05-exact",
+  "score": 80.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1370,
+   1370
+  ]
+ },
+ "張璁": {
+  "cbdb_id": 68266,
+  "cbdb_name": "張璁",
+  "method": "d05-exact",
+  "score": 130.0,
+  "birth": 1475,
+  "death": 1539,
+  "span": [
+   1527,
+   1527
+  ]
+ },
+ "張鳳翔": {
+  "cbdb_id": 62367,
+  "cbdb_name": "張鳳翔",
+  "method": "d05-exact",
+  "score": 190.0,
+  "birth": null,
+  "death": 1657,
+  "span": [
+   1629,
+   1629
+  ]
+ },
+ "李宗延": {
+  "cbdb_id": 207155,
+  "cbdb_name": "李宗延",
+  "method": "d05-exact",
+  "score": 60.0,
+  "birth": 1559,
+  "death": null,
+  "span": [
+   1623,
+   1625
+  ]
+ },
+ "李汝華": {
+  "cbdb_id": 124846,
+  "cbdb_name": "李汝華",
+  "method": "d05-exact",
+  "score": 60.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1611,
+   1621
+  ]
+ },
+ "李質": {
+  "cbdb_id": 66439,
+  "cbdb_name": "李質",
+  "method": "d05-exact",
+  "score": 100.0,
+  "birth": 1316,
+  "death": 1380,
+  "span": [
+   1372,
+   1372
+  ]
+ },
+ "練子寧": {
+  "cbdb_id": 34446,
+  "cbdb_name": "練子寧",
+  "method": "d05-exact",
+  "score": 140.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1399,
+   1400
+  ]
+ },
+ "舒化": {
+  "cbdb_id": 124791,
+  "cbdb_name": "舒化",
+  "method": "d05-exact",
+  "score": 60.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1584,
+   1587
+  ]
+ },
+ "袁煒": {
+  "cbdb_id": 129658,
+  "cbdb_name": "袁煒",
+  "method": "d05-exact",
+  "score": 140.0,
+  "birth": 1508,
+  "death": 1565,
+  "span": [
+   1561,
+   1561
+  ]
+ },
+ "費寀": {
+  "cbdb_id": 68134,
+  "cbdb_name": "費寀",
+  "method": "d05-exact",
+  "score": 150.0,
+  "birth": null,
+  "death": 1548,
+  "span": [
+   1544,
+   1548
+  ]
+ },
+ "路迎": {
+  "cbdb_id": 313938,
+  "cbdb_name": "路迎",
+  "method": "d05-exact",
+  "score": 90.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1545,
+   1546
+  ]
+ },
+ "鄧愈": {
+  "cbdb_id": 67384,
+  "cbdb_name": "鄧愈",
+  "method": "d05-exact",
+  "score": 80.0,
+  "birth": 1337,
+  "death": 1377,
+  "span": [
+   1369,
+   1369
+  ]
  }
 }

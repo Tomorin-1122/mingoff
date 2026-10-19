@@ -1,35 +1,22 @@
-# 设计决策记录（ADR）
-
-记录"为什么这样做"，避免后来者（包括几个月后的自己）重复论证或误改。
-每条格式：背景 → 决策 → 理由 → 代价。
 
 ---
 
-## D1. 用 SQLite，不用 PostgreSQL（与 PRD 建议不同）
+## D43 D-11 方案B 落地 + D-05/D-06 重挂（2026-10-19）
 
-**背景**：PRD 第 8 节建议 PostgreSQL。
+**D-11 方案B**（老板拍板"做B"）：`scripts/pilot/d11_apply_b.py` 把行序兜底行按 (year, office)
+显式降级——entries_v2 打 `office_status`（row-order 685 / name-anchor 788 / page-verified 54，
+D42 页核四年豁免）；任职段贯通（段内逐年聚合：row-order 114 / mixed 392 / name-anchor 85 /
+page-verified 11 段），站点可据 `office_status` 灰显。A（回原书页核）按 D-08 页表另排。
 
-**决策**：MVP 阶段用 SQLite，schema 全部用标准 SQL 写。
+**D-05/D-06**（老板拍板"做0506"）：`scripts/pilot/d0506_mount.py` exact 重挂——
+D-06 42 NULL 实体：13 挂上 + 6 人工裁决（胡濙→222777、顧佐#1→66992/顧佐#2→66995 分流、
+胡松#1→68290/#2→68288 分流、高燿→129415、宋冕 audit 拦截回 NULL）；余 29 逐人有结论。
+D-05：22 未映射实体挂上（呂震/張璁/袁煒/費寀 等）；mrzj 出处层
+`vol1_buyuan_mrzj.json` 75 实体（L4，不入主数据）。映射终态 547/576 键有 id。
 
-**理由**：阶段① 是单人开发，数据量 14 条任职。PostgreSQL 带来的部署成本
-（安装、起服务、连接管理、备份）在验证数据模型阶段是纯负担。
-
-**代价**：迁移时要改连接层。为此做了两件事对冲：① schema 不用 SQLite 专属语法
-（部分索引用 `WHERE`，PG 也支持）；② 所有 SQL 集中在 `repo.py`，迁移只改这一层。
-
-**何时该迁移**：进入阶段③（全朝中层）或需要并发写时。
-
----
-
-## D2. 不用 ORM
-
-**背景**：SQLAlchemy 是 Python 数据层默认选择。
-
-**决策**：手写 SQL + dataclass。
-
-**理由**：只有 6 张表，查询以只读统计为主。更重要的是——**本项目最需要小心的
-是 `NULL` 语义**（史料未载 vs 记载为零），而 ORM 会把 `NULL` 与默认值之间的
-区别藏起来。裸 SQL 里 `COALESCE(start_year,-1)` 这种写法是**看得见**的。
+**验收**：audit blockers 0（宋冕冲突被拦截回退）；pytest 190 全过。
+**遗留**：李本#2→223131(呂本) 疑误挂待复核；赵氏碎片 5 待 repair；8 个 office=NULL 待回原书。
+来。裸 SQL 里 `COALESCE(start_year,-1)` 这种写法是**看得见**的。
 
 **代价**：没有自动迁移工具。当前靠 `CREATE TABLE IF NOT EXISTS`；
 真要改 schema 时需要手写迁移（见 D3）。
