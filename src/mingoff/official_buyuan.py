@@ -158,6 +158,8 @@ def build_buyuan_tenures() -> list[dict]:
         note_of = {e["year"]: e["note"] for e in rows}
         flag_of = {e["year"]: e.get("flag") or "" for e in rows}
         raw_of = {e["year"]: e.get("raw_office") or office for e in rows}
+        # D-11 方案B：行→衙归属依据贯通到段（row-order=灰显候选）
+        status_of = {e["year"]: e.get("office_status") for e in rows}
         segs, cur = [], [years[0]]
         for y in years[1:]:
             if y == cur[-1] + 1:
@@ -204,6 +206,16 @@ def build_buyuan_tenures() -> list[dict]:
 
             m = mapping.get(pid, {})
             ttype = "署理" if ("署" in s_note or "署" in flag_of.get(sy, "")) else "实授"
+            # D-11：段内各年归属依据聚合——全 row-order 灰显；混合 mixed；页核优先
+            st = [status_of.get(y) for y in seg]
+            if all(s == "page-verified" for s in st):
+                office_status = "page-verified"
+            elif any(s == "row-order" for s in st):
+                office_status = "row-order" if all(s == "row-order" for s in st) else "mixed"
+            elif all(s == "name-anchor" for s in st):
+                office_status = "name-anchor"
+            else:
+                office_status = None
             tenures.append({
                 "person": person,
                 "person_id": pid,
@@ -212,6 +224,7 @@ def build_buyuan_tenures() -> list[dict]:
                 "cbdb_name": m.get("cbdb_name"),
                 "office": office,
                 "office_raw": raw_of.get(sy, office),
+                "office_status": office_status,
                 "tenure_type": ttype,
                 "start_year": sy,
                 "start_month": sm,
@@ -339,6 +352,7 @@ def export_buyuan(out_path: Path | None = None) -> dict:
                 "with_leave": sum(1 for t in tenures if t["leave"] != "未載"),
                 "shu_li": sum(1 for t in tenures if t["tenure_type"] == "署理"),
                 "same_name_risk": sum(1 for t in tenures if t.get("same_name_risk")),
+                "office_status_dist": dict(Counter(t.get("office_status") for t in tenures)),
                 "shilu_persons": len(shilu),
                 "shilu_hits": sum(v["count"] for v in shilu.values()),
                 "person_years": sum(len(t["years"]) for t in tenures),

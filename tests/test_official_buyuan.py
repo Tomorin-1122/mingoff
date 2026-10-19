@@ -119,3 +119,17 @@ def test_meta_stats(doc):
     assert s["display_persons"] == len({t["person"] for t in doc["tenures"]})
     assert s["person_years"] == sum(len(t["years"]) for t in doc["tenures"])
     assert doc["meta"]["dataset"] == "mingoff-buyuan"
+
+
+def test_office_status_d11_plan_b(tenures):
+    """D-11 方案B：行序兜底段显式降级，页核年不得灰显。"""
+    ok = {None, "row-order", "mixed", "name-anchor", "page-verified"}
+    for t in tenures:
+        assert t.get("office_status") in ok, t
+    # D42 页核年的段必须 page-verified（1546/1547/1548/1558）
+    for t in tenures:
+        if t.get("office_status") == "page-verified":
+            assert {t["start_year"], t["end_year"]} <= {1546, 1547, 1548, 1558}, t
+    # 方案B生效证据：存在灰显段与页核段
+    assert sum(1 for t in tenures if t.get("office_status") == "row-order") >= 50
+    assert sum(1 for t in tenures if t.get("office_status") == "page-verified") >= 5
