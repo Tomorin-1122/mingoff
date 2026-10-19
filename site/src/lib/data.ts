@@ -1,19 +1,29 @@
 import cabinet from "@/data/cabinet.json";
+import buyuan from "@/data/buyuan.json";
 import profiles from "@/data/person_profiles.json";
 
 /* ============================================================
- * 正式数据（D23 v3）：来自 `python -m mingoff.official`
- *   - tenures：张德信《明代职官年表》册1「內閣」逐年名单重建的任职段
+ * 正式数据（D23 v3 + D46 部院接入）
+ *   - cabinet：张德信《明代职官年表》册1「內閣」逐年名单重建的任职段
+ *   - buyuan ：同书「部院大臣年表（京師）」，六部 + 都察院等 12 衙
  *   - shilu  ：中研院《明實錄》检索命中（与本人任期相关者，每人最多 8 条）
  * 画布从洪武元年（1368）开始，内阁 1402 年始设，之前留空。
  * ============================================================ */
 
-/** 任职段（与 official.py 导出 schema 一一对应，D23 v3） */
+/** 任职段（与 official.py / official_buyuan.py 导出 schema 对应） */
 export interface Tenure {
   person: string;
+  /** 部院：同名拆分后的实体键（內閣数据无此字段） */
+  person_id?: string;
+  /** 部院：同名拆分后的展示名（如「顧佐（1429–1436）」） */
+  person_label?: string;
   cbdb_id: number | null;
   cbdb_name: string | null;
   office: string;
+  /** 部院：原书表头（与 office 可能不同，如「總會場」） */
+  office_raw?: string;
+  /** 部院：行→衙归属依据（D-11）：row-order / mixed / name-anchor / page-verified */
+  office_status?: string | null;
   tenure_type: string;
   start_year: number;
   start_month: number | null;
@@ -25,6 +35,15 @@ export interface Tenure {
   leave: string;
   note: string;
   years: number[];
+  /** 部院：1–2 年 OCR 缺行合并的缺口年（前端画虚线段，D-11） */
+  gap_years?: number[];
+  /** 部院：gap 合并前的段数 */
+  merged_segments?: number;
+  /** 部院：原书页码（起/止） */
+  start_book_page?: number | null;
+  end_book_page?: number | null;
+  /** 部院：同名风险（同名多实体） */
+  same_name_risk?: boolean;
 }
 
 /** 《明實錄》单条命中（中研院检索结果） */
@@ -64,15 +83,60 @@ export interface CabinetMeta {
   };
 }
 
+export interface BuyuanMeta {
+  dataset: string;
+  version: number;
+  canvas_from: number;
+  source: string;
+  pipeline: string;
+  generated_at: string;
+  stats: {
+    tenures: number;
+    persons: number;
+    display_persons: number;
+    split_entities: number;
+    same_name_entities: number;
+    offices: string[];
+    gap_merged_tenures: number;
+    gap_years_total: number;
+    years_covered: number[];
+    with_start_month: number;
+    with_end_month: number;
+    with_start_page: number;
+    with_end_page: number;
+    cbdb_aligned: number;
+    with_leave: number;
+    shu_li: number;
+    same_name_risk: number;
+    office_status_dist: Record<string, number>;
+    shilu_persons: number;
+    shilu_hits: number;
+    person_years: number;
+  };
+}
+
 const doc = cabinet as {
   meta: CabinetMeta;
   tenures: Tenure[];
   shilu: Record<string, ShiluBlock>;
 };
 
+const buyuanDoc = buyuan as {
+  meta: BuyuanMeta;
+  tenures: Tenure[];
+  shilu: Record<string, ShiluBlock>;
+};
+
 export const META = doc.meta;
-export const TENURES = doc.tenures;
-export const SHILU = doc.shilu;
+export const CABINET_TENURES = doc.tenures;
+export const BUYUAN_META = buyuanDoc.meta;
+export const BUYUAN_TENURES = buyuanDoc.tenures;
+
+/** 两套数据的实录命中合并（内阁 155 人 + 部院 130 人，取并集） */
+export const SHILU: Record<string, ShiluBlock> = {
+  ...doc.shilu,
+  ...buyuanDoc.shilu,
+};
 
 /* ================= 人物小传（CBDB） ================= */
 

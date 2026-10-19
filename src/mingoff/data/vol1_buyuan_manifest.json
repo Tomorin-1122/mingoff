@@ -50,7 +50,7 @@
  },
  "year_header_jumps": [],
  "stats": {
-  "entries": 3321,
+  "entries": 3322,
   "persons_unique": 789,
   "years": 277,
   "missing_years": [],
@@ -92,8 +92,8 @@
    "reassigned-inferred": 116,
    "reassigned": 2
   },
-  "book_patches": 36,
-  "book_page_coverage": 3321
+  "book_patches": 38,
+  "book_page_coverage": 3322
  },
  "evidence": [
   "docs/evidence/book_p402_bujuan1368.png",
@@ -106,11 +106,11 @@
   "docs/evidence/book_p679_bujuan1644.png"
  ],
  "tenure_assembly": {
-  "date": "2026-10-19T07:06:45+00:00",
+  "date": "2026-10-19T11:46:07+00:00",
   "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
   "output": "official_buyuan.json",
   "stats": {
-   "tenures": 1198,
+   "tenures": 1196,
    "persons": 789,
    "display_persons": 784,
    "split_entities": 10,
@@ -129,30 +129,30 @@
     "總督倉場",
     "都察院"
    ],
-   "gap_merged_tenures": 103,
-   "gap_years_total": 151,
+   "gap_merged_tenures": 102,
+   "gap_years_total": 149,
    "years_covered": [
     1368,
     1644
    ],
    "with_start_month": 828,
    "with_end_month": 551,
-   "with_start_page": 1198,
-   "with_end_page": 1198,
-   "cbdb_aligned": 875,
-   "with_leave": 582,
+   "with_start_page": 1196,
+   "with_end_page": 1196,
+   "cbdb_aligned": 874,
+   "with_leave": 581,
    "shu_li": 73,
    "same_name_risk": 10,
    "office_status_dist": {
-    "mixed": 393,
-    "null": 598,
+    "mixed": 394,
+    "null": 595,
     "row-order": 111,
     "name-anchor": 85,
     "page-verified": 11
    },
    "shilu_persons": 130,
    "shilu_hits": 3913,
-   "person_years": 3472
+   "person_years": 3471
   },
   "gates": {
    "G1": "pass",
@@ -210,31 +210,6 @@
     ],
     "offices": [
      "戶部"
-    ]
-   },
-   {
-    "person": "李本",
-    "person_id": "李本#1",
-    "label": "李本（1372–1377）",
-    "years": [
-     1372,
-     1377
-    ],
-    "offices": [
-     "吏部",
-     "禮部"
-    ]
-   },
-   {
-    "person": "李本",
-    "person_id": "李本#2",
-    "label": "李本（1556）",
-    "years": [
-     1556,
-     1556
-    ],
-    "offices": [
-     "吏部"
     ]
    },
    {
@@ -312,22 +287,23 @@
   ],
   "repair": {
    "entries_in": 3353,
-   "entries_out": 3321,
-   "persons_entities": 794,
-   "display_persons": 788,
-   "split_entities": 12,
+   "entries_out": 3322,
+   "persons_entities": 789,
+   "display_persons": 784,
+   "split_entities": 10,
    "dropped": 24,
    "quarantined": 188,
    "dup_conflicts": 16,
-   "book_patch": 36,
+   "book_patch": 38,
    "book_remove": 9,
-   "mapping_out": 554,
+   "office_fix": 4,
+   "mapping_out": 549,
    "mapping_ids": 512,
    "notes_restored": 2,
    "notes_inferred": 116,
    "notes_prefix": 16,
    "notes_manual": 54,
-   "book_page_coverage": 3321,
+   "book_page_coverage": 3322,
    "office_labels": {
     "兵部": 465,
     "工部": 449,
@@ -337,9 +313,9 @@
     "刑部": 397,
     "禮部": 395,
     "總督京儲": 172,
-    "總倉場": 143,
-    "御史臺": 19,
-    "總督倉場": 10,
+    "總倉場": 145,
+    "御史臺": 20,
+    "總督倉場": 8,
     "御史府": 6
    },
    "office_alias_kept": {

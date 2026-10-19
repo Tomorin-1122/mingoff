@@ -121,10 +121,22 @@ OFFICE_MAP = {
     "總督倉場": "總督倉場", "總倉場": "總倉場", "總會場": "總倉場",
     "督倉場": "總督倉場", "总仓场": "總督倉場", "总督仓场": "總督倉場",
 }
-# 衙署异名对照（只写作法说明，不参与合并；口径见 docs/DECISIONS.md D41）
+# 衙署异名对照（只写作法说明，不参与合并；口径见 docs/DECISIONS.md D41/D46）
 OFFICE_LABEL_ALIASES = {
     "總倉場": "總督倉場",   # 省文异名：1556 起原书表头
     "總會場": "總督倉場",   # 1557 页原书印刷残缺（老板：本即「總倉場」）
+}
+
+# D46（老板 2026-10-19 拍板「稳步接入网站」）：御史系列/倉場系列的编年校正。
+# 只改归属，不改人名与注文；每处附页证/史证。
+# 背景：原书在 1380/1398 的表头与史实错位（详见 docs/部院D04表头核对报告.md、
+# 《建文年譜》《憲章類編》）；1631/1632 竖排「督倉場」是「總倉場」省文，
+# D41 曾误展开为「總督倉場」，导致錢春同人两段重叠。
+OFFICE_FIX = {
+    (1380, "陳寧", "都察院"): ("御史臺", "book-p414"),   # 五月罷御史臺；安然注「左御史中丞」
+    (1398, "暴昭", "御史臺"): ("都察院", "book-p432"),   # 1398.10 景清仍「署都察院左僉都御史」
+    (1631, "錢春", "總督倉場"): ("總倉場", "book-p666"),  # 竖排「督倉場」= 總倉場省文
+    (1632, "錢春", "總督倉場"): ("總倉場", "book-p667"),
 }
 
 # ---------------------------------------------------------------- 原书页可定错配
@@ -145,6 +157,9 @@ BOOK_PATCH = {
     (1399, "練子寧", "御史府"): ("二月,任。", "book-jiwen1"),
     (1400, "景清", "御史府"): ("三、辛巳、十六,北平參議遷御史大夫。", "book-jiwen2"),
     (1400, "練子寧", "御史府"): ("三、辛巳,十六,改御史中丞。", "book-jiwen2"),
+    # D46：原书 1380 行都把陳寧/安然二人注文合成一条，且表头作「都察院」；
+    # 页眉明注「五月罷御史臺」、安然注「遷左御史中丞」→ 本年实为御史臺。
+    (1380, "陳寧", "御史臺"): ("正、戊戌、六,賜死;正、己亥、七,伏誅。", "book-p414"),
 }
 # D-03 原书核对补行：book p475（正统五年 1440）缺 3 行 + 2 条注文错挂
 BOOK_ADD = {
@@ -155,6 +170,9 @@ BOOK_ADD = {
     (1539, "毛伯溫", "都察院"): ("", "book-p574"),
     (1541, "毛伯溫", "都察院"): ("", "book-p576"),
     (1620, "孫慎行", "禮部"): ("十二、癸丑、九,南禮尚改。", "book-p655"),
+    # D46：原书 p414 该行有安然，注文被并进陳寧条（contains-other-name 隔离）；
+    # 补回独立一行，归御史臺。
+    (1380, "安然", "御史臺"): ("正、丁巳、廿五,遷左御史中丞。", "book-p414"),
 }
 BOOK_CLEAR_NOTES = {
     (1440, "魏源", "刑部"): "book-p475",
@@ -275,6 +293,20 @@ def repair_entries(entries: list[dict]) -> tuple[list[dict], dict]:
 
 
 def apply_book_patch(entries: list[dict], report: dict) -> None:
+    # D46：先改衙署归属（只动 office，不动人名/注文），后续 patch 按新 office 键匹配
+    office_fixed = []
+    for (year, person, old_office), (new_office, source) in OFFICE_FIX.items():
+        for e in entries:
+            if (e["year"] == year and e["person"] == person
+                    and e["office"] == old_office):
+                e["office"] = new_office
+                e["office_fix"] = {"from": old_office, "to": new_office,
+                                   "source": source}
+                office_fixed.append({"year": year, "person": person,
+                                     "from": old_office, "to": new_office,
+                                     "source": source})
+    report["office_fix"] = office_fixed
+
     by_key = defaultdict(list)
     for e in entries:
         by_key[(e["year"], e["person"], e["office"])].append(e)
@@ -806,6 +838,7 @@ def main() -> None:
         "dup_conflicts": len(report.get("dup_conflicts", [])),
         "book_patch": len(report.get("book_patch", [])),
         "book_remove": len(report.get("book_remove", [])),
+        "office_fix": len(report.get("office_fix", [])),
         "mapping_out": len(entity_mapping),
         "mapping_ids": sum(1 for v in entity_mapping.values() if v.get("cbdb_id")),
         "notes_restored": (report.get("note_resolution_counts", {}).get("restored-self", 0)

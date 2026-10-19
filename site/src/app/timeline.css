@@ -326,6 +326,26 @@ main {
   border-color: var(--zhu);
 }
 
+/* D46 部院：普通任职条（浅色，可区分衙署） */
+.swatch.s-bu {
+  background: #ece7dc;
+  border-color: #b8ae9b;
+  border-left: 3px solid #8a7a5c;
+}
+
+/* D46：行序推断的灰显段 */
+.swatch.s-roworder {
+  background: rgba(138, 122, 92, 0.18);
+  border: 1px dashed #8a7a5c;
+}
+
+/* D46：分期名带 */
+.swatch.s-period {
+  height: 8px;
+  background: #ddd4c2;
+  border: none;
+}
+
 .legend .cursor-demo {
   width: 2px;
   height: 15px;
@@ -465,6 +485,183 @@ main {
   font-size: 10px;
   color: var(--hui);
   letter-spacing: 0.05em;
+}
+
+/* D46：可折叠行 + 戶部子行（總督倉場） */
+.row-toggle {
+  position: absolute;
+  left: 2px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  line-height: 1;
+  font-size: 11px;
+  color: var(--hui);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.row-toggle:hover {
+  color: var(--mo);
+}
+
+.row-sub .row-label {
+  padding-left: 30px;
+  background: #f3eee4;
+}
+
+.row-sub .row-label .name {
+  font-size: 13px;
+}
+
+.row-sub {
+  border-bottom-color: rgba(27, 26, 23, 0.12);
+}
+
+/* D46：分期名带（行名固定，带上表头随年代变） */
+.period-ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 18px;
+  z-index: 2;
+  pointer-events: none;
+  border-bottom: 1px solid rgba(27, 26, 23, 0.15);
+}
+
+.period-seg {
+  position: absolute;
+  top: 0;
+  height: 18px;
+  display: block;
+  overflow: hidden;
+  border-right: 1px solid rgba(27, 26, 23, 0.22);
+  background: #ddd4c2;
+}
+
+.period-seg.tone-base {
+  background: #d8cdb8;
+}
+
+.period-seg.tone-alt {
+  background: #e4d9c4;
+}
+
+.period-seg.tone-light {
+  background: #eee6d6;
+}
+
+.period-seg.tone-gap {
+  background: repeating-linear-gradient(
+    135deg,
+    #eee6d6 0 6px,
+    #e2d8c5 6px 7px
+  );
+}
+
+.period-label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: #5c5140;
+  white-space: nowrap;
+}
+
+/* D46：部院任职条（浅色底，衙署以左边框色区分） */
+.bar.bar-bu {
+  background: #e7e0d1;
+  color: var(--mo);
+  border-color: #a89c86;
+  border-left-width: 3px;
+}
+
+.bar.bar-bu:hover {
+  background: var(--mo);
+  color: var(--xuan);
+  border-color: var(--mo);
+}
+
+/* 浅色条在非当前月降透明后容易看不见：部院条单独放宽 */
+.bar.bar-bu.is-idle {
+  opacity: 0.55;
+  filter: none;
+}
+
+.bar.bar-bu.is-idle:hover {
+  opacity: 0.85;
+}
+
+/* 衙署色（只用于左边框；颜色取低饱和，避免 1,196 条时太花） */
+.bar.office-吏部 { border-left-color: #7a6a4f; }
+.bar.office-戶部 { border-left-color: #8a6f4a; }
+.bar.office-禮部 { border-left-color: #8a5f55; }
+.bar.office-兵部 { border-left-color: #5f6f63; }
+.bar.office-刑部 { border-left-color: #6a5f73; }
+.bar.office-工部 { border-left-color: #5f6a73; }
+.bar.office-御史臺 { border-left-color: #4f5d6b; }
+.bar.office-都察院 { border-left-color: #3f4d5b; }
+.bar.office-御史府 { border-left-color: #6b7b8a; }
+.bar.office-總督京儲 { border-left-color: #96703f; }
+.bar.office-總督倉場 { border-left-color: #a67c46; }
+.bar.office-總倉場 { border-left-color: #b08a55; }
+
+/* D46 / D-11：行序推断的灰显段（虚线 + 降饱和；不隐藏，引用前可回原书核） */
+.bar.st-row-order {
+  opacity: 0.75;
+  border-style: dashed;
+  background: rgba(138, 122, 92, 0.14);
+}
+
+.bar.st-mixed {
+  opacity: 0.85;
+  border-style: dashed;
+}
+
+.bar.st-row-order.is-idle {
+  opacity: 0.5;
+}
+
+.bar.st-mixed.is-idle {
+  opacity: 0.58;
+}
+
+.bar.st-row-order.peer,
+.bar.st-mixed.peer {
+  opacity: 1;
+}
+
+/* D46：六部预留泳道（侍郎等副貳，后续接入） */
+.reserved-lane {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  border-top: 1px dashed rgba(138, 122, 92, 0.35);
+  border-bottom: 1px dashed rgba(138, 122, 92, 0.18);
+  background: repeating-linear-gradient(
+    135deg,
+    transparent 0 10px,
+    rgba(138, 122, 92, 0.05) 10px 11px
+  );
+  pointer-events: none;
+}
+
+.reserved-label {
+  margin-left: 10px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: rgba(90, 78, 58, 0.55);
+  white-space: nowrap;
 }
 
 .track {

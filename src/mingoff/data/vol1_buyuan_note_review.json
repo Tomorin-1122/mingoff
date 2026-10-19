@@ -141,6 +141,15 @@
   },
   {
    "year": 1375,
+   "person_id": "呂本",
+   "person": "呂本",
+   "office": "吏部",
+   "raw_note": "是年,出為兩浙都轉運鹽使。十三年遷太常寺卿。十四年卒於官。",
+   "action": "manual-review",
+   "reason": "entity-continues"
+  },
+  {
+   "year": 1375,
    "person_id": "俞溥",
    "person": "俞溥",
    "office": "戶部",
@@ -203,15 +212,6 @@
    "person": "李焕文",
    "office": "吏部",
    "raw_note": "是年,免。六、己酉、九,兵尚改;陳銘十二、丙辰、十八,出四川左政。四、己酉、七,兵郎遷;陳煜六、己酉、九,降都府判。是年,戶侍遷試。十二年三、壬申、五,遷福建布政使。",
-   "action": "manual-review",
-   "reason": "contains-other-name-no-row-target"
-  },
-  {
-   "year": 1380,
-   "person_id": "陳寧",
-   "person": "陳寧",
-   "office": "都察院",
-   "raw_note": "正、戊戌、六、賜死;正、己亥、七、伏誅。安然正、丁巳、廿五、遷左御史中丞。",
    "action": "manual-review",
    "reason": "contains-other-name-no-row-target"
   },

@@ -1,7 +1,8 @@
 # MingOff 正式站（site/）
 
 Next.js 15 静态导出站。按老板验收的 `web/demo.template.html` 逐项复刻（D24），
-数据为 **v3 重建版**（D25）：全朝内阁 192 任职段 / 167 人，画布自洪武元年（1368）起，
+数据为 **v3 重建版**（D25）：全朝内阁 184 任职段 / 163 人；**部院六部+都察院**
+1,196 段 / 789 实体（D46，2026-10-19 接入）。画布自洪武元年（1368）起，
 崇祯十七年三月（1644.3）断限。
 
 ## 快速上手
@@ -9,10 +10,11 @@ Next.js 15 静态导出站。按老板验收的 `web/demo.template.html` 逐项�
 ```powershell
 # 1. 数据更新（仓库根 mingoff/）
 $env:PYTHONPATH="src"; python -m mingoff.official
-#   → src/mingoff/data/official_cabinet.json（v3）
+$env:PYTHONPATH="src"; python -m mingoff.official_buyuan
 
 # 2. 同步到站点
 Copy-Item src/mingoff/data/official_cabinet.json site/src/data/cabinet.json
+Copy-Item src/mingoff/data/official_buyuan.json site/src/data/buyuan.json
 
 # 3. 构建（site/）
 pnpm install
@@ -28,24 +30,27 @@ pnpm build        # 产物在 out/，静态文件可直接部署
 | fixed 页头 + 滑块 + 无限画布 | 同（滑块并入页头——demo 里滑块实际被页头遮住，这里修掉） |
 | 月格等宽（26px/月，像素统一坐标） | 同，`slotOf/span` 全像素 |
 | 单帝朱色行 + 年周岁小字 | **17 帝段单行**（英宗两度临御分正統/天順），1368–1644.3 |
-| 9 个职位行 + 泳道 | **内阁一行 + 泳道**（数据范围决定；洪武—建文三年留空并标注） |
+| 9 个职位行 + 泳道 | **内阁 + 六部 + 都察院 8 行**（D46）；六部可折叠、预留侍郎泳道；洪武—建文三年内阁留空并标注 |
 | 年份刻度/月刻度/年列线/断限线 1644.3 | 同 |
 | 游标 + 在任高亮/不在任淡化 | 同（`is-idle`） |
-| 悬浮同人跨行联动 | 同（`peer`） |
-| 详情抽屉：任期/精度/性质/离任/置信度/出处/原文 | 同 + 《明實錄》命中块 + CBDB 正名 |
+| 悬浮同人跨行联动 | 同（`peer`，按 `person_id` 区分同名） |
+| 详情抽屉：任期/精度/性质/离任/置信度/出处/原文 | 同 + 《明實錄》命中块 + CBDB 正名 + 归属依据/原书页/缺口年 |
 | 点击空白跳月、←/→ 逐月 | 同，另加 Shift+←/→ 逐年 |
 | —— | **17 个年号跳转 chip**（全朝 86,000px 画布） |
+| —— | **分期名带**（D46）：都察院行（御史臺/都察院/御史府）、倉場子行（京儲/倉場/總倉場） |
 
-## 数据（v3）
+## 数据（v3 + 部院 D46）
 
-`src/data/cabinet.json` = `official.py` 导出物（D23 v3）：
+`src/data/cabinet.json` = `official.py` 导出物；`src/data/buyuan.json` = `official_buyuan.py` 导出物：
 
-- `tenures[]`：张德信《明代职官年表》册1「內閣」**逐年名单重建**的 192 段
-  （1402–1644.3），字段含 `cbdb_id/cbdb_name`、`leave`、`end_clamped`、`confidence`；
-- `shilu{}`：中研院《明實錄》命中（按“命中公元年 ∈ 任期 ±1 年”筛选，每人 ≤8 条 + count）；
-- `person_profiles.json`（`python -m mingoff.build_person_profiles`）：CBDB 人物小传——
-  生卒年、籍贯、字号/谥号、入仕、历任（最多 30 条 + 总数），抽屉内展示；
-- `meta.canvas_from = 1368`：画布从洪武元年起；内阁 1402 年始设，之前无数据（留空）。
+- `cabinet.tenures[]`：内阁 **184 段**（1402–1644.3），字段含 `cbdb_id/cbdb_name`、`leave`、
+  `end_clamped`、`confidence`；
+- `buyuan.tenures[]`：部院 12 衙 **1,196 段 / 789 实体**（1368–1644.3），另有
+  `person_id/person_label`（同名拆分）、`office_status`（D-11 归属依据）、
+  `gap_years`（缺行合并）、`start_book_page/end_book_page`；
+- `rows.ts`：展示层行/泳道配置——六部折叠、御史系列合并、倉場归戶部子行、分期名带；
+- `shilu{}`：内阁 155 人 + 部院 130 人命中合并；
+- `person_profiles.json`：现仅内阁 167 人；部院人物抽屉用 CBDB 链接兜底（待扩展）。
 
 ### 人物抽屉的外链与信息
 

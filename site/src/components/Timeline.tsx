@@ -2,6 +2,7 @@
 
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
+  BUYUAN_META,
   CANVAS_FROM,
   CANVAS_SLOTS,
   CN_MONTHS,
@@ -15,7 +16,6 @@ import {
   PROFILE_META,
   REIGNS,
   SHILU,
-  TENURES,
   ageAt,
   assignLanes,
   eraLabel,
@@ -27,6 +27,14 @@ import {
   type Reign,
   type Tenure,
 } from "@/lib/data";
+import {
+  ROWS,
+  ROW_BY_OFFICE,
+  periodAt,
+  type PeriodSeg,
+  type PeriodTone,
+  type RowDef,
+} from "@/lib/rows";
 
 /* ============================================================
  * 时间轴（正式站）
@@ -47,10 +55,7 @@ const REIGN_TRACK_H = 38;
 const DEF_SLOT_W = 26;
 const DEF_LABEL_W = 132;
 
-/** 人读的出处说明（抽屉展示；完整溯源字段见 cabinet.json 的 meta.source、页脚） */
-const SOURCE_TEXT =
-  "张德信《明代职官年表》册1·內閣大臣年表（MinerU OCR 提取）；" +
-  "《明實錄》命中据中研院「明代职官资料库」检索。";
+/** 人读的出处说明（抽屉展示；完整溯源字段见 cabinet/buyuan.json 的 meta.source、页脚） */
 
 interface Dims {
   slotW: number;
@@ -183,9 +188,62 @@ const ColumnLines = memo(function ColumnLines({ slotW, labelW }: Dims) {
   );
 });
 
-/* ================= 职官行（唯一一组：內閣） ================= */
+/* ================= 分期名带（D46）：行名固定，带上的表头随年代变 ================= */
 
-interface CabinetRowProps {
+const RIBBON_H = 18;
+
+function periodLabels(text: string, widthPx: number) {
+  const step = 1700;
+  const n = Math.max(1, Math.floor(widthPx / step));
+  return Array.from({ length: n }, (_, i) => (
+    <span key={i} className="period-label" style={{ left: i * step + 8 }}>
+      {text}
+    </span>
+  ));
+}
+
+const PeriodRibbon = memo(function PeriodRibbon({
+  periods,
+  slotW,
+}: {
+  periods: PeriodSeg[];
+  slotW: number;
+}) {
+  return (
+    <div className="period-ribbon" aria-hidden>
+      {periods.map((p, i) => {
+        const s = Math.max(0, slotOf(p.startY, p.startM));
+        const e = Math.min(CANVAS_SLOTS - 1, slotOf(p.endY, p.endM, true));
+        if (e < s) return null;
+        const w = (e - s + 1) * slotW;
+        return (
+          <span
+            key={i}
+            className={`period-seg tone-${p.tone}`}
+            style={{ left: s * slotW, width: w }}
+            title={p.note ? `${p.label}｜${p.note}` : p.label}
+          >
+            {periodLabels(p.label, w)}
+          </span>
+        );
+      })}
+    </div>
+  );
+});
+
+/* ================= 职官行（D46：内阁 / 六部 / 都察院 / 倉場） ================= */
+
+const STATUS_TEXT: Record<string, string> = {
+  "row-order": "行序兜底（该年对页无标签，按行序推断，未经页核）",
+  mixed: "段内部分年份为行序推断，其余有人名锚/页核",
+  "name-anchor": "人名锚定（该年对页无标签，但人名可锚定衙署）",
+  "page-verified": "原书页核（D-04/D42 已回原书对页）",
+};
+
+interface OfficeRowProps {
+  row: RowDef;
+  open: boolean;
+  onToggle: () => void;
   slotW: number;
   slot: number;
   hoverPerson: string | null;
@@ -193,83 +251,147 @@ interface CabinetRowProps {
   onSelect: (t: Tenure) => void;
 }
 
-const CabinetRow = memo(function CabinetRow({
+const OfficeRow = memo(function OfficeRow({
+  row,
+  open,
+  onToggle,
   slotW,
   slot,
   hoverPerson,
   onHover,
   onSelect,
-}: CabinetRowProps) {
-  const lanes = useMemo(() => assignLanes(TENURES), []);
-  const trackH = lanes.length * (BAR_H + BAR_GAP) - BAR_GAP + TRACK_PAD * 2;
-  const persons = useMemo(() => new Set(TENURES.map((t) => t.person)).size, []);
+}: OfficeRowProps) {
+  const lanes = useMemo(() => assignLanes(row.tenures), [row.tenures]);
+  const ribbon = row.periods?.length ? RIBBON_H : 0;
+  const reservedH = row.reserved?.length ? row.reserved.length * (BAR_H + BAR_GAP) : 0;
+  const barsH = Math.max(0, lanes.length * (BAR_H + BAR_GAP) - BAR_GAP);
+  const trackH = ribbon + TRACK_PAD + barsH + reservedH + TRACK_PAD;
+
+  const cursorYear = CANVAS_FROM + Math.floor(slot / M_PER_YEAR);
+  const cursorMonth = (slot % M_PER_YEAR) + 1;
+  const currentPeriod = row.periods
+    ? periodAt(row, cursorYear, cursorMonth)
+    : null;
 
   return (
-    <div className="row">
+    <div className={`row ${row.indent ? "row-sub" : ""}`}>
       <div className="row-label">
-        <span className="name">內閣大臣</span>
-        <span className="dept">內閣 · {persons} 人 / {TENURES.length} 任</span>
-      </div>
-      <div className="track" style={{ height: trackH }}>
-        {/* 洪武—建文三年（1368–1401）内阁未设：画布留空并明确标注 */}
-        <span
-          className="void-span"
-          style={{ left: 0, width: slotOf(DATA_FROM, 1) * slotW }}
-          aria-hidden
-        />
-        <span className="void-note" style={{ left: 10, top: TRACK_PAD }}>
-          洪武元年—建文三年（1368–1401）內閣未設 · 留空
-        </span>
-        {lanes.map((lane, li) =>
-          lane.map((t, ti) => {
-            const { s, e } = span(t);
-            if (e < 0 || s > CANVAS_SLOTS - 1 || e < s) return null;
-            const idle = slot < s || slot > e;
-            const cls = [
-              "bar",
-              "t-shishou",
-              t.start_month == null && "fuzzy",
-              t.month_conflict && "conflict",
-              idle && "is-idle",
-              hoverPerson === t.person && "peer",
-            ]
-              .filter(Boolean)
-              .join(" ");
-            return (
-              <span
-                key={`${t.person}-${t.start_year}-${t.start_month}-${li}-${ti}`}
-                className={cls}
-                style={{
-                  left: s * slotW,
-                  width: (e - s + 1) * slotW,
-                  top: TRACK_PAD + li * (BAR_H + BAR_GAP),
-                  height: BAR_H,
-                }}
-                tabIndex={0}
-                role="button"
-                title={`${t.person}｜${t.start_year}${t.start_month ? "." + t.start_month : ""}–${t.end_year}${t.end_month ? "." + t.end_month : ""}｜置信度 ${t.confidence}`}
-                aria-label={`${t.person}，內閣，${t.start_year} 至 ${t.end_year}`}
-                onMouseEnter={() => onHover(t.person)}
-                onMouseLeave={() => onHover(null)}
-                onFocus={() => onHover(t.person)}
-                onBlur={() => onHover(null)}
-                onClick={(ev) => {
-                  ev.stopPropagation();
-                  onSelect(t);
-                }}
-                onKeyDown={(ev) => {
-                  if (ev.key === "Enter" || ev.key === " ") {
-                    ev.preventDefault();
-                    onSelect(t);
-                  }
-                }}
-              >
-                {barLabels(t.person, (e - s + 1) * slotW, 1100, 8)}
-              </span>
-            );
-          })
+        {row.collapsible && (
+          <button
+            type="button"
+            className="row-toggle"
+            aria-expanded={open}
+            aria-label={`${open ? "折叠" : "展开"}${row.label}`}
+            onClick={onToggle}
+          >
+            {open ? "▾" : "▸"}
+          </button>
         )}
+        <span className="name">{row.label}</span>
+        <span className="dept" title={row.sub}>
+          {open && currentPeriod ? `本段：${currentPeriod.label}` : row.sub}
+        </span>
       </div>
+      {open && (
+        <div className="track" style={{ height: trackH }}>
+          {/* 内阁：洪武—建文三年（1368–1401）未设，画布留空并明确标注 */}
+          {row.kind === "cabinet" && (
+            <>
+              <span
+                className="void-span"
+                style={{ left: 0, width: slotOf(DATA_FROM, 1) * slotW }}
+                aria-hidden
+              />
+              <span className="void-note" style={{ left: 10, top: TRACK_PAD }}>
+                洪武元年—建文三年（1368–1401）內閣未設 · 留空
+              </span>
+            </>
+          )}
+
+          {row.periods && <PeriodRibbon periods={row.periods} slotW={slotW} />}
+
+          {lanes.map((lane, li) =>
+            lane.map((t, ti) => {
+              const { s, e } = span(t);
+              if (e < 0 || s > CANVAS_SLOTS - 1 || e < s) return null;
+              const idle = slot < s || slot > e;
+              const label = t.person_label || t.person;
+              const hoverKey = t.person_id || t.person;
+              const period = row.periods
+                ? periodAt(row, t.start_year, t.start_month)
+                : null;
+              const cls = [
+                "bar",
+                row.kind === "cabinet" ? "t-shishou" : "bar-bu",
+                `office-${t.office}`,
+                t.start_month == null && "fuzzy",
+                t.month_conflict && "conflict",
+                t.office_status === "row-order" && "st-row-order",
+                t.office_status === "mixed" && "st-mixed",
+                t.end_clamped && "clamped",
+                idle && "is-idle",
+                hoverPerson === hoverKey && "peer",
+              ]
+                .filter(Boolean)
+                .join(" ");
+              const titleParts = [
+                label,
+                `${t.office}${period ? `（${period.label}）` : ""}`,
+                `${t.start_year}${t.start_month ? "." + t.start_month : ""}–${t.end_year}${t.end_month ? "." + t.end_month : ""}`,
+                `置信度 ${t.confidence}`,
+                t.office_status ? `归属：${STATUS_TEXT[t.office_status] ?? t.office_status}` : null,
+                t.start_book_page ? `原书 p${t.start_book_page}` : null,
+              ].filter(Boolean);
+              return (
+                <span
+                  key={`${hoverKey}-${t.office}-${t.start_year}-${t.start_month}-${li}-${ti}`}
+                  className={cls}
+                  style={{
+                    left: s * slotW,
+                    width: (e - s + 1) * slotW,
+                    top: ribbon + TRACK_PAD + li * (BAR_H + BAR_GAP),
+                    height: BAR_H,
+                  }}
+                  tabIndex={0}
+                  role="button"
+                  title={titleParts.join("｜")}
+                  aria-label={`${label}，${t.office}，${t.start_year} 至 ${t.end_year}`}
+                  onMouseEnter={() => onHover(hoverKey)}
+                  onMouseLeave={() => onHover(null)}
+                  onFocus={() => onHover(hoverKey)}
+                  onBlur={() => onHover(null)}
+                  onClick={(ev) => {
+                    ev.stopPropagation();
+                    onSelect(t);
+                  }}
+                  onKeyDown={(ev) => {
+                    if (ev.key === "Enter" || ev.key === " ") {
+                      ev.preventDefault();
+                      onSelect(t);
+                    }
+                  }}
+                >
+                  {barLabels(label, (e - s + 1) * slotW, 1100, 8)}
+                </span>
+              );
+            })
+          )}
+
+          {/* 六部预留：侍郎等副貳泳道（后续表种接入，先占位） */}
+          {row.reserved?.map((txt, ri) => (
+            <span
+              key={txt}
+              className="reserved-lane"
+              style={{
+                top: ribbon + TRACK_PAD + barsH + ri * (BAR_H + BAR_GAP),
+                height: BAR_H,
+              }}
+            >
+              <span className="reserved-label">{txt}</span>
+            </span>
+          ))}
+        </div>
+      )}
     </div>
   );
 });
@@ -403,6 +525,44 @@ function ProfileBlock({ person }: { person: string }) {
   );
 }
 
+/** 部院人物的小传占位：profiles 目前只覆盖内阁 167 人，部院 789 实体待扩展 */
+function ProfileFallback({ tenure }: { tenure: Tenure }) {
+  const url = tenure.cbdb_id
+    ? PROFILE_META.cbdb_person_url.replace("{id}", String(tenure.cbdb_id))
+    : null;
+  return (
+    <section className="person-card">
+      <h3>
+        人物小傳 <span className="tag">CBDB</span>
+      </h3>
+      <p className="small">
+        {url
+          ? "CBDB 有該人記錄（見下方直達鏈接）；部院人物小傳欄位尚未接入本站，待人物庫擴展。"
+          : "CBDB 未對齊（無可靠同名候選），僅提供中研院檢索入口；可查《明人傳記資料索引》出處層。"}
+      </p>
+      <div className="ext-links">
+        {url ? (
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            CBDB #{tenure.cbdb_id}
+            {tenure.cbdb_name && tenure.cbdb_name !== tenure.person
+              ? `（${tenure.cbdb_name}）`
+              : ""}{" "}
+            ↗
+          </a>
+        ) : (
+          <span className="small">CBDB 未對齊</span>
+        )}
+        <a href={PROFILE_META.sinica_url} target="_blank" rel="noopener noreferrer">
+          中研院「明代職官資料庫」 ↗
+        </a>
+      </div>
+      <p className="hint">
+        中研院檢索詞：<b>{tenure.person}</b>
+      </p>
+    </section>
+  );
+}
+
 function Drawer({
   tenure,
   onClose,
@@ -422,15 +582,26 @@ function Drawer({
     const { clamped } = span(t);
     const realMonth = !!t.start_month || (!!t.end_month && !clamped);
     const confPct = Math.round(t.confidence * 100);
-    const blk = SHILU[t.person];
+    const label = t.person_label || t.person;
+    const row = ROW_BY_OFFICE.get(t.office);
+    const period = row ? periodAt(row, t.start_year, t.start_month) : null;
+    const blk = SHILU[t.person] ?? (t.person_label ? SHILU[t.person_label] : undefined);
+    const isCabinet = row?.kind === "cabinet";
+    const sourceText = isCabinet
+      ? "张德信《明代职官年表》册1·內閣大臣年表（MinerU OCR 提取）；" +
+        "《明實錄》命中据中研院「明代职官资料库」检索。"
+      : "张德信《明代职官年表》册1·部院大臣年表（京師）（MinerU OCR 表格重解析）；" +
+        "人物对齐 CBDB；《明實錄》命中据中研院「明代职官资料库」检索。";
 
     return (
       <>
         <div className="drawer-head">
           <div>
-            <h2>{t.person}</h2>
+            <h2>{label}</h2>
             <div className="drawer-office">
-              內閣 · 內閣大臣
+              {row && row.label !== t.office ? `${row.label} · ` : ""}
+              {t.office}
+              {period && ` · 本段表头「${period.label}」`}
               {t.cbdb_id != null && ` · CBDB #${t.cbdb_id}`}
               {t.cbdb_name && t.cbdb_name !== t.person && `（${t.cbdb_name}）`}
             </div>
@@ -466,9 +637,48 @@ function Drawer({
             <dt>性质</dt>
             <dd>
               <span className="tag t-shishou">{t.tenure_type}</span>{" "}
-              <span className="hint">内阁年表不区分署理 / 加衔，不作推断</span>
+              <span className="hint">
+                {isCabinet
+                  ? "内阁年表不区分署理 / 加衔，不作推断"
+                  : "部院年表区分实授 / 署理，以注文为准"}
+              </span>
             </dd>
           </dl>
+
+          {t.office_status && (
+            <dl className="field">
+              <dt>归属依据</dt>
+              <dd>
+                {STATUS_TEXT[t.office_status] ?? t.office_status}
+                {t.office_status === "row-order" || t.office_status === "mixed" ? (
+                  <span className="vermilion">（灰显；引用前请回原书页核对）</span>
+                ) : null}
+              </dd>
+            </dl>
+          )}
+
+          {t.start_book_page && (
+            <dl className="field">
+              <dt>原书页</dt>
+              <dd className="mono">
+                p{t.start_book_page}
+                {t.end_book_page && t.end_book_page !== t.start_book_page
+                  ? `–${t.end_book_page}`
+                  : ""}
+                {period ? <span className="hint">（本段表头：{period.label}）</span> : null}
+              </dd>
+            </dl>
+          )}
+
+          {t.office_raw && t.office_raw !== t.office && (
+            <dl className="field">
+              <dt>原书表头</dt>
+              <dd>
+                {t.office_raw}
+                <span className="hint">（本库归「{t.office}」，异名不合并实体）</span>
+              </dd>
+            </dl>
+          )}
 
           <dl className="field">
             <dt>离任</dt>
@@ -480,7 +690,29 @@ function Drawer({
             <dd className="mono">{t.years.join("、")}</dd>
           </dl>
 
-          <ProfileBlock person={t.person} />
+          {t.gap_years && t.gap_years.length > 0 && (
+            <dl className="field">
+              <dt>缺载年</dt>
+              <dd>
+                <span className="mono">{t.gap_years.join("、")}</span>
+                <span className="hint">
+                  （年表该年无此人；系 1–2 年缺行合并，非连续在任，画布上以缺口表示）
+                </span>
+              </dd>
+            </dl>
+          )}
+
+          {t.same_name_risk && (
+            <p className="hint">
+              同名风险：该姓名下有多个实体，本站按「{label}」区分；引用时请核对年代与衙署。
+            </p>
+          )}
+
+          {PROFILES[t.person] ? (
+            <ProfileBlock person={t.person} />
+          ) : (
+            <ProfileFallback tenure={t} />
+          )}
 
           <dl className="field">
             <dt>置信度</dt>
@@ -499,7 +731,7 @@ function Drawer({
 
           <dl className="field">
             <dt>出处</dt>
-            <dd className="small">{SOURCE_TEXT}</dd>
+            <dd className="small">{sourceText}</dd>
           </dl>
 
           {t.note && (
@@ -569,6 +801,13 @@ export default function Timeline() {
   const [slot, setSlot] = useState(() => slotOf(1628, 1));
   const [hoverPerson, setHoverPerson] = useState<string | null>(null);
   const [selected, setSelected] = useState<Tenure | null>(null);
+  const [openRows, setOpenRows] = useState<Record<string, boolean>>(() =>
+    Object.fromEntries(ROWS.map((r) => [r.id, true]))
+  );
+
+  const toggleRow = useCallback((id: string) => {
+    setOpenRows((prev) => ({ ...prev, [id]: !(prev[id] ?? true) }));
+  }, []);
 
   const headerRef = useRef<HTMLElement | null>(null);
   const didInitScroll = useRef(false);
@@ -706,8 +945,8 @@ export default function Timeline() {
           <span className="sub">MingOff</span>
           <span className="spacer" />
           <span className="scope">
-            內閣 {DATA_FROM}–{CUT_Y}.{CUT_M} · {META.stats.tenures} 任職 ·{" "}
-            {META.stats.persons} 人
+            內閣 {META.stats.tenures} 任 · 部院 {BUYUAN_META.stats.tenures} 任 ·{" "}
+            {BUYUAN_META.stats.display_persons} 人 · {CANVAS_FROM}–{CUT_Y}.{CUT_M}
           </span>
         </div>
 
@@ -768,7 +1007,11 @@ export default function Timeline() {
         <div className="legend">
           <span className="item">
             <i className="swatch s-shishou" />
-            实授
+            内阁实授
+          </span>
+          <span className="item">
+            <i className="swatch s-bu" />
+            部院任职
           </span>
           <span className="item">
             <i className="swatch s-fuzzy" />
@@ -777,6 +1020,14 @@ export default function Timeline() {
           <span className="item">
             <i className="swatch s-conflict" />
             同年并格待校
+          </span>
+          <span className="item">
+            <i className="swatch s-roworder" />
+            归属待核（灰显）
+          </span>
+          <span className="item">
+            <i className="swatch s-period" />
+            分期名带
           </span>
           <span className="item">
             <i className="cursor-demo" />
@@ -792,13 +1043,22 @@ export default function Timeline() {
           >
             <Axis slotW={slotW} />
             <ReignRow slotW={slotW} />
-            <CabinetRow
-              slotW={slotW}
-              slot={slot}
-              hoverPerson={hoverPerson}
-              onHover={setHoverPerson}
-              onSelect={setSelected}
-            />
+            {ROWS.map((row) => {
+              if (row.parent && !(openRows[row.parent] ?? true)) return null;
+              return (
+                <OfficeRow
+                  key={row.id}
+                  row={row}
+                  open={openRows[row.id] ?? true}
+                  onToggle={() => toggleRow(row.id)}
+                  slotW={slotW}
+                  slot={slot}
+                  hoverPerson={hoverPerson}
+                  onHover={setHoverPerson}
+                  onSelect={setSelected}
+                />
+              );
+            })}
 
             <ColumnLines slotW={slotW} labelW={labelW} />
 
@@ -830,8 +1090,10 @@ export default function Timeline() {
         <p>
           <span className="k">数据范围</span>　画布自洪武元年（1368）至崇祯十七年三月
           （1644.3）；内阁大臣 {DATA_FROM}–1644.3（内阁始设于建文四年），
-          {META.stats.tenures} 任职段、{META.stats.persons} 人。
-          <b>洪武—建文三年无内阁记录，画布留空；缺载处亦留空，不作填补。</b>
+          {META.stats.tenures} 任职段、{META.stats.persons} 人；部院大臣（六部 +
+          都察院等）1368–1644.3，{BUYUAN_META.stats.tenures} 任职段、
+          {BUYUAN_META.stats.display_persons} 人。
+          <b>缺载处留空，不作填补；洪武—建文三年内阁未设，画布留空。</b>
         </p>
         <p>
           <span className="k">断限</span>　止于崇祯十七年三月（1644.3）；已剔除三月之后
@@ -840,7 +1102,8 @@ export default function Timeline() {
         <p>
           <span className="k">时间轴</span>　每月一格、各格等宽（无限画布，随内容横向
           滚动）；月份未载者占满整年，详情中注明。年号条可一键跳代，←/→ 逐月
-          （Shift 逐年）。
+          （Shift 逐年）。六部与都察院行可折叠；行名固定，行上「分期名带」按年代
+          显示原书表头（御史臺 / 都察院 / 御史府；總督京儲 / 總督倉場 / 總倉場）。
         </p>
         <p>
           <span className="k">皇帝行</span>　每位皇帝一段（英宗两度临御分正統/天順）；
@@ -853,14 +1116,16 @@ export default function Timeline() {
           附出处）。
         </p>
         <p>
-          <span className="k">史料依据</span>　张德信《明代职官年表》册1·內閣大臣年表
-          （MinerU OCR 表格重解析；缺块以原书 PDF 页补录）；人物对齐 CBDB
-          （{META.stats.cbdb_aligned} 段）。
+          <span className="k">史料依据</span>　张德信《明代职官年表》册1·內閣大臣年表、
+          部院大臣年表（京師）（MinerU OCR 表格重解析；缺块以原书 PDF 页补录）；
+          人物对齐 CBDB（内阁 {META.stats.cbdb_aligned} 段 / 部院{" "}
+          {BUYUAN_META.stats.cbdb_aligned} 段）。
         </p>
         <p>
           <span className="k">数据说明</span>　年表为「年在位」体：某年列名即该年在任。
-          本轮重建保留了旧解析漏掉的“无注文人名行”，故全朝任职连续；
-          《明史》宰辅年表与 CBDB 用作校勘断言，不替代原书。
+          部院数据 12 衙按原书表头各自独立（不合并实体）；画布上把御史系列、倉場系列
+          分组显示，仅为阅读便利。「归属待核」灰显段 = 对页无标签年按行序推断，
+          引用前请回原书页核对（D-11 方案 B）。
         </p>
         <p style={{ marginTop: 12 }}>
           开源非商业项目 · 代码 Apache-2.0 · 本项目整理数据 CC BY-NC-SA 4.0

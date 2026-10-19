@@ -5,9 +5,9 @@
   "canvas_from": 1368,
   "source": "张德信《明代职官年表》册1·部院大臣年表（京師）（MinerU OCR）；v2 修复：人名归一/伪名清理/注文隔离/衙署分期/CBDB 重挂；v3 D-01：同名拆分 person_id（李本/李敏/王佐/顧佐/吳山/胡松），張鳳 1629 改張鳳翔；人名校验：CBDB 20261010 + 中研院明實錄 + 弇山堂别集/國榷（识典古籍）；《明實錄》命中据中研院检索",
   "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
-  "generated_at": "2026-10-19T07:06:44+00:00",
+  "generated_at": "2026-10-19T11:46:07+00:00",
   "stats": {
-   "tenures": 1198,
+   "tenures": 1196,
    "persons": 789,
    "display_persons": 784,
    "split_entities": 10,
@@ -26,30 +26,30 @@
     "總督倉場",
     "都察院"
    ],
-   "gap_merged_tenures": 103,
-   "gap_years_total": 151,
+   "gap_merged_tenures": 102,
+   "gap_years_total": 149,
    "years_covered": [
     1368,
     1644
    ],
    "with_start_month": 828,
    "with_end_month": 551,
-   "with_start_page": 1198,
-   "with_end_page": 1198,
-   "cbdb_aligned": 875,
-   "with_leave": 582,
+   "with_start_page": 1196,
+   "with_end_page": 1196,
+   "cbdb_aligned": 874,
+   "with_leave": 581,
    "shu_li": 73,
    "same_name_risk": 10,
    "office_status_dist": {
-    "mixed": 393,
-    "null": 598,
+    "mixed": 394,
+    "null": 595,
     "row-order": 111,
     "name-anchor": 85,
     "page-verified": 11
    },
    "shilu_persons": 130,
    "shilu_hits": 3913,
-   "person_years": 3472
+   "person_years": 3471
   }
  },
  "tenures": [
@@ -4173,9 +4173,9 @@
    "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "卒于任",
-   "note": "是年,出為兩浙都轉運鹽使。十三年遷太常寺卿。十四年卒於官。",
+   "confidence": 0.5,
+   "leave": "未載",
+   "note": "",
    "start_book_page": 406,
    "end_book_page": 409,
    "years": [
@@ -7179,7 +7179,7 @@
    "tenure_type": "实授",
    "start_year": 1379,
    "start_month": 9,
-   "end_year": 1379,
+   "end_year": 1380,
    "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
@@ -7187,9 +7187,10 @@
    "leave": "未載",
    "note": "九、甲辰、十一,浙江布政使遷。",
    "start_book_page": 413,
-   "end_book_page": 413,
+   "end_book_page": 414,
    "years": [
-    1379
+    1379,
+    1380
    ]
   },
   {
@@ -10952,7 +10953,7 @@
    "person_label": "暴昭",
    "cbdb_id": 66514,
    "cbdb_name": "暴昭",
-   "office": "御史臺",
+   "office": "都察院",
    "office_raw": "御史臺",
    "office_status": null,
    "tenure_type": "实授",
@@ -29001,7 +29002,7 @@
    "cbdb_name": "錢春",
    "office": "總倉場",
    "office_raw": "總倉場",
-   "office_status": null,
+   "office_status": "mixed",
    "tenure_type": "实授",
    "start_year": 1630,
    "start_month": 7,
@@ -29009,7 +29010,7 @@
    "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.5,
+   "confidence": 0.7,
    "leave": "改南京",
    "note": "七、丙午、廿九,戶左侍遷戶尚。",
    "start_book_page": 665,
@@ -29020,37 +29021,6 @@
     1632,
     1633,
     1634
-   ],
-   "gap_years": [
-    1631,
-    1632
-   ],
-   "merged_segments": 2
-  },
-  {
-   "person": "錢春",
-   "person_id": "錢春",
-   "person_label": "錢春",
-   "cbdb_id": 133108,
-   "cbdb_name": "錢春",
-   "office": "總督倉場",
-   "office_raw": "總督倉場",
-   "office_status": null,
-   "tenure_type": "实授",
-   "start_year": 1631,
-   "start_month": null,
-   "end_year": 1632,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
-   "note": "",
-   "start_book_page": 666,
-   "end_book_page": 667,
-   "years": [
-    1631,
-    1632
    ]
   },
   {
@@ -29651,7 +29621,7 @@
    "tenure_type": "实授",
    "start_year": 1373,
    "start_month": 7,
-   "end_year": 1379,
+   "end_year": 1380,
    "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
@@ -29659,7 +29629,7 @@
    "leave": "未載",
    "note": "七、壬子、十三,御史中丞遷;九、癸卯、五,授榮祿大夫。",
    "start_book_page": 407,
-   "end_book_page": 413,
+   "end_book_page": 414,
    "years": [
     1373,
     1374,
@@ -29667,37 +29637,13 @@
     1376,
     1377,
     1378,
-    1379
+    1379,
+    1380
    ],
    "gap_years": [
     1374
    ],
    "merged_segments": 2
-  },
-  {
-   "person": "陳寧",
-   "person_id": "陳寧",
-   "person_label": "陳寧",
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "office": "都察院",
-   "office_raw": "都察院",
-   "office_status": null,
-   "tenure_type": "实授",
-   "start_year": 1380,
-   "start_month": null,
-   "end_year": 1380,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.5,
-   "leave": "未載",
-   "note": "",
-   "start_book_page": 414,
-   "end_book_page": 414,
-   "years": [
-    1380
-   ]
   },
   {
    "person": "陳德文",

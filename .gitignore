@@ -10,7 +10,17 @@ data/*
 
 # 例外（D21/D23）：正式管线的版本化导出物是数据资产，必须入库
 !src/mingoff/data/official_cabinet.json
+!src/mingoff/data/official_buyuan.json
 !site/src/data/cabinet.json
+!site/src/data/buyuan.json
+
+# D45/D46：打标中间产物（约 34MB，未入仓；由 scripts/pilot/tag_all.py 可重跑）
+src/mingoff/data/shilu_tags.json
+src/mingoff/data/shilu_tags.ckpt.jsonl
+
+# ===== 本地工作目录（不入仓）=====
+_scratch/
+_c.txt
 
 # CBDB 快照等外部数据导入物（体量大、有独立许可，不入库）
 imports/
