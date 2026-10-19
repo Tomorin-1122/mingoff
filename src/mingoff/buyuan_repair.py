@@ -160,6 +160,43 @@ BOOK_CLEAR_NOTES = {
     (1440, "魏源", "刑部"): "book-p475",
     (1440, "劉中敷", "戶部"): "book-p475",
 }
+# D-04 原书核对（D42，2026-10-19 老板拍板「解决前两个」）：
+#   对页年 1546/1547/1548/1558 的整行错挂与丢行，逐条按原书页改回。
+#   删除错挂行（原书该衙无此人）；补行 = 原书该衙有、数据丢。
+#   证据：docs/evidence/d04/pdf596/597/598/608.png；逐条对照见 docs/部院D04逐条审核表.md（#1–#10）。
+BOOK_REMOVE = {  # (year, person, office) -> 证据；原书该衙该年无此人
+    (1546, "張珩", "總督京儲"): "book-p581",   # 1546 页「司属末行」陳經/張珩/王暐 属司属年表续页
+    (1546, "王暐", "總督京儲"): "book-p581",
+    (1546, "路迎", "總督京儲"): "book-p581",   # 路迎在兵部行，错挂到京儲
+    (1546, "陳經", "總督京儲"): "book-p581",   # 陳經在兵部行；京儲行本年无载
+    (1547, "聞淵", "都察院"): "book-p582",     # 都察院行 宋景/王以旂/屠僑，无聞淵
+    (1548, "劉儲秀", "吏部"): "book-p583",     # 兵部行的人，错挂吏部
+    (1548, "張潤", "吏部"): "book-p583",       # 總督京儲行的人（注文有张润），错挂吏部
+    (1548, "至十", "吏部"): "book-p583",       # 伪名（注文碎片）
+    (1548, "聞淵", "刑部"): "book-p583",       # 聞淵在吏部行，刑部行无他
+    (1558, "吳鵬", "工部"): "book-p593",       # 吳鵬在吏部行，工部行无他
+}
+BOOK_REMOVE = {k: v for k, v in BOOK_REMOVE.items()}  # 保持 dict 语义
+# 补行（原书有、数据丢）——沿用 BOOK_ADD 机制
+BOOK_ADD.update({
+    # 1546（p581/PDF596）：兵部行 路迎/陳經；總督京儲行本年无载（原书空白）
+    (1546, "路迎", "兵部"): ("六、癸巳、八,罷。", "book-p581"),
+    (1546, "陳經", "兵部"): ("六、辛亥、廿六,署通政司事禮尚改;七、己未、五,督團營。", "book-p581"),
+    # 1547（p582/PDF597）：刑部行 聞淵/屠僑/喻茂堅；都察院行 宋景/王以旂/屠僑
+    (1547, "喻茂堅", "刑部"): ("", "book-p582"),
+    (1547, "屠僑", "都察院"): ("九、己巳、廿一,刑尚改。", "book-p582"),
+    # 1548（p583/PDF598）：吏部行 聞淵/夏邦謨；總督京儲行 劉儲秀/張潤/李士翱；都察院行 屠僑
+    (1548, "聞淵", "吏部"): ("", "book-p583"),
+    (1548, "夏邦謨", "吏部"): ("", "book-p583"),
+    (1548, "劉儲秀", "總督京儲"): ("", "book-p583"),
+    (1548, "張潤", "總督京儲"): ("二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,致仕。", "book-p583"),
+    (1548, "李士翱", "總督京儲"): ("五、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。", "book-p583"),
+    (1548, "屠僑", "都察院"): ("", "book-p583"),
+    # 1558（p593/PDF608）：吏部行 吳鵬；工部行 歐陽必進/雷禮
+    (1558, "吳鵬", "吏部"): ("", "book-p593"),
+    (1558, "歐陽必進", "工部"): ("九、辛卯、十八,加太子太保。", "book-p593"),
+    (1558, "雷禮", "工部"): ("九、辛卯、十八,右都管工左侍事遷,添注管事督大工。", "book-p593"),
+})
 
 # ---------------------------------------------------------------- CBDB 修复
 SHARED_ID_OWNER = {  # 同一 id 只允许这些正名保留；其余置 NULL
@@ -282,6 +319,17 @@ def apply_book_patch(entries: list[dict], report: dict) -> None:
             rows[0]["note_source"] = source
             applied.append({"year": year, "person": person, "office": office,
                             "source": source, "cleared": True})
+    # D-04/D42：整行错挂删除（原书该衙该年无此人）
+    removed = []
+    for (year, person, office), source in BOOK_REMOVE.items():
+        keep = [e for e in entries
+                if not (e["year"] == year and e["person"] == person and e["office"] == office)]
+        n = len(entries) - len(keep)
+        if n:
+            removed.append({"year": year, "person": person, "office": office,
+                            "source": source, "removed": n})
+            entries[:] = keep
+    report["book_remove"] = removed
     report["book_patch"] = applied
 
 
@@ -758,6 +806,7 @@ def main() -> None:
         "quarantined": len(report.get("note_quarantine", [])),
         "dup_conflicts": len(report.get("dup_conflicts", [])),
         "book_patch": len(report.get("book_patch", [])),
+        "book_remove": len(report.get("book_remove", [])),
         "mapping_out": len(entity_mapping),
         "mapping_ids": sum(1 for v in entity_mapping.values() if v.get("cbdb_id")),
         "notes_restored": (report.get("note_resolution_counts", {}).get("restored-self", 0)

@@ -4057,30 +4057,6 @@
    1548
   ]
  },
- "張珩": {
-  "cbdb_id": 467444,
-  "cbdb_name": "張珩",
-  "method": "exact",
-  "score": 131.0,
-  "birth": null,
-  "death": null,
-  "span": [
-   1546,
-   1546
-  ]
- },
- "王暐": {
-  "cbdb_id": 68343,
-  "cbdb_name": "王暐",
-  "method": "exact",
-  "score": 124.0,
-  "birth": null,
-  "death": null,
-  "span": [
-   1546,
-   1547
-  ]
- },
  "宋景": {
   "cbdb_id": 68287,
   "cbdb_name": "宋景",
@@ -4091,6 +4067,18 @@
   "span": [
    1546,
    1547
+  ]
+ },
+ "喻茂堅": {
+  "cbdb_id": 131507,
+  "cbdb_name": "喻茂堅",
+  "method": "exact",
+  "score": 132.2,
+  "birth": null,
+  "death": null,
+  "span": [
+   1547,
+   1549
   ]
  },
  "屠僑": {
@@ -4129,6 +4117,18 @@
    1551
   ]
  },
+ "王暐": {
+  "cbdb_id": 68343,
+  "cbdb_name": "王暐",
+  "method": "exact",
+  "score": 124.0,
+  "birth": null,
+  "death": null,
+  "span": [
+   1547,
+   1547
+  ]
+ },
  "趙廷瑞": {
   "cbdb_id": 132156,
   "cbdb_name": "趙廷瑞",
@@ -4136,18 +4136,6 @@
   "score": 134.4,
   "birth": 1492,
   "death": 1551,
-  "span": [
-   1548,
-   1549
-  ]
- },
- "喻茂堅": {
-  "cbdb_id": 131507,
-  "cbdb_name": "喻茂堅",
-  "method": "exact",
-  "score": 132.2,
-  "birth": null,
-  "death": null,
   "span": [
    1548,
    1549
@@ -4569,7 +4557,7 @@
   "birth": 1505,
   "death": 1581,
   "span": [
-   1559,
+   1558,
    1568
   ]
  },

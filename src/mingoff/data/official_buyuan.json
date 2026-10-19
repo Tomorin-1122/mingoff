@@ -5,11 +5,11 @@
   "canvas_from": 1368,
   "source": "张德信《明代职官年表》册1·部院大臣年表（京師）（MinerU OCR）；v2 修复：人名归一/伪名清理/注文隔离/衙署分期/CBDB 重挂；v3 D-01：同名拆分 person_id（李本/李敏/王佐/顧佐/吳山/胡松），張鳳 1629 改張鳳翔；人名校验：CBDB 20261010 + 中研院明實錄 + 弇山堂别集/國榷（识典古籍）；《明實錄》命中据中研院检索",
   "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
-  "generated_at": "2026-10-19T02:52:26+00:00",
+  "generated_at": "2026-10-19T03:15:09+00:00",
   "stats": {
-   "tenures": 1206,
-   "persons": 796,
-   "display_persons": 790,
+   "tenures": 1203,
+   "persons": 794,
+   "display_persons": 788,
    "split_entities": 12,
    "same_name_entities": 6,
    "offices": [
@@ -26,23 +26,23 @@
     "總督倉場",
     "都察院"
    ],
-   "gap_merged_tenures": 105,
-   "gap_years_total": 156,
+   "gap_merged_tenures": 103,
+   "gap_years_total": 150,
    "years_covered": [
     1368,
     1644
    ],
-   "with_start_month": 830,
-   "with_end_month": 553,
-   "with_start_page": 1206,
-   "with_end_page": 1206,
+   "with_start_month": 831,
+   "with_end_month": 552,
+   "with_start_page": 1203,
+   "with_end_page": 1203,
    "cbdb_aligned": 819,
-   "with_leave": 584,
-   "shu_li": 72,
+   "with_leave": 583,
+   "shu_li": 73,
    "same_name_risk": 15,
    "shilu_persons": 130,
    "shilu_hits": 3913,
-   "person_years": 3473
+   "person_years": 3471
   }
  },
  "tenures": [
@@ -1792,36 +1792,12 @@
    "person_label": "劉儲秀",
    "cbdb_id": null,
    "cbdb_name": null,
-   "office": "吏部",
-   "office_raw": "吏部",
-   "tenure_type": "实授",
-   "start_year": 1548,
-   "start_month": 1,
-   "end_year": 1548,
-   "end_month": 1,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "改除",
-   "note": "正、癸未、六,改兵尚。",
-   "start_book_page": 583,
-   "end_book_page": 583,
-   "years": [
-    1548
-   ]
-  },
-  {
-   "person": "劉儲秀",
-   "person_id": "劉儲秀",
-   "person_label": "劉儲秀",
-   "cbdb_id": null,
-   "cbdb_name": null,
    "office": "總督京儲",
    "office_raw": "總督京儲",
    "tenure_type": "实授",
    "start_year": 1547,
    "start_month": 9,
-   "end_year": 1547,
+   "end_year": 1548,
    "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
@@ -1829,9 +1805,10 @@
    "leave": "未載",
    "note": "九、壬午、四,吏左侍遷戶尚,兼督西苑農事。",
    "start_book_page": 582,
-   "end_book_page": 582,
+   "end_book_page": 583,
    "years": [
-    1547
+    1547,
+    1548
    ]
   },
   {
@@ -3862,10 +3839,9 @@
     1561
    ],
    "gap_years": [
-    1558,
     1560
    ],
-   "merged_segments": 3
+   "merged_segments": 2
   },
   {
    "person": "吳鵬",
@@ -3893,7 +3869,9 @@
     1556
    ],
    "gap_after": [
-    1557
+    1557,
+    1558,
+    1559
    ]
   },
   {
@@ -3905,26 +3883,20 @@
    "office": "工部",
    "office_raw": "工部",
    "tenure_type": "实授",
-   "start_year": 1558,
-   "start_month": null,
+   "start_year": 1560,
+   "start_month": 3,
    "end_year": 1560,
    "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.5,
+   "confidence": 0.6,
    "leave": "未載",
-   "note": "",
+   "note": "三、己丑、廿三,加太子太保。",
    "start_book_page": 589,
    "end_book_page": 595,
    "years": [
-    1558,
-    1559,
     1560
-   ],
-   "gap_years": [
-    1559
-   ],
-   "merged_segments": 2
+   ]
   },
   {
    "person": "呂兆熊",
@@ -5291,18 +5263,19 @@
    "office": "刑部",
    "office_raw": "刑部",
    "tenure_type": "实授",
-   "start_year": 1548,
-   "start_month": null,
+   "start_year": 1547,
+   "start_month": 9,
    "end_year": 1549,
    "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
+   "confidence": 0.7,
    "leave": "未載",
-   "note": "",
-   "start_book_page": 583,
+   "note": "閏九、戊子、十,總漕右都遷",
+   "start_book_page": 582,
    "end_book_page": 584,
    "years": [
+    1547,
     1548,
     1549
    ]
@@ -5690,7 +5663,7 @@
    "office": "吏部",
    "office_raw": "吏部",
    "tenure_type": "实授",
-   "start_year": 1549,
+   "start_year": 1548,
    "start_month": null,
    "end_year": 1551,
    "end_month": 2,
@@ -5699,9 +5672,10 @@
    "confidence": 0.5,
    "leave": "致仕",
    "note": "",
-   "start_book_page": 584,
+   "start_book_page": 583,
    "end_book_page": 586,
    "years": [
+    1548,
     1549,
     1550,
     1551
@@ -7277,6 +7251,34 @@
    "office_raw": "刑部",
    "tenure_type": "实授",
    "start_year": 1547,
+   "start_month": 2,
+   "end_year": 1547,
+   "end_month": 9,
+   "month_conflict": false,
+   "end_clamped": false,
+   "confidence": 0.8,
+   "leave": "改除",
+   "note": "二、甲辰、廿二,南刑尚改;九、己巳、廿一,改左都",
+   "start_book_page": 582,
+   "end_book_page": 587,
+   "years": [
+    1547
+   ],
+   "gap_after": [
+    1548,
+    1549
+   ]
+  },
+  {
+   "person": "屠僑",
+   "person_id": "屠僑",
+   "person_label": "屠僑",
+   "cbdb_id": 68289,
+   "cbdb_name": "屠僑",
+   "office": "刑部",
+   "office_raw": "刑部",
+   "tenure_type": "实授",
+   "start_year": 1550,
    "start_month": null,
    "end_year": 1552,
    "end_month": null,
@@ -7288,19 +7290,14 @@
    "start_book_page": 582,
    "end_book_page": 587,
    "years": [
-    1547,
-    1548,
-    1549,
     1550,
     1551,
     1552
    ],
    "gap_years": [
-    1548,
-    1549,
     1551
    ],
-   "merged_segments": 3
+   "merged_segments": 2
   },
   {
    "person": "屠僑",
@@ -7311,18 +7308,20 @@
    "office": "都察院",
    "office_raw": "都察院",
    "tenure_type": "实授",
-   "start_year": 1549,
-   "start_month": null,
+   "start_year": 1547,
+   "start_month": 9,
    "end_year": 1555,
    "end_month": 1,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.5,
    "leave": "卒于任",
-   "note": "",
-   "start_book_page": 584,
+   "note": "九、己巳、廿一,刑尚改。",
+   "start_book_page": 582,
    "end_book_page": 590,
    "years": [
+    1547,
+    1548,
     1549,
     1550,
     1551,
@@ -8657,30 +8656,6 @@
    "person_label": "張潤",
    "cbdb_id": 502889,
    "cbdb_name": "張潤",
-   "office": "吏部",
-   "office_raw": "吏部",
-   "tenure_type": "实授",
-   "start_year": 1548,
-   "start_month": 2,
-   "end_year": 1548,
-   "end_month": 2,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "改除",
-   "note": "二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,致仕。五、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,致仕。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,致仕。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,致仕。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,致仕。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,至仕。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,致仕。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,至仕。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,致仕。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬辰、十七,至仕。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,致仕。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,致仕。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七.",
-   "start_book_page": 583,
-   "end_book_page": 583,
-   "years": [
-    1548
-   ]
-  },
-  {
-   "person": "張潤",
-   "person_id": "張潤",
-   "person_label": "張潤",
-   "cbdb_id": 502889,
-   "cbdb_name": "張潤",
    "office": "工部",
    "office_raw": "工部",
    "tenure_type": "实授",
@@ -8719,10 +8694,43 @@
    "leave": "未載",
    "note": "十一、己亥、六,還南工尚。九、戊申、十四,兵左侍遷戶左侍兼西苑農事.",
    "start_book_page": 574,
-   "end_book_page": 575,
+   "end_book_page": 583,
    "years": [
     1539,
     1540
+   ],
+   "gap_after": [
+    1541,
+    1542,
+    1543,
+    1544,
+    1545,
+    1546,
+    1547
+   ]
+  },
+  {
+   "person": "張潤",
+   "person_id": "張潤",
+   "person_label": "張潤",
+   "cbdb_id": 502889,
+   "cbdb_name": "張潤",
+   "office": "總督京儲",
+   "office_raw": "總督京儲",
+   "tenure_type": "实授",
+   "start_year": 1548,
+   "start_month": 2,
+   "end_year": 1548,
+   "end_month": 2,
+   "month_conflict": false,
+   "end_clamped": false,
+   "confidence": 0.7,
+   "leave": "改除",
+   "note": "二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,致仕。",
+   "start_book_page": 574,
+   "end_book_page": 583,
+   "years": [
+    1548
    ]
   },
   {
@@ -8751,30 +8759,6 @@
     1575,
     1576,
     1577
-   ]
-  },
-  {
-   "person": "張珩",
-   "person_id": "張珩",
-   "person_label": "張珩",
-   "cbdb_id": 467444,
-   "cbdb_name": "張珩",
-   "office": "總督京儲",
-   "office_raw": "總督京儲",
-   "tenure_type": "实授",
-   "start_year": 1546,
-   "start_month": 3,
-   "end_year": 1546,
-   "end_month": 5,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "戍",
-   "note": "三、甲子、七,總陝西三邊右都兼兵右侍遷戶尚兼理西苑農事;五、戊辰、十三,戍邊慶陽。卅一年七、巳酉、廿九,起撫延綏右副都。",
-   "start_book_page": 581,
-   "end_book_page": 581,
-   "years": [
-    1546
    ]
   },
   {
@@ -11460,18 +11444,19 @@
    "office": "總督京儲",
    "office_raw": "總督京儲",
    "tenure_type": "实授",
-   "start_year": 1549,
-   "start_month": 12,
+   "start_year": 1548,
+   "start_month": 5,
    "end_year": 1549,
    "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.6,
    "leave": "未載",
-   "note": "十二、丁未、十二,遷工尚。",
-   "start_book_page": 584,
+   "note": "五、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。",
+   "start_book_page": 583,
    "end_book_page": 584,
    "years": [
+    1548,
     1549
    ]
   },
@@ -15661,10 +15646,9 @@
    "gap_years": [
     1555,
     1556,
-    1558,
     1560
    ],
-   "merged_segments": 4
+   "merged_segments": 3
   },
   {
    "person": "歐陽必進",
@@ -18727,19 +18711,18 @@
    "office": "總督京儲",
    "office_raw": "總督京儲",
    "tenure_type": "实授",
-   "start_year": 1546,
-   "start_month": 6,
+   "start_year": 1547,
+   "start_month": 9,
    "end_year": 1547,
    "end_month": 9,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
    "leave": "削籍",
-   "note": "六、甲申、七,總漕右都遷戶尚改兼西苑農事。",
-   "start_book_page": 581,
+   "note": "九、戊辰、廿,削籍。",
+   "start_book_page": 582,
    "end_book_page": 582,
    "years": [
-    1546,
     1547
    ]
   },
@@ -22179,23 +22162,22 @@
    "tenure_type": "实授",
    "start_year": 1542,
    "start_month": null,
-   "end_year": 1548,
-   "end_month": null,
+   "end_year": 1547,
+   "end_month": 1,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "改除",
    "note": "",
    "start_book_page": 577,
-   "end_book_page": 583,
+   "end_book_page": 582,
    "years": [
     1542,
     1543,
     1544,
     1545,
     1546,
-    1547,
-    1548
+    1547
    ]
   },
   {
@@ -22213,7 +22195,7 @@
    "end_month": 9,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
+   "confidence": 0.8,
    "leave": "致仕",
    "note": "正、庚辰、廿七,刑尚改;六、丁亥、八,加太子太保。",
    "start_book_page": 582,
@@ -22222,11 +22204,7 @@
     1547,
     1548,
     1549
-   ],
-   "gap_years": [
-    1548
-   ],
-   "merged_segments": 2
+   ]
   },
   {
    "person": "聶豹",
@@ -22715,30 +22693,6 @@
    "end_book_page": 415,
    "years": [
     1381
-   ]
-  },
-  {
-   "person": "至十",
-   "person_id": "至十",
-   "person_label": "至十",
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "office": "吏部",
-   "office_raw": "吏部",
-   "tenure_type": "实授",
-   "start_year": 1548,
-   "start_month": 2,
-   "end_year": 1548,
-   "end_month": 2,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "改除",
-   "note": "一年三、辛亥、廿九,卒。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四二、壬辰、十七,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事:四二、壬辰、十七,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚放兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八.",
-   "start_book_page": 583,
-   "end_book_page": 583,
-   "years": [
-    1548
    ]
   },
   {
@@ -26344,40 +26298,17 @@
    "tenure_type": "实授",
    "start_year": 1545,
    "start_month": null,
-   "end_year": 1545,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.5,
-   "leave": "未載",
-   "note": "",
-   "start_book_page": 580,
-   "end_book_page": 580,
-   "years": [
-    1545
-   ]
-  },
-  {
-   "person": "路迎",
-   "person_id": "路迎",
-   "person_label": "路迎",
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "office": "總督京儲",
-   "office_raw": "總督京儲",
-   "tenure_type": "实授",
-   "start_year": 1546,
-   "start_month": 6,
    "end_year": 1546,
    "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
    "leave": "罷",
-   "note": "六、癸巳、八,罷。",
-   "start_book_page": 581,
+   "note": "",
+   "start_book_page": 580,
    "end_book_page": 581,
    "years": [
+    1545,
     1546
    ]
   },
@@ -29431,19 +29362,20 @@
    "cbdb_name": "陳經",
    "office": "兵部",
    "office_raw": "兵部",
-   "tenure_type": "实授",
-   "start_year": 1547,
-   "start_month": 7,
+   "tenure_type": "署理",
+   "start_year": 1546,
+   "start_month": 6,
    "end_year": 1547,
    "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
+   "confidence": 0.8,
    "leave": "致仕",
-   "note": "七、丙辰、七,加太子少保;八、甲辰、廿六,致仕。廿九年二、己亥、四,起改戶尚總京儲。",
-   "start_book_page": 582,
+   "note": "六、辛亥、廿六,署通政司事禮尚改;七、己未、五,督團營。",
+   "start_book_page": 581,
    "end_book_page": 582,
    "years": [
+    1546,
     1547
    ]
   },
@@ -29458,7 +29390,7 @@
    "tenure_type": "实授",
    "start_year": 1541,
    "start_month": 8,
-   "end_year": 1546,
+   "end_year": 1545,
    "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
@@ -29466,14 +29398,13 @@
    "leave": "未載",
    "note": "八、乙卯、二,回部。九、丙戌、三,戶尚兼西苑農事。",
    "start_book_page": 576,
-   "end_book_page": 581,
+   "end_book_page": 580,
    "years": [
     1541,
     1542,
     1543,
     1544,
-    1545,
-    1546
+    1545
    ]
   },
   {
@@ -30150,18 +30081,19 @@
    "office": "工部",
    "office_raw": "工部",
    "tenure_type": "实授",
-   "start_year": 1559,
-   "start_month": null,
+   "start_year": 1558,
+   "start_month": 9,
    "end_year": 1568,
    "end_month": 9,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.5,
    "leave": "致仕",
-   "note": "",
-   "start_book_page": 594,
+   "note": "九、辛卯、十八,右都管工左侍事遷,添注管事督大工。",
+   "start_book_page": 593,
    "end_book_page": 603,
    "years": [
+    1558,
     1559,
     1560,
     1561,

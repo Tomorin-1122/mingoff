@@ -1,9 +1,9 @@
 {
  "counts": {
-  "manual-review": 55,
+  "manual-review": 54,
   "restored-prefix-inferred": 16,
   "reassigned-inferred": 116,
-  "reassigned": 1
+  "reassigned": 2
  },
  "decisions": [
   {
@@ -1847,8 +1847,15 @@
    "person": "屠僑",
    "office": "刑部",
    "raw_note": "二、甲辰、廿二,南刑尚改;九、己巳、廿一,改左都。喻茂堅閏九、戊子、十,總漕右都遷。",
-   "action": "manual-review",
-   "reason": "contains-other-name-no-row-target"
+   "action": "reassigned",
+   "targets": [
+    {
+     "person_id": "喻茂堅",
+     "person": "喻茂堅",
+     "note": "閏九、戊子、十,總漕右都遷"
+    }
+   ],
+   "prefix": "二、甲辰、廿二,南刑尚改;九、己巳、廿一,改左都"
   },
   {
    "year": 1547,
@@ -1857,7 +1864,7 @@
    "office": "都察院",
    "raw_note": "二、丁酉、十五,工尚改;九、丙辰、八,改兵尚。屠僑九、己巳、廿一,刑尚改。",
    "action": "manual-review",
-   "reason": "contains-other-name-no-row-target"
+   "reason": "target-has-active-note"
   },
   {
    "year": 1549,

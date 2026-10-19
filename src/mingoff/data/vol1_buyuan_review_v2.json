@@ -104,7 +104,9 @@
    "office": "工部",
    "after": 1556,
    "years": [
-    1557
+    1557,
+    1558,
+    1559
    ]
   },
   {
@@ -286,6 +288,16 @@
    ]
   },
   {
+   "person_id": "屠僑",
+   "person": "屠僑",
+   "office": "刑部",
+   "after": 1547,
+   "years": [
+    1548,
+    1549
+   ]
+  },
+  {
    "person_id": "屠滽",
    "person": "屠滽",
    "office": "兵部",
@@ -369,6 +381,21 @@
     1567,
     1568,
     1569
+   ]
+  },
+  {
+   "person_id": "張潤",
+   "person": "張潤",
+   "office": "總督京儲",
+   "after": 1540,
+   "years": [
+    1541,
+    1542,
+    1543,
+    1544,
+    1545,
+    1546,
+    1547
    ]
   },
   {
@@ -2165,7 +2192,7 @@
    "year": 1539,
    "person": "王廷相",
    "office": "都察院",
-   "reason": "contains-other-name:周期雍",
+   "reason": "contains-other-name:毛伯溫",
    "note": "二、乙卯、十六,南巡扈從;三、丙戌、十八,加太子太保;四、丙寅、廿九,還京。毛伯溫周期雍二、壬寅、三,總宣大山西三關;是"
   },
   {
@@ -4522,8 +4549,15 @@
    "person": "屠僑",
    "office": "刑部",
    "raw_note": "二、甲辰、廿二,南刑尚改;九、己巳、廿一,改左都。喻茂堅閏九、戊子、十,總漕右都遷。",
-   "action": "manual-review",
-   "reason": "contains-other-name-no-row-target"
+   "action": "reassigned",
+   "targets": [
+    {
+     "person_id": "喻茂堅",
+     "person": "喻茂堅",
+     "note": "閏九、戊子、十,總漕右都遷"
+    }
+   ],
+   "prefix": "二、甲辰、廿二,南刑尚改;九、己巳、廿一,改左都"
   },
   {
    "year": 1547,
@@ -4532,7 +4566,7 @@
    "office": "都察院",
    "raw_note": "二、丁酉、十五,工尚改;九、丙辰、八,改兵尚。屠僑九、己巳、廿一,刑尚改。",
    "action": "manual-review",
-   "reason": "contains-other-name-no-row-target"
+   "reason": "target-has-active-note"
   },
   {
    "year": 1549,
@@ -5665,10 +5699,10 @@
   }
  ],
  "note_resolution_counts": {
-  "manual-review": 55,
+  "manual-review": 54,
   "restored-prefix-inferred": 16,
   "reassigned-inferred": 116,
-  "reassigned": 1
+  "reassigned": 2
  },
  "dup_conflicts": [
   {
@@ -5750,15 +5784,6 @@
    "notes": [
     "九、己酉、廿四,右都遷,加太子少保。",
     "九、己酉、廿四,遷左都。"
-   ]
-  },
-  {
-   "year": 1546,
-   "person": "陳經",
-   "office": "總督京儲",
-   "notes": [
-    "六、辛亥、廿六,署通政司事禮尚改;七、己未、五,督團營。",
-    "二、癸丑、廿六,改禮尚署通政司事。"
    ]
   },
   {

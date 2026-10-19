@@ -734,6 +734,71 @@
    "office": "工部"
   }
  ],
+ "book_remove": [
+  {
+   "year": 1546,
+   "person": "張珩",
+   "office": "總督京儲",
+   "source": "book-p581",
+   "removed": 1
+  },
+  {
+   "year": 1546,
+   "person": "王暐",
+   "office": "總督京儲",
+   "source": "book-p581",
+   "removed": 1
+  },
+  {
+   "year": 1546,
+   "person": "路迎",
+   "office": "總督京儲",
+   "source": "book-p581",
+   "removed": 1
+  },
+  {
+   "year": 1546,
+   "person": "陳經",
+   "office": "總督京儲",
+   "source": "book-p581",
+   "removed": 2
+  },
+  {
+   "year": 1548,
+   "person": "劉儲秀",
+   "office": "吏部",
+   "source": "book-p583",
+   "removed": 1
+  },
+  {
+   "year": 1548,
+   "person": "張潤",
+   "office": "吏部",
+   "source": "book-p583",
+   "removed": 1
+  },
+  {
+   "year": 1548,
+   "person": "至十",
+   "office": "吏部",
+   "source": "book-p583",
+   "removed": 1
+  },
+  {
+   "year": 1548,
+   "person": "聞淵",
+   "office": "刑部",
+   "source": "book-p583",
+   "removed": 1
+  },
+  {
+   "year": 1558,
+   "person": "吳鵬",
+   "office": "工部",
+   "source": "book-p593",
+   "removed": 1
+  }
+ ],
  "book_patch": [
   {
    "year": 1431,
@@ -868,6 +933,97 @@
    "person": "孫慎行",
    "office": "禮部",
    "source": "book-p655",
+   "added": true
+  },
+  {
+   "year": 1546,
+   "person": "路迎",
+   "office": "兵部",
+   "source": "book-p581",
+   "added": true
+  },
+  {
+   "year": 1546,
+   "person": "陳經",
+   "office": "兵部",
+   "source": "book-p581",
+   "added": true
+  },
+  {
+   "year": 1547,
+   "person": "喻茂堅",
+   "office": "刑部",
+   "source": "book-p582",
+   "added": true
+  },
+  {
+   "year": 1547,
+   "person": "屠僑",
+   "office": "都察院",
+   "source": "book-p582",
+   "added": true
+  },
+  {
+   "year": 1548,
+   "person": "聞淵",
+   "office": "吏部",
+   "source": "book-p583",
+   "added": true
+  },
+  {
+   "year": 1548,
+   "person": "夏邦謨",
+   "office": "吏部",
+   "source": "book-p583",
+   "added": true
+  },
+  {
+   "year": 1548,
+   "person": "劉儲秀",
+   "office": "總督京儲",
+   "source": "book-p583",
+   "added": true
+  },
+  {
+   "year": 1548,
+   "person": "張潤",
+   "office": "總督京儲",
+   "source": "book-p583",
+   "added": true
+  },
+  {
+   "year": 1548,
+   "person": "李士翱",
+   "office": "總督京儲",
+   "source": "book-p583",
+   "added": true
+  },
+  {
+   "year": 1548,
+   "person": "屠僑",
+   "office": "都察院",
+   "source": "book-p583",
+   "added": true
+  },
+  {
+   "year": 1558,
+   "person": "吳鵬",
+   "office": "吏部",
+   "source": "book-p593",
+   "added": true
+  },
+  {
+   "year": 1558,
+   "person": "歐陽必進",
+   "office": "工部",
+   "source": "book-p593",
+   "added": true
+  },
+  {
+   "year": 1558,
+   "person": "雷禮",
+   "office": "工部",
+   "source": "book-p593",
    "added": true
   },
   {
@@ -1688,7 +1844,7 @@
    "year": 1539,
    "person": "王廷相",
    "office": "都察院",
-   "reason": "contains-other-name:周期雍",
+   "reason": "contains-other-name:毛伯溫",
    "note": "二、乙卯、十六,南巡扈從;三、丙戌、十八,加太子太保;四、丙寅、廿九,還京。毛伯溫周期雍二、壬寅、三,總宣大山西三關;是"
   },
   {
@@ -2283,15 +2439,6 @@
    "notes": [
     "九、己酉、廿四,右都遷,加太子少保。",
     "九、己酉、廿四,遷左都。"
-   ]
-  },
-  {
-   "year": 1546,
-   "person": "陳經",
-   "office": "總督京儲",
-   "notes": [
-    "六、辛亥、廿六,署通政司事禮尚改;七、己未、五,督團營。",
-    "二、癸丑、廿六,改禮尚署通政司事。"
    ]
   },
   {
@@ -4350,8 +4497,15 @@
    "person": "屠僑",
    "office": "刑部",
    "raw_note": "二、甲辰、廿二,南刑尚改;九、己巳、廿一,改左都。喻茂堅閏九、戊子、十,總漕右都遷。",
-   "action": "manual-review",
-   "reason": "contains-other-name-no-row-target"
+   "action": "reassigned",
+   "targets": [
+    {
+     "person_id": "喻茂堅",
+     "person": "喻茂堅",
+     "note": "閏九、戊子、十,總漕右都遷"
+    }
+   ],
+   "prefix": "二、甲辰、廿二,南刑尚改;九、己巳、廿一,改左都"
   },
   {
    "year": 1547,
@@ -4360,7 +4514,7 @@
    "office": "都察院",
    "raw_note": "二、丁酉、十五,工尚改;九、丙辰、八,改兵尚。屠僑九、己巳、廿一,刑尚改。",
    "action": "manual-review",
-   "reason": "contains-other-name-no-row-target"
+   "reason": "target-has-active-note"
   },
   {
    "year": 1549,
@@ -5493,10 +5647,10 @@
   }
  ],
  "note_resolution_counts": {
-  "manual-review": 55,
+  "manual-review": 54,
   "restored-prefix-inferred": 16,
   "reassigned-inferred": 116,
-  "reassigned": 1
+  "reassigned": 2
  },
  "mapping": {
   "merges": [
@@ -5563,11 +5717,11 @@
     "id": 67450
    },
    {
-    "person": "李瓚",
+    "person": "李瓊",
     "id": 201490
    },
    {
-    "person": "李瓊",
+    "person": "李瓚",
     "id": 201490
    },
    {
@@ -5595,19 +5749,19 @@
     "id": 66341
    },
    {
-    "person": "李儼",
-    "id": 66439
-   },
-   {
     "person": "李信",
     "id": 66439
    },
    {
-    "person": "王晉",
-    "id": 67477
+    "person": "李儼",
+    "id": 66439
    },
    {
     "person": "王儁",
+    "id": 67477
+   },
+   {
+    "person": "王晉",
     "id": 67477
    },
    {
@@ -5619,31 +5773,11 @@
     "id": 67968
    },
    {
-    "person": "趙肛",
+    "person": "趙仁",
     "id": 66668
    },
    {
     "person": "趙瑁",
-    "id": 66668
-   },
-   {
-    "person": "趙犭",
-    "id": 66668
-   },
-   {
-    "person": "趙紅",
-    "id": 66668
-   },
-   {
-    "person": "趙勉",
-    "id": 66668
-   },
-   {
-    "person": "趙犏",
-    "id": 66668
-   },
-   {
-    "person": "趙仁",
     "id": 66668
    },
    {
@@ -5655,54 +5789,75 @@
     "id": 66668
    },
    {
-    "person": "李敏",
-    "id": 67840
+    "person": "趙犏",
+    "id": 66668
+   },
+   {
+    "person": "趙紅",
+    "id": 66668
+   },
+   {
+    "person": "趙勉",
+    "id": 66668
+   },
+   {
+    "person": "趙犭",
+    "id": 66668
+   },
+   {
+    "person": "趙肛",
+    "id": 66668
+   },
+   {
+    "person": "顧佐",
+    "id": 66995
    },
    {
     "person": "宋冕",
     "id": 127666
    },
    {
-    "person": "顧佐",
-    "id": 66995
+    "person": "李敏",
+    "id": 67840
    }
   ]
  },
  "entity_mapping": {
-  "entities": 555,
-  "ids": 513
+  "entities": 554,
+  "ids": 512
  },
  "pages": {
-  "covered": 3317,
-  "entries": 3317,
+  "covered": 3321,
+  "entries": 3321,
   "map_years": 277
  },
  "counts": {
   "entries_in": 3353,
-  "entries_out": 3317,
-  "persons_entities": 796,
-  "display_persons": 790,
+  "entries_out": 3321,
+  "persons_entities": 794,
+  "display_persons": 788,
   "split_entities": 12,
   "dropped": 24,
   "quarantined": 188,
-  "dup_conflicts": 17,
-  "book_patch": 23,
-  "mapping_out": 555,
-  "mapping_ids": 513,
-  "notes_restored": 1,
+  "dup_conflicts": 16,
+  "book_patch": 36,
+  "book_remove": 9,
+  "mapping_out": 554,
+  "mapping_ids": 512,
+  "notes_restored": 2,
   "notes_inferred": 116,
   "notes_prefix": 16,
-  "notes_manual": 55,
-  "book_page_coverage": 3317,
+  "notes_manual": 54,
+  "book_page_coverage": 3321,
   "office_labels": {
-   "兵部": 463,
-   "工部": 448,
-   "都察院": 424,
+   "兵部": 465,
+   "工部": 449,
+   "都察院": 426,
    "戶部": 423,
    "吏部": 416,
    "刑部": 397,
    "禮部": 395,
-   "總督京儲": 173,
+   "總督京儲": 172,
    "總倉場": 143,
    "御史臺": 19,
    "總督倉場": 10,
