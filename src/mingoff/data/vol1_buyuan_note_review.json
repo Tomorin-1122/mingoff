@@ -2123,7 +2123,7 @@
    "year": 1574,
    "person_id": "畢鏘",
    "person": "畢鏘",
-   "office": "總督倉場",
+   "office": "總倉場",
    "raw_note": "六、甲辰、一,遷工尚。六、戊申、五,南刑尚改戶尚,尋卒;是年,刑右侍遷戶左侍。十、乙巳、四,賜祭葬。",
    "action": "reassigned-inferred",
    "targets": [
@@ -2394,7 +2394,7 @@
    "year": 1587,
    "person_id": "胡執禮",
    "person": "胡執禮",
-   "office": "總督倉場",
+   "office": "總倉場",
    "raw_note": "是年致仕。二、庚午、十一,戶左侍改;四、丁卯、八,致仕兵左侍管十八年正、戊申、五,卒。四、甲子、五,遷右都總督薊遼。",
    "action": "reassigned-inferred",
    "targets": [
@@ -2414,7 +2414,7 @@
    "year": 1589,
    "person_id": "楊俊民",
    "person": "楊俊民",
-   "office": "總督倉場",
+   "office": "總倉場",
    "raw_note": "六、癸卯、廿八,卒,六、乙巳、卅,戶左侍遷右都兼戶右侍;九、戊午、十四,丁憂歸。九、戊午、十四,南右都遷戶尚;十一、己巳、廿五,致仕。廿四年六、丁巳、廿一,卒;十一、己未、廿七,贈太子少保,諡恭簡。十二、戊寅、五,兵左侍遷戶尚.",
    "action": "manual-review",
    "reason": "entity-continues"

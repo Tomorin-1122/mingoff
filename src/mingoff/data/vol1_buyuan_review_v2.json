@@ -61,7 +61,7 @@
   {
    "person_id": "劉體乾",
    "person": "劉體乾",
-   "office": "總督倉場",
+   "office": "總倉場",
    "after": 1567,
    "years": [
     1568,
@@ -362,7 +362,7 @@
   {
    "person_id": "張守直",
    "person": "張守直",
-   "office": "總督倉場",
+   "office": "總倉場",
    "after": 1565,
    "years": [
     1566,
@@ -633,7 +633,7 @@
   {
    "person_id": "王國光",
    "person": "王國光",
-   "office": "總督倉場",
+   "office": "總倉場",
    "after": 1565,
    "years": [
     1566,
@@ -920,7 +920,7 @@
   {
    "person_id": "胡執禮",
    "person": "胡執禮",
-   "office": "總督倉場",
+   "office": "總倉場",
    "after": 1581,
    "years": [
     1582,
@@ -1285,7 +1285,7 @@
   {
    "person_id": "馬森",
    "person": "馬森",
-   "office": "總督倉場",
+   "office": "總倉場",
    "after": 1561,
    "years": [
     1562,
@@ -1302,6 +1302,17 @@
     1567,
     1568,
     1569
+   ]
+  },
+  {
+   "person_id": "高燿",
+   "person": "高燿",
+   "office": "戶部",
+   "after": 1561,
+   "years": [
+    1562,
+    1563,
+    1564
    ]
   },
   {
@@ -1426,7 +1437,7 @@
    "year": 1374,
    "person": "馮冕",
    "office": "刑部",
-   "reason": "contains-other-name:唐鐸",
+   "reason": "contains-other-name:徐本",
    "note": "七、壬辰、廿九,出陝西參政,是年實授。唐鐸尋卒。四、己亥、四,改太常卿,未任徐本守制歸。是年,浙江參政遷。"
   },
   {
@@ -2154,7 +2165,7 @@
    "year": 1539,
    "person": "王廷相",
    "office": "都察院",
-   "reason": "contains-other-name:毛伯溫",
+   "reason": "contains-other-name:周期雍",
    "note": "二、乙卯、十六,南巡扈從;三、丙戌、十八,加太子太保;四、丙寅、廿九,還京。毛伯溫周期雍二、壬寅、三,總宣大山西三關;是"
   },
   {
@@ -2307,7 +2318,7 @@
   {
    "year": 1574,
    "person": "畢鏘",
-   "office": "總督倉場",
+   "office": "總倉場",
    "reason": "death-note-but-later-entries",
    "note": "六、甲辰、一,遷工尚。六、戊申、五,南刑尚改戶尚,尋卒;是年,刑右侍遷戶左侍。十、乙巳、四,賜祭葬。"
   },
@@ -2419,14 +2430,14 @@
   {
    "year": 1587,
    "person": "胡執禮",
-   "office": "總督倉場",
+   "office": "總倉場",
    "reason": "death-note-but-later-entries",
    "note": "是年致仕。二、庚午、十一,戶左侍改;四、丁卯、八,致仕兵左侍管十八年正、戊申、五,卒。四、甲子、五,遷右都總督薊遼。"
   },
   {
    "year": 1589,
    "person": "楊俊民",
-   "office": "總督倉場",
+   "office": "總倉場",
    "reason": "death-note-but-later-entries",
    "note": "六、癸卯、廿八,卒,六、乙巳、卅,戶左侍遷右都兼戶右侍;九、戊午、十四,丁憂歸。九、戊午、十四,南右都遷戶尚;十一、己巳"
   },
@@ -2588,7 +2599,7 @@
    "year": 1622,
    "person": "王在晉",
    "office": "兵部",
-   "reason": "contains-other-name:張經世",
+   "reason": "contains-other-name:張經",
    "note": "正、甲子、廿八,兵左侍署;三、甲辰、八,遷兵尚兼右副都經略遼東。張經世六、丁丑、十二,兵左侍暫署。"
   },
   {
@@ -4787,7 +4798,7 @@
    "year": 1574,
    "person_id": "畢鏘",
    "person": "畢鏘",
-   "office": "總督倉場",
+   "office": "總倉場",
    "raw_note": "六、甲辰、一,遷工尚。六、戊申、五,南刑尚改戶尚,尋卒;是年,刑右侍遷戶左侍。十、乙巳、四,賜祭葬。",
    "action": "reassigned-inferred",
    "targets": [
@@ -5058,7 +5069,7 @@
    "year": 1587,
    "person_id": "胡執禮",
    "person": "胡執禮",
-   "office": "總督倉場",
+   "office": "總倉場",
    "raw_note": "是年致仕。二、庚午、十一,戶左侍改;四、丁卯、八,致仕兵左侍管十八年正、戊申、五,卒。四、甲子、五,遷右都總督薊遼。",
    "action": "reassigned-inferred",
    "targets": [
@@ -5078,7 +5089,7 @@
    "year": 1589,
    "person_id": "楊俊民",
    "person": "楊俊民",
-   "office": "總督倉場",
+   "office": "總倉場",
    "raw_note": "六、癸卯、廿八,卒,六、乙巳、卅,戶左侍遷右都兼戶右侍;九、戊午、十四,丁憂歸。九、戊午、十四,南右都遷戶尚;十一、己巳、廿五,致仕。廿四年六、丁巳、廿一,卒;十一、己未、廿七,贈太子少保,諡恭簡。十二、戊寅、五,兵左侍遷戶尚.",
    "action": "manual-review",
    "reason": "entity-continues"

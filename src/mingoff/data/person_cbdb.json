@@ -1,0 +1,3840 @@
+{
+ "丁士美": {
+  "cbdb_id": 34287,
+  "method": "name",
+  "span": [
+   1571,
+   1572
+  ]
+ },
+ "丁紹軾": {
+  "cbdb_id": 344091,
+  "method": "name",
+  "span": [
+   1625,
+   1626
+  ]
+ },
+ "丘濬": {
+  "cbdb_id": 33202,
+  "method": "time-disambig",
+  "span": [
+   1467,
+   1495
+  ]
+ },
+ "丘瑜": {
+  "cbdb_id": 127121,
+  "method": "name",
+  "span": [
+   1644,
+   1644
+  ]
+ },
+ "于慎行": {
+  "cbdb_id": 123963,
+  "method": "time-disambig",
+  "span": [
+   1585,
+   1607
+  ]
+ },
+ "何吾騶": {
+  "cbdb_id": 349124,
+  "method": "unique-nonempty",
+  "span": [
+   1633,
+   1635
+  ]
+ },
+ "何如寵": {
+  "cbdb_id": 128400,
+  "method": "time-disambig",
+  "span": [
+   1629,
+   1631
+  ]
+ },
+ "何宗彥": {
+  "cbdb_id": 128409,
+  "method": "name",
+  "span": [
+   1613,
+   1624
+  ]
+ },
+ "何洛文": {
+  "cbdb_id": 205232,
+  "method": "name",
+  "span": [
+   1579,
+   1580
+  ]
+ },
+ "余孟麟": {
+  "cbdb_id": 128354,
+  "method": "name",
+  "span": [
+   1593,
+   1593
+  ]
+ },
+ "余有丁": {
+  "cbdb_id": 128351,
+  "method": "name",
+  "span": [
+   1574,
+   1583
+  ]
+ },
+ "余繼登": {
+  "cbdb_id": 34741,
+  "method": "name",
+  "span": [
+   1593,
+   1595
+  ]
+ },
+ "來宗道": {
+  "cbdb_id": 128667,
+  "method": "unique-nonempty",
+  "span": [
+   1627,
+   1628
+  ]
+ },
+ "侯恪": {
+  "cbdb_id": 352979,
+  "method": "unique-nonempty",
+  "span": [
+   1630,
+   1630
+  ]
+ },
+ "俞綱": {
+  "cbdb_id": 66802,
+  "method": "cbdb-dup-merge",
+  "span": [
+   1450,
+   1450
+  ]
+ },
+ "倪元璐": {
+  "cbdb_id": 30734,
+  "method": "name",
+  "span": [
+   1643,
+   1643
+  ]
+ },
+ "倪謙": {
+  "cbdb_id": 34509,
+  "method": "name",
+  "span": [
+   1453,
+   1459
+  ]
+ },
+ "倫以訓": {
+  "cbdb_id": 129852,
+  "method": "name",
+  "span": [
+   1535,
+   1538
+  ]
+ },
+ "傅冠": {
+  "cbdb_id": 62168,
+  "method": "office-history",
+  "span": [
+   1637,
+   1638
+  ]
+ },
+ "傅新德": {
+  "cbdb_id": 131606,
+  "method": "time-disambig",
+  "span": [
+   1609,
+   1611
+  ]
+ },
+ "傅瀚": {
+  "cbdb_id": 67792,
+  "method": "time-disambig",
+  "span": [
+   1491,
+   1493
+  ]
+ },
+ "全天叙": {
+  "cbdb_id": 207281,
+  "method": "office-history",
+  "span": [
+   1605,
+   1605
+  ]
+ },
+ "全思誠": {
+  "cbdb_id": 127477,
+  "method": "name",
+  "span": [
+   1383,
+   1383
+  ]
+ },
+ "公鼐": {
+  "cbdb_id": 123911,
+  "method": "name",
+  "span": [
+   1621,
+   1621
+  ]
+ },
+ "劉一燝": {
+  "cbdb_id": 132643,
+  "method": "name",
+  "span": [
+   1615,
+   1622
+  ]
+ },
+ "劉三吾": {
+  "cbdb_id": 28545,
+  "method": "name",
+  "span": [
+   1385,
+   1392
+  ]
+ },
+ "劉俊": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1467,
+   1467
+  ],
+  "cands": [
+   199015,
+   198612,
+   688765,
+   585834,
+   585833
+  ]
+ },
+ "劉健": {
+  "cbdb_id": 67830,
+  "method": "time-disambig",
+  "span": [
+   1487,
+   1506
+  ]
+ },
+ "劉元震": {
+  "cbdb_id": 132669,
+  "method": "time-disambig",
+  "span": [
+   1589,
+   1590
+  ]
+ },
+ "劉吉": {
+  "cbdb_id": 201284,
+  "method": "time-disambig",
+  "span": [
+   1467,
+   1492
+  ]
+ },
+ "劉宇": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1509,
+   1509
+  ],
+  "cands": [
+   505489,
+   476708,
+   318418,
+   293787,
+   275655
+  ]
+ },
+ "劉宇亮": {
+  "cbdb_id": 60382,
+  "method": "time-disambig",
+  "span": [
+   1478,
+   1639
+  ]
+ },
+ "劉定之": {
+  "cbdb_id": 67612,
+  "method": "name",
+  "span": [
+   1466,
+   1469
+  ]
+ },
+ "劉忠": {
+  "cbdb_id": 67872,
+  "method": "time-disambig",
+  "span": [
+   1504,
+   1511
+  ]
+ },
+ "劉應秋": {
+  "cbdb_id": 123762,
+  "method": "name",
+  "span": [
+   1598,
+   1598
+  ]
+ },
+ "劉春": {
+  "cbdb_id": 67821,
+  "method": "office-history",
+  "span": [
+   1505,
+   1521
+  ]
+ },
+ "劉曰寧": {
+  "cbdb_id": 123742,
+  "method": "name",
+  "span": [
+   1609,
+   1609
+  ]
+ },
+ "劉楚先": {
+  "cbdb_id": 132881,
+  "method": "name",
+  "span": [
+   1593,
+   1594
+  ]
+ },
+ "劉機": {
+  "cbdb_id": 66951,
+  "method": "time-disambig",
+  "span": [
+   1505,
+   1505
+  ]
+ },
+ "劉玥": {
+  "cbdb_id": 269460,
+  "method": "time-disambig",
+  "span": [
+   1482,
+   1482
+  ]
+ },
+ "劉珝": {
+  "cbdb_id": 67521,
+  "method": "time-disambig",
+  "span": [
+   1470,
+   1485
+  ]
+ },
+ "劉益": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1459,
+   1460
+  ],
+  "cands": [
+   278935,
+   256682,
+   248497,
+   132798,
+   207883
+  ]
+ },
+ "劉翊": {
+  "cbdb_id": 274377,
+  "method": "time-disambig",
+  "span": [
+   1467,
+   1485
+  ]
+ },
+ "劉翔": {
+  "cbdb_id": 300407,
+  "method": "time-disambig",
+  "span": [
+   1475,
+   1475
+  ]
+ },
+ "劉虞夔": {
+  "cbdb_id": 132884,
+  "method": "name",
+  "span": [
+   1589,
+   1589
+  ]
+ },
+ "劉鉉": {
+  "cbdb_id": 67160,
+  "method": "time-disambig",
+  "span": [
+   1451,
+   1456
+  ]
+ },
+ "劉震": {
+  "cbdb_id": 132916,
+  "method": "time-disambig",
+  "span": [
+   1496,
+   1496
+  ]
+ },
+ "劉鴻訓": {
+  "cbdb_id": 132945,
+  "method": "time-disambig",
+  "span": [
+   1627,
+   1628
+  ]
+ },
+ "劉龍": {
+  "cbdb_id": 132927,
+  "method": "time-disambig",
+  "span": [
+   1517,
+   1517
+  ]
+ },
+ "南居仁": {
+  "cbdb_id": 357308,
+  "method": "name",
+  "span": [
+   1641,
+   1642
+  ]
+ },
+ "危素": {
+  "cbdb_id": 28022,
+  "method": "name",
+  "span": [
+   1370,
+   1371
+  ]
+ },
+ "史可法": {
+  "cbdb_id": 34792,
+  "method": "name",
+  "span": [
+   1644,
+   1644
+  ]
+ },
+ "史繼偕": {
+  "cbdb_id": 366750,
+  "method": "name",
+  "span": [
+   1609,
+   1623
+  ]
+ },
+ "向有年": {
+  "cbdb_id": 590893,
+  "method": "manual-alias",
+  "span": [
+   1633,
+   1633
+  ]
+ },
+ "吕旻": {
+  "cbdb_id": 204152,
+  "method": "simp-trad",
+  "span": [
+   1578,
+   1579
+  ],
+  "alias_of": "呂旻",
+  "note": "年表写作「吕旻」，CBDB 正字「呂旻」"
+ },
+ "吕柟": {
+  "cbdb_id": 33860,
+  "method": "simp-trad",
+  "span": [
+   1535,
+   1536
+  ]
+ },
+ "吕調陽": {
+  "cbdb_id": 128329,
+  "method": "time-disambig",
+  "span": [
+   1574,
+   1578
+  ],
+  "alias_of": "呂調陽",
+  "note": "年表写作「吕調陽」，CBDB 正字「呂調陽」"
+ },
+ "吳宗達": {
+  "cbdb_id": 128182,
+  "method": "time-disambig",
+  "span": [
+   1622,
+   1635
+  ]
+ },
+ "吳蛍": {
+  "cbdb_id": 59452,
+  "method": "time-disambig",
+  "span": [
+   1642,
+   1643
+  ]
+ },
+ "吳道南": {
+  "cbdb_id": 123972,
+  "method": "office-history",
+  "span": [
+   1613,
+   1617
+  ]
+ },
+ "吴一鵬": {
+  "cbdb_id": 68108,
+  "method": "simp-trad",
+  "span": [
+   1513,
+   1513
+  ]
+ },
+ "吴伯宗": {
+  "cbdb_id": 565342,
+  "method": "simp-trad",
+  "span": [
+   1383,
+   1383
+  ]
+ },
+ "吴士元": {
+  "cbdb_id": 351998,
+  "method": "office-history",
+  "span": [
+   1633,
+   1634
+  ]
+ },
+ "吴宗達": {
+  "cbdb_id": 128182,
+  "method": "time-disambig",
+  "span": [
+   1631,
+   1631
+  ],
+  "alias_of": "吳宗達",
+  "note": "年表写作「吴宗達」，CBDB 正字「吳宗達」"
+ },
+ "吴寬": {
+  "cbdb_id": 33465,
+  "method": "time-disambig",
+  "span": [
+   1491,
+   1491
+  ]
+ },
+ "吴山": {
+  "cbdb_id": 69268,
+  "method": "time-disambig",
+  "span": [
+   1551,
+   1554
+  ]
+ },
+ "吴惠": {
+  "cbdb_id": 118797,
+  "method": "name",
+  "span": [
+   1532,
+   1532
+  ]
+ },
+ "吴沉": {
+  "cbdb_id": 27985,
+  "method": "simp-trad",
+  "span": [
+   1383,
+   1383
+  ]
+ },
+ "吴節": {
+  "cbdb_id": 128273,
+  "method": "time-disambig",
+  "span": [
+   1452,
+   1470
+  ]
+ },
+ "吴道南": {
+  "cbdb_id": 123972,
+  "method": "office-history",
+  "span": [
+   1609,
+   1616
+  ],
+  "alias_of": "吳道南",
+  "note": "年表写作「吴道南」，CBDB 正字「吳道南」"
+ },
+ "吴顒": {
+  "cbdb_id": 686676,
+  "method": "ming-filter",
+  "span": [
+   1383,
+   1383
+  ]
+ },
+ "呂原": {
+  "cbdb_id": 67602,
+  "method": "time-disambig",
+  "span": [
+   1455,
+   1462
+  ]
+ },
+ "呂旻": {
+  "cbdb_id": 204152,
+  "method": "name",
+  "span": [
+   1577,
+   1577
+  ]
+ },
+ "呂調陽": {
+  "cbdb_id": 128329,
+  "method": "time-disambig",
+  "span": [
+   1571,
+   1579
+  ]
+ },
+ "周如砥": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1608,
+   1608
+  ],
+  "cands": [
+   128807,
+   373225,
+   229024
+  ]
+ },
+ "周如磐": {
+  "cbdb_id": 373226,
+  "method": "name",
+  "span": [
+   1616,
+   1625
+  ]
+ },
+ "周延儒": {
+  "cbdb_id": 125416,
+  "method": "name",
+  "span": [
+   1629,
+   1643
+  ]
+ },
+ "周應賓": {
+  "cbdb_id": 128931,
+  "method": "name",
+  "span": [
+   1602,
+   1603
+  ]
+ },
+ "周文燭": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1548,
+   1548
+  ],
+  "cands": [
+   372708,
+   284659
+  ]
+ },
+ "周洪謨": {
+  "cbdb_id": 67787,
+  "method": "time-disambig",
+  "span": [
+   1474,
+   1476
+  ]
+ },
+ "周道登": {
+  "cbdb_id": 373091,
+  "method": "unique-nonempty",
+  "span": [
+   1627,
+   1629
+  ]
+ },
+ "唐大章": {
+  "cbdb_id": 387446,
+  "method": "name",
+  "span": [
+   1625,
+   1625
+  ]
+ },
+ "唐文獻": {
+  "cbdb_id": 123861,
+  "method": "name",
+  "span": [
+   1603,
+   1603
+  ]
+ },
+ "唐皐": {
+  "cbdb_id": 387412,
+  "method": "name",
+  "span": [
+   1526,
+   1526
+  ]
+ },
+ "商軫": {
+  "cbdb_id": 226627,
+  "method": "office-history",
+  "span": [
+   1456,
+   1456
+  ],
+  "alias_of": "商輅",
+  "note": "年表写作「商軫」，CBDB 正字「商輅」"
+ },
+ "商輅": {
+  "cbdb_id": 226627,
+  "method": "office-history",
+  "span": [
+   1455,
+   1475
+  ]
+ },
+ "商輔": {
+  "cbdb_id": 226627,
+  "method": "office-history",
+  "span": [
+   1449,
+   1449
+  ],
+  "alias_of": "商輅",
+  "note": "年表写作「商輔」，CBDB 正字「商輅」"
+ },
+ "嘉靖卅三年": {
+  "cbdb_id": null,
+  "method": "unmatched",
+  "span": [
+   1553,
+   1553
+  ]
+ },
+ "嚴嵩": {
+  "cbdb_id": 125411,
+  "method": "name",
+  "span": [
+   1525,
+   1562
+  ]
+ },
+ "嚴訥": {
+  "cbdb_id": 68211,
+  "method": "name",
+  "span": [
+   1557,
+   1565
+  ]
+ },
+ "夏言": {
+  "cbdb_id": 68194,
+  "method": "name",
+  "span": [
+   1536,
+   1548
+  ]
+ },
+ "天啟元年": {
+  "cbdb_id": null,
+  "method": "unmatched",
+  "span": [
+   1620,
+   1620
+  ]
+ },
+ "姚弘謨": {
+  "cbdb_id": 360136,
+  "method": "name",
+  "span": [
+   1574,
+   1577
+  ]
+ },
+ "姚明恭": {
+  "cbdb_id": 129322,
+  "method": "office-history",
+  "span": [
+   1639,
+   1640
+  ]
+ },
+ "姜儆": {
+  "cbdb_id": 530830,
+  "method": "office-history",
+  "span": [
+   1565,
+   1565
+  ]
+ },
+ "姜曰廣": {
+  "cbdb_id": 65908,
+  "method": "name",
+  "span": [
+   1631,
+   1644
+  ]
+ },
+ "姜逢元": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1632,
+   1632
+  ],
+  "cands": [
+   128975,
+   123064
+  ]
+ },
+ "姜金和": {
+  "cbdb_id": 203904,
+  "method": "name",
+  "span": [
+   1568,
+   1568
+  ]
+ },
+ "孔貞运": {
+  "cbdb_id": 124306,
+  "method": "manual-alias",
+  "span": [
+   1636,
+   1637
+  ],
+  "alias_of": "孔貞運",
+  "note": "年表写作「孔貞运」，CBDB 正字「孔貞運」"
+ },
+ "孔貞運": {
+  "cbdb_id": 124306,
+  "method": "name",
+  "span": [
+   1636,
+   1638
+  ]
+ },
+ "孟時芳": {
+  "cbdb_id": 348020,
+  "method": "name",
+  "span": [
+   1619,
+   1620
+  ]
+ },
+ "孟紹虞": {
+  "cbdb_id": 128516,
+  "method": "time-disambig",
+  "span": [
+   1625,
+   1627
+  ]
+ },
+ "孫如游": {
+  "cbdb_id": 129718,
+  "method": "name",
+  "span": [
+   1614,
+   1620
+  ]
+ },
+ "孫應縈": {
+  "cbdb_id": 129794,
+  "method": "manual-alias",
+  "span": [
+   1576,
+   1576
+  ],
+  "alias_of": "孫應鰲",
+  "note": "年表写作「孫應縈」，CBDB 正字「孫應鰲」"
+ },
+ "孫應繁": {
+  "cbdb_id": 129794,
+  "method": "manual-alias",
+  "span": [
+   1575,
+   1575
+  ],
+  "alias_of": "孫應鰲",
+  "note": "年表写作「孫應繁」，CBDB 正字「孫應鰲」"
+ },
+ "孫應鰲": {
+  "cbdb_id": 129794,
+  "method": "name",
+  "span": [
+   1579,
+   1579
+  ]
+ },
+ "孫承宗": {
+  "cbdb_id": 63882,
+  "method": "time-disambig",
+  "span": [
+   1622,
+   1631
+  ]
+ },
+ "孫賢": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1470,
+   1470
+  ],
+  "cands": [
+   600741,
+   149272,
+   293902,
+   129782
+  ]
+ },
+ "孫鋌": {
+  "cbdb_id": 129787,
+  "method": "time-disambig",
+  "span": [
+   1569,
+   1569
+  ]
+ },
+ "孫陞": {
+  "cbdb_id": 129752,
+  "method": "time-disambig",
+  "span": [
+   1549,
+   1551
+  ]
+ },
+ "宋濂": {
+  "cbdb_id": 10097,
+  "method": "name",
+  "span": [
+   1370,
+   1373
+  ]
+ },
+ "宋訥": {
+  "cbdb_id": 28560,
+  "method": "time-disambig",
+  "span": [
+   1383,
+   1390
+  ]
+ },
+ "尹直": {
+  "cbdb_id": 67539,
+  "method": "name",
+  "span": [
+   1486,
+   1487
+  ]
+ },
+ "尹臺": {
+  "cbdb_id": 34710,
+  "method": "time-disambig",
+  "span": [
+   1554,
+   1556
+  ]
+ },
+ "屠羲英": {
+  "cbdb_id": 204468,
+  "method": "name",
+  "span": [
+   1577,
+   1578
+  ]
+ },
+ "崔銑": {
+  "cbdb_id": 34649,
+  "method": "time-disambig",
+  "span": [
+   1523,
+   1546
+  ]
+ },
+ "康太和": {
+  "cbdb_id": 130210,
+  "method": "name",
+  "span": [
+   1553,
+   1553
+  ]
+ },
+ "廖道南": {
+  "cbdb_id": 132101,
+  "method": "unique-nonempty",
+  "span": [
+   1533,
+   1536
+  ]
+ },
+ "弘治十四年": {
+  "cbdb_id": null,
+  "method": "unmatched",
+  "span": [
+   1500,
+   1500
+  ]
+ },
+ "张璧": {
+  "cbdb_id": 215995,
+  "method": "time-disambig",
+  "span": [
+   1535,
+   1535
+  ],
+  "alias_of": "張璧",
+  "note": "年表写作「张璧」，CBDB 正字「張璧」"
+ },
+ "張一桂": {
+  "cbdb_id": 130305,
+  "method": "time-disambig",
+  "span": [
+   1589,
+   1589
+  ]
+ },
+ "張以寧": {
+  "cbdb_id": 28377,
+  "method": "time-disambig",
+  "span": [
+   1370,
+   1370
+  ]
+ },
+ "張位": {
+  "cbdb_id": 124309,
+  "method": "office-history",
+  "span": [
+   1591,
+   1598
+  ]
+ },
+ "張元禎": {
+  "cbdb_id": 67756,
+  "method": "name",
+  "span": [
+   1500,
+   1503
+  ]
+ },
+ "張四知": {
+  "cbdb_id": 204132,
+  "method": "cbdb-dup-merge",
+  "span": [
+   1639,
+   1642
+  ]
+ },
+ "張四維": {
+  "cbdb_id": 124070,
+  "method": "cbdb-dup-merge",
+  "span": [
+   1575,
+   1583
+  ]
+ },
+ "張孚敬": {
+  "cbdb_id": 513353,
+  "method": "name",
+  "span": [
+   1532,
+   1535
+  ]
+ },
+ "張居正": {
+  "cbdb_id": 69011,
+  "method": "name",
+  "span": [
+   1567,
+   1582
+  ]
+ },
+ "張治": {
+  "cbdb_id": 130402,
+  "method": "time-disambig",
+  "span": [
+   1541,
+   1550
+  ]
+ },
+ "張溥": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1385,
+   1385
+  ],
+  "cands": [
+   59839,
+   11572,
+   699035,
+   698302,
+   570342
+  ]
+ },
+ "張潮": {
+  "cbdb_id": 295660,
+  "method": "time-disambig",
+  "span": [
+   1528,
+   1531
+  ]
+ },
+ "張瑛": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1426,
+   1434
+  ],
+  "cands": [
+   207940,
+   199564,
+   278961,
+   252792,
+   242797
+  ]
+ },
+ "張瑞圖": {
+  "cbdb_id": 130559,
+  "method": "time-disambig",
+  "span": [
+   1626,
+   1628
+  ]
+ },
+ "張璧": {
+  "cbdb_id": 215995,
+  "method": "time-disambig",
+  "span": [
+   1528,
+   1545
+  ]
+ },
+ "張益": {
+  "cbdb_id": 313740,
+  "method": "time-disambig",
+  "span": [
+   1449,
+   1449
+  ]
+ },
+ "張維機": {
+  "cbdb_id": 345496,
+  "method": "name",
+  "span": [
+   1642,
+   1644
+  ]
+ },
+ "張聰": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1528,
+   1531
+  ],
+  "cands": [
+   208101,
+   200143,
+   512140,
+   510597,
+   509568
+  ]
+ },
+ "張至發": {
+  "cbdb_id": 59599,
+  "method": "name",
+  "span": [
+   1635,
+   1641
+  ]
+ },
+ "張芮": {
+  "cbdb_id": 282937,
+  "method": "time-disambig",
+  "span": [
+   1507,
+   1508
+  ]
+ },
+ "張邦奇": {
+  "cbdb_id": 28825,
+  "method": "time-disambig",
+  "span": [
+   1530,
+   1542
+  ]
+ },
+ "張顯宗": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1402,
+   1402
+  ],
+  "cands": [
+   489939,
+   130713,
+   346755
+  ]
+ },
+ "張鼐": {
+  "cbdb_id": 67985,
+  "method": "office-history",
+  "span": [
+   1619,
+   1619
+  ]
+ },
+ "彭時": {
+  "cbdb_id": 33919,
+  "method": "time-disambig",
+  "span": [
+   1449,
+   1475
+  ]
+ },
+ "彭華": {
+  "cbdb_id": 280434,
+  "method": "time-disambig",
+  "span": [
+   1473,
+   1487
+  ]
+ },
+ "徐光啟": {
+  "cbdb_id": 30598,
+  "method": "time-disambig",
+  "span": [
+   1632,
+   1633
+  ]
+ },
+ "徐旭": {
+  "cbdb_id": 129901,
+  "method": "time-disambig",
+  "span": [
+   1404,
+   1404
+  ]
+ },
+ "徐有貞": {
+  "cbdb_id": 252200,
+  "method": "time-disambig",
+  "span": [
+   1455,
+   1456
+  ]
+ },
+ "徐溥": {
+  "cbdb_id": 264995,
+  "method": "time-disambig",
+  "span": [
+   1475,
+   1498
+  ]
+ },
+ "徐瓊": {
+  "cbdb_id": 306459,
+  "method": "time-disambig",
+  "span": [
+   1490,
+   1490
+  ]
+ },
+ "徐縉": {
+  "cbdb_id": 304922,
+  "method": "time-disambig",
+  "span": [
+   1525,
+   1527
+  ]
+ },
+ "徐階": {
+  "cbdb_id": 68547,
+  "method": "time-disambig",
+  "span": [
+   1544,
+   1568
+  ]
+ },
+ "徐顯卿": {
+  "cbdb_id": 130015,
+  "method": "name",
+  "span": [
+   1585,
+   1587
+  ]
+ },
+ "成基命": {
+  "cbdb_id": 128097,
+  "method": "time-disambig",
+  "span": [
+   1629,
+   1630
+  ]
+ },
+ "成憲": {
+  "cbdb_id": 205324,
+  "method": "cbdb-dup-merge",
+  "span": [
+   1594,
+   1604
+  ]
+ },
+ "戴洵": {
+  "cbdb_id": 133407,
+  "method": "office-history",
+  "span": [
+   1581,
+   1581
+  ]
+ },
+ "敖文禎": {
+  "cbdb_id": 130300,
+  "method": "name",
+  "span": [
+   1594,
+   1602
+  ]
+ },
+ "敖銑": {
+  "cbdb_id": 202811,
+  "method": "name",
+  "span": [
+   1553,
+   1553
+  ]
+ },
+ "文安之": {
+  "cbdb_id": 126423,
+  "method": "name",
+  "span": [
+   1640,
+   1640
+  ]
+ },
+ "文震孟": {
+  "cbdb_id": 34682,
+  "method": "name",
+  "span": [
+   1635,
+   1635
+  ]
+ },
+ "方从哲": {
+  "cbdb_id": 124056,
+  "method": "manual-alias",
+  "span": [
+   1620,
+   1620
+  ],
+  "alias_of": "方從哲",
+  "note": "年表写作「方从哲」，CBDB 正字「方從哲」"
+ },
+ "方孝孺": {
+  "cbdb_id": 28093,
+  "method": "name",
+  "span": [
+   1399,
+   1402
+  ]
+ },
+ "方岳貢": {
+  "cbdb_id": 126402,
+  "method": "name",
+  "span": [
+   1643,
+   1644
+  ]
+ },
+ "方從哲": {
+  "cbdb_id": 124056,
+  "method": "name",
+  "span": [
+   1612,
+   1620
+  ]
+ },
+ "方拱乾": {
+  "cbdb_id": 72564,
+  "method": "name",
+  "span": [
+   1644,
+   1644
+  ]
+ },
+ "方獻夫": {
+  "cbdb_id": 68286,
+  "method": "name",
+  "span": [
+   1532,
+   1534
+  ]
+ },
+ "方逢年": {
+  "cbdb_id": 38925,
+  "method": "fuzzy-name",
+  "span": [
+   1634,
+   1638
+  ]
+ },
+ "施鳳來": {
+  "cbdb_id": 128996,
+  "method": "name",
+  "span": [
+   1626,
+   1628
+  ]
+ },
+ "曹元": {
+  "cbdb_id": 130259,
+  "method": "time-disambig",
+  "span": [
+   1510,
+   1510
+  ]
+ },
+ "曹鼎": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1449,
+   1449
+  ],
+  "cands": [
+   248089,
+   238243,
+   499619,
+   491835,
+   470958
+  ]
+ },
+ "曹鼐": {
+  "cbdb_id": 199155,
+  "method": "time-disambig",
+  "span": [
+   1440,
+   1444
+  ]
+ },
+ "曾朝節": {
+  "cbdb_id": 131252,
+  "method": "name",
+  "span": [
+   1593,
+   1597
+  ]
+ },
+ "曾榮": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1417,
+   1432
+  ],
+  "cands": [
+   483811,
+   477682,
+   474819,
+   315865,
+   48497
+  ]
+ },
+ "朱國祚": {
+  "cbdb_id": 30142,
+  "method": "name",
+  "span": [
+   1620,
+   1623
+  ]
+ },
+ "朱國禎": {
+  "cbdb_id": 222080,
+  "method": "name",
+  "span": [
+   1612,
+   1624
+  ]
+ },
+ "朱廣": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1604,
+   1604
+  ],
+  "cands": [
+   505677,
+   492105,
+   307320,
+   163691,
+   148663
+  ]
+ },
+ "朱延禧": {
+  "cbdb_id": 616776,
+  "method": "name",
+  "span": [
+   1623,
+   1625
+  ]
+ },
+ "朱統鈔": {
+  "cbdb_id": 350714,
+  "method": "manual-alias",
+  "span": [
+   1643,
+   1643
+  ]
+ },
+ "朱賡": {
+  "cbdb_id": 124310,
+  "method": "time-disambig",
+  "span": [
+   1601,
+   1607
+  ]
+ },
+ "李傑": {
+  "cbdb_id": 202069,
+  "method": "time-disambig",
+  "span": [
+   1487,
+   1500
+  ]
+ },
+ "李國楷": {
+  "cbdb_id": 507420,
+  "method": "unique-nonempty",
+  "span": [
+   1626,
+   1627
+  ]
+ },
+ "李國檜": {
+  "cbdb_id": 517572,
+  "method": "manual-alias",
+  "span": [
+   1628,
+   1628
+  ]
+ },
+ "李孫宸": {
+  "cbdb_id": 357676,
+  "method": "manual-chongzhen",
+  "span": [
+   1626,
+   1630
+  ],
+  "evidence": "idx1583 属崇祯代；另一条无 index 且无履历"
+ },
+ "李康先": {
+  "cbdb_id": 357387,
+  "method": "name",
+  "span": [
+   1626,
+   1630
+  ]
+ },
+ "李廷機": {
+  "cbdb_id": 123964,
+  "method": "time-disambig",
+  "span": [
+   1597,
+   1612
+  ]
+ },
+ "李廷相": {
+  "cbdb_id": null,
+  "method": "rejected-by-time",
+  "span": [
+   1516,
+   1522
+  ],
+  "cbdb_id_rejected": 619667,
+  "reject_reason": "CBDB 任职年 1888-1893 与年表 1516-1522 相差 >40 年"
+ },
+ "李建泰": {
+  "cbdb_id": 77687,
+  "method": "cbdb-dup-merge",
+  "span": [
+   1640,
+   1644
+  ]
+ },
+ "李春芳": {
+  "cbdb_id": 218696,
+  "method": "time-disambig",
+  "span": [
+   1565,
+   1571
+  ]
+ },
+ "李時": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1524,
+   1538
+  ],
+  "cands": [
+   331550,
+   305322,
+   68140,
+   207870,
+   201624
+  ]
+ },
+ "李時勉": {
+  "cbdb_id": 253818,
+  "method": "time-disambig",
+  "span": [
+   1441,
+   1446
+  ]
+ },
+ "李本": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1549,
+   1561
+  ],
+  "cands": [
+   491271,
+   490325,
+   477474,
+   312833,
+   289245
+  ]
+ },
+ "李東陽": {
+  "cbdb_id": 28691,
+  "method": "name",
+  "span": [
+   1493,
+   1512
+  ]
+ },
+ "李標": {
+  "cbdb_id": 358545,
+  "method": "unique-nonempty",
+  "span": [
+   1627,
+   1630
+  ]
+ },
+ "李永通": {
+  "cbdb_id": 127758,
+  "method": "name",
+  "span": [
+   1480,
+   1492
+  ]
+ },
+ "李泰": {
+  "cbdb_id": 285456,
+  "method": "time-disambig",
+  "span": [
+   1465,
+   1472
+  ]
+ },
+ "李賢": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1455,
+   1466
+  ],
+  "cands": [
+   304590,
+   277981,
+   266798,
+   29603,
+   66939
+  ]
+ },
+ "李遜": {
+  "cbdb_id": 207879,
+  "method": "cbdb-dup-merge",
+  "span": [
+   1389,
+   1389
+  ]
+ },
+ "李長春": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1587,
+   1587
+  ],
+  "cands": [
+   359174,
+   359173,
+   127820,
+   438911,
+   685014
+  ]
+ },
+ "李騰芳": {
+  "cbdb_id": 123883,
+  "method": "office-history",
+  "span": [
+   1620,
+   1620
+  ]
+ },
+ "李默": {
+  "cbdb_id": 328880,
+  "method": "time-disambig",
+  "span": [
+   1549,
+   1556
+  ]
+ },
+ "林堯俞": {
+  "cbdb_id": 364080,
+  "method": "unique-nonempty",
+  "span": [
+   1609,
+   1609
+  ]
+ },
+ "林士章": {
+  "cbdb_id": 128566,
+  "method": "time-disambig",
+  "span": [
+   1571,
+   1574
+  ]
+ },
+ "林庭機": {
+  "cbdb_id": 67157,
+  "method": "time-disambig",
+  "span": [
+   1555,
+   1555
+  ]
+ },
+ "林文": {
+  "cbdb_id": 305857,
+  "method": "time-disambig",
+  "span": [
+   1458,
+   1462
+  ]
+ },
+ "林文俊": {
+  "cbdb_id": 221992,
+  "method": "time-disambig",
+  "span": [
+   1532,
+   1534
+  ]
+ },
+ "林樹聲": {
+  "cbdb_id": 203256,
+  "method": "cbdb-dup-merge",
+  "span": [
+   1566,
+   1566
+  ]
+ },
+ "林瀚": {
+  "cbdb_id": 323487,
+  "method": "time-disambig",
+  "span": [
+   1496,
+   1499
+  ]
+ },
+ "林釘": {
+  "cbdb_id": 364251,
+  "method": "manual-chongzhen",
+  "span": [
+   1628,
+   1628
+  ],
+  "evidence": "idx1586 属崇祯代；另一条空壳"
+ },
+ "林鈺": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1629,
+   1636
+  ],
+  "cands": [
+   486391,
+   472843,
+   364250
+  ]
+ },
+ "柯潛": {
+  "cbdb_id": 34515,
+  "method": "name",
+  "span": [
+   1468,
+   1468
+  ]
+ },
+ "桂萼": {
+  "cbdb_id": 68285,
+  "method": "office-history",
+  "span": [
+   1526,
+   1531
+  ]
+ },
+ "梁儲": {
+  "cbdb_id": 304790,
+  "method": "time-disambig",
+  "span": [
+   1510,
+   1521
+  ]
+ },
+ "梁貞": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1370,
+   1370
+  ],
+  "cands": [
+   551308,
+   484583,
+   107435
+  ]
+ },
+ "楊一清": {
+  "cbdb_id": 68260,
+  "method": "time-disambig",
+  "span": [
+   1514,
+   1529
+  ]
+ },
+ "楊嗣昌": {
+  "cbdb_id": 64264,
+  "method": "name",
+  "span": [
+   1638,
+   1641
+  ]
+ },
+ "楊士奇": {
+  "cbdb_id": 28113,
+  "method": "time-disambig",
+  "span": [
+   1402,
+   1444
+  ]
+ },
+ "楊守阯": {
+  "cbdb_id": 67790,
+  "method": "name",
+  "span": [
+   1495,
+   1497
+  ]
+ },
+ "楊守陳": {
+  "cbdb_id": 67789,
+  "method": "name",
+  "span": [
+   1478,
+   1487
+  ]
+ },
+ "楊廷和": {
+  "cbdb_id": 68092,
+  "method": "name",
+  "span": [
+   1504,
+   1524
+  ]
+ },
+ "楊景辰": {
+  "cbdb_id": 365175,
+  "method": "unique-nonempty",
+  "span": [
+   1626,
+   1628
+  ]
+ },
+ "楊榮": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1407,
+   1440
+  ],
+  "cands": [
+   199261,
+   198226,
+   248594,
+   231731,
+   66818
+  ]
+ },
+ "楊淞": {
+  "cbdb_id": 560014,
+  "method": "unique-nonempty",
+  "span": [
+   1397,
+   1397
+  ]
+ },
+ "楊溥": {
+  "cbdb_id": 199050,
+  "method": "time-disambig",
+  "span": [
+   1425,
+   1446
+  ]
+ },
+ "楊起元": {
+  "cbdb_id": 131816,
+  "method": "time-disambig",
+  "span": [
+   1595,
+   1596
+  ]
+ },
+ "楊道賓": {
+  "cbdb_id": 123872,
+  "method": "name",
+  "span": [
+   1603,
+   1605
+  ]
+ },
+ "樂韶鳳": {
+  "cbdb_id": 66467,
+  "method": "name",
+  "span": [
+   1373,
+   1373
+  ]
+ },
+ "歐陽德": {
+  "cbdb_id": 99984,
+  "method": "time-disambig",
+  "span": [
+   1547,
+   1547
+  ]
+ },
+ "武衛": {
+  "cbdb_id": 200048,
+  "method": "cbdb-dup-merge",
+  "span": [
+   1500,
+   1503
+  ]
+ },
+ "殷士儋": {
+  "cbdb_id": 68217,
+  "method": "name",
+  "span": [
+   1569,
+   1571
+  ]
+ },
+ "殷邁": {
+  "cbdb_id": 129831,
+  "method": "name",
+  "span": [
+   1577,
+   1577
+  ]
+ },
+ "毛澄": {
+  "cbdb_id": 68094,
+  "method": "time-disambig",
+  "span": [
+   1511,
+   1514
+  ]
+ },
+ "毛紀": {
+  "cbdb_id": 68079,
+  "method": "time-disambig",
+  "span": [
+   1521,
+   1521
+  ]
+ },
+ "永樂十年": {
+  "cbdb_id": null,
+  "method": "unmatched",
+  "span": [
+   1411,
+   1411
+  ]
+ },
+ "江如璧": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1544,
+   1544
+  ],
+  "cands": [
+   630508,
+   333921,
+   266218,
+   214856,
+   279505
+  ]
+ },
+ "江朝宗": {
+  "cbdb_id": 299756,
+  "method": "time-disambig",
+  "span": [
+   1472,
+   1478
+  ]
+ },
+ "江淵": {
+  "cbdb_id": 207934,
+  "method": "cbdb-dup-merge",
+  "span": [
+   1446,
+   1455
+  ]
+ },
+ "江瀾": {
+  "cbdb_id": 39357,
+  "method": "fuzzy-name",
+  "span": [
+   1502,
+   1503
+  ]
+ },
+ "汪俊": {
+  "cbdb_id": 79196,
+  "method": "cbdb-dup-merge",
+  "span": [
+   1519,
+   1521
+  ]
+ },
+ "汪偉": {
+  "cbdb_id": 68087,
+  "method": "office-history",
+  "span": [
+   1522,
+   1522
+  ]
+ },
+ "汪諧": {
+  "cbdb_id": 127538,
+  "method": "time-disambig",
+  "span": [
+   1487,
+   1491
+  ]
+ },
+ "汪鎧": {
+  "cbdb_id": 684453,
+  "method": "fuzzy-name",
+  "span": [
+   1573,
+   1573
+  ]
+ },
+ "沈一貫": {
+  "cbdb_id": 124055,
+  "method": "name",
+  "span": [
+   1594,
+   1606
+  ]
+ },
+ "沈坤": {
+  "cbdb_id": 203254,
+  "method": "cbdb-dup-merge",
+  "span": [
+   1556,
+   1560
+  ]
+ },
+ "沈度": {
+  "cbdb_id": 127573,
+  "method": "time-disambig",
+  "span": [
+   1424,
+   1434
+  ]
+ },
+ "沈淮": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1614,
+   1614
+  ],
+  "cands": [
+   203806,
+   200636,
+   568271,
+   538174,
+   509838
+  ]
+ },
+ "沈滇": {
+  "cbdb_id": 127615,
+  "method": "manual-alias",
+  "span": [
+   1622,
+   1622
+  ],
+  "alias_of": "沈㴶",
+  "note": "年表写作「沈滇」，CBDB 正字「沈㴶」"
+ },
+ "沈滙": {
+  "cbdb_id": 127615,
+  "method": "manual-alias",
+  "span": [
+   1622,
+   1622
+  ],
+  "alias_of": "沈㴶",
+  "note": "年表写作「沈滙」，CBDB 正字「沈㴶」"
+ },
+ "沈滥": {
+  "cbdb_id": 127615,
+  "method": "manual-alias",
+  "span": [
+   1620,
+   1620
+  ],
+  "alias_of": "沈㴶",
+  "note": "年表写作「沈滥」，CBDB 正字「沈㴶」"
+ },
+ "沈鯉": {
+  "cbdb_id": 34728,
+  "method": "time-disambig",
+  "span": [
+   1582,
+   1606
+  ]
+ },
+ "温體仁": {
+  "cbdb_id": 125458,
+  "method": "simp-trad",
+  "span": [
+   1631,
+   1635
+  ],
+  "alias_of": "溫體仁",
+  "note": "年表写作「温體仁」，CBDB 正字「溫體仁」"
+ },
+ "湛若水": {
+  "cbdb_id": 131191,
+  "method": "name",
+  "span": [
+   1528,
+   1528
+  ]
+ },
+ "溫體仁": {
+  "cbdb_id": 125458,
+  "method": "name",
+  "span": [
+   1630,
+   1637
+  ]
+ },
+ "潘晟": {
+  "cbdb_id": 132325,
+  "method": "office-history",
+  "span": [
+   1563,
+   1582
+  ]
+ },
+ "焦芳": {
+  "cbdb_id": 131574,
+  "method": "name",
+  "span": [
+   1499,
+   1510
+  ]
+ },
+ "熊鼎": {
+  "cbdb_id": 67842,
+  "method": "time-disambig",
+  "span": [
+   1369,
+   1371
+  ]
+ },
+ "王一寧": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1451,
+   1452
+  ],
+  "cands": [
+   573581,
+   457814,
+   230481
+  ]
+ },
+ "王儁": {
+  "cbdb_id": 133791,
+  "method": "name",
+  "span": [
+   1471,
+   1482
+  ]
+ },
+ "王圖": {
+  "cbdb_id": 123710,
+  "method": "time-disambig",
+  "span": [
+   1605,
+   1609
+  ]
+ },
+ "王大任": {
+  "cbdb_id": 204398,
+  "method": "cbdb-dup-merge",
+  "span": [
+   1564,
+   1564
+  ]
+ },
+ "王家屏": {
+  "cbdb_id": 123935,
+  "method": "time-disambig",
+  "span": [
+   1583,
+   1592
+  ]
+ },
+ "王弘誨": {
+  "cbdb_id": 126486,
+  "method": "name",
+  "span": [
+   1583,
+   1583
+  ]
+ },
+ "王應熊": {
+  "cbdb_id": 341557,
+  "method": "unique-nonempty",
+  "span": [
+   1633,
+   1644
+  ]
+ },
+ "王教": {
+  "cbdb_id": 343315,
+  "method": "time-disambig",
+  "span": [
+   1537,
+   1540
+  ]
+ },
+ "王文": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1455,
+   1456
+  ],
+  "cands": [
+   266734,
+   67339,
+   67338,
+   697339,
+   557387
+  ]
+ },
+ "王時": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1369,
+   1369
+  ],
+  "cands": [
+   638438,
+   638437,
+   638436,
+   638354,
+   487991
+  ]
+ },
+ "王景": {
+  "cbdb_id": 242761,
+  "method": "time-disambig",
+  "span": [
+   1402,
+   1408
+  ]
+ },
+ "王獻": {
+  "cbdb_id": 126876,
+  "method": "time-disambig",
+  "span": [
+   1473,
+   1487
+  ]
+ },
+ "王瓚": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1513,
+   1516
+  ],
+  "cands": [
+   200846,
+   198693,
+   574136,
+   508022,
+   502401
+  ]
+ },
+ "王用賓": {
+  "cbdb_id": 324565,
+  "method": "time-disambig",
+  "span": [
+   1544,
+   1549
+  ]
+ },
+ "王直": {
+  "cbdb_id": 34493,
+  "method": "time-disambig",
+  "span": [
+   1441,
+   1443
+  ]
+ },
+ "王祚遠": {
+  "cbdb_id": 342833,
+  "method": "name",
+  "span": [
+   1625,
+   1628
+  ]
+ },
+ "王英": {
+  "cbdb_id": 207910,
+  "method": "time-disambig",
+  "span": [
+   1425,
+   1440
+  ]
+ },
+ "王道": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1533,
+   1547
+  ],
+  "cands": [
+   310368,
+   224132,
+   126743,
+   126742,
+   202119
+  ]
+ },
+ "王達": {
+  "cbdb_id": 309574,
+  "method": "time-disambig",
+  "span": [
+   1406,
+   1406
+  ]
+ },
+ "王錫爵": {
+  "cbdb_id": 123984,
+  "method": "time-disambig",
+  "span": [
+   1574,
+   1607
+  ]
+ },
+ "王錫衰": {
+  "cbdb_id": 640618,
+  "method": "unique-nonempty",
+  "span": [
+   1639,
+   1639
+  ]
+ },
+ "王錫袞": {
+  "cbdb_id": null,
+  "method": "rejected-by-time",
+  "span": [
+   1637,
+   1637
+  ],
+  "cbdb_id_rejected": 640630,
+  "reject_reason": "CBDB 任职年 1901-1901 与年表 1637-1637 相差 >40 年"
+ },
+ "王鏊": {
+  "cbdb_id": 302718,
+  "method": "time-disambig",
+  "span": [
+   1495,
+   1509
+  ]
+ },
+ "王鐸": {
+  "cbdb_id": 71166,
+  "method": "time-disambig",
+  "span": [
+   1637,
+   1644
+  ]
+ },
+ "田一儁": {
+  "cbdb_id": 69291,
+  "method": "name",
+  "span": [
+   1589,
+   1589
+  ]
+ },
+ "申時行": {
+  "cbdb_id": 123973,
+  "method": "name",
+  "span": [
+   1574,
+   1591
+  ]
+ },
+ "盛以弘": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1616,
+   1618
+  ],
+  "cands": [
+   131346,
+   367223
+  ]
+ },
+ "盛訥": {
+  "cbdb_id": 131353,
+  "method": "name",
+  "span": [
+   1590,
+   1590
+  ]
+ },
+ "瞿景淳": {
+  "cbdb_id": 30184,
+  "method": "name",
+  "span": [
+   1564,
+   1564
+  ]
+ },
+ "石珔": {
+  "cbdb_id": 68055,
+  "method": "manual-alias",
+  "span": [
+   1522,
+   1522
+  ],
+  "alias_of": "石珤",
+  "note": "年表写作「石珔」，CBDB 正字「石珤」"
+ },
+ "石珘": {
+  "cbdb_id": 68055,
+  "method": "manual-alias",
+  "span": [
+   1519,
+   1527
+  ],
+  "alias_of": "石珤",
+  "note": "年表写作「石珘」，CBDB 正字「石珤」"
+ },
+ "秦鳴雷": {
+  "cbdb_id": 129692,
+  "method": "time-disambig",
+  "span": [
+   1559,
+   1562
+  ]
+ },
+ "程國祥": {
+  "cbdb_id": 62965,
+  "method": "name",
+  "span": [
+   1638,
+   1639
+  ]
+ },
+ "程敏政": {
+  "cbdb_id": 29602,
+  "method": "name",
+  "span": [
+   1487,
+   1499
+  ]
+ },
+ "程文德": {
+  "cbdb_id": 131629,
+  "method": "name",
+  "span": [
+   1544,
+   1550
+  ]
+ },
+ "穆孔暉": {
+  "cbdb_id": 133084,
+  "method": "name",
+  "span": [
+   1525,
+   1531
+  ]
+ },
+ "章懋": {
+  "cbdb_id": 34532,
+  "method": "time-disambig",
+  "span": [
+   1501,
+   1501
+  ]
+ },
+ "羅喻義": {
+  "cbdb_id": 123917,
+  "method": "name",
+  "span": [
+   1626,
+   1631
+  ]
+ },
+ "羅璟": {
+  "cbdb_id": 66807,
+  "method": "time-disambig",
+  "span": [
+   1496,
+   1496
+  ]
+ },
+ "習孔教": {
+  "cbdb_id": 130235,
+  "method": "name",
+  "span": [
+   1593,
+   1593
+  ]
+ },
+ "翟鑾": {
+  "cbdb_id": 68136,
+  "method": "name",
+  "span": [
+   1525,
+   1544
+  ]
+ },
+ "耿裕": {
+  "cbdb_id": 67783,
+  "method": "name",
+  "span": [
+   1477,
+   1477
+  ]
+ },
+ "胡儼": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1402,
+   1424
+  ],
+  "cands": [
+   328575,
+   243204,
+   34479,
+   464878,
+   384852
+  ]
+ },
+ "胡季安": {
+  "cbdb_id": 513055,
+  "method": "name",
+  "span": [
+   1391,
+   1396
+  ]
+ },
+ "胡廣": {
+  "cbdb_id": 263425,
+  "method": "time-disambig",
+  "span": [
+   1407,
+   1416
+  ]
+ },
+ "胡正蒙": {
+  "cbdb_id": 203688,
+  "method": "name",
+  "span": [
+   1566,
+   1566
+  ]
+ },
+ "苗衷": {
+  "cbdb_id": 129187,
+  "method": "time-disambig",
+  "span": [
+   1441,
+   1450
+  ]
+ },
+ "范復粹": {
+  "cbdb_id": 59655,
+  "method": "name",
+  "span": [
+   1638,
+   1641
+  ]
+ },
+ "范景文": {
+  "cbdb_id": 34752,
+  "method": "time-disambig",
+  "span": [
+   1644,
+   1644
+  ]
+ },
+ "范謙": {
+  "cbdb_id": 129175,
+  "method": "time-disambig",
+  "span": [
+   1592,
+   1592
+  ]
+ },
+ "茅瓚": {
+  "cbdb_id": 69565,
+  "method": "name",
+  "span": [
+   1554,
+   1554
+  ]
+ },
+ "萧雲舉": {
+  "cbdb_id": 577850,
+  "method": "office-history",
+  "span": [
+   1609,
+   1609
+  ],
+  "alias_of": "蕭雲舉",
+  "note": "年表写作「萧雲舉」，CBDB 正字「蕭雲舉」"
+ },
+ "萬安": {
+  "cbdb_id": 67482,
+  "method": "time-disambig",
+  "span": [
+   1466,
+   1487
+  ]
+ },
+ "葉向高": {
+  "cbdb_id": 131951,
+  "method": "time-disambig",
+  "span": [
+   1607,
+   1624
+  ]
+ },
+ "葛鈞": {
+  "cbdb_id": 651702,
+  "method": "ming-filter",
+  "span": [
+   1387,
+   1391
+  ]
+ },
+ "董份": {
+  "cbdb_id": 131989,
+  "method": "time-disambig",
+  "span": [
+   1561,
+   1561
+  ]
+ },
+ "董倫": {
+  "cbdb_id": 66751,
+  "method": "office-history",
+  "span": [
+   1399,
+   1402
+  ]
+ },
+ "蔡國用": {
+  "cbdb_id": 363385,
+  "method": "manual-chongzhen",
+  "span": [
+   1638,
+   1640
+  ],
+  "evidence": "idx1580 属崇祯代；另一条无 index"
+ },
+ "蔡昂": {
+  "cbdb_id": 219473,
+  "method": "time-disambig",
+  "span": [
+   1533,
+   1537
+  ]
+ },
+ "蔡毅中": {
+  "cbdb_id": 123900,
+  "method": "time-disambig",
+  "span": [
+   1624,
+   1624
+  ]
+ },
+ "蔣冕": {
+  "cbdb_id": 68073,
+  "method": "time-disambig",
+  "span": [
+   1511,
+   1524
+  ]
+ },
+ "蔣孟育": {
+  "cbdb_id": 132550,
+  "method": "time-disambig",
+  "span": [
+   1611,
+   1611
+  ]
+ },
+ "蔣德璟": {
+  "cbdb_id": 361317,
+  "method": "fuzzy-name",
+  "span": [
+   1642,
+   1644
+  ]
+ },
+ "蔣晁": {
+  "cbdb_id": 448647,
+  "method": "name",
+  "span": [
+   1521,
+   1521
+  ]
+ },
+ "蕭良有": {
+  "cbdb_id": 133324,
+  "method": "name",
+  "span": [
+   1595,
+   1595
+  ]
+ },
+ "蕭鉉": {
+  "cbdb_id": 272233,
+  "method": "time-disambig",
+  "span": [
+   1446,
+   1455
+  ]
+ },
+ "蕭雲舉": {
+  "cbdb_id": 577850,
+  "method": "office-history",
+  "span": [
+   1603,
+   1608
+  ]
+ },
+ "薛國觀": {
+  "cbdb_id": 362351,
+  "method": "unique-nonempty",
+  "span": [
+   1637,
+   1640
+  ]
+ },
+ "薛瑄": {
+  "cbdb_id": 30622,
+  "method": "time-disambig",
+  "span": [
+   1455,
+   1456
+  ]
+ },
+ "蘭從善": {
+  "cbdb_id": 246316,
+  "method": "manual-alias",
+  "span": [
+   1443,
+   1443
+  ]
+ },
+ "袁宗皋": {
+  "cbdb_id": 129643,
+  "method": "manual-alias",
+  "span": [
+   1521,
+   1521
+  ]
+ },
+ "袁煒": {
+  "cbdb_id": 129658,
+  "method": "time-disambig",
+  "span": [
+   1558,
+   1565
+  ]
+ },
+ "解縉": {
+  "cbdb_id": 34469,
+  "method": "name",
+  "span": [
+   1402,
+   1404
+  ]
+ },
+ "解繒": {
+  "cbdb_id": 34469,
+  "method": "manual-alias",
+  "span": [
+   1403,
+   1403
+  ],
+  "alias_of": "解縉",
+  "note": "年表写作「解繒」，CBDB 正字「解縉」"
+ },
+ "許國": {
+  "cbdb_id": 124245,
+  "method": "office-history",
+  "span": [
+   1580,
+   1591
+  ]
+ },
+ "許存仁": {
+  "cbdb_id": 329943,
+  "method": "name",
+  "span": [
+   1368,
+   1368
+  ]
+ },
+ "許彬": {
+  "cbdb_id": 67475,
+  "method": "time-disambig",
+  "span": [
+   1455,
+   1455
+  ]
+ },
+ "許成名": {
+  "cbdb_id": 130115,
+  "method": "name",
+  "span": [
+   1529,
+   1542
+  ]
+ },
+ "許誥": {
+  "cbdb_id": 67927,
+  "method": "time-disambig",
+  "span": [
+   1529,
+   1532
+  ]
+ },
+ "許讚": {
+  "cbdb_id": 67932,
+  "method": "office-history",
+  "span": [
+   1544,
+   1545
+  ]
+ },
+ "詹同": {
+  "cbdb_id": 66453,
+  "method": "name",
+  "span": [
+   1369,
+   1373
+  ]
+ },
+ "謝遷": {
+  "cbdb_id": 34576,
+  "method": "time-disambig",
+  "span": [
+   1491,
+   1498
+  ]
+ },
+ "謝邋": {
+  "cbdb_id": 34576,
+  "method": "time-disambig",
+  "span": [
+   1498,
+   1498
+  ],
+  "alias_of": "謝遷",
+  "note": "年表写作「謝邋」，CBDB 正字「謝遷」"
+ },
+ "謝鐸": {
+  "cbdb_id": 67166,
+  "method": "time-disambig",
+  "span": [
+   1491,
+   1504
+  ]
+ },
+ "謝陞": {
+  "cbdb_id": 65935,
+  "method": "name",
+  "span": [
+   1640,
+   1642
+  ]
+ },
+ "貝泰": {
+  "cbdb_id": 128336,
+  "method": "name",
+  "span": [
+   1427,
+   1441
+  ]
+ },
+ "費宏": {
+  "cbdb_id": 68133,
+  "method": "name",
+  "span": [
+   1489,
+   1535
+  ]
+ },
+ "費案": {
+  "cbdb_id": 68133,
+  "method": "manual-alias",
+  "span": [
+   1544,
+   1544
+  ],
+  "alias_of": "費宏",
+  "note": "年表写作「費案」，CBDB 正字「費宏」"
+ },
+ "費閭": {
+  "cbdb_id": null,
+  "method": "unmatched",
+  "span": [
+   1487,
+   1491
+  ]
+ },
+ "賀逢聖": {
+  "cbdb_id": 131487,
+  "method": "time-disambig",
+  "span": [
+   1628,
+   1642
+  ]
+ },
+ "賈詠": {
+  "cbdb_id": 131702,
+  "method": "name",
+  "span": [
+   1518,
+   1525
+  ]
+ },
+ "趙志皋": {
+  "cbdb_id": 132155,
+  "method": "name",
+  "span": [
+   1587,
+   1601
+  ]
+ },
+ "趙志皐": {
+  "cbdb_id": 132155,
+  "method": "manual-alias",
+  "span": [
+   1600,
+   1600
+  ],
+  "alias_of": "趙志皋",
+  "note": "年表写作「趙志皐」，CBDB 正字「趙志皋」"
+ },
+ "趙永": {
+  "cbdb_id": 67168,
+  "method": "time-disambig",
+  "span": [
+   1521,
+   1521
+  ]
+ },
+ "趙用賢": {
+  "cbdb_id": 132148,
+  "method": "name",
+  "span": [
+   1589,
+   1589
+  ]
+ },
+ "趙貞吉": {
+  "cbdb_id": 68216,
+  "method": "name",
+  "span": [
+   1569,
+   1570
+  ]
+ },
+ "邢讓": {
+  "cbdb_id": 67127,
+  "method": "time-disambig",
+  "span": [
+   1466,
+   1466
+  ]
+ },
+ "郭樸": {
+  "cbdb_id": 69006,
+  "method": "name",
+  "span": [
+   1566,
+   1566
+  ]
+ },
+ "郭正域": {
+  "cbdb_id": 125520,
+  "method": "name",
+  "span": [
+   1600,
+   1600
+  ]
+ },
+ "郭維藩": {
+  "cbdb_id": 130193,
+  "method": "time-disambig",
+  "span": [
+   1537,
+   1537
+  ]
+ },
+ "郭鑿": {
+  "cbdb_id": 69006,
+  "method": "manual-alias",
+  "span": [
+   1557,
+   1557
+  ],
+  "alias_of": "郭樸",
+  "note": "年表写作「郭鑿」，CBDB 正字「郭樸」"
+ },
+ "鄧以瓚": {
+  "cbdb_id": 132478,
+  "method": "manual-alias",
+  "span": [
+   1592,
+   1592
+  ]
+ },
+ "鄧士龍": {
+  "cbdb_id": 348115,
+  "method": "name",
+  "span": [
+   1615,
+   1615
+  ]
+ },
+ "鄭以偉": {
+  "cbdb_id": 132357,
+  "method": "name",
+  "span": [
+   1632,
+   1633
+  ]
+ },
+ "鄭紀": {
+  "cbdb_id": 34525,
+  "method": "time-disambig",
+  "span": [
+   1489,
+   1490
+  ]
+ },
+ "金問": {
+  "cbdb_id": 128730,
+  "method": "name",
+  "span": [
+   1441,
+   1442
+  ]
+ },
+ "金幼孜": {
+  "cbdb_id": 34486,
+  "method": "time-disambig",
+  "span": [
+   1402,
+   1431
+  ]
+ },
+ "錢士升": {
+  "cbdb_id": 86453,
+  "method": "name",
+  "span": [
+   1633,
+   1636
+  ]
+ },
+ "錢溥": {
+  "cbdb_id": 260821,
+  "method": "time-disambig",
+  "span": [
+   1456,
+   1456
+  ]
+ },
+ "錢習禮": {
+  "cbdb_id": 375081,
+  "method": "unique-nonempty",
+  "span": [
+   1435,
+   1444
+  ]
+ },
+ "錢象坤": {
+  "cbdb_id": 133125,
+  "method": "name",
+  "span": [
+   1629,
+   1631
+  ]
+ },
+ "錢龍錫": {
+  "cbdb_id": 133138,
+  "method": "name",
+  "span": [
+   1627,
+   1629
+  ]
+ },
+ "閔汝霖": {
+  "cbdb_id": 131290,
+  "method": "time-disambig",
+  "span": [
+   1549,
+   1555
+  ]
+ },
+ "閻樸": {
+  "cbdb_id": 133028,
+  "method": "office-history",
+  "span": [
+   1551,
+   1551
+  ]
+ },
+ "陳于陛": {
+  "cbdb_id": 123939,
+  "method": "time-disambig",
+  "span": [
+   1594,
+   1594
+  ]
+ },
+ "陳以勤": {
+  "cbdb_id": 68215,
+  "method": "time-disambig",
+  "span": [
+   1567,
+   1570
+  ]
+ },
+ "陳寰": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1533,
+   1533
+  ],
+  "cands": [
+   298892,
+   131001
+  ]
+ },
+ "陳山": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1427,
+   1434
+  ],
+  "cands": [
+   509346,
+   474549,
+   130792,
+   330033,
+   324621
+  ]
+ },
+ "陳循": {
+  "cbdb_id": 67330,
+  "method": "office-history",
+  "span": [
+   1444,
+   1455
+  ]
+ },
+ "陳思育": {
+  "cbdb_id": 205404,
+  "method": "name",
+  "span": [
+   1579,
+   1581
+  ]
+ },
+ "陳敬宗": {
+  "cbdb_id": 67161,
+  "method": "time-disambig",
+  "span": [
+   1434,
+   1450
+  ]
+ },
+ "陳文": {
+  "cbdb_id": 292427,
+  "method": "time-disambig",
+  "span": [
+   1463,
+   1468
+  ]
+ },
+ "陳於陛": {
+  "cbdb_id": 123939,
+  "method": "time-disambig",
+  "span": [
+   1585,
+   1596
+  ],
+  "alias_of": "陳于陛",
+  "note": "年表写作「陳於陛」，CBDB 正字「陳于陛」"
+ },
+ "陳於陞": {
+  "cbdb_id": 123939,
+  "method": "time-disambig",
+  "span": [
+   1596,
+   1596
+  ],
+  "alias_of": "陳于陛",
+  "note": "年表写作「陳於陞」，CBDB 正字「陳于陛」"
+ },
+ "陳演": {
+  "cbdb_id": 130962,
+  "method": "manual-chongzhen",
+  "span": [
+   1637,
+   1644
+  ],
+  "evidence": "idx1592 属崇祯代；另一条 idx1448 为弘治间，排除"
+ },
+ "陳經邦": {
+  "cbdb_id": 130957,
+  "method": "time-disambig",
+  "span": [
+   1582,
+   1582
+  ]
+ },
+ "陳詢": {
+  "cbdb_id": 241587,
+  "method": "time-disambig",
+  "span": [
+   1446,
+   1459
+  ]
+ },
+ "陳鑑": {
+  "cbdb_id": 199387,
+  "method": "time-disambig",
+  "span": [
+   1467,
+   1471
+  ]
+ },
+ "陳陞": {
+  "cbdb_id": 372278,
+  "method": "time-disambig",
+  "span": [
+   1561,
+   1562
+  ]
+ },
+ "陳霽": {
+  "cbdb_id": 131050,
+  "method": "time-disambig",
+  "span": [
+   1518,
+   1518
+  ]
+ },
+ "陶大臨": {
+  "cbdb_id": 68324,
+  "method": "time-disambig",
+  "span": [
+   1571,
+   1571
+  ]
+ },
+ "陶望齡": {
+  "cbdb_id": 130726,
+  "method": "name",
+  "span": [
+   1605,
+   1605
+  ]
+ },
+ "陸可教": {
+  "cbdb_id": 134565,
+  "method": "name",
+  "span": [
+   1593,
+   1594
+  ]
+ },
+ "陸深": {
+  "cbdb_id": 33841,
+  "method": "time-disambig",
+  "span": [
+   1529,
+   1539
+  ]
+ },
+ "陸簡": {
+  "cbdb_id": 130772,
+  "method": "name",
+  "span": [
+   1491,
+   1491
+  ]
+ },
+ "靳貴": {
+  "cbdb_id": 131904,
+  "method": "time-disambig",
+  "span": [
+   1512,
+   1517
+  ]
+ },
+ "韓世能": {
+  "cbdb_id": 123611,
+  "method": "name",
+  "span": [
+   1585,
+   1585
+  ]
+ },
+ "韓煖": {
+  "cbdb_id": 133276,
+  "method": "manual-alias",
+  "span": [
+   1630,
+   1630
+  ],
+  "alias_of": "韓爌",
+  "note": "年表写作「韓煖」，CBDB 正字「韓爌」"
+ },
+ "韓煥": {
+  "cbdb_id": 133276,
+  "method": "manual-alias",
+  "span": [
+   1614,
+   1620
+  ],
+  "alias_of": "韓爌",
+  "note": "年表写作「韓煥」，CBDB 正字「韓爌」"
+ },
+ "韓燥": {
+  "cbdb_id": 133276,
+  "method": "manual-alias",
+  "span": [
+   1624,
+   1624
+  ],
+  "alias_of": "韓爌",
+  "note": "年表写作「韓燥」，CBDB 正字「韓爌」"
+ },
+ "韓燷": {
+  "cbdb_id": 133276,
+  "method": "manual-alias",
+  "span": [
+   1620,
+   1630
+  ],
+  "alias_of": "韓爌",
+  "note": "年表写作「韓燷」，CBDB 正字「韓爌」"
+ },
+ "韓爌": {
+  "cbdb_id": 133276,
+  "method": "name",
+  "span": [
+   1616,
+   1629
+  ]
+ },
+ "韓瘠": {
+  "cbdb_id": 133276,
+  "method": "manual-alias",
+  "span": [
+   1623,
+   1623
+  ],
+  "alias_of": "韓爌",
+  "note": "年表写作「韓瘠」，CBDB 正字「韓爌」"
+ },
+ "項煜": {
+  "cbdb_id": 344896,
+  "method": "name",
+  "span": [
+   1635,
+   1644
+  ]
+ },
+ "顧清": {
+  "cbdb_id": 34623,
+  "method": "time-disambig",
+  "span": [
+   1513,
+   1516
+  ]
+ },
+ "顧秉謙": {
+  "cbdb_id": 133643,
+  "method": "name",
+  "span": [
+   1614,
+   1626
+  ]
+ },
+ "顧起元": {
+  "cbdb_id": 133653,
+  "method": "time-disambig",
+  "span": [
+   1615,
+   1616
+  ]
+ },
+ "顧錫疇": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1630,
+   1630
+  ],
+  "cands": [
+   123921,
+   69918
+  ]
+ },
+ "顧鼎臣": {
+  "cbdb_id": 68210,
+  "method": "name",
+  "span": [
+   1528,
+   1540
+  ]
+ },
+ "馬之騏": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1626,
+   1627
+  ],
+  "cands": [
+   61819,
+   368883
+  ]
+ },
+ "馬士英": {
+  "cbdb_id": 61736,
+  "method": "office-history",
+  "span": [
+   1644,
+   1644
+  ]
+ },
+ "馬愉": {
+  "cbdb_id": 33867,
+  "method": "name",
+  "span": [
+   1440,
+   1447
+  ]
+ },
+ "馬汝驥": {
+  "cbdb_id": 67749,
+  "method": "time-disambig",
+  "span": [
+   1540,
+   1540
+  ]
+ },
+ "馬自強": {
+  "cbdb_id": 204233,
+  "method": "name",
+  "span": [
+   1572,
+   1578
+  ]
+ },
+ "馮夢禎": {
+  "cbdb_id": 30240,
+  "method": "name",
+  "span": [
+   1595,
+   1598
+  ]
+ },
+ "馮琦": {
+  "cbdb_id": 123637,
+  "method": "time-disambig",
+  "span": [
+   1593,
+   1593
+  ]
+ },
+ "馮鈴": {
+  "cbdb_id": 57565,
+  "method": "time-disambig",
+  "span": [
+   1625,
+   1625
+  ],
+  "alias_of": "馮銓",
+  "note": "年表写作「馮鈴」，CBDB 正字「馮銓」"
+ },
+ "馮鉓": {
+  "cbdb_id": 57565,
+  "method": "time-disambig",
+  "span": [
+   1625,
+   1625
+  ],
+  "alias_of": "馮銓",
+  "note": "年表写作「馮鉓」，CBDB 正字「馮銓」"
+ },
+ "馮銓": {
+  "cbdb_id": 57565,
+  "method": "time-disambig",
+  "span": [
+   1626,
+   1626
+  ]
+ },
+ "駱從宇": {
+  "cbdb_id": 373647,
+  "method": "unique-nonempty",
+  "span": [
+   1622,
+   1622
+  ]
+ },
+ "高儀": {
+  "cbdb_id": 68218,
+  "method": "time-disambig",
+  "span": [
+   1564,
+   1572
+  ]
+ },
+ "高啟愚": {
+  "cbdb_id": 205355,
+  "method": "name",
+  "span": [
+   1583,
+   1583
+  ]
+ },
+ "高弘圖": {
+  "cbdb_id": 129363,
+  "method": "office-history",
+  "span": [
+   1644,
+   1644
+  ]
+ },
+ "高拱": {
+  "cbdb_id": 30847,
+  "method": "time-disambig",
+  "span": [
+   1562,
+   1572
+  ]
+ },
+ "高穀": {
+  "cbdb_id": 387098,
+  "method": "name",
+  "span": [
+   1445,
+   1456
+  ]
+ },
+ "高遜志": {
+  "cbdb_id": 66625,
+  "method": "name",
+  "span": [
+   1399,
+   1402
+  ]
+ },
+ "魏廣微": {
+  "cbdb_id": 133489,
+  "method": "name",
+  "span": [
+   1623,
+   1625
+  ]
+ },
+ "魏校": {
+  "cbdb_id": 30595,
+  "method": "time-disambig",
+  "span": [
+   1529,
+   1529
+  ]
+ },
+ "魏照乘": {
+  "cbdb_id": 351446,
+  "method": "manual-chongzhen",
+  "span": [
+   1639,
+   1642
+  ],
+  "evidence": "idx1586 属崇祯代；另一条空壳"
+ },
+ "魏藻德": {
+  "cbdb_id": 133495,
+  "method": "time-disambig",
+  "span": [
+   1643,
+   1644
+  ]
+ },
+ "魏觀": {
+  "cbdb_id": 66546,
+  "method": "office-history",
+  "span": [
+   1371,
+   1371
+  ]
+ },
+ "魯鐸": {
+  "cbdb_id": 513054,
+  "method": "office-history",
+  "span": [
+   1515,
+   1516
+  ]
+ },
+ "鮑恂": {
+  "cbdb_id": 112301,
+  "method": "office-history",
+  "span": [
+   1382,
+   1382
+  ]
+ },
+ "黃佐": {
+  "cbdb_id": 30674,
+  "method": "time-disambig",
+  "span": [
+   1543,
+   1544
+  ]
+ },
+ "黃士俊": {
+  "cbdb_id": 64943,
+  "method": "office-history",
+  "span": [
+   1636,
+   1638
+  ]
+ },
+ "黃子澄": {
+  "cbdb_id": 362564,
+  "method": "name",
+  "span": [
+   1397,
+   1398
+  ]
+ },
+ "黃景昉": {
+  "cbdb_id": 131430,
+  "method": "name",
+  "span": [
+   1642,
+   1643
+  ]
+ },
+ "黃汝良": {
+  "cbdb_id": 131375,
+  "method": "name",
+  "span": [
+   1603,
+   1605
+  ]
+ },
+ "黃洪憲": {
+  "cbdb_id": 30664,
+  "method": "time-disambig",
+  "span": [
+   1589,
+   1589
+  ]
+ },
+ "黃淮": {
+  "cbdb_id": 34482,
+  "method": "time-disambig",
+  "span": [
+   1402,
+   1427
+  ]
+ },
+ "黃珣": {
+  "cbdb_id": 131409,
+  "method": "time-disambig",
+  "span": [
+   1505,
+   1505
+  ]
+ },
+ "黃立極": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1623,
+   1627
+  ],
+  "cands": [
+   501965,
+   131368,
+   362413
+  ]
+ },
+ "黃諫": {
+  "cbdb_id": 131457,
+  "method": "cbdb-dup-merge",
+  "span": [
+   1459,
+   1459
+  ]
+ },
+ "黃輝": {
+  "cbdb_id": 131453,
+  "method": "name",
+  "span": [
+   1611,
+   1611
+  ]
+ },
+ "黃道周": {
+  "cbdb_id": 65942,
+  "method": "name",
+  "span": [
+   1638,
+   1638
+  ]
+ },
+ "黄淮": {
+  "cbdb_id": 34482,
+  "method": "time-disambig",
+  "span": [
+   1404,
+   1413
+  ],
+  "alias_of": "黃淮",
+  "note": "年表写作「黄淮」，CBDB 正字「黃淮」"
+ },
+ "黄立極": {
+  "cbdb_id": null,
+  "method": "ambiguous",
+  "span": [
+   1626,
+   1626
+  ],
+  "cands": [
+   501965,
+   131368,
+   362413
+  ]
+ },
+ "龔教": {
+  "cbdb_id": null,
+  "method": "unmatched",
+  "span": [
+   1390,
+   1391
+  ]
+ },
+ "龔用卿": {
+  "cbdb_id": 133705,
+  "method": "time-disambig",
+  "span": [
+   1541,
+   1543
+  ]
+ }
+}

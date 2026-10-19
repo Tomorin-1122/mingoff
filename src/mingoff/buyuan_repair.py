@@ -10,7 +10,7 @@
 原则（见《数据接入规范》3.6 / 3.7，部院 v1 复盘）：
   * 多格注文不猜配：无法确定归属的注文→ `note=""` + `note_status="quarantined"`，原文留 raw_note；
   * 伪人名/碎片不入库；简繁/异体统一正字；
-  * 衙署分期归并（御史臺/御史府→都察院；總督京儲/總倉場→總督倉場）；
+  * 衙署照原书字面（D41：總督倉場/總倉場 前后异名均保留；御史臺/御史府/都察院/總督京儲 各自独立）；
   * 同 CBDB id 多正名→只保留 CBDB 正名相符者，其余 NULL；生卒/任期冲突→NULL；
   * 已知原书可定的错配（1431/1432/1433/1449/1399/1400）按原书页补注。
 """
@@ -115,8 +115,16 @@ OFFICE_MAP = {
     "御史臺": "御史臺", "御史台": "御史臺",
     "都察院": "都察院", "御史府": "御史府",
     "總督京儲": "總督京儲", "总督京储": "總督京儲",
-    "總督倉場": "總督倉場", "總倉場": "總督倉場",
-    "督倉場": "總督倉場", "总仓场": "總督倉場",
+    # D41（老板 2026-10-19 拍板）：原书写法照录——1551 表头「總督倉場」、1556 起简写「總倉場」，
+    # 两者是同一衙署的前后异名，保留原书字面；不同性质衙署仍不合并
+    # （御史臺/都察院/御史府、總督京儲 与 倉場 各自独立）。
+    "總督倉場": "總督倉場", "總倉場": "總倉場", "總會場": "總倉場",
+    "督倉場": "總督倉場", "总仓场": "總督倉場", "总督仓场": "總督倉場",
+}
+# 衙署异名对照（只写作法说明，不参与合并；口径见 docs/DECISIONS.md D41）
+OFFICE_LABEL_ALIASES = {
+    "總倉場": "總督倉場",   # 省文异名：1556 起原书表头
+    "總會場": "總督倉場",   # 1557 页原书印刷残缺（老板：本即「總倉場」）
 }
 
 # ---------------------------------------------------------------- 原书页可定错配
@@ -758,6 +766,8 @@ def main() -> None:
         "notes_prefix": report.get("note_resolution_counts", {}).get("restored-prefix-inferred", 0),
         "notes_manual": report.get("note_resolution_counts", {}).get("manual-review", 0),
         "book_page_coverage": (report.get("pages", {}) or {}).get("covered"),
+        "office_labels": dict(Counter(e["office"] for e in entries).most_common()),
+        "office_alias_kept": dict(OFFICE_LABEL_ALIASES),
     }
     (DATA / "vol1_buyuan_repair.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")

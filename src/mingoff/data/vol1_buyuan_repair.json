@@ -1,6 +1,21 @@
 {
  "dropped": [
   {
+   "year": 1415,
+   "office": "兵部",
+   "raw": "屈駕"
+  },
+  {
+   "year": 1416,
+   "office": "兵部",
+   "raw": "屈駕"
+  },
+  {
+   "year": 1416,
+   "office": "禮部",
+   "raw": "屈駕"
+  },
+  {
    "year": 1419,
    "office": "兵部",
    "raw": "參軍"
@@ -34,8 +49,18 @@
   {
    "year": 1530,
    "office": "",
-   "raw": "汪俊",
+   "raw": "汪銉",
    "reason": "office-unmapped"
+  },
+  {
+   "year": 1548,
+   "office": "吏部",
+   "raw": "欠陽"
+  },
+  {
+   "year": 1548,
+   "office": "吏部",
+   "raw": "欠陽"
   },
   {
    "year": 1556,
@@ -86,6 +111,11 @@
   {
    "year": 1598,
    "office": "吏部",
+   "raw": "井九年"
+  },
+  {
+   "year": 1598,
+   "office": "吏部",
    "raw": "井八年閏"
   },
   {
@@ -116,6 +146,21 @@
    "count": 14
   },
   {
+   "raw": "胡潑",
+   "person": "胡濙",
+   "count": 14
+  },
+  {
+   "raw": "郭璉",
+   "person": "郭琎",
+   "count": 12
+  },
+  {
+   "raw": "李鏟",
+   "person": "李鐩",
+   "count": 10
+  },
+  {
    "raw": "屠湧",
    "person": "屠滽",
    "count": 9
@@ -136,8 +181,23 @@
    "count": 7
   },
   {
+   "raw": "黃克瓚",
+   "person": "黃克纘",
+   "count": 7
+  },
+  {
    "raw": "吕本",
    "person": "李本",
+   "count": 5
+  },
+  {
+   "raw": "胡澐",
+   "person": "胡濙",
+   "count": 5
+  },
+  {
+   "raw": "胡澆",
+   "person": "胡濙",
    "count": 5
   },
   {
@@ -166,8 +226,23 @@
    "count": 4
   },
   {
+   "raw": "費宗",
+   "person": "費寀",
+   "count": 4
+  },
+  {
+   "raw": "宋繻",
+   "person": "宋纁",
+   "count": 4
+  },
+  {
    "raw": "夏原吉扈駕",
    "person": "夏原吉",
+   "count": 3
+  },
+  {
+   "raw": "胡濛",
+   "person": "胡濙",
    "count": 3
   },
   {
@@ -178,6 +253,21 @@
   {
    "raw": "吴原",
    "person": "吳原",
+   "count": 3
+  },
+  {
+   "raw": "李鏉",
+   "person": "李鐩",
+   "count": 3
+  },
+  {
+   "raw": "汪銘",
+   "person": "汪俊",
+   "count": 3
+  },
+  {
+   "raw": "宋繙",
+   "person": "宋纁",
    "count": 3
   },
   {
@@ -193,6 +283,11 @@
   {
    "raw": "吕宗藝",
    "person": "呂宗藝",
+   "count": 2
+  },
+  {
+   "raw": "麥至德",
+   "person": "麥志德",
    "count": 2
   },
   {
@@ -218,6 +313,26 @@
   {
    "raw": "胡渙",
    "person": "胡濙",
+   "count": 2
+  },
+  {
+   "raw": "郭璀",
+   "person": "郭琎",
+   "count": 2
+  },
+  {
+   "raw": "胡澱",
+   "person": "胡濙",
+   "count": 2
+  },
+  {
+   "raw": "黃珂",
+   "person": "黄珂",
+   "count": 2
+  },
+  {
+   "raw": "汪銥",
+   "person": "汪俊",
    "count": 2
   },
   {
@@ -251,6 +366,11 @@
    "count": 2
   },
   {
+   "raw": "李遷桂",
+   "person": "李廷桂",
+   "count": 1
+  },
+  {
    "raw": "湯和鄧愈",
    "person": "湯和",
    "count": 1
@@ -258,6 +378,11 @@
   {
    "raw": "湯和鄧愈",
    "person": "鄧愈",
+   "count": 1
+  },
+  {
+   "raw": "周潯",
+   "person": "周肅",
    "count": 1
   },
   {
@@ -276,6 +401,26 @@
    "count": 1
   },
   {
+   "raw": "周時中朱斌",
+   "person": "周時中",
+   "count": 1
+  },
+  {
+   "raw": "傣斯",
+   "person": "偰斯",
+   "count": 1
+  },
+  {
+   "raw": "王峯",
+   "person": "王鈍",
+   "count": 1
+  },
+  {
+   "raw": "王岩",
+   "person": "王鈍",
+   "count": 1
+  },
+  {
    "raw": "温祥卿",
    "person": "溫祥卿",
    "count": 1
@@ -291,6 +436,11 @@
    "count": 1
   },
   {
+   "raw": "茹瑋",
+   "person": "茹瑺",
+   "count": 1
+  },
+  {
    "raw": "吕震扈駕",
    "person": "呂震",
    "count": 1
@@ -298,6 +448,16 @@
   {
    "raw": "趙班扈駕",
    "person": "趙班",
+   "count": 1
+  },
+  {
+   "raw": "蹇義閤",
+   "person": "蹇義",
+   "count": 1
+  },
+  {
+   "raw": "夏原吉閤",
+   "person": "夏原吉",
    "count": 1
   },
   {
@@ -331,8 +491,28 @@
    "count": 1
   },
   {
+   "raw": "胡濼",
+   "person": "胡濙",
+   "count": 1
+  },
+  {
+   "raw": "胡淺",
+   "person": "胡濙",
+   "count": 1
+  },
+  {
    "raw": "楊善閏",
    "person": "楊善",
+   "count": 1
+  },
+  {
+   "raw": "于谦",
+   "person": "于謙",
+   "count": 1
+  },
+  {
+   "raw": "寇深羅通",
+   "person": "寇深",
    "count": 1
   },
   {
@@ -343,6 +523,11 @@
   {
    "raw": "馬文升閏",
    "person": "馬文升",
+   "count": 1
+  },
+  {
+   "raw": "耿裕閻",
+   "person": "耿裕",
    "count": 1
   },
   {
@@ -371,6 +556,11 @@
    "count": 1
   },
   {
+   "raw": "白鈦",
+   "person": "白鉞",
+   "count": 1
+  },
+  {
    "raw": "席書閏",
    "person": "席書",
    "count": 1
@@ -381,8 +571,18 @@
    "count": 1
   },
   {
+   "raw": "張聰",
+   "person": "張璁",
+   "count": 1
+  },
+  {
    "raw": "胡世寧閏",
    "person": "胡世寧",
+   "count": 1
+  },
+  {
+   "raw": "汪銉",
+   "person": "汪俊",
    "count": 1
   },
   {
@@ -391,7 +591,12 @@
    "count": 1
   },
   {
-   "raw": "張瓊",
+   "raw": "溫仁和",
+   "person": "温仁和",
+   "count": 1
+  },
+  {
+   "raw": "張瓊翟鑾",
    "person": "張瓚",
    "count": 1
   },
@@ -401,8 +606,28 @@
    "count": 1
   },
   {
+   "raw": "費衆",
+   "person": "費寀",
+   "count": 1
+  },
+  {
    "raw": "劉儲秀閏",
    "person": "劉儲秀",
+   "count": 1
+  },
+  {
+   "raw": "劉訡",
+   "person": "劉訒",
+   "count": 1
+  },
+  {
+   "raw": "何鱉",
+   "person": "何鰲",
+   "count": 1
+  },
+  {
+   "raw": "吴山袁煒",
+   "person": "袁煒",
    "count": 1
   },
   {
@@ -413,6 +638,36 @@
   {
    "raw": "吕調陽",
    "person": "呂調陽",
+   "count": 1
+  },
+  {
+   "raw": "杨兆",
+   "person": "楊兆",
+   "count": 1
+  },
+  {
+   "raw": "杨巍",
+   "person": "楊巍",
+   "count": 1
+  },
+  {
+   "raw": "宋縉",
+   "person": "宋纁",
+   "count": 1
+  },
+  {
+   "raw": "宋繡",
+   "person": "宋纁",
+   "count": 1
+  },
+  {
+   "raw": "孫鑼",
+   "person": "孫鑨",
+   "count": 1
+  },
+  {
+   "raw": "孫籬",
+   "person": "孫鑨",
    "count": 1
   },
   {
@@ -453,6 +708,11 @@
   {
    "raw": "王紹徽閏",
    "person": "王紹徽",
+   "count": 1
+  },
+  {
+   "raw": "翔南居益",
+   "person": "南居益",
    "count": 1
   },
   {
@@ -700,7 +960,7 @@
    "year": 1374,
    "person": "馮冕",
    "office": "刑部",
-   "reason": "contains-other-name:唐鐸",
+   "reason": "contains-other-name:徐本",
    "note": "七、壬辰、廿九,出陝西參政,是年實授。唐鐸尋卒。四、己亥、四,改太常卿,未任徐本守制歸。是年,浙江參政遷。"
   },
   {
@@ -1428,7 +1688,7 @@
    "year": 1539,
    "person": "王廷相",
    "office": "都察院",
-   "reason": "contains-other-name:毛伯溫",
+   "reason": "contains-other-name:周期雍",
    "note": "二、乙卯、十六,南巡扈從;三、丙戌、十八,加太子太保;四、丙寅、廿九,還京。毛伯溫周期雍二、壬寅、三,總宣大山西三關;是"
   },
   {
@@ -1581,7 +1841,7 @@
   {
    "year": 1574,
    "person": "畢鏘",
-   "office": "總督倉場",
+   "office": "總倉場",
    "reason": "death-note-but-later-entries",
    "note": "六、甲辰、一,遷工尚。六、戊申、五,南刑尚改戶尚,尋卒;是年,刑右侍遷戶左侍。十、乙巳、四,賜祭葬。"
   },
@@ -1693,14 +1953,14 @@
   {
    "year": 1587,
    "person": "胡執禮",
-   "office": "總督倉場",
+   "office": "總倉場",
    "reason": "death-note-but-later-entries",
    "note": "是年致仕。二、庚午、十一,戶左侍改;四、丁卯、八,致仕兵左侍管十八年正、戊申、五,卒。四、甲子、五,遷右都總督薊遼。"
   },
   {
    "year": 1589,
    "person": "楊俊民",
-   "office": "總督倉場",
+   "office": "總倉場",
    "reason": "death-note-but-later-entries",
    "note": "六、癸卯、廿八,卒,六、乙巳、卅,戶左侍遷右都兼戶右侍;九、戊午、十四,丁憂歸。九、戊午、十四,南右都遷戶尚;十一、己巳"
   },
@@ -1862,7 +2122,7 @@
    "year": 1622,
    "person": "王在晉",
    "office": "兵部",
-   "reason": "contains-other-name:張經世",
+   "reason": "contains-other-name:張經",
    "note": "正、甲子、廿八,兵左侍署;三、甲辰、八,遷兵尚兼右副都經略遼東。張經世六、丁丑、十二,兵左侍暫署。"
   },
   {
@@ -4366,7 +4626,7 @@
    "year": 1574,
    "person_id": "畢鏘",
    "person": "畢鏘",
-   "office": "總督倉場",
+   "office": "總倉場",
    "raw_note": "六、甲辰、一,遷工尚。六、戊申、五,南刑尚改戶尚,尋卒;是年,刑右侍遷戶左侍。十、乙巳、四,賜祭葬。",
    "action": "reassigned-inferred",
    "targets": [
@@ -4637,7 +4897,7 @@
    "year": 1587,
    "person_id": "胡執禮",
    "person": "胡執禮",
-   "office": "總督倉場",
+   "office": "總倉場",
    "raw_note": "是年致仕。二、庚午、十一,戶左侍改;四、丁卯、八,致仕兵左侍管十八年正、戊申、五,卒。四、甲子、五,遷右都總督薊遼。",
    "action": "reassigned-inferred",
    "targets": [
@@ -4657,7 +4917,7 @@
    "year": 1589,
    "person_id": "楊俊民",
    "person": "楊俊民",
-   "office": "總督倉場",
+   "office": "總倉場",
    "raw_note": "六、癸卯、廿八,卒,六、乙巳、卅,戶左侍遷右都兼戶右侍;九、戊午、十四,丁憂歸。九、戊午、十四,南右都遷戶尚;十一、己巳、廿五,致仕。廿四年六、丁巳、廿一,卒;十一、己未、廿七,贈太子少保,諡恭簡。十二、戊寅、五,兵左侍遷戶尚.",
    "action": "manual-review",
    "reason": "entity-continues"
@@ -5303,11 +5563,11 @@
     "id": 67450
    },
    {
-    "person": "李瓊",
+    "person": "李瓚",
     "id": 201490
    },
    {
-    "person": "李瓚",
+    "person": "李瓊",
     "id": 201490
    },
    {
@@ -5327,11 +5587,11 @@
     "id": 66873
    },
    {
-    "person": "陳璟",
+    "person": "陳珮",
     "id": 66341
    },
    {
-    "person": "陳珮",
+    "person": "陳璟",
     "id": 66341
    },
    {
@@ -5347,28 +5607,16 @@
     "id": 67477
    },
    {
-    "person": "王壱",
+    "person": "王儁",
     "id": 67477
    },
    {
-    "person": "王儁",
+    "person": "王壱",
     "id": 67477
    },
    {
     "person": "胡濙",
     "id": 67968
-   },
-   {
-    "person": "趙粑",
-    "id": 66668
-   },
-   {
-    "person": "趙仁",
-    "id": 66668
-   },
-   {
-    "person": "趙犏",
-    "id": 66668
    },
    {
     "person": "趙肛",
@@ -5379,11 +5627,7 @@
     "id": 66668
    },
    {
-    "person": "趙本",
-    "id": 66668
-   },
-   {
-    "person": "趙勉",
+    "person": "趙犭",
     "id": 66668
    },
    {
@@ -5391,16 +5635,32 @@
     "id": 66668
    },
    {
-    "person": "趙犭",
+    "person": "趙勉",
     "id": 66668
    },
    {
-    "person": "宋冕",
-    "id": 127666
+    "person": "趙犏",
+    "id": 66668
+   },
+   {
+    "person": "趙仁",
+    "id": 66668
+   },
+   {
+    "person": "趙粑",
+    "id": 66668
+   },
+   {
+    "person": "趙本",
+    "id": 66668
    },
    {
     "person": "李敏",
     "id": 67840
+   },
+   {
+    "person": "宋冕",
+    "id": 127666
    },
    {
     "person": "顧佐",
@@ -5420,10 +5680,10 @@
  "counts": {
   "entries_in": 3353,
   "entries_out": 3317,
-  "persons_entities": 795,
-  "display_persons": 789,
+  "persons_entities": 796,
+  "display_persons": 790,
   "split_entities": 12,
-  "dropped": 18,
+  "dropped": 24,
   "quarantined": 188,
   "dup_conflicts": 17,
   "book_patch": 23,
@@ -5433,6 +5693,24 @@
   "notes_inferred": 116,
   "notes_prefix": 16,
   "notes_manual": 55,
-  "book_page_coverage": 3317
+  "book_page_coverage": 3317,
+  "office_labels": {
+   "兵部": 463,
+   "工部": 448,
+   "都察院": 424,
+   "戶部": 423,
+   "吏部": 416,
+   "刑部": 397,
+   "禮部": 395,
+   "總督京儲": 173,
+   "總倉場": 143,
+   "御史臺": 19,
+   "總督倉場": 10,
+   "御史府": 6
+  },
+  "office_alias_kept": {
+   "總倉場": "總督倉場",
+   "總會場": "總督倉場"
+  }
  }
 }

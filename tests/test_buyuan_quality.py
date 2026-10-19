@@ -52,11 +52,28 @@ def test_book_patched_cases():
 
 
 def test_offices_not_merged(doc):
-    """不同衙署不得合并：御史臺/都察院/御史府、總督京儲/總督倉場各自独立。"""
+    """不同衙署不得合并：御史臺/都察院/御史府、總督京儲/總督倉場各自独立。
+
+    D41（2026-10-19 老板拍板）：原书 1556–1643 表头逐页作「總倉場」，照原书字面入库；
+    「總倉場」与「總督倉場」是同一衙署的前后异名（D41 认可），其余沿革衙署仍不得合并。
+    """
     offices = {t["office"] for t in doc["tenures"]}
-    assert {"御史臺", "都察院", "御史府", "總督京儲", "總督倉場"} <= offices
+    assert {"御史臺", "都察院", "御史府", "總督京儲", "總督倉場", "總倉場"} <= offices
     assert {"吏部", "戶部", "禮部", "兵部", "刑部", "工部"} <= offices
     assert all("office_lineage" not in t for t in doc["tenures"])
+
+
+def test_d41_zongchangchang_label(doc):
+    """D41：「總倉場」只应出现在 1556 及以后（原书表头起于 1556）。"""
+    bad = [t for t in doc["tenures"]
+           if t["office"] == "總倉場" and t["start_year"] < 1556]
+    assert bad == [], [(t["person"], t["start_year"]) for t in bad[:5]]
+    # 「總會場」不得作为 office 出现（1557 原书残字已归「總倉場」）
+    assert "總會場" not in offices_all(doc)
+
+
+def offices_all(doc):
+    return {t["office"] for t in doc["tenures"]}
 
 
 def test_gap_flags_are_explicit(doc):

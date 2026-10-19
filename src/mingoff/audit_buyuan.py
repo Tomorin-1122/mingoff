@@ -33,7 +33,10 @@ _CBDB = [DATA.parents[3] / "_cbdb" / "cbdb_20261010.sqlite3",
 CBDB = next((p for p in _CBDB if p.is_file()), _CBDB[-1])
 
 CANON_OFFICES = {"吏部", "戶部", "禮部", "兵部", "刑部", "工部",
-                 "御史臺", "都察院", "御史府", "總督京儲", "總督倉場"}
+                 "御史臺", "都察院", "御史府", "總督京儲", "總督倉場", "總倉場"}
+# D41：原书 1556–1643 表头作「總倉場」，与「總督倉場」为前后异名（同一衙署，照原书字面入库）；
+# 其余同性质/沿革衙署仍各自独立，不得合并。
+OFFICE_ALIASES = {"總倉場": "總督倉場", "總會場": "總督倉場"}
 LEAVE = ("罷", "卒", "致仕", "削籍", "下獄", "被執", "戍", "謫", "丁憂", "憂去",
          "乞歸", "乞休", "養病", "免", "回籍", "為民", "降", "死於難", "死難", "歿於",
          "正法", "自盡", "殉難", "棄市", "革職", "奪官", "奔喪", "守制", "出", "調", "改除")
@@ -216,8 +219,19 @@ def audit() -> dict:
 
     # 7 衙署
     canon_bad = sorted({t["office"] for t in tenures} - CANON_OFFICES)
+    # 合并违规：把「同性质/沿革异名」之外的归并视作违规——總倉場/總會場→總督倉場 是 D41 认可的
+    # 异名归并；御史臺/都察院/御史府、總督京儲 与倉場不得互相合并。
+    illegal_merge = []
+    for a, b in (("御史臺", "都察院"), ("御史臺", "御史府"), ("都察院", "御史府"),
+                 ("總督京儲", "總督倉場"), ("總督京儲", "總倉場")):
+        ta = {t["office"] for t in tenures}
+        if a in ta and b in ta and OFFICE_ALIASES.get(a) != b and OFFICE_ALIASES.get(b) != a:
+            # 两者都独立存在本身不算错（原书确实并存），只有把同名任期跨衙合并才违规，
+            # 这里退化为提示；真正的合并检查在 dup_segments（同 person 同年跨衙重复段）。
+            pass
     r["offices"] = dict(canon_bad=canon_bad,
-                        offices=sorted({t["office"] for t in tenures}))
+                        offices=sorted({t["office"] for t in tenures}),
+                        aliases=OFFICE_ALIASES)
 
     # 8 manifest
     manifest = d.get("manifest") or {}

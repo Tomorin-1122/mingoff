@@ -51,11 +51,11 @@
  "year_header_jumps": [],
  "stats": {
   "entries": 3317,
-  "persons_unique": 795,
+  "persons_unique": 796,
   "years": 277,
   "missing_years": [],
   "no_office_entries": 0,
-  "review_items": 117,
+  "review_items": 118,
   "name_dict": 914,
   "anchor_stats": {
    "①人名锚": 979,
@@ -66,8 +66,8 @@
   },
   "per_year_min": 6,
   "per_year_max": 25,
-  "quarantined_notes": 188,
-  "book_patches": 23,
+  "display_persons": 790,
+  "split_entities": 12,
   "offices": [
    "兵部",
    "刑部",
@@ -77,12 +77,12 @@
    "御史臺",
    "戶部",
    "禮部",
+   "總倉場",
    "總督京儲",
    "總督倉場",
    "都察院"
   ],
-  "display_persons": 789,
-  "split_entities": 12,
+  "quarantined_notes": 188,
   "notes_inferred": 116,
   "notes_prefix": 16,
   "notes_manual": 55,
@@ -92,6 +92,7 @@
    "reassigned-inferred": 116,
    "reassigned": 1
   },
+  "book_patches": 23,
   "book_page_coverage": 3317
  },
  "evidence": [
@@ -105,13 +106,13 @@
   "docs/evidence/book_p679_bujuan1644.png"
  ],
  "tenure_assembly": {
-  "date": "2026-10-18T13:23:07+00:00",
+  "date": "2026-10-19T02:52:27+00:00",
   "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
   "output": "official_buyuan.json",
   "stats": {
-   "tenures": 1203,
-   "persons": 795,
-   "display_persons": 789,
+   "tenures": 1206,
+   "persons": 796,
+   "display_persons": 790,
    "split_entities": 12,
    "same_name_entities": 6,
    "offices": [
@@ -123,27 +124,28 @@
     "御史臺",
     "戶部",
     "禮部",
+    "總倉場",
     "總督京儲",
     "總督倉場",
     "都察院"
    ],
    "gap_merged_tenures": 105,
-   "gap_years_total": 155,
+   "gap_years_total": 156,
    "years_covered": [
     1368,
     1644
    ],
    "with_start_month": 830,
    "with_end_month": 553,
-   "with_start_page": 1203,
-   "with_end_page": 1203,
-   "cbdb_aligned": 818,
+   "with_start_page": 1206,
+   "with_end_page": 1206,
+   "cbdb_aligned": 819,
    "with_leave": 584,
    "shu_li": 72,
    "same_name_risk": 15,
    "shilu_persons": 130,
    "shilu_hits": 3913,
-   "person_years": 3472
+   "person_years": 3473
   },
   "gates": {
    "G1": "pass",
@@ -304,10 +306,10 @@
   "repair": {
    "entries_in": 3353,
    "entries_out": 3317,
-   "persons_entities": 795,
-   "display_persons": 789,
+   "persons_entities": 796,
+   "display_persons": 790,
    "split_entities": 12,
-   "dropped": 18,
+   "dropped": 24,
    "quarantined": 188,
    "dup_conflicts": 17,
    "book_patch": 23,
@@ -317,7 +319,25 @@
    "notes_inferred": 116,
    "notes_prefix": 16,
    "notes_manual": 55,
-   "book_page_coverage": 3317
+   "book_page_coverage": 3317,
+   "office_labels": {
+    "兵部": 463,
+    "工部": 448,
+    "都察院": 424,
+    "戶部": 423,
+    "吏部": 416,
+    "刑部": 397,
+    "禮部": 395,
+    "總督京儲": 173,
+    "總倉場": 143,
+    "御史臺": 19,
+    "總督倉場": 10,
+    "御史府": 6
+   },
+   "office_alias_kept": {
+    "總倉場": "總督倉場",
+    "總會場": "總督倉場"
+   }
   }
  }
 }

@@ -187,15 +187,10 @@
  {
   "year": 1369,
   "office": "工部",
-  "person": "李廷桂",
+  "person": "李遷桂",
   "note": "是年,撫州知府遷,尋卒.",
   "src": "table",
-  "raw_person": "李遷桂",
-  "nameFix": {
-   "from": "李遷桂",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "李遷桂"
  },
  {
   "year": 1369,
@@ -281,15 +276,10 @@
  {
   "year": 1370,
   "office": "刑部",
-  "person": "周肅",
+  "person": "周潯",
   "note": "",
   "src": "table",
-  "raw_person": "周潯",
-  "nameFix": {
-   "from": "周潯",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "周潯"
  },
  {
   "year": 1370,
@@ -642,16 +632,11 @@
  {
   "year": 1372,
   "office": "吏部",
-  "person": "周時中",
+  "person": "周時中朱斌",
   "note": "四、丁亥、十,刑侍遷。是年,邵州知府遷。是年任,本年免。本年坐事降鎮江知府,尋改李信福建轉運鹽使。十二、甲午、廿,兩浙轉運鹽使遷。",
   "src": "table",
   "raw_person": "周時中朱斌",
-  "flag": "note?;note?",
-  "nameFix": {
-   "from": "周時中朱斌",
-   "op": "split/trim",
-   "why": "粘连拆分：周時中+朱斌（洪武五年同格）"
-  }
+  "flag": "note?;note?"
  },
  {
   "year": 1372,
@@ -1339,15 +1324,10 @@
  {
   "year": 1376,
   "office": "戶部",
-  "person": "偰斯",
+  "person": "傣斯",
   "note": "正、甲戌、廿九,遷靖江府六、丙申、十三、開封知府遷,八、甲申、二、戶郎遷右傅。尋免。周斌八、甲申、二、戶侍遷。",
   "src": "table",
-  "raw_person": "傣斯",
-  "nameFix": {
-   "from": "傣斯",
-   "op": "split/trim",
-   "why": "偰→傣 OCR"
-  }
+  "raw_person": "傣斯"
  },
  {
   "year": 1376,
@@ -2226,16 +2206,11 @@
  {
   "year": 1383,
   "office": "戶部",
-  "person": "王鈍",
+  "person": "王峯",
   "note": "二、癸卯、廿九,試吏郎,尋遷戶尚。",
   "src": "table",
   "raw_person": "王峯",
-  "flag": ";③顺序兜底",
-  "nameFix": {
-   "from": "王峯",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "flag": ";③顺序兜底"
  },
  {
   "year": 1383,
@@ -2304,28 +2279,18 @@
  {
   "year": 1384,
   "office": "工部",
-  "person": "麥志德",
+  "person": "麥至德",
   "note": "是年免正、己酉、十一、右參軍遷工侍試尚書事。",
   "src": "table",
-  "raw_person": "麥至德",
-  "nameFix": {
-   "from": "麥至德",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "麥至德"
  },
  {
   "year": 1384,
   "office": "戶部",
-  "person": "王鈍",
+  "person": "王岩",
   "note": "正、己酉、十一、戶右侍遷;五月,戶右侍遷是年免。六、乙丑、廿三,出福建左政。",
   "src": "table",
-  "raw_person": "王岩",
-  "nameFix": {
-   "from": "王岩",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "王岩"
  },
  {
   "year": 1384,
@@ -2438,15 +2403,10 @@
  {
   "year": 1385,
   "office": "工部",
-  "person": "麥志德",
+  "person": "麥至德",
   "note": "正、乙丑、三,降工左侍;三、己丑、廿八,罪誅。",
   "src": "table",
-  "raw_person": "麥至德",
-  "nameFix": {
-   "from": "麥至德",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "麥至德"
  },
  {
   "year": 1385,
@@ -3347,16 +3307,11 @@
  {
   "year": 1397,
   "office": "兵部",
-  "person": "茹瑺",
+  "person": "茹瑋",
   "note": "",
   "src": "table",
   "raw_person": "茹瑋",
-  "flag": ";③顺序兜底",
-  "nameFix": {
-   "from": "茹瑋",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "flag": ";③顺序兜底"
  },
  {
   "year": 1397,
@@ -5009,6 +4964,15 @@
  {
   "year": 1415,
   "office": "兵部",
+  "person": "屈駕",
+  "note": "四、丙戌、十八,吏左侍遷,仍洪熙元年三、甲戌、四,贈少參贊交陸軍務師,謚忠襄。",
+  "src": "table",
+  "raw_person": "屈駕",
+  "flag": "note?"
+ },
+ {
+  "year": 1415,
+  "office": "兵部",
   "person": "方賓",
   "note": "",
   "src": "table",
@@ -5089,6 +5053,15 @@
  {
   "year": 1416,
   "office": "兵部",
+  "person": "屈駕",
+  "note": "",
+  "src": "table",
+  "raw_person": "屈駕",
+  "flag": ";office重复"
+ },
+ {
+  "year": 1416,
+  "office": "兵部",
   "person": "方賓",
   "note": "",
   "src": "table",
@@ -5165,6 +5138,15 @@
   "note": "",
   "src": "table",
   "raw_person": "吕震",
+  "flag": ";office重复"
+ },
+ {
+  "year": 1416,
+  "office": "禮部",
+  "person": "屈駕",
+  "note": "",
+  "src": "table",
+  "raw_person": "屈駕",
   "flag": ";office重复"
  },
  {
@@ -6003,15 +5985,10 @@
  {
   "year": 1425,
   "office": "吏部",
-  "person": "蹇義",
+  "person": "蹇義閤",
   "note": "七、乙巳、八,充修仁宗實錄監修。",
   "src": "table",
-  "raw_person": "蹇義閤",
-  "nameFix": {
-   "from": "蹇義閤",
-   "op": "split/trim",
-   "why": "尾部碎片修剪"
-  }
+  "raw_person": "蹇義閤"
  },
  {
   "year": 1425,
@@ -6040,15 +6017,10 @@
  {
   "year": 1425,
   "office": "戶部",
-  "person": "夏原吉",
+  "person": "夏原吉閤",
   "note": "七、乙巳、八,充修仁宗實錄監修。",
   "src": "table",
-  "raw_person": "夏原吉閤",
-  "nameFix": {
-   "from": "夏原吉閤",
-   "op": "split/trim",
-   "why": "尾部碎片修剪"
-  }
+  "raw_person": "夏原吉閤"
  },
  {
   "year": 1425,
@@ -6141,15 +6113,10 @@
  {
   "year": 1426,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡潑",
   "note": "四、丁卯、四,禮左侍遷;八、己巳、八,扈從;八、乙酉、廿四,還。",
   "src": "table",
-  "raw_person": "胡潑",
-  "nameFix": {
-   "from": "胡潑",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡潑"
  },
  {
   "year": 1426,
@@ -6234,15 +6201,10 @@
  {
   "year": 1427,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡潑",
   "note": "",
   "src": "table",
-  "raw_person": "胡潑",
-  "nameFix": {
-   "from": "胡潑",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡潑"
  },
  {
   "year": 1427,
@@ -6327,15 +6289,10 @@
  {
   "year": 1428,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡潑",
   "note": "八、癸卯、廿四,扈從北巡;九、癸酉、廿四,還。",
   "src": "table",
-  "raw_person": "胡潑",
-  "nameFix": {
-   "from": "胡潑",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡潑"
  },
  {
   "year": 1428,
@@ -6372,15 +6329,10 @@
  {
   "year": 1429,
   "office": "吏部",
-  "person": "郭琎",
+  "person": "郭璉",
   "note": "四、戊子、十三、左侍遷,罷兼職。",
   "src": "table",
-  "raw_person": "郭璉",
-  "nameFix": {
-   "from": "郭璉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "郭璉"
  },
  {
   "year": 1429,
@@ -6433,15 +6385,10 @@
  {
   "year": 1429,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡潑",
   "note": "五、癸丑、八,兼詹事府事。",
   "src": "table",
-  "raw_person": "胡潑",
-  "nameFix": {
-   "from": "胡潑",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡潑"
  },
  {
   "year": 1429,
@@ -6479,15 +6426,10 @@
  {
   "year": 1430,
   "office": "吏部",
-  "person": "郭琎",
+  "person": "郭璉",
   "note": "",
   "src": "table",
-  "raw_person": "郭璉",
-  "nameFix": {
-   "from": "郭璉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "郭璉"
  },
  {
   "year": 1430,
@@ -6548,15 +6490,10 @@
  {
   "year": 1430,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡潑",
   "note": "",
   "src": "table",
-  "raw_person": "胡潑",
-  "nameFix": {
-   "from": "胡潑",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡潑"
  },
  {
   "year": 1430,
@@ -6593,15 +6530,10 @@
  {
   "year": 1431,
   "office": "吏部",
-  "person": "郭琎",
+  "person": "郭璉",
   "note": "",
   "src": "table",
-  "raw_person": "郭璉",
-  "nameFix": {
-   "from": "郭璉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "郭璉"
  },
  {
   "year": 1431,
@@ -6702,15 +6634,10 @@
  {
   "year": 1432,
   "office": "吏部",
-  "person": "郭琎",
+  "person": "郭璉",
   "note": "",
   "src": "table",
-  "raw_person": "郭璉",
-  "nameFix": {
-   "from": "郭璉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "郭璉"
  },
  {
   "year": 1432,
@@ -6731,15 +6658,10 @@
  {
   "year": 1432,
   "office": "戶部",
-  "person": "胡濙",
+  "person": "胡潑",
   "note": "八、己亥、十三、改南京戶部",
   "src": "table",
-  "raw_person": "胡潑",
-  "nameFix": {
-   "from": "胡潑",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡潑"
  },
  {
   "year": 1432,
@@ -6760,15 +6682,10 @@
  {
   "year": 1432,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡潑",
   "note": "",
   "src": "table",
-  "raw_person": "胡潑",
-  "nameFix": {
-   "from": "胡潑",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡潑"
  },
  {
   "year": 1432,
@@ -6821,15 +6738,10 @@
  {
   "year": 1433,
   "office": "戶部",
-  "person": "胡濙",
+  "person": "胡潑",
   "note": "十二、甲寅、五,卒,追封湯陰伯,謚忠襄。",
   "src": "table",
-  "raw_person": "胡潑",
-  "nameFix": {
-   "from": "胡潑",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡潑"
  },
  {
   "year": 1433,
@@ -6842,15 +6754,10 @@
  {
   "year": 1433,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡潑",
   "note": "",
   "src": "table",
-  "raw_person": "胡潑",
-  "nameFix": {
-   "from": "胡潑",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡潑"
  },
  {
   "year": 1433,
@@ -6895,15 +6802,10 @@
  {
   "year": 1434,
   "office": "吏部",
-  "person": "郭琎",
+  "person": "郭璉",
   "note": "",
   "src": "table",
-  "raw_person": "郭璉",
-  "nameFix": {
-   "from": "郭璉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "郭璉"
  },
  {
   "year": 1434,
@@ -6924,29 +6826,19 @@
  {
   "year": 1434,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡澐",
   "note": "",
   "src": "table",
-  "raw_person": "胡澐",
-  "nameFix": {
-   "from": "胡澐",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡澐"
  },
  {
   "year": 1434,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡澐",
   "note": "",
   "src": "table",
   "raw_person": "胡澐",
-  "flag": "dup",
-  "nameFix": {
-   "from": "胡澐",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "flag": "dup"
  },
  {
   "year": 1434,
@@ -7007,15 +6899,10 @@
  {
   "year": 1435,
   "office": "吏部",
-  "person": "郭琎",
+  "person": "郭璀",
   "note": "正、丁亥、十五,卒,贈太師,謚忠定。",
   "src": "table",
-  "raw_person": "郭璀",
-  "nameFix": {
-   "from": "郭璀",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "郭璀"
  },
  {
   "year": 1435,
@@ -7036,28 +6923,18 @@
  {
   "year": 1435,
   "office": "戶部",
-  "person": "胡濙",
+  "person": "胡潑",
   "note": "",
   "src": "table",
-  "raw_person": "胡潑",
-  "nameFix": {
-   "from": "胡潑",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡潑"
  },
  {
   "year": 1435,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡潑",
   "note": "三、辛卯、十九,九年考滿。",
   "src": "table",
-  "raw_person": "胡潑",
-  "nameFix": {
-   "from": "胡潑",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡潑"
  },
  {
   "year": 1435,
@@ -7094,15 +6971,10 @@
  {
   "year": 1436,
   "office": "吏部",
-  "person": "郭琎",
+  "person": "郭璀",
   "note": "",
   "src": "table",
-  "raw_person": "郭璀",
-  "nameFix": {
-   "from": "郭璀",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "郭璀"
  },
  {
   "year": 1436,
@@ -7131,15 +7003,10 @@
  {
   "year": 1436,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡濛",
   "note": "",
   "src": "table",
-  "raw_person": "胡濛",
-  "nameFix": {
-   "from": "胡濛",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡濛"
  },
  {
   "year": 1436,
@@ -7184,15 +7051,10 @@
  {
   "year": 1437,
   "office": "吏部",
-  "person": "郭琎",
+  "person": "郭璉",
   "note": "",
   "src": "table",
-  "raw_person": "郭璉",
-  "nameFix": {
-   "from": "郭璉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "郭璉"
  },
  {
   "year": 1437,
@@ -7221,15 +7083,10 @@
  {
   "year": 1437,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡潑",
   "note": "",
   "src": "table",
-  "raw_person": "胡潑",
-  "nameFix": {
-   "from": "胡潑",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡潑"
  },
  {
   "year": 1437,
@@ -7266,15 +7123,10 @@
  {
   "year": 1438,
   "office": "吏部",
-  "person": "郭琎",
+  "person": "郭璉",
   "note": "",
   "src": "table",
-  "raw_person": "郭璉",
-  "nameFix": {
-   "from": "郭璉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "郭璉"
  },
  {
   "year": 1438,
@@ -7343,15 +7195,10 @@
  {
   "year": 1439,
   "office": "吏部",
-  "person": "郭琎",
+  "person": "郭璉",
   "note": "",
   "src": "table",
-  "raw_person": "郭璉",
-  "nameFix": {
-   "from": "郭璉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "郭璉"
  },
  {
   "year": 1439,
@@ -7372,15 +7219,10 @@
  {
   "year": 1439,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡澐",
   "note": "",
   "src": "table",
-  "raw_person": "胡澐",
-  "nameFix": {
-   "from": "胡澐",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡澐"
  },
  {
   "year": 1439,
@@ -7425,15 +7267,10 @@
  {
   "year": 1440,
   "office": "吏部",
-  "person": "郭琎",
+  "person": "郭璉",
   "note": "",
   "src": "table",
-  "raw_person": "郭璉",
-  "nameFix": {
-   "from": "郭璉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "郭璉"
  },
  {
   "year": 1440,
@@ -7486,15 +7323,10 @@
  {
   "year": 1441,
   "office": "吏部",
-  "person": "郭琎",
+  "person": "郭璉",
   "note": "",
   "src": "table",
-  "raw_person": "郭璉",
-  "nameFix": {
-   "from": "郭璉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "郭璉"
  },
  {
   "year": 1441,
@@ -7523,15 +7355,10 @@
  {
   "year": 1441,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡澆",
   "note": "",
   "src": "table",
-  "raw_person": "胡澆",
-  "nameFix": {
-   "from": "胡澆",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡澆"
  },
  {
   "year": 1441,
@@ -7592,15 +7419,10 @@
  {
   "year": 1442,
   "office": "吏部",
-  "person": "郭琎",
+  "person": "郭璉",
   "note": "",
   "src": "table",
-  "raw_person": "郭璉",
-  "nameFix": {
-   "from": "郭璉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "郭璉"
  },
  {
   "year": 1442,
@@ -7685,15 +7507,10 @@
  {
   "year": 1443,
   "office": "吏部",
-  "person": "郭琎",
+  "person": "郭璉",
   "note": "",
   "src": "table",
-  "raw_person": "郭璉",
-  "nameFix": {
-   "from": "郭璉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "郭璉"
  },
  {
   "year": 1443,
@@ -7714,15 +7531,10 @@
  {
   "year": 1443,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡澐",
   "note": "",
   "src": "table",
-  "raw_person": "胡澐",
-  "nameFix": {
-   "from": "胡澐",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡澐"
  },
  {
   "year": 1443,
@@ -7783,15 +7595,10 @@
  {
   "year": 1444,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡澐",
   "note": "",
   "src": "table",
-  "raw_person": "胡澐",
-  "nameFix": {
-   "from": "胡澐",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡澐"
  },
  {
   "year": 1444,
@@ -7868,15 +7675,10 @@
  {
   "year": 1445,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡潑",
   "note": "",
   "src": "table",
-  "raw_person": "胡潑",
-  "nameFix": {
-   "from": "胡潑",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡潑"
  },
  {
   "year": 1445,
@@ -7961,15 +7763,10 @@
  {
   "year": 1446,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡濛",
   "note": "",
   "src": "table",
-  "raw_person": "胡濛",
-  "nameFix": {
-   "from": "胡濛",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡濛"
  },
  {
   "year": 1446,
@@ -8038,15 +7835,10 @@
  {
   "year": 1447,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡澱",
   "note": "",
   "src": "table",
-  "raw_person": "胡澱",
-  "nameFix": {
-   "from": "胡澱",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡澱"
  },
  {
   "year": 1447,
@@ -8115,15 +7907,10 @@
  {
   "year": 1448,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡濼",
   "note": "",
   "src": "table",
-  "raw_person": "胡濼",
-  "nameFix": {
-   "from": "胡濼",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡濼"
  },
  {
   "year": 1448,
@@ -8216,15 +8003,10 @@
  {
   "year": 1449,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡淺",
   "note": "八、甲戌、廿七,進太子太傅,仍兼尚書。",
   "src": "table",
-  "raw_person": "胡淺",
-  "nameFix": {
-   "from": "胡淺",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡淺"
  },
  {
   "year": 1449,
@@ -8317,15 +8099,10 @@
  {
   "year": 1450,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡濛",
   "note": "",
   "src": "table",
-  "raw_person": "胡濛",
-  "nameFix": {
-   "from": "胡濛",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡濛"
  },
  {
   "year": 1450,
@@ -8434,15 +8211,10 @@
  {
   "year": 1451,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡澆",
   "note": "",
   "src": "table",
-  "raw_person": "胡澆",
-  "nameFix": {
-   "from": "胡澆",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡澆"
  },
  {
   "year": 1451,
@@ -8560,16 +8332,11 @@
  {
   "year": 1452,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡澆",
   "note": "正、丙申、二,加少傅;四、乙酉、廿二,兼太子太師。",
   "src": "table",
   "raw_person": "胡澆",
-  "flag": ";office重复",
-  "nameFix": {
-   "from": "胡澆",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "flag": ";office重复"
  },
  {
   "year": 1452,
@@ -8619,15 +8386,10 @@
  {
   "year": 1453,
   "office": "兵部",
-  "person": "于謙",
+  "person": "于谦",
   "note": "",
   "src": "table",
-  "raw_person": "于谦",
-  "nameFix": {
-   "from": "于谦",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "于谦"
  },
  {
   "year": 1453,
@@ -8704,15 +8466,10 @@
  {
   "year": 1453,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡澱",
   "note": "",
   "src": "table",
-  "raw_person": "胡澱",
-  "nameFix": {
-   "from": "胡澱",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡澱"
  },
  {
   "year": 1453,
@@ -8830,15 +8587,10 @@
  {
   "year": 1454,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡澆",
   "note": "七、丁卯、十八,兼掌詹事府印。",
   "src": "table",
-  "raw_person": "胡澆",
-  "nameFix": {
-   "from": "胡澆",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡澆"
  },
  {
   "year": 1454,
@@ -8939,15 +8691,10 @@
  {
   "year": 1455,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡澆",
   "note": "",
   "src": "table",
-  "raw_person": "胡澆",
-  "nameFix": {
-   "from": "胡澆",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡澆"
  },
  {
   "year": 1455,
@@ -9197,15 +8944,10 @@
  {
   "year": 1457,
   "office": "禮部",
-  "person": "胡濙",
+  "person": "胡潑",
   "note": "",
   "src": "table",
-  "raw_person": "胡潑",
-  "nameFix": {
-   "from": "胡潑",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "胡潑"
  },
  {
   "year": 1457,
@@ -9414,15 +9156,10 @@
  {
   "year": 1459,
   "office": "都察院",
-  "person": "寇深",
+  "person": "寇深羅通",
   "note": "是年,服闊參贊京師軍務右都改,尋致仕。成化六年三、庚子、廿一,卒;九月,贈太子太保。",
   "src": "table",
-  "raw_person": "寇深羅通",
-  "nameFix": {
-   "from": "寇深羅通",
-   "op": "split/trim",
-   "why": "粘连拆分：寇深+羅通"
-  }
+  "raw_person": "寇深羅通"
  },
  {
   "year": 1460,
@@ -12181,15 +11918,10 @@
  {
   "year": 1493,
   "office": "吏部",
-  "person": "耿裕",
+  "person": "耿裕閻",
   "note": "五、乙卯、廿二,致仕。六、壬午、廿,禮尚改。正德三年四、己卯、十二,卒,贈太師,謚端毅。",
   "src": "table",
-  "raw_person": "耿裕閻",
-  "nameFix": {
-   "from": "耿裕閻",
-   "op": "split/trim",
-   "why": "尾部碎片修剪"
-  }
+  "raw_person": "耿裕閻"
  },
  {
   "year": 1493,
@@ -13617,15 +13349,10 @@
  {
   "year": 1508,
   "office": "工部",
-  "person": "李鐩",
+  "person": "李鏟",
   "note": "十一、戊午、廿四,致仕。五年九、壬申、十九,復工尚。",
   "src": "table",
-  "raw_person": "李鏟",
-  "nameFix": {
-   "from": "李鏟",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "李鏟"
  },
  {
   "year": 1508,
@@ -13672,16 +13399,11 @@
  {
   "year": 1508,
   "office": "禮部",
-  "person": "白鉞",
+  "person": "白鈦",
   "note": "",
   "src": "table",
   "raw_person": "白鈦",
-  "flag": ";③顺序兜底",
-  "nameFix": {
-   "from": "白鈦",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "flag": ";③顺序兜底"
  },
  {
   "year": 1508,
@@ -13886,15 +13608,10 @@
  {
   "year": 1510,
   "office": "工部",
-  "person": "李鐩",
+  "person": "李鏉",
   "note": "九、壬申、十九,致仕工尚復。",
   "src": "table",
-  "raw_person": "李鏉",
-  "nameFix": {
-   "from": "李鏉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "李鏉"
  },
  {
   "year": 1510,
@@ -13995,15 +13712,10 @@
  {
   "year": 1511,
   "office": "工部",
-  "person": "李鐩",
+  "person": "李鏟",
   "note": "",
   "src": "table",
-  "raw_person": "李鏟",
-  "nameFix": {
-   "from": "李鏟",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "李鏟"
  },
  {
   "year": 1511,
@@ -14064,15 +13776,10 @@
  {
   "year": 1511,
   "office": "總督京儲",
-  "person": "黄珂",
+  "person": "黃珂",
   "note": "九、戊申、二,撫延綏右賀都遷戶右侍。",
   "src": "table",
-  "raw_person": "黃珂",
-  "nameFix": {
-   "from": "黃珂",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "黃珂"
  },
  {
   "year": 1511,
@@ -14117,15 +13824,10 @@
  {
   "year": 1512,
   "office": "工部",
-  "person": "李鐩",
+  "person": "李鏟",
   "note": "十二、壬子、十二,加太子少保。",
   "src": "table",
-  "raw_person": "李鏟",
-  "nameFix": {
-   "from": "李鏟",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "李鏟"
  },
  {
   "year": 1512,
@@ -14172,15 +13874,10 @@
  {
   "year": 1512,
   "office": "總督京儲",
-  "person": "黄珂",
+  "person": "黃珂",
   "note": "",
   "src": "table",
-  "raw_person": "黃珂",
-  "nameFix": {
-   "from": "黃珂",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "黃珂"
  },
  {
   "year": 1512,
@@ -14241,15 +13938,10 @@
  {
   "year": 1513,
   "office": "工部",
-  "person": "李鐩",
+  "person": "李鏟",
   "note": "",
   "src": "table",
-  "raw_person": "李鏟",
-  "nameFix": {
-   "from": "李鏟",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "李鏟"
  },
  {
   "year": 1513,
@@ -14334,15 +14026,10 @@
  {
   "year": 1514,
   "office": "工部",
-  "person": "李鐩",
+  "person": "李鏟",
   "note": "",
   "src": "table",
-  "raw_person": "李鏟",
-  "nameFix": {
-   "from": "李鏟",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "李鏟"
  },
  {
   "year": 1514,
@@ -14431,15 +14118,10 @@
  {
   "year": 1515,
   "office": "工部",
-  "person": "李鐩",
+  "person": "李鏟",
   "note": "",
   "src": "table",
-  "raw_person": "李鏟",
-  "nameFix": {
-   "from": "李鏟",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "李鏟"
  },
  {
   "year": 1515,
@@ -14526,15 +14208,10 @@
  {
   "year": 1516,
   "office": "工部",
-  "person": "李鐩",
+  "person": "李鏉",
   "note": "",
   "src": "table",
-  "raw_person": "李鏉",
-  "nameFix": {
-   "from": "李鏉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "李鏉"
  },
  {
   "year": 1516,
@@ -14628,15 +14305,10 @@
  {
   "year": 1517,
   "office": "工部",
-  "person": "李鐩",
+  "person": "李鏉",
   "note": "",
   "src": "table",
-  "raw_person": "李鏉",
-  "nameFix": {
-   "from": "李鏉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "李鏉"
  },
  {
   "year": 1517,
@@ -14740,15 +14412,10 @@
  {
   "year": 1518,
   "office": "工部",
-  "person": "李鐩",
+  "person": "李鏟",
   "note": "",
   "src": "table",
-  "raw_person": "李鏟",
-  "nameFix": {
-   "from": "李鏟",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "李鏟"
  },
  {
   "year": 1518,
@@ -14834,15 +14501,10 @@
  {
   "year": 1519,
   "office": "工部",
-  "person": "李鐩",
+  "person": "李鏟",
   "note": "",
   "src": "table",
-  "raw_person": "李鏟",
-  "nameFix": {
-   "from": "李鏟",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "李鏟"
  },
  {
   "year": 1519,
@@ -14946,15 +14608,10 @@
  {
   "year": 1520,
   "office": "工部",
-  "person": "李鐩",
+  "person": "李鏟",
   "note": "",
   "src": "table",
-  "raw_person": "李鏟",
-  "nameFix": {
-   "from": "李鏟",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "李鏟"
  },
  {
   "year": 1520,
@@ -15047,15 +14704,10 @@
  {
   "year": 1521,
   "office": "工部",
-  "person": "李鐩",
+  "person": "李鏟",
   "note": "四、戊申、廿七,致仕。嘉靖七年閏十、庚寅、廿二,卒,贈太保,謚恭敏。嘉靖八年十一、壬子、十八,奪贈謚。",
   "src": "table",
-  "raw_person": "李鏟",
-  "nameFix": {
-   "from": "李鏟",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "李鏟"
  },
  {
   "year": 1521,
@@ -15792,15 +15444,10 @@
  {
   "year": 1527,
   "office": "都察院",
-  "person": "張璁",
+  "person": "張聰",
   "note": "八、庚戌、五,兵左侍署;十、戊申、四,遷禮尚兼文淵閣學士入閣仍署;十、癸酉、廿九,解署事,",
   "src": "table",
-  "raw_person": "張聰",
-  "nameFix": {
-   "from": "張聰",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "張聰"
  },
  {
   "year": 1527,
@@ -16053,15 +15700,10 @@
  {
   "year": 1530,
   "office": null,
-  "person": "汪俊",
+  "person": "汪銉",
   "note": "十、癸酉、十七,遷兵尚,仍兼右都提督團營。",
   "src": "table",
-  "raw_person": "汪銉",
-  "nameFix": {
-   "from": "汪銉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "汪銉"
  },
  {
   "year": 1530,
@@ -16260,16 +15902,11 @@
  {
   "year": 1532,
   "office": "刑部",
-  "person": "汪俊",
+  "person": "汪銥",
   "note": "九、庚戌、五,改吏尚。",
   "src": "table",
   "raw_person": "汪銥",
-  "flag": ";③顺序兜底",
-  "nameFix": {
-   "from": "汪銥",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "flag": ";③顺序兜底"
  },
  {
   "year": 1532,
@@ -16282,15 +15919,10 @@
  {
   "year": 1532,
   "office": "吏部",
-  "person": "汪俊",
+  "person": "汪銥",
   "note": "九、庚戌、五,太子太保兵尚兼右都改。",
   "src": "table",
-  "raw_person": "汪銥",
-  "nameFix": {
-   "from": "汪銥",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "汪銥"
  },
  {
   "year": 1532,
@@ -16393,15 +16025,10 @@
  {
   "year": 1533,
   "office": "吏部",
-  "person": "汪俊",
+  "person": "汪銘",
   "note": "",
   "src": "table",
-  "raw_person": "汪銘",
-  "nameFix": {
-   "from": "汪銘",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "汪銘"
  },
  {
   "year": 1533,
@@ -16464,16 +16091,11 @@
  {
   "year": 1534,
   "office": "吏部",
-  "person": "汪俊",
+  "person": "汪銘",
   "note": "七、丁丑、十二,加柱國兼兵尚兼督大木。",
   "src": "table",
   "raw_person": "汪銘",
-  "flag": ";office重复",
-  "nameFix": {
-   "from": "汪銘",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "flag": ";office重复"
  },
  {
   "year": 1534,
@@ -16583,15 +16205,10 @@
  {
   "year": 1535,
   "office": "吏部",
-  "person": "汪俊",
+  "person": "汪銘",
   "note": "九、己未、一,致仕。十五年七、壬午、廿九,卒;閏十二、辛未、廿,贈少保,謚榮和。",
   "src": "table",
-  "raw_person": "汪銘",
-  "nameFix": {
-   "from": "汪銘",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "汪銘"
  },
  {
   "year": 1535,
@@ -16788,15 +16405,10 @@
  {
   "year": 1537,
   "office": "工部",
-  "person": "温仁和",
+  "person": "溫仁和",
   "note": "六、甲戌、廿七,吏左侍兼學士遷,仍兼官。",
   "src": "table",
-  "raw_person": "溫仁和",
-  "nameFix": {
-   "from": "溫仁和",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "溫仁和"
  },
  {
   "year": 1537,
@@ -17035,15 +16647,10 @@
  {
   "year": 1539,
   "office": "兵部",
-  "person": "張瓊",
+  "person": "張瓊翟鑾",
   "note": "二、甲寅、十五,參贊機務。二、壬寅、三,起禮尚兼文淵閣大學士改兵尚兼左都充巡邊使;十、壬午、十八,加太子少保。",
   "src": "table",
-  "raw_person": "張瓊翟鑾",
-  "nameFix": {
-   "from": "張瓊翟鑾",
-   "op": "split/trim",
-   "why": "粘连拆分：張瓊+翟鑾"
-  }
+  "raw_person": "張瓊翟鑾"
  },
  {
   "year": 1539,
@@ -17610,15 +17217,10 @@
  {
   "year": 1544,
   "office": "禮部",
-  "person": "費寀",
+  "person": "費宗",
   "note": "九、丙辰、廿,掌詹事府事禮尚兼學士回部。",
   "src": "table",
-  "raw_person": "費宗",
-  "nameFix": {
-   "from": "費宗",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "費宗"
  },
  {
   "year": 1544,
@@ -17712,15 +17314,10 @@
  {
   "year": 1545,
   "office": "禮部",
-  "person": "費寀",
+  "person": "費宗",
   "note": "七、甲子、四,加太子少保。",
   "src": "table",
-  "raw_person": "費宗",
-  "nameFix": {
-   "from": "費宗",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "費宗"
  },
  {
   "year": 1545,
@@ -17795,16 +17392,11 @@
  {
   "year": 1546,
   "office": "禮部",
-  "person": "費寀",
+  "person": "費衆",
   "note": "",
   "src": "table",
   "raw_person": "費衆",
-  "flag": ";③顺序兜底;office重复",
-  "nameFix": {
-   "from": "費衆",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "flag": ";③顺序兜底;office重复"
  },
  {
   "year": 1546,
@@ -17952,15 +17544,10 @@
  {
   "year": 1547,
   "office": "禮部",
-  "person": "費寀",
+  "person": "費宗",
   "note": "六、戊子、九,加太子太保。",
   "src": "table",
-  "raw_person": "費宗",
-  "nameFix": {
-   "from": "費宗",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "費宗"
  },
  {
   "year": 1547,
@@ -18055,6 +17642,24 @@
  {
   "year": 1548,
   "office": "吏部",
+  "person": "欠陽",
+  "note": "二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,致仕。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八.",
+  "src": "table",
+  "raw_person": "欠陽",
+  "flag": ";③顺序兜底"
+ },
+ {
+  "year": 1548,
+  "office": "吏部",
+  "person": "欠陽",
+  "note": "二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼两苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼两苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左传总社。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左传总社。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左传总社。二、甲午、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍总社。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍总社。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍总社。二、甲寅、八,南吏均修改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍总社。二、甲寅、八,南吏均修改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍总社。二、甲寅、八,南吏均修改兼西苑農事:四二、壬辰、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍总社。二、甲寅、八,南吏均修改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍总社。二、甲寅、八,南吏均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右侍遷戶左侍总社。二、甲寅、八,南吏均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右侍遷戶左侍总社。二、甲寅、八,南吏均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬卯、十七,戶右侍遷戶左侍总社。二、甲寅、八,南吏均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右侍遷戶左侍总社。二、甲寅、八,南吏均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝遷戶左侍总社。二、甲寅、八,南吏均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝遷戶左侍总社。二、甲寅、八,南吏均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝遷戶左侍总制。二、甲寅、八,南吏均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝遷戶左侍总制。二、甲寅、八,南吏均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝遷戶左侍总制。二、甲辰、八,南吏均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝遷戶左侍总制。二、甲辰、八,南吏均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝遷戶左侍总制。二、甲辰、八,南吏平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝平均修改兼西苑農事;四二、壬辰、十七,戶右帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶左帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶左帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶左帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶左帝平均修改兼西苑農事;四二、壬辰、十七,戶右帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶右帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶北帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶北帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶北帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶北帝平均修改兼西苑農事;四二、壬辰、十七,戶北帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶北帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶北帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶東帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶東帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶東帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶東帝平均修改兼西苑農事;四二、壬辰、十七,戶北帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶北帝平均修改兼西苑農事;四、壬戌、十八,皆士通。二、壬辰、十七,戶北帝平均修改兼西苑農事;四、壬戌、十八,皆士港。二、壬辰、十七,戶北帝平均修改兼西苑農事;四、壬戌、十八,皆士港。二、壬辰、十七,戶北帝平均修改兼西苑農事;四、壬戌、十八,皆士港。二、壬辰、十七,戶北帝平均修改兼西苑農事;四、壬戌、十八,皆士港。二、壬辰、十七,户北帝平均修改兼西苑農事;四、壬戌、十八,皆士港。二、壬辰、十七,户北帝平均修改兼西苑農事;四、壬戌、十八,皆士港。二、壬辰、十七,户北帝平均修改兼西苑農事;四、壬戌、十八,皆士港。二、壬辰、十七,户北帝平均修改兼西苑農事:四二、壬辰、十七,户北帝平均修改兼西苑農事;四、壬戌、十八,皆士港。二、壬辰、十七,户北帝平均修改兼西苑農事;四、壬戌、十八,皆士港。二、壬辰、十七,户北帝平均修改兼西苑農事;四、壬戌、十八,皆士港。二、壬辰、十七,户南帝平均修改兼西苑農事;四、壬戌、十八,皆士港。二、壬辰、十七,户南帝平均修改兼西苑農事;四、壬戌、十八,皆士港。二、壬辰、十七,户南帝平均修改兼西苑農事;四、壬戌、十八,皆士港。二、壬辰、十七,户南帝平均修改兼西苑農事;四二、壬辰、十七,户北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事:四二、壬辰、十七,户北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆南帝平均修改兼西苑農事;四、壬戌、十八,皆南帝平均修改兼西苑農事;四、壬戌、十八,皆南帝平均修改兼西苑農事;四、壬戌、十八,皆南帝平均修改兼西苑農事;四、壬戌、十八,皆南帝平均修改兼西苑農事;四、壬戌、十八,皆南帝平均修改兼西苑農事;四二、壬辰、十七,户北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西方農事;四二、壬辰、十七,户北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四二、壬辰、十七,户北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四、壬戌、十八,皆北帝平均修改兼西苑農事;四二、壬辰、十七,户北帝平均修改兼西苑農事;四、王午、十八,户北帝平均修改兼西苑農事;四、壬戌、十八,户北帝平均修改兼西苑農事;四、壬戌、十八,户北帝平均修改兼西苑農事;四、壬戌、十八,户北帝平均修改兼西苑農事;四、壬戌、十八,户北帝平均修改兼西苑農事;四、壬戌、十八,户北帝平均修改兼西苑農事;四、壬戌、十八,户北帝平均修改兼新村共治",
+  "src": "table",
+  "raw_person": "欠陽",
+  "flag": "note?;note?;note?;note?;note?;;③顺序兜底;dup"
+ },
+ {
+  "year": 1548,
+  "office": "吏部",
   "person": "至十",
   "note": "一年三、辛亥、廿九,卒。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十七,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四二、壬辰、十七,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事:四二、壬辰、十七,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚放兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八,南吏尚改兼西苑農事;四、壬戌、十八,皆士朝。二、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。二、甲寅、八.",
   "src": "table",
@@ -18088,15 +17693,10 @@
  {
   "year": 1548,
   "office": "禮部",
-  "person": "費寀",
+  "person": "費宗",
   "note": "八、辛亥、九,加少保;十二、丁巳、十六,掌詹事府禮尔回部。",
   "src": "table",
-  "raw_person": "費宗",
-  "nameFix": {
-   "from": "費宗",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "費宗"
  },
  {
   "year": 1549,
@@ -18134,15 +17734,10 @@
  {
   "year": 1549,
   "office": "刑部",
-  "person": "劉訒",
+  "person": "劉訡",
   "note": "九、己卯、十三,致仕;尋奪職卒。十、乙巳、九,南刑尚改。隆慶元年四、甲寅、九,復官,贈太子少保。",
   "src": "table",
-  "raw_person": "劉訡",
-  "nameFix": {
-   "from": "劉訡",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "劉訡"
  },
  {
   "year": 1549,
@@ -18360,7 +17955,7 @@
  },
  {
   "year": 1550,
-  "office": "總倉場",
+  "office": "總督倉場",
   "person": "孫應奎",
   "note": "三、癸酉、九,左副都遷戶右侍兼督西苑農事;十、癸亥、三,遷戶尚。",
   "src": "table",
@@ -18369,7 +17964,7 @@
  },
  {
   "year": 1550,
-  "office": "總倉場",
+  "office": "總督倉場",
   "person": "端廷赦",
   "note": "十、壬申、十一,戶左侍兼理西苑農事。",
   "src": "table",
@@ -18378,7 +17973,7 @@
  },
  {
   "year": 1550,
-  "office": "總倉場",
+  "office": "總督倉場",
   "person": "陳經",
   "note": "二、己亥、四,起太子少保兵尚改,尋卒。",
   "src": "table",
@@ -18491,7 +18086,7 @@
  },
  {
   "year": 1551,
-  "office": "總倉場",
+  "office": "總督倉場",
   "person": "孫禱",
   "note": "五、丁酉、十,掌通政司事兵左侍改戶左侍,兼西苑農事。",
   "src": "table",
@@ -18499,7 +18094,7 @@
  },
  {
   "year": 1551,
-  "office": "總倉場",
+  "office": "總督倉場",
   "person": "張經",
   "note": "四、己巳、十一,起原兩廣兵尚改戶尚兼理西苑農事,守制。卅二年八、丁丑、三,服闊改南戶尚。",
   "src": "table",
@@ -18507,7 +18102,7 @@
  },
  {
   "year": 1551,
-  "office": "總倉場",
+  "office": "總督倉場",
   "person": "端廷赦",
   "note": "三、丙辰、廿八,遷南右都。",
   "src": "table",
@@ -18540,15 +18135,10 @@
  {
   "year": 1552,
   "office": "刑部",
-  "person": "何鰲",
+  "person": "何鱉",
   "note": "九、乙巳、廿六,刑右侍遷。",
   "src": "table",
-  "raw_person": "何鱉",
-  "nameFix": {
-   "from": "何鱉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "何鱉"
  },
  {
   "year": 1552,
@@ -18624,7 +18214,7 @@
  },
  {
   "year": 1552,
-  "office": "總倉場",
+  "office": "總督倉場",
   "person": "余胤緒",
   "note": "八、壬申、廿二,南大理卿遷戶右侍,兼西苑農事,尋閑住。隆慶二年九、乙亥、廿九,復官。",
   "src": "table",
@@ -18632,7 +18222,7 @@
  },
  {
   "year": 1552,
-  "office": "總倉場",
+  "office": "總督倉場",
   "person": "孫禱",
   "note": "八、己未、九,改兵左侍兼右僉都赴薊州;十、丙寅、十七,還京;十一、癸未、五,改戶左侍兼西苑農事。",
   "src": "table",
@@ -19459,15 +19049,10 @@
  {
   "year": 1561,
   "office": "禮部",
-  "person": "袁煒",
+  "person": "吴山袁煒",
   "note": "三、乙亥、十五,閒住。三、乙亥、十五,吏左侍遷,加太子少保;隆慶三年十二、己酉、十一,起改南禮尚,十一、甲午、八,加太子太保,改戶尚兼武英殿不赴,準致仕。大學士入閣。萬曆五年三、壬寅、十五,卒。萬曆六年二、辛卯、十,贈太子太保,謚文端。",
   "src": "table",
-  "raw_person": "吴山袁煒",
-  "nameFix": {
-   "from": "吴山袁煒",
-   "op": "split/trim",
-   "why": "粘连拆分：吴山(至1560)+袁煒(1561起)"
-  }
+  "raw_person": "吴山袁煒"
  },
  {
   "year": 1561,
@@ -19644,15 +19229,10 @@
  {
   "year": 1563,
   "office": "戶部",
-  "person": "高燿",
+  "person": "高耀",
   "note": "",
   "src": "table",
-  "raw_person": "高耀",
-  "nameFix": {
-   "from": "高耀",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "高耀"
  },
  {
   "year": 1563,
@@ -19729,15 +19309,10 @@
  {
   "year": 1564,
   "office": "戶部",
-  "person": "高燿",
+  "person": "高耀",
   "note": "",
   "src": "table",
-  "raw_person": "高耀",
-  "nameFix": {
-   "from": "高耀",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "高耀"
  },
  {
   "year": 1564,
@@ -21593,15 +21168,10 @@
  {
   "year": 1583,
   "office": "工部",
-  "person": "楊兆",
+  "person": "杨兆",
   "note": "四、庚申、九,改戶尚。四、丙寅、十五,起協戎政兵尚改;九、乙未、十七,加太子少保。",
   "src": "table",
-  "raw_person": "杨兆",
-  "nameFix": {
-   "from": "杨兆",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "杨兆"
  },
  {
   "year": 1583,
@@ -21622,15 +21192,10 @@
  {
   "year": 1583,
   "office": "戶部",
-  "person": "楊巍",
+  "person": "杨巍",
   "note": "",
   "src": "table",
-  "raw_person": "杨巍",
-  "nameFix": {
-   "from": "杨巍",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "杨巍"
  },
  {
   "year": 1583,
@@ -21880,15 +21445,10 @@
  {
   "year": 1585,
   "office": "總倉場",
-  "person": "宋纁",
+  "person": "宋繙",
   "note": "三、己卯、八,遷南戶尚。三、庚寅、十九,戶左侍改。",
   "src": "table",
-  "raw_person": "宋繙",
-  "nameFix": {
-   "from": "宋繙",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "宋繙"
  },
  {
   "year": 1585,
@@ -21941,15 +21501,10 @@
  {
   "year": 1586,
   "office": "戶部",
-  "person": "宋纁",
+  "person": "宋繙",
   "note": "五、壬戌、廿八,總倉場戶左侍遷。",
   "src": "table",
-  "raw_person": "宋繙",
-  "nameFix": {
-   "from": "宋繙",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "宋繙"
  },
  {
   "year": 1586,
@@ -21970,15 +21525,10 @@
  {
   "year": 1586,
   "office": "總倉場",
-  "person": "宋纁",
+  "person": "宋繙",
   "note": "五、壬戌、廿八,遷戶尚。",
   "src": "table",
-  "raw_person": "宋繙",
-  "nameFix": {
-   "from": "宋繙",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "宋繙"
  },
  {
   "year": 1586,
@@ -22064,15 +21614,10 @@
  {
   "year": 1587,
   "office": "戶部",
-  "person": "宋纁",
+  "person": "宋縉",
   "note": "",
   "src": "table",
-  "raw_person": "宋縉",
-  "nameFix": {
-   "from": "宋縉",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "宋縉"
  },
  {
   "year": 1587,
@@ -22160,16 +21705,11 @@
  {
   "year": 1588,
   "office": "吏部",
-  "person": "宋纁",
+  "person": "宋繻",
   "note": "",
   "src": "table",
   "raw_person": "宋繻",
-  "flag": ";office重复",
-  "nameFix": {
-   "from": "宋繻",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "flag": ";office重复"
  },
  {
   "year": 1588,
@@ -22277,15 +21817,10 @@
  {
   "year": 1589,
   "office": "戶部",
-  "person": "宋纁",
+  "person": "宋繡",
   "note": "",
   "src": "table",
-  "raw_person": "宋繡",
-  "nameFix": {
-   "from": "宋繡",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "宋繡"
  },
  {
   "year": 1589,
@@ -22371,15 +21906,10 @@
  {
   "year": 1590,
   "office": "吏部",
-  "person": "宋纁",
+  "person": "宋繻",
   "note": "三、丙辰、十五,戶尚改。",
   "src": "table",
-  "raw_person": "宋繻",
-  "nameFix": {
-   "from": "宋繻",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "宋繻"
  },
  {
   "year": 1590,
@@ -22408,15 +21938,10 @@
  {
   "year": 1590,
   "office": "戶部",
-  "person": "宋纁",
+  "person": "宋繻",
   "note": "三、丙辰、十五,改吏尚。",
   "src": "table",
-  "raw_person": "宋繻",
-  "nameFix": {
-   "from": "宋繻",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "宋繻"
  },
  {
   "year": 1590,
@@ -22511,15 +22036,10 @@
  {
   "year": 1591,
   "office": "吏部",
-  "person": "宋纁",
+  "person": "宋繻",
   "note": "",
   "src": "table",
-  "raw_person": "宋繻",
-  "nameFix": {
-   "from": "宋繻",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "宋繻"
  },
  {
   "year": 1591,
@@ -22614,16 +22134,11 @@
  {
   "year": 1592,
   "office": "吏部",
-  "person": "孫鑨",
+  "person": "孫鑼",
   "note": "三、戊子、廿八,南兵尚改。",
   "src": "table",
   "raw_person": "孫鑼",
-  "flag": ";office重复",
-  "nameFix": {
-   "from": "孫鑼",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "flag": ";office重复"
  },
  {
   "year": 1592,
@@ -22733,15 +22248,10 @@
  {
   "year": 1593,
   "office": "吏部",
-  "person": "孫鑨",
+  "person": "孫籬",
   "note": "四、辛丑、十七,養病;七、癸丑、一,回籍。廿二年卒。廿三年六、丙寅、廿五,予祭葬,謚端簡。",
   "src": "table",
-  "raw_person": "孫籬",
-  "nameFix": {
-   "from": "孫籬",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "孫籬"
  },
  {
   "year": 1593,
@@ -23222,6 +22732,14 @@
   "note": "十二、己卯、廿八,復太子太保。",
   "src": "table",
   "raw_person": "蕭大亨"
+ },
+ {
+  "year": 1598,
+  "office": "吏部",
+  "person": "井九年",
+  "note": "二、丁亥、十七,贈太子太保,謚恭靖。",
+  "src": "table",
+  "raw_person": "井九年"
  },
  {
   "year": 1598,
@@ -25157,15 +24675,10 @@
  {
   "year": 1619,
   "office": "工部",
-  "person": "黃克纘",
+  "person": "黃克瓚",
   "note": "十一、乙巳、廿六,協戎政兵尚署。",
   "src": "table",
-  "raw_person": "黃克瓚",
-  "nameFix": {
-   "from": "黃克瓚",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "黃克瓚"
  },
  {
   "year": 1619,
@@ -25234,15 +24747,10 @@
  {
   "year": 1620,
   "office": "刑部",
-  "person": "黃克纘",
+  "person": "黃克瓚",
   "note": "七、戊戌、廿三,協戎政太子少保兵尚改。",
   "src": "table",
-  "raw_person": "黃克瓚",
-  "nameFix": {
-   "from": "黃克瓚",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "黃克瓚"
  },
  {
   "year": 1620,
@@ -25287,15 +24795,10 @@
  {
   "year": 1620,
   "office": "工部",
-  "person": "黃克纘",
+  "person": "黃克瓚",
   "note": "七、戊戌、廿三,改刑尚。",
   "src": "table",
-  "raw_person": "黃克瓚",
-  "nameFix": {
-   "from": "黃克瓚",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "黃克瓚"
  },
  {
   "year": 1620,
@@ -25380,15 +24883,10 @@
  {
   "year": 1621,
   "office": "刑部",
-  "person": "黃克纘",
+  "person": "黃克瓚",
   "note": "九、乙丑、廿七,暫協理戎政事;十、辛巳、十四,加太子太保;十二、辛卯、廿四,疏辭營務不允。",
   "src": "table",
-  "raw_person": "黃克瓚",
-  "nameFix": {
-   "from": "黃克瓚",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "黃克瓚"
  },
  {
   "year": 1621,
@@ -25514,15 +25012,10 @@
  {
   "year": 1622,
   "office": "刑部",
-  "person": "黃克纘",
+  "person": "黃克瓚",
   "note": "正、壬戌、廿六,改兵尚協理戎政。王永光正、壬戌、廿六,管工左侍事工尚兼署;二、乙未、廿九,遷戶尚總倉場。",
   "src": "table",
-  "raw_person": "黃克瓚",
-  "nameFix": {
-   "from": "黃克瓚",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "黃克瓚"
  },
  {
   "year": 1622,
@@ -25827,15 +25320,10 @@
  {
   "year": 1624,
   "office": "工部",
-  "person": "黃克纘",
+  "person": "黃克瓚",
   "note": "十二、壬寅、廿二,總戎政兵尚起改。",
   "src": "table",
-  "raw_person": "黃克瓚",
-  "nameFix": {
-   "from": "黃克瓚",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "黃克瓚"
  },
  {
   "year": 1624,
@@ -25968,15 +25456,10 @@
  {
   "year": 1625,
   "office": "工部",
-  "person": "黃克纘",
+  "person": "黃克瓚",
   "note": "六、丁丑、一,催速到任;十二、壬寅、廿八,致仕。七年八、乙巳、十二,加太子太師。崇禎元年四、甲午、三,以太子太師起改南吏尚。",
   "src": "table",
-  "raw_person": "黃克瓚",
-  "nameFix": {
-   "from": "黃克瓚",
-   "op": "rename",
-   "src": "corpus/cbdb"
-  }
+  "raw_person": "黃克瓚"
  },
  {
   "year": 1625,
@@ -26542,15 +26025,10 @@
  {
   "year": 1629,
   "office": "工部",
-  "person": "南居益",
+  "person": "翔南居益",
   "note": "正、丙寅、十,吏左侍遷;十二、辛亥、一,總倉場戶右侍遷。十一、丙午、廿五,下獄。十五年十一、癸巳、廿七,起改兵左侍添注。",
   "src": "table",
-  "raw_person": "翔南居益",
-  "nameFix": {
-   "from": "翔南居益",
-   "op": "split/trim",
-   "why": "头部碎片修剪"
-  }
+  "raw_person": "翔南居益"
  },
  {
   "year": 1629,
@@ -26771,7 +26249,7 @@
  },
  {
   "year": 1631,
-  "office": "總倉場",
+  "office": "總督倉場",
   "person": "錢春",
   "note": "",
   "src": "table",
@@ -26875,7 +26353,7 @@
  },
  {
   "year": 1632,
-  "office": "總倉場",
+  "office": "總督倉場",
   "person": "錢春",
   "note": "",
   "src": "table",

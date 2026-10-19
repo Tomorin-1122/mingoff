@@ -1,0 +1,1751 @@
+{
+ "劉俊": {
+  "span": [
+   1467,
+   1467
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   199015,
+   198612,
+   688765,
+   585834,
+   585833
+  ],
+  "cand_detail": [
+   {
+    "id": 199015,
+    "birth": 1435,
+    "death": null,
+    "index_year": 1435,
+    "rel_offices": 0
+   },
+   {
+    "id": 198612,
+    "birth": 1425,
+    "death": null,
+    "index_year": 1425,
+    "rel_offices": 0
+   },
+   {
+    "id": 688765,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 585834,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 585833,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "劉宇": {
+  "span": [
+   1509,
+   1509
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   505489,
+   476708,
+   318418,
+   293787,
+   275655
+  ],
+  "cand_detail": [
+   {
+    "id": 505489,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 476708,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 318418,
+    "birth": null,
+    "death": null,
+    "index_year": 1427,
+    "rel_offices": 0
+   },
+   {
+    "id": 293787,
+    "birth": null,
+    "death": null,
+    "index_year": 1558,
+    "rel_offices": 0
+   },
+   {
+    "id": 275655,
+    "birth": null,
+    "death": null,
+    "index_year": 1477,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "劉益": {
+  "span": [
+   1459,
+   1460
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   278935,
+   256682,
+   248497,
+   132798,
+   207883
+  ],
+  "cand_detail": [
+   {
+    "id": 278935,
+    "birth": null,
+    "death": null,
+    "index_year": 1448,
+    "rel_offices": 0
+   },
+   {
+    "id": 256682,
+    "birth": null,
+    "death": null,
+    "index_year": 1456,
+    "rel_offices": 0
+   },
+   {
+    "id": 248497,
+    "birth": null,
+    "death": null,
+    "index_year": 1439,
+    "rel_offices": 0
+   },
+   {
+    "id": 132798,
+    "birth": 1402,
+    "death": 1463,
+    "index_year": 1402,
+    "rel_offices": 0
+   },
+   {
+    "id": 207883,
+    "birth": 1405,
+    "death": null,
+    "index_year": 1405,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "周如砥": {
+  "span": [
+   1608,
+   1608
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   128807,
+   373225,
+   229024
+  ],
+  "cand_detail": [
+   {
+    "id": 128807,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 373225,
+    "birth": null,
+    "death": null,
+    "index_year": 1559,
+    "rel_offices": 0
+   },
+   {
+    "id": 229024,
+    "birth": null,
+    "death": null,
+    "index_year": 1558,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "周文燭": {
+  "span": [
+   1548,
+   1548
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   372708,
+   284659
+  ],
+  "cand_detail": [
+   {
+    "id": 372708,
+    "birth": null,
+    "death": null,
+    "index_year": 1496,
+    "rel_offices": 0
+   },
+   {
+    "id": 284659,
+    "birth": null,
+    "death": null,
+    "index_year": 1486,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "嘉靖卅三年": {
+  "span": [
+   1553,
+   1553
+  ],
+  "reason": "CBDB 无此名（含别名表）"
+ },
+ "天啟元年": {
+  "span": [
+   1620,
+   1620
+  ],
+  "reason": "CBDB 无此名（含别名表）"
+ },
+ "姜逢元": {
+  "span": [
+   1632,
+   1632
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   128975,
+   123064
+  ],
+  "cand_detail": [
+   {
+    "id": 128975,
+    "birth": null,
+    "death": null,
+    "index_year": 1583,
+    "rel_offices": 0
+   },
+   {
+    "id": 123064,
+    "birth": null,
+    "death": null,
+    "index_year": 1578,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "孫賢": {
+  "span": [
+   1470,
+   1470
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   600741,
+   149272,
+   293902,
+   129782
+  ],
+  "cand_detail": [
+   {
+    "id": 600741,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 149272,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 293902,
+    "birth": null,
+    "death": null,
+    "index_year": 1492,
+    "rel_offices": 0
+   },
+   {
+    "id": 129782,
+    "birth": null,
+    "death": null,
+    "index_year": 1424,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "弘治十四年": {
+  "span": [
+   1500,
+   1500
+  ],
+  "reason": "CBDB 无此名（含别名表）"
+ },
+ "張溥": {
+  "span": [
+   1385,
+   1385
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   59839,
+   11572,
+   699035,
+   698302,
+   570342
+  ],
+  "cand_detail": [
+   {
+    "id": 59839,
+    "birth": null,
+    "death": 1737,
+    "index_year": 1674,
+    "rel_offices": 0
+   },
+   {
+    "id": 11572,
+    "birth": 1119,
+    "death": 0,
+    "index_year": 1119,
+    "rel_offices": 0
+   },
+   {
+    "id": 699035,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 698302,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 570342,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "張瑛": {
+  "span": [
+   1426,
+   1434
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   207940,
+   199564,
+   278961,
+   252792,
+   242797
+  ],
+  "cand_detail": [
+   {
+    "id": 207940,
+    "birth": 1411,
+    "death": null,
+    "index_year": 1411,
+    "rel_offices": 0
+   },
+   {
+    "id": 199564,
+    "birth": 1438,
+    "death": null,
+    "index_year": 1438,
+    "rel_offices": 0
+   },
+   {
+    "id": 278961,
+    "birth": null,
+    "death": null,
+    "index_year": 1451,
+    "rel_offices": 0
+   },
+   {
+    "id": 252792,
+    "birth": null,
+    "death": null,
+    "index_year": 1437,
+    "rel_offices": 0
+   },
+   {
+    "id": 242797,
+    "birth": null,
+    "death": null,
+    "index_year": 1424,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "張聰": {
+  "span": [
+   1528,
+   1531
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   208101,
+   200143,
+   512140,
+   510597,
+   509568
+  ],
+  "cand_detail": [
+   {
+    "id": 208101,
+    "birth": 1421,
+    "death": null,
+    "index_year": 1421,
+    "rel_offices": 0
+   },
+   {
+    "id": 200143,
+    "birth": 1371,
+    "death": null,
+    "index_year": 1371,
+    "rel_offices": 0
+   },
+   {
+    "id": 512140,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 510597,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 509568,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "張顯宗": {
+  "span": [
+   1402,
+   1402
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   489939,
+   130713,
+   346755
+  ],
+  "cand_detail": [
+   {
+    "id": 489939,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 130713,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 346755,
+    "birth": null,
+    "death": null,
+    "index_year": 1361,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "曹鼎": {
+  "span": [
+   1449,
+   1449
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   248089,
+   238243,
+   499619,
+   491835,
+   470958
+  ],
+  "cand_detail": [
+   {
+    "id": 248089,
+    "birth": null,
+    "death": null,
+    "index_year": 1447,
+    "rel_offices": 0
+   },
+   {
+    "id": 238243,
+    "birth": null,
+    "death": null,
+    "index_year": 1433,
+    "rel_offices": 0
+   },
+   {
+    "id": 499619,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 491835,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 470958,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "曾榮": {
+  "span": [
+   1417,
+   1432
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   483811,
+   477682,
+   474819,
+   315865,
+   48497
+  ],
+  "cand_detail": [
+   {
+    "id": 483811,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 477682,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 474819,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 315865,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 48497,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "朱廣": {
+  "span": [
+   1604,
+   1604
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   505677,
+   492105,
+   307320,
+   163691,
+   148663
+  ],
+  "cand_detail": [
+   {
+    "id": 505677,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 492105,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 307320,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 163691,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 148663,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "李孫宸": {
+  "span": [
+   1626,
+   1630
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   127878,
+   357676
+  ],
+  "cand_detail": [
+   {
+    "id": 127878,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 357676,
+    "birth": null,
+    "death": null,
+    "index_year": 1583,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "李時": {
+  "span": [
+   1524,
+   1538
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   331550,
+   305322,
+   68140,
+   207870,
+   201624
+  ],
+  "cand_detail": [
+   {
+    "id": 331550,
+    "birth": null,
+    "death": null,
+    "index_year": 1506,
+    "rel_offices": 0
+   },
+   {
+    "id": 305322,
+    "birth": null,
+    "death": null,
+    "index_year": 1512,
+    "rel_offices": 0
+   },
+   {
+    "id": 68140,
+    "birth": 1471,
+    "death": 1538,
+    "index_year": 1471,
+    "rel_offices": 1
+   },
+   {
+    "id": 207870,
+    "birth": 1406,
+    "death": null,
+    "index_year": 1406,
+    "rel_offices": 0
+   },
+   {
+    "id": 201624,
+    "birth": 1476,
+    "death": null,
+    "index_year": 1476,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "李本": {
+  "span": [
+   1549,
+   1561
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   491271,
+   490325,
+   477474,
+   312833,
+   289245
+  ],
+  "cand_detail": [
+   {
+    "id": 491271,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 490325,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 477474,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 312833,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 289245,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "李賢": {
+  "span": [
+   1455,
+   1466
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   304590,
+   277981,
+   266798,
+   29603,
+   66939
+  ],
+  "cand_detail": [
+   {
+    "id": 304590,
+    "birth": null,
+    "death": null,
+    "index_year": 1471,
+    "rel_offices": 0
+   },
+   {
+    "id": 277981,
+    "birth": null,
+    "death": null,
+    "index_year": 1447,
+    "rel_offices": 0
+   },
+   {
+    "id": 266798,
+    "birth": null,
+    "death": null,
+    "index_year": 1436,
+    "rel_offices": 0
+   },
+   {
+    "id": 29603,
+    "birth": 1408,
+    "death": 1466,
+    "index_year": 1408,
+    "rel_offices": 1
+   },
+   {
+    "id": 66939,
+    "birth": null,
+    "death": 1451,
+    "index_year": 1388,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "李長春": {
+  "span": [
+   1587,
+   1587
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   359174,
+   359173,
+   127820,
+   438911,
+   685014
+  ],
+  "cand_detail": [
+   {
+    "id": 359174,
+    "birth": null,
+    "death": null,
+    "index_year": 1592,
+    "rel_offices": 0
+   },
+   {
+    "id": 359173,
+    "birth": null,
+    "death": null,
+    "index_year": 1583,
+    "rel_offices": 0
+   },
+   {
+    "id": 127820,
+    "birth": 1545,
+    "death": 1607,
+    "index_year": 1545,
+    "rel_offices": 0
+   },
+   {
+    "id": 438911,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 685014,
+    "birth": null,
+    "death": null,
+    "index_year": 1657,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "林釘": {
+  "span": [
+   1628,
+   1628
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   128623,
+   364251
+  ],
+  "cand_detail": [
+   {
+    "id": 128623,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 364251,
+    "birth": null,
+    "death": null,
+    "index_year": 1586,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "林鈺": {
+  "span": [
+   1629,
+   1636
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   486391,
+   472843,
+   364250
+  ],
+  "cand_detail": [
+   {
+    "id": 486391,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 472843,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 364250,
+    "birth": null,
+    "death": null,
+    "index_year": 1772,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "梁貞": {
+  "span": [
+   1370,
+   1370
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   551308,
+   484583,
+   107435
+  ],
+  "cand_detail": [
+   {
+    "id": 551308,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 484583,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 107435,
+    "birth": 1229,
+    "death": 1307,
+    "index_year": 1229,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "楊榮": {
+  "span": [
+   1407,
+   1440
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   199261,
+   198226,
+   248594,
+   231731,
+   66818
+  ],
+  "cand_detail": [
+   {
+    "id": 199261,
+    "birth": 1437,
+    "death": null,
+    "index_year": 1437,
+    "rel_offices": 0
+   },
+   {
+    "id": 198226,
+    "birth": 1416,
+    "death": null,
+    "index_year": 1416,
+    "rel_offices": 0
+   },
+   {
+    "id": 248594,
+    "birth": null,
+    "death": null,
+    "index_year": 1444,
+    "rel_offices": 0
+   },
+   {
+    "id": 231731,
+    "birth": null,
+    "death": null,
+    "index_year": 1387,
+    "rel_offices": 0
+   },
+   {
+    "id": 66818,
+    "birth": null,
+    "death": null,
+    "index_year": 1442,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "永樂十年": {
+  "span": [
+   1411,
+   1411
+  ],
+  "reason": "CBDB 无此名（含别名表）"
+ },
+ "江如璧": {
+  "span": [
+   1544,
+   1544
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   630508,
+   333921,
+   266218,
+   214856,
+   279505
+  ],
+  "cand_detail": [
+   {
+    "id": 630508,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 333921,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 266218,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 214856,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 279505,
+    "birth": null,
+    "death": null,
+    "index_year": 1457,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "沈淮": {
+  "span": [
+   1614,
+   1614
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   203806,
+   200636,
+   568271,
+   538174,
+   509838
+  ],
+  "cand_detail": [
+   {
+    "id": 203806,
+    "birth": 1522,
+    "death": null,
+    "index_year": 1522,
+    "rel_offices": 0
+   },
+   {
+    "id": 200636,
+    "birth": 1445,
+    "death": null,
+    "index_year": 1445,
+    "rel_offices": 0
+   },
+   {
+    "id": 568271,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 538174,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 509838,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "王一寧": {
+  "span": [
+   1451,
+   1452
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   573581,
+   457814,
+   230481
+  ],
+  "cand_detail": [
+   {
+    "id": 573581,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 457814,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 230481,
+    "birth": null,
+    "death": null,
+    "index_year": 1566,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "王文": {
+  "span": [
+   1455,
+   1456
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   266734,
+   67339,
+   67338,
+   697339,
+   557387
+  ],
+  "cand_detail": [
+   {
+    "id": 266734,
+    "birth": null,
+    "death": null,
+    "index_year": 1458,
+    "rel_offices": 0
+   },
+   {
+    "id": 67339,
+    "birth": null,
+    "death": null,
+    "index_year": 1438,
+    "rel_offices": 0
+   },
+   {
+    "id": 67338,
+    "birth": 1393,
+    "death": 1457,
+    "index_year": 1393,
+    "rel_offices": 1
+   },
+   {
+    "id": 697339,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 557387,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "王時": {
+  "span": [
+   1369,
+   1369
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   638438,
+   638437,
+   638436,
+   638354,
+   487991
+  ],
+  "cand_detail": [
+   {
+    "id": 638438,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 638437,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 638436,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 638354,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 487991,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "王瓚": {
+  "span": [
+   1513,
+   1516
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   200846,
+   198693,
+   574136,
+   508022,
+   502401
+  ],
+  "cand_detail": [
+   {
+    "id": 200846,
+    "birth": 1446,
+    "death": null,
+    "index_year": 1446,
+    "rel_offices": 0
+   },
+   {
+    "id": 198693,
+    "birth": 1430,
+    "death": null,
+    "index_year": 1430,
+    "rel_offices": 0
+   },
+   {
+    "id": 574136,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 508022,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 502401,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "王道": {
+  "span": [
+   1533,
+   1547
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   310368,
+   224132,
+   126743,
+   126742,
+   202119
+  ],
+  "cand_detail": [
+   {
+    "id": 310368,
+    "birth": null,
+    "death": null,
+    "index_year": 1523,
+    "rel_offices": 0
+   },
+   {
+    "id": 224132,
+    "birth": null,
+    "death": null,
+    "index_year": 1563,
+    "rel_offices": 0
+   },
+   {
+    "id": 126743,
+    "birth": 1487,
+    "death": 1547,
+    "index_year": 1487,
+    "rel_offices": 0
+   },
+   {
+    "id": 126742,
+    "birth": 1476,
+    "death": 1529,
+    "index_year": 1476,
+    "rel_offices": 0
+   },
+   {
+    "id": 202119,
+    "birth": 1484,
+    "death": null,
+    "index_year": 1484,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "盛以弘": {
+  "span": [
+   1616,
+   1618
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   131346,
+   367223
+  ],
+  "cand_detail": [
+   {
+    "id": 131346,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 367223,
+    "birth": null,
+    "death": null,
+    "index_year": 1568,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "胡儼": {
+  "span": [
+   1402,
+   1424
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   328575,
+   243204,
+   34479,
+   464878,
+   384852
+  ],
+  "cand_detail": [
+   {
+    "id": 328575,
+    "birth": null,
+    "death": null,
+    "index_year": 1434,
+    "rel_offices": 0
+   },
+   {
+    "id": 243204,
+    "birth": null,
+    "death": null,
+    "index_year": 1431,
+    "rel_offices": 0
+   },
+   {
+    "id": 34479,
+    "birth": 1360,
+    "death": 1443,
+    "index_year": 1360,
+    "rel_offices": 1
+   },
+   {
+    "id": 464878,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 384852,
+    "birth": null,
+    "death": null,
+    "index_year": 1169,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "蔡國用": {
+  "span": [
+   1638,
+   1640
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   132593,
+   363385
+  ],
+  "cand_detail": [
+   {
+    "id": 132593,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 363385,
+    "birth": null,
+    "death": null,
+    "index_year": 1580,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "費閭": {
+  "span": [
+   1487,
+   1491
+  ],
+  "reason": "CBDB 无此名（含别名表）"
+ },
+ "陳寰": {
+  "span": [
+   1533,
+   1533
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   298892,
+   131001
+  ],
+  "cand_detail": [
+   {
+    "id": 298892,
+    "birth": null,
+    "death": null,
+    "index_year": 1508,
+    "rel_offices": 0
+   },
+   {
+    "id": 131001,
+    "birth": null,
+    "death": null,
+    "index_year": 1481,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "陳山": {
+  "span": [
+   1427,
+   1434
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   509346,
+   474549,
+   130792,
+   330033,
+   324621
+  ],
+  "cand_detail": [
+   {
+    "id": 509346,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 474549,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 130792,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 330033,
+    "birth": null,
+    "death": null,
+    "index_year": 1531,
+    "rel_offices": 0
+   },
+   {
+    "id": 324621,
+    "birth": null,
+    "death": null,
+    "index_year": 1532,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "陳演": {
+  "span": [
+   1637,
+   1644
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   252598,
+   130962
+  ],
+  "cand_detail": [
+   {
+    "id": 252598,
+    "birth": null,
+    "death": null,
+    "index_year": 1448,
+    "rel_offices": 0
+   },
+   {
+    "id": 130962,
+    "birth": null,
+    "death": null,
+    "index_year": 1592,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "顧錫疇": {
+  "span": [
+   1630,
+   1630
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   123921,
+   69918
+  ],
+  "cand_detail": [
+   {
+    "id": 123921,
+    "birth": null,
+    "death": null,
+    "index_year": 1589,
+    "rel_offices": 0
+   },
+   {
+    "id": 69918,
+    "birth": null,
+    "death": null,
+    "index_year": 1596,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "馬之騏": {
+  "span": [
+   1626,
+   1627
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   61819,
+   368883
+  ],
+  "cand_detail": [
+   {
+    "id": 61819,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 368883,
+    "birth": null,
+    "death": null,
+    "index_year": 1580,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "魏照乘": {
+  "span": [
+   1639,
+   1642
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   133487,
+   351446
+  ],
+  "cand_detail": [
+   {
+    "id": 133487,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 351446,
+    "birth": null,
+    "death": null,
+    "index_year": 1586,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "黃立極": {
+  "span": [
+   1623,
+   1627
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   501965,
+   131368,
+   362413
+  ],
+  "cand_detail": [
+   {
+    "id": 501965,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 131368,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 362413,
+    "birth": null,
+    "death": null,
+    "index_year": 1574,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "黄立極": {
+  "span": [
+   1626,
+   1626
+  ],
+  "reason": "多解未决（CBDB 内同名空壳/重录）",
+  "cands": [
+   501965,
+   131368,
+   362413
+  ],
+  "cand_detail": [
+   {
+    "id": 501965,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 131368,
+    "birth": null,
+    "death": null,
+    "index_year": null,
+    "rel_offices": 0
+   },
+   {
+    "id": 362413,
+    "birth": null,
+    "death": null,
+    "index_year": 1574,
+    "rel_offices": 0
+   }
+  ]
+ },
+ "龔教": {
+  "span": [
+   1390,
+   1391
+  ],
+  "reason": "CBDB 无此名（含别名表）"
+ }
+}
