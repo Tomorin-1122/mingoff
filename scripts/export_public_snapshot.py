@@ -7,7 +7,7 @@
 
 只复制白名单文件；随后做文本脱敏：
   * 「老板」→「项目负责人」
-  * 「MingOff contributors」→「MingOff contributors」
+  * 真实姓名 → 「MingOff contributors」
   * C:/Users/<user> 之类本机绝对路径 → <repo>/<user>
 排除：mrzj/、docs/evidence/、sinica_*、neige_*、web/demo.html、
       .workbuddy/、scripts/、_scratch/、site/out、node_modules。
@@ -93,7 +93,7 @@ def read_text_any(path: Path) -> str | None:
 def sanitize_text(text: str) -> str:
     for old, new in (
         ("老板", "项目负责人"),
-        ("MingOff contributors", "MingOff contributors"),
+        ("\u9648\u6587\u8f69", "MingOff contributors"),
         ("C:/Users/31698", "<repo>"),
         ("C:\\Users\\31698", "<repo>"),
         ("C:/Users/", "<user>/"),
