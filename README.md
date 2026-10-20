@@ -10,9 +10,9 @@
 
 ## 预览
 
-![正式站：全朝时间轴（内阁 + 六部 + 都察院）](docs/screenshots/site-overview.png)
+![正式站：全朝时间轴（内阁 + 六部 + 都察院）](assets/screenshots/site-overview.png)
 
-![洪武十三年断档：御史臺 → 罷廢 → 都察院，分期名带](docs/screenshots/site-censor-1380.png)
+![洪武十三年断档：御史臺 → 罷廢 → 都察院，分期名带](assets/screenshots/site-censor-1380.png)
 
 ---
 

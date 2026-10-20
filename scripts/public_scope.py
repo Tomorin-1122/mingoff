@@ -50,7 +50,14 @@ REBUILD_INPUTS = (
 # 允许例外（即使命中目录规则也保留）：公开仓必需
 ALLOW = (
     "site/src/data/",
-    "README.public.md",
+    "assets/",          # README 预览图（必须入仓，否则 GitHub README 图片裂开）
+    # GitHub Pages 站点产物：docs/ 既是 Pages 发布目录，也是 Jekyll 页面来源。
+    # 只放行构建产物，过程文档/报告/证据图仍不入仓。
+    "docs/index.html",
+    "docs/index.txt",
+    "docs/404.html",
+    "docs/.nojekyll",
+    "docs/_next/",
 )
 
 
