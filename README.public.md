@@ -9,9 +9,9 @@
 [![data](https://img.shields.io/badge/data-CC%20BY--NC--SA%204.0-lightgrey.svg)](DATA_LICENSE.md)
 [![release](https://img.shields.io/github/v/release/Tomorin-1122/mingoff)](https://github.com/Tomorin-1122/mingoff/releases)
 
-![全朝时间轴：内阁 + 六部 + 都察院](docs/screenshots/site-overview.png)
+![全朝时间轴：内阁 + 六部 + 都察院](assets/screenshots/site-overview.png)
 
-![分期名带：御史臺 → 罷廢 → 都察院](docs/screenshots/site-censor-1380.png)
+![分期名带：御史臺 → 罷廢 → 都察院](assets/screenshots/site-censor-1380.png)
 
 ---
 
@@ -163,11 +163,11 @@ pnpm build
 ```
 mingoff/
 ├─ src/mingoff/          数据管线、schema、校勘与导出
-├─ src/mingoff/data/     结构化数据资产（JSON）
-├─ tests/                数据质量与管线测试
-├─ site/                 Next.js 静态站点
-├─ docs/                 数据规范、设计决策、管线说明
-└─ web/                  demo 模板（单文件版）
+├─ src/mingoff/data/     最终结构化数据（4 个 JSON）
+├─ tests/                核心数据与几何测试
+├─ site/                 Next.js 静态站点（含站点用 JSON）
+├─ assets/screenshots/   README 截图
+└─ .github/workflows/    CI（测试 + 站点构建）
 ```
 
 ## 八、已知限制
