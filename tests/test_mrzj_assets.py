@@ -13,6 +13,11 @@ import pytest
 
 DATA = Path(__file__).resolve().parents[1] / "src" / "mingoff" / "data" / "mrzj"
 
+# 公开仓（代码+精简数据）不发布该书 OCR 资产；私有仓保留时照常跑
+pytestmark = pytest.mark.skipif(
+    not DATA.is_dir(), reason="mrzj 资产不随公开仓发布（私有数据仓保留）"
+)
+
 
 def load(name: str):
     path = DATA / name

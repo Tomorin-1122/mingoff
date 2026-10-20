@@ -239,6 +239,8 @@ def export_official(out_path: Path | None = None) -> dict:
             "dataset": "mingoff-cabinet",
             "version": 3,
             "canvas_from": 1368,
+            "license": "CC BY-NC-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
             "source": "张德信《明代职官年表》册1·內閣大臣年表（MinerU OCR；"
                       "缺块以原书 PDF 页补录）；人物对齐 CBDB（cbdb_20261010）；"
                       "《明實錄》命中据中研院检索",

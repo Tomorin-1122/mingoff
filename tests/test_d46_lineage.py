@@ -97,3 +97,15 @@ def test_buyuan_profiles():
     site = ROOT / "site" / "src" / "data" / "person_profiles_buyuan.json"
     if site.is_file():
         assert json.loads(site.read_text(encoding="utf-8"))["meta"]["persons"] == len(persons)
+
+
+def test_license_meta_and_files(doc):
+    """D11：数据文件自带许可标识；仓库根有许可/署名/引用文件。"""
+    assert doc["meta"]["license"] == "CC BY-NC-SA 4.0"
+    assert "creativecommons.org/licenses/by-nc-sa/4.0" in doc["meta"]["license_url"]
+    profiles = json.loads(
+        (DATA / "person_profiles_buyuan.json").read_text(encoding="utf-8")
+    )
+    assert profiles["meta"]["license"] == "CC BY-NC-SA 4.0"
+    for name in ("LICENSE", "NOTICE", "DATA_LICENSE.md", "THIRD_PARTY.md", "CITATION.cff"):
+        assert (ROOT / name).is_file(), f"缺少 {name}"

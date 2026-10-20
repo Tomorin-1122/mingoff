@@ -183,6 +183,8 @@ def main():
     cabinet_doc = {
         "meta": {
             "dataset": "cabinet",
+            "license": "CC BY-NC-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
             "generated_at": generated,
             "persons": len(cabinet_persons),
             "office_limit": OFFICE_LIMIT,
@@ -211,6 +213,8 @@ def main():
     buyuan_doc = {
         "meta": {
             "dataset": "buyuan",
+            "license": "CC BY-NC-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
             "generated_at": generated,
             "persons": len(buyuan_persons),
             "with_cbdb_id": with_id,

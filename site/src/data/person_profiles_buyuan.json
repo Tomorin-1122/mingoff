@@ -1,7 +1,9 @@
 {
  "meta": {
   "dataset": "buyuan",
-  "generated_at": "2026-10-20T00:42:59+00:00",
+  "license": "CC BY-NC-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "generated_at": "2026-10-20T00:57:29+00:00",
   "persons": 789,
   "with_cbdb_id": 546,
   "office_limit": 30,

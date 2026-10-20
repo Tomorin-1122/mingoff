@@ -322,6 +322,8 @@ def export_buyuan(out_path: Path | None = None) -> dict:
             "dataset": "mingoff-buyuan",
             "version": 3,
             "canvas_from": 1368,
+            "license": "CC BY-NC-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
             "source": "张德信《明代职官年表》册1·部院大臣年表（京師）（MinerU OCR）；"
                       "v2 修复：人名归一/伪名清理/注文隔离/衙署分期/CBDB 重挂；"
                       "v3 D-01：同名拆分 person_id（李本/李敏/王佐/顧佐/吳山/胡松），"

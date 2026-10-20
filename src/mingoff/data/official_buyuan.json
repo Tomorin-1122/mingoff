@@ -3,9 +3,11 @@
   "dataset": "mingoff-buyuan",
   "version": 3,
   "canvas_from": 1368,
+  "license": "CC BY-NC-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   "source": "张德信《明代职官年表》册1·部院大臣年表（京師）（MinerU OCR）；v2 修复：人名归一/伪名清理/注文隔离/衙署分期/CBDB 重挂；v3 D-01：同名拆分 person_id（李本/李敏/王佐/顧佐/吳山/胡松），張鳳 1629 改張鳳翔；人名校验：CBDB 20261010 + 中研院明實錄 + 弇山堂别集/國榷（识典古籍）；《明實錄》命中据中研院检索",
   "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
-  "generated_at": "2026-10-19T11:46:07+00:00",
+  "generated_at": "2026-10-20T00:57:27+00:00",
   "stats": {
    "tenures": 1196,
    "persons": 789,

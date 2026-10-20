@@ -106,7 +106,7 @@
   "docs/evidence/book_p679_bujuan1644.png"
  ],
  "tenure_assembly": {
-  "date": "2026-10-19T11:46:07+00:00",
+  "date": "2026-10-20T00:57:28+00:00",
   "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
   "output": "official_buyuan.json",
   "stats": {

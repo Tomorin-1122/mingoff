@@ -3,9 +3,17 @@
 专注明代（1368–1644）276 年职官的结构化数据库：每条任职记录**可追溯史料来源**，
 并显式标注异文与置信度。
 
-> 需求基线见父目录的 `190508af-…_明代职官数据库需求文档(PRD).md`；
-> 竞品调研见 `afa0807f-…_明实录结构化项目调研.md`。
-> 本项目是该 PRD 阶段①（MVP）的实现。
+> 需求基线（PRD）与竞品调研为本地内部文档，不随本仓发布；
+> 本仓只保留实现、数据管线、设计决策与可公开的结构化数据。
+> 仓库发布/公开范围见 [`docs/仓库发布方案.md`](docs/仓库发布方案.md)。
+
+---
+
+## 预览
+
+![正式站：全朝时间轴（内阁 + 六部 + 都察院）](docs/screenshots/site-overview.png)
+
+![洪武十三年断档：御史臺 → 罷廢 → 都察院，分期名带](docs/screenshots/site-censor-1380.png)
 
 ---
 
@@ -37,7 +45,7 @@
 | **外部校勘层** | 《明人傳記資料索引》全书 OCR + 人名目录 + 人物库（6,487 人） | ✅ 2026-10-18（D38，尚未对接 MingOff） |
 
 已完成：6 张表 schema、数据存取层、崇祯朝兵部尚书 14 任种子数据、CLI、
-**196 个测试**、单文件可视化 demo（`web/demo.html`，双击即开）、
+**197 个测试**、单文件可视化 demo（`web/demo.template.html` 生成；成品不入公开仓）、
 正式站 `site/`（Next.js 静态导出，**184 段 / 163 人全朝内阁**，画布 1368–1644.3），
 并已接入部院六部+都察院（**1,196 段 / 789 实体**，D46）。
 
@@ -97,10 +105,10 @@ python -m mingoff.cli snapshot 1629      # 某年在任快照
 python -m mingoff.cli person 楊嗣昌       # 某人的仕途流转（含来源）
 python -m mingoff.cli todo               # 待校勘队列
 python -m mingoff.cli stats              # 库内计数
-python -m mingoff.backfill_months        # 实录月份回填（需先抓 sinica_months.json）
-python -m mingoff.export_demo            # 重建 web/demo.html
+python -m mingoff.backfill_months        # 实录月份回填（需 sinica_months.json，私有数据仓）
+python -m mingoff.export_demo            # 重建 web/demo.html（产物不入公开仓）
 python -m mingoff.official               # 重建正式站数据（v2：含离任/实录）
-python -m pytest tests                   # 196 个测试
+python -m pytest tests                   # 197 个测试
 ```
 
 ---
@@ -206,16 +214,16 @@ mingoff/
 │  ├─ build_person_profiles.py  内阁+部院 CBDB→人物小传（D46 扩展，按 person_id）
 │  └─ cli.py              命令行入口
 ├─ web/demo.template.html ★ demo 模板 —— 正式站的 **UI 唯一真源**（D24）
-├─ web/demo.html          产出的单文件 demo（双击即开，仅评审用，D21）
+├─ web/demo.html          产出的单文件 demo（生成物，不入公开仓，D21）
 ├─ src/mingoff/data/vol1_entries.json     年表逐年名单（人-年，重解析，数据资产）
 ├─ src/mingoff/data/vol1_person_cbdb.json 人物→CBDB 映射（v3 修错版）
 ├─ src/mingoff/data/person_profiles.json  CBDB 人物小传（内阁 163 人，抽屉展示）
 ├─ src/mingoff/data/person_profiles_buyuan.json  ★ 部院小传（789 实体 / 546 有 id；D46）
 ├─ src/mingoff/data/official_cabinet.json 正式版导出（tenures + shilu）
 ├─ src/mingoff/data/official_buyuan.json  ★ 部院导出（12 衙 / 1,196 段；D46 接站）
-├─ src/mingoff/data/mrzj/   ★ 《明人傳記資料索引》资产（D38）：目录 9,651、人物库 6,487、逐页 OCR
-├─ scripts/mrzj/            ★ 该书从切片→OCR→解析→人物库的 18 个脚本（原在 _scratch）
-├─ _stage_mrzj.py          把 _scratch 里的该书产出归档进仓（可复跑）
+├─ src/mingoff/data/mrzj/   ★ 《明人傳記資料索引》资产（私有数据仓；公开仓不含）
+├─ scripts/mrzj/            ★ 该书从切片→OCR→解析→人物库的 18 个脚本（私有）
+├─ _stage_mrzj.py          把 _scratch 里的该书产出归档进仓（私有，可复跑）
 ├─ docs/正式数据管线报告.md  正式版产出规模、源复核与 v3 重建报告
 ├─ site/                  ★ 正式网站（Next.js 静态导出，D22/D24；D46 接入部院；见 site/README.md）
 │  ├─ src/lib/rows.ts     展示层行/泳道配置（六部折叠、御史/倉場分期名带）
@@ -226,8 +234,15 @@ mingoff/
 
 ---
 
-## 八、合规
+## 八、合规与许可
 
+- **代码**：Apache-2.0（见 [`LICENSE`](LICENSE)、[`NOTICE`](NOTICE)）；
+- **本项目整理的结构化数据 / CBDB 衍生数据**：**CC BY-NC-SA 4.0**
+  （署名 + 非商业 + 相同方式共享，见 [`DATA_LICENSE.md`](DATA_LICENSE.md)）；
+- **第三方来源与边界**：张德信《明代职官年表》、CBDB、中研院《明實錄》检索、
+  识典古籍、《明人傳記資料索引》——见 [`THIRD_PARTY.md`](THIRD_PARTY.md)；
+  原书扫描页、逐页 OCR、CBDB 快照不随公开仓发布；
 - **主数据走 CBDB 官方快照**（官方支持研究用途）；
 - 识典 / 中研院仅作**在线出处与校勘链接**，不批量搬全文入自建库；
-- 网站发布需做来源标注与许可声明；数据许可与代码许可分开声明。
+- 网站发布做来源标注与许可声明；数据许可与代码许可分开声明；
+- 引用格式见 [`CITATION.cff`](CITATION.cff)。
