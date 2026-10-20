@@ -7,9 +7,7 @@ abstract: >-
   逐条保留原书注文、来源与置信度；内阁 184 段、部院六部+都察院 1,196 段；
   人物对齐 CBDB；《明實錄》命中按需检索、不批量入库。
 authors:
-  - family-names: 陈
-    given-names: 文轩
-    alias: Tomorin-1122
+  - name: "MingOff contributors"
 version: 0.1.0
 date-released: "2026-10-20"
 license: Apache-2.0
