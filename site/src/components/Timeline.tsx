@@ -3,6 +3,7 @@
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   BUYUAN_META,
+  BUYUAN_PROFILES,
   CANVAS_FROM,
   CANVAS_SLOTS,
   CN_MONTHS,
@@ -24,6 +25,7 @@ import {
   ganzhi,
   slotOf,
   span,
+  type PersonProfile,
   type Reign,
   type Tenure,
 } from "@/lib/data";
@@ -400,9 +402,8 @@ const OfficeRow = memo(function OfficeRow({
 
 /* ================= 人物小传（CBDB） ================= */
 
-function ProfileBlock({ person }: { person: string }) {
-  const p = PROFILES[person];
-  if (!p) return null;
+function ProfileBlock({ person, profile }: { person: string; profile: PersonProfile }) {
+  const p = profile;
   const hasBio = !!(
     p.birth || p.death || p.native_place || p.alt_names.length || p.entry.length
   );
@@ -586,6 +587,10 @@ function Drawer({
     const row = ROW_BY_OFFICE.get(t.office);
     const period = row ? periodAt(row, t.start_year, t.start_month) : null;
     const blk = SHILU[t.person] ?? (t.person_label ? SHILU[t.person_label] : undefined);
+    // 部院按 person_id 取（顧佐#1/#2 各自独立）；内阁按姓名取
+    const profile = t.person_id
+      ? BUYUAN_PROFILES[t.person_id]
+      : PROFILES[t.person];
     const isCabinet = row?.kind === "cabinet";
     const sourceText = isCabinet
       ? "张德信《明代职官年表》册1·內閣大臣年表（MinerU OCR 提取）；" +
@@ -708,8 +713,8 @@ function Drawer({
             </p>
           )}
 
-          {PROFILES[t.person] ? (
-            <ProfileBlock person={t.person} />
+          {profile ? (
+            <ProfileBlock person={t.person} profile={profile} />
           ) : (
             <ProfileFallback tenure={t} />
           )}
@@ -1007,11 +1012,7 @@ export default function Timeline() {
         <div className="legend">
           <span className="item">
             <i className="swatch s-shishou" />
-            内阁实授
-          </span>
-          <span className="item">
-            <i className="swatch s-bu" />
-            部院任职
+            任职（实授）
           </span>
           <span className="item">
             <i className="swatch s-fuzzy" />

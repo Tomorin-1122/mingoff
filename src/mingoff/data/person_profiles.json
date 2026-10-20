@@ -1,8 +1,8 @@
 {
  "meta": {
-  "source": "CBDB cbdb_20261010.sqlite3（BIOG_MAIN/BIOG_ADDR_DATA/ALTNAME_DATA/ENTRY_DATA/POSTED_TO_OFFICE_DATA）",
-  "generated_at": "2026-10-17T08:57:27+00:00",
-  "persons": 167,
+  "dataset": "cabinet",
+  "generated_at": "2026-10-20T00:42:59+00:00",
+  "persons": 163,
   "office_limit": 30,
   "cbdb_person_url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id={id}",
   "sinica_url": "https://dh.rchss.sinica.edu.tw/MingChaoffTitle/",
@@ -1885,23 +1885,6 @@
    "native_place": "陽江",
    "alt_names": [],
    "entry": [],
-   "offices": [],
-   "office_total": 0
-  },
-  "劉翔": {
-   "cbdb_id": 300407,
-   "cbdb_name": "劉翔",
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": "南康",
-   "alt_names": [],
-   "entry": [
-    {
-     "year": null,
-     "desc": "貢生: 歲貢、常貢、挨貢"
-    }
-   ],
    "offices": [],
    "office_total": 0
   },
@@ -5991,24 +5974,6 @@
     }
    ],
    "office_total": 15
-  },
-  "李國楷": {
-   "cbdb_id": 507420,
-   "cbdb_name": "李國楷",
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [
-    {
-     "office": "巡檢",
-     "from": null,
-     "to": null
-    }
-   ],
-   "office_total": 1
   },
   "李國𣚴": {
    "cbdb_id": 517572,
@@ -10581,18 +10546,6 @@
    "offices": [],
    "office_total": 0
   },
-  "蔣晁": {
-   "cbdb_id": 448647,
-   "cbdb_name": "蔣晁",
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
-  },
   "蕭鎡": {
    "cbdb_id": 67336,
    "cbdb_name": "蕭鎡",
@@ -12888,18 +12841,6 @@
     }
    ],
    "office_total": 3
-  },
-  "錢溥": {
-   "cbdb_id": 260821,
-   "cbdb_name": "錢溥",
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": "南京留守後衛",
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
   },
   "錢象坤": {
    "cbdb_id": 133125,

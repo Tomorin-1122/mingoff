@@ -71,3 +71,29 @@ def test_site_buyuan_copy_in_sync(doc):
     site = json.loads(SITE.read_text(encoding="utf-8"))
     assert site["meta"]["stats"]["tenures"] == doc["meta"]["stats"]["tenures"]
     assert site["meta"]["stats"]["persons"] == doc["meta"]["stats"]["persons"]
+
+
+def test_buyuan_profiles():
+    """D46：部院小传按 person_id 接入；同名拆分各自独立，生卒不张冠李戴。"""
+    path = DATA / "person_profiles_buyuan.json"
+    assert path.is_file(), "部院人物小传未生成（python -m mingoff.build_person_profiles）"
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    persons = doc["persons"]
+    assert len(persons) == 789
+    assert doc["meta"]["with_cbdb_id"] == 546
+
+    hu = persons["胡濙"]
+    assert hu["cbdb_id"] == 222777
+    assert hu["native_place"] == "寧國府"
+    assert hu["death"] == 1522
+
+    # 顧佐#1（宣德左都御史，1429–1436）曾误抄同名者 1443 生年；span 校验后应为 None
+    gu1 = persons["顧佐#1"]
+    assert gu1["cbdb_id"] == 66992
+    assert gu1["birth"] is None and gu1["death"] == 1446
+    gu2 = persons["顧佐#2"]
+    assert gu2["birth"] == 1443 and gu2["death"] == 1516
+
+    site = ROOT / "site" / "src" / "data" / "person_profiles_buyuan.json"
+    if site.is_file():
+        assert json.loads(site.read_text(encoding="utf-8"))["meta"]["persons"] == len(persons)

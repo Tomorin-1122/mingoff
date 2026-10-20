@@ -37,7 +37,7 @@
 | **外部校勘层** | 《明人傳記資料索引》全书 OCR + 人名目录 + 人物库（6,487 人） | ✅ 2026-10-18（D38，尚未对接 MingOff） |
 
 已完成：6 张表 schema、数据存取层、崇祯朝兵部尚书 14 任种子数据、CLI、
-**195 个测试**、单文件可视化 demo（`web/demo.html`，双击即开）、
+**196 个测试**、单文件可视化 demo（`web/demo.html`，双击即开）、
 正式站 `site/`（Next.js 静态导出，**184 段 / 163 人全朝内阁**，画布 1368–1644.3），
 并已接入部院六部+都察院（**1,196 段 / 789 实体**，D46）。
 
@@ -100,7 +100,7 @@ python -m mingoff.cli stats              # 库内计数
 python -m mingoff.backfill_months        # 实录月份回填（需先抓 sinica_months.json）
 python -m mingoff.export_demo            # 重建 web/demo.html
 python -m mingoff.official               # 重建正式站数据（v2：含离任/实录）
-python -m pytest tests                   # 195 个测试
+python -m pytest tests                   # 196 个测试
 ```
 
 ---
@@ -203,13 +203,14 @@ mingoff/
 │  ├─ merge_demo_data.py  研究数据 + ground truth 合并
 │  ├─ export_demo.py      导出内嵌 JSON 并产出单文件 demo
 │  ├─ official.py         ★ 正式数据管线：重解析条目→任职段（D21/D25；v3）
-│  ├─ build_person_profiles.py  CBDB→人物小传（生卒/籍贯/历任/外链）
+│  ├─ build_person_profiles.py  内阁+部院 CBDB→人物小传（D46 扩展，按 person_id）
 │  └─ cli.py              命令行入口
 ├─ web/demo.template.html ★ demo 模板 —— 正式站的 **UI 唯一真源**（D24）
 ├─ web/demo.html          产出的单文件 demo（双击即开，仅评审用，D21）
 ├─ src/mingoff/data/vol1_entries.json     年表逐年名单（人-年，重解析，数据资产）
 ├─ src/mingoff/data/vol1_person_cbdb.json 人物→CBDB 映射（v3 修错版）
-├─ src/mingoff/data/person_profiles.json  CBDB 人物小传（抽屉展示）
+├─ src/mingoff/data/person_profiles.json  CBDB 人物小传（内阁 163 人，抽屉展示）
+├─ src/mingoff/data/person_profiles_buyuan.json  ★ 部院小传（789 实体 / 546 有 id；D46）
 ├─ src/mingoff/data/official_cabinet.json 正式版导出（tenures + shilu）
 ├─ src/mingoff/data/official_buyuan.json  ★ 部院导出（12 衙 / 1,196 段；D46 接站）
 ├─ src/mingoff/data/mrzj/   ★ 《明人傳記資料索引》资产（D38）：目录 9,651、人物库 6,487、逐页 OCR
@@ -219,6 +220,7 @@ mingoff/
 ├─ site/                  ★ 正式网站（Next.js 静态导出，D22/D24；D46 接入部院；见 site/README.md）
 │  ├─ src/lib/rows.ts     展示层行/泳道配置（六部折叠、御史/倉場分期名带）
 │  └─ src/data/buyuan.json 部院数据副本（1.2MB）
+│     src/data/person_profiles_buyuan.json 部院小传副本（0.9MB）
 └─ data/mingoff.sqlite    运行时数据库（不入库）
 ```
 

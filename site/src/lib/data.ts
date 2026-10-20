@@ -1,6 +1,7 @@
 import cabinet from "@/data/cabinet.json";
 import buyuan from "@/data/buyuan.json";
 import profiles from "@/data/person_profiles.json";
+import buyuanProfiles from "@/data/person_profiles_buyuan.json";
 
 /* ============================================================
  * 正式数据（D23 v3 + D46 部院接入）
@@ -175,6 +176,15 @@ const profileDoc = profiles as unknown as {
 
 export const PROFILES = profileDoc.persons;
 export const PROFILE_META = profileDoc.meta;
+
+/** 部院人物小传：按 person_id 键（顧佐#1 / 顧佐#2 各自独立，D46） */
+const buyuanProfileDoc = buyuanProfiles as unknown as {
+  meta: { persons: number; with_cbdb_id: number };
+  persons: Record<string, PersonProfile>;
+};
+
+export const BUYUAN_PROFILES = buyuanProfileDoc.persons;
+export const BUYUAN_PROFILE_META = buyuanProfileDoc.meta;
 
 /** 年份区间显示：缺一端用 ?，两端皆缺用「未載」 */
 export function fmtYearRange(a: number | null, b: number | null): string {

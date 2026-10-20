@@ -326,13 +326,6 @@ main {
   border-color: var(--zhu);
 }
 
-/* D46 部院：普通任职条（浅色，可区分衙署） */
-.swatch.s-bu {
-  background: #ece7dc;
-  border-color: #b8ae9b;
-  border-left: 3px solid #8a7a5c;
-}
-
 /* D46：行序推断的灰显段 */
 .swatch.s-roworder {
   background: rgba(138, 122, 92, 0.18);
@@ -575,12 +568,11 @@ main {
   white-space: nowrap;
 }
 
-/* D46：部院任职条（浅色底，衙署以左边框色区分） */
+/* D46：部院任职条 —— 与内阁实授统一用同一深色块（老板 2026-10-20 拍板） */
 .bar.bar-bu {
-  background: #e7e0d1;
-  color: var(--mo);
-  border-color: #a89c86;
-  border-left-width: 3px;
+  background: var(--dian);
+  color: var(--xuan);
+  border-color: var(--dian);
 }
 
 .bar.bar-bu:hover {
@@ -589,35 +581,10 @@ main {
   border-color: var(--mo);
 }
 
-/* 浅色条在非当前月降透明后容易看不见：部院条单独放宽 */
-.bar.bar-bu.is-idle {
-  opacity: 0.55;
-  filter: none;
-}
-
-.bar.bar-bu.is-idle:hover {
-  opacity: 0.85;
-}
-
-/* 衙署色（只用于左边框；颜色取低饱和，避免 1,196 条时太花） */
-.bar.office-吏部 { border-left-color: #7a6a4f; }
-.bar.office-戶部 { border-left-color: #8a6f4a; }
-.bar.office-禮部 { border-left-color: #8a5f55; }
-.bar.office-兵部 { border-left-color: #5f6f63; }
-.bar.office-刑部 { border-left-color: #6a5f73; }
-.bar.office-工部 { border-left-color: #5f6a73; }
-.bar.office-御史臺 { border-left-color: #4f5d6b; }
-.bar.office-都察院 { border-left-color: #3f4d5b; }
-.bar.office-御史府 { border-left-color: #6b7b8a; }
-.bar.office-總督京儲 { border-left-color: #96703f; }
-.bar.office-總督倉場 { border-left-color: #a67c46; }
-.bar.office-總倉場 { border-left-color: #b08a55; }
-
 /* D46 / D-11：行序推断的灰显段（虚线 + 降饱和；不隐藏，引用前可回原书核） */
 .bar.st-row-order {
   opacity: 0.75;
   border-style: dashed;
-  background: rgba(138, 122, 92, 0.14);
 }
 
 .bar.st-mixed {

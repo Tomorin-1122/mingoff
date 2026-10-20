@@ -11,10 +11,13 @@ Next.js 15 静态导出站。按老板验收的 `web/demo.template.html` 逐项�
 # 1. 数据更新（仓库根 mingoff/）
 $env:PYTHONPATH="src"; python -m mingoff.official
 $env:PYTHONPATH="src"; python -m mingoff.official_buyuan
+$env:PYTHONPATH="src"; python -m mingoff.build_person_profiles
 
 # 2. 同步到站点
 Copy-Item src/mingoff/data/official_cabinet.json site/src/data/cabinet.json
 Copy-Item src/mingoff/data/official_buyuan.json site/src/data/buyuan.json
+Copy-Item src/mingoff/data/person_profiles.json site/src/data/person_profiles.json
+Copy-Item src/mingoff/data/person_profiles_buyuan.json site/src/data/person_profiles_buyuan.json
 
 # 3. 构建（site/）
 pnpm install
@@ -50,7 +53,9 @@ pnpm build        # 产物在 out/，静态文件可直接部署
   `gap_years`（缺行合并）、`start_book_page/end_book_page`；
 - `rows.ts`：展示层行/泳道配置——六部折叠、御史系列合并、倉場归戶部子行、分期名带；
 - `shilu{}`：内阁 155 人 + 部院 130 人命中合并；
-- `person_profiles.json`：现仅内阁 167 人；部院人物抽屉用 CBDB 链接兜底（待扩展）。
+- `person_profiles.json`：内阁 163 人（按姓名）；`person_profiles_buyuan.json`：
+  部院 789 实体（按 `person_id`，546 有 CBDB id）——同名拆分各自独立，
+  抽屉按 `person_id` 取；无 CBDB 记录者走链接兜底。
 
 ### 人物抽屉的外链与信息
 
