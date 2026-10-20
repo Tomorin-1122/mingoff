@@ -1,0 +1,65 @@
+# ===== 运行时数据 =====
+# 数据库可由 `mingoff init && mingoff seed` 重放，不入库。
+# ⚠️ 一旦开始手工录入校勘成果（不可重放），要重新评估这一条 —— 见 docs/DECISIONS.md D3。
+# 用 data/* 而非 data/：目录本身不排除，下面的否定例外才生效
+data/*
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.db
+
+# 例外（D21/D23）：正式管线的版本化导出物是数据资产，必须入库
+!src/mingoff/data/official_cabinet.json
+!src/mingoff/data/official_buyuan.json
+!site/src/data/cabinet.json
+!site/src/data/buyuan.json
+
+# D45/D46：打标中间产物（约 34MB，未入仓；由 scripts/pilot/tag_all.py 可重跑）
+src/mingoff/data/shilu_tags.json
+src/mingoff/data/shilu_tags.ckpt.jsonl
+
+# ===== 本地工作目录（不入仓）=====
+_scratch/
+_c.txt
+
+# CBDB 快照等外部数据导入物（体量大、有独立许可，不入库）
+imports/
+*.csv
+*.xlsx
+*.xls
+*.accdb
+*.mdb
+
+# ===== 设计决策与需求文档（本机资料，含未公开研究内容）=====
+# 父目录放过来的 PRD / 调研文档，按需取消注释
+# ../190508af-*.md
+# ../afa0807f-*.md
+
+# ===== 测试临时产物 =====
+# DSH 沙箱会拒绝删除工作区内的这些目录，可能长期残留；都是空目录或缓存。
+.test-tmp/
+.pytest_cache/
+.pytest-tmp/
+pytest-cache-files-*/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ===== 编辑器 / 系统 =====
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

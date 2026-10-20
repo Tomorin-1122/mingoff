@@ -1,0 +1,48 @@
+# MingOff —— 明代职官数据库与可视化平台
+#
+# 本地开发安装：
+#   uv pip install --python <解释器路径> -e ".[dev]" --dry-run   # 先看会动什么
+#   uv pip install --python <解释器路径> -e ".[dev]"
+# 或：python -m pip install -e ".[dev]"
+#
+# 依赖取舍见 docs/DECISIONS.md：一期只要标准库 + pytest。
+# 数据库先用 SQLite（PRD 建议 PostgreSQL，但 MVP 单人开发用 SQLite 更快落地，
+# 且 schema 用标准 SQL 写，迁移时改连接串即可）。
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mingoff"
+version = "0.1.0"
+description = "明代职官数据库：结构化任职记录 + 史料溯源 + 校勘 + 可视化"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Proprietary" }
+authors = [{ name = "MingOff contributors" }]
+keywords = ["明代", "职官", "数字人文", "CBDB", "明实录", "校勘"]
+classifiers = [
+    "Private :: Do Not Upload",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Sociology :: History",
+]
+
+# 一期零第三方依赖：数据层用 sqlite3 内置。
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+mingoff = "mingoff.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

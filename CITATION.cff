@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use MingOff data or code, please cite this repository."
+type: software
+title: "MingOff：明代職官數據庫"
+abstract: >-
+  明代（1368–1644）职官结构化数据库与可视化站点。以张德信《明代職官年表》为底本，
+  逐条保留原书注文、来源与置信度；内阁 184 段、部院六部+都察院 1,196 段；
+  人物对齐 CBDB；《明實錄》命中按需检索、不批量入库。
+authors:
+  - name: "MingOff contributors"
+version: 0.1.0
+date-released: "2026-10-20"
+license: Apache-2.0
+license-url: "https://www.apache.org/licenses/LICENSE-2.0"
+repository-code: "https://github.com/Tomorin-1122/mingoff"
+url: "https://github.com/Tomorin-1122/mingoff"
+keywords:
+  - 明代
+  - 职官
+  - 历史数据库
+  - 数字人文
+  - CBDB
+  - 明实录
+references:
+  - type: book
+    title: "明代職官年表"
+    authors:
+      - family-names: 张
+        given-names: 德信
+    publisher:
+      name: 黄山书社
+    year: 2009
+  - type: database
+    title: "China Biographical Database (CBDB)"
+    url: "https://cbdb.fas.harvard.edu/"
+  - type: database
+    title: "中央研究院 明代職官資料庫"
+    url: "https://dh.rchss.sinica.edu.tw/MingChaoffTitle/"

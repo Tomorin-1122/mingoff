@@ -1,0 +1,25 @@
+# 统一换行：仓库内文本一律 LF（Windows 检出时由 Git 按 core.autocrlf 处理）
+* text=auto eol=lf
+
+# 二进制/图片/数据库
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.pdf binary
+*.sqlite binary
+*.sqlite3 binary
+
+# 数据 JSON 是文本，但单行很长；不做 diff 语义假设
+*.json text eol=lf
+*.jsonl text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.css text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.cff text eol=lf

@@ -1,0 +1,18 @@
+/* 基础 reset。主体样式（含字体栈、无限画布）在 timeline.css——刻意不用
+   Google Fonts 等外链字体：Demo 验收版用系统字体回退，离线/境内都能正常显示。 */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+a {
+  color: var(--dian);
+}
+
+button {
+  font-family: inherit;
+}
