@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """人物小传数据测试（site 抽屉用）。
 
 不依赖 CBDB 快照：只读已入仓的 person_profiles.json，
@@ -8,11 +8,19 @@ import json
 import sys
 from pathlib import Path
 
+import pytest
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from mingoff.official import DATA, build_cabinet_tenures  # noqa: E402
 
 PROFILES = DATA / "person_profiles.json"
+
+# 依赖重建输入 vol1_entries.json：精简/公开仓无此文件时跳过（见 MAINTAINERS.md）
+NEED_ENTRIES = pytest.mark.skipif(
+    not (DATA / "vol1_entries.json").is_file(),
+    reason="缺少重建输入 vol1_entries.json（公开仓只发导出数据）",
+)
 
 
 def load_profiles() -> dict:
@@ -20,6 +28,7 @@ def load_profiles() -> dict:
     return json.loads(PROFILES.read_text(encoding="utf-8"))
 
 
+@NEED_ENTRIES
 def test_every_tenure_person_has_profile():
     doc = load_profiles()
     persons = doc["persons"]

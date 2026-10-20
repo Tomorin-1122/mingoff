@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """纪年测试：干支、年号、虚岁、断限。
 
 干支容易算错且错了不易发现（一年错全年错），所以逐个对《明史》年表标题校验。
@@ -80,12 +80,12 @@ def test_era_label_out_of_range():
 
 
 def test_full_label_combines_era_and_ganzhi():
-    """老板要求的顶部格式：「崇祯二年己巳」。"""
+    """项目负责人要求的顶部格式：「崇祯二年己巳」。"""
     assert C.full_label(1629) == "崇禎二年己巳"
     assert C.full_label(1644) == "崇禎十七年甲申"
 
 
-# ---------------------------------------------------------------- 周岁（老板拍板：不用虚岁）
+# ---------------------------------------------------------------- 周岁（项目负责人拍板：不用虚岁）
 
 
 def test_age_zhousui_at_chongzhen_years():
@@ -134,7 +134,7 @@ def test_year_table_custom_range():
 
 
 def test_beijing_fall_is_chongzhen_17_3():
-    """老板拍板的断限：崇祯十七年三月十九日（1644-04-25）北京城陷落，不做南明。"""
+    """项目负责人拍板的断限：崇祯十七年三月十九日（1644-04-25）北京城陷落，不做南明。"""
     f = C.BEIJING_FALL
     assert f["year"] == 1644
     assert f["month"] == 3

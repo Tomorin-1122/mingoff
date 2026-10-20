@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """时间轴刻度：**每年 12 个月，等宽**。
 
-## 老板要求
+## 项目负责人要求
 
 > "还是每年都要有12个月的刻度，每年的长度要一样，这样美观一点，跑起来也比较直观"
 
@@ -81,7 +81,7 @@ class Timeline:
         return self.pct(self.slot_of(year, month))
 
 
-#: 断限：崇祯十七年三月（北京城陷落之月）。老板要求直接截断，不做标记。
+#: 断限：崇祯十七年三月（北京城陷落之月）。项目负责人要求直接截断，不做标记。
 CUTOFF_YEAR = 1644
 CUTOFF_MONTH = 3
 
@@ -106,7 +106,7 @@ def clamp_end(year: int | None, month: int | None) -> tuple[int, int | None]:
     """把超过断限的"终年"截断到 1644 年 3 月。
 
     崇祯 1644 年 3 月死，此后不应再"在任"。数据里若某条 end 是 1644，
-    截断后即为 1644-03。这是老板明确要求的："截断一下就好了后面都不要了"。
+    截断后即为 1644-03。这是项目负责人明确要求的："截断一下就好了后面都不要了"。
     """
     if year is None:
         return CUTOFF_YEAR, CUTOFF_MONTH

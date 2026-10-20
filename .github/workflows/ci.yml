@@ -15,6 +15,9 @@ jobs:
           python-version: "3.13"
       - name: Install pytest
         run: python -m pip install --upgrade pip pytest
+      - name: Public-scope check
+        # 公开仓不该含 docs/、证据图、重建输入等；规则见 scripts/public_scope.py
+        run: python scripts/check_public_scope.py --strict
       - name: Run tests
         env:
           PYTHONPATH: src

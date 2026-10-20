@@ -59,7 +59,31 @@ def load() -> dict:
             p = DATA / f"vol1_buyuan_{'entries' if k == 'entries' else 'person_cbdb'}.json"
         out[k] = json.loads(p.read_text(encoding="utf-8")) if p.is_file() else (
             [] if k in ("entries",) else {})
+    # 哪些是"重建输入"（未随精简仓发布）。缺了就必须显式跳过相关检查，不能报 0/None 冒充通过。
+    out["_have"] = {
+        "entries": bool(out["entries"]),
+        "mapping": bool(out["mapping"]),
+        "repair": bool(out["repair"]),
+        "manifest": bool(out["manifest"]),
+    }
     return out
+
+
+# 依赖重建输入 vol1_* 的门禁项：输入缺失时必须标 SKIP，否则会以 0/None 判"通过"，
+# 造成假通过（2026-10-20 在精简公开仓上实测复现）。
+ASSET_GATES = {
+    "entries": ["覆盖", "断段", "注文隔离与补注", "manifest 条目数"],
+    "mapping": ["CBDB 对齐", "未映射实体"],
+    "repair": ["注文隔离与补注"],
+    "manifest": ["manifest 条目数 / 人物实体数"],
+}
+_SKIP_REASON = {
+    "entries": "缺少重建输入 vol1_buyuan_entries_v2.json（精简仓未随附）",
+    "mapping": "缺少 vol1_buyuan_person_cbdb_v3.json（精简仓未随附）",
+    "repair": "缺少 vol1_buyuan_repair.json（精简仓未随附）",
+    "manifest": "缺少 vol1_buyuan_manifest.json（精简仓未随附）",
+}
+
 
 
 def _chunks(note: str) -> list[str]:
@@ -71,7 +95,15 @@ def audit() -> dict:
     entries, doc, mapping = d["entries"], d["doc"], d["mapping"]
     tenures = doc.get("tenures", [])
     repair = d.get("repair") or {}
+    have = d.get("_have") or {}
     r: dict = {}
+
+    def skip(reason: str) -> dict:
+        return dict(skipped=reason)
+
+    # 以导出数据 official_buyuan.json 为准的 persona 集合（缺 entries 时退化使用）
+    t_person_ids = {t["person_id"] for t in tenures}
+    t_persons = {t["person"] for t in tenures}
 
     # 1 结构
     dup_seg = [k for k, v in Counter(
@@ -93,23 +125,26 @@ def audit() -> dict:
                           gap_years=sum(len(t.get("gap_years") or []) for t in tenures))
 
     # 2 覆盖
-    years = {e["year"] for e in entries}
-    missing = [y for y in range(1368, CUT_Y + 1) if y not in years]
-    office_years = defaultdict(set)
-    for e in entries:
-        if e.get("office"):
-            office_years[e["office"]].add(e["year"])
-    office_gaps = {}
-    for o, ys in sorted(office_years.items()):
-        lo, hi = min(ys), max(ys)
-        office_gaps[o] = [y for y in range(lo, hi + 1) if y not in ys]
-    per_year = Counter(e["year"] for e in entries)
-    med = sorted(per_year.values())[len(per_year) // 2] if per_year else 0
-    lows = [(y, c) for y, c in sorted(per_year.items()) if c < med * 0.6]
-    r["coverage"] = dict(missing_years=missing, office_gaps=office_gaps,
-                         per_year_median=med, low_years=lows,
-                         page_covered=sum(1 for e in entries if e.get("book_page")),
-                         page_total=len(entries))
+    if not have.get("entries"):
+        r["coverage"] = skip("缺少重建输入 vol1_buyuan_entries_v2.json（精简仓未随附）")
+    else:
+        years = {e["year"] for e in entries}
+        missing = [y for y in range(1368, CUT_Y + 1) if y not in years]
+        office_years = defaultdict(set)
+        for e in entries:
+            if e.get("office"):
+                office_years[e["office"]].add(e["year"])
+        office_gaps = {}
+        for o, ys in sorted(office_years.items()):
+            lo, hi = min(ys), max(ys)
+            office_gaps[o] = [y for y in range(lo, hi + 1) if y not in ys]
+        per_year = Counter(e["year"] for e in entries)
+        med = sorted(per_year.values())[len(per_year) // 2] if per_year else 0
+        lows = [(y, c) for y, c in sorted(per_year.items()) if c < med * 0.6]
+        r["coverage"] = dict(missing_years=missing, office_gaps=office_gaps,
+                             per_year_median=med, low_years=lows,
+                             page_covered=sum(1 for e in entries if e.get("book_page")),
+                             page_total=len(entries))
 
     # 3 断段：剩余多段缺口是否都有解释
     by_po = defaultdict(list)
@@ -139,16 +174,29 @@ def audit() -> dict:
                               samples=unexplained[:15])
 
     # 4 人名 / 身份
-    persons = {e["person"] for e in entries}
-    person_ids = {e.get("person_id") for e in entries}
+    # 缺 entries 时退化到导出数据 official_buyuan.json 的实体，保证结构/身份检查仍可跑；
+    # 依赖 mapping 的"未映射"一项显式跳过。
+    persons = {e["person"] for e in entries} if have.get("entries") else t_persons
+    person_ids = {e.get("person_id") for e in entries} if have.get("entries") else t_person_ids
+    # 伪名判据里有一条"不在映射表且含官署字"——映射表缺失时该判据不可用，
+    # 否则会把 3 字以上的正常人名误报为伪名（精简仓实测伪名=1 即此例）。
+    _mapped = mapping if have.get("mapping") else None
     pseudo = sorted(n for n in persons
                     if PSEUDO_RE.search(n) or len(n) >= 5
-                    or (n not in mapping and any(ch in PSEUDO_CHARS for ch in n[1:])))
-    unmapped = [(pid, c) for pid, c in Counter(e.get("person_id") for e in entries).most_common()
-                if pid not in mapping]
+                    or (_mapped is not None and n not in _mapped
+                        and any(ch in PSEUDO_CHARS for ch in n[1:])))
+    if have.get("entries") and have.get("mapping"):
+        unmapped = [(pid, c) for pid, c in Counter(e.get("person_id") for e in entries).most_common()
+                    if pid not in mapping]
+    else:
+        unmapped = []
     name_entities = defaultdict(set)
-    for e in entries:
-        name_entities[e["person"]].add(e.get("person_id"))
+    if have.get("entries"):
+        for e in entries:
+            name_entities[e["person"]].add(e.get("person_id"))
+    else:
+        for t in tenures:
+            name_entities[t["person"]].add(t["person_id"])
     split_names = {n: sorted(v) for n, v in name_entities.items() if len(v) > 1}
     spans = defaultdict(list)
     for t in tenures:
@@ -167,22 +215,27 @@ def audit() -> dict:
                       bad_identity=bad_identity)
 
     # 5 注文 / 重复
-    hits = []
-    for e in entries:
-        note = e.get("note") or ""
-        if not note:
-            continue
-        for nm in persons:
-            if nm != e["person"] and len(nm) >= 2 and nm in note:
-                hits.append((e["year"], e["office"], e["person"], nm))
-                break
-    dup_entry = [(k, v) for k, v in Counter(
-        (e["year"], e.get("person_id"), e.get("office")) for e in entries).items() if v > 1]
-    r["notes"] = dict(active_note_with_other_name=len(hits), samples=hits[:15],
-                      duplicate_entries=len(dup_entry), dup_samples=dup_entry[:15],
-                      quarantined=(repair.get("counts") or {}).get("quarantined"),
-                      resolution=repair.get("note_resolution_counts", {}),
-                      book_patches=(repair.get("counts") or {}).get("book_patch"))
+    # 活跃注文巡检与 (年,人,衙) 去重都依赖条目原文；缺 entries 时显式跳过，
+    # 不能因为 entries=[] 就报 "0 处错"。
+    if not have.get("entries"):
+        r["notes"] = skip("缺少重建输入 vol1_buyuan_entries_v2.json（精简仓未随附）")
+    else:
+        hits = []
+        for e in entries:
+            note = e.get("note") or ""
+            if not note:
+                continue
+            for nm in persons:
+                if nm != e["person"] and len(nm) >= 2 and nm in note:
+                    hits.append((e["year"], e["office"], e["person"], nm))
+                    break
+        dup_entry = [(k, v) for k, v in Counter(
+            (e["year"], e.get("person_id"), e.get("office")) for e in entries).items() if v > 1]
+        r["notes"] = dict(active_note_with_other_name=len(hits), samples=hits[:15],
+                          duplicate_entries=len(dup_entry), dup_samples=dup_entry[:15],
+                          quarantined=(repair.get("counts") or {}).get("quarantined"),
+                          resolution=repair.get("note_resolution_counts", {}),
+                          book_patches=(repair.get("counts") or {}).get("book_patch"))
 
     # 6 CBDB
     date_bad, shared = [], {}
@@ -236,12 +289,19 @@ def audit() -> dict:
     # 8 manifest
     manifest = d.get("manifest") or {}
     mstats = manifest.get("stats", {})
-    r["manifest"] = dict(entries_claimed=mstats.get("entries"), entries_actual=len(entries),
-                         persons_claimed=mstats.get("persons_unique"),
-                         persons_actual=len(person_ids),
-                         tenure_claimed=(manifest.get("tenure_assembly", {})
-                                         .get("stats", {}).get("tenures")),
-                         tenure_actual=len(tenures))
+    if have.get("manifest"):
+        r["manifest"] = dict(entries_claimed=mstats.get("entries"), entries_actual=len(entries),
+                             persons_claimed=mstats.get("persons_unique"),
+                             persons_actual=len(person_ids),
+                             tenure_claimed=(manifest.get("tenure_assembly", {})
+                                             .get("stats", {}).get("tenures")),
+                             tenure_actual=len(tenures))
+    else:
+        r["manifest"] = skip("缺少 vol1_buyuan_manifest.json（精简仓未随附）")
+
+    # 依赖重建输入的门禁：缺输入即 SKIP，绝不因为"读到 0/None"而判通过。
+    r["skipped"] = [{"asset": asset, "gates": gates, "reason": _SKIP_REASON.get(asset, "")}
+                    for asset, gates in ASSET_GATES.items() if not have.get(asset)]
 
     blockers = []
     st = r["structure"]
@@ -249,14 +309,15 @@ def audit() -> dict:
         blockers.append("结构硬错误")
     if r["names"]["pseudo"]:
         blockers.append(f"伪人名 {len(r['names']['pseudo'])}")
-    if r["notes"]["active_note_with_other_name"]:
-        blockers.append(f"活跃注文含他人名 {r['notes']['active_note_with_other_name']}")
-    if r["notes"]["duplicate_entries"]:
-        blockers.append(f"重复(年,人,衙)条目 {r['notes']['duplicate_entries']}")
+    if not r["notes"].get("skipped"):
+        if r["notes"]["active_note_with_other_name"]:
+            blockers.append(f"活跃注文含他人名 {r['notes']['active_note_with_other_name']}")
+        if r["notes"]["duplicate_entries"]:
+            blockers.append(f"重复(年,人,衙)条目 {r['notes']['duplicate_entries']}")
     if r["fragmentation"]["short_unexplained"]:
         blockers.append(f"未解释短缺口 {r['fragmentation']['short_unexplained']}")
     cov = r["coverage"]
-    if cov["page_total"] and cov["page_covered"] / cov["page_total"] < 0.9:
+    if not cov.get("skipped") and cov["page_total"] and cov["page_covered"] / cov["page_total"] < 0.9:
         blockers.append(f"页码覆盖不足 {cov['page_covered']}/{cov['page_total']}")
     if r["cbdb"]["date_conflicts"]:
         blockers.append(f"CBDB 生卒/任期冲突 {len(r['cbdb']['date_conflicts'])}")
@@ -264,14 +325,15 @@ def audit() -> dict:
         blockers.append(f"同一 id 多正名 {len(r['cbdb']['shared_ids'])}")
     if r["offices"]["canon_bad"]:
         blockers.append("衙署未登记（不同衙署必须各自独立）")
-    if r["names"]["missing_identity"]:
+    if have.get("entries") and r["names"]["missing_identity"]:
         blockers.append(f"条目缺 person_id {r['names']['missing_identity']}")
     if r["names"]["bad_identity"]:
         blockers.append(f"人物实体跨度异常 {len(r['names']['bad_identity'])}")
-    if r["manifest"]["entries_claimed"] not in (None, len(entries)):
-        blockers.append("manifest 条目数与实测不一致")
-    if r["manifest"]["persons_claimed"] not in (None, len(person_ids)):
-        blockers.append("manifest 人物实体数与实测不一致")
+    if not r["manifest"].get("skipped"):
+        if r["manifest"]["entries_claimed"] not in (None, len(entries)):
+            blockers.append("manifest 条目数与实测不一致")
+        if r["manifest"]["persons_claimed"] not in (None, len(person_ids)):
+            blockers.append("manifest 人物实体数与实测不一致")
     r["blockers"] = blockers
     return r
 
@@ -285,27 +347,47 @@ def main() -> None:
           f"重复段 {s['dup_segments']}，不连续 {s['bad_years']}，D15 {s['d15']}；"
           f"gap 合并 {s['gap_merged']} 段（缺年 {s['gap_years']}）")
     c = r["coverage"]
-    print(f"覆盖: 缺年 {len(c['missing_years'])}；各衙缺年 "
-          + "，".join(f"{o}:{len(g)}" for o, g in c["office_gaps"].items())
-          + f"；页码 {c['page_covered']}/{c['page_total']}")
-    print(f"断段: 多段组 {r['fragmentation']['multi_groups']}；未解释缺口 "
-          f"{r['fragmentation']['unexplained']}（其中短缺口 {r['fragmentation']['short_unexplained']}）")
-    print(f"人名: 伪名 {len(r['names']['pseudo'])}；未映射实体 {r['names']['unmapped_persons']}；"
+    if c.get("skipped"):
+        print(f"覆盖: SKIP（{c['skipped']}）")
+    else:
+        print(f"覆盖: 缺年 {len(c['missing_years'])}；各衙缺年 "
+              + "，".join(f"{o}:{len(g)}" for o, g in c["office_gaps"].items())
+              + f"；页码 {c['page_covered']}/{c['page_total']}")
+    f = r["fragmentation"]
+    print(f"断段: 多段组 {f['multi_groups']}；未解释缺口 "
+          f"{f['unexplained']}（其中短缺口 {f['short_unexplained']}）")
+    skip_assets = {row["asset"] for row in r["skipped"]}
+    unmapped_txt = ("SKIP" if "mapping" in skip_assets
+                    else str(r["names"]["unmapped_persons"]))
+    print(f"人名: 伪名 {len(r['names']['pseudo'])}；未映射实体 {unmapped_txt}；"
           f"同名拆分 {len(r['names']['split_names'])} 组")
     res = r["notes"].get("resolution") or {}
-    print(f"注文: 活跃注含他人名 {r['notes']['active_note_with_other_name']}；"
-          f"重复条目 {r['notes']['duplicate_entries']}；"
-          f"隔离 {r['notes']['quarantined']}（推断补注 {res.get('reassigned-inferred',0)} / "
-          f"前缀推断 {res.get('restored-prefix-inferred',0)} / "
-          f"人工待核 {res.get('manual-review',0)}）；原书补注 {r['notes']['book_patches']}")
+    if r["notes"].get("skipped"):
+        print(f"注文: SKIP（{r['notes']['skipped']}）")
+    else:
+        print(f"注文: 活跃注含他人名 {r['notes']['active_note_with_other_name']}；"
+              f"重复条目 {r['notes']['duplicate_entries']}；"
+              f"隔离 {r['notes']['quarantined']}（推断补注 {res.get('reassigned-inferred',0)} / "
+              f"前缀推断 {res.get('restored-prefix-inferred',0)} / "
+              f"人工待核 {res.get('manual-review',0)}）；原书补注 {r['notes']['book_patches']}")
     print(f"CBDB: 生卒冲突 {len(r['cbdb']['date_conflicts'])}；同 id 多正名 {len(r['cbdb']['shared_ids'])}；"
           f"对齐 {r['cbdb']['aligned_tenures']}/{s['tenures']}")
     print(f"衙署: {r['offices']['offices']}；非法 {r['offices']['canon_bad']}")
-    print(f"manifest: 条目 {r['manifest']['entries_claimed']} vs {r['manifest']['entries_actual']}；"
-          f"人物 {r['manifest']['persons_claimed']} vs {r['manifest']['persons_actual']}")
+    m = r["manifest"]
+    if m.get("skipped"):
+        print(f"manifest: SKIP（{m['skipped']}）")
+    else:
+        print(f"manifest: 条目 {m['entries_claimed']} vs {m['entries_actual']}；"
+              f"人物 {m['persons_claimed']} vs {m['persons_actual']}")
+    if r["skipped"]:
+        print("\n已跳过（缺重建输入，非通过）：")
+        for row in r["skipped"]:
+            print(f"  ⚠ {row['gates']}：缺 {row['asset']}")
     print("\n阻断项 BLOCKERS:")
     for b in r["blockers"] or ["（无）"]:
         print("  ✗" if r["blockers"] else "  ✓", b)
+    if r["skipped"]:
+        print("  注：有门禁项被跳过，blockers=0 不等于全量通过。")
     if "--json" in sys.argv:
         path = Path(sys.argv[sys.argv.index("--json") + 1])
         path.write_text(json.dumps(r, ensure_ascii=False, indent=1), encoding="utf-8")

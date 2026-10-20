@@ -1,5 +1,0 @@
-刑部 喻茂堅 | 閏九、戊子、十,總漕右都遷 | restored-from-other | from:屠僑@1547
-刑部 屠僑 | 二、甲辰、廿二,南刑尚改;九、己巳、廿一,改左都 | restored-prefix | None
-都察院 宋景 | 正、辛酉、八,卒,贈太子少保吏尚,謚莊德。 | None | None
-都察院 屠僑 | 九、己巳、廿一,刑尚改。 | book-patched | book-p582
-都察院 王以旂 |  | manual-review | None

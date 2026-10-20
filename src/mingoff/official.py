@@ -104,6 +104,10 @@ def _leave(note: str) -> tuple[int | None, str]:
 
 def load_entries() -> list[dict]:
     path = DATA / "vol1_entries.json"
+    if not path.is_file():
+        raise FileNotFoundError(
+            f"缺少重建输入 {path.name}：精简/公开仓只发导出数据 "
+            f"(official_cabinet.json)，重建需本地完整资产。详见 MAINTAINERS.md")
     return json.loads(path.read_text(encoding="utf-8"))
 
 

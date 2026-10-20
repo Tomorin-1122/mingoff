@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -40,7 +40,7 @@ import {
 
 /* ============================================================
  * 时间轴（正式站）
- * 视觉与交互**逐项移植自老板验收的 web/demo.template.html**：
+ * 视觉与交互**逐项移植自项目负责人验收的 web/demo.template.html**：
  *   fixed 页头 + 月格等宽无限画布 + 单行皇帝（含周岁） + 泳道 + 游标
  *   + 同人联动 + 当前月淡化 + 详情抽屉（含《明實錄》命中）。
  * 与 demo 的差异只有两处（由全朝 242 年数据决定）：

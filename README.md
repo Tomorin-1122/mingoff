@@ -1,4 +1,4 @@
-# MingOff —— 明代职官数据库与可视化平台
+﻿# MingOff —— 明代职官数据库与可视化平台
 
 专注明代（1368–1644）276 年职官的结构化数据库：每条任职记录**可追溯史料来源**，
 并显式标注异文与置信度。
@@ -44,7 +44,7 @@
 | **外部校勘层** | 《明人傳記資料索引》全书 OCR + 人名目录 + 人物库（6,487 人） | ✅ 2026-10-18（D38，尚未对接 MingOff） |
 
 已完成：6 张表 schema、数据存取层、崇祯朝兵部尚书 14 任种子数据、CLI、
-**197 个测试**、单文件可视化 demo（`web/demo.template.html` 生成；成品不入公开仓）、
+**197 个测试**（公开仓 144 通过 + 53 跳过：跳过项依赖不入仓的重建输入）、单文件可视化 demo（`web/demo.template.html` 生成；成品不入公开仓）、
 正式站 `site/`（Next.js 静态导出，**184 段 / 163 人全朝内阁**，画布 1368–1644.3），
 并已接入部院六部+都察院（**1,196 段 / 789 实体**，D46）。
 
@@ -104,10 +104,11 @@ python -m mingoff.cli snapshot 1629      # 某年在任快照
 python -m mingoff.cli person 楊嗣昌       # 某人的仕途流转（含来源）
 python -m mingoff.cli todo               # 待校勘队列
 python -m mingoff.cli stats              # 库内计数
-python -m mingoff.backfill_months        # 实录月份回填（需 sinica_months.json，私有数据仓）
+python -m mingoff.backfill_months        # 实录月份回填（需 sinica_months.json，本地数据，不入公开仓）
 python -m mingoff.export_demo            # 重建 web/demo.html（产物不入公开仓）
-python -m mingoff.official               # 重建正式站数据（v2：含离任/实录）
-python -m pytest tests                   # 197 个测试
+python -m mingoff.official               # 重建正式站数据（需 vol1_* 重建输入，不入公开仓；见 MAINTAINERS.md）
+python -m pytest tests                   # 197 个测试（公开仓 144 通过 / 53 跳过）
+python scripts/check_public_scope.py     # 公开仓范围自检
 ```
 
 ---
@@ -195,7 +196,6 @@ mingoff/
 ├─ docs/部院D03原书核对报告.md  ★ D-03 长缺口/缺年原书页核对（筛查完成，13 页证/104 screened）
 ├─ docs/部院D08页码索引.md      ★ 277 年 year→book_page 索引（100% 条目有页）
 ├─ docs/部院D04表头核对报告.md   ★ D-04 表头/对页版式原书核对（只出证据，不改数据，D40）
-├─ docs/部院D04逐条审核表.md       ★ D-04 差异逐条裁决表（18 项，待老板审核）
 ├─ docs/重建数据操作步骤.md  v3 数据重建的脚本与口径
 ├─ pyproject.toml         包定义（一期零第三方依赖）
 ├─ src/mingoff/
@@ -220,9 +220,11 @@ mingoff/
 ├─ src/mingoff/data/person_profiles_buyuan.json  ★ 部院小传（789 实体 / 546 有 id；D46）
 ├─ src/mingoff/data/official_cabinet.json 正式版导出（tenures + shilu）
 ├─ src/mingoff/data/official_buyuan.json  ★ 部院导出（12 衙 / 1,196 段；D46 接站）
-├─ src/mingoff/data/mrzj/   ★ 《明人傳記資料索引》资产（私有数据仓；公开仓不含）
-├─ scripts/mrzj/            ★ 该书从切片→OCR→解析→人物库的 18 个脚本（私有）
-├─ _stage_mrzj.py          把 _scratch 里的该书产出归档进仓（私有，可复跑）
+├─ src/mingoff/data/mrzj/   《明人傳記資料索引》资产（本地留存，不入公开仓）
+├─ scripts/mrzj/            该书从切片→OCR→解析→人物库的 18 个脚本（本地留存，不入公开仓）
+├─ _stage_mrzj.py           该书产出归档脚本（本地留存，不入公开仓）
+├─ MAINTAINERS.md          ★ 仓库分工与公开范围自检（本地维护用）
+├─ scripts/public_scope.py  公开仓排除规则；scripts/check_public_scope.py 自检
 ├─ docs/正式数据管线报告.md  正式版产出规模、源复核与 v3 重建报告
 ├─ site/                  ★ 正式网站（Next.js 静态导出，D22/D24；D46 接入部院；见 site/README.md）
 │  ├─ src/lib/rows.ts     展示层行/泳道配置（六部折叠、御史/倉場分期名带）

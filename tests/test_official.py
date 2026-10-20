@@ -14,6 +14,8 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
+import pytest
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from mingoff.official import (  # noqa: E402
@@ -25,6 +27,13 @@ from mingoff.official import (  # noqa: E402
 )
 
 SOUTHERN = {"高弘圖", "史可法", "馬士英", "王鐸", "姜曰廣", "方拱乾"}
+
+# 重建输入 vol1_entries.json 不随精简/公开仓发布（见 MAINTAINERS.md）。
+# 缺它时整模块跳过，而不是报一堆 FileNotFoundError。
+pytestmark = pytest.mark.skipif(
+    not (DATA / "vol1_entries.json").is_file(),
+    reason="缺少重建输入 vol1_entries.json（公开仓只发 official_cabinet.json）",
+)
 
 
 def test_entries_scale_and_coverage():

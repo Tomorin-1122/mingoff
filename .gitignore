@@ -63,3 +63,20 @@ htmlcov/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# ===== 公开仓范围（2026-10-20 老板拍板：不再私有仓，本地直接提交公开仓）=====
+# 规则见 scripts/public_scope.py；自查：python scripts/check_public_scope.py
+# 1) 过程文档 / 本机日志 / demo 成品：一律不入库（/ 前缀 = 仅仓库根目录的 docs）
+/docs/
+/.workbuddy/
+/web/
+/_scratch/
+# 2) 版权风险与派生产物
+/src/mingoff/data/mrzj/
+/scripts/mrzj/
+/src/mingoff/data/sinica_all.json
+/src/mingoff/data/sinica_months.json
+/_stage_mrzj.py
+# 3) 重建输入（精简仓只发导出数据 official_*.json）
+/src/mingoff/data/vol1_buyuan_manifest.json
+/src/mingoff/data/vol1_*

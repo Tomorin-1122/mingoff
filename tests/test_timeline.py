@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """时间轴测试：每年 12 个月等宽、断限截断、位置换算。
 
-老板要求"每年都要有 12 个月的刻度，每年的长度要一样"——
+项目负责人要求"每年都要有 12 个月的刻度，每年的长度要一样"——
 这是可验证的数学性质，值得用测试钉住。
 """
 from __future__ import annotations
@@ -24,7 +24,7 @@ def test_each_year_has_twelve_slots(tl: T.Timeline):
 
 
 def test_every_year_has_identical_width(tl: T.Timeline):
-    """老板核心要求：每年长度一样。"""
+    """项目负责人核心要求：每年长度一样。"""
     widths = []
     for y in range(tl.year_min, tl.year_max):
         widths.append(tl.year_tick_pct(y + 1) - tl.year_tick_pct(y))
@@ -105,7 +105,7 @@ def test_span_never_inverted(tl: T.Timeline):
 
 
 def test_cutoff_is_1644_march():
-    """老板拍板：截止 1644 年 3 月。"""
+    """项目负责人拍板：截止 1644 年 3 月。"""
     assert T.CUTOFF_YEAR == 1644
     assert T.CUTOFF_MONTH == 3
 
@@ -134,7 +134,7 @@ def test_is_after_cutoff_year_without_month_keeps_the_year():
 def test_clamp_end_pulls_later_years_back():
     """超出断限的终年一律拉到 1644-03。
 
-    老板原话："截止时间是 1644 年 3 月……直接写 1644 年 3 月，
+    项目负责人原话："截止时间是 1644 年 3 月……直接写 1644 年 3 月，
     截断一下就好了后面都不要了。"
     """
     assert T.clamp_end(1646, None) == (1644, 3)
