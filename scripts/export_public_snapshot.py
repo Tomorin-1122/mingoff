@@ -121,14 +121,16 @@ def main() -> None:
             continue
         dst = OUT / rel
         dst.parent.mkdir(parents=True, exist_ok=True)
-        if src.suffix in {".md", ".py", ".ts", ".tsx", ".css", ".json", ".cff", ".toml", ".yml", ".yaml", ""}:
-            text = read_text_any(src)
+        # 公开 README 与私有开发 README 分开维护
+        src_for = ROOT / "README.public.md" if rel.as_posix() == "README.md" else src
+        if src_for.suffix in {".md", ".py", ".ts", ".tsx", ".css", ".json", ".cff", ".toml", ".yml", ".yaml", ""}:
+            text = read_text_any(src_for)
             if text is None:
-                shutil.copy2(src, dst)
+                shutil.copy2(src_for, dst)
             else:
                 dst.write_text(sanitize_text(text), encoding="utf-8")
         else:
-            shutil.copy2(src, dst)
+            shutil.copy2(src_for, dst)
         copied += 1
         total += dst.stat().st_size
 
