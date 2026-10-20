@@ -1,4 +1,4 @@
-# ===== 运行时数据 =====
+﻿# ===== 运行时数据 =====
 # 数据库可由 `mingoff init && mingoff seed` 重放，不入库。
 # ⚠️ 一旦开始手工录入校勘成果（不可重放），要重新评估这一条 —— 见 docs/DECISIONS.md D3。
 # 用 data/* 而非 data/：目录本身不排除，下面的否定例外才生效
@@ -80,3 +80,7 @@ desktop.ini
 # 3) 重建输入（精简仓只发导出数据 official_*.json）
 /src/mingoff/data/vol1_buyuan_manifest.json
 /src/mingoff/data/vol1_*
+
+# GitHub Pages：站点静态导出产物（Next.js out/）必须入仓，由 Pages 直接服务
+!/site/out/
+site/out/*.map
