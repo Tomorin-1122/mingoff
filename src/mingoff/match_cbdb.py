@@ -80,8 +80,10 @@ S2T = str.maketrans("吴张温黄吕万刘乔韦宋陈杨赵郑冯蒋钱韩马�
 
 def connect():
     c = sqlite3.connect(f"file:{CBDB}?mode=ro", uri=True)
-    c.execute(f"CREATE TEMP TABLE rel_office AS SELECT c_office_id AS oid FROM OFFICE_CODES "
-              f"WHERE {REAL_OFFICE_FILTER}")
+    # REAL_OFFICE_FILTER 是模块常量（非用户输入），内联成静态 DDL 文本，无动态拼接
+    c.execute("CREATE TEMP TABLE rel_office AS SELECT c_office_id AS oid FROM OFFICE_CODES "
+              "WHERE c_office_chn LIKE '%大學士%' OR c_office_chn LIKE '%內閣%' "
+              "OR c_office_chn LIKE '%翰林%' OR c_office_chn LIKE '%殿%'")
     return c
 
 

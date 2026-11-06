@@ -61,7 +61,9 @@ def test_d15_cutoff(tenures):
     for t in tenures:
         assert t["end_year"] <= 1644
         if t["end_year"] == 1644:
-            assert t["end_month"] == 3 and t["end_clamped"], t
+            # 三月内去任（殉難/降/被執）是史料明确事件（不打 clamp），
+            # 无事件段截 1644.3 打 clamp——两者 end_month 都应为 3
+            assert t["end_month"] == 3, t
         if t["start_year"] == 1644 and t["start_month"]:
             assert t["start_month"] <= 3, t
 
@@ -101,9 +103,9 @@ def test_anchor_tenures(tenures):
     # 李遇知：崇祯十六年五月南吏尚改，截 1644.3
     t = seg("李遇知", "吏部", 1643)
     assert t["start_month"] == 5 and t["end_clamped"]
-    # 倪元璐：崇祯十六年五月，截 1644.3
+    # 倪元璐：崇祯十六年五月，1644 三月十九殉難（史料明确事件，非 clamp）
     t = seg("倪元璐", "戶部", 1643)
-    assert t["end_clamped"] and t["end_month"] == 3
+    assert t["end_month"] == 3 and t["leave"] == "殉難"
     # 張璁：嘉靖六年署掌都察院 → 署理
     t = seg("張璁", "都察院", 1527)
     assert t["tenure_type"] == "署理"

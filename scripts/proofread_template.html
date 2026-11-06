@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MingOff · 部院校樣台</title>
+<style>
+:root{
+  --paper:#f7f3ea; --paper2:#efe9dc; --ink:#1b1916; --ink2:#5c5548; --ink3:#8c8477;
+  --rule:#d8cfbb; --rule2:#c3b8a0;
+  --zhu:#a4342a; --zhu-bg:#f7e7e3;
+  --qing:#2f6b5e; --qing-bg:#e4efe9;
+  --huang:#a8871a;
+  --mono:ui-monospace,"SF Mono",Consolas,"Cascadia Mono",monospace;
+}
+*{box-sizing:border-box}
+body.nav-hidden aside#nav{display:none !important}
+body.nav-hidden section#imgpane{max-width:64%}
+html,body{height:100%;margin:0}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",SimSun,serif;
+  font-size:14px; line-height:1.65; display:flex; flex-direction:column;
+  -webkit-font-smoothing:antialiased;
+}
+button{font-family:inherit;font-size:13px;color:var(--ink);background:transparent;
+  border:1px solid var(--rule2);padding:3px 9px;cursor:pointer;border-radius:2px}
+button:hover{background:var(--paper2);border-color:var(--ink3)}
+button:active{transform:translateY(.5px)}
+button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+a{color:var(--zhu);text-decoration:none;border-bottom:1px solid rgba(164,52,42,.35)}
+
+/* ── 顶栏 ── */
+header#bar{
+  display:flex;align-items:center;gap:14px;padding:6px 14px;flex-wrap:wrap;
+  border-bottom:1px solid var(--rule);background:var(--paper2);flex:0 0 auto;
+}
+.brand{font-size:12px;letter-spacing:.18em;color:var(--ink3);white-space:nowrap}
+.brand b{color:var(--ink);letter-spacing:.1em}
+.yearbox{display:flex;align-items:baseline;gap:8px;min-width:0;white-space:nowrap}
+#era{font-size:18px;letter-spacing:.04em}
+#yr{font-family:var(--mono);font-size:12.5px;color:var(--ink2)}
+.pagelinks{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--ink2);white-space:nowrap}
+.pagelinks b{font-family:var(--mono);color:var(--ink)}
+.prog{display:flex;align-items:center;gap:7px;margin-left:auto;white-space:nowrap}
+#progtxt{font-family:var(--mono);font-size:12px;color:var(--ink2)}
+.pbar{width:80px;height:5px;background:var(--rule);position:relative;flex:0 0 auto}
+.pbar i{position:absolute;left:0;top:0;bottom:0;background:var(--qing);width:0}
+.tools{display:flex;gap:5px;flex:0 0 auto}
+.tools button{white-space:nowrap}
+
+/* ── 主体三栏 ── */
+main{flex:1 1 auto;display:flex;min-height:0}
+aside#nav{
+  width:196px;flex:0 0 196px;border-right:1px solid var(--rule);
+  display:flex;flex-direction:column;min-height:0;background:var(--paper2);
+}
+.navhead{padding:8px;display:flex;flex-wrap:wrap;gap:4px;border-bottom:1px solid var(--rule)}
+.navhead button{font-size:12px;padding:2px 7px}
+.navhead label{font-size:12px;color:var(--ink2);display:flex;align-items:center;gap:4px;width:100%;margin-top:2px}
+#yearlist{overflow:auto;flex:1 1 auto;padding:4px 0}
+.yitem{
+  display:flex;align-items:center;gap:6px;padding:2px 9px;cursor:pointer;
+  font-size:12.5px;border-left:2px solid transparent;white-space:nowrap;
+}
+.yitem:hover{background:#e8e1d2}
+.yitem.cur{background:var(--ink);color:var(--paper);border-left-color:var(--zhu)}
+.yitem.cur .dot{background:var(--paper)}
+.yitem .dot{width:5px;height:5px;background:var(--rule2);flex:0 0 5px}
+.yitem.done .dot{background:var(--qing)}
+.yitem .ry{font-family:var(--mono);font-size:11.5px;color:var(--ink3);width:34px}
+.yitem.cur .ry{color:#c9c1b0}
+.yitem .era{flex:1 1 auto;overflow:hidden;text-overflow:ellipsis}
+.yitem .rk{font-family:var(--mono);font-size:10.5px;color:var(--zhu);opacity:.8}
+.yitem.cur .rk{color:#e8b4ac}
+
+/* 页图 */
+section#imgpane{
+  flex:1 1 38%;min-width:220px;max-width:58%;border-right:1px solid var(--rule);
+  display:flex;flex-direction:column;min-height:0;background:#e9e3d5;
+}
+.imgtools{display:flex;align-items:center;gap:6px;padding:5px 10px;border-bottom:1px solid var(--rule);
+  background:var(--paper2);font-size:12px;color:var(--ink2);flex:0 0 auto}
+.imgtools button{padding:1px 7px;font-size:12px}
+#imgwrap{flex:1 1 auto;overflow:auto;padding:10px;text-align:center}
+#pageimg{
+  width:calc(100% * var(--zoom,1));max-width:none;display:block;margin:0 auto;
+  background:#fff;border:1px solid var(--rule2);box-shadow:0 1px 3px rgba(0,0,0,.12);
+  cursor:zoom-in;
+}
+#pageimg.z2{cursor:zoom-out}
+.hint{font-size:12px;color:var(--ink3);padding:6px 10px;text-align:left}
+
+/* 数据区 */
+section#datapane{flex:1 1 auto;min-width:0;overflow:auto;padding:10px 16px 40px}
+#riskbar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.tag{font-size:11.5px;padding:1px 7px;border:1px solid var(--rule2);color:var(--ink2);border-radius:2px}
+.tag.warn{border-color:#d9b3ad;color:var(--zhu);background:var(--zhu-bg)}
+.tag.ok{border-color:#a9c8bd;color:var(--qing);background:var(--qing-bg)}
+
+.off{margin-bottom:14px;border:1px solid var(--rule);background:#fbf8f1}
+.offhead{
+  display:flex;align-items:center;gap:8px;padding:3px 10px;background:var(--paper2);
+  border-bottom:1px solid var(--rule);
+}
+.offname{font-size:14px;letter-spacing:.08em}
+.offname .cnt{font-family:var(--mono);font-size:11px;color:var(--ink3);margin-left:4px}
+.offhead .seg{font-size:11.5px;color:var(--ink3)}
+.offhead .spacer{flex:1 1 auto}
+.offhead button{font-size:12px;padding:1px 7px}
+
+.row{
+  display:flex;align-items:flex-start;gap:8px;padding:4px 10px 4px 8px;
+  border-bottom:1px dotted var(--rule);border-left:3px solid transparent;
+}
+.row:last-of-type{border-bottom:none}
+.row:hover{background:#f4eee0}
+.row.sel{background:#f1e8d4}
+.row .no{font-family:var(--mono);font-size:11px;color:var(--ink3);width:18px;flex:0 0 18px;padding-top:2px;text-align:right}
+.row .main{flex:1 1 auto;min-width:0}
+.row .who{font-size:15px;letter-spacing:.05em}
+.row .who .lab{font-size:11px;color:var(--ink3);font-weight:normal}
+.row .note{font-size:12.5px;color:var(--ink2);line-height:1.55;margin-top:1px;word-break:break-all}
+.row .note.empty{color:#b3aa98;font-style:italic}
+.row .badges{display:flex;gap:4px;flex-wrap:wrap;margin-top:2px}
+.badge{font-family:var(--mono);font-size:10.5px;padding:0 5px;border:1px solid var(--rule2);color:var(--ink3);border-radius:2px;line-height:16px}
+.badge.b-page{border-color:#8fb3a7;color:#2f6b5e}
+.badge.b-anchor{border-color:#b8b18d;color:#8a7a2a}
+.badge.b-row{border-color:#c9a49f;color:#a4342a}
+.badge.b-mix{border-color:#b3aec0;color:#5f5680}
+.badge.b-null{border-color:#c8c2b4;color:#8c8477}
+.badge.bf{background:#f7e7e3;border-color:#d9b3ad;color:#a4342a}
+.row .acts{display:flex;gap:3px;flex:0 0 auto;padding-top:1px;opacity:.35;transition:opacity .1s}
+.row:hover .acts,.row.sel .acts{opacity:1}
+.row .acts button{width:24px;padding:1px 0;text-align:center;line-height:1.3;font-size:12px}
+.row .acts button.ok:hover{background:var(--qing-bg);border-color:var(--qing);color:var(--qing)}
+.row .acts button.ed:hover{background:#f6edcf;border-color:var(--huang);color:#8a6d0c}
+.row .acts button.del:hover{background:var(--zhu-bg);border-color:var(--zhu);color:var(--zhu)}
+
+/* 状态 */
+.row.st-ok{border-left-color:var(--qing)}
+.row.st-edit{border-left-color:var(--huang);background:#fdf8e8}
+.row.st-del{border-left-color:var(--zhu);opacity:.55}
+.row.st-del .who,.row.st-del .note{text-decoration:line-through}
+.row.st-add{border-left-color:var(--zhu);border-left-style:dashed;background:var(--zhu-bg)}
+.row .stamp{font-size:10.5px;color:var(--ink3);font-family:var(--mono)}
+
+/* 编辑态 */
+.editbox{display:flex;flex-direction:column;gap:4px;padding:2px 0 4px}
+.editbox input,.editbox textarea,.editbox select{
+  font-family:inherit;font-size:13.5px;color:var(--ink);background:#fff;
+  border:1px solid var(--rule2);padding:3px 6px;border-radius:2px;width:100%;
+}
+.editbox input:focus,.editbox textarea:focus,.editbox select:focus{outline:1px solid var(--zhu);border-color:var(--zhu)}
+.editbox textarea{font-size:12.5px;line-height:1.5;resize:vertical;min-height:44px}
+.editrow{display:flex;gap:6px;align-items:center}
+.editrow label{font-size:11.5px;color:var(--ink3);flex:0 0 auto}
+.editrow select{width:auto;min-width:96px}
+.editbtns{display:flex;gap:6px;margin-left:auto}
+.editbtns button.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* 附录：D11 行转写 */
+details.d11{margin:14px 0 8px;border:1px solid var(--rule);background:#fbf8f1}
+details.d11 summary{padding:4px 10px;background:var(--paper2);cursor:pointer;font-size:12.5px;color:var(--ink2)}
+.d11tab{width:100%;border-collapse:collapse;font-size:12px}
+.d11tab td,.d11tab th{border-top:1px solid var(--rule);padding:3px 8px;vertical-align:top;text-align:left}
+.d11tab th{font-weight:normal;color:var(--ink3);font-size:11px;background:#f4eee0}
+.d11tab .sug{font-family:var(--mono);font-size:11px;color:var(--zhu)}
+.d11tab .lo{color:var(--zhu)}
+
+.yearnote{margin-top:12px;border:1px solid var(--rule);background:#fbf8f1;padding:6px 10px}
+.yearnote label{font-size:12px;color:var(--ink3);display:block;margin-bottom:2px}
+.yearnote textarea{width:100%;border:none;background:transparent;font-family:inherit;font-size:13px;
+  resize:vertical;min-height:40px;color:var(--ink);outline:none}
+.footbtns{margin-top:14px;display:flex;gap:8px;align-items:center}
+.footbtns button.primary{background:var(--qing);color:#fff;border-color:var(--qing);padding:5px 14px;font-size:13.5px}
+.footbtns .kbd{font-size:11.5px;color:var(--ink3)}
+
+/* 导出层 */
+#veil{position:fixed;inset:0;background:rgba(27,25,22,.45);display:none;align-items:center;justify-content:center;z-index:20}
+#veil.show{display:flex}
+.modal{background:var(--paper);border:1px solid var(--ink);width:min(760px,92vw);max-height:82vh;display:flex;flex-direction:column}
+.modal h3{margin:0;padding:10px 14px;border-bottom:1px solid var(--rule);font-size:15px;font-weight:normal;letter-spacing:.06em}
+.modal .body{padding:12px 14px;overflow:auto}
+.modal .body pre{font-family:var(--mono);font-size:11.5px;background:#fff;border:1px solid var(--rule);
+  padding:8px;overflow:auto;max-height:38vh;line-height:1.45}
+.modal .foot{padding:10px 14px;border-top:1px solid var(--rule);display:flex;gap:8px;justify-content:flex-end}
+.stat{display:flex;gap:16px;font-size:13px;margin-bottom:8px}
+.stat b{font-family:var(--mono);font-size:15px}
+.kv{font-size:12.5px;color:var(--ink2)}
+
+/* ── 窄屏自适应（小窗口也能用，不塌） ── */
+section#datapane{min-width:300px}
+@media (max-width:1240px){
+  aside#nav{width:158px;flex-basis:158px}
+  .brand{display:none}
+  .imgtools{padding:4px 7px;gap:4px;font-size:11.5px}
+  .imgtools button{padding:0 6px}
+}
+@media (max-width:900px){
+  aside#nav{display:none}
+  section#imgpane{flex:1 1 42%;min-width:180px;max-width:50%}
+  section#datapane{min-width:280px}
+  header#bar{gap:8px;padding:5px 10px}
+  #era{font-size:16px}
+  .pbar{display:none}
+  .tools button{padding:2px 6px;font-size:12px}
+}
+</style>
+</head>
+<body>
+<header id="bar">
+  <div class="brand"><b>MingOff</b> 部院校樣台</div>
+  <div class="yearbox"><span id="era">—</span><span id="yr">—</span></div>
+  <div class="pagelinks">
+    <span>書 p<b id="bp">—</b></span>
+    <span>PDF <b id="pp">—</b></span>
+    <a id="pdflink" href="#" target="_blank">在原書中打開 ↗</a>
+  </div>
+  <div class="prog"><span id="progtxt">0 / 0</span><div class="pbar"><i id="pfill"></i></div></div>
+  <div class="tools">
+    <button id="btnNav" title="收起／展開年份欄（快捷鍵 [）">☰ 年份</button>
+    <button id="btnPrev" title="←">← 上一年</button>
+    <button id="btnNext" title="→">下一年 →</button>
+    <button id="btnImport">匯入</button>
+    <button id="btnExport">匯出校記</button>
+    <input type="file" id="fileImport" accept=".json" hidden>
+  </div>
+</header>
+
+<main>
+  <aside id="nav">
+    <div class="navhead">
+      <button data-sort="risk" class="on">按可疑度</button>
+      <button data-sort="year">按年代</button>
+      <label><input type="checkbox" id="onlyUndone"> 只看未校完</label>
+    </div>
+    <div id="yearlist"></div>
+  </aside>
+
+  <section id="imgpane">
+    <div class="imgtools">
+      <button id="pprev" title="上一頁（對頁年須對照鄰頁）">◀</button>
+      <span id="pnow" style="font-family:var(--mono);color:var(--ink);white-space:nowrap">p—</span>
+      <button id="pnext" title="下一頁">▶</button>
+      <button id="pback" style="display:none">回到本年</button>
+      <span style="flex:1 1 auto"></span>
+      <button id="zout">−</button><span id="ztxt">100%</span><button id="zin">＋</button>
+      <button id="zfit">適應</button>
+    </div>
+    <div id="imgwrap"><img id="pageimg" alt="原書頁"></div>
+    <div class="hint">點圖放大 · Ctrl＋滾輪縮放 · 拖動捲軸平移</div>
+  </section>
+
+  <section id="datapane">
+    <div id="emptyWarn" style="display:none;border:1px solid #a4342a;background:#f7e7e3;padding:8px 11px;margin-bottom:10px;font-size:13px;line-height:1.6">
+      <b style="color:#a4342a">當前沒有任何校記。</b>若你之前校過，八成是**打開方式不對**：
+      瀏覽器的 localStorage 按「協議＋主機＋端口」隔離，換一個地址就是另一個空庫。
+      請用 <code>啟動校對台.bat</code> 打開，或點右上「匯入」恢復 <code>notes.json</code>。
+      <div style="margin-top:4px;font-size:12px;color:#5c5548">當前地址：<b id="curOrigin"></b></div>
+    </div>
+    <div id="riskbar"></div>
+    <div id="offices"></div>
+    <details class="d11" id="d11box" hidden>
+      <summary>對頁年行轉寫（D11 第一輪建議，僅供參照）</summary>
+      <div id="d11body"></div>
+    </details>
+    <div class="yearnote">
+      <label>本年隨筆（存疑、待查、頁碼異文等）</label>
+      <textarea id="ynote" placeholder="例：此行原書作「張明善」，OCR 誤作「張明普」；p402 頁眉有朱筆校記……"></textarea>
+    </div>
+    <div class="footbtns">
+      <button class="primary" id="btnDone">本年已核完 →</button>
+      <button id="btnAddOffice">＋ 新增衙署</button>
+      <span class="kbd">快捷鍵：← → 換年 · 1 核對無誤 · 2 修改 · 3 刪除 · Ctrl+S 匯出</span>
+    </div>
+  </section>
+</main>
+
+<div id="veil">
+  <div class="modal">
+    <h3 id="mTitle">匯出校記</h3>
+    <div class="body">
+      <div class="stat" id="mStat"></div>
+      <div class="kv" id="mHint"></div>
+      <pre id="mCode"></pre>
+    </div>
+    <div class="foot">
+      <button id="mClose">關閉</button>
+      <button id="mCopy">複製</button>
+      <button id="mDown" class="primary" style="background:#1b1916;color:#f7f3ea">下載 notes.json</button>
+    </div>
+  </div>
+</div>
+
+<script>
+window.__DATA__ = /*__DATA__*/null;
+</script>
+<script>
+(function(){
+"use strict";
+var D = window.__DATA__;
+var LS = "mingoff_proofread_v1";
+var OFFICE_ORDER = ["吏部","戶部","禮部","兵部","刑部","工部","都察院","御史臺","御史府","總督京儲","總督倉場","總倉場","易州山廠提督"];
+var STATUS_CN = {"page-verified":"頁證","name-anchor":"人名錨","row-order":"行序推","mixed":"混合","null":"未定"};
+
+/* ── 状态 ── */
+var state = {rows:{}, adds:{}, done:{}, yearnotes:{}, cur:null, sort:"risk", zoom:1, navHidden:false};
+try{
+  var raw = localStorage.getItem(LS);
+  if(raw){ var s = JSON.parse(raw); state.rows=s.rows||{}; state.adds=s.adds||{}; state.done=s.done||{}; state.yearnotes=s.yearnotes||{}; state.navHidden=!!s.navHidden; }
+}catch(e){}
+function save(){ try{ localStorage.setItem(LS, JSON.stringify({rows:state.rows,adds:state.adds,done:state.done,yearnotes:state.yearnotes,navHidden:!!state.navHidden})); }catch(e){ toast("存檔失敗："+e.message); } }
+function applyNav(){ document.body.classList.toggle("nav-hidden", !!state.navHidden); }
+
+function toast(msg){
+  var t = document.createElement("div");
+  t.textContent = msg;
+  t.style.cssText = "position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:#1b1916;color:#f7f3ea;padding:6px 16px;font-size:13px;z-index:50;border-radius:2px";
+  document.body.appendChild(t);
+  setTimeout(function(){ t.remove(); }, 1600);
+}
+
+/* ── 索引 ── */
+var YEARS = D.years.slice();
+var byYear = {};
+YEARS.forEach(function(y){ byYear[y.y] = y; });
+
+function yearSorted(){
+  var arr = YEARS.slice();
+  if(state.sort === "risk"){ arr.sort(function(a,b){ return (b.risk-a.risk) || (a.y-b.y); }); }
+  else { arr.sort(function(a,b){ return a.y-b.y; }); }
+  if(document.getElementById("onlyUndone").checked){ arr = arr.filter(function(y){ return !state.done[y.y]; }); }
+  return arr;
+}
+
+/* ── 年份导航 ── */
+function renderNav(){
+  var box = document.getElementById("yearlist");
+  var arr = yearSorted();
+  var html = arr.map(function(y){
+    var cls = "yitem" + (y.y===state.cur?" cur":"") + (state.done[y.y]?" done":"");
+    return '<div class="'+cls+'" data-y="'+y.y+'">'+
+      '<span class="dot"></span><span class="ry">'+y.y+'</span>'+
+      '<span class="era">'+y.era+'</span>'+
+      (y.risk>0?'<span class="rk">'+y.risk+'</span>':'')+
+    '</div>';
+  }).join("");
+  box.innerHTML = html;
+  var cur = box.querySelector(".cur");
+  if(cur && cur.scrollIntoView) cur.scrollIntoView({block:"nearest"});
+}
+
+/* ── 进度 ── */
+function renderProgress(){
+  var done = Object.keys(state.done).length, total = YEARS.length;
+  document.getElementById("progtxt").textContent = done + " / " + total;
+  document.getElementById("pfill").style.width = (total? (done/total*100):0) + "%";
+}
+
+/* ── 单行渲染 ── */
+function rowStatus(id){
+  var m = state.rows[id];
+  return m ? m.a : "";
+}
+
+function renderRow(y, office, r, i){
+  var id = r.id;
+  var st = state.rows[id];
+  var cls = "row" + (st? " st-"+st.a : "");
+  var person = st && st.person!=null ? st.person : r.p;
+  var note = st && st.note!=null ? st.note : (r.note||"");
+  var officeNow = st && st.office!=null ? st.office : office;
+  var changed = st && st.a==="edit";
+  var badges = "";
+  if(r.st){ badges += '<span class="badge b-'+r.st.cls+'">'+(STATUS_CN[r.st.v]||r.st.v)+'</span>'; }
+  if(r.conf!=null){ badges += '<span class="badge">'+r.conf.toFixed(1)+'</span>'; }
+  if(r.flag){ badges += '<span class="badge bf">'+r.flag+'</span>'; }
+  if(changed && st.person && st.person!==r.p && officeNow===office){
+    badges += '<span class="stamp">原「'+r.p+'」</span>';
+  }
+  if(changed && st.office && st.office!==office){
+    badges += '<span class="stamp">改隸「'+officeNow+'」</span>';
+  }
+  var noteCls = note ? "note" : "note empty";
+  return '<div class="'+cls+'" data-id="'+esc(id)+'" data-y="'+y+'" data-office="'+esc(office)+'">'+
+    '<span class="no">'+(i+1)+'</span>'+
+    '<div class="main">'+
+      '<div class="who">'+esc(person)+'</div>'+
+      '<div class="'+noteCls+'">'+(note? esc(note) : "（注文空白）")+'</div>'+
+      (badges? '<div class="badges">'+badges+'</div>':'')+
+    '</div>'+
+    '<div class="acts">'+
+      '<button class="ok" title="核對無誤（1）">✓</button>'+
+      '<button class="ed" title="修改（2）">✎</button>'+
+      '<button class="del" title="原書無此人（3）">✕</button>'+
+    '</div>'+
+  '</div>';
+}
+
+function renderAddRow(y, office, a, i){
+  return '<div class="row st-add" data-add="1" data-y="'+y+'" data-office="'+esc(office)+'">'+
+    '<span class="no">+</span>'+
+    '<div class="main">'+
+      '<div class="who">'+esc(a.person)+'</div>'+
+      '<div class="'+(a.note?"note":"note empty")+'">'+(a.note?esc(a.note):"（注文空白）")+'</div>'+
+      '<div class="badges"><span class="badge bf">補行</span></div>'+
+    '</div>'+
+    '<div class="acts"><button class="del" title="取消補行">✕</button></div>'+
+  '</div>';
+}
+
+function esc(s){
+  return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+/* ── 页图 ── */
+var viewPage = null;
+var BOOK_MIN = 396, BOOK_MAX = 685;
+
+function showPage(n){
+  if(n < BOOK_MIN || n > BOOK_MAX) return;
+  var img = document.getElementById("pageimg");
+  viewPage = n;
+  img.style.minHeight = "";
+  img.dataset.base = "pages/p" + n;
+  img.onerror = function(){
+    if(this.src.indexOf(this.dataset.base + ".jpg") >= 0){
+      this.src = this.dataset.base + ".png";
+    } else {
+      this.alt = "（缺頁圖：p" + n + "）";
+      this.style.minHeight = "240px";
+    }
+  };
+  img.src = img.dataset.base + ".jpg";
+  var known = D.bookYear && D.bookYear[String(n)];
+  var curBook = byYear[state.cur] ? byYear[state.cur].book : null;
+  document.getElementById("pnow").textContent = "p" + n + (n === curBook ? " · 本年" : "");
+  document.getElementById("pnow").title =
+    "p" + n + " · PDF " + (n + 15) + (known ? " · " + known.era : " · 非部院年表頁");
+  document.getElementById("pback").style.display = (n !== curBook) ? "" : "none";
+}
+
+/* ── 主渲染 ── */
+function render(){
+  var y = byYear[state.cur];
+  if(!y) return;
+  document.getElementById("era").textContent = y.era;
+  document.getElementById("yr").textContent = String(y.y);
+  document.getElementById("bp").textContent = y.book;
+  document.getElementById("pp").textContent = y.pdf;
+  var link = document.getElementById("pdflink");
+  link.href = D.pdfBase + "#page=" + y.pdf;
+
+  showPage(y.book);
+  var img = document.getElementById("pageimg");
+  img.style.setProperty("--zoom", state.zoom);
+  img.classList.toggle("z2", state.zoom>1.01);
+  document.getElementById("ztxt").textContent = Math.round(state.zoom*100)+"%";
+
+  // 风险条
+  var rb = document.getElementById("riskbar");
+  var tags = (y.tags||[]).map(function(t){ return '<span class="tag warn">'+esc(t)+'</span>'; });
+  if(state.done[y.y]) tags.unshift('<span class="tag ok">本年已核完</span>');
+  tags.push('<span class="tag">條目 '+y.total+'</span>');
+  rb.innerHTML = tags.join("");
+
+  // 衙署分组
+  var olist = y.offices.slice();
+  var extra = Object.keys(state.adds[y.y]||{});
+  extra.forEach(function(o){ if(!olist.some(function(x){return x.n===o;})) olist.push({n:o, rows:[]}); });
+  olist.sort(function(a,b){
+    var ia=OFFICE_ORDER.indexOf(a.n), ib=OFFICE_ORDER.indexOf(b.n);
+    return (ia<0?99:ia)-(ib<0?99:ib);
+  });
+  var html = olist.map(function(o){
+    var rows = o.rows.map(function(r,i){ return renderRow(y.y, o.n, r, i); }).join("");
+    var adds = (state.adds[y.y]&&state.adds[y.y][o.n]||[]).map(function(a,i){ return renderAddRow(y.y,o.n,a,i); }).join("");
+    return '<div class="off" data-office="'+esc(o.n)+'">'+
+      '<div class="offhead">'+
+        '<span class="offname">'+esc(o.n)+'</span><span class="cnt">'+(o.rows.length+(state.adds[y.y]&&state.adds[y.y][o.n]?state.adds[y.y][o.n].length:0))+'</span>'+
+        (o.seg?'<span class="seg">'+esc(o.seg)+'</span>':'')+
+        '<span class="spacer"></span>'+
+        '<button class="addrow" data-office="'+esc(o.n)+'">＋ 補行</button>'+
+      '</div>'+ rows + adds +
+    '</div>';
+  }).join("");
+  document.getElementById("offices").innerHTML = html;
+
+  // D11
+  var d11 = document.getElementById("d11box");
+  if(y.d11 && y.d11.length){
+    d11.hidden = false;
+    document.getElementById("d11body").innerHTML =
+      '<table class="d11tab"><thead><tr><th style="width:36px">行</th><th>原書該行轉寫（OCR）</th><th style="width:88px">建議</th><th style="width:44px">信心</th></tr></thead><tbody>'+
+      y.d11.map(function(r){
+        return '<tr><td class="'+(r.conf<0.9?"lo":"")+'">'+(r.row+1)+'</td>'+
+          '<td>'+esc((r.names||[]).join("、"))+(r.cells&&r.cells.length?' <span style="color:#8c8477">／ '+esc(r.cells.join(" ｜ "))+'</span>':'')+'</td>'+
+          '<td class="sug">'+esc(r.suggest||"")+'</td>'+
+          '<td class="'+(r.conf<0.9?"lo":"")+'">'+r.conf.toFixed(1)+'</td></tr>';
+      }).join("")+'</tbody></table>';
+  } else { d11.hidden = true; }
+
+  document.getElementById("ynote").value = state.yearnotes[y.y] || "";
+  renderNav(); renderProgress();
+}
+
+/* ── 操作 ── */
+function goto(y){
+  if(!byYear[y]) return;
+  state.cur = y;
+  render();
+  document.getElementById("datapane").scrollTop = 0;
+}
+
+function nextYear(step){
+  var arr = YEARS.map(function(x){return x.y;}).sort(function(a,b){return a-b;});
+  var i = arr.indexOf(state.cur);
+  var j = i + step;
+  if(j<0||j>=arr.length) return;
+  goto(arr[j]);
+}
+
+function setMark(id, action, patch){
+  var y = byYear[state.cur];
+  var parts = id.split("|");
+  if(action===null){ delete state.rows[id]; }
+  else {
+    var base = state.rows[id] || {};
+    base.a = action;
+    if(patch) for(var k in patch){ base[k] = patch[k]; }
+    if(action==="edit"){ base.ts = Date.now(); }
+    state.rows[id] = base;
+  }
+  save(); render();
+}
+
+/* ── 编辑态 ── */
+function openEditor(rowEl){
+  if(rowEl.dataset.add) return;
+  var y = byYear[state.cur];
+  var id = rowEl.dataset.id;
+  var office = rowEl.dataset.office;
+  var data = null, idx = -1;
+  y.offices.forEach(function(o){ if(o.n===office){ o.rows.forEach(function(r,i){ if(r.id===id){ data=r; idx=i; } }); } });
+  if(!data) return;
+  var st = state.rows[id] || {};
+  var person = st.person!=null? st.person : data.p;
+  var note = st.note!=null? st.note : (data.note||"");
+  var officeNow = st.office!=null? st.office : office;
+
+  var opts = OFFICE_ORDER.map(function(o){ return '<option'+(o===officeNow?" selected":"")+'>'+o+'</option>'; }).join("");
+  rowEl.classList.add("sel");
+  rowEl.querySelector(".main").innerHTML =
+    '<div class="editbox">'+
+      '<div class="editrow"><label>人名</label><input class="e-person" value="'+esc(person)+'"></div>'+
+      '<div class="editrow"><label>衙署</label><select class="e-office">'+opts+'</select></div>'+
+      '<div class="editrow" style="align-items:flex-start"><label style="padding-top:4px">注文</label>'+
+        '<textarea class="e-note">'+esc(note)+'</textarea></div>'+
+      '<div class="editbtns">'+
+        '<button class="e-cancel">取消</button>'+
+        '<button class="e-del">原書無此人</button>'+
+        '<button class="primary e-save">存（Enter）</button>'+
+      '</div>'+
+    '</div>';
+  var inp = rowEl.querySelector(".e-person");
+  inp.focus(); inp.select();
+
+  function saveEdit(){
+    var p = rowEl.querySelector(".e-person").value.trim();
+    var o = rowEl.querySelector(".e-office").value;
+    var n = rowEl.querySelector(".e-note").value;
+    state.rows[id] = {a:"edit", person:p, office:o, note:n, ts:Date.now()};
+    save(); render();
+  }
+  rowEl.querySelector(".e-save").onclick = saveEdit;
+  rowEl.querySelector(".e-cancel").onclick = function(){ render(); };
+  rowEl.querySelector(".e-del").onclick = function(){ state.rows[id] = {a:"del"}; save(); render(); };
+  rowEl.querySelector(".e-note").addEventListener("keydown", function(e){
+    if(e.key==="Enter" && (e.ctrlKey||e.metaKey)){ e.preventDefault(); saveEdit(); }
+  });
+  inp.addEventListener("keydown", function(e){ if(e.key==="Enter"){ e.preventDefault(); saveEdit(); } });
+}
+
+function addRow(office){
+  var y = byYear[state.cur];
+  var box = document.querySelector('.off[data-office="'+office+'"]');
+  var holder = document.createElement("div");
+  holder.className = "row st-add";
+  holder.style.background = "#fdf8e8";
+  holder.innerHTML = '<span class="no">+</span><div class="main"><div class="editbox">'+
+    '<div class="editrow"><label>人名</label><input class="a-person" placeholder="原書此行的人名"></div>'+
+    '<div class="editrow" style="align-items:flex-start"><label style="padding-top:4px">注文</label>'+
+    '<textarea class="a-note" placeholder="留空表示原書無注"></textarea></div>'+
+    '<div class="editbtns"><button class="a-cancel">取消</button><button class="primary a-save">補入（Enter）</button></div>'+
+    '</div></div>';
+  box.appendChild(holder);
+  var inp = holder.querySelector(".a-person"); inp.focus();
+  function commit(){
+    var p = holder.querySelector(".a-person").value.trim();
+    if(!p){ toast("人名不能為空"); return; }
+    var n = holder.querySelector(".a-note").value;
+    state.adds[y.y] = state.adds[y.y] || {};
+    state.adds[y.y][office] = state.adds[y.y][office] || [];
+    state.adds[y.y][office].push({person:p, note:n, ts:Date.now()});
+    save(); render();
+  }
+  holder.querySelector(".a-save").onclick = commit;
+  holder.querySelector(".a-cancel").onclick = function(){ holder.remove(); };
+  inp.addEventListener("keydown", function(e){ if(e.key==="Enter"){ e.preventDefault(); commit(); } });
+}
+
+function openAddOffice(){
+  var y = byYear[state.cur];
+  if(document.getElementById("addOfficeBox")) return;
+  var have = {};
+  (y.offices||[]).forEach(function(o){ have[o.n] = 1; });
+  Object.keys(state.adds[y.y]||{}).forEach(function(o){ have[o] = 1; });
+  var opts = OFFICE_ORDER.map(function(o){
+    o = o === "易州山廠提督" ? "易州山廠提督" : o;
+    return '<option value="'+o+'">'+o+(have[o]?"（已有）":"")+'</option>';
+  }).join("");
+  var miss = OFFICE_ORDER.filter(function(o){ return !have[o]; })[0] || OFFICE_ORDER[0];
+
+  var box = document.getElementById("offices");
+  var div = document.createElement("div");
+  div.className = "off";
+  div.id = "addOfficeBox";
+  div.style.borderColor = "#a4342a";
+  div.innerHTML =
+    '<div class="offhead" style="background:#f7e7e3"><span class="offname">新增衙署</span>'+
+      '<span class="seg">原書本年有此衙，數據整行缺失時用</span></div>'+
+    '<div style="padding:7px 10px"><div class="editbox">'+
+      '<div class="editrow"><label>衙署</label><select class="ao-office">'+opts+'</select></div>'+
+      '<div class="editrow"><label>人名</label><input class="ao-person" placeholder="可留空，稍後在該行「＋ 補行」再填"></div>'+
+      '<div class="editrow" style="align-items:flex-start"><label style="padding-top:4px">注文</label>'+
+        '<textarea class="ao-note" placeholder="留空表示原書無注"></textarea></div>'+
+      '<div class="editbtns"><button class="ao-cancel">取消</button>'+
+        '<button class="primary ao-save">新增（Enter）</button></div>'+
+    '</div></div>';
+  box.appendChild(div);
+  var sel = div.querySelector(".ao-office");
+  sel.value = miss;
+  var inp = div.querySelector(".ao-person");
+  inp.focus();
+  div.scrollIntoView({block:"center"});
+
+  function commit(){
+    var off = sel.value;
+    var p = inp.value.trim();
+    var n = div.querySelector(".ao-note").value;
+    state.adds[y.y] = state.adds[y.y] || {};
+    state.adds[y.y][off] = state.adds[y.y][off] || [];
+    if(p) state.adds[y.y][off].push({person:p, note:n, ts:Date.now()});
+    save(); render();
+    var el = document.querySelector('.off[data-office="'+off+'"]');
+    if(el) el.scrollIntoView({block:"center"});
+    toast(p ? ("已新增 "+off+" · "+p) : ("已建空衙署 "+off+"，可在該行補人"));
+  }
+  div.querySelector(".ao-save").onclick = commit;
+  div.querySelector(".ao-cancel").onclick = function(){ div.remove(); };
+  inp.addEventListener("keydown", function(e){ if(e.key==="Enter"){ e.preventDefault(); commit(); } });
+  sel.addEventListener("change", function(){ inp.focus(); });
+}
+
+/* ── 事件委托 ── */
+document.getElementById("offices").addEventListener("click", function(e){
+  var t = e.target;
+  if(t.classList.contains("addrow")){ addRow(t.dataset.office); return; }
+  var row = t.closest(".row");
+  if(!row) return;
+  if(row.dataset.add){
+    if(t.classList.contains("del")){
+      var y = byYear[state.cur].y, off = row.dataset.office;
+      var arr = (state.adds[y]&&state.adds[y][off])||[];
+      var p = row.querySelector(".who").textContent;
+      var k = arr.findIndex(function(a){ return a.person===p; });
+      if(k>=0){ arr.splice(k,1); save(); render(); }
+    }
+    return;
+  }
+  var id = row.dataset.id;
+  if(t.classList.contains("ok")){ setMark(id, "ok"); return; }
+  if(t.classList.contains("del")){
+    var cur = state.rows[id];
+    if(cur && cur.a==="del"){ setMark(id, null); } else { setMark(id, "del"); }
+    return;
+  }
+  if(t.classList.contains("ed")){ openEditor(row); return; }
+  if(row.querySelector(".editbox")) return;
+  document.querySelectorAll(".row.sel").forEach(function(r){ r.classList.remove("sel"); });
+  row.classList.add("sel");
+});
+
+document.getElementById("yearlist").addEventListener("click", function(e){
+  var it = e.target.closest(".yitem");
+  if(it) goto(+it.dataset.y);
+});
+
+document.querySelectorAll(".navhead button[data-sort]").forEach(function(b){
+  b.onclick = function(){
+    document.querySelectorAll(".navhead button[data-sort]").forEach(function(x){ x.classList.remove("on"); });
+    b.classList.add("on"); state.sort = b.dataset.sort; renderNav();
+  };
+});
+document.getElementById("onlyUndone").onchange = renderNav;
+
+function zoom(d){
+  state.zoom = Math.min(4, Math.max(0.4, +(state.zoom + d).toFixed(2)));
+  document.getElementById("pageimg").style.setProperty("--zoom", state.zoom);
+  document.getElementById("ztxt").textContent = Math.round(state.zoom*100)+"%";
+  document.getElementById("pageimg").classList.toggle("z2", state.zoom>1.01);
+}
+document.getElementById("zin").onclick = function(){ zoom(0.25); };
+document.getElementById("zout").onclick = function(){ zoom(-0.25); };
+document.getElementById("zfit").onclick = function(){ state.zoom = 1; zoom(0); };
+document.getElementById("pageimg").onclick = function(){
+  state.zoom = state.zoom>1.01 ? 1 : 2;
+  zoom(0);
+};
+document.getElementById("imgwrap").addEventListener("wheel", function(e){
+  if(e.ctrlKey){ e.preventDefault(); zoom(e.deltaY<0?0.15:-0.15); }
+}, {passive:false});
+
+document.getElementById("ynote").addEventListener("input", function(){
+  state.yearnotes[state.cur] = this.value;
+  save();
+});
+
+document.getElementById("btnPrev").onclick = function(){ nextYear(-1); };
+document.getElementById("btnAddOffice").onclick = openAddOffice;
+document.getElementById("btnNav").onclick = function(){
+  state.navHidden = !state.navHidden;
+  applyNav(); save();
+  document.getElementById("btnNav").classList.toggle("on", !!state.navHidden);
+};
+document.getElementById("btnNext").onclick = function(){ nextYear(1); };
+document.getElementById("pprev").onclick = function(){ showPage(viewPage-1); };
+document.getElementById("pnext").onclick = function(){ showPage(viewPage+1); };
+document.getElementById("pback").onclick = function(){ showPage(byYear[state.cur].book); };
+document.getElementById("btnDone").onclick = function(){
+  state.done[state.cur] = Date.now();
+  save(); renderProgress();
+  var arr = YEARS.map(function(x){return x.y;}).sort(function(a,b){return a-b;});
+  var i = arr.indexOf(state.cur);
+  if(i<arr.length-1){ goto(arr[i+1]); } else { toast("全部年已核完"); }
+};
+
+/* ── 导出 / 导入 ── */
+function buildExport(){
+  var patch=[], add=[], remove=[], yearnotes={};
+  Object.keys(state.rows).forEach(function(id){
+    var m = state.rows[id];
+    var p = id.split("|");
+    var y = +p[0], office = p[1];
+    if(m.a==="edit"){
+      patch.push({year:y, old_person:p[2], person:m.person, old_office:office, office:m.office, note:m.note, page:"book-p"+byYear[y].book});
+    } else if(m.a==="del"){
+      remove.push({year:y, person:p[2], office:office, page:"book-p"+byYear[y].book});
+    }
+  });
+  Object.keys(state.adds).forEach(function(y){
+    Object.keys(state.adds[y]).forEach(function(office){
+      state.adds[y][office].forEach(function(a){
+        add.push({year:+y, person:a.person, office:office, note:a.note||"", page:"book-p"+(byYear[+y]||{}).book});
+      });
+    });
+  });
+  var doneYears = Object.keys(state.done).map(Number).sort(function(a,b){return a-b;});
+  Object.keys(state.yearnotes).forEach(function(y){ if(state.yearnotes[y]) yearnotes[y]=state.yearnotes[y]; });
+  var emptyOffices = [];
+  Object.keys(state.adds).forEach(function(y){
+    Object.keys(state.adds[y]).forEach(function(office){
+      if(!state.adds[y][office].length) emptyOffices.push({year:+y, office:office});
+    });
+  });
+  return {
+    meta:{ export_at:new Date().toISOString(), tool:"mingoff-proofread", years_done:doneYears.length, years_total:YEARS.length, done_years:doneYears },
+    patch:patch, add:add, remove:remove, empty_offices:emptyOffices, yearnotes:yearnotes
+  };
+}
+
+function showModal(title, bodyHtml, code){
+  document.getElementById("mTitle").textContent = title;
+  document.getElementById("mStat").innerHTML = bodyHtml.stat;
+  document.getElementById("mHint").innerHTML = bodyHtml.hint;
+  document.getElementById("mCode").textContent = code;
+  document.getElementById("veil").classList.add("show");
+}
+document.getElementById("mClose").onclick = function(){ document.getElementById("veil").classList.remove("show"); };
+document.getElementById("mCopy").onclick = function(){
+  navigator.clipboard.writeText(document.getElementById("mCode").textContent).then(function(){ toast("已複製"); });
+};
+document.getElementById("mDown").onclick = function(){
+  var out = buildExport();
+  var blob = new Blob([JSON.stringify(out, null, 1)], {type:"application/json"});
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "notes.json";
+  a.click();
+  setTimeout(function(){ URL.revokeObjectURL(a.href); }, 2000);
+};
+
+document.getElementById("btnExport").onclick = function(){
+  var out = buildExport();
+  var stat = '<span>已核 <b>'+out.meta.years_done+'</b> / '+out.meta.years_total+' 年</span>'+
+    '<span>改 <b>'+out.patch.length+'</b></span>'+
+    '<span>補 <b>'+out.add.length+'</b></span>'+
+    '<span>刪 <b>'+out.remove.length+'</b></span>';
+  var hint = '下載後放到 <code>_proofread/notes.json</code>；回填腳本會把它轉成 buyuan_repair 的 '+
+    'BOOK_PATCH / BOOK_ADD / BOOK_REMOVE（每條都自帶頁證）。';
+  showModal("匯出校記", {stat:stat, hint:hint}, JSON.stringify(out, null, 1).slice(0, 2000) + "\n…（完整內容見下載檔）");
+};
+
+document.getElementById("btnImport").onclick = function(){ document.getElementById("fileImport").click(); };
+document.getElementById("fileImport").onchange = function(e){
+  var f = e.target.files[0]; if(!f) return;
+  var fr = new FileReader();
+  fr.onload = function(){
+    try{
+      var o = JSON.parse(fr.result);
+      (o.remove||[]).forEach(function(r){
+        state.rows[r.year+"|"+r.office+"|"+r.person+"|*"] = {a:"del"};
+      });
+      (o.patch||[]).forEach(function(r){
+        var key = r.year+"|"+r.old_office+"|"+r.old_person+"|*";
+        state.rows[key] = {a:"edit", person:r.person, office:r.office, note:r.note};
+      });
+      (o.add||[]).forEach(function(r){
+        state.adds[r.year] = state.adds[r.year]||{};
+        state.adds[r.year][r.office] = state.adds[r.year][r.office]||[];
+        state.adds[r.year][r.office].push({person:r.person, note:r.note||""});
+      });
+      (o.empty_offices||[]).forEach(function(r){
+        state.adds[r.year] = state.adds[r.year]||{};
+        state.adds[r.year][r.office] = state.adds[r.year][r.office]||[];
+      });
+      if(o.yearnotes) Object.keys(o.yearnotes).forEach(function(y){ state.yearnotes[y]=o.yearnotes[y]; });
+      (o.meta&&o.meta.done_years||[]).forEach(function(y){ state.done[y]=1; });
+      save(); render(); checkEmpty(); toast("已匯入");
+    }catch(err){ toast("匯入失敗："+err.message); }
+  };
+  fr.readAsText(f);
+};
+
+/* ── 快捷键 ── */
+document.addEventListener("keydown", function(e){
+  var tag = (e.target.tagName||"").toLowerCase();
+  var typing = tag==="input" || tag==="textarea" || tag==="select";
+  if((e.ctrlKey||e.metaKey) && e.key.toLowerCase()==="s"){ e.preventDefault(); document.getElementById("btnExport").click(); return; }
+  if(typing) return;
+  if(e.key==="ArrowRight"){ e.preventDefault(); nextYear(1); }
+  else if(e.key==="ArrowLeft"){ e.preventDefault(); nextYear(-1); }
+  else if(e.key==="["){ e.preventDefault(); document.getElementById("btnNav").click(); }
+  else if(e.key==="1"||e.key==="2"||e.key==="3"){
+    var sel = document.querySelector(".row.sel:not([data-add])");
+    if(!sel) return;
+    e.preventDefault();
+    if(e.key==="1") setMark(sel.dataset.id, "ok");
+    else if(e.key==="2") openEditor(sel);
+    else {
+      var m = state.rows[sel.dataset.id];
+      setMark(sel.dataset.id, (m&&m.a==="del")? null : "del");
+    }
+  }
+});
+
+/* ── 空库提醒（防止"换地址看着像丢数据"） ── */
+function checkEmpty(){
+  var el = document.getElementById("emptyWarn");
+  if(!el) return;
+  var isEmpty = !Object.keys(state.rows).length && !Object.keys(state.adds).length &&
+                !Object.keys(state.done).length && !Object.keys(state.yearnotes).length;
+  el.style.display = isEmpty ? "block" : "none";
+  var o = document.getElementById("curOrigin");
+  if(o) o.textContent = (location.protocol === "file:") ? "file://（本地文件，與 http 服務不共用校記）" : location.origin;
+}
+
+/* ── 启动 ── */
+(function boot(){
+  applyNav();
+  document.getElementById("btnNav").classList.toggle("on", !!state.navHidden);
+  var arr = YEARS.map(function(x){return x.y;}).sort(function(a,b){return a-b;});
+  state.cur = arr[0];
+  render();
+  checkEmpty();
+})();
+})();
+</script>
+</body>
+</html>

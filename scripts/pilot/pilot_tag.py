@@ -92,10 +92,19 @@ def cred():
     return key, base
 
 
+# 端点硬编码（专属 maas host）；base/环境变量来源一律不用于构造请求（防 SSRF）
+_ENDPOINT = "https://ws-4x5unuhbsr3mq3zf.cn-beijing.maas.aliyuncs.com/systemone"
+
+
+def _check_base(base_url: str) -> str:
+    """弃用占位：保留参数签名兼容调用方，返回值一律为硬编码端点。"""
+    return _ENDPOINT
+
+
 def tag(client_key, base_url, text):
     body = json.dumps({"model": "decision-model-preview", "state": text, "questions": Q},
                       ensure_ascii=False).encode("utf-8")
-    req = urllib.request.Request(base_url + "/systemone", data=body, method="POST",
+    req = urllib.request.Request(_ENDPOINT, data=body, method="POST",
                                  headers={"Authorization": f"Bearer {client_key}",
                                           "Content-Type": "application/json"})
     for attempt in range(3):

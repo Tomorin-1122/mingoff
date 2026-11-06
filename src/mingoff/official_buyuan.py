@@ -107,19 +107,22 @@ CONF_DOWN = {0.8: 0.7, 0.7: 0.6, 0.6: 0.5, 0.5: 0.5}
 
 
 def load_buyuan() -> list[dict]:
-    """v2 修复版条目（含 person_id/person_label）；缺 v2 时回退 v1。"""
-    p2 = DATA / "vol1_buyuan_entries_v2.json"
-    p1 = DATA / "vol1_buyuan_entries.json"
-    p = p2 if p2.is_file() else p1
-    return json.loads(p.read_text(encoding="utf-8"))
+    """v3 校记回填版（人工校对 276/277 年）→ v2 修复版 → v1。"""
+    for name in ("vol1_buyuan_entries_v3.json", "vol1_buyuan_entries_v2.json",
+                 "vol1_buyuan_entries.json"):
+        p = DATA / name
+        if p.is_file():
+            return json.loads(p.read_text(encoding="utf-8"))
+    raise SystemExit("找不到部院条目文件（v3/v2/v1 均缺失）")
 
 
 def load_buyuan_cbdb() -> dict:
-    p3 = DATA / "vol1_buyuan_person_cbdb_v3.json"
-    p2 = DATA / "vol1_buyuan_person_cbdb_v2.json"
-    p1 = DATA / "vol1_buyuan_person_cbdb.json"
-    p = p3 if p3.is_file() else (p2 if p2.is_file() else p1)
-    return json.loads(p.read_text(encoding="utf-8")) if p.is_file() else {}
+    for name in ("vol1_buyuan_person_cbdb_v4.json", "vol1_buyuan_person_cbdb_v3.json",
+                 "vol1_buyuan_person_cbdb_v2.json", "vol1_buyuan_person_cbdb.json"):
+        p = DATA / name
+        if p.is_file():
+            return json.loads(p.read_text(encoding="utf-8"))
+    return {}
 
 
 def build_buyuan_tenures() -> list[dict]:

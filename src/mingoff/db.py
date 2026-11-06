@@ -76,11 +76,16 @@ def table_names(conn: sqlite3.Connection) -> list[str]:
 
 
 def count_rows(conn: sqlite3.Connection) -> dict[str, int]:
-    """各表行数 —— 体检用。"""
-    out: dict[str, int] = {}
-    for name in table_names(conn):
-        out[name] = conn.execute(f"SELECT COUNT(*) FROM {name}").fetchone()[0]
-    return out
+    """各表行数 —— 体检用。schema 固定（schema.py 七表），逐表字面量查询，无动态 SQL。"""
+    return {
+        "person": conn.execute("SELECT COUNT(*) FROM person").fetchone()[0],
+        "office": conn.execute("SELECT COUNT(*) FROM office").fetchone()[0],
+        "tenure": conn.execute("SELECT COUNT(*) FROM tenure").fetchone()[0],
+        "source": conn.execute("SELECT COUNT(*) FROM source").fetchone()[0],
+        "tenure_source": conn.execute("SELECT COUNT(*) FROM tenure_source").fetchone()[0],
+        "discrepancy": conn.execute("SELECT COUNT(*) FROM discrepancy").fetchone()[0],
+        "meta": conn.execute("SELECT COUNT(*) FROM meta").fetchone()[0],
+    }
 
 
 def is_initialized(db_path: Path | str | None = None) -> bool:

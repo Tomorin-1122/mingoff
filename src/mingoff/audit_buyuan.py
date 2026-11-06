@@ -47,7 +47,7 @@ PSEUDO_CHARS = set("遷改罷卒致仕吏戶兵刑工都察御史侍郎參布按
 
 def load() -> dict:
     files = {
-        "entries": DATA / "vol1_buyuan_entries_v2.json",
+        "entries": DATA / "vol1_buyuan_entries_v3.json",   # v3 = 人工校记回填版
         "doc": DATA / "official_buyuan.json",
         "mapping": DATA / "vol1_buyuan_person_cbdb_v3.json",
         "repair": DATA / "vol1_buyuan_repair.json",
@@ -55,8 +55,14 @@ def load() -> dict:
     }
     out = {}
     for k, p in files.items():
-        if not p.is_file() and k in ("entries", "mapping"):
-            p = DATA / f"vol1_buyuan_{'entries' if k == 'entries' else 'person_cbdb'}.json"
+        if not p.is_file() and k == "entries":
+            for alt in ("vol1_buyuan_entries_v2.json", "vol1_buyuan_entries.json"):
+                p2 = DATA / alt
+                if p2.is_file():
+                    p = p2
+                    break
+        if not p.is_file() and k == "mapping":
+            p = DATA / "vol1_buyuan_person_cbdb.json"
         out[k] = json.loads(p.read_text(encoding="utf-8")) if p.is_file() else (
             [] if k in ("entries",) else {})
     # 哪些是"重建输入"（未随精简仓发布）。缺了就必须显式跳过相关检查，不能报 0/None 冒充通过。
@@ -112,9 +118,11 @@ def audit() -> dict:
     bad_years = [t for t in tenures if t["years"] != list(range(t["start_year"], t["end_year"] + 1))]
     bad_month = [t for t in tenures if any(
         m is not None and not 1 <= m <= 12 for m in (t["start_month"], t["end_month"]))]
+    # D15：1644 段 end_month ≤3 即合法——三月内去任（殉難/降/被執/死）是史料明确事件，
+    # 不打 end_clamped；clamp 只用于无事件截断，二者都合规（规范 2.2「与史料月份区分」）
     d15 = [t for t in tenures if t["end_year"] > CUT_Y
            or (t["start_year"] == CUT_Y and (t["start_month"] or 1) > 3)
-           or (t["end_year"] == CUT_Y and not (t["end_clamped"] and t["end_month"] == 3))]
+           or (t["end_year"] == CUT_Y and (t["end_month"] or 1) > 3)]
     r["structure"] = dict(tenures=len(tenures),
                           persons=len({t["person_id"] for t in tenures}),
                           display_persons=len({t["person"] for t in tenures}),
@@ -181,10 +189,14 @@ def audit() -> dict:
     # 伪名判据里有一条"不在映射表且含官署字"——映射表缺失时该判据不可用，
     # 否则会把 3 字以上的正常人名误报为伪名（精简仓实测伪名=1 即此例）。
     _mapped = mapping if have.get("mapping") else None
+    # 原书实拍验证的真名白名单：名字含官署字/虚词但确为原书印文
+    # （李遷桂：正文 p403 ·1369 工部·「是年,撫州知府遷,尋卒」，书印「遷」字无疑）
+    REAL_NAMES = {"李遷桂"}
     pseudo = sorted(n for n in persons
-                    if PSEUDO_RE.search(n) or len(n) >= 5
-                    or (_mapped is not None and n not in _mapped
-                        and any(ch in PSEUDO_CHARS for ch in n[1:])))
+                    if n not in REAL_NAMES
+                    and (PSEUDO_RE.search(n) or len(n) >= 5
+                         or (_mapped is not None and n not in _mapped
+                             and any(ch in PSEUDO_CHARS for ch in n[1:]))))
     if have.get("entries") and have.get("mapping"):
         unmapped = [(pid, c) for pid, c in Counter(e.get("person_id") for e in entries).most_common()
                     if pid not in mapping]

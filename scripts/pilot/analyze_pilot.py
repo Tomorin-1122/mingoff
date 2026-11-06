@@ -65,13 +65,14 @@ for kind, need in (("授官", 20), ("离任", 10), ("议政", 10), ("行政", 10
 fn_rows = [(r, "规则") for r in rows if r["rules"]["R1_head_appoint"] and r["kind"] != "授官"]
 work += random.sample(fn_rows, min(10, len(fn_rows)))
 
-with open(ROOT / "src/mingoff/data/pilot_manual_check.md", "w", encoding="utf-8") as f:
-    f.write("# 试点人工核对清单（60 条）\n\n")
-    f.write("> 生成：scripts/pilot/analyze_pilot.py。每行判定后填 ✅/❌ 与正确类别。\n\n")
-    f.write("| # | 来源 | 模型/规则 | 人员 | 年 | 文本 | 模型判定 | 核对（✅/❌） | 备注 |\n")
-    f.write("|---|---|---|---|---|---|---|---|---|\n")
-    for i, (r, src) in enumerate(work, 1):
-        text = r["text"].replace("|", "｜").replace("\n", " ")[:80]
-        f.write(f"| {i} | {src} | {r['kind']}({r['kind_conf']:.2f}) | {r['person']} | {r['year']} "
-                f"| {text} | {r['kind']} |  |  |\n")
+rows_out = ["# 试点人工核对清单（60 条）\n",
+            "> 生成：scripts/pilot/analyze_pilot.py。每行判定后填 ✅/❌ 与正确类别。\n",
+            "| # | 来源 | 模型/规则 | 人员 | 年 | 文本 | 模型判定 | 核对（✅/❌） | 备注 |",
+            "|---|---|---|---|---|---|---|---|---|"]
+for i, (r, src) in enumerate(work, 1):
+    text = r["text"].replace("|", "｜").replace("\n", " ")[:80]
+    rows_out.append(f"| {i} | {src} | {r['kind']}({r['kind_conf']:.2f}) | {r['person']} | {r['year']} "
+                    f"| {text} | {r['kind']} |  |  |")
+(ROOT / "src/mingoff/data/pilot_manual_check.md").write_text(
+    "\n".join(rows_out) + "\n", encoding="utf-8")
 print(f"\n人工清单已写入 src/mingoff/data/pilot_manual_check.md（{len(work)} 条）")

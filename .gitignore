@@ -21,6 +21,8 @@ src/mingoff/data/shilu_tags.ckpt.jsonl
 # ===== 本地工作目录（不入仓）=====
 _scratch/
 _c.txt
+# 人工校对台（本地工具 + 原书页图，含扫描页，不入公开仓）
+/_proofread/
 
 # CBDB 快照等外部数据导入物（体量大、有独立许可，不入库）
 imports/
@@ -80,6 +82,12 @@ desktop.ini
 # 3) 重建输入（精简仓只发导出数据 official_*.json）
 /src/mingoff/data/vol1_buyuan_manifest.json
 /src/mingoff/data/vol1_*
+# 册2-4 各表种源提取物（同 vol1_*：中间产物不入公开仓）
+/src/mingoff/data/vol2_*
+/src/mingoff/data/vol3_*
+/src/mingoff/data/vol4_*
+# 本地安全扫描
+/.mimosa/
 
 # GitHub Pages：站点静态导出产物（Next.js out/）必须入仓，由 Pages 直接服务
 !/site/out/
