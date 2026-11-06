@@ -68,8 +68,16 @@ desktop.ini
 
 # ===== 公开仓范围（2026-10-20 老板拍板：不再私有仓，本地直接提交公开仓）=====
 # 规则见 scripts/public_scope.py；自查：python scripts/check_public_scope.py
-# 1) 过程文档 / 本机日志 / demo 成品：一律不入库（/ 前缀 = 仅仓库根目录的 docs）
-/docs/
+# 1) 过程文档 / 本机日志 / demo 成品：一律不入库
+#    （注意用 /docs/* 而非 /docs/——docs/ 同时承载 Pages 部署产物，见 eb4a628，
+#     目录级排除会让子文件反排除失效；新 hash 的 page chunk 会被漏传，线上 404）
+/docs/*
+!docs/index.html
+!docs/404.html
+!docs/index.txt
+!docs/.nojekyll
+!docs/_next/
+!docs/_next/**
 /.workbuddy/
 /web/
 /_scratch/
