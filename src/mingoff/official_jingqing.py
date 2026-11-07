@@ -29,6 +29,7 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
 
+from mingoff.glue_repair import apply_glue_repair
 from mingoff.official import CUT_M, CUT_Y, _cross_year, _month_of, build_shilu
 from mingoff.match_cbdb import S2T
 from mingoff.official_buyuan import CONF_DOWN, merge_gap_segments
@@ -215,6 +216,11 @@ def load_jingqing() -> list[dict]:
     return json.loads((DATA / "vol1_jingqing_entries.json").read_text(encoding="utf-8"))["entries"]
 
 
+def load_jingqing_repaired(report: dict | None = None) -> list[dict]:
+    """OCR 条目 + 格子级粘连修复（glue_repair，正字别名轮）。"""
+    return apply_glue_repair(load_jingqing(), "jingqing", report)
+
+
 def _office_basis(seg_years: list[int], review_of: dict[int, str | None]) -> str:
     """段的官职归属依据：label-column / row-order（整段无标签年行序推）/ dual / mixed。
 
@@ -232,7 +238,7 @@ def _office_basis(seg_years: list[int], review_of: dict[int, str | None]) -> str
 
 
 def build_jingqing_tenures() -> list[dict]:
-    entries = [e for e in load_jingqing() if e["year"] <= CUT_Y]
+    entries = [e for e in load_jingqing_repaired() if e["year"] <= CUT_Y]
     identities = split_identities(entries)
     pid_of: dict[tuple[str, int], str] = {}
     for name, ents in identities.items():
@@ -349,8 +355,8 @@ def build_jingqing_tenures() -> list[dict]:
 # ---------------- 审计（G2/G3/G6-京卿版） ----------------
 
 def audit() -> dict:
+    entries = [e for e in load_jingqing_repaired() if e["year"] <= CUT_Y]
     tenures = build_jingqing_tenures()
-    entries = load_jingqing()
     blockers: list[str] = []
     warnings: list[str] = []
     bad_years = [t for t in tenures

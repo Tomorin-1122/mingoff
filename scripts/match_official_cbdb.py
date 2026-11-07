@@ -53,6 +53,13 @@ TABLES: dict[str, dict] = {
             "順天府府尹": ["順天府府尹", "府尹"],
         },
         "hint_fallback": ["卿", "府尹"],
+        # 仕历链证据：本衙系统内任意职（CBDB 对座主官 recording 稀，但左/右/少卿等
+        # 迁转链常见）——候选在本衙系统 ±6 年内有任职记录即 +0.5，唯一命中才随分差挂
+        "career_hint": {
+            "通政使": ["通政"], "大理卿": ["大理寺"], "太常卿": ["太常寺"],
+            "光祿卿": ["光祿寺"], "太僕卿": ["太僕寺"], "鴻臚卿": ["鴻臚寺"],
+            "尚寶卿": ["尚寶司"], "順天府府尹": ["順天府"],
+        },
         "keep_null": set(),       # 人工既定 NULL（如部院李本 D44），留待 review 后增补
         "manual": {               # person_id → {"id": int|None, "note": str}，人工裁决留痕
             # 曾秉正 66533：CBDB 通政使 1377–1382 任职记录 + 卒 1382，与段 [1382,1382] 吻合
@@ -80,6 +87,10 @@ TABLES: dict[str, dict] = {
             "工科": ["工科都給事中", "都給事中"],
         },
         "hint_fallback": ["都給事中"],
+        "career_hint": {
+            "吏科": ["吏科"], "戶科": ["戶科"], "禮科": ["禮科"],
+            "兵科": ["兵科"], "刑科": ["刑科"], "工科": ["工科"],
+        },
         "keep_null": set(),
         "manual": {
             # 凌義渠 34757：生卒 1593–1644 与史实吻合（甲申殉节），京卿表同名 scored-unique 同证
@@ -201,6 +212,9 @@ def match_table(key: str, cfg: dict, con: sqlite3.Connection,
 
         hints = sorted({h for o in offices for h in
                         cfg["office_hint"].get(o, cfg["hint_fallback"])})
+        career_stems = sorted({s for o in offices
+                               for s in cfg["career_hint"].get(o, [])})
+        sur = t2s_norm(name)[0]  # 本实体姓氏（S2T 归一）——任职证据的同姓守卫
         scored = []
         for cpid, (cn, birth, death, iy) in cands.items():
             s_time = span_compat(birth, death, iy, lo, hi)
@@ -208,15 +222,27 @@ def match_table(key: str, cfg: dict, con: sqlite3.Connection,
                 continue
             if s_time < 0:
                 continue
+            # 任职/仕历证据要求同姓：前任/继任同名不同姓是高发混淆
+            # （如 趙榮 大理寺卿 1461–63 与 王榮 大理卿 1465），异姓不给任职分
+            sur_ok = bool(cn) and t2s_norm(cn)[0] == sur
             s_office = 0.0
-            for chn, fy, ly in postings.get(cpid, ()):
-                if fy <= hi and ly >= lo and any(h in chn for h in hints):
-                    s_office = 1.0
-                    break
-            score = s_time + s_office
+            if sur_ok:
+                for chn, fy, ly in postings.get(cpid, ()):
+                    if fy <= hi and ly >= lo and any(h in chn for h in hints):
+                        s_office = 1.0
+                        break
+            # 仕历链分：本衙系统内任意职、窗 ±6 年（座主官前任通常为左/右/少卿等，
+            # 迁转链相邻）——CBDB 座主官 recording 稀薄时的次强证据
+            s_career = 0.0
+            if sur_ok and career_stems:
+                for chn, fy, ly in postings.get(cpid, ()):
+                    if fy <= hi + 6 and ly >= lo - 6 and any(s in chn for s in career_stems):
+                        s_career = 0.5
+                        break
+            score = s_time + s_office + s_career
             scored.append({"id": cpid, "name": cn, "birth": birth, "death": death,
                            "iy": iy, "s_time": round(s_time, 2), "s_office": s_office,
-                           "score": round(score, 2)})
+                           "s_career": s_career, "score": round(score, 2)})
         if not scored:
             unresolved.append({"person_id": pid, "name": name, "reason": "time-conflict"})
             continue

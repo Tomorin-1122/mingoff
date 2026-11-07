@@ -28,6 +28,7 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
 
+from mingoff.glue_repair import apply_glue_repair
 from mingoff.keji_repair import (BOOK_ADD_1618, BOOK_GAP_YEARS, BOOK_PAGE_MAP,
                                  BOOK_PATCH_1638, apply_keji_repair)
 from mingoff.match_cbdb import S2T
@@ -196,7 +197,8 @@ def load_keji() -> list[dict]:
 
 
 def load_keji_repaired(report: dict | None = None) -> list[dict]:
-    return apply_keji_repair(load_keji(), report)
+    return apply_glue_repair(apply_keji_repair(load_keji(), report),
+                             "kejishizhong", report)
 
 
 def _office_basis_kej(seg_years: list[int], frames: dict[int, str]) -> str:
