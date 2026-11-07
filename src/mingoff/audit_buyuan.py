@@ -25,6 +25,7 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
+from mingoff.match_cbdb import S2T
 from mingoff.official import CUT_Y
 
 DATA = Path(__file__).resolve().parent / "data"
@@ -49,7 +50,7 @@ def load() -> dict:
     files = {
         "entries": DATA / "vol1_buyuan_entries_v3.json",   # v3 = 人工校记回填版
         "doc": DATA / "official_buyuan.json",
-        "mapping": DATA / "vol1_buyuan_person_cbdb_v3.json",
+        "mapping": DATA / "vol1_buyuan_person_cbdb_v4.json",   # v4 = 评分器现行版
         "repair": DATA / "vol1_buyuan_repair.json",
         "manifest": DATA / "vol1_buyuan_manifest.json",
     }
@@ -62,7 +63,12 @@ def load() -> dict:
                     p = p2
                     break
         if not p.is_file() and k == "mapping":
-            p = DATA / "vol1_buyuan_person_cbdb.json"
+            for alt in ("vol1_buyuan_person_cbdb_v3.json",
+                        "vol1_buyuan_person_cbdb.json"):
+                p2 = DATA / alt
+                if p2.is_file():
+                    p = p2
+                    break
         out[k] = json.loads(p.read_text(encoding="utf-8")) if p.is_file() else (
             [] if k in ("entries",) else {})
     # 哪些是"重建输入"（未随精简仓发布）。缺了就必须显式跳过相关检查，不能报 0/None 冒充通过。
@@ -85,7 +91,7 @@ ASSET_GATES = {
 }
 _SKIP_REASON = {
     "entries": "缺少重建输入 vol1_buyuan_entries_v2.json（精简仓未随附）",
-    "mapping": "缺少 vol1_buyuan_person_cbdb_v3.json（精简仓未随附）",
+    "mapping": "缺少 vol1_buyuan_person_cbdb_v4.json（精简仓未随附）",
     "repair": "缺少 vol1_buyuan_repair.json（精简仓未随附）",
     "manifest": "缺少 vol1_buyuan_manifest.json（精简仓未随附）",
 }
@@ -264,12 +270,15 @@ def audit() -> dict:
             cid = v.get("cbdb_id")
             if not cid:
                 continue
-            ids[cid].add(pid)
+            # 简繁变体 person_id（吴/吳 等 OCR 前后不一）归一后比对，
+            # 同一人类的两种写法不算「同 id 多正名」（与 keji/jingqing audit 对齐）
+            ids[int(cid)].add(pid.translate(S2T))
         for t in tenures:
             cid = t["cbdb_id"]
             if not cid:
                 continue
-            q = row(cid)
+            ids.setdefault(int(cid), set()).add(t["person_id"].translate(S2T))
+            q = row(int(cid))
             if not q:
                 date_bad.append((t["person_id"], cid, "no-row"))
                 continue

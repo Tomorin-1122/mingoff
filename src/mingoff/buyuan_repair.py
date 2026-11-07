@@ -72,6 +72,15 @@ GARBAGE = {"井九年", "井八年閏", "井八年", "欠陽", "屈駕", "扈駕
            "尚書", "侍郎", "都御史", "御史", "禦史"}
 # 多格粘连姓名：原书一格两人被 OCR 连写（p403 洪武二年 御史臺「湯和鄧愈」）
 NAME_SPLIT = {"湯和鄧愈": ["湯和", "鄧愈"]}
+# 正字归一改名（2026-11-07 CBDB 对齐轮发现）：OCR 简繁前后不一致把一人劈成两实体——
+# 1561 禮部「吴山」（三、乙亥、十五，閑住。隆慶三年起改南禮尚不赴）= 吳山#2 本人，
+# 与 1556–60 吳山#2（禮部尚書，CBDB 69268 禮部尚書 1556–69）连任；改名后段自然合并。
+NAME_FIX = {
+    (1561, "吴山", "禮部"): ("吳山", "吳山#2"),
+    # 1368 行 OCR 用简体「邓愈」（1369–70 同一个人作「鄧愈」，连续任御史大夫，
+    # 1370 封衛國公解任）——归一到繁体，段 1368–1370 合并
+    (1368, "邓愈", "御史臺"): ("鄧愈", "鄧愈"),
+}
 SUFFIXES = ("扈駕", "閤", "閏")
 # 名字第 2 字起出现这些「官署/任免」字，几乎都是 OCR 名注错切（如 南兵/都遷戶/參軍/屯戍）；
 # 首字可能是真实姓氏（郎/都/任…），不查；白名单（CBDB 映射名 + 内阁人物名）不受影响。
@@ -306,6 +315,18 @@ def apply_book_patch(entries: list[dict], report: dict) -> None:
                                      "from": old_office, "to": new_office,
                                      "source": source})
     report["office_fix"] = office_fixed
+
+    # 正字归一改名（person 与 person_id 同改；raw_person 留 OCR 原貌不动）
+    name_fixed = []
+    for (year, wrong, office), (correct, correct_pid) in NAME_FIX.items():
+        for e in entries:
+            if (e["year"] == year and e["person"] == wrong
+                    and e["office"] == office):
+                e["person"] = correct
+                e["person_id"] = correct_pid
+                name_fixed.append({"year": year, "office": office,
+                                   "from": wrong, "to": correct_pid})
+    report["name_fix"] = name_fixed
 
     by_key = defaultdict(list)
     for e in entries:

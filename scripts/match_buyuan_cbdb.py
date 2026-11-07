@@ -46,21 +46,36 @@ OFFICE_HINT = {
     "總督倉場": ["總督倉場"], "總倉場": ["總督倉場"], "總督京儲": ["總督京儲"],
 }
 HINT_FALLBACK = ["尚書", "都御史", "侍郎", "御史"]
+# 仕历链证据（2026-11-07 自 match_official_cbdb.py 同步）：本衙系统内任意职
+# （部郎中/主事、监察御史等迁转链）±6 年 → +0.5，同姓守卫下唯一强分差才挂
+CAREER_HINT = {
+    "吏部": ["吏部"], "戶部": ["戶部"], "禮部": ["禮部"], "兵部": ["兵部"],
+    "刑部": ["刑部"], "工部": ["工部"],
+    "都察院": ["御史"], "御史臺": ["御史"], "御史府": ["御史"],
+    "總督倉場": ["總督倉場"], "總倉場": ["總督倉場"], "總督京儲": ["總督京儲"],
+}
+CAREER_FALLBACK = ["尚書", "侍郎", "御史"]
 
 
 def t2s_norm(name: str) -> str:
     return "".join(S2T.get(ch, ch) for ch in name)
 
 
-def span_compat(birth, death, lo, hi) -> float:
-    """生卒与段 span 的相容分：重叠年数/段长，无生卒给中性分 0.5。"""
+def span_compat(birth, death, iy, lo, hi) -> float:
+    """生卒与段 span 的相容分：闭区间重叠年数/段长（含端点 +1——单年段与窗恰交是
+    真重叠，旧式把「卒年=任末」误判硬冲突，曾秉正案例），无生卒给中性分 0.5。
+    无生卒但有 index_year（软证据）：窗 iy−30..iy+50 命中 0.7 / 未中 0.0，
+    可拉开并列但不触发硬拒（宁空勿误挂由 ambiguous 兜底）。
+    """
     if birth is None and death is None:
+        if iy:
+            wb, we = iy - 30, iy + 50
+            return 0.7 if (min(hi, we) - max(lo, wb) + 1) > 0 else 0.0
         return 0.5
     b = birth if birth is not None else -9999
     d = death if death is not None else 9999
-    # 人物活跃窗（16 岁起，卒后 0 年止）
     wb, we = b + 15, d
-    ov = max(0, min(hi, we) - max(lo, wb))
+    ov = max(0, min(hi, we) - max(lo, wb) + 1)
     if ov > 0:
         return min(1.0, ov / max(1, hi - lo + 1))
     # 完全不相交：卒年早于段起点 40 年以上 → 硬冲突
@@ -135,25 +150,37 @@ def main() -> int:
             continue
 
         hints = sorted({h for o in offices for h in OFFICE_HINT.get(o, HINT_FALLBACK)})
+        career_stems = sorted({s for o in offices for s in CAREER_HINT.get(o, CAREER_FALLBACK)})
+        sur = t2s_norm(name)[0]  # 同姓守卫：任职证据要求候选与本实体同姓（S2T 归一）
         scored = []
         for cpid, (cn, birth, death, iy) in cands.items():
-            s_time = span_compat(birth, death, lo, hi)
+            s_time = span_compat(birth, death, iy, lo, hi)
             # 生卒明确且与段完全不相交 = 硬冲突：任职记录再像也不挂
             # （外推 30 年仍可能假相交，如翁正春 1545-1607 vs 段 1610-1613）
             if s_time <= 0 and (birth is not None or death is not None):
                 continue
             if s_time < 0:
                 continue
-            # 任职记录分：任过本衙相关官且年份相交
+            # 任职记录分：任过本衙相关官且年份相交（同姓守卫——前任/继任同名不同姓
+            # 是高发混淆，如 趙榮 大理寺卿 1461-63 vs 王榮 大理卿 1465）
             s_office = 0.0
-            for chn, fy, ly in postings.get(cpid, ()):
-                if fy <= hi and ly >= lo and any(h in chn for h in hints):
-                    s_office = 1.0
-                    break
-            score = s_time + s_office
+            sur_ok = bool(cn) and t2s_norm(cn)[0] == sur
+            if sur_ok:
+                for chn, fy, ly in postings.get(cpid, ()):
+                    if fy <= hi and ly >= lo and any(h in chn for h in hints):
+                        s_office = 1.0
+                        break
+            # 仕历链分：本衙系统内任意职、窗 ±6 年
+            s_career = 0.0
+            if sur_ok:
+                for chn, fy, ly in postings.get(cpid, ()):
+                    if fy <= hi + 6 and ly >= lo - 6 and any(s in chn for s in career_stems):
+                        s_career = 0.5
+                        break
+            score = s_time + s_office + s_career
             scored.append({"id": cpid, "name": cn, "birth": birth, "death": death,
                            "iy": iy, "s_time": round(s_time, 2), "s_office": s_office,
-                           "score": round(score, 2)})
+                           "s_career": s_career, "score": round(score, 2)})
         if not scored:
             unresolved.append({"person_id": pid, "name": name, "reason": "time-conflict"})
             continue
@@ -161,8 +188,13 @@ def main() -> int:
         top, second = scored[0], (scored[1] if len(scored) > 1 else None)
         if len(scored) == 1 and top["score"] >= 0.5:
             m = "exact-unique"
-        elif second is None or top["score"] - second["score"] > 0.4 and top["score"] >= 1.0:
+        elif second is None or (top["score"] - second["score"] > 0.4
+                                and top["score"] >= 1.0):
             m = "scored-unique"
+        elif (top["score"] == 0.7 and second["score"] == 0.0
+              and all(s["score"] == 0.0 for s in scored[1:])):
+            # era-unique：无生卒，唯一年代锚合窗，其余候选全部年代相斥
+            m = "era-unique"
         else:
             unresolved.append({"person_id": pid, "name": name, "reason": "ambiguous",
                                "cands": scored[:4]})
