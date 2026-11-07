@@ -15,8 +15,10 @@
   3. 表覆盖 1393–1645：弘光元年(1645) 页在书内，按 D15 南明断限整页不入；
   4. 缺年归因（8 个）：1394/1396/1398/1400/1420/1422 = 原书整页空框、OCR 无表产出
      （1394 已实拍验证；1396/1398/1400/1420/1422 为同型空框，见报告）；
-     1618/1637 = **OCR 丢表**（1618 内容溢出为 ## 行、1637 年份头被吞、内容并进
-     1636 表尾）——解析器以「失头年份行」保守承接并标 review，补录走 book-patch；
+     1618 = **OCR 丢表**（内容溢出为 ## 行，book-patch 补录，见 keji_repair.py）；
+     1637 = **原书缺页**（·1511·=1636 与 ·1512·=1638 页脚连续，书未印崇禎十年，
+     2026-11-07 实拍判读修正此前「1637 并进 1636 表尾」的误判——1636 表尾三行
+     归属 1636 正确）——解析器对 1618 以「失头年份行」保守承接并标 review；
   5. 带内换行：注文行并入上一带（同京卿）；有标签年后出现的**连续 ≥2 行人名行**
      按失头年份块处理（行序推科），单行人名行仍归上一带。
 
@@ -66,11 +68,13 @@ OUT = ROOT / "src" / "mingoff" / "data" / "vol2_kejishizhong_entries.json"
 REVIEW = ROOT / "src" / "mingoff" / "data" / "vol2_kejishizhong_review.json"
 
 OFFICES = ("吏科", "戶科", "禮科", "兵科", "刑科", "工科")
-# 缺年归因（2026-11-04 测绘）：empty=原书整页空框；lost=OCR 丢表有内容待 book-patch
+# 缺年归因：empty=原书整页空框（1394 实拍验证）；lost=OCR 丢表有内容待 book-patch；
+# book-gap=原书缺页（2026-11-07 实拍判读：·1511·=1636 与 ·1512·=1638 页脚连续，
+# 书内无崇禎十年页，OCR 全文零「崇禎十年」——书本身未印，非 OCR 丢失）
 MISSING_ATTR = {
     1394: "empty", 1396: "empty", 1398: "empty", 1400: "empty",
     1420: "empty", 1422: "empty",
-    1618: "lost", 1637: "lost",
+    1618: "lost", 1637: "book-gap",
 }
 FIRST_YEAR, LAST_YEAR = 1393, 1644  # 1645=弘光元年，D15 不入
 
@@ -265,6 +269,7 @@ def main() -> int:
     missing_attr = {y: MISSING_ATTR.get(y, "unattributed") for y in missing}
     empty_years = [y for y, a in missing_attr.items() if a == "empty"]
     lost_years = [y for y, a in missing_attr.items() if a == "lost"]
+    book_gap_years = [y for y, a in missing_attr.items() if a == "book-gap"]
     dupes = [y for y in set(years) if years.count(y) > 1]
 
     payload = {
@@ -280,6 +285,7 @@ def main() -> int:
                 "missing_attr": missing_attr,
                 "empty_frame_years": empty_years,
                 "lost_table_years": lost_years,
+                "book_gap_years": book_gap_years,
                 "dup_years": dupes,
                 "persons": len({e["person"] for e in entries}),
                 "with_note": sum(1 for e in entries if e["note"]),
@@ -288,7 +294,8 @@ def main() -> int:
                 "conf_avg": round(sum(e["conf"] for e in entries) / len(entries), 3) if entries else None,
                 "hongguang_rows_dropped": hg_dropped,
             },
-            "note": "缺年 8 个已归因：6 空框（原书实拍验证）+ 2 丢表（1618/1637 待 book-patch）；"
+            "note": "缺年 8 个已归因：6 空框（原书实拍验证）+ 1618 丢表（book-patch 补录，"
+                    "keji_repair.py）+ 1637 原书缺页（书未印崇禎十年，2026-11-07 实拍判读）；"
                     "弘光元年(1645) 按 D15 不入；多人同格注文不猜配；无标签年按行序推并标 review。",
         },
         "entries": entries,
@@ -298,7 +305,8 @@ def main() -> int:
 
     st = payload["meta"]["stats"]
     print(f"年页 {len([p for p in pages if args.from_year <= p['years'][0] <= args.to_year])}；"
-          f"缺年 {missing or '无'}（空框 {len(empty_years)} / 丢表 {lost_years}）；重复年 {dupes or '无'}")
+          f"缺年 {missing or '无'}（空框 {len(empty_years)} / 丢表 {lost_years} / "
+          f"原书缺页 {book_gap_years}）；重复年 {dupes or '无'}")
     print(f"条目 {st['entries']}；人数 {st['persons']}；有注 {st['with_note']}；待核 {st['review']}；警告 {st['warn']}")
     for w in all_warns[:12]:
         print("  ⚠", w)
