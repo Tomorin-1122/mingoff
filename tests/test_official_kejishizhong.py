@@ -169,6 +169,23 @@ def test_page_map_anchors():
     assert page_map[1618] == 1493 and 1637 not in page_map
 
 
+def test_cbdb_aligned(doc):
+    """CBDB 对齐 v1（match_official_cbdb.py）：段级对齐量 + 已核实锚点 id。"""
+    s = doc["meta"]["stats"]
+    assert s["cbdb_aligned"] >= 400, s["cbdb_aligned"]
+
+    def ids(who):
+        return {t["cbdb_id"] for t in doc["tenures"]
+                if t["person"] == who and t.get("cbdb_id")}
+
+    # 顏繼祖 63703：CBDB 任职链 工科給→工科右→戶科右→戶科左→吏科都 與本表互证；卒 1639
+    assert ids("顏繼祖") == {63703}
+    # 凌義渠 34757：生卒 1593–1644 与史实吻合（manual，京卿表同证）
+    assert ids("凌義渠") == {34757}
+    # 吴亮嗣 351474：exact-unique 唯一同名候选
+    assert ids("吴亮嗣") == {351474}
+
+
 def test_audit_clean():
     r = ok.audit()
     assert not r["blockers"], r["blockers"]

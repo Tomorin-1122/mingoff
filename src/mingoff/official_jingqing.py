@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import json
 import re
+import sqlite3
 import sys
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
@@ -29,10 +30,22 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 
 from mingoff.official import CUT_M, CUT_Y, _cross_year, _month_of, build_shilu
+from mingoff.match_cbdb import S2T
 from mingoff.official_buyuan import CONF_DOWN, merge_gap_segments
 
 DATA = Path(__file__).resolve().parent / "data"
 PADDLE_PAGES = DATA.parents[2] / "_scratch" / "paddle_jingqing" / "raw_pages"
+
+# CBDB 映射（scripts/match_official_cbdb.py 产出；缺失 = 未对齐，宁空勿误挂）
+CBDB_MAP_FILES = ("vol1_jingqing_person_cbdb_v1.json",)
+
+
+def load_jingqing_cbdb() -> dict:
+    for v in CBDB_MAP_FILES:
+        p = DATA / v
+        if p.is_file():
+            return json.loads(p.read_text(encoding="utf-8"))
+    return {}
 
 # 入场动词（京卿注文形态；"任""掌"沿部院）
 ENTER_BASE = ("入", "任", "起復", "起", "召", "視事", "至京", "復官", "復",
@@ -232,6 +245,7 @@ def build_jingqing_tenures() -> list[dict]:
             label_of[pid] = f"{name}（{min(ys)}–{max(ys)}）" if pid != name else name
 
     page_map = build_page_map()
+    mapping = load_jingqing_cbdb()
     by_key: dict[tuple[str, str], list[dict]] = defaultdict(list)
     for e in entries:
         pid = pid_of[(e["person"], e["year"])]
@@ -304,12 +318,13 @@ def build_jingqing_tenures() -> list[dict]:
                 conf = min(conf, 0.5)
 
             ttype = "署理" if "署" in s_note else "实授"
+            m = mapping.get(pid, {})
             tenures.append({
                 "person": person,
                 "person_id": pid,
                 "person_label": label_of[pid],
-                "cbdb_id": None,       # CBDB 对齐未做（v1 试点），不得硬挂
-                "cbdb_name": None,
+                "cbdb_id": m.get("cbdb_id"),       # 无映射保持 NULL（宁空勿误挂）
+                "cbdb_name": m.get("cbdb_name"),
                 "office": office,
                 "office_raw": office,
                 "office_status": basis,
@@ -387,6 +402,44 @@ def audit() -> dict:
     gap_years = sum(len(t.get("gap_years") or []) for t in tenures)
     if person_years - gap_years > len(entries):
         blockers.append(f"人-年 {person_years - gap_years} 超过条目 {len(entries)}")
+    # CBDB 门（映射存在时，镜像 audit_buyuan §6）：生卒 vs 段跨度硬冲突 / 同一 id 多正名
+    cbdb_map = load_jingqing_cbdb()
+    if cbdb_map:
+        db_path = DATA.parents[3] / "_cbdb" / "cbdb_20261010.sqlite3"
+        if not db_path.is_file():
+            db_path = Path.cwd() / "_cbdb" / "cbdb_20261010.sqlite3"
+        if db_path.is_file():
+            con = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)
+            try:
+                date_conflicts: list[str] = []
+                ids: dict[int, set[str]] = defaultdict(set)
+                for t in tenures:
+                    cid = t.get("cbdb_id")
+                    if cid:
+                        # 简繁变体 person_id（吴/吳 等 OCR 前后不一）归一后比对，
+                        # 同一人类的两种写法不算「同 id 多正名」
+                        ids[cid].add(t["person_id"].translate(S2T))
+                        bio = con.execute(
+                            "select c_birthyear, c_deathyear from BIOG_MAIN "
+                            "where c_personid=?", (cid,)).fetchone()
+                        if bio and ((bio[1] and bio[1] < t["start_year"] - 1)
+                                    or (bio[0] and bio[0] > t["end_year"] + 1)):
+                            date_conflicts.append(
+                                f"{t['person_id']}@{t['start_year']}({bio[0]}-{bio[1]})")
+                for pid, m in cbdb_map.items():
+                    if m.get("cbdb_id"):
+                        ids[m["cbdb_id"]].add(pid.translate(S2T))
+                shared = sorted(f"{cid}:{sorted(ps)}" for cid, ps in ids.items()
+                                if len(ps) > 1)
+                if date_conflicts:
+                    blockers.append(f"CBDB 生卒冲突 {len(date_conflicts)}: "
+                                    f"{date_conflicts[:5]}")
+                if shared:
+                    blockers.append(f"同一 CBDB id 多正名 {len(shared)}: {shared[:5]}")
+            finally:
+                con.close()
+        else:
+            warnings.append("CBDB 库缺失，跳过生卒冲突/同 id 校验")
     no_page_years = sorted({t["start_year"] for t in tenures
                             if t.get("start_book_page") is None})
     return {"blockers": blockers, "warnings": warnings,
@@ -408,9 +461,10 @@ def export_jingqing(out_path: Path | None = None) -> dict:
             "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
             "source": "张德信《明代职官年表》册1·京卿年表（京師）正文 981–1266"
                       "（PDF 996–1281，MinerU OCR；解析 ocr_jingqing.py v1 试点）；"
-                      "页级溯源用 PaddleOCR 逐页年份头索引；CBDB 对齐未做（v1）",
+                      "页级溯源用 PaddleOCR 逐页年份头索引；CBDB 对齐 v1"
+                      "（match_official_cbdb.py 评分器，宁空勿误挂）",
             "pipeline": "mingoff.official_jingqing (v1: (person_id,office) 分组 + "
-                        "遷/改/調定向判定 + D-01 同名分代 + gap 合并 + D15)",
+                        "遷/改/調定向判定 + D-01 同名分代 + gap 合并 + D15 + CBDB 对齐)",
             "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "stats": {
                 "tenures": len(tenures),
@@ -429,7 +483,7 @@ def export_jingqing(out_path: Path | None = None) -> dict:
                 "with_end_month": sum(1 for t in tenures if t["end_month"]),
                 "with_start_page": sum(1 for t in tenures if t.get("start_book_page")),
                 "with_end_page": sum(1 for t in tenures if t.get("end_book_page")),
-                "cbdb_aligned": 0,
+                "cbdb_aligned": sum(1 for t in tenures if t["cbdb_id"]),
                 "with_leave": sum(1 for t in tenures if t["leave"] != "未載"),
                 "shu_li": sum(1 for t in tenures if t["tenure_type"] == "署理"),
                 "same_name_risk": sum(1 for t in tenures if t.get("same_name_risk")),
@@ -489,7 +543,8 @@ def refresh_manifest(doc: dict) -> None:
             "output": "official_jingqing.json",
             "stats": doc["meta"]["stats"],
             "status": "v1-g6-pass" if g6 == "pass" else "review",
-            "note": "v1 试点：CBDB 对齐未做（cbdb_id 全 null）；人名未过正字表归一；"
+            "note": "v1：CBDB 对齐 v1 已做（match_official_cbdb.py，宁空勿误挂）；"
+                    "人名未过正字表归一；"
                     "无标签年段 office_status=row-order、置信度封顶 0.6",
         },
     }

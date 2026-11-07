@@ -120,6 +120,23 @@ def test_anchors(tenures):
     assert segs("栗永禄", "光祿卿") and segs("栗永禄", "順天府府尹")
 
 
+def test_cbdb_aligned(doc):
+    """CBDB 对齐 v1（match_official_cbdb.py）：段级对齐量 + 已核实锚点 id。"""
+    s = doc["meta"]["stats"]
+    assert s["cbdb_aligned"] >= 700, s["cbdb_aligned"]
+
+    def ids(who):
+        return {t["cbdb_id"] for t in doc["tenures"]
+                if t["person"] == who and t.get("cbdb_id")}
+
+    # 凌義渠 34757：生卒 1593–1644 与史实吻合（甲申殉节），CBDB 任职含兵科給事中/大理寺卿
+    assert ids("凌義渠") == {34757}
+    # 丁啟濬 126319：exact-unique 唯一同名候选
+    assert ids("丁啟濬") == {126319}
+    # 曾秉正 66533：manual（CBDB 通政使 1377–1382 任职记录 + 卒 1382）
+    assert 66533 in ids("曾秉正")
+
+
 def test_audit_clean():
     r = oj.audit()
     assert not r["blockers"], r["blockers"]
