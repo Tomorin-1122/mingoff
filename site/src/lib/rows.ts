@@ -1,6 +1,8 @@
 ﻿import {
   BUYUAN_TENURES,
   CABINET_TENURES,
+  JINGQING_TENURES,
+  KEJISHIZHONG_TENURES,
   type Tenure,
 } from "./data";
 
@@ -28,7 +30,13 @@ export interface PeriodSeg {
   note?: string;
 }
 
-export type RowKind = "cabinet" | "ministry" | "censor" | "granary";
+export type RowKind =
+  | "cabinet"
+  | "ministry"
+  | "censor"
+  | "granary"
+  | "jingqing"
+  | "keji";
 
 export interface RowDef {
   id: string;
@@ -43,8 +51,33 @@ export interface RowDef {
   /** 子行：父行折叠时隐藏 */
   parent?: string;
   indent?: boolean;
+  /** 所属可折叠大块（京卿/六科）：块头隐藏时整组行隐藏 */
+  group?: string;
   kind: RowKind;
 }
+
+/** 可折叠大块（2026-11-07 老板拍板：京卿/六科排在部院以下，默认折叠） */
+export interface GroupDef {
+  id: string;
+  label: string;
+  sub: string;
+  defaultOpen: boolean;
+}
+
+export const GROUPS: Record<string, GroupDef> = {
+  jingqing: {
+    id: "jingqing",
+    label: "京卿年表（京師）",
+    sub: `九寺八衙 ${JINGQING_TENURES.length} 任 · ${new Set(JINGQING_TENURES.map((t) => t.person_id || t.person)).size} 人`,
+    defaultOpen: false,
+  },
+  kejishizhong: {
+    id: "kejishizhong",
+    label: "六科都給事中",
+    sub: `六科 ${KEJISHIZHONG_TENURES.length} 任 · ${new Set(KEJISHIZHONG_TENURES.map((t) => t.person_id || t.person)).size} 人`,
+    defaultOpen: false,
+  },
+};
 
 /** 御史系列分期（D46：1380 与 1398 按史实校正；1399 起点存异说，见 note） */
 const CENSOR_PERIODS: PeriodSeg[] = [
@@ -171,7 +204,51 @@ const censorRow: RowDef = {
   kind: "censor",
 };
 
-/** 渲染顺序：皇帝行之后依次排列（六部按吏戶禮兵刑工，倉場随戶部，都察院殿后） */
+/* ============ 京卿 / 六科（2026-11-07 接入，两大块排在部院以下，默认折叠） ============ */
+
+const JQ_OFFICES: [string, string, string][] = [
+  ["通政使", "通政使", "通政使司"],
+  ["大理卿", "大理卿", "大理寺"],
+  ["太常卿", "太常卿", "太常寺"],
+  ["光祿卿", "光祿卿", "光祿寺"],
+  ["太僕卿", "太僕卿", "太僕寺"],
+  ["鴻臚卿", "鴻臚卿", "鴻臚寺"],
+  ["尚寶卿", "尚寶卿", "尚寶司"],
+  ["順天府府尹", "順天府府尹", "順天府"],
+];
+
+const jingqingRows: RowDef[] = JQ_OFFICES.map(([office, label, org]) => {
+  const ts = JINGQING_TENURES.filter((t) => t.office === office);
+  return {
+    id: `jq-${office}`,
+    label,
+    sub: `${org} ${ts.length} 任`,
+    tenures: ts,
+    offices: [office],
+    collapsible: true,
+    group: "jingqing",
+    kind: "jingqing" as const,
+  };
+});
+
+const KE_OFFICES = ["吏科", "戶科", "禮科", "兵科", "刑科", "工科"];
+
+const kejiRows: RowDef[] = KE_OFFICES.map((office) => {
+  const ts = KEJISHIZHONG_TENURES.filter((t) => t.office === office);
+  return {
+    id: `ke-${office}`,
+    label: office,
+    sub: `都給事中 ${ts.length} 任`,
+    tenures: ts,
+    offices: [office],
+    collapsible: true,
+    group: "kejishizhong",
+    kind: "keji" as const,
+  };
+});
+
+/** 渲染顺序：皇帝行之后依次排列（六部按吏戶禮兵刑工，倉場随戶部，都察院殿后；
+ *  京卿/六科两大块收尾，默认折叠） */
 export const ROWS: RowDef[] = [
   cabinetRow,
   six("吏部", "吏部"),
@@ -182,6 +259,8 @@ export const ROWS: RowDef[] = [
   six("刑部", "刑部"),
   six("工部", "工部"),
   censorRow,
+  ...jingqingRows,
+  ...kejiRows,
 ];
 
 /** 由 office 反查所在行（抽屉用） */

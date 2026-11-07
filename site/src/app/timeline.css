@@ -1233,3 +1233,57 @@ footer .k {
     animation: none !important;
   }
 }
+
+/* ============ 京卿 / 六科接入（2026-11-07）：两大块排在部院以下，默认折叠 ============ */
+
+/* 块头：非数据行，只有标签列 + 折叠提示 */
+.group-row {
+  position: relative;
+}
+
+.group-row .row-label {
+  background: #ede7d8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.group-row .row-label .name {
+  font-size: 15px;
+  letter-spacing: 0.04em;
+}
+
+.group-collapsed-hint {
+  padding: 7px 12px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  color: var(--hui);
+  background: #f3eee4;
+  box-shadow: 1px 0 0 var(--xian);
+}
+
+/* 京卿条：青（区别部院靛蓝） */
+.bar.bar-jq {
+  background: #2f5d50;
+  color: var(--xuan);
+  border-color: #2f5d50;
+}
+
+.bar.bar-jq:hover {
+  background: #24493f;
+  color: var(--xuan);
+  border-color: #24493f;
+}
+
+/* 六科条：赭 */
+.bar.bar-ke {
+  background: #8a5a2b;
+  color: var(--xuan);
+  border-color: #8a5a2b;
+}
+
+.bar.bar-ke:hover {
+  background: #714820;
+  color: var(--xuan);
+  border-color: #714820;
+}

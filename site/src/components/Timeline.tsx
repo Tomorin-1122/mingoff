@@ -11,6 +11,8 @@ import {
   CUT_Y,
   DATA_FROM,
   ERA_JUMPS,
+  JINGQING_META,
+  KEJISHIZHONG_META,
   META,
   M_PER_YEAR,
   PROFILES,
@@ -30,9 +32,11 @@ import {
   type Tenure,
 } from "@/lib/data";
 import {
+  GROUPS,
   ROWS,
   ROW_BY_OFFICE,
   periodAt,
+  type GroupDef,
   type PeriodSeg,
   type PeriodTone,
   type RowDef,
@@ -233,14 +237,60 @@ const PeriodRibbon = memo(function PeriodRibbon({
   );
 });
 
-/* ================= 职官行（D46：内阁 / 六部 / 都察院 / 倉場） ================= */
+/* ================= 职官行（D46：内阁 / 六部 / 都察院 / 倉場；+京卿 / 六科） ================= */
 
 const STATUS_TEXT: Record<string, string> = {
+  "label-column": "标签列直读（该年页有六科/衙署标签列）",
   "row-order": "行序兜底（该年对页无标签，按行序推断，未经页核）",
   mixed: "段内部分年份为行序推断，其余有人名锚/页核",
   "name-anchor": "人名锚定（该年对页无标签，但人名可锚定衙署）",
   "page-verified": "原书页核（D-04/D42 已回原书对页）",
 };
+
+/** 块 → 条形配色（京卿/六科与部院分色，块内各衙同色系） */
+const KIND_BAR: Record<RowDef["kind"], string> = {
+  cabinet: "t-shishou",
+  ministry: "bar-bu",
+  censor: "bar-bu",
+  granary: "bar-bu",
+  jingqing: "bar-jq",
+  keji: "bar-ke",
+};
+
+/** 可折叠大块头（京卿/六科：排在部院以下，默认折叠，2026-11-07 老板拍板） */
+const GroupHeader = memo(function GroupHeader({
+  group,
+  open,
+  onToggle,
+}: {
+  group: GroupDef;
+  open: boolean;
+  onToggle: () => void;
+}) {
+  return (
+    <div className="row group-row">
+      <div className="row-label">
+        <button
+          type="button"
+          className="row-toggle"
+          aria-expanded={open}
+          aria-label={`${open ? "折叠" : "展开"}${group.label}`}
+          onClick={onToggle}
+        >
+          {open ? "▾" : "▸"}
+        </button>
+        <span className="name">{group.label}</span>
+        <span className="dept">{group.sub}</span>
+      </div>
+      {!open && (
+        <div className="group-collapsed-hint">
+          本块含 {group.id === "jingqing" ? "通政使、大理卿等八衙" : "吏戶禮兵刑工六科"}
+          逐年名单，点行首展开
+        </div>
+      )}
+    </div>
+  );
+});
 
 interface OfficeRowProps {
   row: RowDef;
@@ -324,7 +374,7 @@ const OfficeRow = memo(function OfficeRow({
                 : null;
               const cls = [
                 "bar",
-                row.kind === "cabinet" ? "t-shishou" : "bar-bu",
+                KIND_BAR[row.kind],
                 `office-${t.office}`,
                 t.start_month == null && "fuzzy",
                 t.month_conflict && "conflict",
@@ -595,8 +645,15 @@ function Drawer({
     const sourceText = isCabinet
       ? "张德信《明代职官年表》册1·內閣大臣年表（MinerU OCR 提取）；" +
         "《明實錄》命中据中研院「明代职官资料库」检索。"
-      : "张德信《明代职官年表》册1·部院大臣年表（京師）（MinerU OCR 表格重解析）；" +
-        "人物对齐 CBDB；《明實錄》命中据中研院「明代职官资料库」检索。";
+      : row?.kind === "jingqing"
+        ? "张德信《明代职官年表》册1·京卿年表（京師）（MinerU OCR 解析 + 任职段组装）；" +
+          "人物对齐 CBDB（宁空勿误挂）；《明實錄》命中据中研院「明代职官资料库」检索。"
+        : row?.kind === "keji"
+          ? "张德信《明代职官年表》册2·六科都給事中年表（MinerU OCR 解析 + 任职段组装；" +
+            "1618 丢表按原书补录、1637 原书缺页不补）；人物对齐 CBDB（宁空勿误挂）；" +
+            "《明實錄》命中据中研院「明代职官资料库」检索。"
+          : "张德信《明代职官年表》册1·部院大臣年表（京師）（MinerU OCR 表格重解析）；" +
+            "人物对齐 CBDB；《明實錄》命中据中研院「明代职官资料库」检索。";
 
     return (
       <>
@@ -809,9 +866,15 @@ export default function Timeline() {
   const [openRows, setOpenRows] = useState<Record<string, boolean>>(() =>
     Object.fromEntries(ROWS.map((r) => [r.id, true]))
   );
+  const [openGroups, setOpenGroups] = useState<Record<string, boolean>>(() =>
+    Object.fromEntries(Object.values(GROUPS).map((g) => [g.id, g.defaultOpen]))
+  );
 
   const toggleRow = useCallback((id: string) => {
     setOpenRows((prev) => ({ ...prev, [id]: !(prev[id] ?? true) }));
+  }, []);
+  const toggleGroup = useCallback((id: string) => {
+    setOpenGroups((prev) => ({ ...prev, [id]: !(prev[id] ?? false) }));
   }, []);
 
   const headerRef = useRef<HTMLElement | null>(null);
@@ -951,7 +1014,8 @@ export default function Timeline() {
           <span className="spacer" />
           <span className="scope">
             內閣 {META.stats.tenures} 任 · 部院 {BUYUAN_META.stats.tenures} 任 ·{" "}
-            {BUYUAN_META.stats.display_persons} 人 · {CANVAS_FROM}–{CUT_Y}.{CUT_M}
+            京卿 {JINGQING_META.stats.tenures} 任 · 六科{" "}
+            {KEJISHIZHONG_META.stats.tenures} 任 · {CANVAS_FROM}–{CUT_Y}.{CUT_M}
           </span>
         </div>
 
@@ -1044,22 +1108,45 @@ export default function Timeline() {
           >
             <Axis slotW={slotW} />
             <ReignRow slotW={slotW} />
-            {ROWS.map((row) => {
-              if (row.parent && !(openRows[row.parent] ?? true)) return null;
-              return (
-                <OfficeRow
-                  key={row.id}
-                  row={row}
-                  open={openRows[row.id] ?? true}
-                  onToggle={() => toggleRow(row.id)}
-                  slotW={slotW}
-                  slot={slot}
-                  hoverPerson={hoverPerson}
-                  onHover={setHoverPerson}
-                  onSelect={setSelected}
-                />
-              );
-            })}
+            {(() => {
+              let lastGroup: string | null = null;
+              return ROWS.flatMap((row) => {
+                if (row.parent && !(openRows[row.parent] ?? true)) return [];
+                // 组头首次出现即渲染（折叠时它就是开关）；组内行仅在组展开时渲染
+                const hdr: GroupDef | null =
+                  row.group && row.group !== lastGroup ? GROUPS[row.group] : null;
+                lastGroup = row.group ?? lastGroup;
+                const groupClosed = row.group
+                  ? !(openGroups[row.group] ?? true)
+                  : false;
+                const items: (RowDef | GroupDef)[] = [
+                  ...(hdr ? [hdr] : []),
+                  ...(groupClosed ? [] : [row]),
+                ];
+                return items.map((item) =>
+                  "tenures" in item ? (
+                    <OfficeRow
+                      key={item.id}
+                      row={item}
+                      open={openRows[item.id] ?? true}
+                      onToggle={() => toggleRow(item.id)}
+                      slotW={slotW}
+                      slot={slot}
+                      hoverPerson={hoverPerson}
+                      onHover={setHoverPerson}
+                      onSelect={setSelected}
+                    />
+                  ) : (
+                    <GroupHeader
+                      key={item.id}
+                      group={item}
+                      open={openGroups[item.id] ?? false}
+                      onToggle={() => toggleGroup(item.id)}
+                    />
+                  )
+                );
+              });
+            })()}
 
             <ColumnLines slotW={slotW} labelW={labelW} />
 
@@ -1093,7 +1180,11 @@ export default function Timeline() {
           （1644.3）；内阁大臣 {DATA_FROM}–1644.3（内阁始设于建文四年），
           {META.stats.tenures} 任职段、{META.stats.persons} 人；部院大臣（六部 +
           都察院等）1368–1644.3，{BUYUAN_META.stats.tenures} 任职段、
-          {BUYUAN_META.stats.display_persons} 人。
+          {BUYUAN_META.stats.display_persons} 人；京卿年表（通政使、大理卿等九寺八衙）
+          1368–1644.3，{JINGQING_META.stats.tenures} 任职段、
+          {JINGQING_META.stats.display_persons} 人；六科都給事中 1393–1644.3，
+          {KEJISHIZHONG_META.stats.tenures} 任职段、
+          {KEJISHIZHONG_META.stats.display_persons} 人。
           <b>缺载处留空，不作填补；洪武—建文三年内阁未设，画布留空。</b>
         </p>
         <p>
@@ -1103,7 +1194,8 @@ export default function Timeline() {
         <p>
           <span className="k">时间轴</span>　每月一格、各格等宽（无限画布，随内容横向
           滚动）；月份未载者占满整年，详情中注明。年号条可一键跳代，←/→ 逐月
-          （Shift 逐年）。六部与都察院行可折叠；行名固定，行上「分期名带」按年代
+          （Shift 逐年）。六部与都察院行可折叠；京卿、六科两大块排在部院以下，
+          块头默认折叠（点块首展开）。行名固定，行上「分期名带」按年代
           显示原书表头（御史臺 / 都察院 / 御史府；總督京儲 / 總督倉場 / 總倉場）。
         </p>
         <p>
@@ -1118,9 +1210,11 @@ export default function Timeline() {
         </p>
         <p>
           <span className="k">史料依据</span>　张德信《明代职官年表》册1·內閣大臣年表、
-          部院大臣年表（京師）（MinerU OCR 表格重解析；缺块以原书 PDF 页补录）；
-          人物对齐 CBDB（内阁 {META.stats.cbdb_aligned} 段 / 部院{" "}
-          {BUYUAN_META.stats.cbdb_aligned} 段）。
+          部院大臣年表（京師）、京卿年表（京師），册2·六科都給事中年表（MinerU OCR
+          表格重解析；缺块以原书 PDF 页补录；六科 1637 年原书缺页，1618 丢表已按
+          原书补录）；人物对齐 CBDB（内阁 {META.stats.cbdb_aligned} 段 / 部院{" "}
+          {BUYUAN_META.stats.cbdb_aligned} 段 / 京卿 {JINGQING_META.stats.cbdb_aligned}{" "}
+          段 / 六科 {KEJISHIZHONG_META.stats.cbdb_aligned} 段）。
         </p>
         <p>
           <span className="k">数据说明</span>　年表为「年在位」体：某年列名即该年在任。

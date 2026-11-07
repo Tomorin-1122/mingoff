@@ -17,6 +17,7 @@ ROOT_FILES = {
 # 只保留最终导出物，不含 vol1_* / review / manifest / pages 等过程数据
 DATA_FILES = {
     "official_cabinet.json", "official_buyuan.json",
+    "official_jingqing.json", "official_kejishizhong.json",
     "person_profiles.json", "person_profiles_buyuan.json",
 }
 # 只保留不依赖过程数据资产的核心测试

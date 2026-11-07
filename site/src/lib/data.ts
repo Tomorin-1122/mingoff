@@ -1,5 +1,7 @@
 import cabinet from "@/data/cabinet.json";
 import buyuan from "@/data/buyuan.json";
+import jingqing from "@/data/jingqing.json";
+import kejishizhong from "@/data/kejishizhong.json";
 import profiles from "@/data/person_profiles.json";
 import buyuanProfiles from "@/data/person_profiles_buyuan.json";
 
@@ -128,15 +130,35 @@ const buyuanDoc = buyuan as {
   shilu: Record<string, ShiluBlock>;
 };
 
+const jingqingDoc = jingqing as {
+  meta: BuyuanMeta;
+  tenures: Tenure[];
+  shilu: Record<string, ShiluBlock>;
+};
+
+const kejiDoc = kejishizhong as {
+  meta: BuyuanMeta;
+  tenures: Tenure[];
+  shilu: Record<string, ShiluBlock>;
+};
+
 export const META = doc.meta;
 export const CABINET_TENURES = doc.tenures;
 export const BUYUAN_META = buyuanDoc.meta;
 export const BUYUAN_TENURES = buyuanDoc.tenures;
+/** 京卿年表（京師）：通政使/大理卿/太常卿/光祿卿/太僕卿/鴻臚卿/尚寶卿/順天府府尹 */
+export const JINGQING_META = jingqingDoc.meta;
+export const JINGQING_TENURES = jingqingDoc.tenures;
+/** 六科都給事中年表：吏/戶/禮/兵/刑/工科 */
+export const KEJISHIZHONG_META = kejiDoc.meta;
+export const KEJISHIZHONG_TENURES = kejiDoc.tenures;
 
-/** 两套数据的实录命中合并（内阁 155 人 + 部院 130 人，取并集） */
+/** 各表实录命中合并（内阁 155 + 部院 130 + 京卿 37 + 六科 14 人，取并集） */
 export const SHILU: Record<string, ShiluBlock> = {
   ...doc.shilu,
   ...buyuanDoc.shilu,
+  ...jingqingDoc.shilu,
+  ...kejiDoc.shilu,
 };
 
 /* ================= 人物小传（CBDB） ================= */
