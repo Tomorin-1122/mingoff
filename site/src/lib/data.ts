@@ -2,6 +2,7 @@ import cabinet from "@/data/cabinet.json";
 import buyuan from "@/data/buyuan.json";
 import jingqing from "@/data/jingqing.json";
 import kejishizhong from "@/data/kejishizhong.json";
+import shilang from "@/data/shilang.json";
 import profiles from "@/data/person_profiles.json";
 import buyuanProfiles from "@/data/person_profiles_buyuan.json";
 
@@ -47,6 +48,8 @@ export interface Tenure {
   end_book_page?: number | null;
   /** 部院：同名风险（同名多实体） */
   same_name_risk?: boolean;
+  /** 侍郎：行带警报页待原书核验（站点灰显，D-11 惯例） */
+  pending_book_check?: boolean;
 }
 
 /** 《明實錄》单条命中（中研院检索结果） */
@@ -111,6 +114,8 @@ export interface BuyuanMeta {
     with_leave: number;
     shu_li: number;
     same_name_risk: number;
+    /** 侍郎：行带警报页待核段数（灰显交付） */
+    pending_book_check?: number;
     office_status_dist: Record<string, number>;
     shilu_persons: number;
     shilu_hits: number;
@@ -142,6 +147,12 @@ const kejiDoc = kejishizhong as {
   shilu: Record<string, ShiluBlock>;
 };
 
+const shilangDoc = shilang as {
+  meta: BuyuanMeta;
+  tenures: Tenure[];
+  shilu: Record<string, ShiluBlock>;
+};
+
 export const META = doc.meta;
 export const CABINET_TENURES = doc.tenures;
 export const BUYUAN_META = buyuanDoc.meta;
@@ -152,13 +163,17 @@ export const JINGQING_TENURES = jingqingDoc.tenures;
 /** 六科都給事中年表：吏/戶/禮/兵/刑/工科 */
 export const KEJISHIZHONG_META = kejiDoc.meta;
 export const KEJISHIZHONG_TENURES = kejiDoc.tenures;
+/** 部院侍郎年表（京師）：六部左右侍郎 + 都察院副都御史等 */
+export const SHILANG_META = shilangDoc.meta;
+export const SHILANG_TENURES = shilangDoc.tenures;
 
-/** 各表实录命中合并（内阁 155 + 部院 130 + 京卿 37 + 六科 14 人，取并集） */
+/** 各表实录命中合并（内阁 155 + 部院 130 + 京卿 37 + 六科 14 + 侍郎 208 人，取并集） */
 export const SHILU: Record<string, ShiluBlock> = {
   ...doc.shilu,
   ...buyuanDoc.shilu,
   ...jingqingDoc.shilu,
   ...kejiDoc.shilu,
+  ...shilangDoc.shilu,
 };
 
 /* ================= 人物小传（CBDB） ================= */

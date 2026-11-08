@@ -437,6 +437,24 @@ def audit() -> dict:
                         ids[m["cbdb_id"]].add(pid.translate(S2T))
                 shared = sorted(f"{cid}:{sorted(ps)}" for cid, ps in ids.items()
                                 if len(ps) > 1)
+                # 同 id 组：若组内人名都能经 CBDB 自身别名表归到该 id（同一人不同名，
+                # 如 許觀=黃觀、蘭芳=藺芳），不算冲突；只有真正异人（趙榮/王榮 型）才挂
+                if shared:
+
+                    def _benign(cid: int, group: set[str]) -> bool:
+                        nm = con.execute(
+                            "select c_name_chn from BIOG_MAIN where c_personid=?",
+                            (cid,)).fetchone()
+                        pool = {a[0] for a in con.execute(
+                            "select c_alt_name_chn from ALTNAME_DATA "
+                            "where c_personid=?", (cid,)).fetchall()}
+                        if nm:
+                            pool.add(nm[0])
+                        return all(n.split("#")[0].translate(S2T) in pool
+                                   for n in group)
+
+                    shared = {k: v for k, v in shared.items()
+                              if not _benign(int(k), set(v))}
                 if date_conflicts:
                     blockers.append(f"CBDB 生卒冲突 {len(date_conflicts)}: "
                                     f"{date_conflicts[:5]}")

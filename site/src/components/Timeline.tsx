@@ -18,6 +18,7 @@ import {
   PROFILES,
   PROFILE_META,
   REIGNS,
+  SHILANG_META,
   SHILU,
   ageAt,
   assignLanes,
@@ -241,13 +242,15 @@ const PeriodRibbon = memo(function PeriodRibbon({
 
 const STATUS_TEXT: Record<string, string> = {
   "label-column": "标签列直读（该年页有六科/衙署标签列）",
+  verified: "各年页均经原书核验或标签直读",
+  pending: "行带警报页，归属待原书核验（灰显，校对台消化中）",
   "row-order": "行序兜底（该年对页无标签，按行序推断，未经页核）",
-  mixed: "段内部分年份为行序推断，其余有人名锚/页核",
+  mixed: "段内部分年份待核（行序推断/行带警报页），其余有页核",
   "name-anchor": "人名锚定（该年对页无标签，但人名可锚定衙署）",
   "page-verified": "原书页核（D-04/D42 已回原书对页）",
 };
 
-/** 块 → 条形配色（京卿/六科与部院分色，块内各衙同色系） */
+/** 块 → 条形配色（京卿/六科/侍郎副貳与部院分色，块内各衙同色系） */
 const KIND_BAR: Record<RowDef["kind"], string> = {
   cabinet: "t-shishou",
   ministry: "bar-bu",
@@ -255,6 +258,7 @@ const KIND_BAR: Record<RowDef["kind"], string> = {
   granary: "bar-bu",
   jingqing: "bar-jq",
   keji: "bar-ke",
+  shilang: "bar-sl",
 };
 
 /** 可折叠大块头（京卿/六科：排在部院以下，默认折叠，2026-11-07 老板拍板） */
@@ -379,6 +383,7 @@ const OfficeRow = memo(function OfficeRow({
                 t.start_month == null && "fuzzy",
                 t.month_conflict && "conflict",
                 t.office_status === "row-order" && "st-row-order",
+                t.pending_book_check && "st-pending",
                 t.office_status === "mixed" && "st-mixed",
                 t.end_clamped && "clamped",
                 idle && "is-idle",
@@ -1014,8 +1019,9 @@ export default function Timeline() {
           <span className="spacer" />
           <span className="scope">
             內閣 {META.stats.tenures} 任 · 部院 {BUYUAN_META.stats.tenures} 任 ·{" "}
-            京卿 {JINGQING_META.stats.tenures} 任 · 六科{" "}
-            {KEJISHIZHONG_META.stats.tenures} 任 · {CANVAS_FROM}–{CUT_Y}.{CUT_M}
+            侍郎 {SHILANG_META.stats.tenures} 任 · 京卿 {JINGQING_META.stats.tenures}{" "}
+            任 · 六科 {KEJISHIZHONG_META.stats.tenures} 任 · {CANVAS_FROM}–{CUT_Y}.
+            {CUT_M}
           </span>
         </div>
 
@@ -1089,6 +1095,10 @@ export default function Timeline() {
           <span className="item">
             <i className="swatch s-roworder" />
             归属待核（灰显）
+          </span>
+          <span className="item">
+            <i className="swatch s-pending" />
+            待原书核（灰显）
           </span>
           <span className="item">
             <i className="swatch s-period" />
@@ -1184,7 +1194,10 @@ export default function Timeline() {
           1368–1644.3，{JINGQING_META.stats.tenures} 任职段、
           {JINGQING_META.stats.display_persons} 人；六科都給事中 1393–1644.3，
           {KEJISHIZHONG_META.stats.tenures} 任职段、
-          {KEJISHIZHONG_META.stats.display_persons} 人。
+          {KEJISHIZHONG_META.stats.display_persons} 人；部院侍郎（六部左右侍郎 +
+          都察院副都御史）1368–1644.3，{SHILANG_META.stats.tenures} 任职段、
+          {SHILANG_META.stats.display_persons} 人（其中行带警报页待原书核验段以灰显
+          交付，{SHILANG_META.stats.pending_book_check} 段）。
           <b>缺载处留空，不作填补；洪武—建文三年内阁未设，画布留空。</b>
         </p>
         <p>
@@ -1210,11 +1223,13 @@ export default function Timeline() {
         </p>
         <p>
           <span className="k">史料依据</span>　张德信《明代职官年表》册1·內閣大臣年表、
-          部院大臣年表（京師）、京卿年表（京師），册2·六科都給事中年表（MinerU OCR
-          表格重解析；缺块以原书 PDF 页补录；六科 1637 年原书缺页，1618 丢表已按
-          原书补录）；人物对齐 CBDB（内阁 {META.stats.cbdb_aligned} 段 / 部院{" "}
-          {BUYUAN_META.stats.cbdb_aligned} 段 / 京卿 {JINGQING_META.stats.cbdb_aligned}{" "}
-          段 / 六科 {KEJISHIZHONG_META.stats.cbdb_aligned} 段）。
+          部院大臣年表（京師）、京卿年表（京師）、部院侍郎年表（京師），册2·六科都給事中
+          年表（MinerU OCR / PaddleOCR 行级几何解析；缺块以原书 PDF 页补录；六科 1637
+          年原书缺页，1618 丢表已按原书补录；侍郎 954/800/760 三页已原书核验修正）；
+          人物对齐 CBDB（内阁 {META.stats.cbdb_aligned} 段 / 部院{" "}
+          {BUYUAN_META.stats.cbdb_aligned} 段 / 侍郎 {SHILANG_META.stats.cbdb_aligned}{" "}
+          段 / 京卿 {JINGQING_META.stats.cbdb_aligned} 段 / 六科{" "}
+          {KEJISHIZHONG_META.stats.cbdb_aligned} 段）。
         </p>
         <p>
           <span className="k">数据说明</span>　年表为「年在位」体：某年列名即该年在任。

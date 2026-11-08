@@ -1287,3 +1287,39 @@ footer .k {
   color: var(--xuan);
   border-color: #714820;
 }
+
+/* ============ 侍郎副貳接入（2026-11-08）：六部左右侍郎 + 都察院副都御史 ============ */
+
+/* 侍郎副貳条：淡靛（部院同系降饱和，示副貳层级） */
+.bar.bar-sl {
+  background: #5a7291;
+  color: var(--xuan);
+  border-color: #5a7291;
+}
+
+.bar.bar-sl:hover {
+  background: #466081;
+  color: var(--xuan);
+  border-color: #466081;
+}
+
+/* 待原书核验（band 警报页）：灰显虚线，与 D-11 归属待核同语言 */
+.bar.st-pending {
+  opacity: 0.5;
+  border-style: dashed;
+  filter: saturate(0.4);
+}
+
+.bar.st-pending.is-idle {
+  opacity: 0.35;
+}
+
+.swatch.s-pending {
+  background: repeating-linear-gradient(
+    45deg,
+    #b9b4a8,
+    #b9b4a8 3px,
+    var(--xuan-2) 3px,
+    var(--xuan-2) 6px
+  );
+}

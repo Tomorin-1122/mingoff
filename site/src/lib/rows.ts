@@ -3,6 +3,7 @@
   CABINET_TENURES,
   JINGQING_TENURES,
   KEJISHIZHONG_TENURES,
+  SHILANG_TENURES,
   type Tenure,
 } from "./data";
 
@@ -36,7 +37,8 @@ export type RowKind =
   | "censor"
   | "granary"
   | "jingqing"
-  | "keji";
+  | "keji"
+  | "shilang";
 
 export interface RowDef {
   id: string;
@@ -167,8 +169,29 @@ const six = (office: string, label: string): RowDef => {
     tenures: ts,
     offices: [office],
     collapsible: true,
-    reserved: ["侍郎 / 副貳（待接入）"],
     kind: "ministry",
+  };
+};
+
+/** 侍郎副貳子行（2026-11-08 接入）：挂在各部行下，折叠随父行。
+ *  左侍郎子行含洪武前期单侍郎带（1376 前无左右之分）。 */
+const shilangSub = (
+  m: string,
+  label: string,
+  offices: string[],
+  parent: string
+): RowDef => {
+  const ts = SHILANG_TENURES.filter((t) => offices.includes(t.office));
+  return {
+    id: `sl-${m}-${offices[0]}`,
+    label,
+    sub: `${ts.length} 任 · 待核灰显 ${ts.filter((t) => t.pending_book_check).length}`,
+    tenures: ts,
+    offices,
+    collapsible: true,
+    parent,
+    indent: true,
+    kind: "shilang",
   };
 };
 
@@ -248,17 +271,33 @@ const kejiRows: RowDef[] = KE_OFFICES.map((office) => {
 });
 
 /** 渲染顺序：皇帝行之后依次排列（六部按吏戶禮兵刑工，倉場随戶部，都察院殿后；
- *  京卿/六科两大块收尾，默认折叠） */
+ *  各部下挂侍郎副貳子行；京卿/六科两大块收尾，默认折叠） */
 export const ROWS: RowDef[] = [
   cabinetRow,
   six("吏部", "吏部"),
+  shilangSub("吏部", "左侍郎", ["吏部左侍郎", "吏部侍郎"], "吏部"),
+  shilangSub("吏部", "右侍郎", ["吏部右侍郎"], "吏部"),
   six("戶部", "戶部"),
+  shilangSub("戶部", "左侍郎", ["戶部左侍郎", "戶部侍郎"], "戶部"),
+  shilangSub("戶部", "右侍郎", ["戶部右侍郎"], "戶部"),
   granaryRow,
   six("禮部", "禮部"),
+  shilangSub("禮部", "左侍郎", ["禮部左侍郎", "禮部侍郎"], "禮部"),
+  shilangSub("禮部", "右侍郎", ["禮部右侍郎"], "禮部"),
   six("兵部", "兵部"),
+  shilangSub("兵部", "左侍郎", ["兵部左侍郎", "兵部侍郎"], "兵部"),
+  shilangSub("兵部", "右侍郎", ["兵部右侍郎"], "兵部"),
   six("刑部", "刑部"),
+  shilangSub("刑部", "左侍郎", ["刑部左侍郎", "刑部侍郎"], "刑部"),
+  shilangSub("刑部", "右侍郎", ["刑部右侍郎"], "刑部"),
   six("工部", "工部"),
+  shilangSub("工部", "左侍郎", ["工部左侍郎", "工部侍郎"], "工部"),
+  shilangSub("工部", "右侍郎", ["工部右侍郎"], "工部"),
+  shilangSub("工部", "提督易州山廠", ["提督易州山廠"], "工部"),
   censorRow,
+  shilangSub("都察院", "左副都御史", ["左副都御史", "副都御史"], "censor"),
+  shilangSub("都察院", "右副都御史", ["右副都御史"], "censor"),
+  shilangSub("都察院", "御史中丞", ["御史中丞"], "censor"),
   ...jingqingRows,
   ...kejiRows,
 ];
