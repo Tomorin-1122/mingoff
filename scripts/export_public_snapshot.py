@@ -18,7 +18,10 @@ ROOT_FILES = {
 DATA_FILES = {
     "official_cabinet.json", "official_buyuan.json",
     "official_jingqing.json", "official_kejishizhong.json",
+    "official_shilang.json",
     "person_profiles.json", "person_profiles_buyuan.json",
+    "person_profiles_jingqing.json", "person_profiles_kejishizhong.json",
+    "person_profiles_shilang.json",
 }
 # 只保留不依赖过程数据资产的核心测试
 TEST_FILES = {

@@ -12,13 +12,16 @@ import {
   DATA_FROM,
   ERA_JUMPS,
   JINGQING_META,
+  JINGQING_PROFILES,
   KEJISHIZHONG_META,
+  KEJISHIZHONG_PROFILES,
   META,
   M_PER_YEAR,
   PROFILES,
   PROFILE_META,
   REIGNS,
   SHILANG_META,
+  SHILANG_PROFILES,
   SHILU,
   ageAt,
   assignLanes,
@@ -581,7 +584,8 @@ function ProfileBlock({ person, profile }: { person: string; profile: PersonProf
   );
 }
 
-/** 部院人物的小传占位：profiles 目前只覆盖内阁 167 人，部院 789 实体待扩展 */
+/** 小传未覆盖实体的占位（京卿/六科/侍郎未对齐 CBDB 者无键）：
+ *  提供 CBDB 直达（已对齐时）与中研院检索入口 */
 function ProfileFallback({ tenure }: { tenure: Tenure }) {
   const url = tenure.cbdb_id
     ? PROFILE_META.cbdb_person_url.replace("{id}", String(tenure.cbdb_id))
@@ -593,7 +597,7 @@ function ProfileFallback({ tenure }: { tenure: Tenure }) {
       </h3>
       <p className="small">
         {url
-          ? "CBDB 有該人記錄（見下方直達鏈接）；部院人物小傳欄位尚未接入本站，待人物庫擴展。"
+          ? "CBDB 有該人記錄（見下方直達鏈接）；詳細小傳欄位待人物庫擴展。"
           : "CBDB 未對齊（無可靠同名候選），僅提供中研院檢索入口；可查《明人傳記資料索引》出處層。"}
       </p>
       <div className="ext-links">
@@ -642,10 +646,17 @@ function Drawer({
     const row = ROW_BY_OFFICE.get(t.office);
     const period = row ? periodAt(row, t.start_year, t.start_month) : null;
     const blk = SHILU[t.person] ?? (t.person_label ? SHILU[t.person_label] : undefined);
-    // 部院按 person_id 取（顧佐#1/#2 各自独立）；内阁按姓名取
-    const profile = t.person_id
-      ? BUYUAN_PROFILES[t.person_id]
-      : PROFILES[t.person];
+    // 小传按表种取：内阁按姓名（D23）；其余按 person_id（D46；京卿/六科/侍郎 2026-11-08 接入，
+    // 三表只收对齐 CBDB 的实体，未对齐者走 ProfileFallback 检索入口）
+    const profile = !row || row.kind === "cabinet"
+      ? PROFILES[t.person]
+      : row.kind === "jingqing"
+        ? JINGQING_PROFILES[t.person_id ?? ""]
+        : row.kind === "keji"
+          ? KEJISHIZHONG_PROFILES[t.person_id ?? ""]
+          : row.kind === "shilang"
+            ? SHILANG_PROFILES[t.person_id ?? ""]
+            : BUYUAN_PROFILES[t.person_id ?? ""];
     const isCabinet = row?.kind === "cabinet";
     const sourceText = isCabinet
       ? "张德信《明代职官年表》册1·內閣大臣年表（MinerU OCR 提取）；" +
@@ -657,6 +668,10 @@ function Drawer({
           ? "张德信《明代职官年表》册2·六科都給事中年表（MinerU OCR 解析 + 任职段组装；" +
             "1618 丢表按原书补录、1637 原书缺页不补）；人物对齐 CBDB（宁空勿误挂）；" +
             "《明實錄》命中据中研院「明代职官资料库」检索。"
+          : row?.kind === "shilang"
+            ? "张德信《明代职官年表》册1·部院侍郎年表（京師）（MinerU OCR 行带解析 + 任职段组装；" +
+              "行带警报页待原书核验的段以灰虚线显示）；人物对齐 CBDB（宁空勿误挂）；" +
+              "《明實錄》命中据中研院「明代职官资料库」检索。"
           : "张德信《明代职官年表》册1·部院大臣年表（京師）（MinerU OCR 表格重解析）；" +
             "人物对齐 CBDB；《明實錄》命中据中研院「明代职官资料库」检索。";
 
@@ -1229,7 +1244,8 @@ export default function Timeline() {
           人物对齐 CBDB（内阁 {META.stats.cbdb_aligned} 段 / 部院{" "}
           {BUYUAN_META.stats.cbdb_aligned} 段 / 侍郎 {SHILANG_META.stats.cbdb_aligned}{" "}
           段 / 京卿 {JINGQING_META.stats.cbdb_aligned} 段 / 六科{" "}
-          {KEJISHIZHONG_META.stats.cbdb_aligned} 段）。
+          {KEJISHIZHONG_META.stats.cbdb_aligned} 段）。详情抽屉附人物小传
+          （生卒/籍贯/字号/入仕/历任，据 CBDB 搬运；未对齐者提供检索入口）。
         </p>
         <p>
           <span className="k">数据说明</span>　年表为「年在位」体：某年列名即该年在任。

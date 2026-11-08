@@ -5,6 +5,9 @@ import kejishizhong from "@/data/kejishizhong.json";
 import shilang from "@/data/shilang.json";
 import profiles from "@/data/person_profiles.json";
 import buyuanProfiles from "@/data/person_profiles_buyuan.json";
+import jingqingProfiles from "@/data/person_profiles_jingqing.json";
+import kejiProfiles from "@/data/person_profiles_kejishizhong.json";
+import shilangProfiles from "@/data/person_profiles_shilang.json";
 
 /* ============================================================
  * 正式数据（D23 v3 + D46 部院接入）
@@ -222,6 +225,18 @@ const buyuanProfileDoc = buyuanProfiles as unknown as {
 
 export const BUYUAN_PROFILES = buyuanProfileDoc.persons;
 export const BUYUAN_PROFILE_META = buyuanProfileDoc.meta;
+
+/** 京卿/六科/侍郎人物小传：按 person_id 键，只收对齐 CBDB 的实体（2026-11-08）。
+ *  未对齐实体无键，抽屉走 ProfileFallback（CBDB 直达 + 中研院检索）。 */
+const simpleProfileDoc = (src: unknown) =>
+  src as unknown as {
+    meta: { persons: number; with_cbdb_id: number };
+    persons: Record<string, PersonProfile>;
+  };
+
+export const JINGQING_PROFILES = simpleProfileDoc(jingqingProfiles).persons;
+export const KEJISHIZHONG_PROFILES = simpleProfileDoc(kejiProfiles).persons;
+export const SHILANG_PROFILES = simpleProfileDoc(shilangProfiles).persons;
 
 /** 年份区间显示：缺一端用 ?，两端皆缺用「未載」 */
 export function fmtYearRange(a: number | null, b: number | null): string {

@@ -3,9 +3,9 @@
   "dataset": "buyuan",
   "license": "CC BY-NC-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-  "generated_at": "2026-10-20T00:57:29+00:00",
-  "persons": 789,
-  "with_cbdb_id": 546,
+  "generated_at": "2026-11-08T07:22:15+00:00",
+  "persons": 816,
+  "with_cbdb_id": 544,
   "office_limit": 30,
   "cbdb_person_url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id={id}",
   "sinica_url": "https://dh.rchss.sinica.edu.tw/MingChaoffTitle/",
@@ -545,6 +545,18 @@
    ],
    "office_total": 5
   },
+  "伍文定": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "何喬新": {
    "cbdb_id": 34522,
    "cbdb_name": "何喬新",
@@ -698,6 +710,18 @@
     }
    ],
    "office_total": 23
+  },
+  "何士弘": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
   },
   "何如寵": {
    "cbdb_id": 128400,
@@ -1351,7 +1375,7 @@
    "offices": [],
    "office_total": 0
   },
-  "余熾": {
+  "余熂": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -1519,6 +1543,18 @@
      "desc": "科舉: 進士(籠統)"
     }
    ],
+   "offices": [],
+   "office_total": 0
+  },
+  "來恭": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
    "offices": [],
    "office_total": 0
   },
@@ -2810,6 +2846,18 @@
     }
    ],
    "office_total": 22
+  },
+  "傅頤": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
   },
   "儀銘": {
    "cbdb_id": 66761,
@@ -5284,7 +5332,7 @@
    ],
    "office_total": 16
   },
-  "劉訥": {
+  "劉誠": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -6176,6 +6224,18 @@
    ],
    "office_total": 21
   },
+  "吕時中": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "吳一鵬": {
    "cbdb_id": 68108,
    "cbdb_name": "吳一鵬",
@@ -6503,18 +6563,6 @@
    "office_total": 0
   },
   "吳原": {
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
-  },
-  "吳履中": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -7298,6 +7346,54 @@
     }
    ],
    "office_total": 1
+  },
+  "吴履中": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
+  "吴山": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
+  "吴琳": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
+  "吴鹏": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
   },
   "呂兆熊": {
    "cbdb_id": 207244,
@@ -8291,6 +8387,18 @@
    ],
    "office_total": 13
   },
+  "周湞": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "周用": {
    "cbdb_id": 68349,
    "cbdb_name": "周用",
@@ -8673,34 +8781,6 @@
     }
    ],
    "office_total": 17
-  },
-  "周肅": {
-   "cbdb_id": 555695,
-   "cbdb_name": "周肅",
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": "吉水",
-   "alt_names": [],
-   "entry": [
-    {
-     "year": null,
-     "desc": "科舉: 鄉貢舉人"
-    }
-   ],
-   "offices": [
-    {
-     "office": "都事",
-     "from": null,
-     "to": null
-    },
-    {
-     "office": "戶部尚書",
-     "from": null,
-     "to": null
-    }
-   ],
-   "office_total": 2
   },
   "唐世濟": {
    "cbdb_id": null,
@@ -11405,7 +11485,7 @@
    "offices": [],
    "office_total": 0
   },
-  "孫禱": {
+  "孫禬": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -12126,18 +12206,6 @@
    "offices": [],
    "office_total": 0
   },
-  "寧義": {
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
-  },
   "尹性": {
    "cbdb_id": 117550,
    "cbdb_name": "尹性",
@@ -12499,6 +12567,18 @@
    ],
    "office_total": 25
   },
+  "屠勲": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "屠勳": {
    "cbdb_id": null,
    "cbdb_name": null,
@@ -12589,6 +12669,18 @@
     }
    ],
    "office_total": 8
+  },
+  "屠漑": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
   },
   "崔亮": {
    "cbdb_id": 66454,
@@ -13950,6 +14042,18 @@
    ],
    "office_total": 24
   },
+  "張敷華": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "張文質": {
    "cbdb_id": null,
    "cbdb_name": null,
@@ -14579,6 +14683,18 @@
     }
    ],
    "office_total": 15
+  },
+  "張珩": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
   },
   "張瑩": {
    "cbdb_id": 93480,
@@ -15454,6 +15570,18 @@
    "office_total": 7
   },
   "張遇": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
+  "張鎣": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -18629,6 +18757,18 @@
    ],
    "office_total": 13
   },
+  "朱斌": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "朱昭": {
    "cbdb_id": null,
    "cbdb_name": null,
@@ -19184,6 +19324,18 @@
    ],
    "office_total": 10
   },
+  "李仁": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "李信": {
    "cbdb_id": null,
    "cbdb_name": null,
@@ -19561,6 +19713,18 @@
     }
    ],
    "office_total": 1
+  },
+  "李守道": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
   },
   "李宗延": {
    "cbdb_id": 207155,
@@ -20558,6 +20722,18 @@
    ],
    "office_total": 13
   },
+  "李敬": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "李日宣": {
    "cbdb_id": 60004,
    "cbdb_name": "李日宣",
@@ -21139,18 +21315,6 @@
    "office_total": 0
   },
   "李焕文": {
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
-  },
-  "李瓊": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -21761,6 +21925,18 @@
    "office_total": 0
   },
   "李遜學": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
+  "李遷桂": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -22604,6 +22780,18 @@
    "offices": [],
    "office_total": 0
   },
+  "林應亮": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "林欲楫": {
    "cbdb_id": null,
    "cbdb_name": null,
@@ -22929,6 +23117,18 @@
     }
    ],
    "office_total": 13
+  },
+  "栗恕": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
   },
   "桂萼": {
    "cbdb_id": 68285,
@@ -23367,6 +23567,18 @@
     }
    ],
    "office_total": 27
+  },
+  "梁煥": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
   },
   "楊一清": {
    "cbdb_id": 68260,
@@ -25843,6 +26055,18 @@
    ],
    "office_total": 1
   },
+  "毛伯温": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "毛伯溫": {
    "cbdb_id": 488831,
    "cbdb_name": "毛伯温",
@@ -27086,6 +27310,18 @@
    ],
    "office_total": 13
   },
+  "汪鋐": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "沈冬魁": {
    "cbdb_id": 127553,
    "cbdb_name": "沈冬魁",
@@ -27348,6 +27584,18 @@
    "office_total": 2
   },
   "洪彝": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
+  "洪英": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -29035,6 +29283,18 @@
    "offices": [],
    "office_total": 0
   },
+  "王之臣": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "王之誥": {
    "cbdb_id": 467454,
    "cbdb_name": "王之誥",
@@ -29882,18 +30142,6 @@
     }
    ],
    "office_total": 4
-  },
-  "王壱": {
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
   },
   "王宗彝": {
    "cbdb_id": 126562,
@@ -31445,6 +31693,18 @@
    ],
    "office_total": 20
   },
+  "王旹": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "王時中": {
    "cbdb_id": 68328,
    "cbdb_name": "王時中",
@@ -31569,18 +31829,6 @@
     }
    ],
    "office_total": 18
-  },
-  "王晉": {
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
   },
   "王暐": {
    "cbdb_id": 68343,
@@ -31873,19 +32121,7 @@
    ],
    "office_total": 22
   },
-  "王榮": {
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
-  },
-  "王檗": {
+  "王槩": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -37291,6 +37527,18 @@
    ],
    "office_total": 10
   },
+  "羅通": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "翁世資": {
    "cbdb_id": 66906,
    "cbdb_name": "翁世資",
@@ -40312,6 +40560,18 @@
    "office_total": 22
   },
   "萬鎧": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
+  "萬鏜": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -44203,6 +44463,18 @@
    ],
    "office_total": 8
   },
+  "趙孠堅": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "趙廷瑞": {
    "cbdb_id": 132156,
    "cbdb_name": "趙廷瑞",
@@ -44630,18 +44902,6 @@
    "office_total": 6
   },
   "趙熹": {
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
-  },
-  "趙班": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -45548,89 +45808,17 @@
    ],
    "office_total": 12
   },
-  "軒軺": {
-   "cbdb_id": 66894,
-   "cbdb_name": "軒輗",
+  "軒輗": {
+   "cbdb_id": null,
+   "cbdb_name": null,
    "birth": null,
-   "death": 1464,
+   "death": null,
    "death_age": null,
-   "native_place": "鹿邑",
-   "alt_names": [
-    {
-     "type": "諡號",
-     "name": "介肅"
-    },
-    {
-     "type": "字",
-     "name": "惟行"
-    },
-    {
-     "type": "字",
-     "name": "惟衡"
-    },
-    {
-     "type": "諡號",
-     "name": "端肅"
-    },
-    {
-     "type": "字",
-     "name": "維行"
-    }
-   ],
-   "entry": [
-    {
-     "year": 1424,
-     "desc": "科舉: 進士(籠統)"
-    }
-   ],
-   "offices": [
-    {
-     "office": "道監察御史",
-     "from": 1431,
-     "to": 1440
-    },
-    {
-     "office": "提刑按察使司按察使",
-     "from": 1440,
-     "to": 1449
-    },
-    {
-     "office": "都察院右副都御史",
-     "from": 1449,
-     "to": 1454
-    },
-    {
-     "office": "都察院左副都御史",
-     "from": 1454,
-     "to": 1457
-    },
-    {
-     "office": "刑部尚書",
-     "from": 1457,
-     "to": null
-    },
-    {
-     "office": "都察院左都御史",
-     "from": 1458,
-     "to": 1464
-    },
-    {
-     "office": "都察院左副都御史",
-     "from": null,
-     "to": null
-    },
-    {
-     "office": "行人司右司副",
-     "from": null,
-     "to": 1431
-    },
-    {
-     "office": "行人司左司副",
-     "from": null,
-     "to": null
-    }
-   ],
-   "office_total": 9
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
   },
   "辛自修": {
    "cbdb_id": 124816,
@@ -45746,6 +45934,18 @@
    "office_total": 2
   },
   "邊維垣": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
+  "邓愈": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -47154,6 +47354,18 @@
    ],
    "office_total": 18
   },
+  "鄭九成": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "鄭以偉": {
    "cbdb_id": 132357,
    "cbdb_name": "鄭以偉",
@@ -48525,6 +48737,18 @@
    "offices": [],
    "office_total": 0
   },
+  "鍾羽正": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "鐘炌": {
    "cbdb_id": null,
    "cbdb_name": null,
@@ -49834,7 +50058,7 @@
    ],
    "office_total": 4
   },
-  "陳珮": {
+  "陳煜": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -49904,7 +50128,19 @@
    ],
    "office_total": 3
   },
-  "陳璟": {
+  "陳瑺": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
+  "陳璿": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -50082,18 +50318,6 @@
    "office_total": 6
   },
   "陳經邦": {
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
-  },
-  "陳菓": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
@@ -51582,6 +51806,18 @@
     }
    ],
    "office_total": 17
+  },
+  "韓士原": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
   },
   "韓士英": {
    "cbdb_id": 470202,
@@ -53743,6 +53979,18 @@
    "offices": [],
    "office_total": 0
   },
+  "高萬傑": {
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [],
+   "office_total": 0
+  },
   "魏學曾": {
    "cbdb_id": 133492,
    "cbdb_name": "魏學曾",
@@ -53911,18 +54159,6 @@
    "office_total": 17
   },
   "魏養蒙": {
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
-  },
-  "魔駕": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,

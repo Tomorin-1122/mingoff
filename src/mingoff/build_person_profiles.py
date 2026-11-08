@@ -8,6 +8,12 @@
 输出：
   src/mingoff/data/person_profiles.json          内阁（按姓名；兼容 D23）
   src/mingoff/data/person_profiles_buyuan.json   部院（按 person_id，D46）
+  src/mingoff/data/person_profiles_jingqing.json 京卿（按 person_id，2026-11-08）
+  src/mingoff/data/person_profiles_kejishizhong.json 六科（同上）
+  src/mingoff/data/person_profiles_shilang.json  侍郎（同上）
+
+京卿/六科/侍郎三表只收对齐到 CBDB 的实体（cbdb_id 非空）；未对齐者由
+站点抽屉 fallback 提供 CBDB 直达/中研院检索入口，不生成空壳小传。
 
 口径：
   * 生卒年只取年（CBDB 年精度；月日不显示，避免虚报精度）；
@@ -35,6 +41,15 @@ if not CBDB.is_file():
 
 OUT_CABINET = DATA / "person_profiles.json"
 OUT_BUYUAN = DATA / "person_profiles_buyuan.json"
+# 京卿/六科/侍郎（按 person_id，只收有 CBDB id 的实体）
+OUT_TABLES = [
+    ("jingqing", "vol1_jingqing_person_cbdb_v1.json",
+     "official_jingqing.json", DATA / "person_profiles_jingqing.json"),
+    ("kejishizhong", "vol2_kejishizhong_person_cbdb_v1.json",
+     "official_kejishizhong.json", DATA / "person_profiles_kejishizhong.json"),
+    ("shilang", "vol1_shilang_person_cbdb_v1.json",
+     "official_shilang.json", DATA / "person_profiles_shilang.json"),
+]
 OFFICE_LIMIT = 30
 
 ALT_TYPES = {"字", "別號", "室名、別號", "諡號", "别名、曾用名"}
@@ -227,6 +242,45 @@ def main():
     }
     OUT_BUYUAN.write_text(json.dumps(buyuan_doc, ensure_ascii=False, indent=1),
                           encoding="utf-8")
+
+    # ---- 京卿 / 六科 / 侍郎（按 person_id，只收有 CBDB id 的实体） ----
+    table_docs: dict[str, dict] = {}
+    for dataset, map_name, src_name, out_path in OUT_TABLES:
+        mapping = json.loads((DATA / map_name).read_text(encoding="utf-8"))
+        src = json.loads((DATA / src_name).read_text(encoding="utf-8"))
+        keys = {
+            t["person_id"] for t in src["tenures"]
+            if mapping.get(t["person_id"], {}).get("cbdb_id")
+        }
+        spans: dict[str, tuple[int, int]] = {}
+        for t in src["tenures"]:
+            key = t["person_id"]
+            if key not in keys:
+                continue
+            lo, hi = spans.get(key, (t["start_year"], t["end_year"]))
+            spans[key] = (min(lo, t["start_year"]), max(hi, t["end_year"]))
+        persons = build_persons(conn, keys, mapping, spans)
+        n_with = sum(1 for p in persons.values() if p["cbdb_id"])
+        table_doc = {
+            "meta": {
+                "dataset": dataset,
+                "license": "CC BY-NC-SA 4.0",
+                "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                "generated_at": generated,
+                "persons": len(persons),
+                "with_cbdb_id": n_with,
+                "office_limit": OFFICE_LIMIT,
+                "cbdb_person_url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id={id}",
+                "sinica_url": "https://dh.rchss.sinica.edu.tw/MingChaoffTitle/",
+                "sinica_output_url": "https://dh.rchss.sinica.edu.tw/MingChaoffTitle/output.php",
+            },
+            "persons": persons,
+        }
+        out_path.write_text(json.dumps(table_doc, ensure_ascii=False, indent=1),
+                            encoding="utf-8")
+        table_docs[dataset] = table_doc
+        print(f"{dataset} {len(persons)} 实体（{n_with} 有 CBDB id）→ "
+              f"{out_path.name}（{out_path.stat().st_size/1024:.0f} KB）")
 
     print(f"内阁 {len(cabinet_persons)} 人 → {OUT_CABINET.name}"
           f"（{OUT_CABINET.stat().st_size/1024:.0f} KB）")

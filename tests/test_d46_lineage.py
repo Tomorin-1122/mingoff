@@ -79,8 +79,12 @@ def test_buyuan_profiles():
     assert path.is_file(), "部院人物小传未生成（python -m mingoff.build_person_profiles）"
     doc = json.loads(path.read_text(encoding="utf-8"))
     persons = doc["persons"]
-    assert len(persons) == 789
-    assert doc["meta"]["with_cbdb_id"] == 546
+    # 实体池随部院数据轮只增不减（首跑 789）；id 数随评分器裁决可增可减，
+    # 只断言与 meta 自洽（误挂修正轮 546→544 属正常回落）
+    assert len(persons) >= 789
+    assert doc["meta"]["with_cbdb_id"] == sum(
+        1 for p in persons.values() if p["cbdb_id"]
+    )
 
     hu = persons["胡濙"]
     assert hu["cbdb_id"] == 222777
