@@ -202,6 +202,185 @@ def split_persons(text: str, _no_fallback: bool = False) -> tuple[list[str], str
     return [], text
 
 
+# ==================== N1/N2：嵌套继任者拆分与多名按序绑定（2026-11-08） ====================
+# 背景：年表「迁出/迁入双记」惯例下，继任者人名嵌在前任注文流内、无分隔符直连
+# （1625 刑科「…遷太常少。陸文獻九、癸酉、廿八,兵左給遷。」）；此前 split_persons
+# 只从格首切人，注文开始后不回看 → 嵌套条目整段丢失、多名格注文错配。
+
+#: 月条目锚：[年前缀]、月数、干支（日数「廿三、」无干支不会误锚；跨年注
+#: 「三年九、甲申」的年前缀并入锚，保证跨年 chunk 完整供 _cross_year 识别）
+RE_ENTRY_SEG_STR = (r"(?:[一二三四五六七八九十]{1,3}年)?"
+                    r"[一二三四五六七八九十]{1,2}、"
+                    r"[甲乙丙丁戊己庚辛壬癸][子丑寅卯辰巳午未申酉戌亥]")
+RE_ENTRY_SEG = re.compile(RE_ENTRY_SEG_STR)
+#: 候选人名中的动词性注文用字（出现即非人名）
+_NESTED_VERB = set("奏遷任卒憂免冠起補管差給假銜候丁滿復改轉陞謫考察拾道署俸"
+                   "註注病乞歸省祭終視事攝予告駁")
+#: 纪年前缀（候选为年号纪年而非人名）
+_NESTED_ERA = ("崇禎", "天啟", "泰昌", "萬曆", "隆慶", "嘉靖", "正德", "弘治",
+               "成化", "天順", "景泰", "正統", "宣德", "永樂", "洪熙", "洪武",
+               "建文", "順治")
+
+
+def _nested_name_ok(name: str) -> bool:
+    """嵌套候选人名合法性：须纯汉字；排纪年/纯数字/动词字，末字为数字者拒
+    （「某某十」实为「某某+十月」的贪心误切）。"""
+    if not re.fullmatch(r"[\u4e00-\u9fff]{2,4}", name):
+        return False
+    if name.startswith(_NESTED_ERA) or name.endswith(("年", "閏")):
+        return False
+    if name[-1] in "一二三四五六七八九十":
+        return False
+    if any(ch in _NESTED_VERB for ch in name):
+        return False
+    return _is_person(name)
+
+
+def split_note_segments(note: str) -> list[str]:
+    """注文按「月数、干支」锚切段，每段一条年表注；无锚整段返回。"""
+    cuts = [m.start() for m in RE_ENTRY_SEG.finditer(note)]
+    if not cuts:
+        return [note] if note else []
+    segs = []
+    if cuts[0] > 0:
+        segs.append(note[:cuts[0]])
+    for i, c in enumerate(cuts):
+        segs.append(note[c:cuts[i + 1]] if i + 1 < len(cuts) else note[c:])
+    return segs
+
+
+def split_nested_successors(note: str, known: set[str] | None = None,
+                            allow_head: bool = False):
+    """N1：注文流内嵌套继任者拆分。
+
+    锚 = 界标（。；）+ 2–4 字人名 + 月条目锚；界标处名长按 4→3→2 回退取
+    首个合法者（「某某十一、」归 某某+十一月，不拆出「某某十」）。
+    allow_head 供 N2 绑定后的余段用（首名前无界标， artificially 补界标）。
+    返回 (首人截断 note, [ {person, note, known} ])；嵌套条目 note 自人名后起。
+    """
+    text = ("。" + note) if allow_head else note
+    pad = 1 if allow_head else 0
+    # 界标：句读 + 收束前任动作的功能字（遷/改/調/陞/任/起/補 后接官名，不入列——
+    # 防「遷右副九、丁亥」类官名片段误切；2026-11-09 扩充，实证「疾歸劉斯潔五、」形态）
+    cuts: list[tuple[int, str]] = []
+    for m in re.finditer(r"[。；歸事卒免降罷憂]", text):
+        p = m.end()
+        while p < len(text) and text[p] in " \u3000":
+            p += 1                      # 界标后的 OCR 空格不入名
+        for L in (4, 3, 2):
+            if p + L > len(text):
+                continue
+            name = text[p:p + L]
+            if not _nested_name_ok(name):
+                continue
+            am = re.match(r"[ \u3000]*(" + RE_ENTRY_SEG_STR + r")", text[p + L:])
+            if not am:
+                continue
+            if "年" in am.group(1):
+                continue                # 锚带年前缀 = 纪年（天啟二年…），非人名条目
+            cuts.append((p, name))
+            break
+    if not cuts:
+        return note, []
+    head = text[pad:cuts[0][0]]
+    segs = []
+    for i, (p, name) in enumerate(cuts):
+        end = cuts[i + 1][0] if i + 1 < len(cuts) else len(text)
+        segs.append({
+            "person": name,
+            "note": text[p + len(name):end],
+            "known": (known is None) or (name in known),
+        })
+    return head, segs
+
+
+def _strip_head_names(raw: str, names: list[str]) -> str:
+    """从格文本头部依次剥掉人名（emit 对多格清零了 note，注文从 raw 重构）。
+    头部与预期不符（OCR 形态外）时返回空串，宁缺勿错。"""
+    rest = raw
+    for nm in names:
+        s = rest.lstrip(" \u3000")
+        if s.startswith(nm):
+            rest = s[len(nm):]
+        else:
+            return ""
+    return rest.lstrip(" \u3000")
+
+
+def apply_note_repairs(entries: list[dict]) -> tuple[list[dict], list[str]]:
+    """N2 多名按序绑定 + N1 嵌套继任者拆分（两表共用，OCR 出条目后统一跑）。
+
+    * N2：同格 k 名、注文月条目 ≥ k 段 → 按序 1:1 绑定（迁出注归前任、迁入注归
+      继任）；段少于名维持原状不猜配（宁缺勿错）。
+    * N1：单名格注文、及 N2 绑定后的余段，扫「界标+人名+月干支锚」拆出嵌套
+      继任者：office/year 随格，人名已见表内 conf 0.6、未见 0.5，一律标 review
+      留痕；余段无锚部分归还组内末名（跨年注「三年九、…」不丢）。
+
+    返回 (entries', 变更报告 list[str])。
+    """
+    report: list[str] = []
+    known = {e["person"] for e in entries}
+    out: list[dict] = []
+    i, n = 0, len(entries)
+    while i < n:
+        e = entries[i]
+        if not e["raw"]:
+            out.append(e)
+            i += 1
+            continue
+        j = i + 1
+        while j < n and not entries[j]["raw"]:
+            j += 1
+        group = entries[i:j]
+        out.extend(group)
+        i = j
+        tail = None
+        multi = len(group) > 1
+        # emit 对多格清零 note（防月分误配）→ 多格从 raw 头部剥名重构注文
+        note_full = (_strip_head_names(group[0]["raw"],
+                                       [g["person"] for g in group])
+                     if multi else group[0]["note"])
+        if multi and note_full:
+            segs = split_note_segments(note_full)
+            if len(segs) >= len(group):
+                for gi, g in enumerate(group):
+                    g["note"] = segs[gi]
+                    g["review"] = (g["review"] or "").replace(
+                        f"多人同格({len(group)}人)，注文列对应丢失",
+                        f"多人同格({len(group)}人)按序绑定")
+                tail = "".join(segs[len(group):])
+                report.append(f"{group[0]['year']} {group[0]['office']} "
+                              f"{'、'.join(g['person'] for g in group)}"
+                              f"：{len(group)}名×{len(segs)}段按序绑定")
+        elif not multi:
+            tail = note_full
+        if not tail:
+            continue
+        head_note, nested = split_nested_successors(tail, known,
+                                                    allow_head=multi)
+        if not nested:
+            if multi and tail:
+                # 余段无嵌套锚（跨年注等）→ 归还末名，不丢数据
+                last = group[-1]
+                last["note"] = (last["note"] + "；" + tail) if last["note"] else tail
+            continue
+        carrier = group[-1] if multi else group[0]
+        carrier["note"] = head_note
+        for nd in nested:
+            out.append({
+                "year": group[0]["year"],
+                "office": group[0]["office"],
+                "person": nd["person"],
+                "note": nd["note"],
+                "raw": "",
+                "conf": 0.6 if nd["known"] else 0.5,
+                "review": "嵌套继任者拆分" + ("" if nd["known"] else "（人名未见表内，待核）"),
+            })
+            report.append(f"{group[0]['year']} {group[0]['office']} 嵌套拆出 "
+                          f"{nd['person']}（{'见表内' if nd['known'] else '新名'}）：{nd['note'][:24]}")
+    return out, report
+
+
 def parse_tables(md: str) -> list[list[list[str]]]:
     out = []
     for tb in re.findall(r"<table>.*?</table>", md, re.S):
@@ -453,6 +632,12 @@ def main() -> int:
         if seq and seq[0]:  # 有标签年 → 更新参考序列
             ref_seq = [o for o in seq if o]
             ref_year = page["years"][0]
+
+    entries, rep = apply_note_repairs(entries)
+    if rep:
+        print(f"N1/N2 注文修复 {len(rep)} 处：")
+        for r in rep[:15]:
+            print("  ·", r)
 
     review = [e for e in entries if e["review"]]
     got_years = sorted({e["year"] for e in entries})

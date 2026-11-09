@@ -28,7 +28,8 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 from mingoff.match_cbdb import S2T
 from mingoff.official import CUT_M, CUT_Y, _cross_year, _month_of, build_shilu
-from mingoff.official_buyuan import CONF_DOWN, merge_gap_segments
+from mingoff.official_buyuan import (CONF_DOWN, infer_yield_ends,
+                                     merge_gap_segments)
 from mingoff.official_jingqing import (LEAVE_LABEL_JQ, LEAVE_QIAN,
                                        LEAVE_VERBS_JQ, MAX_SPAN, _chunks,
                                        _start_month, split_identities)
@@ -325,7 +326,7 @@ def build_shilang_tenures() -> list[dict]:
                    else {}),
                 **({"same_name_risk": True} if same_name_risk else {}),
             })
-    return merge_gap_segments(tenures)
+    return infer_yield_ends(merge_gap_segments(tenures))
 
 
 # ---------------- 审计（G2/G3/G6-侍郎版） ----------------

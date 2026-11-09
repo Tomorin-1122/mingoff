@@ -35,7 +35,8 @@ from mingoff.match_cbdb import S2T
 from mingoff.ocr_jingqing import parse_tables, row_year
 from mingoff.ocr_kejishizhong import MD, OFFICES, label_of, split_year_pages_keji
 from mingoff.official import CUT_M, CUT_Y, _cross_year, _month_of, build_shilu
-from mingoff.official_buyuan import CONF_DOWN, merge_gap_segments
+from mingoff.official_buyuan import (CONF_DOWN, infer_yield_ends,
+                                     merge_gap_segments)
 from mingoff.official_jingqing import (LEAVE_LABEL_JQ, LEAVE_QIAN,
                                        LEAVE_VERBS_JQ, MAX_SPAN, _chunks,
                                        _start_month, split_identities)
@@ -320,7 +321,7 @@ def build_kejishizhong_tenures() -> list[dict]:
                 "years": seg,
                 **({"same_name_risk": True} if same_name_risk else {}),
             })
-    return merge_gap_segments(tenures)
+    return infer_yield_ends(merge_gap_segments(tenures))
 
 
 # ---------------- 审计（G2/G3/G6-六科版） ----------------

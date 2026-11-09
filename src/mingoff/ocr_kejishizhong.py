@@ -33,9 +33,9 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
 
-from mingoff.ocr_jingqing import (is_note_row, parse_tables, row_year,  # noqa: F401
-                                  row_years, split_persons, split_year_pages,
-                                  text_of)
+from mingoff.ocr_jingqing import (apply_note_repairs, is_note_row,  # noqa: F401
+                                  parse_tables, row_year, row_years,
+                                  split_persons, split_year_pages, text_of)
 
 
 def split_year_pages_keji(tables_per_md):
@@ -263,6 +263,12 @@ def main() -> int:
         if seq and seq[0]:
             ref_seq = [o for o in seq if o]
 
+    entries, rep = apply_note_repairs(entries)
+    if rep:
+        print(f"N1/N2 注文修复 {len(rep)} 处：")
+        for r in rep[:15]:
+            print("  ·", r)
+
     review = [e for e in entries if e["review"]]
     got_years = sorted({e["year"] for e in entries})
     missing = [y for y in range(args.from_year, args.to_year + 1) if y not in years]
@@ -296,7 +302,8 @@ def main() -> int:
             },
             "note": "缺年 8 个已归因：6 空框（原书实拍验证）+ 1618 丢表（book-patch 补录，"
                     "keji_repair.py）+ 1637 原书缺页（书未印崇禎十年，2026-11-07 实拍判读）；"
-                    "弘光元年(1645) 按 D15 不入；多人同格注文不猜配；无标签年按行序推并标 review。",
+                    "弘光元年(1645) 按 D15 不入；多人同格按序绑定注文、嵌套继任者拆分"
+                    "（N1/N2，2026-11-08，一律标 review）；无标签年按行序推并标 review。",
         },
         "entries": entries,
     }

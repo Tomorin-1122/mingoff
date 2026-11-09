@@ -3,9 +3,9 @@
   "dataset": "jingqing",
   "license": "CC BY-NC-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-  "generated_at": "2026-11-08T07:22:15+00:00",
-  "persons": 577,
-  "with_cbdb_id": 577,
+  "generated_at": "2026-11-08T15:10:35+00:00",
+  "persons": 585,
+  "with_cbdb_id": 585,
   "office_limit": 30,
   "cbdb_person_url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id={id}",
   "sinica_url": "https://dh.rchss.sinica.edu.tw/MingChaoffTitle/",
@@ -2685,6 +2685,46 @@
     }
    ],
    "office_total": 3
+  },
+  "劉重慶": {
+   "cbdb_id": 207758,
+   "cbdb_name": "劉重慶",
+   "birth": 1583,
+   "death": null,
+   "death_age": null,
+   "native_place": "掖縣",
+   "alt_names": [
+    {
+     "type": "室名、別號",
+     "name": "幼孫"
+    },
+    {
+     "type": "字",
+     "name": "耳枝"
+    }
+   ],
+   "entry": [
+    {
+     "year": null,
+     "desc": "科舉: 鄉貢舉人"
+    },
+    {
+     "year": null,
+     "desc": "學校: 生員(庠生)"
+    },
+    {
+     "year": 1610,
+     "desc": "科舉: 進士(籠統)"
+    }
+   ],
+   "offices": [
+    {
+     "office": "丁憂",
+     "from": null,
+     "to": null
+    }
+   ],
+   "office_total": 1
   },
   "劉餘祐": {
    "cbdb_id": 56990,
@@ -9775,6 +9815,51 @@
    ],
    "office_total": 25
   },
+  "張秉壺": {
+   "cbdb_id": 130422,
+   "cbdb_name": "張秉壺",
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": "莆田",
+   "alt_names": [
+    {
+     "type": "室名、別號",
+     "name": "八峰"
+    },
+    {
+     "type": "字",
+     "name": "國鎮"
+    }
+   ],
+   "entry": [
+    {
+     "year": null,
+     "desc": "科舉: 鄉貢舉人"
+    },
+    {
+     "year": null,
+     "desc": "學校: 生員(庠生)"
+    },
+    {
+     "year": 1538,
+     "desc": "科舉: 進士(籠統)"
+    }
+   ],
+   "offices": [
+    {
+     "office": "尚寶司卿",
+     "from": null,
+     "to": null
+    },
+    {
+     "office": "知縣",
+     "from": null,
+     "to": null
+    }
+   ],
+   "office_total": 2
+  },
   "張紹先": {
    "cbdb_id": 80692,
    "cbdb_name": "張紹先",
@@ -11215,6 +11300,23 @@
     }
    ],
    "office_total": 21
+  },
+  "徐雲逵": {
+   "cbdb_id": 353598,
+   "cbdb_name": "徐雲逵",
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": "遷安",
+   "alt_names": [],
+   "entry": [
+    {
+     "year": 1595,
+     "desc": "科舉: 進士(籠統)"
+    }
+   ],
+   "offices": [],
+   "office_total": 0
   },
   "成鍾音": {
    "cbdb_id": 204973,
@@ -28509,6 +28611,56 @@
    ],
    "office_total": 7
   },
+  "賈毓祥": {
+   "cbdb_id": 207627,
+   "cbdb_name": "賈毓祥",
+   "birth": 1571,
+   "death": null,
+   "death_age": null,
+   "native_place": "平度州",
+   "alt_names": [
+    {
+     "type": "字",
+     "name": "元冲"
+    },
+    {
+     "type": "室名、別號",
+     "name": "四塞"
+    }
+   ],
+   "entry": [
+    {
+     "year": null,
+     "desc": "科舉: 鄉貢舉人"
+    },
+    {
+     "year": null,
+     "desc": "學校: 生員(庠生)"
+    },
+    {
+     "year": 1610,
+     "desc": "科舉: 進士(籠統)"
+    }
+   ],
+   "offices": [
+    {
+     "office": "知縣",
+     "from": null,
+     "to": null
+    },
+    {
+     "office": "本省同考",
+     "from": null,
+     "to": null
+    },
+    {
+     "office": "丁內艱",
+     "from": null,
+     "to": null
+    }
+   ],
+   "office_total": 3
+  },
   "趙世卿": {
    "cbdb_id": 124844,
    "cbdb_name": "趙世卿",
@@ -29734,6 +29886,51 @@
    ],
    "office_total": 14
   },
+  "郭朝賓": {
+   "cbdb_id": 130179,
+   "cbdb_name": "郭朝賓",
+   "birth": 1513,
+   "death": 1585,
+   "death_age": 72,
+   "native_place": "汶上",
+   "alt_names": [
+    {
+     "type": "字",
+     "name": "尚甫"
+    },
+    {
+     "type": "室名、別號",
+     "name": "黃涯"
+    }
+   ],
+   "entry": [
+    {
+     "year": null,
+     "desc": "科舉: 鄉貢舉人"
+    },
+    {
+     "year": null,
+     "desc": "學校: 生員(庠生)"
+    },
+    {
+     "year": 1535,
+     "desc": "科舉: 進士(籠統)"
+    }
+   ],
+   "offices": [
+    {
+     "office": "巡撫",
+     "from": null,
+     "to": null
+    },
+    {
+     "office": "左布政使",
+     "from": null,
+     "to": null
+    }
+   ],
+   "office_total": 2
+  },
   "郭興治": {
    "cbdb_id": 207720,
    "cbdb_name": "郭興治",
@@ -29767,6 +29964,59 @@
    ],
    "offices": [],
    "office_total": 0
+  },
+  "郭興言": {
+   "cbdb_id": 61119,
+   "cbdb_name": "郭興言",
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": null,
+   "alt_names": [],
+   "entry": [],
+   "offices": [
+    {
+     "office": "禮科給事中",
+     "from": 1622,
+     "to": null
+    },
+    {
+     "office": "工科都給事中",
+     "from": 1625,
+     "to": 1628
+    },
+    {
+     "office": "刑科左給事中",
+     "from": 1625,
+     "to": null
+    },
+    {
+     "office": "太常寺少卿",
+     "from": 1627,
+     "to": 1628
+    },
+    {
+     "office": "右副都御史銜",
+     "from": 1627,
+     "to": 1628
+    },
+    {
+     "office": "吏科右給事中",
+     "from": null,
+     "to": 1625
+    },
+    {
+     "office": "太僕寺卿",
+     "from": null,
+     "to": 1628
+    },
+    {
+     "office": "太僕寺卿",
+     "from": null,
+     "to": null
+    }
+   ],
+   "office_total": 8
   },
   "郭鋆": {
    "cbdb_id": 130195,
@@ -32154,6 +32404,23 @@
    ],
    "office_total": 1
   },
+  "韓繼思": {
+   "cbdb_id": 361935,
+   "cbdb_name": "韓繼思",
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": "涇陽",
+   "alt_names": [],
+   "entry": [
+    {
+     "year": 1613,
+     "desc": "科舉: 進士(籠統)"
+    }
+   ],
+   "offices": [],
+   "office_total": 0
+  },
   "韓重": {
    "cbdb_id": 133248,
    "cbdb_name": "韓重",
@@ -33470,6 +33737,23 @@
     },
     {
      "year": 1535,
+     "desc": "科舉: 進士(籠統)"
+    }
+   ],
+   "offices": [],
+   "office_total": 0
+  },
+  "魏光緒": {
+   "cbdb_id": 351466,
+   "cbdb_name": "魏光緒",
+   "birth": null,
+   "death": null,
+   "death_age": null,
+   "native_place": "武鄉",
+   "alt_names": [],
+   "entry": [
+    {
+     "year": 1613,
      "desc": "科舉: 進士(籠統)"
     }
    ],

@@ -190,3 +190,82 @@ def test_audit_clean():
     r = ok.audit()
     assert not r["blockers"], r["blockers"]
     assert not r["warnings"], r["warnings"]
+
+
+def test_nested_successor_split(tenures):
+    """N1 嵌套继任者拆分（2026-11-08）：注文流内「。人名+月干支锚」拆出。
+
+    1625 刑科格「…遷太常少。陸文獻九、癸酉、廿八,兵左給遷。」——陸文獻
+    九月自兵科左給事中遷入，天启七年八月遷太常少；此前整段吞进周之綱 note，
+    陸文獻 任职段起点/终点全错（1626–1627）。
+    """
+    lu = [t for t in tenures if t["person"] == "陸文獻" and t["office"] == "刑科"]
+    assert len(lu) == 1, lu
+    t = lu[0]
+    assert (t["start_year"], t["end_year"]) == (1625, 1627)
+    assert (t["start_month"], t["end_month"]) == (9, 8)
+    assert t["leave"] == "遷除"
+    assert t["cbdb_id"] == 370694
+    # 前任 note 截断于界标：周之綱只留自己的两条注
+    zhou = [t for t in tenures if t["person"] == "周之綱" and t["office"] == "刑科"]
+    assert zhou and all("陸文獻" not in (t["note"] or "") for t in zhou)
+
+
+def test_multi_cell_ordered_binding(tenures):
+    """N2 多名按序绑定：天启七年刑科格「陸文獻 薛國觀八遷/十任」——
+    迁出注归前任、任注归继任；薛國觀 起 1627/10。"""
+    xue = [t for t in tenures if t["person"] == "薛國觀" and t["office"] == "刑科"]
+    assert len(xue) == 1 and xue[0]["start_year"] == 1627
+    assert xue[0]["start_month"] == 10
+    assert xue[0]["cbdb_id"] == 362351
+
+
+def test_nested_new_persons_present(tenures):
+    """嵌套拆出的新实体在表中且带 review 留痕（entry 层）。"""
+    ents = json.loads(
+        (ok.DATA / "vol2_kejishizhong_entries.json").read_text(encoding="utf-8")
+    )["entries"]
+    nested = [e for e in ents if e.get("review") and "嵌套继任者拆分" in e["review"]]
+    assert {e["person"] for e in nested} >= {"陸文獻", "趙興邦", "陳熙昌", "魏照乘"}
+    # 阮大鍼/阮大鈞：OCR 异体（同一人），CBDB 双双无记录，均标待核
+    ruan = [e for e in nested if e["person"] in ("阮大鍼", "阮大鈞")]
+    assert len(ruan) == 2 and all(e["conf"] == 0.5 for e in ruan)
+
+
+def test_split_nested_successors_unit():
+    """N1 纯函数：真例 + 假阳性防线。"""
+    from mingoff.ocr_jingqing import split_nested_successors
+
+    # 真例：嵌套拆出
+    h, segs = split_nested_successors(
+        "三、甲戌、廿六,奏;八、乙巳、廿九,遷太常少。陸文獻九、癸酉、廿八,兵左給遷。")
+    assert h.endswith("遷太常少。") and len(segs) == 1
+    assert segs[0]["person"] == "陸文獻"
+    assert segs[0]["note"] == "九、癸酉、廿八,兵左給遷。"
+
+    # 纪年不拆（天故=天啟 OCR 误；锚带年前缀）
+    h2, segs2 = split_nested_successors(
+        "…六月卒。天故二年六、甲申、廿,贈光祿少。")
+    assert segs2 == [] and h2.endswith("贈光祿少。")
+
+    # 年号前缀不拆（；嘉靖 = band 并入残留 + 嘉靖二年…）
+    h3, segs3 = split_nested_successors(
+        "…遷浙江右政。；嘉靖三年八、己未、廿七,遷大理右丞。")
+    assert segs3 == [] and h3.endswith("遷大理右丞。")
+
+    # 「某某十一、」归 某某+十一月，不拆出「某某十」
+    h4, segs4 = split_nested_successors("…卒。趙貞十一、甲子、三,任。")
+    assert h4.endswith("卒。") and len(segs4) == 1 and segs4[0]["person"] == "趙貞"
+
+
+def test_yield_inferred(doc):
+    """同衙同年继任到任推定前任迄月（2026-11-09）：原书无离任注的段不再
+    以年截尾与继任重叠；推定段标 yield_inferred。"""
+    hit = [t for t in doc["tenures"]
+           if t["person"] == "陳壽" and t["office"] == "戶科"
+           and t["start_year"] == 1488]
+    assert hit and hit[0].get("yield_inferred") is True
+    assert hit[0]["end_month"] == 10   # 继任 張九功 1488/10 到任
+    # 推定不误伤有离任注的段
+    keep = [t for t in doc["tenures"] if t.get("yield_inferred")]
+    assert all(t["leave"] == "未載" for t in keep)

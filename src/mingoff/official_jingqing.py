@@ -32,7 +32,8 @@ sys.stdout.reconfigure(encoding="utf-8")
 from mingoff.glue_repair import apply_glue_repair
 from mingoff.official import CUT_M, CUT_Y, _cross_year, _month_of, build_shilu
 from mingoff.match_cbdb import S2T
-from mingoff.official_buyuan import CONF_DOWN, merge_gap_segments
+from mingoff.official_buyuan import (CONF_DOWN, infer_yield_ends,
+                                     merge_gap_segments)
 
 DATA = Path(__file__).resolve().parent / "data"
 PADDLE_PAGES = DATA.parents[2] / "_scratch" / "paddle_jingqing" / "raw_pages"
@@ -349,7 +350,7 @@ def build_jingqing_tenures() -> list[dict]:
                 "years": seg,
                 **({"same_name_risk": True} if same_name_risk else {}),
             })
-    return merge_gap_segments(tenures)
+    return infer_yield_ends(merge_gap_segments(tenures))
 
 
 # ---------------- 审计（G2/G3/G6-京卿版） ----------------

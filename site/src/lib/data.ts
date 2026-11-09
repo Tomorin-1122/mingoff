@@ -53,6 +53,8 @@ export interface Tenure {
   same_name_risk?: boolean;
   /** 侍郎：行带警报页待原书核验（站点灰显，D-11 惯例） */
   pending_book_check?: boolean;
+  /** 迄月据同格继任到任推定（原书无离任注，2026-11-09 推断） */
+  yield_inferred?: boolean;
 }
 
 /** 《明實錄》单条命中（中研院检索结果） */

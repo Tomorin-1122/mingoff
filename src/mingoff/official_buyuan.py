@@ -245,7 +245,33 @@ def build_buyuan_tenures() -> list[dict]:
             })
     if skipped_no_office:
         _append_review(skipped_no_office)
-    return merge_gap_segments(tenures)
+    return infer_yield_ends(merge_gap_segments(tenures))
+
+
+def infer_yield_ends(tenures: list[dict]) -> list[dict]:
+    """同衙同年继任到任 → 推定前任迄月（2026-11-09，四表共用）。
+
+    年表「迁出/迁入双记」体例下，前任无离任注时其段以年截尾（D8 填满到年底），
+    画布上与同年到任的继任者重叠。推定：同 office 相邻两段，a 无离任注、迄月空、
+    a.end_year == b.start_year、b 起月已知且非署理 → a.end_month = b.start_month，
+    标 `yield_inferred`（抽屉注明「迄月据同格继任到任推定」，非史料所载）。
+    推定只收紧、不外延：b 起月早于 a 起月（同年倒序）不推，宁缺勿错。
+    """
+    by_off: dict[str, list[dict]] = defaultdict(list)
+    for t in tenures:
+        by_off[t["office"]].append(t)
+    for lst in by_off.values():
+        lst.sort(key=lambda t: (t["start_year"], t["start_month"] or 13))
+        for a, b in zip(lst, lst[1:]):
+            if (a["end_month"] is None and a["leave"] == "未載"
+                    and a["end_year"] == b["start_year"]
+                    and b["start_month"]
+                    and b.get("tenure_type") != "署理"
+                    and (a["start_year"] != b["start_year"]
+                         or b["start_month"] > (a["start_month"] or 0))):
+                a["end_month"] = b["start_month"]
+                a["yield_inferred"] = True
+    return tenures
 
 
 def merge_gap_segments(tenures: list[dict]) -> list[dict]:
