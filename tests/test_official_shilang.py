@@ -30,6 +30,22 @@ def test_scale(tenures):
     assert span == (1368, 1644)
 
 
+def test_leave_lexicon_round2026_11_12(tenures):
+    """2026-11-12 原书验证轮（侍郎侧）：简体「调」、下狱宥释、還鄉离任。"""
+    def seg(p, o, sy):
+        return next(t for t in tenures if t["person"] == p and t["office"] == o
+                    and t["start_year"] == sy)
+    # 馬森 1558「十、十五，坐调大理卿」（OCR 简体调）——曾被推成迄 11
+    t = seg("馬森", "戶部右侍郎", 1558)
+    assert t["leave"] == "調除" and t["end_month"] == 10 and "yield_inferred" not in t
+    # 何文淵 1438「十二…下狱」——三月下狱寻宥复职不误标，十二月下狱为离任
+    t = seg("何文淵", "兵部右侍郎", 1438)
+    assert t["leave"] == "下狱" and t["end_month"] == 12
+    # 程富 1446 三月下狱寻釋（跳过）、九月還鄉治疾（還除）——曾被推成迄 9 无据
+    t = seg("程富", "右副都御史", 1446)
+    assert t["leave"] == "還除" and t["end_month"] == 9
+
+
 def test_years_contiguous(tenures):
     for t in tenures:
         ys = t["years"]

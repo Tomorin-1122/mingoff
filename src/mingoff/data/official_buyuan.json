@@ -7,9 +7,9 @@
   "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   "source": "张德信《明代职官年表》册1·部院大臣年表（京師）（MinerU OCR）；v2 修复：人名归一/伪名清理/注文隔离/衙署分期/CBDB 重挂；v3 D-01：同名拆分 person_id（李本/李敏/王佐/顧佐/吳山/胡松），張鳳 1629 改張鳳翔；人名校验：CBDB 20261010 + 中研院明實錄 + 弇山堂别集/國榷（识典古籍）；《明實錄》命中据中研院检索",
   "pipeline": "mingoff.official_buyuan (v3: D-01 identity split + (person_id,office) 分组 + gap 合并 + D15)",
-  "generated_at": "2026-11-08T23:46:27+00:00",
+  "generated_at": "2026-11-11T23:48:23+00:00",
   "stats": {
-   "tenures": 1177,
+   "tenures": 1178,
    "persons": 816,
    "display_persons": 811,
    "split_entities": 10,
@@ -28,30 +28,30 @@
     "總督倉場",
     "都察院"
    ],
-   "gap_merged_tenures": 15,
-   "gap_years_total": 16,
+   "gap_merged_tenures": 14,
+   "gap_years_total": 15,
    "years_covered": [
     1368,
     1644
    ],
-   "with_start_month": 1112,
-   "with_end_month": 943,
-   "with_start_page": 1177,
-   "with_end_page": 1177,
-   "cbdb_aligned": 966,
-   "with_leave": 836,
+   "with_start_month": 1113,
+   "with_end_month": 986,
+   "with_start_page": 1178,
+   "with_end_page": 1178,
+   "cbdb_aligned": 967,
+   "with_leave": 955,
    "shu_li": 96,
    "same_name_risk": 10,
    "office_status_dist": {
     "mixed": 408,
-    "null": 626,
+    "null": 627,
     "row-order": 78,
     "name-anchor": 55,
     "page-verified": 10
    },
    "shilu_persons": 130,
    "shilu_hits": 3942,
-   "person_years": 3431
+   "person_years": 3430
   }
  },
  "tenures": [
@@ -94,11 +94,11 @@
    "start_year": 1377,
    "start_month": 9,
    "end_year": 1379,
-   "end_month": 9,
+   "end_month": 12,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "九、辛丑、廿六,中書右丞遷。",
    "start_book_page": 411,
    "end_book_page": 413,
@@ -106,8 +106,7 @@
     1377,
     1378,
     1379
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "世家寶",
@@ -174,11 +173,11 @@
    "start_year": 1449,
    "start_month": 8,
    "end_year": 1457,
-   "end_month": null,
+   "end_month": 1,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.8,
-   "leave": "改除",
+   "leave": "罪誅",
    "note": "八、戊辰、廿,兵右侍遷;十、壬戌、十五,遷少保,兼兵尚。",
    "start_book_page": 484,
    "end_book_page": 492,
@@ -369,11 +368,11 @@
    "start_year": 1375,
    "start_month": 11,
    "end_year": 1375,
-   "end_month": null,
+   "end_month": 11,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "十一、壬午、廿六,戶侍遷一科尚書。",
    "start_book_page": 409,
    "end_book_page": 409,
@@ -751,18 +750,17 @@
    "start_year": 1385,
    "start_month": 4,
    "end_year": 1385,
-   "end_month": 6,
+   "end_month": 4,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "罪誅",
    "note": "四、丁酉、六,罪誅。",
    "start_book_page": 419,
    "end_book_page": 419,
    "years": [
     1385
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "余燦",
@@ -829,11 +827,11 @@
    "start_year": 1552,
    "start_month": 8,
    "end_year": 1552,
-   "end_month": null,
+   "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "閑住",
    "note": "八、壬申、廿二,南大理卿遷戶右侍,兼西苑農事,尋閑住。隆慶二年九、乙亥、廿九,復官。",
    "start_book_page": 587,
    "end_book_page": 587,
@@ -961,11 +959,11 @@
    "start_year": 1498,
    "start_month": 12,
    "end_year": 1500,
-   "end_month": 6,
+   "end_month": 5,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "十二、丁巳、廿六,吏左侍遷。",
    "start_book_page": 533,
    "end_book_page": 535,
@@ -973,8 +971,7 @@
     1498,
     1499,
     1500
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "侯庸",
@@ -1044,11 +1041,11 @@
    "start_year": 1399,
    "start_month": 7,
    "end_year": 1402,
-   "end_month": null,
+   "end_month": 7,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "罪誅",
    "note": "七月,刑左侍遷。",
    "start_book_page": 433,
    "end_book_page": 436,
@@ -1132,11 +1129,11 @@
    "start_year": 1449,
    "start_month": 8,
    "end_year": 1449,
-   "end_month": null,
+   "end_month": 11,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "八、丙子、廿九，理院事；十一、癸未、七，遷刑尚。",
    "start_book_page": 484,
    "end_book_page": 484,
@@ -1453,16 +1450,15 @@
    "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "六、丙寅、廿一,戶右侍遷戶左侍。",
    "start_book_page": 619,
    "end_book_page": 620,
    "years": [
     1584,
     1585
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "傅永淳",
@@ -1502,19 +1498,18 @@
    "start_year": 1639,
    "start_month": 7,
    "end_year": 1640,
-   "end_month": 8,
+   "end_month": 5,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "七、癸未、廿八,兵左侍遷。",
    "start_book_page": 674,
    "end_book_page": 675,
    "years": [
     1639,
     1640
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "傅淑訓",
@@ -1610,11 +1605,11 @@
    "start_year": 1561,
    "start_month": 2,
    "end_year": 1561,
-   "end_month": 5,
+   "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "改南京",
+   "leave": "遷除",
    "note": "二月，刑右侍遷戶左侍，兼西苑農事；五、丙戌、廿七，改南京用；閏五、辛卯、二，疾歸養四十三年八、乙亥、七，調南太僕卿。",
    "start_book_page": 596,
    "end_book_page": 596,
@@ -1662,11 +1657,11 @@
    "start_year": 1643,
    "start_month": 12,
    "end_year": 1643,
-   "end_month": null,
+   "end_month": 12,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "十二、戊子、廿八,總兖徐上下水陸二運戶右侍遷戶左侍。",
    "start_book_page": 678,
    "end_book_page": 678,
@@ -2201,11 +2196,11 @@
    "start_year": 1507,
    "start_month": 1,
    "end_year": 1507,
-   "end_month": null,
+   "end_month": 1,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "正、癸巳、十九,總督大同;閏正、甲子、廿、遷左都。",
    "start_book_page": 542,
    "end_book_page": 542,
@@ -2356,8 +2351,8 @@
    "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "三、辛巳、十八,致仕。十二年三、甲申、七,起改兵左侍管南兵右侍事。",
    "start_book_page": 616,
    "end_book_page": 618,
@@ -2365,8 +2360,7 @@
     1581,
     1582,
     1583
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "劉惟謙",
@@ -2465,18 +2459,17 @@
    "start_year": 1580,
    "start_month": 6,
    "end_year": 1580,
-   "end_month": 10,
+   "end_month": 9,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "六、庚子、二,戶左侍改;九、乙未、廿八,遷南右都。",
    "start_book_page": 615,
    "end_book_page": 615,
    "years": [
     1580
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "劉春",
@@ -3129,16 +3122,15 @@
    "end_month": 7,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "閑住",
    "note": "二、丙子、二,南戶尚改。",
    "start_book_page": 604,
    "end_book_page": 605,
    "years": [
     1569,
     1570
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "劉體乾",
@@ -3156,16 +3148,15 @@
    "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "六、乙亥、十六,刑右侍遷戶左侍總。",
    "start_book_page": 601,
    "end_book_page": 602,
    "years": [
     1566,
     1567
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "劉麟",
@@ -3235,16 +3226,15 @@
    "end_month": 12,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "七、丙子、十七,總河工右侍起改戶右侍。",
    "start_book_page": 663,
    "end_book_page": 664,
    "years": [
     1628,
     1629
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "古樸",
@@ -3366,11 +3356,11 @@
    "start_year": 1561,
    "start_month": 11,
    "end_year": 1561,
-   "end_month": null,
+   "end_month": 11,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "十一、癸卯、十七，顺天尹遷戶右侍。",
    "start_book_page": 596,
    "end_book_page": 596,
@@ -3963,18 +3953,17 @@
    "start_year": 1561,
    "start_month": 3,
    "end_year": 1561,
-   "end_month": 11,
+   "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "閑住",
    "note": "三、乙亥、十五，閑住。隆慶三年十二、己酉、十一，起改南禮尚，不赴，準致仕。萬曆五年三、壬寅、十五，卒。萬曆六年二、辛卯、十，贈太子太保，謚文端。",
    "start_book_page": 596,
    "end_book_page": 596,
    "years": [
     1561
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "吴琳",
@@ -4039,18 +4028,17 @@
    "start_year": 1625,
    "start_month": 9,
    "end_year": 1625,
-   "end_month": 10,
+   "end_month": 9,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "九、戊申、廿三,總漕兼撫鳳陽戶右侍兼右僉都遷戶尚改;九、甲戌、廿九,冠帶閑住。崇禎元年八、壬辰、四,起改南戶尚兼右副都總糧儲。",
    "start_book_page": 660,
    "end_book_page": 660,
    "years": [
     1625
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "呂宗藝",
@@ -4147,7 +4135,7 @@
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "卒于任",
+   "leave": "遷除",
    "note": "是年,北平按僉遷。",
    "start_book_page": 408,
    "end_book_page": 411,
@@ -4349,16 +4337,15 @@
    "end_month": 5,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "十一、戊寅、廿二,協理戎政兵左侍遷右都兼戶右侍。",
    "start_book_page": 627,
    "end_book_page": 628,
    "years": [
     1592,
     1593
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "周倫",
@@ -4401,8 +4388,8 @@
    "end_month": 11,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "七、丁亥、廿二，大理卿遷戶右侍。",
    "start_book_page": 569,
    "end_book_page": 571,
@@ -4410,8 +4397,7 @@
     1534,
     1535,
     1536
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "周嘉謨",
@@ -4536,11 +4522,11 @@
    "start_year": 1625,
    "start_month": 1,
    "end_year": 1625,
-   "end_month": null,
+   "end_month": 1,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "正、戊寅、廿九，南刑左侍遷協理部事；十二、癸未、九，署刑部；十二、辛丑、廿七，遷左都。",
    "start_book_page": 660,
    "end_book_page": 660,
@@ -4615,16 +4601,15 @@
    "end_month": 7,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "十二、辛丑、廿七,協理刑部事刑尚改。",
    "start_book_page": 660,
    "end_book_page": 661,
    "years": [
     1625,
     1626
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "周斌",
@@ -4741,11 +4726,11 @@
    "start_year": 1539,
    "start_month": 6,
    "end_year": 1539,
-   "end_month": null,
+   "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "是年，刑左侍遷；六、丙辰、廿，遷刑尚。",
    "start_book_page": 574,
    "end_book_page": 574,
@@ -4853,8 +4838,8 @@
    "end_month": 7,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "十、戊辰、三,總漕工尚兼右都遷。",
    "start_book_page": 579,
    "end_book_page": 581,
@@ -4862,8 +4847,7 @@
     1544,
     1545,
     1546
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "周禎",
@@ -5290,18 +5274,17 @@
    "start_year": 1370,
    "start_month": 9,
    "end_year": 1370,
-   "end_month": 11,
+   "end_month": 12,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "九、庚子、十五，廣西参政遷；十二，乙丑、十，遷侍御史",
    "start_book_page": 404,
    "end_book_page": 404,
    "years": [
     1370
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "喬允升",
@@ -6273,16 +6256,15 @@
    "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "十一、甲子、十四,刑尚改。",
    "start_book_page": 628,
    "end_book_page": 629,
    "years": [
     1593,
     1594
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "孫交",
@@ -6488,11 +6470,11 @@
    "start_year": 1620,
    "start_month": 10,
    "end_year": 1620,
-   "end_month": null,
-   "month_conflict": false,
+   "end_month": 8,
+   "month_conflict": true,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.5,
+   "leave": "遷除",
    "note": "四、丙辰、九,禮右侍署;八、乙丑、廿,遷禮尚兼翰林院學士;十、丙寅、廿三,兼東閣大學士入;十一、己卯、六,入閣。",
    "start_book_page": 655,
    "end_book_page": 655,
@@ -6626,18 +6608,17 @@
    "start_year": 1550,
    "start_month": 3,
    "end_year": 1550,
-   "end_month": 10,
+   "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "三、癸酉、九,左副都遷戶右侍兼督西苑農事;十、癸亥、三,遷戶尚。",
    "start_book_page": 585,
    "end_book_page": 585,
    "years": [
     1550
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "孫承宗",
@@ -6728,19 +6709,18 @@
    "start_year": 1622,
    "start_month": 8,
    "end_year": 1623,
-   "end_month": 11,
+   "end_month": 10,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "八、乙亥、十二,南吏尚改。",
    "start_book_page": 657,
    "end_book_page": 658,
    "years": [
     1622,
     1623
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "孫瑋",
@@ -6824,11 +6804,11 @@
    "start_year": 1623,
    "start_month": 10,
    "end_year": 1623,
-   "end_month": null,
+   "end_month": 10,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "閏十、戊戌、十二,刑尚遷吏尚署;十一、庚午、十四,加太子太保。",
    "start_book_page": 644,
    "end_book_page": 658,
@@ -7030,11 +7010,11 @@
    "start_year": 1379,
    "start_month": 9,
    "end_year": 1380,
-   "end_month": null,
+   "end_month": 1,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "九、甲辰、十一,浙江布政使遷。",
    "start_book_page": 413,
    "end_book_page": 414,
@@ -7237,11 +7217,11 @@
    "start_year": 1402,
    "start_month": 6,
    "end_year": 1402,
-   "end_month": null,
+   "end_month": 7,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "六、辛未、十八,刑員署;七、丙午、廿五,遷禮右侍,仍署;九、甲申、四,遷禮左侍,仍署。",
    "start_book_page": 436,
    "end_book_page": 436,
@@ -7317,19 +7297,18 @@
    "start_year": 1585,
    "start_month": 3,
    "end_year": 1586,
-   "end_month": 6,
+   "end_month": 5,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "三、庚寅、十九,戶左侍改。",
    "start_book_page": 620,
    "end_book_page": 621,
    "years": [
     1585,
     1586
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "寇深",
@@ -7494,18 +7473,17 @@
    "start_year": 1507,
    "start_month": 1,
    "end_year": 1507,
-   "end_month": 4,
+   "end_month": 1,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "閏正、己已、廿五，遷刑尚。",
    "start_book_page": 542,
    "end_book_page": 542,
    "years": [
     1507
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "屠勳",
@@ -7663,11 +7641,11 @@
    "start_year": 1493,
    "start_month": 7,
    "end_year": 1496,
-   "end_month": 3,
+   "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "七、戊申、十六,召理院事。",
    "start_book_page": 520,
    "end_book_page": 544,
@@ -7688,8 +7666,7 @@
     1504,
     1505,
     1506
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "屠滽",
@@ -8275,15 +8252,14 @@
    "end_month": 4,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "二、庚午、十一，戶左侍改；四、甲子、五，遷右都總督薊遼。",
    "start_book_page": 622,
    "end_book_page": 622,
    "years": [
     1587
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "張國維",
@@ -8469,11 +8445,11 @@
    "start_year": 1565,
    "start_month": 5,
    "end_year": 1565,
-   "end_month": 11,
+   "end_month": 5,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "改除",
+   "leave": "遷除",
    "note": "五、庚戌、十五,大理卿遷戶右侍;十一、甲辰、十一,改工右侍,理西内工程。",
    "start_book_page": 600,
    "end_book_page": 600,
@@ -8959,18 +8935,17 @@
    "start_year": 1546,
    "start_month": 3,
    "end_year": 1546,
-   "end_month": 6,
+   "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "三、甲子、七，總陝西三邊右都兼兵右侍遷戶尚兼理西苑農事；五、戊辰、十三，戍邊慶陽卅一年七、已酉、廿九，起撫延綏右副都",
    "start_book_page": 581,
    "end_book_page": 581,
    "years": [
     1546
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "張瑩",
@@ -9016,18 +8991,17 @@
    "start_year": 1527,
    "start_month": 10,
    "end_year": 1527,
-   "end_month": 12,
+   "end_month": 10,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "八、庚戌、五,兵左侍署;十、戊申、四,遷禮尚兼文淵閣學士入閣仍署;十、癸酉、廿九,解署事,",
    "start_book_page": 562,
    "end_book_page": 562,
    "years": [
     1527
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "張璧",
@@ -9598,7 +9572,7 @@
    "start_year": 1536,
    "start_month": 11,
    "end_year": 1536,
-   "end_month": 12,
+   "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.6,
@@ -9608,8 +9582,7 @@
    "end_book_page": 571,
    "years": [
     1536
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "張鳳",
@@ -9787,11 +9760,11 @@
    "start_year": 1521,
    "start_month": 5,
    "end_year": 1523,
-   "end_month": 10,
+   "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.8,
-   "leave": "卒于任",
+   "leave": "調除",
    "note": "五、甲子、十三,起復太子太保左都改;十一、丁巳、九,加柱國。",
    "start_book_page": 556,
    "end_book_page": 558,
@@ -9921,19 +9894,18 @@
    "start_year": 1625,
    "start_month": 12,
    "end_year": 1626,
-   "end_month": 7,
+   "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "閑住",
    "note": "十二月,吏左侍遷。",
    "start_book_page": 660,
    "end_book_page": 661,
    "years": [
     1625,
     1626
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "徐學謨",
@@ -10335,11 +10307,11 @@
    "start_year": 1481,
    "start_month": 3,
    "end_year": 1483,
-   "end_month": 4,
+   "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "三、戊戌、廿四，右副都遷",
    "start_book_page": 516,
    "end_book_page": 518,
@@ -10347,8 +10319,7 @@
     1481,
     1482,
     1483
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "戴金",
@@ -10418,15 +10389,14 @@
    "end_month": 11,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "八、乙巳、十二,加太子太傅;十一、丁丑、十四,遷吏尚。",
    "start_book_page": 662,
    "end_book_page": 662,
    "years": [
     1627
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "房壯麗",
@@ -10441,11 +10411,11 @@
    "start_year": 1626,
    "start_month": 7,
    "end_year": 1626,
-   "end_month": null,
+   "end_month": 7,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "七、辛巳、十一,吏左侍遷左都;十、甲寅、十五,加太子太保。",
    "start_book_page": 661,
    "end_book_page": 661,
@@ -10722,11 +10692,11 @@
    "start_year": 1399,
    "start_month": 2,
    "end_year": 1402,
-   "end_month": null,
+   "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "罪誅",
    "note": "二月,左僉都遷,尋改北平參議。",
    "start_book_page": 433,
    "end_book_page": 436,
@@ -10750,11 +10720,11 @@
    "start_year": 1398,
    "start_month": 5,
    "end_year": 1402,
-   "end_month": null,
+   "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "罪誅",
    "note": "五月,左都改。",
    "start_book_page": 432,
    "end_book_page": 436,
@@ -10912,19 +10882,18 @@
    "start_year": 1394,
    "start_month": 9,
    "end_year": 1395,
-   "end_month": 1,
+   "end_month": 9,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "罪誅",
    "note": "九月,左副都遷",
    "start_book_page": 428,
    "end_book_page": 429,
    "years": [
     1394,
     1395
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "曾同亨",
@@ -11052,19 +11021,18 @@
    "start_year": 1600,
    "start_month": null,
    "end_year": 1601,
-   "end_month": 10,
+   "end_month": 9,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "",
    "start_book_page": 635,
    "end_book_page": 636,
    "years": [
     1600,
     1601
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "朱夢炎",
@@ -11209,7 +11177,7 @@
    "start_year": 1484,
    "start_month": 6,
    "end_year": 1485,
-   "end_month": 7,
+   "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
@@ -11220,8 +11188,7 @@
    "years": [
     1484,
     1485
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "朱衡",
@@ -11567,11 +11534,11 @@
    "start_year": 1380,
    "start_month": 7,
    "end_year": 1380,
-   "end_month": 10,
+   "end_month": 7,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "卒于任",
+   "leave": "遷除",
    "note": "七、丁巳、廿九、禮侍遷試;十、己卯、廿二、降江西參政試,未行,卒",
    "start_book_page": 414,
    "end_book_page": 414,
@@ -11839,11 +11806,11 @@
    "start_year": 1548,
    "start_month": 5,
    "end_year": 1549,
-   "end_month": null,
+   "end_month": 12,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "五、壬辰、十七,戶右侍遷戶左侍總,兼西苑農事。",
    "start_book_page": 583,
    "end_book_page": 584,
@@ -11892,19 +11859,18 @@
    "start_year": 1538,
    "start_month": 11,
    "end_year": 1539,
-   "end_month": 9,
+   "end_month": 11,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "還除",
    "note": "十一、丁酉、廿七，吏右侍遷侍，兼理西苑農事。",
    "start_book_page": 573,
    "end_book_page": 574,
    "years": [
     1538,
     1539
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "李守道",
@@ -11969,11 +11935,11 @@
    "start_year": 1623,
    "start_month": 2,
    "end_year": 1624,
-   "end_month": null,
+   "end_month": 11,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "二、己巳、九,南戶尚改,尋丁憂歸。五年三、甲戌、廿六,起以戶尚管右侍郎事兼右副都督理遼東檯餉兼撫天津。",
    "start_book_page": 658,
    "end_book_page": 659,
@@ -11995,18 +11961,17 @@
    "start_year": 1623,
    "start_month": 3,
    "end_year": 1623,
-   "end_month": 10,
+   "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "三、丁酉、七，戶右侍遷户尚；九、丙申、九，回部。",
    "start_book_page": 658,
    "end_book_page": 658,
    "years": [
     1623
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "李宗延",
@@ -12155,11 +12120,11 @@
    "start_year": 1602,
    "start_month": 4,
    "end_year": 1607,
-   "end_month": null,
+   "end_month": 5,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "四月,禮右侍署。",
    "start_book_page": 637,
    "end_book_page": 642,
@@ -12431,16 +12396,15 @@
    "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "八、丁巳、廿五,刑左侍遷右都兼戶右侍。",
    "start_book_page": 626,
    "end_book_page": 627,
    "years": [
     1591,
     1592
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "李承勛",
@@ -13011,19 +12975,18 @@
    "start_year": 1375,
    "start_month": 11,
    "end_year": 1376,
-   "end_month": 6,
+   "end_month": 1,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "十一、戊寅、廿二，河南知府遷，尋卒。",
    "start_book_page": 409,
    "end_book_page": 410,
    "years": [
     1375,
     1376
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "李澂",
@@ -13202,11 +13165,11 @@
    "start_year": 1464,
    "start_month": 8,
    "end_year": 1467,
-   "end_month": 12,
+   "end_month": 11,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "改除",
+   "leave": "還除",
    "note": "八、辛卯、十,撫宣府左副都遷,理院事。",
    "start_book_page": 499,
    "end_book_page": 502,
@@ -13386,11 +13349,11 @@
    "start_year": 1614,
    "start_month": 9,
    "end_year": 1614,
-   "end_month": null,
+   "end_month": 12,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "九月，吏右侍署；十二月，遷吏左侍。",
    "start_book_page": 649,
    "end_book_page": 649,
@@ -13467,11 +13430,11 @@
    "start_year": 1461,
    "start_month": 7,
    "end_year": 1465,
-   "end_month": null,
+   "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "七、辛亥、十三，大理卿遷",
    "start_book_page": 496,
    "end_book_page": 512,
@@ -13588,9 +13551,9 @@
    "end_year": 1644,
    "end_month": 3,
    "month_conflict": false,
-   "end_clamped": true,
-   "confidence": 0.7,
-   "leave": "未載",
+   "end_clamped": false,
+   "confidence": 0.8,
+   "leave": "死",
    "note": "五、己酉、十七,南吏尚改。",
    "start_book_page": 678,
    "end_book_page": 679,
@@ -13801,16 +13764,15 @@
    "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "十、甲寅、廿三,總漕右都遷。",
    "start_book_page": 559,
    "end_book_page": 560,
    "years": [
     1524,
     1525
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "李鏜",
@@ -14448,16 +14410,15 @@
    "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "閏正、壬子、八，顺天尹遷户右侍。",
    "start_book_page": 542,
    "end_book_page": 543,
    "years": [
     1507,
     1508
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "林聰",
@@ -14556,11 +14517,11 @@
    "start_year": 1439,
    "start_month": 3,
    "end_year": 1441,
-   "end_month": 6,
+   "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "卒于任",
+   "leave": "還除",
    "note": "三、癸亥、十五,兵左侍遷,參甘肅軍務。",
    "start_book_page": 474,
    "end_book_page": 476,
@@ -14612,15 +14573,14 @@
    "end_month": 9,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "八、庚戌、五,禮右侍署;九、乙亥、一,遷吏左侍署;九、丙申、廿二,遷禮尚兼學士。",
    "start_book_page": 562,
    "end_book_page": 562,
    "years": [
     1527
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "桂萼",
@@ -14663,11 +14623,11 @@
    "start_year": 1527,
    "start_month": 9,
    "end_year": 1527,
-   "end_month": 11,
+   "end_month": 9,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "改除",
+   "leave": "遷除",
    "note": "九、丙申、廿二,吏左侍遷仍兼學士;十一、丁丑、三,改吏尚仍兼學士。",
    "start_book_page": 562,
    "end_book_page": 562,
@@ -14798,11 +14758,11 @@
    "start_year": 1534,
    "start_month": 8,
    "end_year": 1540,
-   "end_month": 10,
+   "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "卒于任",
+   "leave": "閑住",
    "note": "八、辛酉、廿七,丁憂歸。十五年四、甲午、十,起改吏尚。",
    "start_book_page": 563,
    "end_book_page": 575,
@@ -15122,7 +15082,7 @@
    "start_year": 1571,
    "start_month": 3,
    "end_year": 1572,
-   "end_month": 7,
+   "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
@@ -15133,8 +15093,7 @@
    "years": [
     1571,
     1572
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "楊博",
@@ -15404,11 +15363,11 @@
    "start_year": 1538,
    "start_month": 5,
    "end_year": 1539,
-   "end_month": 6,
+   "end_month": 4,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.8,
-   "leave": "致仕",
+   "leave": "還除",
    "note": "五、丙子、四,提督工程工尚改。",
    "start_book_page": 573,
    "end_book_page": 574,
@@ -15535,16 +15494,15 @@
    "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "正、甲申、二,遷戶右侍。",
    "start_book_page": 551,
    "end_book_page": 552,
    "years": [
     1516,
     1517
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "楊時喬",
@@ -15647,16 +15605,15 @@
    "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "五、壬戌、十七,起刑左侍改戶左侍,兼西苑農事。",
    "start_book_page": 588,
    "end_book_page": 589,
    "years": [
     1553,
     1554
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "楊訓文",
@@ -15831,11 +15788,11 @@
    "start_year": 1397,
    "start_month": 4,
    "end_year": 1397,
-   "end_month": null,
+   "end_month": 7,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "死",
    "note": "四、癸卯、廿一，起前刑尚遷，未赴；七、丁巳、八，賜死於家。",
    "start_book_page": 431,
    "end_book_page": 431,
@@ -16269,11 +16226,11 @@
    "start_year": 1536,
    "start_month": 11,
    "end_year": 1536,
-   "end_month": null,
+   "end_month": 11,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "閑住",
    "note": "十一、壬申、廿，起閑住右副都遷。",
    "start_book_page": 571,
    "end_book_page": 571,
@@ -16626,8 +16583,8 @@
    "end_month": 9,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "四、戊午、廿三,廣東參政遷",
    "start_book_page": 408,
    "end_book_page": 411,
@@ -16636,8 +16593,7 @@
     1375,
     1376,
     1377
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "汪應蛟",
@@ -16730,25 +16686,47 @@
    "tenure_type": "实授",
    "start_year": 1529,
    "start_month": 12,
-   "end_year": 1532,
-   "end_month": 9,
+   "end_year": 1530,
+   "end_month": 10,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "改除",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "十二、庚辰、十八，刑右侍遷，掌院事。",
    "start_book_page": 564,
    "end_book_page": 567,
    "years": [
     1529,
-    1530,
-    1531,
-    1532
+    1530
    ],
-   "gap_years": [
+   "gap_after": [
     1531
-   ],
-   "merged_segments": 2
+   ]
+  },
+  {
+   "person": "汪鋐",
+   "person_id": "汪鋐",
+   "person_label": "汪鋐",
+   "cbdb_id": 127536,
+   "cbdb_name": "汪鋐",
+   "office": "都察院",
+   "office_raw": "都察院",
+   "office_status": null,
+   "tenure_type": "实授",
+   "start_year": 1532,
+   "start_month": 9,
+   "end_year": 1532,
+   "end_month": 9,
+   "month_conflict": false,
+   "end_clamped": false,
+   "confidence": 0.7,
+   "leave": "改除",
+   "note": "九、庚戌、五，改吏尚。",
+   "start_book_page": 564,
+   "end_book_page": 567,
+   "years": [
+    1532
+   ]
   },
   {
    "person": "沈冬魁",
@@ -17212,11 +17190,11 @@
    "start_year": 1537,
    "start_month": 6,
    "end_year": 1538,
-   "end_month": null,
+   "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "六、甲戌、廿七,吏左侍兼學士遷,仍兼官。",
    "start_book_page": 572,
    "end_book_page": 573,
@@ -17374,11 +17352,11 @@
    "start_year": 1589,
    "start_month": 6,
    "end_year": 1589,
-   "end_month": 9,
+   "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "丁憂",
+   "leave": "遷除",
    "note": "六、乙巳、卅，戶左侍遷右都兼戶右侍；九、戊午、十四，丁憂歸。廿年四、丁酉、八，起遷南吏尚。",
    "start_book_page": 624,
    "end_book_page": 624,
@@ -17829,7 +17807,7 @@
    "start_year": 1529,
    "start_month": 2,
    "end_year": 1529,
-   "end_month": 8,
+   "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
@@ -17853,8 +17831,7 @@
     1539,
     1540,
     1541
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "熊浹",
@@ -18228,11 +18205,11 @@
    "start_year": 1577,
    "start_month": 10,
    "end_year": 1582,
-   "end_month": 12,
+   "end_month": 10,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.8,
-   "leave": "致仕",
+   "leave": "閑住",
    "note": "十、戊申、廿五，起戶尚改。",
    "start_book_page": 612,
    "end_book_page": 617,
@@ -18371,11 +18348,11 @@
    "start_year": 1622,
    "start_month": 1,
    "end_year": 1622,
-   "end_month": 2,
+   "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "正、甲子、廿八，兵左侍署；三、甲辰、八，遷兵尚兼右副都經略遼東。",
    "start_book_page": 657,
    "end_book_page": 663,
@@ -18388,8 +18365,7 @@
     1625,
     1626,
     1627
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "王在晉",
@@ -18454,11 +18430,11 @@
    "start_year": 1536,
    "start_month": 12,
    "end_year": 1538,
-   "end_month": null,
+   "end_month": 4,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "閏十二、丁丑、廿六，戶右侍暫管",
    "start_book_page": 571,
    "end_book_page": 573,
@@ -18481,11 +18457,11 @@
    "start_year": 1537,
    "start_month": 12,
    "end_year": 1538,
-   "end_month": null,
+   "end_month": 4,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "十二、癸酉、廿七,戶右侍遷。",
    "start_book_page": 572,
    "end_book_page": 573,
@@ -18507,11 +18483,11 @@
    "start_year": 1500,
    "start_month": 9,
    "end_year": 1502,
-   "end_month": null,
+   "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "九、庚申、九，兵左侍遷，經略密雲等處軍務。",
    "start_book_page": 535,
    "end_book_page": 537,
@@ -18707,16 +18683,15 @@
    "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "十一、癸巳、十五,戶右侍遷戶左侍。",
    "start_book_page": 618,
    "end_book_page": 619,
    "years": [
     1583,
     1584
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "王彰",
@@ -18858,19 +18833,18 @@
    "start_year": 1384,
    "start_month": 11,
    "end_year": 1385,
-   "end_month": 10,
+   "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "罪誅",
    "note": "十一、庚寅、廿七,左審判遷。",
    "start_book_page": 418,
    "end_book_page": 419,
    "years": [
     1384,
     1385
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "王憲",
@@ -18975,18 +18949,17 @@
    "start_year": 1523,
    "start_month": 4,
    "end_year": 1523,
-   "end_month": 12,
+   "end_month": 4,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "四、壬申、一、南太常卿遷戶右侍；十一、甲午、廿八，回部管事。",
    "start_book_page": 558,
    "end_book_page": 558,
    "years": [
     1523
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "王敏",
@@ -19144,11 +19117,11 @@
    "start_year": 1526,
    "start_month": 10,
    "end_year": 1528,
-   "end_month": null,
+   "end_month": 10,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "還除",
    "note": "十、辛酉、十一,兵左侍遷;十、癸酉、廿三,提督團營。",
    "start_book_page": 561,
    "end_book_page": 566,
@@ -19200,11 +19173,11 @@
    "start_year": 1531,
    "start_month": 9,
    "end_year": 1533,
-   "end_month": null,
+   "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.8,
-   "leave": "致仕",
+   "leave": "閑住",
    "note": "九、甲戌、廿四,兵尚改。",
    "start_book_page": 566,
    "end_book_page": 568,
@@ -19338,15 +19311,14 @@
    "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "正、壬戌、廿六，管工左侍事工尚兼署；二、乙未、廿九，遷戶尚總倉場。",
    "start_book_page": 657,
    "end_book_page": 657,
    "years": [
     1622
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "王永光",
@@ -19439,11 +19411,11 @@
    "start_year": 1622,
    "start_month": 10,
    "end_year": 1622,
-   "end_month": null,
+   "end_month": 10,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "十、乙丑、三,左僉都遷戶右侍。",
    "start_book_page": 657,
    "end_book_page": 657,
@@ -19837,19 +19809,18 @@
    "start_year": 1625,
    "start_month": 12,
    "end_year": 1626,
-   "end_month": 7,
+   "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "閑住",
    "note": "十二、戊子、十四，左都遷。",
    "start_book_page": 660,
    "end_book_page": 661,
    "years": [
     1625,
     1626
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "王紹徽",
@@ -19864,18 +19835,17 @@
    "start_year": 1626,
    "start_month": 6,
    "end_year": 1626,
-   "end_month": 7,
+   "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "閑住",
    "note": "六、丁卯、廿七,冠帶閑住。崇禎二年正、丁丑、廿一,削籍。",
    "start_book_page": 661,
    "end_book_page": 661,
    "years": [
     1626
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "王紹徽",
@@ -19890,18 +19860,17 @@
    "start_year": 1625,
    "start_month": 8,
    "end_year": 1625,
-   "end_month": 9,
+   "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "八、戊子、十二，左副都遷戶右侍總；八、丁酉、廿一，遷左都。",
    "start_book_page": 660,
    "end_book_page": 660,
    "years": [
     1625
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "王紹徽",
@@ -19919,15 +19888,14 @@
    "end_month": 12,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "八、丁酉、廿一，總倉場戶右侍遷；十二、戊子、十四，遷吏尚。",
    "start_book_page": 660,
    "end_book_page": 660,
    "years": [
     1625
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "王繼",
@@ -20351,11 +20319,11 @@
    "start_year": 1530,
    "start_month": 5,
    "end_year": 1532,
-   "end_month": null,
+   "end_month": 12,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "五、己酉、廿,起戶左侍改。",
    "start_book_page": 565,
    "end_book_page": 567,
@@ -20563,11 +20531,11 @@
    "start_year": 1434,
    "start_month": 3,
    "end_year": 1442,
-   "end_month": null,
+   "end_month": 5,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "還除",
    "note": "三、壬寅、廿五,兵右侍遷。",
    "start_book_page": 469,
    "end_book_page": 492,
@@ -20773,8 +20741,8 @@
    "end_month": 12,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "閑住",
    "note": "十二、丁未、二,閑住。十八年閏七、癸卯、八,起復提督工程。",
    "start_book_page": 572,
    "end_book_page": 581,
@@ -20783,8 +20751,7 @@
    ],
    "gap_after": [
     1538
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "甘爲霖",
@@ -20987,11 +20954,11 @@
    "start_year": 1624,
    "start_month": 2,
    "end_year": 1625,
-   "end_month": null,
+   "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "卒于任",
+   "leave": "閑住",
    "note": "二、辛丑、十七,應天尹遷戶右侍。",
    "start_book_page": 659,
    "end_book_page": 660,
@@ -21072,8 +21039,8 @@
    "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "是年，刑右侍遷戶左侍。",
    "start_book_page": 609,
    "end_book_page": 611,
@@ -21081,8 +21048,7 @@
     1574,
     1575,
     1576
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "白圭",
@@ -21215,11 +21181,11 @@
    "start_year": 1491,
    "start_month": 2,
    "end_year": 1493,
-   "end_month": 7,
+   "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "二、乙丑、十九,刑左侍遷。",
    "start_book_page": 526,
    "end_book_page": 528,
@@ -21227,8 +21193,7 @@
     1491,
     1492,
     1493
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "白貽清",
@@ -21407,11 +21372,11 @@
    "start_year": 1528,
    "start_month": 7,
    "end_year": 1528,
-   "end_month": null,
+   "end_month": 7,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "還除",
    "note": "七、壬午、十三,總河右都召還別用;九、庚午、一,冠帶閑住。十四年九、辛未、十三,卒。",
    "start_book_page": 563,
    "end_book_page": 563,
@@ -21432,11 +21397,11 @@
    "start_year": 1554,
    "start_month": 3,
    "end_year": 1556,
-   "end_month": 3,
+   "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "三、甲寅、十四,戶右侍遷左侍,兼西苑農事。",
    "start_book_page": 589,
    "end_book_page": 591,
@@ -21444,8 +21409,7 @@
     1554,
     1555,
     1556
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "石星",
@@ -21577,8 +21541,8 @@
    "end_month": 5,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "十二、己亥、五,兵左侍遷。",
    "start_book_page": 548,
    "end_book_page": 550,
@@ -21586,8 +21550,7 @@
     1513,
     1514,
     1515
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "石瑁",
@@ -22032,11 +21995,11 @@
    "start_year": 1375,
    "start_month": 1,
    "end_year": 1375,
-   "end_month": null,
+   "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "正、壬戌、二，中書左司郎中遷；七、丙戌、廿七，署湖廣參政。九年三、丙子、廿二，授湖廣参政；八、丁未、廿五，遷湖廣布政使。",
    "start_book_page": 409,
    "end_book_page": 409,
@@ -22136,19 +22099,18 @@
    "start_year": 1550,
    "start_month": 10,
    "end_year": 1551,
-   "end_month": 4,
+   "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "十、壬申、十一,戶左侍兼理西苑農事。",
    "start_book_page": 585,
    "end_book_page": 586,
    "years": [
     1550,
     1551
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "維僉",
@@ -22298,7 +22260,7 @@
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "致仕",
+   "leave": "調除",
    "note": "十二、丁亥、一,教庶吉士禮尚兼翰林學士回。",
    "start_book_page": 627,
    "end_book_page": 629,
@@ -22513,19 +22475,18 @@
    "start_year": 1539,
    "start_month": 2,
    "end_year": 1540,
-   "end_month": 12,
+   "end_month": 1,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "還除",
    "note": "二、壬寅、三,起禮尚兼文淵閣大學士改兵尚兼左都充巡邊使;十、壬午、十八,加太子少保。",
    "start_book_page": 574,
    "end_book_page": 575,
    "years": [
     1539,
     1540
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "耿九疇",
@@ -22565,11 +22526,11 @@
    "start_year": 1589,
    "start_month": 9,
    "end_year": 1589,
-   "end_month": 11,
+   "end_month": 9,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "致仕",
+   "leave": "遷除",
    "note": "九、戊午、十四，南右都遷戶尚；十一、己已、廿五，致仕。廿四年六、丁已、廿一，卒；十一、己未、廿七，贈太子少保，謚恭简",
    "start_book_page": 624,
    "end_book_page": 624,
@@ -23486,15 +23447,14 @@
    "end_month": 12,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "九、丁亥、十五,兵尚改;十二、癸丑、一,署河南布使遷政司,尚書如故。",
    "start_book_page": 432,
    "end_book_page": 432,
    "years": [
     1398
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "莊欽鄰",
@@ -23802,7 +23762,7 @@
    "start_year": 1565,
    "start_month": 4,
    "end_year": 1565,
-   "end_month": 6,
+   "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
@@ -23812,8 +23772,7 @@
    "end_book_page": 600,
    "years": [
     1565
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "董俊",
@@ -24274,11 +24233,11 @@
    "start_year": 1625,
    "start_month": 9,
    "end_year": 1625,
-   "end_month": null,
+   "end_month": 12,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "閑住",
    "note": "九、甲寅、九,吏左侍遷,仍兼翰林學士;十二、乙酉、十一,冠帶閑住。崇禎元年四、甲午、三,起改南禮尚。",
    "start_book_page": 660,
    "end_book_page": 660,
@@ -24657,16 +24616,15 @@
    "end_month": 9,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "五月,刑左侍改戶左侍;九、丁丑、廿六,予父母祭葬;十、辛巳、一,奏。",
    "start_book_page": 628,
    "end_book_page": 629,
    "years": [
     1593,
     1594
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "解敏",
@@ -24984,11 +24942,11 @@
    "start_year": 1385,
    "start_month": 6,
    "end_year": 1393,
-   "end_month": null,
+   "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "罪誅",
    "note": "六月,左都兼",
    "start_book_page": 419,
    "end_book_page": 427,
@@ -25214,11 +25172,11 @@
    "start_year": 1568,
    "start_month": 2,
    "end_year": 1570,
-   "end_month": 7,
+   "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "二、甲申、四,工右侍遷戶左侍。",
    "start_book_page": 603,
    "end_book_page": 605,
@@ -25226,8 +25184,7 @@
     1568,
     1569,
     1570
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "譚綸",
@@ -25498,11 +25455,11 @@
    "start_year": 1597,
    "start_month": 10,
    "end_year": 1602,
-   "end_month": null,
+   "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "十、癸亥、六,起戶右侍改。",
    "start_book_page": 632,
    "end_book_page": 637,
@@ -25688,11 +25645,11 @@
    "start_year": 1622,
    "start_month": 11,
    "end_year": 1623,
-   "end_month": null,
+   "end_month": 10,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "十一、壬寅、十，工部協理右侍遷。",
    "start_book_page": 657,
    "end_book_page": 658,
@@ -26229,18 +26186,17 @@
    "start_year": 1385,
    "start_month": 3,
    "end_year": 1385,
-   "end_month": 4,
+   "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "罪誅",
    "note": "三月,禮尚改;三、己丑、廿八,罪誅。",
    "start_book_page": 419,
    "end_book_page": 419,
    "years": [
     1385
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "趙瑁",
@@ -26342,7 +26298,7 @@
    "start_year": 1417,
    "start_month": 11,
    "end_year": 1424,
-   "end_month": 8,
+   "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
@@ -26359,8 +26315,7 @@
     1422,
     1423,
     1424
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "趙羾",
@@ -26801,18 +26756,17 @@
    "start_year": 1523,
    "start_month": 1,
    "end_year": 1523,
-   "end_month": 4,
+   "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "正、乙丑、廿三，起復戶右侍；二、戊戌、廿七，醉，不允，尋遷戶左侍。",
    "start_book_page": 558,
    "end_book_page": 558,
    "years": [
     1523
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "邊憲",
@@ -27232,11 +27186,11 @@
    "start_year": 1574,
    "start_month": 6,
    "end_year": 1574,
-   "end_month": null,
+   "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "六、甲辰、一,遷工尚",
    "start_book_page": 609,
    "end_book_page": 609,
@@ -27364,7 +27318,7 @@
    "start_year": 1565,
    "start_month": 4,
    "end_year": 1566,
-   "end_month": 4,
+   "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
@@ -27375,8 +27329,7 @@
    "years": [
     1565,
     1566
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "郭琎",
@@ -27624,11 +27577,11 @@
    "start_year": 1511,
    "start_month": 7,
    "end_year": 1511,
-   "end_month": 8,
+   "end_month": 7,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "養病",
+   "leave": "遷除",
    "note": "七、壬戌、十四,河南巡撫右副都遷戶右侍;八、乙巳、廿八,戴罪,尋歸養病。九年八、癸丑、廿三,起復改右副都撫蘇松。",
    "start_book_page": 546,
    "end_book_page": 546,
@@ -28272,11 +28225,11 @@
    "start_year": 1523,
    "start_month": 11,
    "end_year": 1525,
-   "end_month": 6,
+   "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.8,
-   "leave": "致仕",
+   "leave": "還除",
    "note": "十一、壬申、六,刑尚改",
    "start_book_page": 558,
    "end_book_page": 560,
@@ -28595,11 +28548,11 @@
    "start_year": 1622,
    "start_month": 2,
    "end_year": 1622,
-   "end_month": 9,
+   "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "改除",
+   "leave": "遷除",
    "note": "二、乙未、廿九,管工左侍事工尚遷戶尚;九、己酉、十六,改南戶尚管南右都事。",
    "start_book_page": 657,
    "end_book_page": 657,
@@ -28672,18 +28625,17 @@
    "start_year": 1623,
    "start_month": 2,
    "end_year": 1623,
-   "end_month": 3,
+   "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "二、壬午、二,遷工尚。",
    "start_book_page": 658,
    "end_book_page": 658,
    "years": [
     1623
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "鐵鉉",
@@ -28698,11 +28650,11 @@
    "start_year": 1400,
    "start_month": 8,
    "end_year": 1402,
-   "end_month": null,
+   "end_month": 10,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "罪誅",
    "note": "八月,山東左布使遷。",
    "start_book_page": 434,
    "end_book_page": 436,
@@ -28750,11 +28702,11 @@
    "start_year": 1382,
    "start_month": 7,
    "end_year": 1383,
-   "end_month": null,
+   "end_month": 12,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "罪誅",
    "note": "七、乙亥、廿八,起國子助教遷。",
    "start_book_page": 416,
    "end_book_page": 417,
@@ -28884,11 +28836,11 @@
    "start_year": 1496,
    "start_month": 4,
    "end_year": 1500,
-   "end_month": null,
+   "end_month": 5,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "四、乙未、十八,南刑尚改",
    "start_book_page": 531,
    "end_book_page": 535,
@@ -29120,11 +29072,11 @@
    "start_year": 1373,
    "start_month": 7,
    "end_year": 1380,
-   "end_month": null,
+   "end_month": 1,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "死",
    "note": "七、壬子、十三,御史中丞遷;九、癸卯、五,授榮祿大夫。",
    "start_book_page": 407,
    "end_book_page": 414,
@@ -29445,11 +29397,11 @@
    "start_year": 1415,
    "start_month": 4,
    "end_year": 1426,
-   "end_month": null,
+   "end_month": 11,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "戰死",
    "note": "四、丙戍、十八，吏左侍遷，仍参赞交阯軍務",
    "start_book_page": 450,
    "end_book_page": 461,
@@ -29484,8 +29436,8 @@
    "end_month": 5,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "閏七、戊子、十二,撫鄺陽右副都遷戶右侍。",
    "start_book_page": 536,
    "end_book_page": 541,
@@ -29496,8 +29448,7 @@
     1504,
     1505,
     1506
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "陳炌",
@@ -29712,19 +29663,18 @@
    "start_year": 1570,
    "start_month": 7,
    "end_year": 1571,
-   "end_month": 12,
+   "end_month": 11,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "七、戊子、廿二,戶右侍遷戶左侍。",
    "start_book_page": 605,
    "end_book_page": 606,
    "years": [
     1570,
     1571
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "陳經",
@@ -29899,11 +29849,11 @@
    "start_year": 1398,
    "start_month": 8,
    "end_year": 1402,
-   "end_month": null,
+   "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "罪誅",
    "note": "八、庚戌、七,雲南右布使遷。",
    "start_book_page": 432,
    "end_book_page": 436,
@@ -30338,19 +30288,18 @@
    "start_year": 1512,
    "start_month": 10,
    "end_year": 1513,
-   "end_month": 12,
+   "end_month": 11,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "十、辛酉、廿一，右都遷。",
    "start_book_page": 547,
    "end_book_page": 548,
    "years": [
     1512,
     1513
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "陸樹聲",
@@ -30469,8 +30418,8 @@
    "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "閑住",
    "note": "十、丁亥、六,總三邊兵左侍右僉都遷。",
    "start_book_page": 602,
    "end_book_page": 605,
@@ -30479,8 +30428,7 @@
     1568,
     1569,
     1570
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "霍維華",
@@ -30574,15 +30522,14 @@
    "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "閑住",
    "note": "五、壬辰、十一,南兵尚改;六、丙子、廿五，未任閑住;隆慶三年正、丁巳、十三，赠太子少保，",
    "start_book_page": 587,
    "end_book_page": 587,
    "years": [
     1552
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "韓文",
@@ -31301,15 +31248,14 @@
    "end_month": 5,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "遷除",
    "note": "三、己酉、十二,户左侍改;五、丁酉、二,遷右都。",
    "start_book_page": 595,
    "end_book_page": 600,
    "years": [
     1565
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "馬自強",
@@ -31725,11 +31671,11 @@
    "start_year": 1624,
    "start_month": 8,
    "end_year": 1624,
-   "end_month": 10,
+   "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
    "confidence": 0.7,
-   "leave": "致仕",
+   "leave": "遷除",
    "note": "八、癸卯、廿一,刑右侍遷左都;十、己亥、十七,致仕。五年四、己亥、廿二,削籍。六年四、丁亥、十五,卒。崇禎元年三、乙酉、廿四,贈太子少保兵尚。崇禎二年九、辛亥、卅,謚忠惠。",
    "start_book_page": 659,
    "end_book_page": 659,
@@ -31790,8 +31736,8 @@
    "end_month": 3,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "",
    "start_book_page": 592,
    "end_book_page": 595,
@@ -31800,8 +31746,7 @@
     1558,
     1559,
     1560
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "高燿",
@@ -31919,18 +31864,17 @@
    "start_year": 1583,
    "start_month": 2,
    "end_year": 1583,
-   "end_month": 11,
+   "end_month": 2,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
-   "leave": "未載",
+   "confidence": 0.7,
+   "leave": "遷除",
    "note": "閏二、戊寅、廿五，南戶右侍遷右都兼戶右侍；十一、已卯、一，遷南戶尚。",
    "start_book_page": 618,
    "end_book_page": 618,
    "years": [
     1583
-   ],
-   "yield_inferred": true
+   ]
   },
   {
    "person": "魏源",
@@ -32197,11 +32141,11 @@
    "start_year": 1616,
    "start_month": 10,
    "end_year": 1619,
-   "end_month": null,
+   "end_month": 11,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "調除",
    "note": "十、丁未、十，協戎政太子太保兵尚改。",
    "start_book_page": 651,
    "end_book_page": 654,
@@ -32518,11 +32462,11 @@
    "start_year": 1401,
    "start_month": 1,
    "end_year": 1402,
-   "end_month": null,
+   "end_month": 6,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "未載",
+   "confidence": 0.8,
+   "leave": "罪誅",
    "note": "正、丁丑、十七,復;閱三、己亥、十,謫。",
    "start_book_page": 432,
    "end_book_page": 436,

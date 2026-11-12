@@ -700,7 +700,7 @@ function Drawer({
               {fmtYM(t.start_year, t.start_month)} – {fmtYM(t.end_year, t.end_month)}
               {t.yield_inferred && (
                 <span className="hint">
-                  （迄月据同格继任到任推定——原书无离任注）
+                  （迄月据继任到任/转任注推定——原书未明注离任）
                 </span>
               )}
             </dd>

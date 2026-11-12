@@ -26,6 +26,27 @@ def tenures(doc):
 def test_scale(tenures):
     # v2 修复后：1,200+ 段（quarantine 与分段合并后）；覆盖 1368–1644 全期
     assert len(tenures) >= 1100
+
+
+def test_leave_lexicon_round2026_11_12(tenures):
+    """2026-11-12 原书验证轮：死难/刑罚/閑住词表补全——推定池不得覆盖注文明载离任。"""
+    def seg(p, o):
+        return next(t for t in tenures if t["person"] == p and t["office"] == o)
+    # 余熂 1385「四、丁酉、六，罪誅」（实录四月丁酉伏誅）——曾被推成迄 6 画过死期
+    t = seg("余熂", "吏部")
+    assert t["leave"] == "罪誅" and t["end_month"] == 4 and "yield_inferred" not in t
+    # 趙瑁 1385 三月到任三月廿八誅——曾被推成迄 4
+    t = seg("趙瑁", "吏部")
+    assert t["leave"] == "罪誅" and t["end_month"] == 3
+    # 王紹徽 1626「六、廿七，冠帶閑住」——曾被推成迄 7
+    t = seg("王紹徽", "禮部")
+    assert t["leave"] == "閑住" and t["end_month"] == 6
+
+
+def test_yield_inferred_pool_shrunk(tenures):
+    """词表补全+守卫后，推定池 175→97：注文明载离任的段一律不推定。"""
+    n = sum(1 for t in tenures if t.get("yield_inferred"))
+    assert n <= 120
     assert sum(len(t["years"]) for t in tenures) >= 3400
     span = (min(t["start_year"] for t in tenures), max(t["end_year"] for t in tenures))
     assert span == (1368, 1644)
@@ -100,9 +121,11 @@ def test_anchor_tenures(tenures):
     # 胡濙：宣德元年四月禮左侍遷
     t = seg("胡濙", "禮部", 1426)
     assert t["start_month"] == 4
-    # 李遇知：崇祯十六年五月南吏尚改，截 1644.3
+    # 李遇知：崇祯十六年五月南吏尚改；1644 三月死难注识别（2026-11-12 词表轮）——
+    # 迄 1644-3 现为注文明载（leave=死），end_clamped 不再置位（同倪元璐殉難例）
     t = seg("李遇知", "吏部", 1643)
-    assert t["start_month"] == 5 and t["end_clamped"]
+    assert t["start_month"] == 5 and (t["end_year"], t["end_month"]) == (1644, 3)
+    assert t["leave"] == "死" and not t["end_clamped"]
     # 倪元璐：崇祯十六年五月，1644 三月十九殉難（史料明确事件，非 clamp）
     t = seg("倪元璐", "戶部", 1643)
     assert t["end_month"] == 3 and t["leave"] == "殉難"

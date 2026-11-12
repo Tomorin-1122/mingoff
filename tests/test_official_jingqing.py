@@ -30,6 +30,17 @@ def test_scale(tenures):
     assert span == (1368, 1644)
 
 
+def test_transfer_entry_rule2(tenures):
+    """2026-11-12 规则二：同人下段入场注指认自本衙迁来 → 本衙迄=下段起。
+
+    丁懋遜太僕卿 1621：原被同衙规则一推成迄 4（蕭近高四月到任）——但原书
+    天啟二年格通政使行明注「二、己卯、十三，太僕卿遷」，实任至 1622-2。
+    """
+    t = next(t for t in tenures if t["person"] == "丁懋遜" and t["office"] == "太僕卿")
+    assert (t["end_year"], t["end_month"]) == (1622, 2)
+    assert t.get("yield_inferred") and t["years"] == [1621, 1622]
+
+
 def test_years_contiguous(tenures):
     for t in tenures:
         ys = t["years"]

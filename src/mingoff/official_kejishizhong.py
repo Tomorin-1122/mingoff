@@ -83,8 +83,11 @@ def _leave_kej(note: str) -> tuple[int | None, str]:
         if label is None:
             m = LEAVE_QIAN.search(c)
             if m:
-                label = {"遷": "遷除", "改": "改除", "調": "調除"}[m.group()[0]]
+                label = {"遷": "遷除", "改": "改除", "調": "調除", "還": "還除",
+                         "迁": "遷除", "调": "調除", "还": "還除"}[m.group()[0]]
         if label:
+            if label in ("下獄", "下狱") and re.search(r"宥|釋|释|復職|復官|赦", c):
+                continue          # 下狱后获释复职——非离任（沿京卿 2026-11-12 轮）
             return _month_of(c), label
     return None, "未載"
 

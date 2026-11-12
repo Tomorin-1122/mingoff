@@ -40,6 +40,9 @@ ENTER_GAI = re.compile(r"[一-龥]{1,6}改[,，;；。]?$")
 LEAVE_GAI = re.compile(r"改[一-龥]")
 
 LEAVE_EXTRA = {"出": "出為外任", "調": "調除", "改": "改除", "遷": "遷除"}
+# 「遷/改/調/還」带宾语 = 迁出本衙（简体变体防 OCR 偶产简体）。命名 BY 避免与
+# 京卿部 LEAVE_QIAN（official_jingqing 独立副本）混淆——两表词序一致。
+LEAVE_QIAN_BY = re.compile(r"[遷改調還迁调还][一-龥]")
 
 
 def _chunks(note: str) -> list[str]:
@@ -60,16 +63,25 @@ def _leave_chunk(chunk: str) -> str | None:
     """返回离任标签；无离任返回 None。"""
     if "南京" in chunk and ("改" in chunk or "調" in chunk):
         return "改南京"
-    for v in ("罷", "卒", "致仕", "削籍", "下獄", "被執", "戍", "謫", "丁憂",
-              "丁父憂", "丁母憂", "憂去", "乞歸", "乞休", "養病", "免", "回籍",
+    # 2026-11-12 原书验证补全：誅/死/閑住此前不在表内，死难段被误判无离任注
+    # 而落进迄月推定池（余熂 1385 实录四月伏誅被推成六月）。「死」列于死难词之后。
+    for v in ("罷", "罢", "卒", "致仕", "削籍", "下獄", "下狱", "被執", "戍", "謫", "谪",
+              "丁憂", "丁父憂", "丁母憂", "憂去", "乞歸", "乞休", "養病", "免", "回籍",
               "為民", "降", "死於難", "死難", "歿於", "正法", "自盡", "殉難", "棄市",
-              "革職", "奪官", "謫戍", "奔喪", "守制", "奪贈謚"):
+              "革職", "奪官", "謫戍", "奔喪", "守制",
+              "誅", "诛", "戰死", "閑住", "閒住", "死"):
         if v in chunk:
-            return {"卒": "卒于任", "歿於": "卒于任", "死於難": "死於難", "死難": "死於難"}.get(v, v)
+            return {"卒": "卒于任", "歿於": "卒于任", "死於難": "死於難", "死難": "死於難",
+                    "誅": "罪誅", "诛": "罪誅", "死": "死",
+                    "閑住": "閑住", "閒住": "閑住"}.get(v, v)
     if re.search(r"[一-龥]出[,，;；。]?|[一二三四五六七八九十]+[、，][^,，]*出[一-龥]", chunk):
         return "出為外任"
     if LEAVE_GAI.search(chunk):       # "改兵尚" → 改除
         return "改除"
+    m = LEAVE_QIAN_BY.search(chunk)   # "調大理卿"带宾语 → 調除（馬森 1558「坐调大理卿」）
+    if m:
+        return {"遷": "遷除", "改": "改除", "調": "調除", "還": "還除",
+                "迁": "遷除", "调": "調除", "还": "還除"}[m.group()[0]]
     return None
 
 
@@ -97,6 +109,8 @@ def _leave(note: str) -> tuple[int | None, str]:
             continue
         label = _leave_chunk(c)
         if label:
+            if label in ("下獄", "下狱") and re.search(r"宥|釋|释|復職|復官|赦", c):
+                continue          # 下狱后获释复职——非离任（程富 1446「下狱，寻釋」）
             return _month_of(c), label
     return None, "未載"
 
@@ -248,15 +262,61 @@ def build_buyuan_tenures() -> list[dict]:
     return infer_yield_ends(merge_gap_segments(tenures))
 
 
+# 推定守卫：注文含被捕/勘问类词 → 继任到任不蕴含前任离任（下狱后可复职），
+# 且跨年 chunk 内漏识别的离任词也在此拦下（宁空勿错，2026-11-12 原书验证轮）
+_YIELD_GUARD = re.compile(
+    r"下獄|下狱|逮|繫|誅|诛|死|戰死|閑住|閒住|謫|谪|戍|還|还|調|调|削籍|革職"
+    r"|罷|罢|卒|致仕|乞歸|乞休|憂|免|降|為民|回籍|棄市")
+
+
 def infer_yield_ends(tenures: list[dict]) -> list[dict]:
     """同衙同年继任到任 → 推定前任迄月（2026-11-09，四表共用）。
 
     年表「迁出/迁入双记」体例下，前任无离任注时其段以年截尾（D8 填满到年底），
     画布上与同年到任的继任者重叠。推定：同 office 相邻两段，a 无离任注、迄月空、
     a.end_year == b.start_year、b 起月已知且非署理 → a.end_month = b.start_month，
-    标 `yield_inferred`（抽屉注明「迄月据同格继任到任推定」，非史料所载）。
+    标 `yield_inferred`（抽屉注明「迄月据继任到任推定」，非史料所载）。
     推定只收紧、不外延：b 起月早于 a 起月（同年倒序）不推，宁缺勿错。
+
+    2026-11-12 原书验证轮两改：
+    * 规则二（先跑，证据更硬）：同人下一段（转任）入场注指认自本衙迁来
+      （如丁懋遜通政使段注「太僕卿遷」）→ 本衙段迄=下段起。若规则一先跑会把
+      丁懋遜太僕卿段误截到同年第三人到任月，故规则二必须先行。
+    * 规则一加守卫：a.note 含被捕/死难/罢退类词但 leave 仍=未載（下狱复职型、
+      跨年 chunk 漏识型）→ 跳过推定。
     """
+    # 规则二：同人下段入场注指认自本衙迁来 → 迄=下段起
+    by_person: dict[str, list[dict]] = defaultdict(list)
+    for t in tenures:
+        by_person[t["person_id"]].append(t)
+    for ts in by_person.values():
+        ts.sort(key=lambda t: (t["start_year"], t["start_month"] or 13))
+        for a, c in zip(ts, ts[1:]):
+            if (a["end_month"] is not None or a["leave"] != "未載"
+                    or a.get("end_clamped") or a.get("yield_inferred")
+                    or len(a["office"]) < 3):
+                continue      # 二字衙名（禮部/兵部）防「禮部侍郎」子串误配，不启用
+            if not c["start_month"] or c.get("tenure_type") == "署理":
+                continue
+            # 只接续同年换职或次年转任，防隔多年误配（a 段早已结束）
+            if c["start_year"] not in (a["end_year"], a["end_year"] + 1):
+                continue
+            if (c["start_year"] == a["end_year"]
+                    and c["start_month"] <= (a["start_month"] or 0)):
+                continue
+            entry = next((x for x in _chunks(c.get("note") or "")
+                          if _enter_chunk(x)), None)
+            if entry and a["office"] in entry:
+                a["end_year"] = c["start_year"]
+                a["end_month"] = c["start_month"]
+                if c["start_year"] > a["years"][-1]:
+                    # audit G2 铁律：years 必须连续覆盖 start~end（丁懋遜 1621→1622）
+                    a["years"] = a["years"] + list(
+                        range(a["years"][-1] + 1, c["start_year"] + 1))
+                a.pop("gap_after", None)   # 已接续，原 gap 虚线撤除
+                a["yield_inferred"] = True
+
+    # 规则一：同衙同年继任到任 → 推定前任迄月（原规则 + 守卫）
     by_off: dict[str, list[dict]] = defaultdict(list)
     for t in tenures:
         by_off[t["office"]].append(t)
@@ -267,6 +327,7 @@ def infer_yield_ends(tenures: list[dict]) -> list[dict]:
                     and a["end_year"] == b["start_year"]
                     and b["start_month"]
                     and b.get("tenure_type") != "署理"
+                    and not _YIELD_GUARD.search(a.get("note") or "")
                     and (a["start_year"] != b["start_year"]
                          or b["start_month"] > (a["start_month"] or 0))):
                 a["end_month"] = b["start_month"]
