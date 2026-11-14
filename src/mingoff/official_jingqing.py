@@ -125,6 +125,22 @@ def _start_month(note: str) -> tuple[int | None, bool, bool]:
 def _leave(note: str) -> tuple[int | None, bool, str]:
     for c in _chunks(note):
         if _cross_year(c):
+            # 跨年 chunk 内混排本年离任（唐暉 1628 型）：子句回查，须自带月分且不跨年
+            cur_m = cur_lp = None
+            for sub in re.split(r"[，,]", c):
+                sub = sub.strip()
+                if not sub or _cross_year(sub):
+                    continue
+                m, lp = _month_leap(sub)
+                if m:
+                    cur_m, cur_lp = m, lp   # 离任词前方最近的本年月分
+                lb = _leave_chunk(sub)
+                if lb:
+                    if lb in ("下獄", "下狱") and re.search(r"宥|釋|释|復職|復官|赦", sub):
+                        continue
+                    if cur_m:
+                        return cur_m, cur_lp, lb
+                    break   # 离任词无月分可归属，不取（防别年罢官误挂）
             continue
         label = _leave_chunk(c)
         if label:

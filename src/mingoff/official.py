@@ -145,15 +145,37 @@ def _start_month(note: str) -> tuple[int | None, bool, bool]:
     return None, False, False
 
 
+def _leave_chunk_cab(chunk: str) -> str | None:
+    """内阁版离任判定（词表内联抽函数，供子句回查复用）。"""
+    if "南京" in chunk and ("改" in chunk or "調" in chunk):
+        return "改南京"
+    for v in LEAVE_VERBS:
+        if v in chunk:
+            return LEAVE_LABEL.get(v, v)
+    return None
+
+
 def _leave(note: str) -> tuple[int | None, bool, str]:
     for c in _chunks(note):
         if _cross_year(c):
+            # 跨年 chunk 内混排本年离任：子句回查，须自带月分且不跨年
+            cur_m = cur_lp = None
+            for sub in re.split(r"[，,]", c):
+                sub = sub.strip()
+                if not sub or _cross_year(sub):
+                    continue
+                m, lp = _month_leap(sub)
+                if m:
+                    cur_m, cur_lp = m, lp   # 离任词前方最近的本年月分
+                lb = _leave_chunk_cab(sub)
+                if lb:
+                    if cur_m:
+                        return cur_m, cur_lp, lb
+                    break
             continue
-        if "南京" in c and ("改" in c or "調" in c):
-            return (*_month_leap(c), "改南京")
-        for v in LEAVE_VERBS:
-            if v in c:
-                return (*_month_leap(c), LEAVE_LABEL.get(v, v))
+        lb = _leave_chunk_cab(c)
+        if lb:
+            return (*_month_leap(c), lb)
     return None, False, "未載"
 
 

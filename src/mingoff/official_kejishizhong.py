@@ -71,29 +71,52 @@ LEAVE_VERBS_KEJ = LEAVE_VERBS_JQ + ("閑住", "閒住")
 LEAVE_LABEL_KEJ = {**LEAVE_LABEL_JQ, "閑住": "閑住", "閒住": "閑住"}
 
 
+def _leave_chunk_kej(chunk: str) -> str | None:
+    """六科版离场判定（词表循环抽函数，供子句回查复用）。"""
+    label = None
+    for v in LEAVE_VERBS_KEJ:
+        if v in chunk:
+            label = LEAVE_LABEL_KEJ.get(v, v)
+            break
+    if label is None:
+        m = LEAVE_QIAN.search(chunk)
+        if m:
+            if precedes_office_name(chunk, m.start()):
+                label = None    # 「吏左給遷戶都」类完整句式=到任
+            else:
+                label = {"遷": "遷除", "改": "改除", "調": "調除", "還": "還除",
+                         "迁": "遷除", "调": "調除", "还": "還除"}[m.group()[0]]
+    return label
+
+
 def _leave_kej(note: str) -> tuple[int | None, bool, str]:
     """六科版离场判定：动词集增补閑住，其余沿京卿（遷/改/調 带宾语 → 遷除/改除/調除）。"""
     for c in _chunks(note):
         if _cross_year(c):
+            # 跨年 chunk 内混排本年离任（唐暉 1628 型）：子句回查，须自带月分且不跨年
+            cur_m = cur_lp = None
+            for sub in re.split(r"[，,]", c):
+                sub = sub.strip()
+                if not sub or _cross_year(sub):
+                    continue
+                m, lp = _month_leap(sub)
+                if m:
+                    cur_m, cur_lp = m, lp   # 离任词前方最近的本年月分
+                lb = _leave_chunk_kej(sub)
+                if lb:
+                    if lb in ("下獄", "下狱") and re.search(r"宥|釋|释|復職|復官|赦", sub):
+                        continue
+                    if cur_m:
+                        return cur_m, cur_lp, lb
+                    break   # 离任词无月分可归属，不取（防别年罢官误挂）
             continue
-        label = None
-        for v in LEAVE_VERBS_KEJ:
-            if v in c:
-                label = LEAVE_LABEL_KEJ.get(v, v)
-                break
-        if label is None:
-            m = LEAVE_QIAN.search(c)
-            if m:
-                if precedes_office_name(c, m.start()):
-                    label = None    # 「吏左給遷戶都」类完整句式=到任
-                else:
-                    label = {"遷": "遷除", "改": "改除", "調": "調除", "還": "還除",
-                             "迁": "遷除", "调": "調除", "还": "還除"}[m.group()[0]]
+        label = _leave_chunk_kej(c)
         if label:
             if label in ("下獄", "下狱") and re.search(r"宥|釋|释|復職|復官|赦", c):
                 continue          # 下狱后获释复职——非离任（沿京卿 2026-11-12 轮）
             return (*_month_leap(c), label)
     return None, False, "未載"
+
 
 
 # ---------------- 页级溯源（content_list 页脚实测） ----------------

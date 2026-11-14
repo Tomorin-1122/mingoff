@@ -30,6 +30,17 @@ def test_scale(tenures):
     assert span == (1368, 1644)
 
 
+def test_crossyear_chunk_clause_2026_11_14(tenures):
+    """2026-11-14 子句回查轮：跨年 chunk 内混排的本年离任不得整条丢失。
+
+    唐暉 1628「八、庚子、十二,遷尚寶卿管司丞事,五年三、甲辰、七,遷右僕都
+    撫湖廣」——八月迁尚寶卿离任（本年事件）与跨年引用同 chunk，原被跨年
+    规则整条跳过，画布画满到年底（顺天尹并行假象的一部分）。
+    """
+    t = next(t for t in tenures if t["person"] == "唐暉" and t["office"] == "順天府府尹")
+    assert t["end_month"] == 8 and t["leave"] == "遷除"
+
+
 def test_transfer_entry_rule2(tenures):
     """2026-11-12 规则二：同人下段入场注指认自本衙迁来 → 本衙迄=下段起。
 
