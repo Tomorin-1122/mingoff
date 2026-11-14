@@ -27,14 +27,15 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 
 from mingoff.match_cbdb import S2T
-from mingoff.official import (CUT_M, CUT_Y, _cross_year, _month_of, build_shilu,
-                              precedes_office_name)
+from mingoff.official import (CUT_M, CUT_Y, _cross_year, _month_leap,
+                              build_shilu, precedes_office_name)
 from mingoff.official_buyuan import (CONF_DOWN, infer_yield_ends,
                                      merge_gap_segments)
 from mingoff.official_jingqing import (LEAVE_LABEL_JQ, LEAVE_QIAN,
                                        LEAVE_VERBS_JQ, MAX_SPAN, _chunks,
                                        _start_month, split_identities)
-from mingoff.shilang_repair import IDENTITY_FORCE, apply_book_fix
+from mingoff.shilang_repair import (IDENTITY_FORCE, apply_book_fix,
+                                    apply_name_canon)
 
 DATA = Path(__file__).resolve().parent / "data"
 ROOT = DATA.parents[2]
@@ -77,7 +78,7 @@ LEAVE_VERBS_SL = LEAVE_VERBS_JQ + ("閑住", "閒住")
 LEAVE_LABEL_SL = {**LEAVE_LABEL_JQ, "閑住": "閑住", "閒住": "閑住"}
 
 
-def _leave_sl(note: str) -> tuple[int | None, str]:
+def _leave_sl(note: str) -> tuple[int | None, bool, str]:
     for c in _chunks(note):
         if _cross_year(c):
             continue
@@ -97,8 +98,8 @@ def _leave_sl(note: str) -> tuple[int | None, str]:
         if label:
             if label in ("下獄", "下狱") and re.search(r"宥|釋|释|復職|復官|赦", c):
                 continue          # 下狱后获释复职——非离任（沿京卿 2026-11-12 轮）
-            return _month_of(c), label
-    return None, "未載"
+            return (*_month_leap(c), label)
+    return None, False, "未載"
 
 
 def band_alarm_pages() -> set[int]:
@@ -120,6 +121,7 @@ def load_shilang_repaired(report: dict | None = None) -> list[dict]:
     """geo 条目 + 原书核验修正 + 行带→职官派生。"""
     doc = json.loads(GEO.read_text(encoding="utf-8"))
     entries = apply_book_fix(doc["entries"], report)
+    entries = apply_name_canon(entries, report)
     alarms_pages = band_alarm_pages()
 
     # 各部右侍郎带（row2）起始年——单侍郎带（row1）的左/右命名分界
@@ -272,8 +274,8 @@ def build_shilang_tenures() -> list[dict]:
         for seg in segs:
             sy, ey = seg[0], seg[-1]
             s_note, e_note = note_of.get(sy, ""), note_of.get(ey, "")
-            sm, sm_event = _start_month(s_note)
-            em, leave = _leave_sl(e_note)
+            sm, sm_leap, sm_event = _start_month(s_note)
+            em, em_leap, leave = _leave_sl(e_note)
 
             eff_sm = sm or (em if (sy == ey and em) else None)
             if sy > CUT_Y or (sy == CUT_Y and eff_sm and eff_sm > CUT_M):
@@ -319,8 +321,10 @@ def build_shilang_tenures() -> list[dict]:
                 "tenure_type": ttype,
                 "start_year": sy,
                 "start_month": sm,
+                **({"start_leap": True} if sm_leap else {}),
                 "end_year": ey,
                 "end_month": em,
+                **({"end_leap": True} if em_leap else {}),
                 "month_conflict": conflict,
                 "end_clamped": clamped,
                 "confidence": conf,

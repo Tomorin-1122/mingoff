@@ -27,8 +27,8 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 from mingoff.official import (CUT_M, CUT_Y, SHILU_SHOW, _cross_year, _month_of,
                               build_shilu, entry_names_source_office,
-                              precedes_office_name)
-from mingoff.buyuan_repair import NAME_FIX, OFFICE_FIX
+                              _month_leap, precedes_office_name)
+from mingoff.buyuan_repair import ENTRY_ADD, NAME_CANON, NAME_FIX, OFFICE_FIX
 
 DATA = Path(__file__).resolve().parent / "data"
 
@@ -102,25 +102,25 @@ def _leave_chunk(chunk: str, office: str = "") -> str | None:
     return None
 
 
-def _start_month(note: str) -> tuple[int | None, bool]:
+def _start_month(note: str) -> tuple[int | None, bool, bool]:
     for c in _chunks(note):
         if _cross_year(c):
             continue
         if _enter_chunk(c):
-            m = _month_of(c)
+            m, lp = _month_leap(c)
             if m:
-                return m, True
+                return m, lp, True
     # 退回本年首个纪月（不标记为事件）
     for c in _chunks(note):
         if _cross_year(c):
             continue
-        m = _month_of(c)
+        m, lp = _month_leap(c)
         if m:
-            return m, False
-    return None, False
+            return m, lp, False
+    return None, False, False
 
 
-def _leave(note: str, office: str = "") -> tuple[int | None, str]:
+def _leave(note: str, office: str = "") -> tuple[int | None, bool, str]:
     for c in _chunks(note):
         if _cross_year(c):
             continue
@@ -128,8 +128,8 @@ def _leave(note: str, office: str = "") -> tuple[int | None, str]:
         if label:
             if label in ("下獄", "下狱") and re.search(r"宥|釋|释|復職|復官|赦", c):
                 continue          # 下狱后获释复职——非离任（程富 1446「下狱，寻釋」）
-            return _month_of(c), label
-    return None, "未載"
+            return (*_month_leap(c), label)
+    return None, False, "未載"
 
 
 # D-01：同名拆分后，是否 risky 由「同名实体数 >1」自动判定，不再硬编码名单。
@@ -158,11 +158,22 @@ def load_buyuan_cbdb() -> dict:
 
 def build_buyuan_tenures() -> list[dict]:
     entries = [e for e in load_buyuan() if e["year"] <= CUT_Y]
+    # 原书实拍补行（2026-11-14 遗留轮）：OCR/行归属整行丢失、以实拍裁决的条目
+    # （buyuan_repair.ENTRY_ADD，pf=book-add 可溯源）。同年同 note 重复由下方
+    # dedup 循环兜底。
+    for add in ENTRY_ADD:
+        if add["year"] <= CUT_Y:
+            entries.append(dict(add))
     # 无标签列页（p607/p661 型）行→衙重复归属修正 + 讹名/错挂归正（2026-11-13
     # 抽查轮）：运行时应用 OFFICE_FIX / NAME_FIX（buyuan_repair 同款）。NAME_FIX
     # 键序敏感（倉場互换对：王永光→鐘羽正 先于 鍾羽→王永光），dict 保序生效。
-    # 改到真 office/人后，同年同 note 条目在下方 dedup 循环里自然合并。
+    # NAME_CANON 为异体全局归一（屠勲类），先于键式修正执行。
     for e in entries:
+        canon = NAME_CANON.get(e.get("person") or "")
+        if canon:
+            e["name_fix"] = {"from": e["person"], "to": canon}
+            e["person"] = canon
+            e["person_id"] = canon
         fx = OFFICE_FIX.get((e["year"], e.get("person"), e["office"]))
         if fx:
             e["office_fix"] = {"from": e["office"], "to": fx[0], "source": fx[1]}
@@ -222,8 +233,8 @@ def build_buyuan_tenures() -> list[dict]:
         for seg in segs:
             sy, ey = seg[0], seg[-1]
             s_note, e_note = note_of.get(sy, ""), note_of.get(ey, "")
-            sm, sm_event = _start_month(s_note)
-            em, leave = _leave(e_note, office)
+            sm, sm_leap, sm_event = _start_month(s_note)
+            em, em_leap, leave = _leave(e_note, office)
 
             # D15：1644.3 之后任命剔除
             eff_sm = sm or (em if (sy == ey and em) else None)
@@ -276,8 +287,10 @@ def build_buyuan_tenures() -> list[dict]:
                 "tenure_type": ttype,
                 "start_year": sy,
                 "start_month": sm,
+                **({"start_leap": True} if sm_leap else {}),
                 "end_year": ey,
                 "end_month": em,
+                **({"end_leap": True} if em_leap else {}),
                 "month_conflict": conflict,
                 "end_clamped": clamped,
                 "confidence": conf,

@@ -697,7 +697,7 @@ function Drawer({
           <dl className="field">
             <dt>任期</dt>
             <dd>
-              {fmtYM(t.start_year, t.start_month)} – {fmtYM(t.end_year, t.end_month)}
+              {fmtYM(t.start_year, t.start_month, t.start_leap)} – {fmtYM(t.end_year, t.end_month, t.end_leap)}
               {t.yield_inferred && (
                 <span className="hint">
                   （迄月据继任到任/转任注推定——原书未明注离任）

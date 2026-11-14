@@ -30,7 +30,8 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 
 from mingoff.glue_repair import apply_glue_repair
-from mingoff.official import CUT_M, CUT_Y, _cross_year, _month_of, build_shilu, precedes_office_name
+from mingoff.official import (CUT_M, CUT_Y, _cross_year, _month_leap,
+                              build_shilu, precedes_office_name)
 from mingoff.match_cbdb import S2T
 from mingoff.official_buyuan import (CONF_DOWN, infer_yield_ends,
                                      merge_gap_segments)
@@ -104,24 +105,24 @@ def _leave_chunk(chunk: str) -> str | None:
     return None
 
 
-def _start_month(note: str) -> tuple[int | None, bool]:
+def _start_month(note: str) -> tuple[int | None, bool, bool]:
     for c in _chunks(note):
         if _cross_year(c):
             continue
         if _enter_chunk(c):
-            m = _month_of(c)
+            m, lp = _month_leap(c)
             if m:
-                return m, True
+                return m, lp, True
     for c in _chunks(note):             # 退回本年首个纪月（非事件）
         if _cross_year(c):
             continue
-        m = _month_of(c)
+        m, lp = _month_leap(c)
         if m:
-            return m, False
-    return None, False
+            return m, lp, False
+    return None, False, False
 
 
-def _leave(note: str) -> tuple[int | None, str]:
+def _leave(note: str) -> tuple[int | None, bool, str]:
     for c in _chunks(note):
         if _cross_year(c):
             continue
@@ -129,8 +130,8 @@ def _leave(note: str) -> tuple[int | None, str]:
         if label:
             if label in ("下獄", "下狱") and re.search(r"宥|釋|释|復職|復官|赦", c):
                 continue          # 下狱后获释复职——非离任（程富 1446「下狱，寻釋」）
-            return _month_of(c), label
-    return None, "未載"
+            return (*_month_leap(c), label)
+    return None, False, "未載"
 
 
 # ---------------- 页级溯源 ----------------
@@ -299,8 +300,8 @@ def build_jingqing_tenures() -> list[dict]:
         for seg in segs:
             sy, ey = seg[0], seg[-1]
             s_note, e_note = note_of.get(sy, ""), note_of.get(ey, "")
-            sm, sm_event = _start_month(s_note)
-            em, leave = _leave(e_note)
+            sm, sm_leap, sm_event = _start_month(s_note)
+            em, em_leap, leave = _leave(e_note)
 
             # D15：1644.3 之后任命剔除
             eff_sm = sm or (em if (sy == ey and em) else None)
@@ -349,8 +350,10 @@ def build_jingqing_tenures() -> list[dict]:
                 "tenure_type": ttype,
                 "start_year": sy,
                 "start_month": sm,
+                **({"start_leap": True} if sm_leap else {}),
                 "end_year": ey,
                 "end_month": em,
+                **({"end_leap": True} if em_leap else {}),
                 "month_conflict": conflict,
                 "end_clamped": clamped,
                 "confidence": conf,

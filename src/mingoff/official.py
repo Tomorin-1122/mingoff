@@ -29,7 +29,7 @@ SHILU_SHOW = 8
 
 MONTHS = {"正": 1, "一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6,
           "七": 7, "八": 8, "九": 9, "十": 10, "十一": 11, "十二": 12}
-MONTH_RE = re.compile(r"(閏)?(正|十[一二]|[一二三四五六七八九十])(?:月|[、，])")
+MONTH_RE = re.compile(r"(閏|闰)?(正|十[一二]|[一二三四五六七八九十])(?:月|[、，])")
 ENTER_VERBS = ("入", "任", "起復", "起", "召", "入直", "入閣", "入朝", "還朝",
                "視事", "至京", "復官")
 LEAVE_VERBS = ("罷", "卒", "致仕", "削籍", "下獄", "被執", "戍", "謫", "丁憂",
@@ -59,6 +59,13 @@ def _chunks(note: str) -> list[str]:
 def _month_of(chunk: str) -> int | None:
     m = MONTH_RE.search(chunk)
     return MONTHS.get(m.group(2)) if m else None
+
+
+def _month_leap(chunk: str) -> tuple[int | None, bool]:
+    """（月, 是否閏月）。MONTH_RE 的閏捕获组此前被 _month_of 丢弃，
+    149 段「閏六」被读作平月（2026-11-14 遗留轮 leap 字段改造）。"""
+    m = MONTH_RE.search(chunk)
+    return (MONTHS.get(m.group(2)), bool(m.group(1))) if m else (None, False)
 
 
 def _cross_year(chunk: str) -> bool:
@@ -120,28 +127,34 @@ def _first_month(note: str) -> int | None:
     return None
 
 
-def _start_month(note: str) -> tuple[int | None, bool]:
-    """（起月, 是否来自明确入职事件）。无入职事件退回本年首个纪月，标记 False。"""
+def _start_month(note: str) -> tuple[int | None, bool, bool]:
+    """（起月, 是否閏月, 是否来自明确入职事件）。无入职事件退回本年首个纪月。"""
     for c in _chunks(note):
         if _cross_year(c):
             continue
         if any(v in c for v in ENTER_VERBS):
-            m = _month_of(c)
+            m, lp = _month_leap(c)
             if m:
-                return m, True
-    return _first_month(note), False
+                return m, lp, True
+    for c in _chunks(note):
+        if _cross_year(c):
+            continue
+        m, lp = _month_leap(c)
+        if m:
+            return m, lp, False
+    return None, False, False
 
 
-def _leave(note: str) -> tuple[int | None, str]:
+def _leave(note: str) -> tuple[int | None, bool, str]:
     for c in _chunks(note):
         if _cross_year(c):
             continue
         if "南京" in c and ("改" in c or "調" in c):
-            return _month_of(c), "改南京"
+            return (*_month_leap(c), "改南京")
         for v in LEAVE_VERBS:
             if v in c:
-                return _month_of(c), LEAVE_LABEL.get(v, v)
-    return None, "未載"
+                return (*_month_leap(c), LEAVE_LABEL.get(v, v))
+    return None, False, "未載"
 
 
 # ---------------- 任职段 ----------------
@@ -194,8 +207,8 @@ def build_cabinet_tenures() -> list[dict]:
         for seg in segs:
             sy, ey = seg[0], seg[-1]
             s_note, e_note = note_of.get(sy, ""), note_of.get(ey, "")
-            sm, sm_event = _start_month(s_note)
-            em, leave = _leave(e_note)
+            sm, sm_leap, sm_event = _start_month(s_note)
+            em, em_leap, leave = _leave(e_note)
 
             # D15：1644 年三月之后的南明任命一律剔除（高弘圖/王應熊等）
             eff_sm = sm or _first_month(s_note)
@@ -232,8 +245,10 @@ def build_cabinet_tenures() -> list[dict]:
                 "tenure_type": "实授",
                 "start_year": sy,
                 "start_month": sm,
+                **({"start_leap": True} if sm_leap else {}),
                 "end_year": ey,
                 "end_month": em,
+                **({"end_leap": True} if em_leap else {}),
                 "month_conflict": conflict,
                 "end_clamped": clamped,
                 "confidence": conf,

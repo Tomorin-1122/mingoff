@@ -34,8 +34,8 @@ from mingoff.keji_repair import (BOOK_ADD_1618, BOOK_GAP_YEARS, BOOK_PAGE_MAP,
 from mingoff.match_cbdb import S2T
 from mingoff.ocr_jingqing import parse_tables, row_year
 from mingoff.ocr_kejishizhong import MD, OFFICES, label_of, split_year_pages_keji
-from mingoff.official import (CUT_M, CUT_Y, _cross_year, _month_of, build_shilu,
-                              precedes_office_name)
+from mingoff.official import (CUT_M, CUT_Y, _cross_year, _month_leap,
+                              build_shilu, precedes_office_name)
 from mingoff.official_buyuan import (CONF_DOWN, infer_yield_ends,
                                      merge_gap_segments)
 from mingoff.official_jingqing import (LEAVE_LABEL_JQ, LEAVE_QIAN,
@@ -71,7 +71,7 @@ LEAVE_VERBS_KEJ = LEAVE_VERBS_JQ + ("閑住", "閒住")
 LEAVE_LABEL_KEJ = {**LEAVE_LABEL_JQ, "閑住": "閑住", "閒住": "閑住"}
 
 
-def _leave_kej(note: str) -> tuple[int | None, str]:
+def _leave_kej(note: str) -> tuple[int | None, bool, str]:
     """六科版离场判定：动词集增补閑住，其余沿京卿（遷/改/調 带宾语 → 遷除/改除/調除）。"""
     for c in _chunks(note):
         if _cross_year(c):
@@ -92,8 +92,8 @@ def _leave_kej(note: str) -> tuple[int | None, str]:
         if label:
             if label in ("下獄", "下狱") and re.search(r"宥|釋|释|復職|復官|赦", c):
                 continue          # 下狱后获释复职——非离任（沿京卿 2026-11-12 轮）
-            return _month_of(c), label
-    return None, "未載"
+            return (*_month_leap(c), label)
+    return None, False, "未載"
 
 
 # ---------------- 页级溯源（content_list 页脚实测） ----------------
@@ -268,8 +268,8 @@ def build_kejishizhong_tenures() -> list[dict]:
         for seg in segs:
             sy, ey = seg[0], seg[-1]
             s_note, e_note = note_of.get(sy, ""), note_of.get(ey, "")
-            sm, sm_event = _start_month(s_note)
-            em, leave = _leave_kej(e_note)
+            sm, sm_leap, sm_event = _start_month(s_note)
+            em, em_leap, leave = _leave_kej(e_note)
 
             # D15：1644.3 之后任命剔除
             eff_sm = sm or (em if (sy == ey and em) else None)
@@ -316,8 +316,10 @@ def build_kejishizhong_tenures() -> list[dict]:
                 "tenure_type": ttype,
                 "start_year": sy,
                 "start_month": sm,
+                **({"start_leap": True} if sm_leap else {}),
                 "end_year": ey,
                 "end_month": em,
+                **({"end_leap": True} if em_leap else {}),
                 "month_conflict": conflict,
                 "end_clamped": clamped,
                 "confidence": conf,

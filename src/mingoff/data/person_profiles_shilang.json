@@ -3,9 +3,9 @@
   "dataset": "shilang",
   "license": "CC BY-NC-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-  "generated_at": "2026-11-14T00:50:15+00:00",
-  "persons": 1056,
-  "with_cbdb_id": 1056,
+  "generated_at": "2026-11-14T01:56:30+00:00",
+  "persons": 1055,
+  "with_cbdb_id": 1055,
   "office_limit": 30,
   "cbdb_person_url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id={id}",
   "sinica_url": "https://dh.rchss.sinica.edu.tw/MingChaoffTitle/",
@@ -2529,18 +2529,6 @@
     }
    ],
    "office_total": 11
-  },
-  "侣鍾": {
-   "cbdb_id": 389533,
-   "cbdb_name": "侣鍾",
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
   },
   "侯泰": {
    "cbdb_id": 66544,

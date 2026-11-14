@@ -79,6 +79,22 @@ def test_qianyi_full_pattern_2026_11_13(tenures):
     # 劉宇 1507「遷左都」領起式在都察院格=到任，不得判离任
     t = seg("劉宇", "都察院", 1507)
     assert t.get("leave") == "未載"
+
+
+def test_leap_fields_2026_11_14(tenures):
+    """2026-11-14 leap 轮：閏月标注 start_leap/end_leap（简体「闰」兼容）。"""
+    def seg(p, o):
+        return next(t for t in tenures if t["person"] == p and t["office"] == o)
+    # 王紹徽 1626 v3 注为简体「闰六、丁卯、廿七，冠帶閑住」——end_leap 必须置位
+    t = seg("王紹徽", "吏部")
+    assert t["end_month"] == 6 and t.get("end_leap") is True
+    # 徐兆魁 1626 刑部「閏六、戊辰、廿八，冠帶閑住」
+    t = seg("徐兆魁", "刑部")
+    assert t.get("end_leap") is True
+    # 魏學曾 1583 倉場「閏二、戊寅、廿五，南戶右侍遷右都兼戶右侍」——start 閏二
+    t = next(t for t in tenures if t["person"] == "魏學曾"
+             and t["office"] == "總倉場" and t["start_year"] == 1583)
+    assert t["start_month"] == 2 and t.get("start_leap") is True
     assert sum(len(t["years"]) for t in tenures) >= 3400
     span = (min(t["start_year"] for t in tenures), max(t["end_year"] for t in tenures))
     assert span == (1368, 1644)

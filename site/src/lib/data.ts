@@ -36,6 +36,10 @@ export interface Tenure {
   start_month: number | null;
   end_year: number;
   end_month: number | null;
+  /** 起月为閏月（2026-11-14 leap 轮；month 值仍为对应平月序数） */
+  start_leap?: boolean;
+  /** 迄月为閏月 */
+  end_leap?: boolean;
   month_conflict: boolean;
   end_clamped: boolean;
   confidence: number;

@@ -3,8 +3,8 @@
   "dataset": "buyuan",
   "license": "CC BY-NC-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-  "generated_at": "2026-11-14T00:50:15+00:00",
-  "persons": 812,
+  "generated_at": "2026-11-14T01:56:30+00:00",
+  "persons": 811,
   "with_cbdb_id": 544,
   "office_limit": 30,
   "cbdb_person_url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id={id}",
@@ -12544,18 +12544,6 @@
    "office_total": 25
   },
   "屠勲": {
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
-  },
-  "屠勳": {
    "cbdb_id": null,
    "cbdb_name": null,
    "birth": null,
