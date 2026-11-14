@@ -30,7 +30,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 
 from mingoff.glue_repair import apply_glue_repair
-from mingoff.official import CUT_M, CUT_Y, _cross_year, _month_of, build_shilu
+from mingoff.official import CUT_M, CUT_Y, _cross_year, _month_of, build_shilu, precedes_office_name
 from mingoff.match_cbdb import S2T
 from mingoff.official_buyuan import (CONF_DOWN, infer_yield_ends,
                                      merge_gap_segments)
@@ -65,7 +65,7 @@ LEAVE_QIAN = re.compile(r"[遷改調還迁调还][一-龥]")
 # 等死难段被误判无离任注而落进迄月推定池（余熂 1385 实录四月伏誅被推成六月）。
 # 「死」须列于「死於難/死難/歿於/正法/自盡/殉難/棄市/戰死」之后（子串命中顺序）。
 LEAVE_VERBS_JQ = ("罷", "罢", "卒", "致仕", "削籍", "下獄", "下狱", "被執", "戍", "謫", "谪",
-                  "丁憂", "丁父憂", "丁母憂", "憂去", "乞歸", "乞休", "養病", "免", "回籍",
+                  "丁憂", "丁父憂", "丁母憂", "憂去", "乞歸", "乞休", "養病", "免", "回籍", "回部", "回京",
                   "為民", "降", "死於難", "死難", "歿於", "正法", "自盡", "殉難",
                   "棄市", "革職", "奪官", "謫戍", "奔喪", "守制",
                   "誅", "诛", "戰死", "閑住", "閒住", "死")
@@ -97,6 +97,8 @@ def _leave_chunk(chunk: str) -> str | None:
             return LEAVE_LABEL_JQ.get(v, v)
     m = LEAVE_QIAN.search(chunk)
     if m:
+        if precedes_office_name(chunk, m.start()):
+            return None          # 「吏左侍遷左都」完整句式=到任，非离任
         return {"遷": "遷除", "改": "改除", "調": "調除", "還": "還除",
                 "迁": "遷除", "调": "調除", "还": "還除"}[m.group()[0]]
     return None

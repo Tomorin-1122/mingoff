@@ -3,8 +3,8 @@
   "dataset": "buyuan",
   "license": "CC BY-NC-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-  "generated_at": "2026-11-11T23:51:20+00:00",
-  "persons": 816,
+  "generated_at": "2026-11-14T00:50:15+00:00",
+  "persons": 812,
   "with_cbdb_id": 544,
   "office_limit": 30,
   "cbdb_person_url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id={id}",
@@ -7359,18 +7359,6 @@
    "offices": [],
    "office_total": 0
   },
-  "吴山": {
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
-  },
   "吴琳": {
    "cbdb_id": null,
    "cbdb_name": null,
@@ -11472,18 +11460,6 @@
     }
    ],
    "office_total": 5
-  },
-  "孫璋": {
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
   },
   "孫禬": {
    "cbdb_id": null,
@@ -45945,18 +45921,6 @@
    "offices": [],
    "office_total": 0
   },
-  "邓愈": {
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
-  },
   "邢懋": {
    "cbdb_id": null,
    "cbdb_name": null,
@@ -48724,18 +48688,6 @@
     }
    ],
    "office_total": 15
-  },
-  "鍾羽": {
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
   },
   "鍾羽正": {
    "cbdb_id": null,

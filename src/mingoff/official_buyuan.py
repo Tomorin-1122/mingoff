@@ -26,7 +26,9 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 
 from mingoff.official import (CUT_M, CUT_Y, SHILU_SHOW, _cross_year, _month_of,
-                              build_shilu)
+                              build_shilu, entry_names_source_office,
+                              precedes_office_name)
+from mingoff.buyuan_repair import NAME_FIX, OFFICE_FIX
 
 DATA = Path(__file__).resolve().parent / "data"
 
@@ -49,24 +51,34 @@ def _chunks(note: str) -> list[str]:
     return [c.strip() for c in re.split(r"[；;。\n]", note or "") if c.strip()]
 
 
+# 「X署」收尾 = 由 X 署理入场（兵左侍署 / 左都署）——京卿部已有，部院补（張璁
+# 1527「八、庚戌、五,兵左侍署」此前不识别，起月误取「入閣」的 10 月）
+ENTER_SHU = re.compile(r"[一-龥]{1,6}署[,，;；。]?$")
+
+
 def _enter_chunk(chunk: str) -> bool:
-    if any(v in chunk for v in ENTER_BASE):
+    # 「入閣」的「入」是入阁大学士语境，不是本衙入场证据（張璁 1527 误触发）
+    text = chunk.replace("入閣", "").replace("入阁", "")
+    if any(v in text for v in ENTER_BASE):
         return True
     if ENTER_QIAN.search(chunk):      # "司農卿遷" 收尾 → 迁入
         return True
     if ENTER_GAI.search(chunk) and not LEAVE_GAI.search(chunk):
         return True                   # "工尚改" 收尾 → 由工部改任本任
+    if ENTER_SHU.search(chunk):
+        return True                   # "兵左侍署" 收尾 → 署理入场
     return False
 
 
-def _leave_chunk(chunk: str) -> str | None:
-    """返回离任标签；无离任返回 None。"""
+def _leave_chunk(chunk: str, office: str = "") -> str | None:
+    """返回离任标签；无离任返回 None。office 用于衙衔定向（遷X 的 X 若为
+    本衙官衔必为到任——左都御史不可能作为都察院的离任目的地）。"""
     if "南京" in chunk and ("改" in chunk or "調" in chunk):
         return "改南京"
     # 2026-11-12 原书验证补全：誅/死/閑住此前不在表内，死难段被误判无离任注
     # 而落进迄月推定池（余熂 1385 实录四月伏誅被推成六月）。「死」列于死难词之后。
     for v in ("罷", "罢", "卒", "致仕", "削籍", "下獄", "下狱", "被執", "戍", "謫", "谪",
-              "丁憂", "丁父憂", "丁母憂", "憂去", "乞歸", "乞休", "養病", "免", "回籍",
+              "丁憂", "丁父憂", "丁母憂", "憂去", "乞歸", "乞休", "養病", "免", "回籍", "回部", "回京",
               "為民", "降", "死於難", "死難", "歿於", "正法", "自盡", "殉難", "棄市",
               "革職", "奪官", "謫戍", "奔喪", "守制",
               "誅", "诛", "戰死", "閑住", "閒住", "死"):
@@ -80,6 +92,11 @@ def _leave_chunk(chunk: str) -> str | None:
         return "改除"
     m = LEAVE_QIAN_BY.search(chunk)   # "調大理卿"带宾语 → 調除（馬森 1558「坐调大理卿」）
     if m:
+        if precedes_office_name(chunk, m.start()):
+            return None          # 「吏左侍遷左都」完整句式=到任，非离任
+        if office == "都察院" and chunk[m.start() + 1:m.start() + 4].startswith(
+                ("左都", "右都", "副都", "僉都", "佥都")):
+            return None          # 「遷左都」領起式=到任本衙（劉宇 1507 型）
         return {"遷": "遷除", "改": "改除", "調": "調除", "還": "還除",
                 "迁": "遷除", "调": "調除", "还": "還除"}[m.group()[0]]
     return None
@@ -103,11 +120,11 @@ def _start_month(note: str) -> tuple[int | None, bool]:
     return None, False
 
 
-def _leave(note: str) -> tuple[int | None, str]:
+def _leave(note: str, office: str = "") -> tuple[int | None, str]:
     for c in _chunks(note):
         if _cross_year(c):
             continue
-        label = _leave_chunk(c)
+        label = _leave_chunk(c, office)
         if label:
             if label in ("下獄", "下狱") and re.search(r"宥|釋|释|復職|復官|赦", c):
                 continue          # 下狱后获释复职——非离任（程富 1446「下狱，寻釋」）
@@ -141,6 +158,20 @@ def load_buyuan_cbdb() -> dict:
 
 def build_buyuan_tenures() -> list[dict]:
     entries = [e for e in load_buyuan() if e["year"] <= CUT_Y]
+    # 无标签列页（p607/p661 型）行→衙重复归属修正 + 讹名/错挂归正（2026-11-13
+    # 抽查轮）：运行时应用 OFFICE_FIX / NAME_FIX（buyuan_repair 同款）。NAME_FIX
+    # 键序敏感（倉場互换对：王永光→鐘羽正 先于 鍾羽→王永光），dict 保序生效。
+    # 改到真 office/人后，同年同 note 条目在下方 dedup 循环里自然合并。
+    for e in entries:
+        fx = OFFICE_FIX.get((e["year"], e.get("person"), e["office"]))
+        if fx:
+            e["office_fix"] = {"from": e["office"], "to": fx[0], "source": fx[1]}
+            e["office"] = fx[0]
+        nf = NAME_FIX.get((e["year"], e.get("person"), e["office"]))
+        if nf:
+            e["name_fix"] = {"from": e["person"], "to": nf[0]}
+            e["person"] = nf[0]
+            e["person_id"] = nf[1]
     mapping = load_buyuan_cbdb()
     name_entities: dict[str, set[str]] = defaultdict(set)
     for e in entries:
@@ -192,7 +223,7 @@ def build_buyuan_tenures() -> list[dict]:
             sy, ey = seg[0], seg[-1]
             s_note, e_note = note_of.get(sy, ""), note_of.get(ey, "")
             sm, sm_event = _start_month(s_note)
-            em, leave = _leave(e_note)
+            em, leave = _leave(e_note, office)
 
             # D15：1644.3 之后任命剔除
             eff_sm = sm or (em if (sy == ey and em) else None)
@@ -306,7 +337,7 @@ def infer_yield_ends(tenures: list[dict]) -> list[dict]:
                 continue
             entry = next((x for x in _chunks(c.get("note") or "")
                           if _enter_chunk(x)), None)
-            if entry and a["office"] in entry:
+            if entry and entry_names_source_office(a["office"], entry):
                 a["end_year"] = c["start_year"]
                 a["end_month"] = c["start_month"]
                 if c["start_year"] > a["years"][-1]:

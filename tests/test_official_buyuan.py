@@ -47,6 +47,38 @@ def test_yield_inferred_pool_shrunk(tenures):
     """词表补全+守卫后，推定池 175→97：注文明载离任的段一律不推定。"""
     n = sum(1 for t in tenures if t.get("yield_inferred"))
     assert n <= 120
+
+
+def test_qianyi_full_pattern_2026_11_13(tenures):
+    """2026-11-13 抽查轮：「X遷Y」完整叙事句=到任，不得判同月离任。
+
+    原书实拍 p510/p661/p607 对照：房壯麗「吏左侍遷左都」、傅頤「刑右侍遷戶左侍」
+    曾被「遷左/遷戶」命中误判到任即离任；郭朝賓 1572 幻觉段（總督京儲+都察院
+    双挂）经 OFFICE_FIX 归正總倉場。
+    """
+    def seg(p, o, sy):
+        return next(t for t in tenures if t["person"] == p and t["office"] == o
+                    and t["start_year"] == sy)
+    # 房壯麗 1626-7 到任左都（吏左侍遷左都）——非 7 月离任；真离任 1627-11
+    t = seg("房壯麗", "都察院", 1626)
+    assert t["start_month"] == 7 and t.get("leave") == "未載"
+    # 傅頤 1561-2 到任倉場（刑右侍遷戶左侍），真离任「五、改南京用」
+    t = seg("傅頤", "總倉場", 1561)
+    assert t["end_month"] == 5 and t["leave"] == "改南京"
+    # 高攀龍 1624-8 到任左都（刑右侍遷左都），真离任十月致仕
+    t = seg("高攀龍", "都察院", 1624)
+    assert t["end_month"] == 10 and t["leave"] == "致仕"
+    # 郭朝賓 1572-7 到任總督倉場（幻觉段归正），任至 1574-6 遷工尚
+    t = seg("郭朝賓", "總倉場", 1572)
+    assert t["end_year"] == 1574 and t["end_month"] == 6
+    # 幻觉段不得复活
+    ghosts = [t for t in tenures if (t["person"], t["start_year"], t["office"]) in
+              (("周應秋", 1626, "禮部"), ("蘇茂相", 1626, "刑部"),
+               ("郭朝賓", 1572, "總督京儲"), ("郭朝賓", 1572, "都察院"))]
+    assert ghosts == []
+    # 劉宇 1507「遷左都」領起式在都察院格=到任，不得判离任
+    t = seg("劉宇", "都察院", 1507)
+    assert t.get("leave") == "未載"
     assert sum(len(t["years"]) for t in tenures) >= 3400
     span = (min(t["start_year"] for t in tenures), max(t["end_year"] for t in tenures))
     assert span == (1368, 1644)

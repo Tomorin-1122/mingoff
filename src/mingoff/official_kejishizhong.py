@@ -34,7 +34,8 @@ from mingoff.keji_repair import (BOOK_ADD_1618, BOOK_GAP_YEARS, BOOK_PAGE_MAP,
 from mingoff.match_cbdb import S2T
 from mingoff.ocr_jingqing import parse_tables, row_year
 from mingoff.ocr_kejishizhong import MD, OFFICES, label_of, split_year_pages_keji
-from mingoff.official import CUT_M, CUT_Y, _cross_year, _month_of, build_shilu
+from mingoff.official import (CUT_M, CUT_Y, _cross_year, _month_of, build_shilu,
+                              precedes_office_name)
 from mingoff.official_buyuan import (CONF_DOWN, infer_yield_ends,
                                      merge_gap_segments)
 from mingoff.official_jingqing import (LEAVE_LABEL_JQ, LEAVE_QIAN,
@@ -83,8 +84,11 @@ def _leave_kej(note: str) -> tuple[int | None, str]:
         if label is None:
             m = LEAVE_QIAN.search(c)
             if m:
-                label = {"遷": "遷除", "改": "改除", "調": "調除", "還": "還除",
-                         "迁": "遷除", "调": "調除", "还": "還除"}[m.group()[0]]
+                if precedes_office_name(c, m.start()):
+                    label = None    # 「吏左給遷戶都」类完整句式=到任
+                else:
+                    label = {"遷": "遷除", "改": "改除", "調": "調除", "還": "還除",
+                             "迁": "遷除", "调": "調除", "还": "還除"}[m.group()[0]]
         if label:
             if label in ("下獄", "下狱") and re.search(r"宥|釋|释|復職|復官|赦", c):
                 continue          # 下狱后获释复职——非离任（沿京卿 2026-11-12 轮）

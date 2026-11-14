@@ -27,7 +27,8 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 
 from mingoff.match_cbdb import S2T
-from mingoff.official import CUT_M, CUT_Y, _cross_year, _month_of, build_shilu
+from mingoff.official import (CUT_M, CUT_Y, _cross_year, _month_of, build_shilu,
+                              precedes_office_name)
 from mingoff.official_buyuan import (CONF_DOWN, infer_yield_ends,
                                      merge_gap_segments)
 from mingoff.official_jingqing import (LEAVE_LABEL_JQ, LEAVE_QIAN,
@@ -88,8 +89,11 @@ def _leave_sl(note: str) -> tuple[int | None, str]:
         if label is None:
             m = LEAVE_QIAN.search(c)
             if m:
-                label = {"遷": "遷除", "改": "改除", "調": "調除", "還": "還除",
-                         "迁": "遷除", "调": "調除", "还": "還除"}[m.group()[0]]
+                if precedes_office_name(c, m.start()):
+                    label = None    # 「左通政遷太僕卿」类完整句式=到任
+                else:
+                    label = {"遷": "遷除", "改": "改除", "調": "調除", "還": "還除",
+                             "迁": "遷除", "调": "調除", "还": "還除"}[m.group()[0]]
         if label:
             if label in ("下獄", "下狱") and re.search(r"宥|釋|释|復職|復官|赦", c):
                 continue          # 下狱后获释复职——非离任（沿京卿 2026-11-12 轮）
