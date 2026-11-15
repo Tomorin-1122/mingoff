@@ -24,7 +24,8 @@ def tenures(doc):
 
 
 def test_scale(tenures):
-    assert len(tenures) >= 3300
+    # 2026-11-15 批量轮后七页 C 型级联修复致段大量合并（3435→3188）
+    assert len(tenures) >= 3100
     assert sum(len(t["years"]) for t in tenures) >= 6400
     span = (min(t["start_year"] for t in tenures), max(t["end_year"] for t in tenures))
     assert span == (1368, 1644)
@@ -41,9 +42,42 @@ def test_leave_lexicon_round2026_11_12(tenures):
     # 何文淵 1438「十二…下狱」——三月下狱寻宥复职不误标，十二月下狱为离任
     t = seg("何文淵", "兵部右侍郎", 1438)
     assert t["leave"] == "下狱" and t["end_month"] == 12
-    # 程富 1446 三月下狱寻釋（跳过）、九月還鄉治疾（還除）——曾被推成迄 9 无据
-    t = seg("程富", "右副都御史", 1446)
-    assert t["leave"] == "還除" and t["end_month"] == 9
+    # 程富 三月下狱寻釋（跳过）、九月還鄉治疾（還除）——2026-11-15 批量轮后
+    # 760 页（1445）都察院 r2 条目恢复，与 761 的 1446 合并为一段 1445-1446
+    t = seg("程富", "右副都御史", 1445)
+    assert t["end_year"] == 1446 and t["leave"] == "還除" and t["end_month"] == 9
+
+
+def test_band_batch_2026_11_15(tenures):
+    """2026-11-15 侍郎 band 核验批量轮锚点（12 批 70 页，C 型级联/山廠误吸/补录）。"""
+    def seg(p, o, sy):
+        return next(t for t in tenures if t["person"] == p and t["office"] == o
+                    and t["start_year"] == sy)
+    # 717 C 型整页级联：卓敬实为戶部左侍（geo 吏部 r3 修复后与 713-716 合并）
+    t = seg("卓敬", "戶部左侍郎", 1398)
+    assert t["end_year"] == 1402 and t["leave"] == "罪誅"
+    # 御史府格（717 末格）：練子寧 御史中丞
+    assert seg("練子寧", "御史中丞", 1399)["end_year"] == 1402
+    # 詹沂连环案（927/929/930/933）：一段左副都 1603-12→1609-9 罷
+    t = seg("詹沂", "左副都御史", 1603)
+    assert t["end_year"] == 1609 and t["leave"] == "罷" and t["start_month"] == 12
+    # 970 鍾炌补录双条：吏左 1637→1638（遷左都）+ 工右 1637 离任
+    t = seg("鍾炌", "吏部左侍郎", 1637)
+    assert t["end_year"] == 1638
+    assert seg("鍾炌", "工部右侍郎", 1637)["leave"] == "遷除"
+    # 978 倪元璐补录：兵右侍 1642→1643 遷戶尚
+    t = seg("倪元璐", "兵部右侍郎", 1642)
+    assert t["end_year"] == 1643 and t["leave"] == "遷除"
+    # 834/835/837 金獻民右副都链合并（都察院空 r1 槽修复）
+    assert seg("金獻民", "右副都御史", 1514)["end_year"] == 1517
+    # 李鐩：817-821 to_person 重挂+补录，1501-1507 工左侍→遷工尚
+    t = seg("李鐩", "工部左侍郎", 1501)
+    assert t["end_year"] == 1507 and t["leave"] == "遷除"
+    # 722 趙羾补录：禮右侍 1407 遷禮尚
+    assert seg("趙羾", "禮部右侍郎", 1407)["leave"] == "遷除"
+    # 824/826 白鉞补录双条：吏右 1507→1508 遷禮尚；吏左 1508
+    assert seg("白鉞", "吏部右侍郎", 1507)["end_year"] == 1508
+    assert seg("白鉞", "吏部左侍郎", 1508)["leave"] == "遷除"
 
 
 def test_years_contiguous(tenures):
@@ -158,8 +192,10 @@ def test_book_fix_anchors(tenures):
 
 
 def test_cbdb_aligned(doc):
+    # 2026-11-15 批量轮（批2/7-12 编入）后对齐段进一步合并，段总数 3338→3188，
+    # 带 cbdb_id 的段数随合并下降——下界相应回调
     s = doc["meta"]["stats"]
-    assert s["cbdb_aligned"] >= 2300, s["cbdb_aligned"]
+    assert s["cbdb_aligned"] >= 2050, s["cbdb_aligned"]
     # 葉盛（吏部左侍郎，成化间名臣）应已对齐
     assert any(t["person"] == "葉盛" and t["office"] == "吏部左侍郎" and t["cbdb_id"]
                for t in doc["tenures"])

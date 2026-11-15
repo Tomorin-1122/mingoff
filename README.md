@@ -160,6 +160,24 @@ pnpm build
 
 运行环境：Python 3.13+、Node.js 24+、pnpm 11+。
 
+### 磁盘卫生：跑完测试必须清 `.test-tmp`
+
+`tests/conftest.py` 覆盖了 pytest 的 `tmp_path`，把每个用例的临时文件落在
+`.test-tmp/<pid>-<hash>/`。**测试自己不会收尾**——沙箱在 teardown 阶段拒绝删除，
+只能由人（或 AI）事后清。每个用例留下一份约 90 KB 的 SQLite，跑一次测试就新增
+几十到几百个目录。
+
+实测代价：2026-10-16 起累计 **5,752 个目录 / 5,614 个 SQLite / 528 MB**。
+
+**每次跑完 `pytest` 立刻清掉，AI 代跑测试时同样适用：**
+
+```bash
+rm -rf .test-tmp        # 或走回收站
+```
+
+`.test-tmp/` 已在 `.gitignore` 内，不含任何数据资产或校勘成果；删掉不影响任何
+测试结果，下次跑测试会自动重建。
+
 项目结构：
 
 ```

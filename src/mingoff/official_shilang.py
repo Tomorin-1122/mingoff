@@ -34,8 +34,10 @@ from mingoff.official_buyuan import (CONF_DOWN, infer_yield_ends,
 from mingoff.official_jingqing import (LEAVE_LABEL_JQ, LEAVE_QIAN,
                                        LEAVE_VERBS_JQ, MAX_SPAN, _chunks,
                                        _start_month, split_identities)
-from mingoff.shilang_repair import (IDENTITY_FORCE, apply_book_fix,
-                                    apply_name_canon)
+from mingoff.shilang_repair import (IDENTITY_FORCE, VERIFIED_PAGES,
+                                    apply_book_fix, apply_entry_add,
+                                    apply_name_canon, apply_note_fix,
+                                    apply_spurious_sl)
 
 DATA = Path(__file__).resolve().parent / "data"
 ROOT = DATA.parents[2]
@@ -142,10 +144,17 @@ def band_alarm_pages() -> set[int]:
 
 
 def load_shilang_repaired(report: dict | None = None) -> list[dict]:
-    """geo 条目 + 原书核验修正 + 行带→职官派生。"""
+    """geo 条目 + 原书核验修正 + 行带→职官派生。
+
+    顺序（2026-11-15 定版）：spurious 按 geo 原始键删除须最先；name_canon 归一后
+    book_fix 的 person 匹配统一按规范繁体；entry_add 补录在重挂后（新条目键即
+    终态）；note_fix 最后（部分目标为 entry_add/重挂后的键）。"""
     doc = json.loads(GEO.read_text(encoding="utf-8"))
-    entries = apply_book_fix(doc["entries"], report)
+    entries = apply_spurious_sl(doc["entries"], report)
     entries = apply_name_canon(entries, report)
+    entries = apply_book_fix(entries, report)
+    entries = apply_entry_add(entries, report)
+    entries = apply_note_fix(entries, report)
     alarms_pages = band_alarm_pages()
 
     # 各部右侍郎带（row2）起始年——单侍郎带（row1）的左/右命名分界
@@ -158,7 +167,9 @@ def load_shilang_repaired(report: dict | None = None) -> list[dict]:
 
     def derive(e: dict) -> tuple[str, bool]:
         off, row, tag, year = e["office"], e["row"], e.get("tag"), e["year"]
-        pending = e["book"] in alarms_pages and not e.get("office_fix")
+        pending = (e["book"] in alarms_pages
+                   and e["book"] not in VERIFIED_PAGES
+                   and not e.get("office_fix"))
         if off in MINISTRIES:
             if tag in ("左", "右"):
                 return f"{off}{tag}侍郎", pending

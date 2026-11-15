@@ -3,9 +3,9 @@
   "dataset": "shilang",
   "license": "CC BY-NC-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-  "generated_at": "2026-11-14T01:56:30+00:00",
-  "persons": 1055,
-  "with_cbdb_id": 1055,
+  "generated_at": "2026-11-15T14:01:17+00:00",
+  "persons": 1052,
+  "with_cbdb_id": 1052,
   "office_limit": 30,
   "cbdb_person_url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id={id}",
   "sinica_url": "https://dh.rchss.sinica.edu.tw/MingChaoffTitle/",
@@ -1144,18 +1144,6 @@
     }
    ],
    "office_total": 23
-  },
-  "何塘": {
-   "cbdb_id": 338440,
-   "cbdb_name": "何塘",
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": null,
-   "alt_names": [],
-   "entry": [],
-   "offices": [],
-   "office_total": 0
   },
   "何孟春": {
    "cbdb_id": 30315,
@@ -58971,23 +58959,6 @@
    ],
    "office_total": 25
   },
-  "蒋勉": {
-   "cbdb_id": 361319,
-   "cbdb_name": "蔣勉",
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": "涪州",
-   "alt_names": [],
-   "entry": [
-    {
-     "year": 1415,
-     "desc": "科舉: 進士(籠統)"
-    }
-   ],
-   "offices": [],
-   "office_total": 0
-  },
   "蒋淦": {
    "cbdb_id": 132559,
    "cbdb_name": "蔣淦",
@@ -80556,113 +80527,6 @@
     }
    ],
    "office_total": 3
-  },
-  "黄珂": {
-   "cbdb_id": 67943,
-   "cbdb_name": "黃珂",
-   "birth": 1449,
-   "death": 1523,
-   "death_age": 75,
-   "native_place": "遂寧",
-   "alt_names": [
-    {
-     "type": "諡號",
-     "name": "簡肅"
-    },
-    {
-     "type": "字",
-     "name": "鳴玉"
-    }
-   ],
-   "entry": [
-    {
-     "year": 1484,
-     "desc": "科舉: 進士(籠統)"
-    }
-   ],
-   "offices": [
-    {
-     "office": "知縣",
-     "from": 1485,
-     "to": 1489
-    },
-    {
-     "office": "監察御史",
-     "from": 1493,
-     "to": 1496
-    },
-    {
-     "office": "廵按監察御史",
-     "from": 1496,
-     "to": 1504
-    },
-    {
-     "office": "提刑按察使司副使",
-     "from": 1504,
-     "to": 1508
-    },
-    {
-     "office": "按察使",
-     "from": 1508,
-     "to": 1509
-    },
-    {
-     "office": "都察院右僉都御史",
-     "from": 1509,
-     "to": 1511
-    },
-    {
-     "office": "戶部右侍郎",
-     "from": 1511,
-     "to": 1512
-    },
-    {
-     "office": "總督倉場",
-     "from": 1511,
-     "to": 1512
-    },
-    {
-     "office": "刑部右侍郎",
-     "from": 1512,
-     "to": null
-    },
-    {
-     "office": "刑部左侍郎",
-     "from": 1512,
-     "to": 1514
-    },
-    {
-     "office": "兵部左侍郎",
-     "from": 1514,
-     "to": null
-    },
-    {
-     "office": "都察院右都御史",
-     "from": 1514,
-     "to": 1515
-    },
-    {
-     "office": "工部尚書",
-     "from": 1515,
-     "to": 1519
-    },
-    {
-     "office": "太子少保",
-     "from": 1523,
-     "to": null
-    },
-    {
-     "office": "都察院右都御史",
-     "from": null,
-     "to": null
-    },
-    {
-     "office": "工部尚書",
-     "from": null,
-     "to": null
-    }
-   ],
-   "office_total": 16
   },
   "黄福": {
    "cbdb_id": 30659,
