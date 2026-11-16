@@ -24,9 +24,9 @@ def tenures(doc):
 
 
 def test_scale(tenures):
-    # 2026-11-15 批量轮后七页 C 型级联修复致段大量合并（3435→3188）
-    assert len(tenures) >= 3100
-    assert sum(len(t["years"]) for t in tenures) >= 6400
+    # 2026-11-16 Paddle 对照批量轮（bV 34 页 125 条）后继续合并（3188→3082）
+    assert len(tenures) >= 3000
+    assert sum(len(t["years"]) for t in tenures) >= 6300
     span = (min(t["start_year"] for t in tenures), max(t["end_year"] for t in tenures))
     assert span == (1368, 1644)
 

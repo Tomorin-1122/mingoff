@@ -3,9 +3,9 @@
   "dataset": "shilang",
   "license": "CC BY-NC-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-  "generated_at": "2026-11-15T14:01:17+00:00",
-  "persons": 1052,
-  "with_cbdb_id": 1052,
+  "generated_at": "2026-11-16T00:55:04+00:00",
+  "persons": 1051,
+  "with_cbdb_id": 1051,
   "office_limit": 30,
   "cbdb_person_url": "https://cbdb.fas.harvard.edu/cbdbapi/person.php?id={id}",
   "sinica_url": "https://dh.rchss.sinica.edu.tw/MingChaoffTitle/",
@@ -55727,23 +55727,6 @@
     }
    ],
    "entry": [],
-   "offices": [],
-   "office_total": 0
-  },
-  "胡淡": {
-   "cbdb_id": 538622,
-   "cbdb_name": "胡淡",
-   "birth": null,
-   "death": null,
-   "death_age": null,
-   "native_place": "安溪",
-   "alt_names": [],
-   "entry": [
-    {
-     "year": 1226,
-     "desc": "科舉: 進士(籠統)"
-    }
-   ],
    "offices": [],
    "office_total": 0
   },
