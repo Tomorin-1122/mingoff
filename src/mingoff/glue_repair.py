@@ -57,13 +57,46 @@ REMOVES: dict[str, list[tuple[int, str, str]]] = {
     "kejishizhong": [],
 }
 
+# 正字修复（外部考据裁决轮 2026-11-17）：按 (year, office, person) 精确改人名。
+# year 可为整数或 (lo, hi) 闭区间。裁决证据全录 ambig_verdicts_r1.json。
+NAME_FIXES: dict[str, list[dict]] = {
+    "jingqing": [
+        {"year": 1381, "office": "通政使", "person": "張紳", "to": "張紞",
+         "why": "p1010原行「張紞(試)」+明史卷151/列卿纪卷84洪武十四年試左通政；"
+                "书法家张绅（登州人，官至浙江左布政使）为另一人"},
+        {"year": 1390, "office": "通政使", "person": "茹瑋", "to": "茹瑺",
+         "why": "太祖实录卷201：洪武廿三年闰四月卅壬辰通政使茹瑺改右副都御史，"
+                "条注「閏四、壬辰、卅，改右副都」相合"},
+        {"year": 1390, "office": "通政使", "person": "詹嶽", "to": "詹徽",
+         "why": "实录卷201：左都御史詹徽署通政使司事；条注「閏四、壬辰、卅，左都署」相合；"
+                "paddle 詹微=徽/微形近，詹徽蓝玉案坐诛"},
+        {"year": (1463, 1470), "office": "大理卿", "person": "王檗", "to": "王槩",
+         "why": "英宗实录卷358：天顺七年十月戊戌改巡抚陕西右副都御史王概为大理寺卿，"
+                "条注「十、戊戌、十三，巡撫陝西右副都改」即此；檗为槩之误；"
+                "改名后与王槩 1467-1473 并为一段 1463-1473"},
+    ],
+}
+
 
 def apply_glue_repair(entries: list[dict], table: str,
                       report: dict | None = None) -> list[dict]:
     """应用格子拆分/移除。返回新列表（不 mutate 入参）。"""
     rep = report if report is not None else {}
     out = [copy.deepcopy(e) for e in entries]
-    splits, removes = 0, 0
+    splits, removes, fixes = 0, 0, 0
+
+    # 正字修复：考据裁决改人名（组装前生效，同名合并自然发生）
+    for spec in NAME_FIXES.get(table, []):
+        for e in out:
+            if e["office"] != spec["office"] or e["person"] != spec["person"]:
+                continue
+            y = spec["year"]
+            ok = (y == e["year"]) if isinstance(y, int) else (y[0] <= e["year"] <= y[1])
+            if ok:
+                e["person"] = spec["to"]
+                e["review"] = f"正字修复(考据轮2026-11-17)：{spec['why']}"
+                e["src"] = "name-fix"
+                fixes += 1
 
     for spec in CELL_SPLITS.get(table, []):
         idxs = [i for i, e in enumerate(out)
@@ -100,5 +133,6 @@ def apply_glue_repair(entries: list[dict], table: str,
                        and e["person"] == person)]
         removes += before - len(out)
 
-    rep["glue_repair"] = {"table": table, "cells_split": splits, "removed": removes}
+    rep["glue_repair"] = {"table": table, "cells_split": splits, "removed": removes,
+                          "name_fixes": fixes}
     return out

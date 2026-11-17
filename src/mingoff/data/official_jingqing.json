@@ -7,11 +7,11 @@
   "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   "source": "张德信《明代职官年表》册1·京卿年表（京師）正文 981–1266（PDF 996–1281，MinerU OCR；解析 ocr_jingqing.py v1 试点）；页级溯源用 PaddleOCR 逐页年份头索引；CBDB 对齐 v1（match_official_cbdb.py 评分器，宁空勿误挂）",
   "pipeline": "mingoff.official_jingqing (v1: (person_id,office) 分组 + 遷/改/調定向判定 + D-01 同名分代 + gap 合并 + D15 + CBDB 对齐)",
-  "generated_at": "2026-11-14T12:29:02+00:00",
+  "generated_at": "2026-11-17T23:47:09+00:00",
   "stats": {
-   "tenures": 1374,
-   "persons": 1052,
-   "display_persons": 1050,
+   "tenures": 1373,
+   "persons": 1051,
+   "display_persons": 1049,
    "split_entities": 4,
    "same_name_entities": 2,
    "offices": [
@@ -24,29 +24,29 @@
     "順天府府尹",
     "鴻臚卿"
    ],
-   "gap_merged_tenures": 36,
-   "gap_years_total": 44,
+   "gap_merged_tenures": 35,
+   "gap_years_total": 40,
    "years_covered": [
     1368,
     1644
    ],
    "with_start_month": 1100,
    "with_end_month": 939,
-   "with_start_page": 1374,
-   "with_end_page": 1374,
+   "with_start_page": 1373,
+   "with_end_page": 1373,
    "cbdb_aligned": 787,
    "with_leave": 876,
    "shu_li": 24,
    "same_name_risk": 4,
    "office_status_dist": {
-    "label-column": 463,
-    "row-order": 216,
-    "mixed": 693,
+    "label-column": 464,
+    "row-order": 215,
+    "mixed": 692,
     "dual": 2
    },
    "shilu_persons": 36,
    "shilu_hits": 392,
-   "person_years": 3308
+   "person_years": 3304
   }
  },
  "tenures": [
@@ -10366,14 +10366,14 @@
    ]
   },
   {
-   "person": "張紳",
-   "person_id": "張紳",
-   "person_label": "張紳",
+   "person": "張紞",
+   "person_id": "張紞",
+   "person_label": "張紞",
    "cbdb_id": null,
    "cbdb_name": null,
    "office": "通政使",
    "office_raw": "通政使",
-   "office_status": "row-order",
+   "office_status": "label-column",
    "tenure_type": "实授",
    "start_year": 1381,
    "start_month": 5,
@@ -10381,7 +10381,7 @@
    "end_month": null,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.6,
+   "confidence": 0.7,
    "leave": "未載",
    "note": "(試)五、庚寅、六,試左通政遷。",
    "start_book_page": 995,
@@ -21896,18 +21896,22 @@
    "office_raw": "大理卿",
    "office_status": "label-column",
    "tenure_type": "实授",
-   "start_year": 1467,
-   "start_month": null,
+   "start_year": 1463,
+   "start_month": 10,
    "end_year": 1473,
    "end_month": 8,
    "month_conflict": false,
    "end_clamped": false,
-   "confidence": 0.5,
+   "confidence": 0.6,
    "leave": "遷除",
-   "note": "",
-   "start_book_page": 1080,
-   "end_book_page": 1080,
+   "note": "十、戊戌、十三,巡撫陝西右副都改。",
+   "start_book_page": 1076,
+   "end_book_page": 1077,
    "years": [
+    1463,
+    1464,
+    1465,
+    1466,
     1467,
     1468,
     1469,
@@ -21917,10 +21921,9 @@
     1473
    ],
    "gap_years": [
-    1468,
-    1470
+    1465
    ],
-   "merged_segments": 3
+   "merged_segments": 2
   },
   {
    "person": "王樵",
@@ -21947,44 +21950,6 @@
     1575,
     1576
    ]
-  },
-  {
-   "person": "王檗",
-   "person_id": "王檗",
-   "person_label": "王檗",
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "office": "大理卿",
-   "office_raw": "大理卿",
-   "office_status": "mixed",
-   "tenure_type": "实授",
-   "start_year": 1463,
-   "start_month": 10,
-   "end_year": 1470,
-   "end_month": null,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.5,
-   "leave": "未載",
-   "note": "十、戊戌、十三,巡撫陝西右副都改。",
-   "start_book_page": 1076,
-   "end_book_page": 1077,
-   "years": [
-    1463,
-    1464,
-    1465,
-    1466,
-    1467,
-    1468,
-    1469,
-    1470
-   ],
-   "gap_years": [
-    1465,
-    1467,
-    1469
-   ],
-   "merged_segments": 4
   },
   {
    "person": "王正國",
@@ -26658,33 +26623,6 @@
    ]
   },
   {
-   "person": "茹瑋",
-   "person_id": "茹瑋",
-   "person_label": "茹瑋",
-   "cbdb_id": null,
-   "cbdb_name": null,
-   "office": "通政使",
-   "office_raw": "通政使",
-   "office_status": "label-column",
-   "tenure_type": "实授",
-   "start_year": 1390,
-   "start_month": 4,
-   "start_leap": true,
-   "end_year": 1390,
-   "end_month": 4,
-   "end_leap": true,
-   "month_conflict": false,
-   "end_clamped": false,
-   "confidence": 0.7,
-   "leave": "改除",
-   "note": "閏四、壬辰、卅,改右副都。",
-   "start_book_page": 1004,
-   "end_book_page": 1004,
-   "years": [
-    1390
-   ]
-  },
-  {
    "person": "茹瑞",
    "person_id": "茹瑞",
    "person_label": "茹瑞",
@@ -26707,6 +26645,33 @@
    "end_book_page": 1002,
    "years": [
     1388
+   ]
+  },
+  {
+   "person": "茹瑺",
+   "person_id": "茹瑺",
+   "person_label": "茹瑺",
+   "cbdb_id": null,
+   "cbdb_name": null,
+   "office": "通政使",
+   "office_raw": "通政使",
+   "office_status": "label-column",
+   "tenure_type": "实授",
+   "start_year": 1390,
+   "start_month": 4,
+   "start_leap": true,
+   "end_year": 1390,
+   "end_month": 4,
+   "end_leap": true,
+   "month_conflict": false,
+   "end_clamped": false,
+   "confidence": 0.7,
+   "leave": "改除",
+   "note": "閏四、壬辰、卅,改右副都。",
+   "start_book_page": 1004,
+   "end_book_page": 1004,
+   "years": [
+    1390
    ]
   },
   {
@@ -28850,9 +28815,9 @@
    ]
   },
   {
-   "person": "詹嶽",
-   "person_id": "詹嶽",
-   "person_label": "詹嶽",
+   "person": "詹徽",
+   "person_id": "詹徽",
+   "person_label": "詹徽",
    "cbdb_id": null,
    "cbdb_name": null,
    "office": "通政使",

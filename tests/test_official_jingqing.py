@@ -142,6 +142,31 @@ def test_anchors(tenures):
     assert segs("栗永禄", "光祿卿") and segs("栗永禄", "順天府府尹")
 
 
+def test_name_fix_2026_11_17(tenures):
+    """2026-11-17 外部考据裁决轮：三条正字修复（ambig_verdicts_r1.json）。"""
+    def segs(who, off):
+        return [t for t in tenures if t["person"] == who and t["office"] == off]
+
+    # 張紳→張紞：p1010 原行+明史卷151（书法家张绅为另一人）；1381-1382 試左通政
+    zhang = segs("張紞", "通政使")
+    assert any(t["start_year"] == 1381 for t in zhang), "張紞 1381 段缺失"
+    assert not segs("張紳", "通政使")
+    # 茹瑋→茹瑺：实录卷201 闰四月卅改右副都；1390 一段（1389 起段则合并）
+    ru = segs("茹瑺", "通政使")
+    assert ru and any(t["start_year"] <= 1390 and t["end_year"] == 1390
+                      and t["leave"] == "改除" for t in ru)
+    assert not segs("茹瑋", "通政使")
+    # 詹嶽→詹徽：实录卷201 左都署；1390-1393 一段（蓝玉案坐诛）
+    zhan = segs("詹徽", "通政使")
+    assert zhan and any(t["start_year"] == 1390 for t in zhan)
+    assert not segs("詹嶽", "通政使")
+    # 王檗→王槩：实录卷358 天顺七年十月改大理寺卿；1463-1473 合并为一段
+    wang = segs("王槩", "大理卿")
+    assert any(t["start_year"] == 1463 and t["end_year"] == 1473 for t in wang), \
+        "王槩 1463-1473 段缺失"
+    assert not segs("王檗", "大理卿")
+
+
 def test_cbdb_aligned(doc):
     """CBDB 对齐 v1（match_official_cbdb.py）：段级对齐量 + 已核实锚点 id。"""
     s = doc["meta"]["stats"]
