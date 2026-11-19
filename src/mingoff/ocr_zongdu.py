@@ -44,6 +44,7 @@ RE_WM = re.compile(r"华[邮书州帜船]|^W驰$|^客驰$|^书$|^家$|^#业$|驰
 PREFIX_STRIP = ("總督", "總理", "提督", "經略", "兼制", "兼撫")
 LABEL_ALIAS = {"總漕": "漕運", "總河": "河道"}
 JUNK_LABELS = {"大木", "務", "書"}   # 拼接后仍为垃圾的标签名，整带丢弃
+VOCAB_MIN = None                    # 巡抚型词频阈值（None=总督型：x<300 无重名噪声）
 
 wm_skipped = [0]
 
@@ -122,19 +123,34 @@ def _line_cluster(frags: list[tuple[int, int, str]]) -> list[str]:
     return out
 
 
-def collect_labels(rows) -> list[tuple[str, int, bool]]:
-    """本页区域标签 → [(office 正名, 首行 y, 网格拼接来源)]。"""
+def collect_labels(rows, vocab: set[str] | None = None):
+    """本页区域标签 → [(office 正名, 首行 y, 网格拼接来源)]。
+    vocab 给定时（巡抚型：续页人名也在 x<300），仅收词表内的整词标签。"""
     cands = sorted([(y, x, t) for t, x, y in rows
-                    if x < 300 and 360 < y < 2100 and 1 <= len(t) <= 6
+                    if x < 300 and 360 < y < 2200 and 1 <= len(t) <= 6
                     and not RE_PUNCT.search(t) and t not in SKIP_TEXT
                     and (RE_NAME.match(t) or len(t) == 1)],
                    key=lambda v: v[0])
-    items = []
-    for y, x, t in cands:
-        if len(t) == 1:
-            items.append(("frag", y, x, t))
+    # 同线相邻 word 合并（复合区域词被拆印：河南+山西 → 河南山西；y±30 且 x-gap<90）
+    words = sorted([(y, x, t) for y, x, t in cands
+                    if len(t) > 1 and RE_NAME.match(t)], key=lambda v: (v[0], v[1]))
+    merged_words, cur = [], None
+    for y, x, t in words:
+        if cur and y - cur[0] <= 30 and x - cur[1] < 90:
+            cur = (y, x, cur[2] + t)
         else:
-            items.append(("word", y, x, t))
+            if cur:
+                merged_words.append(cur)
+            cur = (y, x, t)
+    if cur:
+        merged_words.append(cur)
+    def _vocab_hit(t: str) -> bool:
+        return (vocab is None or t in vocab
+                or any(t[:i] in vocab for i in (2, 3, 4))
+                or any(t[-i:] in vocab for i in (2, 3, 4)))
+    items = [("word", y, x, t) for y, x, t in merged_words if _vocab_hit(t)]
+    items += [("frag", y, x, t) for y, x, t in cands if len(t) == 1]
+    items.sort(key=lambda v: (v[1], v[2]))
     out: list[tuple[str, int, bool]] = []
     i = 0
     while i < len(items):
@@ -172,7 +188,13 @@ def collect_labels(rows) -> list[tuple[str, int, bool]]:
             if _norm_label(lab) not in JUNK_LABELS]
 
 
+RE_NOTE_POS = re.compile(
+    r"御史|侍郎?|總兵|總督|巡撫|都御|經理|經略|布使|按察|參政|参政|副使|僉事|"
+    r"郎中|员外|主事|督師|將軍|都督|指揮|轉運|糧儲|邊備|操江")
+
 def _is_name(t: str) -> bool:
+    if RE_NOTE_POS.search(t):
+        return False
     return bool(RE_NAME.match(t) or RE_PAREN.match(t))
 
 
@@ -186,6 +208,18 @@ def _band_for(y: int, labels):
 def parse():
     pages = load_pages()
     ymap = year_map(pages)
+    # 标签词表（VOCAB_MIN 给定时：x<300 纯CJK词频≥阈值才可能是区域标签——
+    # 巡抚型续页人名也在 x<300，靠词频把人名挡在标签管线外）
+    vocab = None
+    if VOCAB_MIN:
+        freq = Counter()
+        for rows in pages.values():
+            for t, x, y in rows:
+                if (x < 300 and 360 < y < 2200 and 2 <= len(t) <= 6
+                        and not RE_PUNCT.search(t) and t not in SKIP_TEXT
+                        and RE_NAME.match(t)):
+                    freq[t] += 1
+        vocab = {t for t, c in freq.items() if c >= VOCAB_MIN}
     schema: dict[int, list] = {}
     own_labeled: set[int] = set()
     last = None
@@ -193,8 +227,9 @@ def parse():
         rows = pages.get(p)
         if not rows:
             continue
-        lb = collect_labels(rows)
-        if len(lb) >= 2:
+        lb = collect_labels(rows, vocab)
+        n_words = sum(1 for lab, _y, fg in lb if not fg)
+        if n_words >= 2:
             schema[p] = lb
             own_labeled.add(p)
             last = lb
@@ -218,7 +253,9 @@ def parse():
         top_notes: list[str] = []
         content = sorted([(y, x, t) for t, x, y in rows
                           if t and t not in SKIP_TEXT and not RE_WM.search(t)
-                          and not RE_PAGE_NO.match(t) and x > 300 and 360 < y < 2100
+                          and not RE_PAGE_NO.match(t)
+                          and (x > 300 if labeled else True)   # 无标签页人名左移（巡抚续页 x~180）
+                          and 360 < y < 2200
                           and not RE_YEAR_FULL.search(t) and not RE_YEAR_BARE.search(t)
                           and "年表" not in t], key=lambda v: (v[0], v[1]))
         first_name_y = next((y for y, x, t in content if _is_name(t)), None)
@@ -251,7 +288,7 @@ def parse():
                      "note": note, "raw": note, "conf": 0.7 if labeled else 0.6,
                      "review": None, "book_page": book}
                 if not labeled:
-                    e["review"] = "无本页标签，官职按最近 schema 推"
+                    e["review"] = "无标签页，官职按最近 schema 推"
                 if fg:
                     e["review"] = ((e["review"] + "；") if e["review"] else "") + \
                         "区域标签为单字网格拼接，官职名待核"
