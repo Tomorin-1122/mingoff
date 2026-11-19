@@ -28,6 +28,42 @@ from mingoff.official_jingying import _office_basis
 DATA = Path(__file__).resolve().parent / "data"
 CBDB_MAP_FILES = ("vol3_zongdu_person_cbdb_v1.json",)
 
+# 官职名拆印变体归一（2026-11-19，网络考据：百度百科「总督」明代辖区名录 +
+# 维基熊文灿条 [总理南畿河南山西陕西湖广四川军务，崇祯十年]）。
+# 原则：只合并有字证/史证的同位异印；立场存疑的保留印本原样（office_raw 留痕）。
+OFFICE_NORM: dict[str, str] = {
+    # 陝西三邊：网格/拆印变体（西邊陝三=右列先读、进=邊形讹）
+    "陝西三邊": "陕西三邊", "陝三邊": "陕西三邊", "陕三西邊": "陕西三邊",
+    "陕三西进": "陕西三邊", "西邊陝三": "陕西三邊", "西邊陕三": "陕西三邊",
+    "西边陝三": "陕西三邊", "陕三西进": "陕西三邊",
+    # 漕運/河道 family（總理=總理河道 1512-1589，与河道同期同位异印）
+    "督運漕運": "漕運", "總漕運": "漕運", "總河道": "河道", "總理": "河道",
+    "總河漕": "河漕",          # 万历二十六年起 總督河漕
+    # 經略朝鮮（1592-98 宋应昌/顧養謙/邢玠）vs 遼東經略（1619+）—— era rule 另判
+    "朝鲜": "朝鮮", "經朝鲜": "朝鮮",
+    # 湖廣四川貴州（嘉靖五省总督型；「四」为「四川」拆印残字）
+    "湖廣四貴州": "湖廣四川貴州", "湖四貴": "湖廣四川貴州",
+    # 宣大三關（正德间宣大总督兼三關，同位异印）
+    "宣大三關": "宣大", "宣大三": "宣大", "宣三": "宣大",
+    "延绥": "延綏",
+}
+NORM_ERA = {  # era-window 归一：(office, start_year 上界) → canonical
+    "經略": [(1610, "朝鮮"), (9999, "遼東經略")],
+    # 崇祯剿寇五省总理（熊文灿 1637：总理南畿河南山西陕西湖广四川军务）
+    "陝西山西河南湖廣四川軍務直隸山東河南四川湖廣直隸河南四川山西陝西軍務專剿流寇":
+        [(9999, "總理五省軍務")],
+}
+
+
+def _norm_office(office: str, start_year: int) -> tuple[str, str | None]:
+    """返回 (canonical, raw)。era 规则优先于精确表。"""
+    for bound, canon in NORM_ERA.get(office, []):
+        if start_year <= bound:
+            return canon, office
+    if office in OFFICE_NORM:
+        return OFFICE_NORM[office], office
+    return office, None
+
 
 def load_zongdu() -> list[dict]:
     return json.loads((DATA / "vol3_zongdu_entries.json").read_text(encoding="utf-8"))["entries"]
@@ -56,6 +92,12 @@ def build_page_map(entries: list[dict]) -> dict[int, tuple[int, int]]:
 
 def build_zongdu_tenures() -> list[dict]:
     entries = [e for e in load_zongdu_repaired() if e["year"] <= CUT_Y]
+    # 官职名归一（office_raw 留印本原样；era 规则按条目年）
+    for e in entries:
+        canon, raw = _norm_office(e["office"], e["year"])
+        if raw is not None:
+            e["office_raw"] = raw
+        e["office"] = canon
     identities = split_identities(entries)
     pid_of: dict[tuple[str, int], str] = {}
     for name, ents in identities.items():
@@ -147,7 +189,7 @@ def build_zongdu_tenures() -> list[dict]:
                 "cbdb_id": m.get("cbdb_id"),
                 "cbdb_name": m.get("cbdb_name"),
                 "office": office,
-                "office_raw": office,
+                "office_raw": e.get("office_raw", office),
                 "office_status": basis,
                 "tenure_type": ttype,
                 "start_year": sy,

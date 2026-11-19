@@ -33,6 +33,44 @@ def load_xunfu() -> list[dict]:
     return json.loads((DATA / "vol3_xunfu_entries.json").read_text(encoding="utf-8"))["entries"]
 
 
+# 官职名拆印变体归一（2026-11-19）：只合并有字证的同位异印，office_raw 留痕。
+OFFICE_NORM: dict[str, str] = {
+    "延绥": "延綏", "山束": "山東", "川": "四川", "一江西": "江西",
+    # 南赣汀漳系（同一巡抚辖区繁简/后缀异印）
+    "南赣汀漳": "南赣", "南赣汀漳等": "南赣", "江西南赣等處": "南赣",
+    # 鄖陽（等/等處后缀）
+    "鄖陽等": "鄖陽", "鄖陽等處": "鄖陽",
+    # 保定（北直隸保定等處巡抚）
+    "保定等": "保定", "直隸保定": "保定", "北直隸保定等": "保定",
+    "保定河間鳳陽淮安": "保定", "北直隸保定鳳陽淮安等": "保定",
+    "真定保定": "保定", "河南真定等": "保定",
+    # 順天（北直隸順天永平等處巡抚）
+    "直隸順天": "順天", "北直隸順天等": "順天", "北直隸順天": "順天",
+    "順天永平等": "順天", "順天永平": "順天", "順天保定": "順天",
+    "順天通州": "順天",
+    # 蘇松（南直隸蘇松巡抚，主形取南直隸蘇松）
+    "蘇松": "南直隸蘇松", "直隸蘇松": "南直隸蘇松",
+    "南直隸應天蘇松": "南直隸蘇松", "南直隸北": "南直隸蘇松",
+    # 鳳陽（總督漕運兼巡抚鳳陽等處）
+    "鳳陽等": "鳳陽", "鳳陽等處": "鳳陽", "鳳陽淮安": "鳳陽", "鳳陽淮揚": "鳳陽",
+    # 大同宣府（早期合并巡抚，两序印本归一）
+    "宣府大同": "大同宣府",
+}
+NORM_ERA = {
+    # 南直隸巡抚（1449-1505）= 应天巡抚前身（应天 1528- 起续）
+    "南直隸": [(9999, "應天")],
+}
+
+
+def _norm_office(office: str, start_year: int) -> tuple[str, str | None]:
+    for bound, canon in NORM_ERA.get(office, []):
+        if start_year <= bound:
+            return canon, office
+    if office in OFFICE_NORM:
+        return OFFICE_NORM[office], office
+    return office, None
+
+
 def load_xunfu_repaired(report: dict | None = None) -> list[dict]:
     return apply_glue_repair(load_xunfu(), "xunfu", report)
 
@@ -56,6 +94,11 @@ def build_page_map(entries: list[dict]) -> dict[int, tuple[int, int]]:
 
 def build_xunfu_tenures() -> list[dict]:
     entries = [e for e in load_xunfu_repaired() if e["year"] <= CUT_Y]
+    for e in entries:
+        canon, raw = _norm_office(e["office"], e["year"])
+        if raw is not None:
+            e["office_raw"] = raw
+        e["office"] = canon
     identities = split_identities(entries)
     pid_of: dict[tuple[str, int], str] = {}
     for name, ents in identities.items():
@@ -147,7 +190,7 @@ def build_xunfu_tenures() -> list[dict]:
                 "cbdb_id": m.get("cbdb_id"),
                 "cbdb_name": m.get("cbdb_name"),
                 "office": office,
-                "office_raw": office,
+                "office_raw": e.get("office_raw", office),
                 "office_status": basis,
                 "tenure_type": ttype,
                 "start_year": sy,

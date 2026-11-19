@@ -24,7 +24,7 @@ def tenures(doc):
 
 
 def test_scale(tenures):
-    assert len(tenures) >= 800
+    assert len(tenures) >= 750
     span = (min(t["start_year"] for t in tenures),
             max(t["end_year"] for t in tenures))
     assert span == (1449, 1644), span
@@ -33,7 +33,7 @@ def test_scale(tenures):
 def test_region_offices(tenures):
     """区域带正名覆盖主要总督辖区（剥前缀后按印本）。"""
     offices = {t["office"] for t in tenures}
-    for r in ("兩廣", "宣大", "薊遼", "漕運", "陝西三邊", "貴州", "京師", "河道"):
+    for r in ("兩廣", "宣大", "薊遼", "漕運", "陕西三邊", "貴州", "京師", "河道"):
         assert r in offices, r
 
 
@@ -53,8 +53,9 @@ def test_anchors(tenures):
                for t in segs("李蕙", "漕運"))
     # 蕭大亨 宣大；葉夢熊 陝西三邊（单字 2×2 网格拼接锚点）
     assert any(t["start_year"] == 1589 for t in segs("蕭大亨", "宣大"))
-    assert any(t["start_year"] == 1592 and t["end_year"] == 1594
-               for t in segs("葉夢熊", "陝西三邊"))
+    # 归一后 陝西三邊/陕西三邊 两变体段合并，任期延至 1595
+    assert any(t["start_year"] == 1592 and t["end_year"] == 1595
+               for t in segs("葉夢熊", "陕西三邊"))
     # 孫鑛 薊遼 1594
     assert any(t["start_year"] == 1594 and t["start_month"] == 7
                for t in segs("孫鑛", "薊遼"))
