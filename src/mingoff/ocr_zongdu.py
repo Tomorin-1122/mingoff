@@ -45,6 +45,9 @@ PREFIX_STRIP = ("總督", "總理", "提督", "經略", "兼制", "兼撫")
 LABEL_ALIAS = {"總漕": "漕運", "總河": "河道"}
 JUNK_LABELS = {"大木", "務", "書"}   # 拼接后仍为垃圾的标签名，整带丢弃
 VOCAB_MIN = None                    # 巡抚型词频阈值（None=总督型：x<300 无重名噪声）
+MIN_WORD_LABELS = 2                 # 本页自认带标签页所需词标签数（总兵页稀疏时降 1）
+BAND_RULE = "below"                 # "below"=下方首标签(京卿/总督型)；"nearest"=最近标签行(布政使型)
+LABEL_JOIN_GAP = 90                 # 相邻异名标签纵向拼接阈值（總督總督+漕運=55px；总兵band 113px 需更小）
 
 wm_skipped = [0]
 
@@ -179,7 +182,7 @@ def collect_labels(rows, vocab: set[str] | None = None):
     # 相邻异名标签纵向拼接（两行复合标签：總督+漕運 → 總督漕運；gap≤90）
     joined: list[tuple[str, int, bool]] = []
     for lab, y in cands2:
-        if joined and y - joined[-1][1] <= 90:
+        if joined and y - joined[-1][1] <= LABEL_JOIN_GAP:
             plab, _, pfg = joined[-1]
             joined[-1] = (plab + lab, y, pfg)
         else:
@@ -190,7 +193,8 @@ def collect_labels(rows, vocab: set[str] | None = None):
 
 RE_NOTE_POS = re.compile(
     r"御史|侍郎?|總兵|總督|巡撫|都御|經理|經略|布使|按察|參政|参政|副使|僉事|"
-    r"郎中|员外|主事|督師|將軍|都督|指揮|轉運|糧儲|邊備|操江")
+    r"郎中|员外|主事|督師|將軍|都督|指揮|轉運|糧儲|邊備|操江|"
+    r"守備|備禦|把總|遊擊|參將|守禦|兵備|^兵")
 
 def _is_name(t: str) -> bool:
     if RE_NOTE_POS.search(t):
@@ -199,6 +203,8 @@ def _is_name(t: str) -> bool:
 
 
 def _band_for(y: int, labels):
+    if BAND_RULE == "nearest":
+        return min(labels, key=lambda v: abs(y - v[1]))[0] if labels else "未知"
     for lab, ly, _fg in labels:
         if y < ly:
             return lab
@@ -229,7 +235,7 @@ def parse():
             continue
         lb = collect_labels(rows, vocab)
         n_words = sum(1 for lab, _y, fg in lb if not fg)
-        if n_words >= 2:
+        if n_words >= MIN_WORD_LABELS:
             schema[p] = lb
             own_labeled.add(p)
             last = lb
