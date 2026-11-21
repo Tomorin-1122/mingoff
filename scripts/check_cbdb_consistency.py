@@ -22,6 +22,8 @@ MAPS = {
     "京营": "vol3_jingying_person_cbdb_v1.json",
     "总督": "vol3_zongdu_person_cbdb_v1.json",
     "巡抚": "vol3_xunfu_person_cbdb_v1.json",
+    "总兵": "vol3_zongbing_person_cbdb_v1.json",
+    "布政使": "vol4_buzhengshi_person_cbdb_v1.json",
 }
 
 
