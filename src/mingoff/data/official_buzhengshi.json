@@ -40,8 +40,8 @@
    "with_leave": 793,
    "office_status_dist": {
     "row-order": 1162,
-    "label-column": 1166,
-    "mixed": 966
+    "mixed": 966,
+    "label-column": 1166
    },
    "end_clamped": 0,
    "gap_merged_tenures": 109
@@ -5204,8 +5204,8 @@
    "person": "侯於趙",
    "person_id": "侯於趙",
    "person_label": "侯於趙",
-   "cbdb_id": null,
-   "cbdb_name": null,
+   "cbdb_id": 129248,
+   "cbdb_name": "侯于趙",
    "office": "山西",
    "office_raw": "山西",
    "office_status": "label-column",
@@ -5232,8 +5232,8 @@
    "person": "侯於趙",
    "person_id": "侯於趙",
    "person_label": "侯於趙",
-   "cbdb_id": null,
-   "cbdb_name": null,
+   "cbdb_id": 129248,
+   "cbdb_name": "侯于趙",
    "office": "湖廣",
    "office_raw": "湖廣",
    "office_status": "row-order",

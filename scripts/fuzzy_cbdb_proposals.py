@@ -14,6 +14,7 @@ from __future__ import annotations
 import json
 import sqlite3
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -25,6 +26,7 @@ from match_official_cbdb import S2T, CBDB  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "src" / "mingoff" / "data"
 OUT = ROOT / "_scratch" / "cbdb_fuzzy_proposals.json"
+COMMON_CHARS = '王李張劉陳楊黃趙吳周徐孫馬朱胡郭何高林鄭謝羅宋唐韓馮于董蕭程曹袁鄧許傅沈曾彭呂蘇盧蔣蔡賈丁魏薛葉閻余潘杜戴夏鍾汪田任姜范方石姚譚廖鄒熊金陸郝孔白崔康毛邱秦江史顧侯邵孟龍萬段雷錢湯尹黎易常武喬賀賴龔文'
 
 TABLES = {
     "总兵": ("vol3_zongbing_cbdb_unresolved.json", "official_zongbing.json"),
@@ -48,6 +50,9 @@ def main():
     for cpid, cn, b, d, iy in con.execute(
             "select c_personid,c_name_chn,c_birthyear,c_deathyear,c_index_year from BIOG_MAIN"):
         biog.append((cpid, cn, b, d, iy))
+    by_name: dict[str, list[tuple]] = defaultdict(list)
+    for row in biog:
+        by_name[row[1]].append(row)
     proposals = {}
     for tbl, (unres, official) in TABLES.items():
         ents = json.loads((DATA / official).read_text(encoding="utf-8"))["tenures"]
@@ -57,7 +62,8 @@ def main():
             span_of[t["person"]] = (min(lo, t["start_year"]), max(hi, t["end_year"]))
         u = json.loads((DATA / unres).read_text(encoding="utf-8"))
         items = u.get("unresolved") or []
-        names = sorted({it["person_id"] for it in items})
+        names = sorted({it["person_id"] for it in items
+                        if it.get("reason") == "no-candidate"})
         out = []
         for name in names:
             span = span_of.get(name)
@@ -65,14 +71,20 @@ def main():
                 continue
             lo, hi = span
             cands = []
+            # 变体生成法：每个目标名生成编辑距离≤1 的全部替换变体 → 字典直查
             for target in (name, t2s(name)):
-                for cpid, cn, b, d, iy in biog:
-                    if edit1(target, cn):
-                        if b is not None and d is not None:
-                            if b + 15 <= lo and d >= hi:
-                                cands.append((cpid, cn, b, d, iy, "hard"))
-                        elif iy and lo - 25 <= iy <= hi + 10:
-                            cands.append((cpid, cn, b, d, iy, "index"))
+                variants = {target}
+                for i in range(len(target)):
+                    for ch in COMMON_CHARS:
+                        variants.add(target[:i] + ch + target[i + 1:])
+                for v in variants:
+                    for cpid, cn, b, d, iy in by_name.get(v, []):
+                        if edit1(target, cn):
+                            if b is not None and d is not None:
+                                if b + 15 <= lo and d >= hi:
+                                    cands.append((cpid, cn, b, d, iy, "hard"))
+                            elif iy and lo - 25 <= iy <= hi + 10:
+                                cands.append((cpid, cn, b, d, iy, "index"))
             uniq = {(c[0], c[1]) for c in cands}
             if len(uniq) == 1:
                 cpid, cn, b, d, iy, kind = cands[0]
