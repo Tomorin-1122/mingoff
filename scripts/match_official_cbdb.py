@@ -371,7 +371,12 @@ def match_table(key: str, cfg: dict, con: sqlite3.Connection,
             break
 
     keep_null = cfg["keep_null"]
-    manual: dict[str, dict] = cfg["manual"]
+    manual: dict[str, dict] = dict(cfg["manual"])
+    # 辖区+年代任职反查的可决集（classify_unresolved.py 生成，region-unique 证据）
+    gen = DATA / "vol3_cbdb_region_unique.json"
+    if gen.is_file():
+        for k, v in json.loads(gen.read_text(encoding="utf-8")).get(key, {}).items():
+            manual.setdefault(k, v)
     todo = [p for p, e in by_pid.items()
             if not e["aligned"] and p not in keep_null and p not in manual]
     print(f"[{key}] {cfg['title']}：未对齐实体 {len(todo)} 个"
